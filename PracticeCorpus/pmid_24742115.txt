@@ -1,0 +1,506 @@
+The deciphering of the human
+genome and the new knowledge on genes and their functions has created
+plenty of new target opportunities for the pharmaceutical industry. However, traditional approaches toward hit and
+lead finding, such as high-throughput screening (HTS) and fragment-based
+screening (FBS), still only cover a fraction of the potential “chemical
+space”. Small molecule compound collections are often a reflection
+of former drug targets, thus covering previously explored chemical space.
+Also, the creation of chemical libraries is limited by feasible chemical
+reactions. For this reason and although
+HTS has been a valuable hit/lead source for historically tractable
+target classes, its success rate lags behind for many novel or traditionally
+undruggable targets, for instance inhibitors of protein–protein
+interactions, Class B GPCRs or phosphatases. HTS and FBS are two common approaches used in the pharmaceutical
+industry for the identification of hits which deliver almost antithetic
+chemical starting points. In HTS, millions of compounds are initially
+screened to assess biological activity against a target. There is
+an increasing awareness, however, regarding the quality of HTS libraries,
+and compound collections nowadays follow more closely the ideal of
+screening lead-like compounds rather than drug-like or drug-unlike
+compounds. Nevertheless, many compounds in these corporate collections
+still lack structural diversity and possess a relatively high lipophilicity
+and poor thermodynamic solubility. Compared to HTS, FBS samples
+the smaller chemical space of fragment-sized
+molecules more efficiently. This efficiency is borne out by a higher
+probability of fragments matching a receptor due to their reduced
+complexity. However, binding events are harder to detect owing to
+the inferior affinities of low molecular weight fragments for the
+target. Consequently, fragment hits require more medicinal chemistry
+efforts to transform them into lead compounds with acceptable affinity. In addition, FBS in general requires targets to be isolatable, and
+the availability of structural information is often critical to the
+success of fragment-based drug discovery. In this paper, we describe a synthetic biology (SB)-based hit-finding
+approach (Figure ) that is complementary to
+existing strategies and extendable to novel or difficult therapeutic
+targets. The approach combines the use of biosynthetic reactions for
+compound generation with advantages from FBS (small, scaffold-sized
+molecules), natural products (NPs) (diversity and structural complexity,
+“prevalidated” by nature), and HTS (higher potency hits,
+initial SAR, generation of chemical probes). The compounds resulting
+from this process possess favorable structural and physicochemical
+properties, are amenable to synthetic modifications, and exhibit a
+high degree of novelty. Being produced by enzymes and selected on
+the basis of an intracellular functional assay, SB hits explore biologically
+relevant chemical space with “privileged”, NP-like fragments. Scheme
+of the synthetic biology combinatorial genetics approach
+in baker’s yeast. Synthetic Biology Platform, Screening, and
+Compound Isolation The detailed methodology of the SB platform
+used here has been
+described previously. In short, the technology
+combines horizontal gene transfer and expression with stringent screening
+technologies in a system where the same yeast cell is used to first
+generate the compounds and second to screen for activity of these
+compounds against an internal or external assay. The basis for producing
+novel compounds is genetic material sourced from (i) known biochemical
+pathways producing drug-relevant chemical scaffolds, (ii) organisms
+with unknown genetic diversity that can provide new enzymatic activities,
+and (iii) organisms reported to have a medicinal effect or that can
+tolerate different types of infection (e.g., bacterial or viral).
+In the present study, a functional Brome Mosaic Virus (BMV) replication
+assay was selected as the primary screen (see  section). The assay setup and compound isolation procedures are
+described in the online  section. We
+investigated yeast strains containing YACs (yeast artificial chromosomes)
+expressing combinations of pathway and cDNA genes deriving from 8
+pathways and 14 libraries containing cDNA (, Table S1 and S4). A total of 74 YAC-dependent
+compounds were isolated from 35 yeast crude extracts (clones). Twenty-eight
+compounds (38%) exhibited activity in a secondary BMV assay. All compounds
+were isolated by preparative HPLC, and their structures were elucidated
+by means of mass spectrometry and one- and two-dimensional homo- and
+heteronuclear NMR spectroscopy. Figure  shows
+selected examples of compounds (1–34) produced by this SB approach. Examples
+of compounds produced by synthetic biology. Compounds
+1–34 were isolated from yeast. Ribavirin was used as reference
+in secondary activity assays. The entire list of 74 compounds is shown
+in  Figure S2. Synthetic Biology Compound
+Properties The 74 isolated
+compounds were assessed for their physicochemical properties and their
+quality as starting points for lead optimization. These data are summarized
+in Table . The SB approach described here
+produces mainly fragment- (110 < MW[Da]<250) to scaffold-sized
+(250 < MW[Da]<350) molecules. Average
+MW, clogP, and HBD values are in line with Congreve’s rule-of-three
+(Ro3) criteria for fragments. HBA, ROT,
+and PSA values are above recommended values. Depending on the calculation algorithm used, only 3–8% of
+the isolated compounds have a high calculated logP (clogP > 5).
+Less
+than 10% of the compounds produced by SB give rise to one or more
+violations in the rule-of-five (Ro5). Overall, the SB compounds possess fragment- to scaffold-like
+molecular weights. Shape complexity describes the fraction of
+sp hybridized carbon atoms compared to the sum of sp and sp hybridized carbons. Stereochemical complexity
+relates the number of chiral carbons to the total number of carbons
+in any given compound. Both values are useful descriptors to describe the
+structural complexity of a molecule. Complexity, namely, a higher
+degree of saturation in molecules, increases the likelihood of higher
+solubility and lower melting points, physical properties that are
+associated with successful drugs. In
+addition, this property has been shown to be beneficial by increasing
+the probability of appropriate complementary interactions between
+ligand and target, resulting in greater selectivity and less off-target
+effects. Molecules rich in sp-configured centers also have the capacity of covering larger portions
+of chemical space. http://www.keyorganics.net/services/bionet-products/fragment-libraries/ http://www.keyorganics.net/services/bionet-products/fragment-libraries/ http://www.chembridge.com/internal/index.php http://www.chembridge.com/internal/index.php Shape and stereochemical
+complexity of SB compounds were compared
+to “drug-” and “fragment-like” compound
+sets. Data sets were sourced as follows. A “drug-like”
+data set of 870 marketed drugs was extracted from DRUGBANK using a
+MW ≤ 500 Da criteria. Also, two sets of fragment-like compounds
+were sourced: a diverse 13 190 fragment set from Key Organics
+Ltd. (Full BIONET Fragments Library July 2013, ) and a diverse fragment library containing 7849 compounds from ChemBridge,
+Inc. (Fragment Library Database—SDF Format Last Modified 8/1/2013, ). The SB compounds
+shape and stereochemical complexity values rank above the diversity
+oriented fragment set and are close to the drug-like molecule set
+(Table ). Interestingly, the average shape
+complexity of the core scaffold is higher than that of the whole compounds,
+indicating a high degree of structural complexity connected to the
+core scaffolds of the SB compounds (Table ). Stereochemical complexity, however, remains comparatively low. Optimizability is a key attribute
+of successful hits in a discovery
+program and is often used to rank prospective hits resulting from
+a screen. Interestingly, many of the
+compounds have at least two points of chemical variability to fit
+with existing chemistry approaches. In cases where synthesis is difficult,
+the compounds may be produced in larger quantities in yeast, using
+metabolic engineering approaches, because this is how they originated. The described compounds can be assessed for suitability as hits
+for drug discovery. A phenolic group is present in several of the
+compounds. Although phenols can represent valuable starting points
+for lead identification or lead optimization (LI/LO), their presence
+in a final drug is usually undesired as it is often associated with
+a clearance liability via glucoronidation. In these cases, common
+strategies can be used to either replace this feature (for example
+with acidic N–H groups) or to produce prodrug formulations.
+In addition, some of the compounds contain anilinic groups which are
+often flagged as a potential toxicophore. However, the most common
+motif observed is -anthranilic acid (PABA), which
+is known to have little toxicity and is of minimal concern. After
+all, it should be considered that these are hit structures. During
+LI/LO, possible problems could be addressed—in the case of
+a genotoxic aniline, a solution could be to replace it with the corresponding
+amino-pyridine, which has a lower tendency to be genotoxic. There is no doubt that compounds produced by this method have an
+inherent tendency toward a more challenging synthesis compared to
+compounds which have originated in a chemical library. However, for
+this set of compounds, synthetic routes could quickly be envisaged
+for many. Therefore, it is expected that during an LI/LO process,
+the molecular properties and target affinity could be optimized rather
+rapidly. Examples for clearly tractable hit structures are , , and , which have been resynthesized.
+Conceptually, a hybrid approach may also be considered to optimize
+SB compounds in which some of the enzymes which give rise to the hits
+are used  (biocatalysis) and combined with
+conventional synthetic chemistry. This would enable scalability and
+rapid optimization demanded by the LO process. Physicochemical, Structural, and Shape-Based
+Properties of Synthetic-Biology-Derived Compounds Compared to Fragment-
+and Drug-Like Compounds shape complexity
+core skeleton C/(C+C) stereochemical complexity (C/C) Synthetic biology values are average
+values. Shape and stereochemical complexity are average values determined
+using a diverse 13 190 fragment library (Key Organics Ltd.)
+and a set of 870 marketed drugs of MW < 500 Da (extracted from
+DRUGBANK) for fragment- and drug-like molecules, respectively. Otherwise,
+values refer to thresholds of Ro3 and Ro5 or recommended in literature
+for fragment- and drug-like molecules. Abbreviations: MW, molecular
+weight; clogP, calculated logarithm of the octanol–water partition
+coefficient; HBD, number of hydrogen bond donors; HBA, number of hydrogen
+bond acceptors; ROT, number of rotatable bonds; PSA, polar surface
+area; HAC, number of non-hydrogen atoms. Typical value, taken from ref (), In brackets: stereochemical
+complexity
+of deglycosylated synthetic biology compounds. Synthetic Biology Compound
+Novelty Analysis SciFinder,
+PubChem, ChemSpider, and ChEMBL were searched for the presence of
+the SB originated structures. Figure a shows
+the percentage of compounds new to each database. Overall, no match
+was found for more than 75% of the compounds in either SciFinder,
+PubChem, or ChemSpider. Similarity and substructure searches were
+carried out in SciFinder. Figure b shows a
+summary of the SciFinder structural similarity scores of the SB compounds
+isolated in this work, with 100% similarity designating previously
+reported structures and ≥99% structural similarity relating
+to different or previously not assigned relative stereochemistry or
+close analogues differing only in the length of aliphatic side chains
+(e.g., methyl/ethyl). These similarity and substructure searches also
+helped in defining core scaffolds of the isolated compounds, for which
+side chains were removed. Scaffolds were defined as novel if both
+the parent compound and the core skeleton exhibited SciFinder similarity
+scores of less than 90% compared to any other entry. Interestingly,
+scaffold novelty often derived from new combinations of known natural
+product-derived substructures. Figure  shows
+examples of novel scaffolds derived from SB compounds. Overall ≈20%
+of the compounds represented novel scaffolds, although some redundancies
+within the set were observed. Forty percent of these compounds exhibited
+activity in the secondary BMV assay, therefore relating novelty to
+biologically relevant chemical space. Novelty and similarity of synthetic biology
+compounds. (a) Percentage
+of synthetic biology compounds new to different databases. (b) Similarity
+scores of synthetic biology compounds in SciFinder. (c) PubChem nearest
+neighbor molecular quantum numbers city-block distance (CBDMQN) difference
+of synthetic biology compounds. (d) GDB-17 CBDMQN difference of synthetic
+biology compounds. Novel synthetic biology
+scaffolds. Synthetic Biology Compound
+Diversity Analysis Studies
+were conducted to determine diversity within the SB compound set.
+One common way to ascertain diversity is to fingerprint compounds
+by a composition method (e.g., Daylight or MACCS keys) and then measure
+the distance between different library members according to a Tanimoto
+or other similarity metric. Compounds
+above a similarity threshold can be assigned to the same “cluster”,
+whereas those more dissimilar are not. To this end, compounds were
+fingerprinted with MACCS keys, and a Tanimoto similarity value of
+0.85 was used to define clusters. The average cluster size across
+the limited 74 SB compound set is 1.27, and thus, the majority of
+compounds exist in their own cluster and can be described as singletons.
+The largest cluster size is 3, of which there are four such clusters
+(, Table S2). These data were compared with distributions calculated for two “diverse”
+libraries of commercially available fragments. In these compound collections
+(ChemBridge and Key Organics), the average cluster sizes across the
+compound sets are 1.36 and 1.30, respectively. This shows that the
+SB set has fewer average compounds per cluster (i.e., is more diverse)
+than the fragment collections examined. Of course, there is a significant
+difference in size of the compound sets analyzed. However, the results
+obtained for the ChemBridge and Key Organics sets nevertheless exemplify
+typical distributions observed across libraries that were constructed
+with diversity as a fundamental objective. As the size of the
+SB libraries increases, the issue of compound
+redundancy may have to be addressed. However, diversity of the SB
+compounds is controlled by the nature of the functional screen used
+for isolating the yeast transformants. Thus, use of a different screen
+would be expected to give rise to new compounds. Furthermore, retention
+times and high-resolution MS data can be used to dereplicate active
+fractions. In addition, one of the important aspects of this approach
+is that if a limitation on scaffold diversity was observed, further
+sets of genes could be introduced into the yeast, expanding the chemical
+repertoire, and thus, to some extent, diversity could also be controlled
+in this manner. Chemical Space Classification by Molecular
+Quantum Numbers Reymond and co-workers have described a classification
+system that
+places organic molecules in chemical space on the basis of 42 molecular
+quantum numbers (MQN). The MQNs are defined as value
+descriptors of structural elements by simply counting atoms of certain
+types, bonds, polar groups, and topological features. Using the MQN
+webserver (), we calculated
+the similarity of the isolated SB compounds to nearest neighbors in
+the PubChem (Figure c) and GDB-17 databases
+(Figure d). GDB-17 stands for a chemical universe
+database of organic molecules of up to 17 heavy atoms (C, N, O, S,
+and Cl) virtually created following simple chemical stability and
+feasibility rules. It contains 166 billion small molecules. Similarity in MQN-space is measured in city-block
+distance (CBD) by summing up the absolute values of
+the differences between the MQN-values of the SB compounds and the
+nearest neighbor in the reference database. CBD for
+SB molecules with less than 17 heavy atoms (HAC ≤ 17) and their
+nearest neighbor in the GDB-17 database were calculated, giving rise
+to distance (d) values between  = 2 and  = 11 (Figure d). A similar result
+was obtained calculating CBD between all 74 SB structures
+and their closest neighbor in the PubChem database, leading to distances
+between  = 0 and  = 13 (Figure c). Although the magnitude of the  values does not indicate a high diversity to known or theoretically
+predicted structures, SB compounds are
+clearly novel within the vast chemical space explored in these databases. Chemical Space Analysis Using ChemGPS-NP Having established
+that the SB compounds were generally diverse and novel, it was of
+interest to know whether these compounds are more similar to natural
+products (NP) or commercial screening compounds/synthetic small molecules. One convenient system to describe the NP-likeness of a set of compounds
+is provided by the ChemGPS-NP approach. This method
+converts relevant molecule descriptors (associated with concepts related
+to NP-likeness, such as number of chiral centers, ratio of O vs N
+atoms, etc.) into principal component space and provides a standardized
+system to “map” sets of new compounds onto these coordinates.
+It is useful to use such a system, because it has already been shown
+to be relevant in separating natural from non-natural compounds. A web server generating the raw principal component analysis
+(PCA)
+scores for compounds was utilized to calculate values for three data
+sets, a compound set comprising 20 000 randomly selected compounds
+extracted from the Asinex Platinum screening library, a natural product set comprising 5150 compounds from Analyticon
+(MEGx library) and the 74 synthetic biology
+compounds identified in yeast. Figure  shows the resulting map of chemical
+space between the libraries. According to this PCA mapping, there
+is a clear chemical space separation between the screening library
+and the natural product library. Furthermore, the SB compounds span
+both chemical spaces. The majority (65 compounds) fall into the space
+occupied by the screening compounds, but a significant number (9 compounds,
+12%) sit outside this, in the coordinate space occupied by natural
+products. Given the relatively small number of SB compounds being analyzed,
+we wanted to evaluate the statistical likelihood of achieving this
+result. An experiment was thus conducted by selecting 100 randomly
+picked sets of compounds with the same molecular weight distribution
+(each to the nearest whole MW value) to the synthetic biology set
+from an internal database containing over 20 million commercially
+available compounds. The internal database only contained low numbers
+of natural product compounds (<0.4%). ChemGPS-NP scores were generated
+for each of these sets, and the numbers of compounds falling within
+the natural product volume were recorded. We assumed that these data
+would be normally distributed. On average, 1.7 compounds (2.2%) fell
+in the NP-only space (standard deviation 1.1). Because 9 (12%) of
+the SB compounds exist in this space, we conclude it unlikely to have
+occurred by chance, ρ = 8 × 10. PCA mapping of different libraries. Subset of Asinex screening
+library (red), Analyticon NP library (blue), and the SB compounds
+(yellow). The three axes represent the three first principal components
+as generated by the ChemGPS-NP webserver. Activity of Synthetic Biology Compounds The yeast strain
+used for this study was equipped with a Brome Mosaic Virus functional
+assay, such that the yeast only survives in the presence of a small
+molecule inhibitor of viral replication. Only when the yeast strain
+was transformed with YACs encoding cDNA libraries and metabolic pathways
+producing different small molecules were surviving colonies obtained.
+BMV served as a surrogate for human infectious positive-sense single-stranded
+(+ve ss) RNA viruses. A secondary BMV assay guided fractionation of
+supernatant extract from surviving colonies led to fractions with
+high antiviral activity, which were then further fractionated for
+structural elucidation and activity determination of the compounds. Table  (and  Figure S3) shows activity data (IC) of selected SB compounds in the secondary BMV assay and against
+two viruses of therapeutic interest, Dengue (DENV) and human hepatitis
+C (HCV) virus. (Characterization data for the 6 compounds can be found
+in the .) Compounds  and – were up-scaled
+by metabolic engineering or synthetic chemistry, respectively, and
+activity data were determined on the resynthesized products. Activity
+data in the BMV assay (Table ) was recorded
+for a set of compounds within or above the MW range of fragments.
+pIC values vary between 4.3 (compound ) and 6.7 (compound ) (typical, literature-derived
+value for fragment-like molecules pIC = 4.4) reflecting, in accordance with Hann’s
+complexity model, the slightly larger size of some
+of the molecules. Compound  shows above average activity
+for its size. Interestingly, μM activity was also found for
+two therapeutically relevant viruses, HCV and DENV, which, like brome
+mosaic virus, also belong to Group IV +ve ss RNA viruses (Table ). Overall, these data show the potential of the
+BMV model system to detect compounds that might serve as starting
+points for the development of antiviral drugs against Group IV +ve
+ss RNA viruses of therapeutic interest. IC Values of Synthetic
+Biology Compounds in a Secondary Brome Mosaic Virus (BMV), Human Hepatitis
+C Virus (HCV), and Dengue Virus (DENV) Assay tetra- and diterpenoids/virus-infected tobacco The pathway/cDNA
+combination refers
+to the YAC clone from which they were isolated. Racemic mixture used (resynthesized). Overall,
+the activity, low
+lipophilicity and MW, the low number of aromatic rings, the absence
+of basic centers, a favorable stereochemical, and high shape complexity
+make the isolated SB compounds high quality and optimizable start
+points for drug discovery. On the basis of the molecules identified,
+we assert that yeast-produced SB products allow the exploration of
+new areas of biologically relevant chemical space. A significant number
+of the isolated compounds are novel and diverse according to the tests
+described in the  section. Importantly,
+the novelty is biologically derived and not at the expense of drug-likeness. Given the attractive features of the SB approach, it is important
+to also consider some of the practical aspects. Cycle times, consisting
+of the creation of the libraries, primary and secondary screening,
+dereplication, isolation, and structure elucidation of active metabolome
+components, have averaged 6–9 months for screens of 50–60
+libraries, resulting in the identification of the hits described in
+this study. Overall, this is comparable to a typical complete time
+frame for HTS- or FBS-based hit-finding approaches. For the
+first time, novel compounds produced by SB are reported.
+In view of their activity and physicochemical and structural properties,
+these compounds represent good start points for medicinal chemistry
+optimization and can be considered qualified hits or early leads for
+drug discovery. Furthermore, the SB approach complements current hit-finding
+practices and can be easily integrated in the drug discovery process. The haploid yeast strains used for constructing
+the primary screening assay strains have a S288C genetic background
+with the following genotypes MATa LYS2 ade8Δ his3Δ ura3Δ
+leu2Δ trp1Δ arg4Δ and MATα lys2Δ ADE8
+his3Δ ura3Δ leu2Δ trp1Δ arg4Δ. The haploid
+yeast strain used for constructing the secondary screening assay has
+a S288C genetic background with the following genotype MATa met15Δ
+his3Δ ura3Δ leu2Δ pdr1Δ pdr3Δ erg6Δ Evolva has developed a
+functional BMV replication assay in yeast on the basis of the publications
+of Ahlquist and co-workers. The assay has been applied to
+Evolva’s proprietary SB platform for creating small molecule
+libraries in yeast (see , Table S4). The primary BMV screening
+strain contains a BMV replication system consisting of expression
+cassettes for BMV RNA1, BMV RNA2, BMV RNA3-URA3, and BMV RNA3-Renilla
+that are integrated into the yeast genome under the control of inducible
+GAL1 promoters, as described by Ahlquist and co-workers. Galactose-media-induced expression of the BMV cassettes leads to
+expression of URA3 and Renilla reporter genes in a BMV replication-specific
+manner. The URA3 gene encodes orotidine 5-phosphate decarboxylase
+that can convert 5-fluoroorotic acid (5-FOA) to 5-fluorouracil, which
+causes cell death. The Renilla gene encodes Renilla luciferase that
+catalyzes a light-emitting reaction, which can be quantitatively detected
+by a chemiluminescence reader. The primary BMV strain also has an
+integrated Firefly expression cassette under the control of a constitutive
+ADH1 promoter. This gene is expressed independently of BMV replication
+and is used for normalizing the signal from the Renilla luciferase
+reaction. Screening libraries were made by mating haploid primary
+BMV strains
+that had been transformed with YAC pools. The YAC pools were constructed
+and introduced in the haploid primary BMV strains essentially as described
+previously. Each YAC consists of multiple
+expression cassettes under the control of inducible methionine dependent
+promoters. Haploid MATα yeast libraries containing pathway
+YACs (pathway
+libraries, LEU2 marker) and haploid MATa yeast libraries containing
+cDNA YACs (cDNA libraries, HIS3 marker) were prepared. Fifty different
+combinations of pathway and cDNA libraries were mated to create diploid
+screening libraries. In addition, diploid “pathway only”
+screening libraries were created by mating the haploid MATα
+pathway libraries with the haploid MATa yeast containing an empty
+HIS3 plasmid. Furthermore, the haploid yeast strains with HIS3 and
+LEU2 plasmids were mated to make a diploid screening strain control
+without YACs. To start the screening process, an overnight culture
+of the diploid
+library was grown in glucose media without methionine. The next day,
+2 × 50 million diploid cells were spread on two screening plates
+(24 × 24 cm) containing solid synthetic complete (SC) media without
+leucine, histidine, or methionine and containing 1% galactose, 1%
+raffinose, 0.12% FOA, and 80 mg/L uracil. The galactose induces the
+BMV replication, whereas the absence of methionine induces expression
+of the YAC genes. The number of surviving clones varied with
+the pathway and cDNA
+combination and was typically in the range of 200–2000 surviving
+clones per 50 million cells. Survivor clones (176) per diploid library
+were picked from the FOA plates and transferred to two 96-well master
+plates with SC media with 2% glucose, without histidine and leucine,
+and with 2 mM methionine, to shut down BMV replication and expression
+of the YAC genes. In total, 58 diploid libraries × 176 survivors
+= 10208 clones were picked from the primary screening. Confirmation
+of Primary Hit Clones A confirmatory process
+was carried out to rank the survivor clones according to antiviral
+potency of each clone. The master plate was used to inoculate a 96-well
+plate with SC media with 2% glucose + 2 mM methionine (YAC expression
+off) or without methionine (YAC expression on) and incubated overnight.
+Next day, each plate was used to inoculate two 96 well plates containing
+SC media with 2% galactose (BMV replication turned on) with either
+2 mM methionine (+methionine, YAC expression off) or without methionine
+(−methionine, YAC expression on) and incubated overnight. The
+following day, these plates were used for the luciferase assay using
+the Dual-Glo Luciferase Assay System (Promega). A Microlab Star pipetting
+robot (Hamilton) was used for handling of plate cultures, lysis buffers,
+and luciferase substrates. A 7 μL culture from each well was
+transferred in duplicate to 384-well plates, in which cell lysis,
+Firefly, and Renilla measurements were carried out. The Firefly and
+Renilla signals were measured in a Pherastar FS plate reader (BMG
+Labtech) by first adding 7 μL of lysis buffer containing Firefly
+substrate. After a 1 h incubation, the Firefly signal was measured.
+Next, 7 μL of StopGlo buffer containing Renilla substrate was
+added to quench the Firefly signal and start the Renilla reaction.
+After 45 min of incubation time, the Renilla signal was measured. The luciferase readings were used to calculate the YAC-dependent
+inhibition of BMV viral replication for each clone (% inhibition =
+(Renilla/Firefly (+methionine = YAC off) – Renilla/Firefly
+(−methionine = YAC on))/(Renilla/Firefly (+methionine = YAC
+off)) × 100). The most potent clones with inhibition ≥60%
+were picked
+and used for extraction and secondary assay testing. The number of
+clones selected based on this cut off value varied from 0–35
+clones/library depending on the screening library. Approximately 300
+clones from 58 screening libraries were selected on the basis of this
+confirmation. The
+secondary BMV strain
+was used for screening of metabolite fractions to identify the fractions/compounds
+that are active against BMV. It contains the same integrated expression
+cassettes as the primary BMV screening assay described above, except
+for the BMV RNA3-URA3 cassette. In addition, the strain has been deleted
+in the PDR1, PDR3, and ERG6 genes to enhance the uptake of exogenously
+added compounds. The PDR1 and PDR3 genes regulate ABC transporters
+that remove xenobiotic substances from the yeast cytoplasm. ERG6 deletion is known to give an increased
+“permeability” of the yeast membrane to exogenously
+added compounds. The Renilla and Firefly
+activity is measured by the Dual-Glo kit (Promega) as described above A culture of secondary assay yeast strain was grown overnight in
+SC containing 2% glucose. The next day, the culture was washed and
+diluted to OD600 = 0.3 in SC media containing 2% galactose and distributed
+in two 96-deep-well plates with 400 μL of cell culture in each
+well. A 2 μL aliquot of each metabolite fraction resuspended
+in 20 μL of DMSO was transferred to the 96-deep-well plates
+with the Microlab Star pipetting robot (Hamilton). The plates were
+incubated overnight at 30 °C, 300 rpm to let the fraction compounds
+enter the yeast and interfere with the BMV viral replication system.
+Negative control (no compound, used as baseline) and positive controls
+(40 and 200 μM Ribavirin) were included. The following day,
+the luciferase assay was carried out as described above for the confirmatory
+process. The inhibition of BMV replication was calculated according
+to the formula: (% inhibition = (Renilla/Firefly (baseline) –
+Renilla/Firefly (fraction))/(Renilla/Firefly (baseline)) × 100).
+Fractions that show activity by inhibiting the viral replication system
+were identified (see  Table S5 and Figure S3 for additional data). The inhibition
+data for the CEY fractions were grouped and aligned
+in a pathway specific manner to identify pathway-specific clusters
+of fractions, pathway + cDNA specific clusters of fractions, and clone-specific
+fractions (singlets). A cluster arises when the same active fraction
+is present in more than one CEY. The clustering analysis is used to
+identify redundancy of molecules that arise when the same combinations
+of YAC genes appear in more than one yeast clone. In total,
+457 fractions gave a positive dose response that justified
+further dereplication work against corresponding, nonactive fractions
+of the control strain using MSXelerator in order to find YAC-dependent
+fractions active against BMV. Finally, 28 compounds were isolated
+(≈10% hit rate based on the number of “clone hits”). Purification of Compounds for MS and NMR Characterization Yeast culture batches (4 L) were grown and extracted using the
+same conditions as those described for 0.5 L batch preparation. The
+reconstituted supernatant was injected in a preparative HPLC column
+(XBridge C18, 19 × 250 mm, 5 μm, Waters). Mobile phases
+used were A (0.1% TFA in water) and B (0.1% TFA in acetonitrile).
+The separation of the target compounds was achieved by a gradient
+from 1% B to 100% B in 27 min. The collected fractions were dried
+in a Genevac HT12 evaporation system, and a final quality control
+(QC) was completed in the LC-MS using the LC conditions described
+above. All NMR experiments were
+performed in DMSO- at 25 °C using
+a Bruker Avance III 600 MHz NMR spectrometer equipped with a 1.7 mm
+cryogenic TCI probe. The structures were solved by means of
+standard homo- and heteronuclear multipulse NMR experiments, namely, H,H–COSY, H,H-ROESY, H,C-HSQC, H,C-HMBC,
+and H,N-HMBC experiments. Calculation
+of Physicochemical Properties http://www.molinspiration.com/cgi-bin/properties http://www.molinspiration.com/cgi-bin/properties http://www.organic-chemistry.org/prog/peo/ http://www.organic-chemistry.org/prog/peo/ Physicochemical
+properties were calculated using web-based molinspiration (), OSIRIS Property Explorer (), and ChemAxon chemicalize () software. Shape and stereochemical complexity were calculated
+using a custom script written in support vector language within the
+MOE environment (CCG, Inc., ). Cores were
+defined by removing exocyclic groups with more than one rotatable
+bond. The drug-like compounds used for these calculations contained
+a set of 870 compounds which were extracted as a subset from the DrugBank
+database, selected on the basis of the criteria that molecular weight
+was less than 500. Diversity Analysis
+Using MACCS Keys MACCS key fingerprints
+were generated for the SB compounds using the MOE software package
+(CCG, Inc.). Cluster composition was then also calculated using the
+Fingerprint Cluster method in MOE with a 0.85 similarity threshold
+and Tanimoto similarity metric. The same methodology was applied to
+the other fragment databases which were compared in the study. Construction of a randomized 20 000
+compound set extracted from the Asinex Platinum screening library
+was undertaken using a script written in support vector language within
+the MOE operating system. The relevant sets of compounds were uploaded
+to the ChemGPS-NP webserver. The maximum size of a submitted database
+was 8000 compounds; therefore, the screening library compounds were
+submitted as several jobs. The resulting flat result files were imported
+into MOE databases before 3D graphs were generated in the same environment..

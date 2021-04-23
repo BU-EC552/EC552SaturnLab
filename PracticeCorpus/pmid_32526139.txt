@@ -1,0 +1,1216 @@
+Synthetic biology has made great strides in engineering living
+systems for desired purposes and in creating novel biological processes
+with compositions and properties not found in nature. While the field is historically rooted in the development of methods
+to better read, write, edit, and design DNA, synthetic biology has
+since leveraged these tools to impact a wide variety of applications
+which require understanding and harnessing cellular processes mediated
+by post-translational modifications (PTMs), a task that
+remains one of the key challenges of the postgenomic era. Protein
+glycosylation, the attachment of complex sugar moieties (glycans)
+to amino acid side chains, is among the most diverse, abundant, and
+important PTMs, making it of particular interest to the academic and
+industrial research communities. Glycosylation is present in all domains of life and over half of eukaryotic proteins, playing important roles in protein folding and
+function. Secreted and
+cell-surface proteins are glycosylated at particularly high rates,
+making glycans important for cell–cell signaling, host–pathogen interactions, and immune
+responses. In addition, 70% of approved or preclinical protein
+therapeutics are glycosylated, having
+profound effects on protein stability, immunogenicity, and activity. Biopharmaceutical
+glycosylation patterns must be rigorously controlled during development
+and production and can be intentionally engineered to produce desired
+properties in protein therapeutics and vaccines. Taken together, these factors make it clear that fulfilling the
+vision of synthetic biology to precisely control and construct novel
+biological systems will require the design and understanding of protein
+glycosylation. Drawn by new opportunities to understand fundamental
+biology as
+well as compelling applications in medicine and materials, researchers
+have begun to use tools originally developed for metabolic engineering,
+genetic editing, protein engineering, and chemical biology to manipulate
+glycosylation. These lines of inquiry have recently coalesced to form
+the field of synthetic glycobiology which, broadly defined,
+seeks to apply the tools of synthetic biology to the engineering and
+design of glycosylation systems. Because this field has advanced rapidly
+over recent years and involves a unique set of biological parts and
+methods compared to more traditional applications of synthetic biology,
+a systematic review is warranted. Here, we review the exciting
+area of synthetic glycobiology with
+a focus on useful abstractions, tools, and methods regularly employed
+by the synthetic biology community at large. Specifically, we outline
+the functional parts required to manipulate protein glycosylation
+and how they are organized within natural systems. We then describe
+how these parts have been assembled to construct synthetic glycosylation
+systems in mammalian, insect, plant, and bacterial cells, as well
+as cell-free systems. Finally, we review select applications of synthetic
+protein glycosylation systems and present outstanding opportunities
+to use synthetic glycosylation systems to solve compelling problems
+in medicine, materials, and beyond (). We note that glycobiology and therefore synthetic glycobiology
+is a broad field, and there are important innovations in the areas
+of glycolipids, glycosylated natural
+products, glycomimetic systems, free oligosaccharides, and cell-surface
+(glycocalyx) engineering that have been
+recently reviewed elsewhere. However, this review focuses on protein
+glycosylation because of its relevance to techniques (DNA assembly,
+transcription/translation control, genetic editing, metabolic engineering, .) and applications (therapeutics, vaccines, diagnostics,
+materials, .) that are often of interest to synthetic
+biologists. As bioprocessing methods to control glycosylation within
+their native hosts and methods for complete
+chemical synthesis of glycans and glycoproteins were recently reviewed elsewhere, this work focuses instead on a
+more detailed description of highly engineered biosynthetic systems
+where synthetic biology tools are most readily applicable. Parts, systems, and applications of synthetic
+glycobiology. Glycosylation
+is mediated by five key parts: sequons, glycosyltransferases, glycosidases,
+sugar donors, and lectins which accept, add, trim, supply, and bind
+sugars, respectively. Synthetic glycobiology repurposes, recombines,
+and engineers these parts to construct biosynthetic systems that produce
+designer glycoproteins for compelling applications in therapeutics,
+vaccines, diagnostics, and materials. The “Parts”
+of Synthetic Glycobiology: An Engineer’s
+Guide to Protein Glycosylation In order to design and build
+a biological process for a desired
+function, one must first understand the parts available for its construction.
+Here, we briefly review the key mechanisms of protein glycosylation
+found in nature as well as important characteristics for the construction
+of synthetic glycosylation systems (). The reader may consult more exhaustive
+reviews of protein glycosylation systems in bacteria, archaea, and eukaryotes and how they compare for further
+information. For the construction of synthetic pathways, it is useful
+to abstract glycosylation systems into a set of five functional parts:
+glycosyltransferase enzymes (GTs), sugar donors, sequons, glycosidases,
+and lectins. GTs covalently attach glycans to target proteins at a
+glycosylation site, which is found within a sequence of amino acids
+known as a sequon. GTs use activated sugar donors as substrates which
+are made up of saccharides linked to lipids or nucleotide-diphosphates
+such as uracil (UDP-), guanine (GDP-), cytosine (CMP-), thymine (TDP-),
+or adenine (ADP-). In the protein modification step, a polypeptide
+glycosyltransferase (ppGT) transfers one or more saccharides from
+a sugar donor to a sequon within a target protein. While a sequon
+is the sequence of amino acids required for glycosylation to occur,
+it is important to note that overall target protein structure and
+folding can also influence modification efficiency. Following protein modification,
+glycans can be further modified
+by elaborating GTs and trimmed by glycosidases. There are two major
+classes of glycosidases. Exoglycosidases remove sugars from the termini
+of glycans while endoglycosidases hydrolyze glycosidic bonds within
+glycan chains. Glycosidases have been employed and engineered for
+glycoprotein analysis, remodeling, and even therapeutics. Once constructed, glycoproteins often interact with lectins which
+specifically bind to certain glycan structural motifs. Although this
+review focuses primarily on the synthesis of glycoproteins, knowledge
+of lectin specificities has often been leveraged in the field of synthetic
+glycobiology to design glycan-based selection schemes, develop new approaches to fight infectious and autoimmune disease, produce functional biomaterials, and to understand and
+manipulate protein trafficking within the human body. Key resources for the identification of relevant enzymes, glycans,
+and glycan-binding proteins include the Carbohydrate-active enzyme
+(CAZY) database (exhaustive list of genetically identified GTs and
+lectins), the GlyCosmos Portal (especially
+the GlyTouCan glycan search and the Lectin Frontier database), and the GlycoGene Database (a curated list
+of key classes of GTs). The five
+functional parts outlined in  are assembled in a multitude of naturally
+occurring glycosylation systems across the three domains of life.
+These glycosylation pathways can generally be classified in terms
+of the topology, chemical bond, and specificity of its polypeptide
+modification step (). Two major glycosylation system topologies differ in the
+type of ppGT which performs the critical polypeptide modification
+step which controls the location and diversity of the installed glycan. The first topology is oligosaccharyltransferase (OST)-dependent
+in which prebuilt glycans are transferred  from a lipid-linked oligosaccharide (LLO) onto a specifically targeted
+sequon by an OST. The second topology is OST-independent in which
+the glycans are built in a sequential fashion on a sequon within a
+target protein. The most common protein
+conjugation bonds are -linked (most often on Asn
+residues but can also include Arg) and -linked (most
+often on Ser or Thr residues but can also include Tyr, hydroxylysine,
+and hydroxyproline). Enzymes that modify nitrogen within Arg side
+chains are commonly referred to as -linked. Other
+conjugation bonds include -linked (Cys residues)
+and -linked (Trp residues). The level of specificity of ppGTs to both sugar donors
+and protein
+acceptor sequences (, sequons) is important in
+determining the potential utility of a glycosylation system for engineering. Glycans conjugated to proteins have directionality,
+defined from the reducing end sugar (attached to the amino acid side
+chain) to the nonreducing end (termini). These sugars can be conjugated
+in a variety of linkages between saccharides at the anomeric carbon
+(α-linkage or β-linkage) and the carbons on each sugar
+involved in those linkages (notated as, for example, β1–4
+linkages or α2–3 linkages). Linkage differences can change
+the physical and biological properties of glycans and can be important
+in GT, glycosidase, and lectin specificities. PpGTs are particularly specific for the sugar at the reducing end
+of a sugar donor. PpGTs also have specificity for the glycosylation
+site or sequon.
+The modification of a sequon by a given ppGT is highly dependent on
+neighboring amino acids and/or its structural
+context. In fact, some ppGTs are dedicated
+to the modification of a single protein in their natural systems, while others are more general. PpGTs with more
+relaxed specificities can be used to modify diverse target proteins
+by introducing an engineered sequence of amino acids known as a glycosylation
+tag (GlycTag), into the target protein sequence. GlycTags can refer to native
+sequons that are engineered to optimize glycosylation efficiency or
+sequons that are introduced in diverse nonnative target proteins to
+enable glycosylation, similar to the addition of an affinity tag for
+protein purification. This protein specificity factor highlights the
+importance of the design and understanding of acceptor sequons to
+the bottom-up construction of synthetic glycosylation pathways. Overall,
+the classification of glycosylation systems by the topology, bond,
+and specificity of their polypeptide modification step is useful for
+synthetic biologists to design the site-specific attachment of diverse
+glycans to proteins, a key advantage of biosynthetic glycoprotein
+systems over purely chemical methods. Here we describe the mechanisms of protein glycosylation systems
+found in various domains of life with the goal of defining the parts
+that they supply to engineers for the construction of synthetic systems. Selected naturally occurring
+glycosylation systems and the parts
+they supply for synthetic glycobiology. The parts of sequons, sugar
+donors, glycosyltransferases, glycosidases, and lectins are arranged
+as they interact in OST-dependent and OST-independent glycosylation
+systems in eukaryotes or bacteria. (a) OST-dependent glycosylation
+systems in eukaryotes transfer sugars  from
+lipid-linked oligosaccharides (LLOs) to asparagine (-linked) residues within proteins in the endoplasmic reticulum. These
+sugars are then trimmed down by glycosidases and elaborated by other
+GTs in the Golgi. (b) OST-dependent glycosylation systems in bacteria
+work similarly, but -linked OSTs (-OSTs) transfer sugars to asparagine as well as -linked OSTs (-OSTs) transfer sugars to serine
+and threonine (-linked) residues in the periplasm  single-subunit OSTs. (c) Eukaryotic OST-independent
+glycosylation systems of interest for glycoengineering include mucin-type
+glycosylation (-linked GalNAc) and glycosaminoglycan
+(GAG) glycosylation (-linked xylose) in the Golgi
+as well as -linked GlcNAc glycosylation in the cytoplasm.
+(d) Bacterial OST-independent glycosylation systems of interest for
+glycoengineering primarily glycosylate autotransporter/adhesion proteins
+in the cytoplasm and are initiated by -glycosyltransferases
+(-linked Glc), the GtfA/B complex (-linked GlcNAc), or BAHT (-linked Heptose). Bacterial
+effector toxins including SetA (O-linked Glc), NleB (arginine or -linked GlcNAc), and EarP (-linked Rhamnose)
+that are secreted into eukaryotic host cells are also of interest.
+Both prokaryotic and eukaryotic cells are surrounded by a glycocalyx
+layer and use lectins to selectively bind to glycans in their environment.
+(e) Symbol key for parts of synthetic glycobiology. The Consortium
+for Functional Glycomics symbol nomenclature is used for sugar monomers.
+Polypeptide GTs are color-coded to correspond to the sugars that they
+conjugate to proteins. Summary of Protein Glycosylation Systems
+Discussed in This Review, with a Focus on Relevant Information for
+Glycoengineering sugar substrate requirements (reducing end) optimized minimal amino acid recognition motif ManGlcNAc with organism dependent mannose
+and glucose elaboration Acetamido group at the C2/galactose (Gal) Acetamido group at
+the C2/galactose (Gal) /glucose (Glc) within isotype specific sequence X-X-X-X--G/A, X-X = acidic residues Glucose (Glc) or galactose (Gal) within a 13 aa β-helix structural motif 25 aa tag within erine-rich repeat proteins (SRRP) W motif
+within host death domain-containing proteins
+and GAPDH within translation
+elongation
+factor P (EF-P) Here, we categorize protein glycosylation
+systems by the topology, chemical bond, and specificity of their polypeptide
+modification step. The specificity of the polypeptide glycosyltransferase
+(ppGT) is described by its reducing end sugar substrate requirements
+and its optimized minimal amino acid recognition motif (if known).
+The domains of life in which each ppGT naturally occurs is also listed.
+Enzymes that modify nitrogen within Arg side chains are commonly referred
+to as -linked (*). -linked
+OST-dependent glycosylation is the most well-studied type of glycosylation
+in both eukaryotes and prokaryotes. Notably,
+most eukaryotic OSTs are composed of multiple subunits with the STT3
+integral membrane protein forming the catalytic core. However, single-subunit
+OSTs have been discovered in some parasites such as (,) and () which contain multiple STT3-like proteins with
+distinct specificities. Similarly, bacterial OSTs, such as  PglB (PglB), are
+generally composed of a single subunit which is homologous to the
+STT3 catalytic domain of eukaryotic OSTs. There is a strong topological resemblance between bacterial and
+eukaryotic OST-dependent glycosylation as they both involve the cytoplasmic
+construction of an LLO that is flipped into an oxidative compartment
+(the periplasm in bacteria and the endoplasmic reticulum (ER) in eukaryotes)
+before being transferred to an acceptor sequon. The colocalization of both the LLO and the OST in the membrane
+means that polypeptide modification is only dependent on 2D diffusion
+and enables cotranslational modification in eukaryotic systems. The
+fact that bacterial OSTs are not as closely coupled to the translocon
+as eukaryotic OST-complexes, makes bacterial
+OST-dependent glycosylation more dependent on structural context and
+generally requires the placement of glycosylation sites in flexible
+regions of the protein. That said, recent
+studies suggest that the efficiency of glycosylation can be impacted
+by the secretory pathway (Sec or Tat) used to secrete the target protein, indicating that glycosylation can also occur before complete folding
+in bacterial systems. Glycans transferred by OSTs are often complex,
+as they are first built up by multiple GTs on a lipid before transfer
+to a protein. Therefore, the  transfer mechanism
+employed by OSTs have made OST-dependent glycosylation systems promising
+engineering methods to transfer large glycans structures. In
+eukaryotes, GTs use nucleotide-activated forms of -acetylglucosamine (GlcNAc) and mannose (Man) sugar donors to assemble
+a ManGlcNAc LLO that is linked to a dolichol
+pyrophosphate lipid on the cytoplasmic side of the endoplasmic reticulum
+(ER) membrane (). This LLO is then flipped into the ER lumen by a flippase enzyme,
+elaborated by GTs using dolichol-phosphate-linked Man and glucose
+(Glc) sugar donors, and then transferred to a nascent polypeptide
+chain by the OST. Except in a few rare
+cases, the sequon for -linked OSTs in eukaryotes is N-X-S/T where N is the glycosylated
+asparagine and X is any amino acid except proline. The glycan initially transferred by the OST from the LLO may be
+as complex as GlcManGlcNAc, but
+it is then processed in the ER and Golgi by glycosidases and GTs to
+create a myriad of structures that vary across protein identity, glycosylation
+sites on the same protein, cell type, disease state, and time such that only a -linked ManGlcNAc core structure is conserved among all -linked
+eukaryotic glycans. In humans, the ManGlcNAc core is generally elaborated by GTs utilizing
+nucleotide-activated sugar donors with GlcNAc, galactose (Gal), fucose
+(Fuc), and sialic acid (Sia) to form many branched, complex glycans
+resembling the biantennary, -linked glycan in . This dynamic process of glycan trimming and elaboration
+also serves as a protein proofreading system that directs misfolded
+proteins to a ER-associated degradation (ERAD) pathway. Once thought to exist only in eukaryotes,
+OST-dependent, general
+glycosylation pathways are now known to be abundant and far more diverse
+in bacteria and archaea. For example, bacteria possess
+both - and -linked OSTs. Generally,
+bacterial glycans are assembled in the cytoplasm by GTs and then flipped
+into the periplasm before being transferred in their final form by
+the OST to an acceptor protein. The best characterized and most commonly
+engineered prokaryotic glycosylation system is from the bacterium (,,) in which an -linked OST, called PglB, installs an -linked heptasaccharide (). The glycosylation
+system in  and many other bacteria
+are associated with virulence and host–pathogen interactions. There are three key differences between bacterial
+and eukaryotic OST-dependent glycosylation systems that are important
+to keep in mind for engineering strategies. First, bacterial LLOs
+are generally assembled on undecaprenyl (rather than dolichol) pyrophosphate
+lipids and the glycan linked to this LLO is generally not extensively
+trimmed and elaborated once leaving the cytoplasm. Second, the simplicity
+of single-subunit bacterial OSTs make them easier to purify and recapitulate
+outside of natural systems and facilitates post-translational modification
+of folded proteins. Finally, bacterial
+OSTs possess unique specificities for acceptor sequons and LLOs compared
+to eukaryotic OSTs. Acceptor sequons for bacterial -linked OSTs do resemble the eukaryotic N-X-S/T motif;
+however, some bacterial OSTs additionally require a negatively charged
+residue (D/E) at the X position relative to the
+glycosylated asparagine. For example, an optimized acceptor sequence, D-Q-N-A-T, has been
+identified for PglB and has been implemented as a GlycTag to direct glycosylation to
+flexible regions of proteins of interest. In terms of LLO specificity, bacterial -linked
+OSTs are known to transfer a broader array of glycan structures than
+their eukaryotic counterparts, but they do still possess unique LLO
+specificities that limit the transfer of some glycans. For example,
+naturally occurring -linked OSTs generally require
+acetylation at the C2 position of the reducing sugar. Compared to -linked OSTs, -linked
+OSTs generally possess less stringent specificities for glycans and
+more stringent specificities for peptide acceptors. Three main classes
+of bacterial -linked OSTs with clear applicability
+to synthetic glycobiology have been described: PilO, PglL, and PglS
+which were first identified in , , and , respectively. Each of these classes
+are known to glycosylate pilin proteins within their native hosts.
+The acceptor sequences of the PilO from  and the PglL from  have been
+reduced to GlycTags of a C-terminal TAWKPNYAPANAPKS sequence and the so-called minimal optimal -linked recognition (MOOR) motif WPAAASAP, respectively. PglS glycosylation has only been demonstrated to target
+its native pilin-like ComP. While these
+complex GlycTag sequence and structure requirements make it more difficult
+to direct glycosylation by -linked OSTs onto recombinant
+proteins, these enzymes still hold great promise for engineering due
+to their promiscuity in the sugars that they can attach to proteins. For example, PglS is the only OST known to
+be able to transfer LLOs with glucose at the reducing end and PglL has been shown to transfer a single ′-diacetylbacillosamine from a nucleotide-activated
+sugar. While archaea possess both - and -linked protein glycosylation systems,
+most research has been dedicated
+to the -linked OST-dependent glycosylation systems
+in these organisms. Interestingly, archaeal -linked
+OST-dependent systems use both dolichol-phosphate and dolichol-pyrophosphate
+LLOs, attach a greater variety of sugars than bacteria and eukaryotes,
+and are even known to attach multiple distinct -glycans
+to defined positions onto a single protein. While the diversity of tools offered by archaeal glycosylation systems
+holds great theoretical potential for biosynthesis, the difficulties
+associated with culturing and manipulating these organisms has prevented
+the engineering of those systems until very recently. Several previous works provide systematic descriptions of archaeal
+glycosylation systems and the full diversity of known prokaryotic protein glycosylation
+systems. Much progress has been
+made in the last two decades in elucidating the diversity, importance,
+and utility of OST-independent glycosylation systems in both eukaryotes
+and bacteria (). For synthetic glycobiology, OST-independent pathways provide three
+key advantages that make them complementary to OST-dependent systems. First, most OST-independent systems do not require
+lipid-associated GTs or sugar donors, making them easier to synthesize
+and manipulate outside of their native hosts. Second, OST-independent
+systems generally do not require transporting target proteins or sugar
+donors across membranes, enabling the synthesis of glycoproteins in
+the cytoplasm of . Third, OST-independent systems install sugars in a stepwise
+fashion by sequentially transferring monosaccharides from sugar donors,
+allowing for greater modularity and freedom of design that is unconstrained
+by OST specificities for LLOs. Compared with OST-dependent pathways,
+OST-independent pathways are more diverse in their topologies, sugar
+constituents, and possible amino acid linkages (including Asn, Arg,
+Thr, Ser, Tyr, hydroxylysine, hydroxyproline, Trp, and Cys). Several
+systematic reviews and useful visualizations of the diversity of glycosylation systems are available. Glycosylation
+systems of greatest interest to synthetic glycobiology are discussed
+below, including: -GalNAc (mucin-type) glycosylation, -GlcNAc glycosylation, glycosaminoglycan (GAG) biosynthesis,
+cytoplasmic bacterial glycosylation systems (such as -glycosyltransferases or NGTs), and bacterial effector toxin GTs
+(). The
+most characterized OST-independent pathway is the -GalNAc glycosylation system found in higher eukaryotes that modifies
+Ser and Thr residues of proteins. In
+humans, a family of 20 polypeptide -acetylgalactosaminyltransferases
+(GalNAcTs) located in the ER and Golgi utilize nucleotide-activated
+sugar donors to glycosylate Ser and Thr residues on specific protein
+substrates, including the extensively modified mucin family of glycoproteins. A combination of quantitative glycoproteomics and genetic knockouts as well as  characterization methods have revealed that these GalNAcTs
+possess unique, but partially overlapping polypeptide acceptor specificities
+that depend on primary amino acid sequence, presence of nearby glycans,
+colocalization in the Golgi, and protein structure. These unique specificities
+provide cells with the ability to dynamically control the glycoproteome and present synthetic glycobiologists with a diverse toolkit to
+construct glycoproteins. After initiation by GalNAcTs, -GalNAc residues are often sequentially elaborated to a wide variety
+of structures containing Gal, Sia, GalNac, Fuc, and GlcNAc that play critical roles in human biology and can affect protein
+stability, proteolytic processing, immunogenicity, and trafficking. The synthesis of -linked glycosaminoglycans
+(GAGs)
+also takes place within the ER and Golgi of higher eukaryotes. GAGs
+are long, linear polysaccharides that form the glycan moieties of
+proteoglycans found on cell surfaces or secreted into the extracellular
+matrix. GAGs modulate cell-signaling, tissue growth, cytokines, and
+chemokines, but much of the interest in GAGs for engineering has been
+due to the anticoagulant properties of heparin sulfate (a GAG structure)
+which binds to and activates antithrombin. GAG synthesis is initiated by one of up to two -xylosyltransferases (-XylTs) whose specificities
+are not fully understood, but are known to prefer serine residues
+immediately flanked by glycines with nearby acidic residues in the
+X to X positions. This xylose (Xyl) residue is then sequentially
+elaborated by three GTs producing a tetrasaccharide linker of the
+form glucuronic acid (GlcA)-β1,3-Gal-β1,3-Gal-β1,4-Xyl-β1-O-Ser
+where the proximal Gal residue must be phosphorylated by a glycan-modifying
+enzyme to permit extension. This linker
+can then be further extended to form heparan sulfate, chrondroitin
+sulfate, or dermatan sulfate, which are composed of sulfated disaccharide
+repeat units of (GlcNAc-α1,4-GlcA-β1,4-), (GalNAc-β1,4-GlcA-β1,3-),
+and (GalNAc-β1,4-IdoA-β1,3-), respectively, where IdoA is iduronic acid. There are two
+other GAG structures synthesized in vertebrates: keratan sulfate (which
+can be linked to oligosaccharide -linked glycans, -GalNAc-type glycans, and single -Man
+residues) and hyaluronic acid (which is not covalently attached to
+proteins). Glycosylation machinery producing
+GAG or GAG-like polymer backbones has also been discovered in bacteria,
+providing promising enzymes for GAG synthesis in microbes, particularly
+when exact sulfation patterns are not required. Eukaryotes also possess a soluble -linked -acetylglucosamine transferase (OGT) which
+installs GlcNAc
+moieties onto Ser and Thr residues of diverse target proteins, playing
+important roles in stress response and disease states including cancer,
+diabetes, and neurodegeneration. The three splice variants of OGT in humans, sOGT, ncOGT, and mOGT,
+are found in the cytoplasm, nucleus, and mitochondria, respectively. The OGT glycosylation system is somewhat unique
+because its polypeptide modification step is regularly reversed by
+the -GlcNAcase (OGA) enzyme which removes -GlcNAc residues installed by OGT. The dynamic interplay between OGT and OGA as well as protein
+kinases and phosphatases for occupation of Ser and Thr residues allows
+cells to modulate complex signaling cascades. Many structural, proteomic, and biochemical studies have
+endeavored to characterize the peptide acceptor specificity of OGT,
+revealing a complex set of rules and interactions that determine -GlcNAc modification. An optimal recognition motif
+of PPVSR has been identified; however,
+the complexity of -GlcNAc recognition means that
+the modification of a given sequence still requires empirical measurement
+or at least the application of computational techniques, reviewed
+here. The promiscuity of OGT for azido-sugars
+or the derivatization of -GlcNAc sugars with azido-sugars
+has been exploited to learn much about the functions of these systems
+in their native cellular contexts, reviewed here. In addition to its -GlcNAc transferase
+activity, OGT is also known to catalyze the addition of -linked glucose and -linked GlcNAc as well as the proteolytic
+cleavage of the human protein HCF-1. Actinobacillus pleuropneumoniae Recently, several - and -linked
+glycosylation systems that function in the bacterial cytoplasm have
+been discovered. These systems often glycosylate extracellular adhesion
+and autotransporter proteins that facilitate adherence of pathogenic
+bacteria to human cells.-glycosyltransferases
+(NGTs) are one such class of enzymes that have been recently characterized and have elicited great interest from the glycoengineering community
+for their ability to initiate -linked glycosylation
+in the bacterial cytoplasm when heterologously expressed in . NGTs bear structural homology to eukaryotic OGTs, but were first
+identified as part of an extracellular adhesion operon in , founding
+a new functional class of GTs that install monosaccharides onto asparagine
+residues in the cytoplasm using UDP-Glc or UDP-Gal as soluble sugar
+donors. In some species, the single
+glucose residues installed by NGTs are extended into a dextran polymer
+by a glucose polymerase (α 1,6 GlcT). Despite their lack of homology to OSTs, NGTs share the same general
+acceptor motif, N-X-S/T. Rigorous characterization
+of the acceptor specificity of NGTs using glycoproteomics and  as well as cell-free methods has illuminated detailed rules for the prediction
+and design of sequons for various NGTs. So far, the NGT from  (ApNGT) has been the most
+extensively characterized and most often used for glycoengineering
+efforts, discussed below. Other
+OST-independent glycosylation systems that also act on adhesions
+and autotransporters but have little homology to NGTs, continue to
+emerge and may be of interest for future applications in synthetic
+glycobiology. For example, the -linked autotransporter
+heptosyltransferase (BAHT) GTs which glycosylate autotransporter proteins
+with heptose residues in Gram-negative bacteria have been shown to
+target a 13 amino acid structural motif that could be used to direct
+modification for glycoconjugate vaccines. Another -linked cytoplasmic
+glycosylation system initiated by a dimeric GT called GtfA-GtfB modifies
+serine-rich repeat (SRRP) adhesion proteins with α-linked GlcNAc
+in  and  bacteria, has been shown to modify a 25 amino-acid tag and could
+provide methods to display various glycans on bacterial surfaces. Finally, effector GT toxins
+that are secreted into host cells by
+bacteria to facilitate infection and pathogenesis may provide GTs
+of interest for synthetic systems. For example, -linked effector glucosyltransferases
+from  and SetA from  have recently been characterized and used to modify recombinant
+proteins using nine amino acid (YAPTVFDAY) and seven amino acid (GKTTLTA) GlycTag
+sequences, respectively. Other arginine ()-linked
+effector -acteylglucosaminyltransferases, SseK in  or NleB in  and , modify eukaryotic proteins involved
+in metabolism and cell signaling. However,
+these -linked effector GTs as well as the -linked EarP glycosyltransferase that modulates polyproline
+synthesis by modification of EF-P in , , and () appear to be dedicated to the modification
+of a single or a few substrates and are of greater interest for antibiotic
+intervention than use in synthetic protein
+glycosylation systems. Synthetic Glycosylation Systems In this section, we describe key paradigms and examples of how
+the parts of synthetic glycobiology outlined above have been assembled,
+repurposed, and engineered to produce glycoproteins. Because the host
+organisms in which these glycosylation pathways are constructed strongly
+affect their challenges, advantages, and applications, we describe
+examples of synthetic glycosylation pathways developed in mammalian,
+insect, plant, yeast, and bacterial cells, cell-free, and chemoenzymatic
+backgrounds. This order represents a spectrum from the remodeling
+of natural systems that already function similarly to human glycosylation
+pathways where genes must generally be knocked out to obtain structures
+generally desired for therapeutics (eukaryotic systems shown in ) to the bottom-up
+construction of highly engineered synthetic glycosylation systems
+where many new parts must be assembled (bacterial, cell-free, and
+chemoenzymatic systems shown in ). Synthetic glycosylation systems constructed by remodeling
+natural
+systems. Key examples of synthetic glycosylation systems generated
+by remodeling naturally occurring glycosylation pathways in mammalian,
+insect, plant, and yeast cells. (a) Mammalian glycosylation systems
+are often remodeled to produce protein therapeutics. Much effort has
+been directed toward knocking out or supplementing GTs and enzymes
+involved in sugar donor metabolism to tune glycosylation structures
+and produce more homogeneous structures. More dramatically, a highly simplified trisaccharide glycan known
+as GlycoDelete has been generated using these methods. Remodeling mammalian pathways have also generated
+libraries of cells displaying various glycosylation structures. (b) Insect cell and insect cell-based baculovirus glycosylation
+systems have been remodeled to obtain full-length bianntenary N-linked
+glycans without α1,3 fucose residues. (c) Remodeled plant glycosylation systems have reduced arabinosylation
+of prolines and produced human -GalNAc glycans and
+full-length bianntenary -linked glycans. (d) Extensive remodeling of yeast glycosylation
+pathways have worked to eliminate oligo-mannose structures from - and -linked glycans and introduce human
+terminally sialylated, full-length human -linked
+and -linked glycans. Synthetic glycosylation systems constructed from the bottom-up.
+Key examples of synthetic glycosylation systems constructed from the
+bottom-up in bacterial cells, cell-free, and chemoenzymatic backgrounds.
+(a) The introduction of eukaryotic glycosylation machinery with the
+ppGTs PglB, human GalNAcT2, and human OGT into  bacteria have enabled the synthesis of glycoproteins
+modified with the eukaryotic trimannose core, the human -linked Core 1 structure, and -GlcNAc, respectively. The coexpression of -linked and -linked OSTs with bacterial -antigen pathways in  have
+enabled the production of bacterial glycoconjugate vaccines. The introduction of synthetic glycosylation
+pathways with NGTs as ppGTs results in the synthesis of diverse, minimal
+glycan motifs with applications in vaccines and therapeutics. (b) The recapitulation and construction
+of glycosylation systems in cell-free platforms has enabled the  expression of OSTs in nanodiscs, the rigorous characterization of ppGT specificities, the rapid discovery of new synthetic glycosylation pathways, and the on-demand production of glycosylated
+therapeutics and vaccines by cell-free glycoprotein synthesis (CFGpS). (c) Chemoenzymatic methods have been developed to install full-length
+human glycans. Primary strategies include: (i) endoglycosidase-mediated
+transglycosylation for remodeling glycans
+produced in yeast or CHO cells; (ii) enzymatic “tag and modify”
+approaches which use engineered bacteria or purified enzymes to install -linked GlcNAc,-linked GlcNAc from an exoglycosidase-treated  heptasaccharide,-linked Glc installed by NGT, or an -linked GlcNAc installed by NGT and acetyltransferase GlmA which can then be elaborated to full-length -linked glycans using transglycosylation; (iii) chemical
+“tag and modify” methods that directly modify cysteine
+or noncanonical amino acids within proteins to install glycan handles
+that can be further elaborated by transglycosylation; and (iv) total chemical synthesis approaches that use solid phase-peptide
+synthesis to directly incorporate glycosylated amino acids into peptides
+which can then be linked together using native chemical ligation approaches. Synthetic
+Glycosylation Systems in Mammalian Cells Despite the many
+efforts to characterize and harness microbial protein
+glycosylation systems during the last two decades, the majority of
+glycobiology and glycoengineering efforts still focus on mammalian
+systems. Nearly all glycoprotein therapeutics are currently produced
+at the industrial scale in Chinese Hamster Ovary (CHO) cells, due in large part to the similarity between
+CHO glycosylation structures and those in the human body. The importance of the glycosylation structure located at Asn297
+on the constant region of human immunoglobulin G (IgG) antibodies
+for antibody-dependent cell-mediated cytotoxicity (ADCC), protein
+trafficking, and circulation time, make the -linked glycosylation systems in mammalian cells the most
+extensively studied and engineered protein glycosylation systems.
+For decades, glycosylation patterns in CHO cells have been closely
+monitored and controlled during development and production of protein
+therapeutics through the use of specific culture conditions and proprietary
+cell lines. The first methods for genetically
+controlled glycosylation in CHO cells were based on lectin screens
+that identified random mutants of cultured mammalian cells. However, the advent of improved gene editing
+strategies and increased knowledge of glycosylation pathways have
+substantially increased the ability to genetically define glycosylation
+structures in mammalian cells by the introduction of new glycosylation
+sites as well as the knock-in and knockout
+of specific glycosylation related genes such as GTs, metabolic enzymes,
+and glycosidases. A key aim for genetic
+glycoengineering of mammalian cell lines has been to produce more
+homogeneous glycosylation patterns. Proteins derived from natural
+systems and nonengineered cell lines are generally composed of a heterogeneous
+mixture of glycosylation structures. This heterogeneity complicates
+drug approvals and the optimization of glycosylation structures for
+desired purposes. Three exemplary engineering
+studies have recently addressed this problem by engineering CHO cells
+to produce more homogeneous glycans. The first study knocked out MGAT1,
+which adds a β1–2 linked GlcNAc to the α1–3
+arm of the trimannose core, and introduced an endoglycosidase (EndoT)
+to truncate multiantennary human glycans to a single GlcNAc residue
+which can then be elaborated to a much more homogeneous Siaα2–3-Galβ1–4-GlcNAc
+trisaccharide (called GlycoDelete). While
+this structure cannot fully recapitulate the ADCC binding of full-length
+human glycans, it does promise to simplify approval of antigen-neutralizing
+antibodies. Another pair of studies have used
+large zinc-finger nucleases and CRISPR-Cas9 genetic editing libraries
+to strategically introduce GT knockouts and knock-ins to achieve more
+homogeneous, full-length, human-like glycosylation structures in CHO
+cells for applications in IgGs and enzyme replacement therapies. While the engineering of -linked glycoproteins
+has received the most attention in mammalian systems, platforms have
+been developed to produce and display -linked glycoproteins
+using mammalian cells. There is gathering evidence that -GalNAc glycosylation structures can be important for glycoprotein
+therapeutic efficacy. However, the engineering of -GalNAc pathways in mammalian cells thus far has been primarily limited
+to the development of research tools to study natural glycosylation
+pathways. Another area of research has
+involved the display of -linked,-GalNAc, and GAG pathways on the surface of mammalian
+cells. These cells can then be used to study the function of glycosylation
+biosynthesis genes and to characterize the biological function and
+properties of certain glycosylation structures. Now that these research
+tools and the design rules they have generated are established, it
+is expected that future glycoengineering efforts will involve greater
+engineering of -linked glycoproteins. Despite
+advances in the engineering of mammalian glycosylation
+systems, limitations remain in the variety of glycosylation structures
+that can be generated in these systems (due to the limited set of
+nucleotide sugars and the inability to knockout some essential glycosylation
+pathways while maintaining cell viability), the ability to obtain
+homogeneous products, and the high cost and development time associated
+with mammalian cell culture. These limitations have led to the exploration of alternative organisms
+and the construction of synthetic glycosylation pathways, described
+below. Synthetic Glycosylation Systems in Insect Cells Drosophila
+melanogaster, Trichoplusia ni Insect
+cells lines (S2, High Five, and Sf9 derived from , and , respectively), as well as insect-based baculovirus expression vector
+systems (BEVSs), have long been of interest for the production of
+glycoproteins as they have the potential to offer more flexibility
+in glycosylation system design and lower costs than mammalian cells. Though the vast majority of biologics are made
+in CHO cells, two vaccines protective against cervical cancer and
+influenza, as well as an adenovirus gene therapy treating familial
+lipoprotein lipase deficiency produced in insect cells have been already
+approved for clinical use. Thus, it
+is possible that the glycoengineering of insect cells could unlock
+the production of traditional protein therapeutics in this desirable
+expression host. While insect cells do contain sufficient enzymatic
+machinery to produce full-length sialylated -glycans,
+the reliable production of human-like glycoproteins generally requires
+several glycoengineering strategies (reviewed here) including the knockout of the β-hexosaminidase FDL; inhibition
+of endogenous α1–3 fucosylation machinery; and addition of machinery to install GlcNAc, Gal, and sialic
+acids onto the -linked
+ManGlcNAc core. -linked
+glycosylation has not yet been extensively engineered in insect cells;
+however, insect cells do contain the endogenous machinery to make
+human-like -GalNAc glycans. While BEV systems obtain high-yields and enable faster
+production and development timelines, they present other challenges
+including genetic instability as well as the additional process complexity
+and contamination risk associated with using a live virus. Improvements in genetic engineering methods
+may enable further customization of stable insect cell lines and expedite
+glycoengineering efforts, thereby increasing the reliability and adoption
+of insect-cell based systems for glycoprotein production. Synthetic Glycosylation Systems in Plants Plants may
+offer a promising low-cost glycoprotein manufacturing host that is
+more compatible with distributed manufacturing than traditional fermentation-based
+production methods. Plants can generally
+produce correctly folded human proteins and contain similar glycosylation
+systems to those found in mammalian cells. Despite containing nonhuman
+glycan modifications, an approved enzyme replacement therapy, glucocerebrosiase
+(taliglucerase alfa), is currently produced in carrots. However, it is likely that the wide adoption
+of plant-based glycoprotein therapeutic production will require glycoengineering
+plant cells to humanize their glycosylation patterns. Notably, the analogous glycosylation pathways
+in plants are considerably simplified compared to mammals. There is
+no -GalNAc glycosylation in plants and -glycans generally terminate with -linked ManGlcNAc that may be modified with bianntenary GlcNAc
+residues. These simplified pathways
+and the apparent tolerance of plants for heterologous glycosylation
+pathways offer excellent opportunities for  construction of desired glycosylation systems with a freedom of
+design and homogeneity that may be more difficult to achieve in mammalian
+systems. Thus far, glycoprotein engineering
+in plants (reviewed thoroughly here) has focused
+on (i) ensuring homogeneous expression of -linked
+GlcNAcylated trimannose by removal of β-hexosaminidases; (ii) the removal of nonhuman sugar linkages
+including β1–2 Xylose, α1–3 Fucose, arabinosylated hydroxyproline, and Lewis A structures; and (iii) the addition of metabolic machinery and human
+GTs to obtain human-like, sialylated - and -glycans. Similarly to the GlycoDelete strategy in mammalian cells, plants
+were also recently engineered to generate a minimal trisaccharide. The end result of these works is the ability
+to produce glycoprotein therapeutics in a number of model plant and
+plant cell systems (such as , , and ) with highly similar glycosylation to mammalian systems. Key remaining challenges lie in the optimization
+of homogeneity and production levels without affecting plant fitness
+and control of potentially immunogenic nonhuman hydroxylproline modifications. Synthetic Glycosylation Systems in Yeast Due to its
+low fermentation costs, fast doubling time, ability to secrete products
+at high titers, and genetic tractability, yeast strains are in widespread
+use in industrial biotechnology to produce small molecules as well
+as approved protein therapeutics, including insulin and glucagon.
+There have been many efforts to expand yeast production methods (usually
+in the strains  and ) to glycoprotein therapeutics in academia and
+industry. While early steps in the -glycosylation
+pathways of yeast and mammalian cells are topologically similar, yeast
+lack much of the machinery to trim down and elaborate the mannose
+glycans transferred by the OST that is required to arrive at human-like
+bianntenary glycans terminated in sialic acid (see ). Furthermore, essential -linked glycosylation pathways
+in yeast and mammalian cells are very different, constructing mannose
+chains rather than mucin-type -GalNAc glycans. As in insect and plant-based systems, yeast glycoengineering efforts
+(reviewed here) have focused on the removal
+of endogenous machinery producing potentially immunogenic glycosylation
+structures and knocking in heterologous glycosylation enzymes to construct
+human-like glycan motifs. Specifically, the hypermannosylation of -glycans can be removed by the knockout of mannosyltransferases and -mannosylation can be
+partially reduced (but not fully eliminated) by knockout of PMT genes
+and addition of small molecular inhibitors. A combinatorial approach was used by Gerngross and colleagues to
+knock in mannosidases as well as human galactosyltransferases and
+sialic acid installation machinery in order to create “humanized”
+yeast that can, in some cases, produce homogeneous, sialic acid-capped,
+human-like -glycans on protein therapeutics. Human-like -GalNAc pathways have also been introduced
+into yeast. Interestingly, the introduction
+of the STT3D OST from  into yeast
+successfully increased -glycan occupancy, likely
+by augmenting the endogenous yeast OST activity and specificity. While yeast-based glycoprotein production systems
+have continued to receive significant investment and are nearing commercialization,
+some concerns remain regarding the presence of -mannosylation
+structures that cannot be eliminated while maintaining cell viability,
+and FDA approval of molecules produced in glycoengineered yeast platforms
+has not yet occurred. Synthetic Glycosylation
+Systems in Bacteria Since the
+functional recapitulation of the -glycosylation system in , the field of bacterial glycoengineering has
+grown rapidly. Laboratory  strains lack native glycosylation machinery, providing a blank canvas for the modular construction and
+control of glycosylation pathways. This bypasses the heterogeneity
+and design limitations imposed by the endogenous and often essential
+glycosylation pathways of eukaryotic expression systems for the production
+of novel and homogeneous glycoforms. As bacterial
+glycoengineering continues to advance, it is now possible to imagine
+developing  as a low-cost, high-titer,
+and fast-growing expression host to produce glycoprotein therapeutics, motivating the development of new synthetic glycosylation systems
+and biosynthetic parts for the construction of therapeutically relevant
+glycans in bacteria. Most bacterial
+glycoengineering efforts so far have focused on the use of the bacterial
+OSTs to transfer glycans in living  by
+hijacking its lipopolysaccharide (LPS) synthesis system ().  and many other bacteria naturally synthesize
+LPS by building diverse polysaccharide structures on LLOs within the
+cytoplasm which are then flipped into the periplasm by the flippase
+Wzx. The sugar structures on these LLOs
+can then be polymerized by the enzyme Wzy to form a larger undecaprenyl-linked -antigen. This -antigen is then transferred
+onto a lipid A carrier by the enzyme WaaL before being displayed on
+the outer membrane. This process can
+be engineered in laboratory strains of  by heterologously expressing an LLO biosynthesis pathway and a bacterial
+OST. This OST will transfer glycans from these LLOs onto target proteins
+bearing GlycTag acceptor sequences. This
+process can be optimized by knocking out WaaL in the host strain so that LLOs accumulate on the periplasmic
+membrane. This strategy for constructing synthetic OST-dependent
+glycosylation
+systems has proven to be a powerful technology, enabling the site-specific
+installment of diverse glycans onto diverse heterologous proteins
+both  and . By overexpressing different naturally occurring
+or synthetic bacterial -antigen biosynthesis gene
+clusters, a wide variety of glycans can be installed using this method.
+For example, a single study demonstrated the transfer of nine unique
+glycans by the bacterial -linked OST PglL. Due to the inherent compatibility of bacterial -antigen pathways with this system and the somewhat relaxed
+sugar specificity of bacterial OSTs, most applications of OST-dependent
+bacterial glycosylation systems have sought to synthesize vaccines
+against pathogenic bacteria, with vaccines against  and  in clinical trials. The discovery and engineering of -linked OST variants with greater promiscuity for acceptor sequons (not requiring a negatively charged
+residue at the X position) or LLO donors (not requiring an acetyl group at the C2 position
+of the reducing sugar) has expanded the set of glycoproteins that
+can be generated using this strategy. In pioneering work, the eukaryotic
+core ManGlcNAc glycan has also been successfully
+transferred by overexpressing part of the yeast LLO biosynthesis pathway, opening the door to the production of glycoproteins
+with human-like glycosylation. Unfortunately, even after optimization, current bacterial -linked
+OSTs still exhibit low turnover rates with LLOs containing the GlcNAcβ1,4GlcNAc
+chitobiose core (found in all eukaryotic -linked
+glycans) at the reducing end. Future
+protein engineering and phylogenetic screening efforts are expected
+to reveal new -linked OSTs that can enable the more
+efficient synthesis of eukaryotic glycoproteins using bacterial systems. OST-independent glycosylation systems such as NGTs, OGTs, and GalNAcTs
+have been far less explored for bacterial glycoengineering than OST-dependent
+systems. As previously described, the stepwise and lipid-independent
+nature of these systems may provide complementary technologies to
+OST-dependent techniques. NGTs are particularly
+promising glycoengineering tools because they are the only known cytoplasmic
+enzyme class capable of installing glycans onto asparagine residues
+at eukaryotic-like N-X-S/T sequons. For example, ApNGT
+has been functionally expressed in  where
+it was found to glycosylate several autotransporter proteins, some
+native  proteins, and recombinant human
+erythropoietin (EPO). Other studies
+have developed short, optimized GlycTag sequences for NGT and have shown that the modification of a target
+protein with these GlycTags (such as GGNWTT) can successfully direct
+efficient NGT glycosylation of diverse recombinant proteins  and . Later studies have found that
+the single glucose residue installed by NGT can be elaborated to a
+dextran polymer (which could be useful
+for vaccines against pathogenic bacteria that use NGTs to adhere to
+human cells), polysialic acids (which
+may prolong the serum-half-life of small therapeutic proteins), -acetyllactosamine (LacNAc), and other fucosylated and sialylated forms of lactose by overexpression of elaborating GTs within the cell. This sequential elaboration technique may also
+allow an NGT-based system to circumvent the limits on glycan structure
+found in OST systems. However, the inability of NGTs to utilize UDP-GlcNAc
+or UDP-GalNAc sugar donors has complicated their application to the
+production of authentic -linked and -linked human glycans which have GlcNAc and GalNAc as their reducing
+end sugars, respectively. Thus far, naturally occurring and engineered
+NGTs have been shown to utilize UDP-glucosamine (GlcN), UDP-Glc, UDP-Gal, UDP-Xyl, GDP-Glc, and GDP-Man. The discovery or engineering of NGTs capable of transferring these
+acetylated sugars remains an active area of research. Aside from NGTs, human -GalNacTs and OGTs have
+also been transferred to  in order to
+produce glycoproteins in bacterial systems. Specifically, GalNAcT2
+has been transferred to  with oxidizing
+cytoplasms to enable modification with -GalNAc. This system was later improved to enable the
+modification of proteins with Core 1 (Gal-GalNAc-Ser/Thr) within cells.-GlcNAc modified proteins
+have also been produced in  by coexpression
+of OGT with a target protein. Cell-Free
+Synthetic Glycosylation Systems Cell-free
+protein synthesis (CFPS) systems use cell lysates, amino acids, nucleic
+acids, and cofactors to produce proteins without intact cells. First used to decipher the genetic code in the 1960s and throughout the late 20th century for fundamental
+biology studies, crude lysate based-CFPS technologies experienced a technical renaissance
+in the mid-2000s with the ability to use less costly reagents, sustain synthesis for days, produce protein in g/L quantities, and make
+far more diverse products including integral membrane proteins, proteins with noncanonical amino acids, toxic proteins, proteins containing multiple disulfide bonds, portable diagnostics, and even educational kits. Now in use across the microliter and industrial
+scales, CFPS reactions are scalable
+over 6 orders of magnitude. The compatibility
+of CFPS with 96-well plates, liquid handling robots, and microfluidic
+platforms provides an attractive high-throughput protein expression
+platform. While no FDA-approved protein
+therapies have been made in CFPS so far, cell-free systems still hold
+great promise for glycoengineering because they serve as an intermediate
+point between bacterial systems and completely purified  synthesis, enabling the production and study of complex
+biological molecules with greater control and simplicity of handling.
+Although certain CFPS systems based on mammalian cell lines allow
+for some level of glycosylation that can be increased by the addition
+of microsomes, CFPS systems based on bacterial lysates (the most well-described,
+economically viable, and highest-yielding CFPS system) were unable
+to produce glycoproteins until recently. Bacterial cell-free
+protein glycosylation systems introduce glycosylation machineries
+from across the domains of life into bacterial lysates. In 2011, the
+first bacterial cell-free glycoprotein production system was developed
+by adding purified PglB and LLOs to a completed -based CFPS reaction. Building upon this work, a single-pot, Cell-free Glycoprotein Synthesis
+(CFGpS) platform was developed that simultaneously synthesized and
+glycosylated target proteins . In this study, CFGpS was used to install a
+variety of glycans including the  heptasaccharide
+and the eukaryotic core ManGlcNAc onto glycoproteins
+by overexpressing plasmids encoding PglB and the
+LLO biosynthesis pathways in the bacterial chassis strain before lysis
+and then expressing the target protein in CFPS reactions containing
+these lysates. This all-in-one CFGpS
+platform has recently been used to synthesize a variety of glycoconjugate
+vaccines using freeze-dried lysates that can be rehydrated at the
+point-of-care by overexpressing various bacterial -antigen gene clusters. Whereas
+the CFGpS method utilizes enzymes and LLOs synthesized
+in living cells to produce preparative quantities of glycoproteins , other efforts in cell-free systems have sought
+to use the flexibility and throughput of CFPS to better understand
+and engineer synthetic glycosylation pathways. For example, one study
+overcame the difficulties associated with expressing OSTs (which are
+integral membrane proteins containing with 13 transmembrane helices)
+in living bacterial cells by expressing several active bacterial -linked OST homologues in CFPS by supplementing extracts
+with protein–lipid nanodiscs. Other works have focused on the development of OST-independent cell-free
+glycosylation systems based on NGTs, OGTs, GalNAcTs, . to completely decouple glycosylation pathway construction from
+living cells by using enzymes generated in CFPS to build glycans step-by-step
+from sugar donors. A recent study in OST-independent glycosylation
+systems used CFPS and high-throughput mass spectrometry of self-assembled
+monolayers to develop a platform for Glycosylation Sequence Characterization
+by Rapid Expression and Screening (GlycoSCORES). GlycoSCORES has been used to rigorously characterize the acceptor
+sequence specificity of NGTs, GalNAcTs, and human OGT and then leverage
+this information to design GlycTags that were more efficiently modified
+by ApNGT than naturally occurring glycosylation sites, both  and in the  cytoplasm.
+The GlycoSCORES method has also been adapted to analyze intact glycoproteins,
+enabling the high-throughput synthesis and analysis of target protein
+variants with glycosylation sites at different positions. While GlycoSCORES enabled optimization
+of the initiating step of
+glycosylation, CFPS has also been used to develop a method for multienzyme
+Glycosylation Pathway assembly by Rapid  Mixing
+and Expression (GlycoPRIME). The GlycoPRIME
+system uses CFPS to enrich crude bacterial lysates with GTs which
+are then combined in a mix-and-match fashion to construct new glycosylation
+pathways. In this way, 37 putative synthetic glycosylation pathways
+initiated by ApNGT were rapidly tested ,
+leading to the development of biosynthetic routes to 23 distinct glycosylation
+structures. These pathways were then translated to the cytoplasm of
+living bacteria to produce sialylated IgG Fc or to a one-pot CFPS-driven
+CFGpS system where all enzymes and the target protein were simultaneously
+synthesized . The continued development of cell-free glycosylation systems will
+enable new applications in GT characterization and engineering, biosynthetic
+pathway prototyping, and on-demand production of therapeutics and
+vaccines. Chemoenzymatic Protein Glycosylation Methods While
+biosynthetic methods for glycoprotein production can be operated at
+large scales and take advantage of endogenous protein synthesis machinery,
+they often result in heterogeneous mixtures of various glycoforms.
+These heterogeneous mixtures complicate structural and functional
+studies as well as the characterization and approval of therapeutics. To address this problem, many chemical and
+chemoenzymatic synthesis strategies have been developed to produce
+structurally homogeneous glycoproteins. This section discusses key
+methodologies employing chemical synthesis methods for glycoprotein
+research and production. The reader can find more detailed reviews
+elsewhere. One way to synthesize
+homogeneous glycoproteins is to remodel native glycan structures,
+typically -glycans, found on recombinantly produced
+proteins (usually derived from CHO or yeast cells). Glycans can be
+“polished”  by adding exoglycosidases
+and/or GTs to edit glycans in a user-defined
+way. An advantage of performing these polishing steps  is the ability to incorporate abiological or modified sugar monomers
+or PEGylation as a strategy for functionalization. However, achieving homogeneous, human -glycosylation
+structures generally requires that the native glycan is enzymatically
+trimmed to the reducing end GlcNAc residue and then built back up
+to create the desired uniform structure using glycosyltransferases
+to sequentially add sugars or by transferring
+a chemically synthesized glycan  using an
+endoglycosidase. Specifically, a class
+of endoglycosidases called endo-β--acetylglucosaminidases
+(ENGases) that naturally cleave -glycans from proteins
+between the reducing end GlcNAcs have been repurposed to catalyze
+the reverse reaction to form a glycosidic bond between the released -glycan and the GlcNAc residue on the protein. One particular benefit of this synthetic method
+is the conservation of the native sugar linkages. This technology,
+known as transglycosylation, has become an increasingly efficient
+synthesis strategy through the use of synthetic sugar oxazolines as
+improved glycosyl donors and the discovery
+of mutant ENGases with more specific activities. A similar, but more “bottom-up” application
+of the
+transglycosylation approach (, enzymatic “tag
+and modify”) is to obtain the protein-linked monosaccharide
+substrate for ENGases from bacterial cells or directly from an  enzymatic reaction rather than by truncating a
+eukaryotic -glycan. For example, PglB can be used to install a single -GlcNAc (using
+synthetic lipid substrates or trimming
+down a larger glycan installed in living ()) which is then elaborated to a eukaryotic
+glycan using transglycosylation methods. Transglycosylation has been
+used to elaborate a protein-linked -GlcNAc residue
+installed by OGT in living bacteria and
+a peptide-linked -Glc installed by ApNGT to generate
+eukaryotic-like -glycans. A variation of this method using an engineered NGT (ApNGT) to install GlcN along with an acetyltransferase (GlmA) enabled
+the synthesis of an authentic human -linked glycopeptide
+with GlcNAc at the reducing end. The
+discovery of NGT homologues with unique and conditionally orthogonal
+peptide acceptor specificities combined with transglycosylation strategies
+has recently enabled the sequential, site-specific installation of
+multiple distinct glycans on a single target protein. While further efforts are needed to enhance efficiency
+of such an approach, this advances a new concept for synthesizing
+defined glycoproteins for research and therapeutic applications. The incorporation of specific natural and noncanonical amino acids
+at desired glycosylation sites can also provide chemical handles for
+modification of proteins. This chemical “tag and modify”
+strategy has been used with a wide variety of chemistries and reactive
+amino acids, including cysteine residues or noncanonical amino acids
+carrying azide–alkyne click chemistry handles. In one particularly compelling example, dehydroalanine
+(Dha) residues inserted using an orthogonal translation system in  were harnessed to generate stabilized radicals
+that could be used to introduce many post-translational modifications
+including both - and -linked GlcNAc
+residues that differ only by one carbon from natural structures. The modification of both natural and noncanonical
+amino acid handles has permitted the site-specific installation of
+multiple distinct glycans. In
+addition to modifying recombinant proteins, these glycan remodeling
+tools can be interfaced with chemical peptide synthesis methods. For
+a few glycoproteins, complete chemical synthesis of homogeneous glycoproteins
+has been demonstrated using ligation and modification of peptides
+produced by solid-phase peptide synthesis (SPPS). The types of glycans that can be generated by chemical or chemoenzymatic
+synthesis have been greatly expanded by the development of automated
+glycan assembly (AGA) platforms and commercially available synthesizers. At present, these systems can generate increasingly complex structures
+ranging from GAGs to biantennary glycans that could be used for many different glycoengineering
+applications. However, the site-specific coupling of these glycans
+onto proteins is always a key challenge that must be overcome in the
+various ways discussed above. While chemical synthesis is a promising
+route for homogeneous glycoprotein synthesis for study, these approaches
+require large quantities of purified enzyme and nucleotide-activated
+sugar donor substrates or many protection and reaction steps. Further
+development will be required to simplify and scale these reactions
+before they can widely adopted as practical means for industrial-scale
+production of glycoproteins. Applications
+of Synthetic Glycosylation Systems Synthetic glycobiology
+has been used in a wide variety of applications.
+This section describes selected applications of the synthetic glycoprotein
+production systems described above to solve compelling problems in
+the fields of therapeutics, vaccines, diagnostics, and glycomaterials
+(). Selected application
+areas of synthetic glycobiology. Key applications
+of synthetic glycosylation systems to therapeutics, vaccines, diagnostics,
+and glycomaterials. (a) Applications of synthetic glycobiology to
+therapeutics include the development of afucosylated antibodies with
+increased antibody-directed cell-mediated toxicity (ADCC) and increasing the circulation times of enzyme
+replacement therapeutics by precise manipulation of terminal glycosylation
+structures, erythropoietin by introduction
+of additional glycosylation sites, and
+Factor IX by GlycoPEGylation. (b) Synthetic glycosylation
+systems have produced bacterial, fungal, and viral vaccines carrying
+glycan epitopes specific for these infectious diseases; cancer vaccines carrying tumor-associated carbohydrate antigens; as well as protein and nanoparticle vaccines
+adjuvanted by glycan structures such as the αGal motif. (c) Synthetic glycosylation systems have also been used to generate
+diagnostic assays to detect bacterial infections and cancer. (d) Finally,
+glycoengineering has enabled the production of functional glycomaterials
+including biomaterials that control and promote tissue growth, self-assembling glycopeptides
+that form nanofibers and bind to galectins, and virus-like particle vaccines. Engineering of the glycocalyx as a glycomaterial by overexpression
+of mucin proteins has generated mammalian expression hosts with decreased
+aggregation. Synthetic protein glycosylation
+systems, particularly those in mammalian cells, have been applied
+in numerous ways to the production of glycoprotein therapeutics. Here,
+we highlight three key application areas: the study and modulation
+of antibody therapeutic ADCC activities, the improvement of protein
+therapeutic delivery and circulation time, and the development of
+portable or on-demand protein therapeutic production systems. More
+complete reviews of the application of glycoengineering to protein
+therapeutics can be found here. Many antibody-based therapeutics, like those used to treat
+cancers, direct the patient’s immune system to attack targeted
+cells by antibody-dependent cell-mediated cytotoxicity (ADCC). ADCC activity requires the binding of FcγRIIIa
+receptors present on natural killer (NK) cells to the Fc region of
+the antibody therapeutic. In 2002, a pivotal study showed that antibodies
+derived from Lec13 CHO cells (which produce IgG antibodies with significantly
+reduced levels of α1–6 fucosylation on the reducing end
+GlcNAc of the -glycan present at Asn297 of the Fc
+domain of human IgG antibodies) bind 50 times tighter to the FcγRIIIa
+compared to IgGs produced in standard CHO cells. Further testing confirmed that this tighter binding is
+only observed when the FcγRIIIa receptor itself is glycosylated,
+indicating the importance of glycan–glycan interactions. Many later studies have used chemoenzymatic
+transglycosylation methods to generate homogeneous IgG glycosylation
+structures for functional analysis, providing critical design rules
+for optimizing ADCC activity. Since
+these pioneering works, there has been an explosion of clinical trials
+investigating antibodies lacking core fucosylation. As described in
+a recent review, afucosylated antibodies have
+been investigated in clinical trials, and three have already been
+approved with indications in lymphoma and severe asthma. These three
+approved antibodies are produced either by overexpression of bisecting
+GnT-II and αMan-II which prevent modification with Fut8 or direct
+knockout of Fut8 in CHO cells. The intentional engineering of protein glycosylation structures
+has also been shown to increase the stability and circulation time
+of protein therapeutics. While the effect
+of glycosylation on each protein may be different, studies have generally
+concluded that the stabilizing effect of glycoengineering for therapeutics
+is achieved by (i) preventing denaturation, aggregation, and degradation
+by shielding protein regions that are unstructured, hydrophobic, or
+liable to proteases; (ii) increasing
+the molecular weight and hydrodynamic radius of the molecule to prevent
+kidney filtration; (iii) removing immunogenic
+glycan motifs to prevent clearance by the immune system; and (iv) capping or removing terminal motifs
+that are selectively cleared by human lectins. Several key examples showing how these mechanisms have
+been used to increase glycoprotein therapeutic stability are described
+below. In a landmark study in 2003, the introduction of two
+additional
+glycosylation sites into human erythropoietin (EPO) by mutation of
+the native amino acid sequence and expression in CHO cells provided
+increased  activity and prolonged serum half-life,
+eventually leading to the development of the drug darbepoetin alfa. This study, along
+with later works using chemoenzymatic synthesis, indicate that the glycans in EPO cover hydrophobic patches
+on the protein and increase the molecular weight of the overall molecule,
+preventing aggregation and clearance. Glycans containing sialic acids
+have been shown to be particularly effective at stabilizing EPO and
+other therapies. The negative charge of sialic
+acids is thought to prevent aggregation by creating a repulsive force
+between therapeutic molecules and preventing kidney filtration. Accordingly, polysialylation of therapeutics
+has been shown to significantly increase half-life. Similar increases in half-life can be obtained by the conjugation
+of polyethylene glycol (PEG) to therapeutics. While most methods of PEGylation involve direct modification
+of amino acids, this can also be accomplished using glycans as a conjugation
+point. This “glycoPEGylation” method
+has been implemented by modifying Factor IX in the cytoplasm of bacteria
+and then using a sialyltransferase to conjugate a PEGylated sialic
+acid moiety , leading to the approved therapy
+Rebinyn. In contrast to the general
+stability of EPO, other examples of
+glycoengineering involve the removal of specific glycan motifs that
+cause an immune response or clearance. For example, the presence of
+α-galactose motifs at the terminus of the antibody therapeutic
+cetuximab expressed in murine cells was shown to generate a strong
+immune response and even anaphylaxis. In this case, expression in CHO cells (which do not express large
+amounts of the α-1,3 galactosyltransferase) produced therapeutics
+without this immunogenic motif. Other
+glycoengineering efforts seek to remove or cap glycan motifs which
+are not immunogenic but are selectively cleared by human lectins,
+leading to shorter circulation times. Specifically,
+terminal galactose or mannose residues are often associated with clearance
+as they are bound by asialoglycoprotein receptors and mannose receptors. A recent study systematically compared the properties of α-galactosidase
+A (a lysosomal replacement enzyme for Fabry disease) with a wide variety
+of glycosylation structures generated
+using CRISPR/Cas9 glycoengineered CHO cell lines. Previous enzyme
+replacement therapies have been glycoengineered to contain terminal
+mannose or mannose-6-phosphate for cellular targeting. However, the
+presence of these terminal mannose residues also shortens half-life
+and directs the protein therapeutic immediately to the liver and spleen.
+In this study, the researchers generated dozens of unique CHO cell
+lines (knocking out 46 genes individually or in parallel) to generate
+different glycoforms of α-galactosidase A, which they then tested
+in a mouse model to determine the optimal glycan for the desired biodistribution
+profile. They found that a bianntenary glycan terminated with α2–3
+sialic acids (rather than terminal mannoses or α2–6 sialic
+acids) increased circulation time and enabled drug delivery to harder
+to reach organs such as the heart. In addition to optimizing the molecular structure of protein therapeutics,
+the development of synthetic glycosylation systems in alternative
+(nonmammalian) hosts holds great potential in facilitating distributed,
+on-demand, and more cost-effective production of therapeutics. Most
+development for these applications has focused on plant, yeast, bacterial,
+and cell-free expression systems. For example, a recent study reported
+the use of glycoengineered  plants
+to produce an antibody cocktail protective against  virus. The plants were engineered
+to avoid nonmammalian α1,3 Fuc and β1,2 Xyl epitopes and
+produced approximately 80% afucosylated complex-type glycans. After
+purification, a cocktail of three IgGs produced in these plants was
+effective in preventing Ebola infection. In fact, these IgGs were
+more effective than similar IgGs produced in CHO cells (likely because
+of the lack of core fucosylation on the IgGs produced in plants). Another study in yeast showed that dried IgA
+glycoproteins produced in engineered  yeast cells administered orally without purification were effective
+in preventing gastrointestinal infection within a pig model. Glycoengineered yeast have also been directly
+integrated with an on-demand protein production, purification, and
+formulation system. Due to their low
+cost and relative simplicity, bacterial glycoprotein production strategies
+using OST-dependent and OST-independent synthetic glycosylation systems
+may be useful in the more cost-effective and distributed production
+of therapeutics. Cell-free glycoprotein production
+systems may be especially amenable to distributed manufacturing as
+they can be freeze-dried and reactivated to produce glycoproteins
+at the point of care. For example, freeze-dried CHO
+cell lysates have been implemented to synthesize, purify, and formulate
+various therapeutics on-demand. One-pot
+bacterial cell-free glycoprotein production systems have been shown
+to generate glycoproteins with the eukaryotic trimannose core glycan, glycoconjugate vaccines with -antigen bacterial glycans, a vaccine
+candidate with an adjuvanting α-galactose glycan, and proteins modified with minimal sialic acid
+motifs with possible utility in stabilizing therapeutics. Glycoprotein
+vaccines leverage
+the roles of carbohydrates in disease to train the immune system to
+respond when it encounters specific glycans. A glycoconjugate vaccine
+is comprised of three main parts, the carrier protein, the glycan
+antigen, and the adjuvant. While glycans have been developed as vaccine
+candidates, a polysaccharide antigen alone has poor immunogenicity
+and results in a T-cell independent immune response that does not
+generate an IgM to IgG transition. Thus, when covalently conjugated
+to a carrier protein, the body is able to generate long-term B-cell
+memory of the vaccine and protect the recipient, and is particularly
+important for vaccine efficacy in infants. Commercially approved carrier proteins are typically inactivated
+toxins that can improve immunogenicity of the vaccine. An adjuvant molecule is then usually coformulated
+with the vaccine or covalently attached for immune system stimulation.
+Since the first antibacterial glycoconjugate vaccine was approved
+in the 1980s, great strides have been
+made to enable protection against a wide range of diseases. All currently licensed glycoconjugate vaccines protect against bacterial
+infections and include the bacteria  type B, multiple serotypes of , and . The corresponding antigens are typically either capsular
+or -antigen polysaccharides, which decorate the
+cell-surface of the pathogenic bacteria and are presented to the body
+during infection. Current industrial
+processes involve culturing pathogenic bacteria and extracting the
+LLOs. The LLO is then chemically linked to recombinantly produced
+carrier proteins following additional chemical priming and processing.
+In addition to requiring the use of pathogenic bacteria, this process
+is expensive and typically employs nonspecific conjugation, resulting
+in heterogeneous products. Thus, there
+has been a compelling opportunity to use glycoengineering solutions
+to improve the process and enable future generations of glycoconjugate
+vaccine molecules. production in  is the primary glycoengineering strategy to
+produce antibacterial
+vaccines. As the bacterial polysaccharide antigens of interest are
+typically large structures consisting of multiple repeating units
+of smaller sugar motifs,  transfer by OST-dependent
+glycosylation systems have been employed for protein modification.
+This bioconjugation or protein glycan coupling technology (PGCT) involves
+expression of the LLO biosynthesis pathway, carrier protein, and OST
+to create a glycoconjugate product  that can
+then be purified. The -linked OST PglB has been the most commonly used enzyme for this
+purpose, successfully producing vaccine candidates against  2a, Extraintestinal
+Pathogenic ,, O157,,, and . As discussed previously, limitations in the diversity of sugar donor
+substrates that can be utilized by PglB have been circumvented by
+using -linked OSTs to produce glycoconjugate vaccines . Specifically, PglL has been used to produce vaccine
+candidates against  2a and  serovar
+Paratyphi, while PglS has been used
+to recombinantly produce vaccine candidates against () as well as hypervirulent . Vaccines protecting against fungi, parasites and viruses, which
+are commonly decorated with glycoproteins or glycans, have also been
+developed primarily with chemical synthesis strategies. Antifungal
+conjugate vaccines have been developed to protect against  using the major natural capsular polysaccharide,
+glucuronoxylomannan (GXM). Due to challenges
+with natural polysaccharide structures, shorter synthetic antigens
+for antifungal vaccines have been shown to protect against () and  species. Beta-glucan conjugates have
+also been investigated as a potential broad spectrum antifungal vaccine. There are also examples of glycoconjugates
+protecting against the HIV virus which has a high concentration
+of oligomannose glycans on its surface, but identifying a successful
+vaccine that elicits neutralizing antibodies has proven difficult.
+While parasitic mechanisms of infection are still poorly understood,
+a  conjugate vaccine utilizing the lipophosphoglycan
+cap has also been investigated. A recent
+review has discussed developments for vaccines against these targets. Glycoconjugate vaccines can also be used
+to direct the immune system
+against cancers which specifically display abhorrent glycosylation
+patterns called tumor-associated carbohydrate antigens (TACAs) on
+their cell surface. While chemical extraction
+of natural LLOs has been common for the production of antibacterial
+vaccines, isolation of TACAs is difficult due to expression and glycan
+heterogeneity. Research on cancer glycoconjugate
+vaccines has been greatly enabled by novel chemical synthesis strategies.
+TACAs are either found as glycoproteins such as mucins (Tn, TF, STn,
+Globo-H, and Lewis Y (Le)) or glycolipids in the case
+of gangliosides (GM2, GD2, GD3, fucosyl-GM1, Globo-H, Le). As described above, some blood group
+antigens such as Le can be either glycoproteins or glycolipids.
+TACAs have poor immunogenicity, making it even more important to conjugate
+to a carrier protein such as keyhole-limpet hemocyanine (KLH) that increases the recognition and memory of
+the presented antigen. Initial development of cancer vaccines
+focused on synthetic monomeric
+vaccines including ganglioside based antigens GM2, GD3, and GM3 conjugated to a KLH carrier
+to treat melanoma. Mimicry of the natural presentation of TACAs which
+cluster on the cell surface has been advantageous, particularly for
+mucin-based vaccines. Multivalent vaccines that present glycopeptide
+clusters of either Tn, sTn, or FT antigens conjugated to KLH have
+improved immunogenicity over a single presented antigen. Multivalent vaccines have also been developed to mimic specific
+cancer types by combining a range of characteristic antigens in a
+single vaccine. Additional information on cancer vaccines
+and strategies for engineering TACA presentation on carrier proteins
+is available in recent reviews. The
+use of adjuvants to increase immune responses to both protein
+and glycoconjugate vaccines is critical for eliciting immune responses.
+However, most adjuvanted vaccines contain simple coformulations of
+immunostimulatory molecules with antigens, meaning that once these
+molecules separate in the body, the effect of the adjuvant may be
+lost. Recently, several glycans have been shown to have adjuvating
+effects which could enable site-specifically modified glycoprotein
+conjugates with self-adjuvating properties. For example, The αGal
+motif is an effective self:nonself discrimination epitope in humans
+and has been shown to confer adjuvant properties when associated with
+various peptide, protein, whole-cell, and nanoparticle-based immunogens. The Lewis X motif has been shown to specifically target vaccine
+antigens to DC-SIGN receptors on dendritic cells which then present
+the antigen  the major-histocompatibility complex
+class I-restricted and class II-restricted systems, ultimately leading
+to increased antigen-specific antibody titers. A Siaα2–3Gal structure has been shown to enable
+selective targeting and endocytosis of antigens by binding to siglec1
+(Sn, CD169) on the surface of macrophages, ultimately resulting in
+increased antigen presentation to T-cells. Ultimately, the ability to produce defined glycoproteins with these
+self-adjuvating groups could increase vaccine effectiveness or lead
+to the development of new vaccines. The important carbohydrate
+interactions discussed so far have also been leveraged for diagnostics
+in the form of lectin arrays, glycan
+arrays, and glycoprotein arrays. This section discusses the synthetic glycoprotein
+approaches that have been employed to detect and diagnose both infectious
+diseases as well as cancer biomarkers. Additional glycan diagnostic
+tools and applications have been recently reviewed elsewhere. Antibodies generated during an adaptive
+immune response to a bacterial infection have specificity for glycan
+structures, which is leveraged in conjugate vaccine production. This
+relationship can also be used to detect the presence of antibodies
+generated in infected patients. There have been multiple approaches
+using an ELISA-based system using glycoproteins made with the PglB
+OST and the native AcrA acceptor protein for rapid diagnosis. These works have used glycoproteins decorated
+with  O157, O145, and O121 glycan antigens
+to diagnose HUS (an illness caused by Shiga toxin-producing  bacteria) and  O3 antigen to detect Brucella infections
+(a common bacterial zoonosis) through specific antibody binding. Autoantibodies generated in response to cancer glycoproteins
+are
+a promising biomarker for early cancer detection and can also be analyzed  glycoprotein
+diagnostics displaying cancer glycopeptides. In recent work from Pederson , a glycopeptide array was printed using synthetic -glycosylated mucin fragments. Two different methods were pursued, including chemoenzymatic synthesis
+of short glycopeptides as well as enzymatic production of larger mucin
+fusion proteins in  followed by -linked glycosylation using GalNAcTs. These works showcase the opportunities and
+ability to harness multiple glycoprotein synthesis platforms for use
+in diagnostic applications. Glycomaterials
+are synthetic
+molecules including, but not limited to, lipids, polymers, supramolecular
+structures, and nanoparticles that have been decorated with glycans
+for use as therapeutics, vaccines, biomimetic materials, adaptive
+and nonadaptive infection prophylaxis. In this section, we focus specifically
+on examples of protein-based materials. Other types of glycomaterials
+have been reviewed elsewhere. Synthetic
+glycobiology can enable the design of glycomaterials by providing
+additional control over glycan spacing, valency, and organization
+on unique structures not accessible using traditional protein expression
+or synthetic chemistry approaches. This precise control over glycan
+display can be useful for recapitulating natural properties, countering
+challenges faced by current therapeutics (such as the weak affinity
+of protein-carbohydrate interactions), and providing control over self-assembly properties of nanomaterials.
+Recent works using synthetic glycosylation systems to generate glycoprotein
+materials with unique or beneficial properties, many that cannot be
+found in naturally glycosylated products or traditional protein scaffolds,
+are discussed below. On the nanoscale, glycans and glycoproteins
+are useful for the creation of self-assembling functional materials.
+Recent work leveraged self-assembling glycopeptides to create nanofibers
+to control galectin activity, an important consideration for multiple
+therapeutic applications. A similar strategy
+employing self-assembling MUC1 glycopeptides to form β-sheet
+nanofibers has been used to generate a self-adjuvating anticancer
+vaccine. Sulfated glycopeptide nanostructures
+can mimic GAG structures and bind and increase bioactivity of glycan-binding
+proteins such as growth factors. In
+addition, glycopeptides have been used in self-assembling active polymersomes
+for drug delivery. Another glycoprotein
+material strategy utilizes virus-like particles (VLPs) as supramolecular
+carrier proteins for vaccine antigens. In recent work, up to 340 copies
+of the Tn antigen (a common trisaccharide TACA) have been displayed
+on Q-beta bacteriophage capsids with addition by click chemistry. On the microscale, engineering cell surfaces
+as a glycomaterial
+is emerging as a useful approach to control and study cellular behavior. Cellular surfaces are coated in a thick layer of saccharides tethered
+to glycoproteins and glycolipids called the glycocalyx. Engineering
+the glycocalyx can be accomplished by chemoenzymatic remodeling of
+the cellular surface, direct addition
+of glycomaterial substrates to cells, or by engineering
+the cell to produce and display various glycoproteins. Tuning the glycocalyx of mammalian cells has been shown to extensively
+modulate cellular behavior and responses to mechanical perturbation,
+which plays a particularly important role in cancer. An exemplary application of cellular glycomaterial engineering is
+the prevention of mammalian cell aggregation in a bioreactor by overexpressing
+heavily glycosylated mucin proteins on the surface of HEK cells. Diverse cellular functions such as adhesion
+and, by extension, replication can be similarly modulated using glycocalyx
+engineering. Other efforts in glycocalyx
+engineering have been recently reviewed. Finally, a macroscale
+application of glycoprotein materials involves
+surface functionalization of biomimetic materials. For example, specific
+sialoside epitopes chemically incorporated into a collagen biomaterial
+have selectively directed the fates of mesenchymal stem cells toward
+osteogenic or chondrogenic states. ECM
+proteins decorated with poly-LacNAc glycans are known to interact
+with several important human galectins (notably Galectins 1, 3, and
+8) which mediate cross-linking events that promote and modulate cell
+growth and adhesion. Thus, glycosylation
+to create biomimetic materials or smart biomaterial scaffolds for
+use in regenerative medicine have also
+been investigated. Heavily modified glycoproteins produced in human
+cells have also recently been shown to provide a promising glycomaterial
+lubricant (lubricin). Driven by a rapidly increasing toolkit of natural and engineered
+biological parts, improved biosynthetic and analytical methods for
+testing designs of novel glycosylation systems, and an increasing
+appreciation for the unique biophysical and immunomodulatory properties
+that can be obtained using protein glycosylation, the field of synthetic
+glycobiology has a bright future. Key areas of focus in the upcoming
+years are likely to be (i) commercialization of highly engineered
+CHO cell systems for producing therapeutically relevant, homogeneous
+human glycans, (ii) methods to synthesize diverse glycoproteins in
+bacteria and  (particularly for vaccines),
+(iii) the study and application of minimal protein glycosylation structures
+for stability or immunomodulation, (iv) the development of new therapeutic
+modalities based on the modulation or targeting of glycan structures
+in the human body, and (v) the development of glycoprotein-based materials,
+diagnostics, and other  applications which
+become viable with lower-cost, nonmammalian production systems. The field of synthetic glycobiology is at an important inflection
+point. Thus far, limitations on our knowledge of glycosyltransferases
+and low-throughput methods for protein glycosylation pathway construction
+have led to the engineering of biological systems to contain nearly
+exact replicas of natural glycosylation systems. While this is certainly
+an important approach because it can help ensure that obtained structures
+and biological activities match those in nature, it also constrains
+the simplicity, robustness, and available design space of structures
+and pathways that can be exploited for societal and commercial benefit.
+We believe that increases in fundamental understanding of natural
+systems as well as improved methods to build and test glycoproteins
+for desired properties will drive the field toward a new generation
+of glycoengineering strategies that move beyond recapitulating pathways
+found in nature to the simplified and tailored design of glycoproteins
+with desired properties..

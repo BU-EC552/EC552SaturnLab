@@ -1,0 +1,696 @@
+Synthetic
+biology approaches
+are making significant advances in both the understanding of biological
+systems and the development of biological engineering. A key feature
+offered by synthetic biology is the ability to establish designer
+regulatory circuits for the control of gene expression, which can
+generate predictable and reliable outputs in terms of protein or metabolite
+production. One way to do this is through the use of synthetic promoters/transcription
+factors, for example, integration of the
+binding site of designer transcription activator-like effectors (TALEs)
+that can be activated by custom-designed TALEs. Another
+more direct method, which does not require trans-acting factors, is
+RNA-based. Riboswitches are one such example; these are regions in
+the mRNA that modulate expression in response to a small molecule.
+Upon ligand binding to the aptamer region, the riboswitch undergoes
+a conformational change, which affects the second functional unit,
+the expression platform. In prokaryotes there are over 30 naturally
+occurring classes of riboswitch, responding to a range of cofactors,
+amino acids, metal ions and other small metabolites. Many of these,
+together with computationally designed synthetic riboswitches, or
+molecularly evolved RNA components have been used for synthetic
+biology approaches in bacteria, including to allow selection of  strains that overproduce metabolites, to serve as sensors of intracellular metabolites, and to uncover novel aspects of biosynthetic
+pathways. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf In eukaryotes, all riboswitches
+identified so far respond to thiamine
+pyrophosphate (TPP). The TPP riboswitch aptamer is one of the best
+characterized, with several 3D structures known including those from  and . Two such riboswitches are found in introns of the  and  genes of the green alga  (hereafter Chlamydomonas). In cells grown without thiamine, the introns are spliced
+to produce mRNAs encoding functional enzymes. On thiamine supplementation,
+cellular TPP levels rise, and binding of TPP to the riboswitches results
+in alternative splicing. For the THI4 mRNA, shown schematically in a, retention of the
+first intron in the 5′UTR introduces an 81 nt upstream open
+reading frame (uORF; blue box), which interferes with translation
+of THI4. Alternative splicing of the THIC transcript results in retention
+of an intron with an in-frame stop codon. Thiamine (structure , ) is the product of
+a branched biosynthesis pathway, where condensation of a pyrimidine
+(structure , ) and
+a thiazole (structure , ) moiety makes thiamine monophosphate, which is ultimately phosphorylated
+to the active cofactor TPP. THI4 and THIC catalyze the first committed
+steps in the thiazole and pyrimidine branches respectively, so the
+riboswitches enable tight feedback inhibition of each branch of thiamine
+biosynthesis. Moreover, in addition to TPP, the Chlamydomonas  riboswitch () responds to the thiazole precursor, 5-hydroxyethyl-4-methylthiazole
+(HET, structure ), and  to the
+pyrimidine precursor 4-amino-5-hydroxymethyl-2-methylpyrimidine (HMP;
+structure ), providing a further level of refinement to the
+regulation of cellular thiamine homeostasis. Chlamydomonas is increasingly being used as a chassis for metabolic
+engineering and for synthetic biology because of its ease of genetic
+manipulation, the availability of a comprehensive
+genome-wide mutant library, a standardized
+modular cloning (MoClo) kit, and amenability
+to the production of high value compounds. Here we dissect the different functional components of Chlamydomonas
+TPP riboswitches, including functionally important residues and ligand
+specificity, to characterize its modular parts . Through rational application of this knowledge we generated a novel
+collection of riboswitches that respond to specific ligands in a dose-dependent
+manner, allowing transgene expression to be tuned. The possibility
+to control expression of metabolic enzymes to avoid toxicity or pathway
+bottlenecks thus provides the means for sophisticated metabolic engineering
+strategies. The Chlamydomonas  riboswitch can regulate
+transgene expression . (a) Schematic of the  gene showing exon-intron structures as boxes and
+lines, respectively. 5′UTR and 3′UTR regions are shown
+as black filled boxes, white boxes are coding regions, and gray boxes
+show exons generated upon alternative splicing. When no ligand is
+present, the introns are completely spliced between the authentic
+splice sites (red dotted line), producing the short THI4 transcript,
+and translation is initiated from the black colored start codon which
+results in a functional protein (white tear drop). If the levels of
+TPP in the cell rise, the riboswitch aptamer within the first intron
+binds this and results in alternative splicing between the cryptic
+splice sites (gray dotted lines), retention of the gray exon(s), and
+ultimately translation of the 81 nt upstream open reading frame (uORF,
+blue box), which is translated instead of the native enzyme-encoding  (its protein product is represented by blue tear
+drops). (b) The  reporter cassette was made by making the
+following assembly from 5′ to 3′ HSP70-RBCS2 promoter, 22 nt RBCS2 5′UTR,  riboswitch,  (green box) and the carbonic
+anhydrase 1 (CA1) terminator. Lines carrying
+this construct are hereafter referred to as . (c–f)
+Viability of three independent  transgenic lines (numerated
+1–3) was determined through spot tests on solid media containing
+0 to 100 μg/mL of zeocin (concentration indicated at the bottom
+of panels). (c) In control plates with no supplements, the lines were
+resistant to all concentrations of zeocin. (d) Addition of 10 μM
+thiamine to the media resulted in the sensitivity of all lines to
+even the lowest concentration of zeocin (10 μg/mL). (e) In the
+presence of 10 μM HET,  lines are sensitive to >10 μg/mL
+zeocin. (f)  riboswitch does not respond to
+HMP; thus, in the presence of 10 μM
+HMP  lines showed resistance to all concentrations of zeocin. Images
+taken 7 days after plating. * = stop codon. Genetic Characterization of the  Riboswitch To examine in detail the mechanism underlying -mediated gene regulation, a reporter
+construct was
+generated in which the phleomycin resistance gene  fused to the green fluorescent protein (), which confers resistance to the antibiotic zeocin, was placed under the control of the  5′UTR containing the riboswitch (b, construct pPM1–044).
+Given that zeocin resistance is a direct reflection of the level of
+the Ble-GFP protein, the use of this resistance marker in this setup
+is ideal for testing of riboswitch functionality . The construct was introduced into the Chlamydomonas strain UVM4 and transformants were selected on zeocin. To
+test the riboswitch function, three independent transgenic lines were
+spotted on solid media supplemented with increasing concentrations
+of zeocin. In the absence of any supplementation (c, left-hand panel), the lines
+were resistant to 100 μg/mL zeocin (the upper limit tested).
+In contrast, inclusion in the medium of thiamine, which is phosphorylated
+to TPP on uptake into the cell, resulted
+in zeocin-susceptibility of the  lines, demonstrated by
+a reduction in growth, even at the lowest concentration of 10 μg/mL
+zeocin (d).
+We screened 40 lines containing the reporter construct, and this response
+was seen in all lines (data not shown). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf The endogenous  gene, responsible for the biosynthesis of the thiazole
+precursor HET, is responsive to this intermediate, but not to HMP, so we asked whether the reporter construct  showed the same responses. Inclusion in the media of 10 μM
+HET (which, like thiamine, is phosphorylated by the cell on uptake)
+revealed the sensitivity of the lines to zeocin above 30 μg/mL
+(e). In contrast,
+addition of 10 μM HMP (again phosphorylated on uptake) had little
+or no effect (f). The response of the native  to thiamine and HET was assessed at the transcript
+level. Expression of the functional transcript, formed after splicing
+to remove the first intron (a), was tested in one of the lines grown for 7 days
+in 10 μM of each of the compounds. As expected, significant repression of the CrTHI4 short transcript (CrTHI4s)
+was found in strains cultivated in media supplemented with thiamine
+and to a lesser extent with HET, but not with HMP (). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf To investigate the  aptamer further, a detailed mutagenesis
+study was conducted.
+One of the responsive  reporter lines was treated with UV
+mutagenesis, and colonies resistant to 10 μg/mL zeocin were
+selected to discard lines with mutated and impaired promoter,  reporter or 3′UTR. These mutagenized lines were
+then tested on thiamine and zeocin to identify mutants that had lost
+responsiveness to thiamine, and so were still zeocin resistant. Sequence
+analysis of the riboswitch in these lines found three with alterations
+(UV13, UV14, and UV15; ). These
+were all deletions of some or all of the aptamer and thus would result
+in disruption of metabolite-aptamer interaction. In particular, the
+effect of small 3 nt and 10 nt deletions in the UV13 and UV14 mutants
+respectively highlights the strict requirement to maintain nucleotides
+involved in ligand binding (denoted by triangles) and/or base-pairing. More targeted mutations were introduced in the  to alter specific nucleotides rather
+than deletions. Site-directed mutagenesis was used to remove the start
+codon in the uORF (a, construct ). After transformation
+into UVM4 using selection on zeocin, three independent transgenic
+lines were spot tested as before on media containing zeocin, with
+and without thiamine or HET (b). None of the lines responded to either compound,
+demonstrating that the uORF was essential for the function of the
+riboswitch. A more random approach of error-prone PCR of the reporter
+construct resulted in several different variants, denoted EPa (). Spot-tests showed
+that disruption of 1 out of 9 base pairs in the P1 stem () had little effect on the riboswitch response to thiamine or HET.
+This indicates the flexibility of the P1 stem with respect to riboswitch
+function, as was also demonstrated in  and  riboswitches. In , which has four mutations (A730U, G643A,
+C614U, U617C), base pairing in the P3 stem is affected and the sequence
+of the uORF is altered, although the length and reading frame are
+maintained. However,  did not show impaired
+riboswitch function either. Thus, the sequence of the uORF is unlikely
+to be involved directly in the ligand-binding nor in the inhibition
+of expression of the downstream reporter gene. In contrast, an extra
+complementary base pair in the P5 stem () abolished
+completely the riboswitch response to either thiamine or HET. The
+extra base pair is likely to affect the interaction with the β-phosphate
+group of TPP, as shown in the  riboswitch, as well as reduce the flexibility of the junction
+between the P4 and P5 stems. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf Disruption to riboswitch function was also observed
+for , which carries a single mutation in the
+conserved
+region CUGAGA (U606C). This mutant still responded to thiamine (b). However, uniquely
+the mutated riboswitch was no longer responsive to HET. The CUGAGA
+region is highly conserved in all TPP riboswitches and an integral part of the J2/3 bulge that has been shown
+to serve as the pyrimidine sensing region of the riboswitch. Interestingly, the U606C mutation in the  line affects the stop codon of the uORF in the riboswitch
+yet retains responsiveness to thiamine. The most likely reason for
+this outcome is the utilization of a downstream stop codon (TGA at
+−513; ), located in frame
+with the uORF. This scenario would result in an uORF of 58 amino acids
+extending out of the aptamer, which again suggests that the length
+of the uORF is not critical, and that its location need not be restricted
+to the aptamer. Detailed molecular characterization of the  riboswitch. Mutagenesis of  reporter
+line allowed identification
+of aptamer residues responsible for the regulatory response of this
+riboswitch to its ligands. (a) Secondary structure of the  aptamer (predicted from the crystal structures of
+the TPP-binding aptamers of  and (,)). Colored triangles
+indicate residues involved in binding of the a and b phosphate group
+of TPP (light and dark red triangles), the pyrimidine group (purple
+triangles), and 3D folding of two sensor helices (blue triangles). Black boxes show nucleotide substitutions generated by error-prone
+amplification () site-directed mutagenesis of
+the , mutation
+sites are indicated with  identifiers. (b) Spot
+tests show the response of 3 independent lines with these variants
+grown on plates with 50 μg/mL zeocin only (No ligand) or supplemented
+with 10 μM Thi or HET. Lines tested carry the nonmutagenized  reporter construct, the  variants
+(three independent transformants per construct) or the  construct that carries a mutated start codon (green arrow A-684U),
+which removes the native uORF. The images were taken 7 days post inoculation. Developing Plug-and-Play Riboswitch Devices http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf The experiments
+above demonstrate that the  uORF is essential for riboswitch regulation of the downstream
+gene, but its sequence composition and length are amenable to manipulation
+without impacting its responsiveness to thiamine. Moreover, given
+that the position of the uORF is not conserved among known TPP riboswitches
+that operate  this mechanism, we reasoned that the aptamer and uORF components of the
+riboswitch could be physically separated. This would be an important
+step in establishing a modular riboswitch design. We therefore introduced
+a new start codon at position −529 bp in the  construct,
+to move the uORF from the aptamer to the expression platform (a). Transgenic lines
+containing this  construct were spot tested as before
+on media containing zeocin ().
+In the absence of any ligand the lines showed zeocin-resistance, while
+inclusion of thiamine or HET in the media resulted in reduced or no
+growth; HMP had no effect. This result confirmed recovery of the riboswitch
+response to ligands as a direct result of the reintroduction of the
+new uORF. The modified  riboswitch allowed
+us to test its flexibility further through aptamer
+swap experiments, replacing the  aptamer with aptamers derived from other TPP riboswitches.
+Since splicing components are crucial for riboswitch function, we
+selected the well characterized aptamer domains of the Chlamydomonas () and , which contain similar alternative
+AG splice sites to that found in the  aptamer. These were substituted for the aptamer
+in  (b). The relationship
+to the splice sites was maintained, although it should be noted that
+the predicted 9 bp P1 stem of the  aptamer (a) was reduced to 7 bp in the chimeric  and 3 bp in . A further modified riboswitch, , was generated
+in which the  mutation was introduced into . The constructs
+with the riboswitch variants were transformed into
+Chlamydomonas, and 96 independent zeocin-resistant colonies per construct
+were selected. These were inoculated into microtiter plates containing
+liquid TAP media with zeocin (10 μg/mL). This allowed a more
+quantitative measure of riboswitch activity in response to different
+ligands than the spot test method. c shows the plates at 7 days post inoculation,
+and growth was quantified by measurement of optical density at 730
+nm (d). In
+the presence of thiamine and zeocin, growth of the majority of transformants
+for each construct was inhibited compared to zeocin alone, indicating
+that the modified riboswitches were functional. However, it is noteworthy
+that in zeocin-only media, the number of transformants carrying  and  aptamers that were resistant
+to the antibiotic was lower than lines carrying the  or the  aptamers (c), and the level of resistance was also
+less, with a median OD of ∼0.75 for lines carrying  _ and  aptamers  0.9–1 for lines carrying  and  aptamers respectively
+(-values ≤ 0.05) (d). This might reflect inefficiency of splicing
+in the chimeric constructs. In testing the effect of the thiamine
+biosynthesis intermediates,  was responsive to HMP but not HET, whereas neither  nor  responded to the intermediates (d; in pairwise analyses
+between zeocin-only and zeocin with HET or HMP, -values ≥0.05). In , the
+response of the endogenous  gene to HET or HMP
+is unknown, but the behavior of the chimeric  and  reflects the selectivity of each of these
+aptamers. To capture the dynamics of the responses, a more detailed
+analysis
+over a 10-day time course was conducted with ∼50 independent
+zeocin-resistant transformants per construct (e). In thiamine (green symbols), lines with
+aptamers from Chlamydomonas responded after 2 days, a lag that is
+likely due to the time to switch off the expression of the  gene and/or turnover of pre-existing Ble-GFP protein.
+The response of the  variant appears further delayed to day 3 and is less pronounced.
+The effect of HET (blue symbols) on  is clearly less than that of thiamine,
+and indeed is reminiscent of the thiamine/ behavior. The slight effect of HET
+on  seen
+in d, is more
+clearly shown in the time-course where there is a reduction in growth
+from day 2. HMP (red symbols) is just as effective as thiamine in
+switching off  but has no effect on any of the other aptamers. Design and characterization of plug and play riboswitches. Mutational
+analysis and development of a chimeric riboswitch expression platform
+(a) Schematic of the  5′UTR with highlighted
+mutations to test the impact of altered positioning of the uORF (blue
+box) within the  expression platform. Locations
+of uORF and splice sites are numbered according to the start codon
+of the  reporter gene at position 1. Riboswitch
+aptamer is shown as a gray box and  5′UTR
+as black boxes. Mutations integral to the design of the chimeric riboswitches
+are shown above the boxes and include UUG (mutated native start codon
+A-684U), new uORF AUG (−532), and new uORF stop codon (−412).
+In the absence of thiamine, the splice site GU and AG are employed,
+while in presence of thiamine, the gu/ag alternative splice sites
+are utilized. (b) Secondary RNA structures are those predicted for
+aptamers used in the different synthetic riboswitches, including the , , and  aptamers. Black dots represent conserved nucleotides in all aptamers
+and the purple circle in the  aptamer indicates
+the specific point mutation. Following transformation of UVM4 with
+the four different riboswitch-reporter variants, 96 zeocin resistant
+colonies were inoculated into four microtiter plates containing liquid
+media with zeocin (10 μg/mL). (c) After 3 rounds of weekly subculturing,
+response of transformants carrying the riboswitch chimeras was tested
+in liquid media supplemented with zeocin (10 μg/mL) and 10 μM
+of thiamine, HET or HMP. Microtiter plates were scanned 7 days postinoculation.
+(d) To quantify response of the different lines to the different ligands,
+growth of cells was determined by measuring OD 7 days
+post inoculation. After filtering empty wells (that contained unstable
+transformants which died during the weekly subcultures), plate reading
+data was used to generate box and whisker plots that summarize the
+growth behavior of the transformants in different conditions. , in which a new
+41 amino acid uORF (blue box) was introduced outside of the aptamer
+and within the expression platform region, resulted in responsive  strains to both THI and HET. , , and  lines only responded to thiamine. Letters above error bars indicate
+statistical groupings provided by Tukey’s test. (e) To determine
+response of transformants to ligands over time, growth of cells was
+also determined by measuring OD daily for 10 days post
+inoculation. Error bars indicate standard error of the mean for >50
+biological replicates. Recognition
+and Responsiveness of Native and Synthetic Riboswitch
+Devices to Natural Ligand Analogues http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf To allow more predictability
+for the behavior of different ligands and riboswitch variants, we
+established a procedure to determine the ligand concentration required
+for 50% response (Effective Dose 50, ED50), and the maximum repression
+(MaxR) score, the reduction in growth of ligand-treated relative to
+control samples. Cells carrying each of the riboswitch variants were
+inoculated into microtiter plates containing growth media and different
+concentrations of the ligands at a known cell density (5 × 10 cells/mL), which was measured again after 5 days. By this
+approach, the ED50 of the native  for thiamine was found to be 15.5 nM, and 22.7
+nM for HET (; ), whereas, as expected,
+no response was seen for HMP. MaxR for  was calculated to be 0.75 for thiamine
+and 0.41 for HET. The ED50 and MaxR for the other riboswitch variants
+with the natural ligands confirmed the previous qualitative observations
+(). Of note
+is that  showed
+the greatest MaxR of any riboswitch (0.98), and this was coupled with
+tighter binding for thiamine than the native . The ED50 for  and  was 20 times and 10 times higher than the  aptamer, respectively. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf Previous
+studies that probed TPP riboswitch-ligand interactions
+concluded that these riboswitches have evolved to bind different ligands
+with varying affinities and specificities. To determine the selectivity of the riboswitch
+variants, we tested their response to five chemical analogues shown
+in : azide HMP (compound ), 2- hydroxymethylpyrimidine (2HXMP, compound ), triazole analogue (compound ), 5-methylthiazole
+(compound ), and 4,5-dimethylthiazole (compound ). These analogues share certain chemical features with the
+natural ligands, but do not participate in the pathway. Prior to testing
+the riboswitch-reporter lines, we asked whether these analogues would
+induce TPP-like changes in the expression of the functional THI4s
+transcript () in untransformed
+Chlamydomonas cells. Supplementation of the media with triazole analogue
+(compound ) and azide-HMP (compound )
+resulted in the repression of CrTHI4s transcript levels, comparable
+to thiamine, whereas 2HXMP (compound ), 5-methylthiazole
+(compound ), and 4,5-dimethylthiazole (compound ) had no effect (). When
+lines containing any of the five riboswitch variants were screened
+for response to the analogues, none responded to these latter three
+compounds (data not shown). However, the triazole analogue (compound ) repressed the  and , with an ED50 value of 5.5 μM and 2.2 μM, and MaxR scores
+of 1 and 0.8, respectively (). Although the ED50 values are ∼400 times higher
+than for thiamine, the MaxR scores highlight the ability of this analogue
+to elicit a strong response by  aptamers. ED50 values for the  aptamers could not be assessed since the values
+were outside the 10 μM upper threshold set for this analysis.
+For azide-HMP (compound ) a response was seen for all
+the riboswitches except  ().
+ED50s ranged from 0.8 to 5 μM (), values that are 70–150 times the
+ED50 of these riboswitches with thiamine, respectively. As shown by
+the MaxR scores, the ability of azide-HMP to achieve complete response
+is similar to that of thiamine. Response of Different Riboswitch- Reporter
+Variants to Ligands http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf Maximum repression
+(MaxR) was
+determined for different riboswitch lines with different ligands.
+The OD of the compound treatments was normalized to
+the no-compound treatment for each line, compound and plate. These
+data were fitted to a 4-parameter logistic equation, and from that
+model the maximum repression was determined as 1 – lower asymptote
+of the model. This corresponds to the maximum predicted reduction
+in growth of the compound treated line relative to the no-compound
+treated line. Concentrations of ligands (nM) needed for half maximal
+growth repression (Effective Dose 50 or ED50) were calculated as described
+in the methods. Briefly, growth of the respective lines treated with
+different concentrations of ligands was measured by OD and normalized to a no-treatment control. For each compound the
+data were fitted to a four-parameter log-logistic model (and shown
+in ) and presented
+with 95% confidence intervals ( = 3). Riboswitch-treatment
+combinations that resulted in an ED50 greater than 6000 nM were labelled
+as non-responsive () as not enough data points
+were recorded above 10 000 nM to have confidence in this estimate;
+treatment combinations that were not examined for this table, but
+which have been tested and shown elsewhere () are labelled as not determined (). Exploiting the Riboswitches
+to Regulate Transgenes To begin to explore the versatility
+of the different riboswitches
+for synthetic biology purposes, we introduced two riboswitch-regulated
+transgenes into the same cell, first using fluorescent protein reporters.  was used to regulate
+production of a nuclear localized Ble-GFP fusion protein, and  was adopted to
+regulate Venus fluorescent protein targeted to the chloroplast (cpVenus).
+The cassette encoding both  and  (a) was transformed
+into Chlamydomonas. b shows the result from one transgenic line expressing both
+reporters. In the absence of ligands, both GFP fluorescence in the
+nucleus and Venus fluorescence in the chloroplast were apparent (top
+row). The GFP and Venus signals were both repressed when the cells
+were grown with 10 μM thiamine (middle row), but only GFP was
+repressed by HET (bottom row). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf Reciprocal regulation was further tested by introducing a cassette
+encoding  regulating
+expression of Venus, this time targeted to the cytosol, and Ble-GFP
+regulated by  (). A Chlamydomonas transformant
+carrying both reporter genes showed expected Venus fluorescence in
+the cytosol and GFP fluorescence in the nucleus (, top row, with no-ligand). The weak fluorescence
+signal for GFP, which we observed with multiple transformants, is
+likely the result of the reduced transgene expression with the  aptamer, also seen in growth assays described earlier
+(d). When grown
+in media containing thiamine, both Venus and GFP signals were repressed,
+an expected outcome that indicates complete response of both aptamers
+to this ligand (, second row,
++Thi). Nuclear-localized GFP was detectable in the transformant cultured
+in media with no-ligand or with HET (, third row, +HET), showing that  did not respond to HET. In addition, HET had little
+or no effect on regulated Venus. This result is consistent
+with our earlier observations that this riboswitch is less responsive
+to HET than thiamine (c,d and ). In contrast, when cells were grown in HMP, there was no detectable
+GFP regulated by the  aptamer demonstrating
+that the specificity of the aptamer was retained (, bottom row, +HMP). The results in this section
+indicate that the combinations of the four riboswitch parts and different
+ligands can enable a gradient of gene regulation capability. To demonstrate the utility of riboswitch parts as modular devices
+that can be incorporated in metabolic pathway engineering strategies,
+we used the  to control the heterologous production of the bicyclic diterpene,
+casbene. This molecule is the first committed intermediate necessary
+for production of medicinal diterpenoids such as jolkinol-C and ingenol-3-angelate. Casbene synthase (CBS) cyclizes the prenylated intermediate geranylgeranyl
+pyrophosphate (GGPP) to produce casbene. A previous study showed that
+heterologous expression of  CBS in
+Chlamydomonas leads to production of casbene, which is released from the cells and can be captured in a dodecane
+overlay. For our experiment, the  gene () was codon-
+and intron-optimized as previously described for enhanced expression
+in Chlamydomonas. A construct was assembled
+in which the chloroplast targeted JcCBS protein was fused at C-terminal
+with GS linker peptide and a Venus fluorescent protein (a). For riboswitch regulation,
+the  was cloned
+between the promoter and chloroplast target peptide region of the
+cassette. This cassette was transformed into the Chlamydomonas nuclear
+genome followed by antibiotic selection, and transformants that expressed
+the Venus fluorescent protein were identified through fluorescence
+analysis in microtiter plates. A representative
+Venus-expressing transformant was cultured in TAP media with a 10%
+n-dodecane overlay. Nine days postinoculation, the overlay was mixed
+1:1 with hexane and analyzed using gas chromatography mass spectrometry
+(GC-MS). Casbene captured by the n-dodecane overlay was detected at
+the expected retention time, thereby confirming that the casbene synthase
+enzyme fused to Venus fluorescent protein was functional (, black line). To
+determine whether the  could regulate casbene production, the casbene producing transformant
+was cultivated in TAP media supplemented with 10 μM of thiamine.
+GC-MS analysis of the dodecane overlay from 9-days old cultures showed
+no detectable casbene (b, green line), thus confirming the capacity of the  to fully suppress
+CBS gene expression when exogenous thiamine is added to the growth
+media. The tight regulation of a heterologously expressed biosynthesis
+enzyme by one of the riboswitch variants described in this work, serves
+to highlight the utility of riboswitches in design and implementation
+of a nuanced regulatory framework, which can be important for metabolic
+engineering. Simultaneous regulation of differentially
+subcellular-targeted
+proteins by two different riboswitch variants. (a) Schematic of construct
+containing a nucleus-targeted Ble-GFP fusion regulated by  and a chloroplast-targeted
+Venus fluorescent protein (cpVenus) regulated by  used to transform Chlamydomonas. Both
+reporter genes contain the RBCS2 intron 1 (i1, gray box). Chloroplast
+targeting of cpVenus was achieved by addition of the PSAD chloroplast
+target peptide immediately after the start codon (shown as blue box).
+(b) Confocal microscopy images of a Chlamydomonas transformant encoding
+the above construct, grown in liquid TAP media only (Control) or TAP
+media supplemented with 10 μM thiamine or 10 μM HET.  = 7 days post inoculation. Scale bar represents 50 μm
+and the insets are 13.5 μm wide. Riboswitch regulation of casbene production. Casbene production
+was achieved by introducing the casbene synthase expression cassette
+into the nuclear genome of the Chlamydomonas UVM4 strain. (a) Schematic
+of the expression cassette shows the contributing parts assembled
+in the following order, HSP70/RBCS2 promoter, 22 nt RBCS2 5′UTR, , PSAD chloroplast
+target peptide (cTP shown as blue box), codon optimized  () containing multiple copies
+of the Chlamydomonas RBCS2 intron 1 (i1) fused with a GS linker peptide
+(orange box) to Venus containing RBCS2 intron 2 (i2), the 3′
+UTR was derived from CA1. (b) Casbene production in a Chlamydomonas
+transformant that expressed the casbene synthase transgene was assessed
+using Gas Chromatography Mass Spectrometry (GC-MS). A representative
+transformant was cultured in TAP media with a 10% n-dodecane overlay.
+Nine days postinoculation, the overlay was analyzed by GC-MS. Casbene
+captured by the -dodecane overlay was detected at
+the expected retention time (black trace), thereby confirming that
+the casbene synthase enzyme fused to Venus fluorescent protein was
+functional. The GC-MS ion chromatogram (/ 121) shows metabolites carrying a mass-to-charge ratio
+(/) of 121 ± 0.5. Internal
+standard β-caryophyllene was detected at 12.32 min retention
+time (RT), while casbene was detected at 23.16 min RT. In agreement
+with previous reports, a selection of oxidized casbene molecules was
+also detectable between RT 25.6 and 26.7 RT. The detection of casbene and its oxidized derivatives demonstrates
+capacity of this transformant to produce casbene. When this transformant
+was cultured in media containing 10 μM thiamine (green trace),
+casbene was not detected, a result that highlighted the utility of
+the riboswitch for regulation of transgene expression. Here we have dissected a complex eukaryotic
+genetic element that
+is the Chlamydomonas  TPP riboswitch and demonstrated
+its versatility in regulation of transgenes. Our analyses captured
+attributes of the riboswitch that enable its modularity, namely, that
+both the aptamer and the expression platform were able to tolerate
+specific modifications, which in turn allowed their initial overlap
+to be disentangled (). This knowledge allowed the generation of a new riboswitch
+platform that is adaptable for aptamer-swap experiments (a) and use of a high-throughput
+method for quantitative assessment of the riboswitch/ligand combinations
+revealed the dynamic response potential for the riboswitch variants
+to different ligands (). These data provide insight into molecular aspects of riboswitch
+regulation including base-parings that impact ligand specificities.
+Of note is that this  analysis approach has
+the advantage of moving beyond characterization of riboswitches in
+isolation, instead analyzing their performance within the complexity
+of the cellular metabolic milieu. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf The modularity of riboswitches
+provides synthetic biology with
+a unique “plug-and-play” quality at the level of secondary
+structures and functional units. Furthermore,
+the ratio of ligand to riboswitch can dictate the level of regulation,
+providing the potential for tunable progression from ON to OFF. We
+verified the utility of these regulatory elements as part of multigene
+cassettes, whereby two different riboswitch-reporters were shown to
+be amenable to independent regulation within the same cell. Given
+the unique sensitivity of each riboswitch to different ligands, this
+experimental design enabled different chemical inputs (, thiamine, HET or HMP) to achieve predictable output signals (, differential regulation of the two fluorescent proteins  and ). These results highlight the potential
+of the different riboswitches and how their ligand-response characteristics
+can be used as part of synthetic gene circuit designs. It is noteworthy
+that although the TPP riboswitches described here function as OFF
+switches, they have the potential to be incorporated into a double-switch
+series or repressor-of-repressor platform ultimately to achieve ON
+status. In terms of the wider applications
+of TPP riboswitches, we propose
+their importance as tools for metabolic engineering and commercial
+applications. This is because thiamine, unlike many often-used chemical
+modifiers, is a naturally occurring vitamin that is nontoxic. The
+low concentration (nM to μM) of thiamine, HET and HMP required
+to regulate expression, combined with their relatively low-cost commercial
+availability and the ability to achieve near total repression (MaxR
+of CrTHI4_4N for thiamine is 0.98, ) make these compounds extremely attractive
+for large-scale low-cost continuous or semicontinuous commercial processes.
+As we look to develop microalgae further as industrial biotechnology
+platforms, tools such as the riboswitches described in this work take
+on a greater significance. This is because heterologously expressed
+proteins or compounds can cause toxicity and lead to undesirable allocation
+of metabolic substrates or reducing power when the cells are growing
+rapidly. In this study we showed the ease by which the TPP riboswitch
+can be incorporated into the design and engineering of a Chlamydomonas
+strain that heterologously expresses the medically important diterpenoid,
+casbene ().
+This is the first time that a riboswitch has been used to regulate
+the biosynthesis of any terpenoid in any species. This result highlights
+an important application for riboswitches in Chlamydomonas and potentially
+other eukaryotes. By adopting the different riboswitch-ligand combinations
+described here, metabolic engineers can set out to overcome key challenges
+that face reconstitution of complex terpenoid biosynthesis pathways
+in heterologous hosts, allowing optimization of the expression of
+different pathway steps and balancing pull-push effects on the cell
+redox potential that ultimately determine terpenoid yields. Insights from this study will allow the extension of the collection
+of RNA switches from a wide range of bacterial riboswitch aptamers
+or computational synthetic aptamers. Moreover, as we improve our understanding
+of different riboswitches in algae and higher plants (this study and
+ref ()), we will
+shed light on how riboswitches have evolved in eukaryotes and their
+important presence in the modern protein-based systems. Although our
+current understanding of RNA regulatory systems is limited to TPP
+riboswitches, yet to be identified RNA regulatory systems and RNA-ligand
+interactions will likely shape our view of the evolution of these
+ancient RNA regulators. Unless otherwise specified
+all chemicals used in this study were
+sourced from Sigma-Aldrich. Chlamydomonas Strains and Cultivation http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_002.xlsx Chlamydomonas
+strain UVM4 was used for all experiments
+in this work. Unless otherwise noted, strains were cultivated in Tris
+acetate phosphate (TAP) medium in liquid
+culture or on agar plates (1.5% w/v), with 100–250 μmol
+photons m s at 25 °C.
+All transformants were maintained on TAP plates with respective antibiotics
+(10 mg l paromomycin, 20 mg l hygromycin, and/or 5, 10, or 50 mg l zeocin
+[Invivogen]), all liquid cultivations were performed in shake flasks
+or microtiter plates using TAP. For response assays thiamine (Melford
+Laboratories Ltd.), 4-methyl-5-(2-hydroxyethyl) thiazole (HET), 4-amino-5-hydroxymethyl-2-methylpyrimidine
+(HMP, Fluorochem UK) and their analogues (shown in ) were added to TAP media at the indicated
+concentrations. Chlamydomonas Transformation and Screening
+by Fluorescence Plate
+Reader Transformation by electroporation was carried out
+as previously described with the following
+modifications. A TAP culture of 1–5 × 10 cells/mL
+was concentrated 100 times in TAP containing 40 mM sucrose and 250
+μL was incubated with 1 μg of linearized DNA for 10 min
+on ice in a 0.4 cm gapped cuvette (BioRad) prior to electroporation
+(BioRad Gene Pulser Xcell). The cells recovered in TAP containing
+40 mM sucrose for 16 h in a shaking incubator (less than 10 μmol
+photon m s at 100 rpm) prior
+to plating on TAP-agar plates with the appropriate antibiotics. Screening
+for robust expression of fluorescent protein fusion was conducted
+using the ClarioStar fluorescence plate reader (BMG Labtech) as previously
+described. Briefly, Venus fluorescence
+readings were obtained using the filters for excitation 515/10 nm
+and emission 550/10 nm. TAP medium was used as a blank. Fluorescence
+signals were normalized to chlorophyll fluorescence (excitation 440/9
+nm, emission 680/20 nm). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_002.xlsx All  sequence designs and analysis were performed with
+SnapGene software
+(GSL Biotech). All PCR reactions were performed using the Q5 DNA polymerase
+(New England Biolabs [NEB]) following the manufacturer’s instructions
+for use with GC-rich DNA and using the GC enhancer solution. Primers
+were produced by Sigma-Aldrich, while synthesized parts were obtained
+from Integrated DNA Technologies, with the exception of codon-optimized
+CBS that was synthesized by GenScript Corporation (USA). ,  parts were amplified from in-house plasmid templates generated and
+provided by the Smith laboratory (University of Cambridge) and assembled
+by Gibson assembly using the isothermal
+method, at 50 °C for 1 h, each part having been amplified with
+respective primers shown in . Error prone mutagenesis constructs were generated as detailed
+under the heading “Error Prone Mutagenesis” using MEGAWHOP
+cloning. All other constructs were assembled
+by Golden Gate (GG) cloning according to the MoClo system. PCR products were purified with
+the Monarch PCR & DNA Clean up kit (NEB) and cloned into corresponding
+vectors by GG cloning using either BsaI (NEB) or BpiI (Thermo Fisher
+Scientific) depending on the level of the destination MoClo vectors,
+and T4 Ligase (Thermo Fisher Scientific). All DNA parts used in this
+study are described in Supplemental Tables S1 to S3. Level 0 GG parts
+coding for  (),  (),  (), and  () were synthesized.
+Parts sourced from the Chlamydomonas MoClo Kit are indicated in . Level 0 GG parts, as well as Level 1 and Level
+2 assembled plasmids, were transformed into  (NEB 5-alpha competent cells) by heat shock, then transformants
+were plated on LB agar plates with selective additions as required,
+using the following concentrations: spectinomycin and ampicillin (50
+μg/mL), carbenicillin (100 μg/mL), X-gal (40 μg/mL).
+Plasmids were isolated with the Monarch Plasmid preparation kit (NEB).
+GG modules, Gibson and MEGAWHOP-derived plasmids were confirmed by
+sequencing (Source BioSciences UK), while all other plasmids were
+verified by differential restriction. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_002.xlsx The amino acid sequences
+of the  casbene synthase (JcCBS, NCBI
+Reference Sequence: NP_001292945.1) was codon optimized for expression
+from the Chlamydomonas nuclear genome and synthesized by GenScript
+Corporation (USA). To enhance transgene expression of large codon
+optimized constructs from the nuclear genome of Chlamydomonas,  was designed to contain multiple copies of the first
+intron of the Chlamydomonas ribulose-1,5-bisphosphate carboxylase/oxygenase
+(RuBisCO) small subunit 2 (RBCS2i1, NCBI: X04472.1). The PSAD chloroplast target peptide was cloned at the N-terminus
+of the synthesized  sequence, while a GS linker
+and Venus fluorescent protein were added to the C-terminus of the , thereby allowing fluorescence plate reader-based
+screening for protein abundance in transformants. The fully assembled
+Level 1 and Level 2 constructs carrying the  transgene are listed in  as  and , respectively. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf PCR-based
+error prone MnCl mutagenesis was used to target the 171
+bp aptamer of the  riboswitch as previously
+described. Three parts of the  riboswitch were
+amplified separately with at least 25 bp flanking ends that were homologous
+to the adjoining parts () using the template plasmid promRBCS2::THI4 5′-UTR-Ble. Primers used are listed in  and assembly conditions are as previously
+described. The EP1 and EP3 regions were
+amplified by normal PCR reactions while the PCR reactions of EP2 containing
+the aptamer region were supplemented with increasing concentrations
+of MnCl so as to increase the possibility of generating
+mutations in the PCR products. As each plasmid would contain different
+mutations, 25  plasmids were extracted
+to identify those having mutations in the  riboswitch
+aptamer. Random Mutagenesis Using UV Light Different concentrations
+of cells in exponential phase were plated on TAP agar plates supplemented
+with appropriate selection (metabolites and/or antibiotics). Petri
+dishes were exposed under the UV light in a flow hood for exactly
+60 s at 25 °C at a distance of 38 cm from the UV lamp emitting
+radiation at 253.7 nm. Plates were wrapped in aluminum foil immediately
+to minimize light-induced cellular repair mechanisms and incubated
+at 25 °C for 2 weeks. The number of visible colonies was counted
+with the desired dose of less than 1% survival. Some 16 colonies were
+picked and restreaked on 50 mg L zeocin and 10
+μM thiamine supplemented media to determine the impact of UV-induced
+mutagenesis on responsiveness of the riboswitch. Determination
+of the Riboswitch Response to Different Ligands To quantify
+the response to different ligands of lines containing
+the Ble-GFP-reporter under control of riboswitch variants growth in
+zeocin was used as a proxy. Cells were inoculated in 96-well microtiter
+plates in a total volume of 200 μL and incubated under constant
+light (125 μmol photon m s) at 25 °C. After 2 days the cultures were resuspended, and
+after a further 2 days the optical density at 730 nm was recorded
+using a FLUOstar OPTIMA plate reader (BMG Labtech). Plates were shaken
+for 6–10 s at 600 rpm before measurement. Blanks that
+were anomalous, for example if they contained algae resulting from
+pipetting inaccuracies, were excluded from subsequent analysis. Samples
+that were not treated with thiamine or related compounds were included
+on every plate and used as positive controls to ensure that the strain
+was growing as expected. If any no-compound samples for a given strain
+were growing in an incorrect manner, all data for the affected strain
+on the affected plate were excluded from the subsequent analysis.
+For each 96-well plate, the mean optical density of the blanks for
+that plate was subtracted from the optical density of the samples.
+For all compound treatments on a plate, the optical density was divided
+by the mean optical density of each no-compound treated strain, providing
+a value of the growth relative to no-treatment. This allowed for more
+accurate comparisons between plates that may have experienced slightly
+different environmental conditions. Strain and treatment combinations
+were set up in technical triplicate.
+The mean of technical triplicates was calculated and used for modeling.
+Models of the data were made, fitting to a 4-parameter logistic equation
+previously described. Different metrics
+were derived from the models: maximum predicted repression (MaxR)
+and Effective Dose 50 (ED50). The maximum repression was defined as
+1 – lower asymptote of logistic equation. This corresponds
+to the maximum predicted reduction in growth of the compound treated
+strain relative to the no-compound treated strain, expressed as a
+percentage. The ED50 was defined as the concentration of ligand that
+results in half maximal repression. Any strain-treatment combinations
+that resulted in an ED50 greater
+than 6000 nM were labeled as NR (nonresponsive) as not enough data
+points were recorded above 10 000 nM to have confidence in
+this estimate. In ,  and  when treated with HMP were also recorded as NR
+due to observations outside this analysis. All analysis was performed
+in R. Algal growth data were recorded
+at 730 nm over time. Statistical analysis was performed at  = 7, first by performing an ANOVA to determine whether
+there were differences between strain and treatment combinations.
+As this was significant, Tukey’s test was performed to determine
+which combinations were different from one another. qPCR relative
+expression data were assessed for significant difference to the No
+Ligand treatment. ANOVA was first performed to determine if there
+were any significant treatment comparisons. If so, Dunnett’s
+test was performed using the multcomp package to identify treatments that differed significantly from the No Ligand
+treatment. A -value of <0.05 was considered statistically
+significant. Confocal Laser Scanning Microscopy http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_002.xlsx Chlamydomonas transformants
+carrying the  and  constructs () were
+grown for 7 days in TAP media without supplementation, or in the presence
+of 10 μM thiamine or 10 μM HET, before visualization in
+a confocal laser scanning microscope (TCS SP8, Leica Microsystems,
+Germany). The images were taken in the sequential mode enabled by
+the Leica LAS software. The first image was acquired with excitation
+from a white light source at 476 nm and emission detection between
+485 and 518 nm for the GFP channel, and between 650 and 720 nm for
+the chlorophyll channel. The second image was acquired with excitation
+at 516 nm and emission detection between 526 and 592 nm for the Venus
+channel. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00082/suppl_file/sb0c00082_si_001.pdf Total cellular RNA was extracted
+from 1.0 × 10 Chlamydomonas cells using the RNeasy
+plant mini kit (Qiagen) according to the manufacturer’s instructions.
+Contaminating genomic DNA was removed by treating RNA samples with
+TURBO DNase (Thermo Fisher Scientific) following the manufacturer’s
+instructions. RNA quality and concentration were measured using a
+Nanodrop (Thermo Fisher Scientific) spectrometer at 260 nm. Structural
+integrity of the RNA was checked with nondenaturing agarose gel and
+ethidium bromide staining. Reverse transcription was initiated with
+an oligo dT primer with 1 μg total RNA as template
+and the reverse-transcriptase SuperScript III (Thermo Fisher Scientific),
+according to the manufacturer’s instructions. The resulting
+cDNAs were diluted 10-fold before use. Each reaction contained cDNAs
+corresponding to 100 ng total RNA, 0.25 μM each of forward and
+reverse primers, 2× SYBR Green JumpStart  ReadyMix with Mg (Sigma-Aldrich), in a total volume
+of 10 μL. The following program was used: 95 °C for 5 min,
+followed by 40 cycles of 95 °C for 15 s, 55 °C for 60 s,
+in a Rotor-Gene Q real-time PCR machine (Qiagen) with fluorescence
+measurement after each 65 °C step; a melting curve analysis was
+performed between 65 and 95 °C to confirm specific amplification.
+Transcript abundances were calculated using the ΔΔCT method,
+in relation to the housekeeping genes . Primer
+sequences are listed in . Metabolite Analysis Using GC-MS The capacity of Chlamydomonas
+transformants carrying the  expression
+cassette to produce casbene was assessed by cultivation of individual
+strains in 50 mL Nunc flasks (ThermoFisher Scientific) with a 10%
+dodecane overlay, with or without 10 μM thiamine. Nine days
+post inoculation, the dodecane overlay was separated from the culture,
+clarified by centrifugation and mixed 1:1 with hexane containing 10
+μg/mL of the internal standard α-caryophyllene. One microliter
+of this mixture was injected and analyzed by GC-MS as previously described. Caryophyllene and casbene were determined with
+the mass range (/) of 120.5–121.5..

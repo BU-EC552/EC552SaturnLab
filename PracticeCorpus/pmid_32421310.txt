@@ -1,0 +1,152 @@
+Predicting hypothetical biochemical
+reactions and catalyzing enzymes is needed to design novel pathways
+in metabolic engineering and to fill knowledge gaps in our understanding
+of metabolism. The ATLAS of Biochemistry is a database of known and predicted biochemical reactions that
+was compiled by taking the biological data available in the Kyoto
+Encyclopedia of Genes and Genomes (KEGG) and predicting the biochemical
+reactions that would produce the contained compounds. Published in
+2016, the utility of ATLAS has been recognized by several reviews
+as a source of novel metabolic reactions for enzyme and metabolic
+engineering. More recently, Yang  experimentally
+validated hypothetical ATLAS reactions and used them to construct
+novel one-carbon assimilation pathways. However, ATLAS was created based on the biochemical knowledge available
+in KEGG 2015. Since then, KEGG has added
+802 new metabolites, 918 new reactions, and 633 enzymes to its collection. The expansion of biochemical reactions within ATLAS relies on the
+reaction prediction tool BNICE.ch (Biochemical Network Integrated Computational Explorer), which consists
+of (i) a large set of expert-curated, generalized reaction rules that
+mimic the promiscuous activity of enzymes, and (ii) a network-generating
+algorithm that applies the reaction rules to molecular structures
+to generate possible biochemical reactions and compounds. The BNICE.ch
+reaction rules can reconstruct known biochemical reactions, as well
+as generate novel, hypothetical reactions. Currently, BNICE.ch has
+400 bidirectional reaction rules that account for both the forward
+and reverse reaction directionality. More than 130 000 novel
+biochemical reactions between known biological compounds have been
+predicted using this strategy. https://lcsb-databases.epfl.ch/atlas https://lcsb-databases.epfl.ch/atlas Herein, we integrated the new
+KEGG 2018 data into our database
+and expanded the biochemical space covered by ATLAS from 137 877
+to 149 052 reactions. Interestingly, we found that the newly
+available data validated 107 novel reactions predicted in ATLAS 2015.
+In the following, we discuss the updated ATLAS statistics and illustrate
+the improvements compared to the first version. The latest version
+of ATLAS is available online (). To generate the new version of ATLAS,
+we applied the BNICE.ch reaction rules to all of the metabolites available
+in KEGG to generate all possible biochemically consistent reactions
+between any two or more KEGG compounds. Two types of additional annotations
+were performed on the generated reactions: First, the new ATLAS reactions
+were curated with Gibbs free energy of reaction estimated with the
+Group Contribution Method (GCM). Second,
+the computational tool BridgIT was used to assign known enzymes to
+novel, predicted reactions by comparing
+the molecular structure of the participants in a novel, predicted
+reaction to a database of known, well-curated reactions with full
+gene-protein-reaction assignment. It calculates a similarity score
+between the novel and the known reactions, which makes it possible
+to find the enzyme with the highest probability of catalyzing the
+novel reaction. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00052/suppl_file/sb0c00052_si_001.xlsx Since
+2015, two main aspects
+of our workflow have been updated, which were applied to generate
+the updated version of ATLAS. First, the set of bidirectional reaction
+rules was increased from 360 to 400. Second, we applied the most recent
+version of BridgIT to predict putative enzymes for novel compounds,
+and we report the top three enzyme matches for each. The 40 new rules
+were created to reconstruct the exact reaction mechanism of an additional
+number of 510 KEGG reactions that were not considered previously (, KEGG reaction R03223) (). Marvin was used for drawing, displaying, and characterizing
+chemical structures, substructures and reactions, Marvin 17.28.0,
+2017, ChemAxon (). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00052/suppl_file/sb0c00052_si_001.xlsx ATLAS 2018, based on KEGG 2018,
+now has 149 052 reactions,
+out of which 5779 are known to KEGG. Compared to 2015, we added 385
+known and 11 173 novel reactions (). Thanks to the predicted reactions, ATLAS now integrates
+4587 out of 9857 disconnected, or “orphan”, KEGG metabolites,
+which were not participating in any known biochemical reaction. Increased Coverage
+of KEGG Reactions The KEGG database
+contained 18 254 compounds as of February 2018 (). In a first preprocessing
+step, we removed 999 compounds without clearly defined molecular structures
+(, polymers, proteins). The filtered data set
+comprised 17 255 compounds, out of which 9857 were not involved
+in any KEGG reaction. These orphan compounds did not participate in
+any known biotransformation in the KEGG metabolic space. Out of the 10 829 reactions in KEGG, 76 involved
+compounds
+with an undefined structure that were removed, resulting in a filtered
+set of 10 753 reactions. Out of these, 8118 reactions were
+reconstructed with BNICE.ch reaction rules. We observed three different
+types of reaction reconstruction: 5779 reactions were exactly reconstructed,
+meaning that the reactions generated by BNICE.ch use the same cofactors
+as in KEGG. Another 1705 reactions were reconstructed using alternative
+cofactors, out which 123 reactions were poorly characterized in KEGG
+(, reaction mechanism not known, incomplete reaction).
+The remaining 634 reactions were reconstructed in two (408 reactions),
+three (145 reactions), or four (81 reactions) consecutive reaction
+steps. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00052/suppl_file/sb0c00052_si_001.xlsx A total of 2635 KEGG reactions were not reconstructed
+with BNICE.ch
+(). First, 1546 reactions did not
+fulfill the BNICE.ch requirements for reconstruction, such as reactions
+involving polymer structures, generic compounds, or compounds without
+a defined molecular structure, as well as elementally unbalanced reactions
+and stereoisomerase reactions. Additionally, the reaction rules are
+organized according to the Enzyme Classification (EC) system, so each
+reconstructed or predicted reaction is automatically assigned a third-level
+EC number corresponding to the nonsubstrate specific EC classification
+of the reconstructing reaction rule. Another 308 reactions had partial
+or missing EC number annotations, indicating that the reaction mechanisms
+are not known and therefore no rule has been created for these reactions.
+The remaining 862 reactions were not reconstructed because their reaction
+mechanisms are very specific and hence not readily generalizable. Overview of Compound, Reaction, and
+Enzyme Statistics in KEGG and ATLAS Number of bidirectional enzymatic
+reaction rules Number of orphan compounds integrated in
+ATLAS Number of matches between the EC
+assignment from the reaction rules and the EC numbers assigned by
+BridgIT for novel reactions in ATLAS. Predicted ATLAS Reactions Validated in KEGG and Other Databases To validate the predicted reactions in ATLAS, we analyzed the novel
+reactions predicted in 2015 that became known in KEGG 2018. Out of
+the 958 reactions newly added to KEGG, only 239 reactions involved
+compounds that were already present in KEGG 2015, meaning that they
+could have been predicted in the original ATLAS. Out of these 239
+reactions, 107 were already present in ATLAS. In other words, the
+existence of hypothetical reactions in ATLAS 2015 was confirmed in
+KEGG 2018, demonstrating the predictive power of BNICE.ch. Next,
+we examined the enzymes that BridgIT suggested in ATLAS 2015 for these
+107 novel reactions, out of which 75 had an enzyme assigned. Interestingly,
+we found that the predicted EC numbers for 64 out of 75 reactions
+match the EC number proposed in KEGG up to the third level. For example,
+the novel reaction rat104204 was predicted to have an EC number of
+2.4.1.-. BridgIT suggested R08946 as the most similar reaction, which
+was known to be catalyzed by 2.4.1.245. In 2018, KEGG confirmed the
+promiscuous activity of 2.4.1.245 for this reaction and named it R11306. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00052/suppl_file/sb0c00052_si_001.xlsx In ATLAS 2018, we additionally mapped the novel reactions to reaction
+databases other than KEGG. Interestingly, we found that 1118 predicted
+reactions in ATLAS were not actually novel, but known to at least
+one of the repositories Brenda, Reactome, HMR, MetaCyc, MetaNetX,
+BIGG, or Rhea, which shows that the predictive power of ATLAS goes
+beyond KEGG (). ATLAS reactions
+that can be found in any of these databases are linked accordingly
+in the updated version. Improvements in the Prediction of Enzymes
+for ATLAS Reactions To find putative enzymes for the reactions
+in ATLAS, we applied
+the enzyme prediction tool BridgIT. With the latest version of the
+tool, the new predictions were significantly better in the updated
+ATLAS: BridgIT correctly matched 92% of ATLAS reactions to the same
+EC class as BNICE.ch rules, whereas the previous version only matched
+around 60% (). For each ATLAS reaction, we provide the top three candidate enzymes,
+and we also include BridgIT results for known KEGG reactions to provide
+alternative enzymes for a known reaction. As a qualitative example
+of an improved prediction, we analyzed the ATLAS reaction rat109456,
+whose closest BridgIT candidate had a low matching score of 0.67.
+In ATLAS 2018, the reaction is now known and BridgIT found three very
+similar reactions, the first of which having a higher score than in
+the previous version (). Reaction with ATLAS identifier rat109456 is an example of a reaction
+that was novel in ATLAS 2015 and that is now cataloged in KEGG. (left)
+In ATLAS 2015, the earlier version of BridgIT provided the most similar
+known reaction, and associated enzyme, for the ATLAS reaction with
+the ID. (right) In ATLAS 2018, the same reaction is now cataloged
+in KEGG as R11332 with EC 5.3.1.33. Other than the native enzyme with
+EC 5.3.1.33, BridgIT provides three alternative enzyme candidates
+that might also catalyze the reaction. We have updated the ATLAS of Biochemistry to
+integrate new biochemical
+data from KEGG 2018 using an updated set of generalized reaction rules
+and by employing an improved version of BridgIT to enhance the enzyme
+predictions for novel reactions. This study demonstrates the dynamic
+nature of biochemical knowledge and highlights the need for continuous
+updates of database-dependent applications. The updated ATLAS database
+contributes to fill the gaps in our current knowledge of metabolism
+by expanding the boundaries to novel predicted metabolic reactions.
+The updated ATLAS database is freely available online for academia
+upon request..

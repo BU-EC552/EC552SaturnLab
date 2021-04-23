@@ -1,0 +1,658 @@
+A major challenge
+facing the
+progress of synthetic biology is the design and implementation of
+systems that function in the face of fluctuating cellular environments.
+While it is widely accepted within the field that the task of constructing
+and rewiring pathways is tractable, predicting  how an implemented system will behave  under
+different cellular conditions remains a huge challenge. Robust systems perform their function over a
+wide range of parameters and external influences. If we could design
+and build synthetic systems that are robust, then not only would the
+systems have a higher probability of functioning, but we would also
+enhance their predictability. Robustness in the context of biological
+systems has been intensively studied for almost two decades. Approaches to studying this in biological systems often utilize
+the frameworks of feedback and robust control. It is well-known that feedback mechanisms can increase the robustness
+of a biological system, and there are trade-offs between
+robustness and performance, fragility, and efficiency. Although some biological systems have been shown to be structurally
+robust—that is the underlying biochemical rate parameters have
+little effect on the system stability properties—in general we expect system behavior to depend heavily
+on the biochemical parameters. Biological oscillators have been studied extensively as they form
+the core of many crucial biological processes such as circadian rhythms
+and the cell cycle. Oscillating systems also serve as a model for
+the understanding and engineering of complex and emergent phenomena.
+Various synthetic systems have been implemented both  and . More complex behaviors have been constructed, enabling synchronization
+over multiple scales, and entrainment by external signals. There has been much theoretical study of biological oscillators
+(for reviews see refs (−)). Specific work has been done on noise attenuation, motifs capable of oscillation, robustness, and the role
+of positive and negative feedback. Feedback in
+natural circadian oscillators has also been studied. Despite this body of work, a comprehensive study of the robustness
+of transcriptional oscillators has not been performed because of the
+technical challenges it poses. Traditional mathematical approaches
+can elucidate general design principles and are of great importance but these techniques generally simplify systems
+down to a handful of parameters. More contemporary methods can also
+explore model and phenotype space and are less restricted in model
+size, but they rely on the analysis of deterministic
+dynamics and cannot handle the full complexity of realistic stochastic
+biological systems. Therefore, to develop more predictable design
+and modeling frameworks that can calculate realistic estimates of
+system properties, including robustness, requires approaches that
+can handle a large number of parameters, parametric uncertainty, and
+stochastic dynamics. This can be achieved using sequential Monte Carlo
+methods. Here we extend the Monte Carlo framework
+to include model space exploration. The novelty in our approach is
+that the algorithm spends time in models and parameters in direct
+proportion to their robustness, and thus focuses in on interesting
+regions of joint model-parameter space. This avoidance of enumeration
+of all possibilities allows us to address more interesting questions
+and to assess robustness in a quantitative manner. We apply
+this novel framework to investigate the robustness of
+transcriptional oscillators, an outline of which is given in . We examine two
+main questions regarding the robustness of stochastic transcriptional
+oscillators: Can we build genetic oscillators that are more robust
+than those already constructed? Can we make genetic oscillators arbitrarily
+robust? We find that the most robust two-gene oscillators that can
+provide regular oscillations are of a type already constructed. We also examine the ring oscillator—the
+repressilator being the classic synthetic implementation—and find that different activation reactions,
+in addition to positive autoregulation, can increase its robustness. We also determine the topologies that
+give rise to the most robust three-gene systems and find that in general
+they are more robust than the simple two gene and ring oscillators.
+The frequency, amplitude, and robustness of all transcriptional oscillators,
+independent of topology, depend strongly on the rates of degradation
+of the species involved. Finally we find that the number of regulatory
+interactions increases oscillator robustness up to a plateau, beyond
+which there is no increase in robustness, which has wide implications
+for the construction of complex synthetic systems. Outline of the method.
+(A) The objective behavior is specified
+through a set of summary statistics and distances on the summaries
+(see Materials and Methods for a description of the terms). (B) Model
+space is defined through a fully connected network. A mapping from
+the graphical network to a stochastic model is defined together with
+a prior on the parameters and priors on the allowed networks. (C)
+Simple signal processing methods are used to extract features from
+model simulations. The blue and red circles indicate identified maxima
+and minima, respectively. (D) As the algorithm proceeds the (multidimensional)
+objective is achieved via small increments using sequential Monte
+Carlo. The final output of the algorithm is a set of models that satisfy
+the objective and maximize robustness. The Most Robust Two-Node Oscillators Combine
+Positive and Negative
+Autoregulation We searched model space for the most robust
+two-node oscillators and considered all possible regulatory interactions
+resulting in 3 = 81 different models (A). We found that only five
+models were capable of oscillations at the specified frequency (Materials
+and Methods), which we denote by M1–5 (B). M1 and M2, which are mirror images, account
+for around 93% of the posterior model space and have the structure
+of an amplified negative feedback loop with negative autoregulation
+on the repressor and positive autoregulation on the activator. The
+other three systems all contain negative autoregulation of protein  (the protein that does not serve as the output), a well-known
+oscillatory motif, but show high levels of stochasticity. Interestingly
+the topology represented by M1 and M2 formed the basis for the robust
+oscillator constructed by Stricker et al. We also note the absence of the delayed negative feedback oscillator
+with no negative autoregulation on the repressor, which is consistent
+with the observation that it cannot produce sustained oscillations. The last oscillator system, denoted
+here by M5, has also been constructed and shown to produce more stochastic
+behavior than the amplified negative feedback topology of M1 and M2. These findings demonstrate that the modeling
+framework can reconstitute empirical findings in real synthetic oscillators. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf Since our approach examines
+the dynamics of a specified protein
+(in this case B), we can elucidate how targeting different output
+nodes affects robustness. In the two-node oscillator we see that system
+M1 is around 8 times more robust than system M2 (Bayes factor ≈
+8) despite the fact that the only difference is the output node. This
+can be understood in terms of the dynamics of the relaxation oscillator.
+The repressor generally has slower dynamics and reaches higher numbers
+of mRNA and protein molecules in comparison to the activator (). Placing the output on
+the activator (M2) and requiring a minimum amplitude on the resultant
+oscillations forces the levels of repressor to reach a higher amplitude
+than is necessary when the output is placed on the repressor (M1).
+This can also be seen by examining the system size (total number of
+mRNA and protein molecules) which is larger in M2 (). These additional requirements on
+the dynamics constrains the parameters of M2. The one and two-dimensional
+marginal posteriors for a subset of the parameters are given for the
+two oscillator systems in C,D. The parameter posterior distributions for M1 are
+closer to their prior distributions, with , , , and  appearing to be virtually
+unconstrained. These flat distributions indicate that a larger fraction
+of the parameter space in M1 can give rise to oscillations when compared
+to M2. We also note that M2 requires a higher promoter strength () upstream of gene B. These posterior distributions
+can also be used to aid the design process by providing information
+on the required biochemical properties to create functional and robust
+systems. Defining oscillations in stochastic systems is nontrivial, and separating true oscillators from excitable
+systems can be difficult. To investigate the stochasticity of the
+five systems, and whether they are truly oscillators, we applied a
+statistical model checking procedure, whereby the posterior parameter
+distributions are resampled and the systems resimulated to examine
+the resultant performance. E shows the results of the resampling and recalculation
+of the number of oscillations (top) and amplitude (middle). M1 and
+M2 have a large peak at ten pulses in the 100 min time period, showing
+a consistent and reliable performance. In contrast M3–M5 show
+much wider distributions indicating that they are more stochastic.
+There are also differences between the oscillator amplitude properties
+with M4 and M5 showing lower amplitude oscillations. To verify the
+frequency properties in an unbiased manner we also calculated the
+maximal frequency of the Fourier spectrum, which was not included
+in the objective summary statistics (E bottom). Taken together, these results
+suggest that M1 and M2 have very reproducible frequency properties,
+both M4 and M5 are true oscillators albeit with high stochasticity
+and low amplitude, and M3 is most likely to be an excitable system.
+From an engineering point of view, we are only interested in regular
+oscillators, and so can exclude M3-M5 as failing our design objectives. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf To examine how the robustness changes under specification of the
+objective behavior, we compared the two-node systems under the objectives
+S1 (fixed frequency) and S2 (variable frequency, regular oscillations)
+(). We found almost
+identical results indicating that in this particular system, and under
+our prior assumptions, the difference between these objectives is
+minimal. The most
+robust two-gene oscillators. (A) The regulatory interactions
+considered for the systems. The output protein, where oscillations
+are required, is shown in green. (B) The most robust two-node oscillators.
+The error bars indicate the variability in the marginal model posteriors
+over three separate runs (minimum, median, maximum). On the right
+are representative example time series of the time course behavior.
+(C,D) Posterior parameter distributions for the top two models, M1
+and M2, for production, translation, and degradation rates of proteins  and  (, , , , , ) and the degradation rates of  and  (, ). The posteriors
+are plotted on their prior range of (0,10000) for the production rates
+and (0,10) for the decay rates. (E) Model checking of the stochastic
+systems by resampling and resimulation under the posterior distribution.
+The top, middle, and bottom plots correspond to the number of oscillations,
+the amplitude, and the maximal frequency of the Fourier spectrum,
+respectively. Different Activation Reactions Increase the Robustness of the
+Ring Oscillator Next we examined how one can increase the
+robustness of the three gene ring oscillator by the incorporation
+of additional feedback interactions. The setup for the model is shown
+in A. The three
+negative feedback interactions of the standard ring oscillator were
+fixed, with additional activating and repressing interactions allowed,
+giving a model space of 3 = 729 models. The distribution
+of the Bayes factor with respect to the standard ring oscillator for
+the 30 most robust topologies is shown in C. The 12 most robust networks are shown
+in D. Additional
+positive autoregulation clearly increases the robustness of the ring
+oscillator by as much as an order of magnitude (Bayes factor ≈
+10 in C). This
+is in agreement with previous work that showed that a ring oscillator
+with a single positive auto regulatory feedback loop could achieve
+more robust oscillatory behavior than the ring oscillator with or
+without a single negative autoregulatory feedback loop. The benefit of our approach is that we can quantitatively
+estimate the gain in modifying the original design and judge its worth;
+a Bayes factor of >10 indicates strong evidence. We also find that
+including an additional activation from gene  to  can significantly increase robustness. This can be seen
+more clearly by adopting the notion of inclusion probabilities, which
+rank the regulatory interactions by their probability of occurring
+in the ensemble of systems in the posterior distribution (E). Here we clearly
+see that including autoregulation on gene  has the
+best chance of increasing robustness, followed by activation from
+gene  to . Interestingly this
+type of activating interaction within a ring oscillator was found
+in the  circadian oscillator. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf We created a graph in which nodes
+represent autoregulatory motifs
+and edges connect nodes related by the addition or removal of a single
+autoregulatory interaction (). We find that positive autoregulation is associated strongly
+with robustness, with negative autoregulation associated with the
+least robust systems. Interestingly the relationship between the addition
+of positive autoregulatory feedback and robustness is nonmonotonic
+and the addition of three such interactions appears to decrease robustness
+significantly. Examination of the posterior parameter distributions
+for the production and decay rates of the ring oscillator and the
+ring oscillator with positive autoregulation on gene A (), shows that for these
+systems to function at this oscillator frequency, the values of the
+decay rates are very important. In the former, the decay rates of
+protein C and all mRNA species are constrained to be high. In the
+latter only the decay rates for C (protein and mRNA) are constrained
+to be high. Interestingly this is in stark contrast to the two-node
+oscillators which in general need to have low decay rates for the
+mRNA and protein species. We again examined robustness under the objectives
+S1 (fixed frequency) and S2 (variable frequency, regular oscillations)
+and obtained very similar results (). We also directly examined the correlation between
+model robustness under the two objectives, which we found to be reasonably
+high (Pearson correlation 0.76, ), though the agreement increases with robustness.
+The posterior distributions of the species decay terms show looser
+requirements on the decay rates of mRNA and protein species of gene
+C. A natural question that arises is how does the robustness
+of the
+two-gene and ring oscillators compare. We addressed this by using
+a reduced network topology and prior model space (). We find that the two-gene
+oscillator is more robust than the basic ring oscillator though only
+weakly (Bayes factor ≈ 2). However, the addition of the positive
+feedback autoregulatory loop clearly out performs both with a Bayes
+factor of ≈ 10.8 and 5.7 compared to the ring oscillator and
+two-node oscillator, respectively. Increasing the robustness of the ring oscillator. (A)
+The regulatory
+interactions considered for the ring oscillator system. The output
+protein, where oscillations are required, is shown in green. (B) A
+representative time series from this system with an oscillation every
+10 min. (C) The distribution of the 30 most robust topologies. In
+the box plot, the central bar indicates the median estimate and the
+upper and lower quartiles correspond to the top and bottom of the
+box. The points correspond to outliers. The  axis
+represents the Bayes factor with respect to the ring oscillator (here
+corresponding to the system with no additional feedback interactions.)
+(D) The most robust 12 oscillators. The number given next to each
+network gives the median Bayes factor compared to the basic ring oscillator.
+(E) The top 12 regulatory interactions ranked by inclusion probability. Robustness of Three-Node
+Oscillators Is Achieved through Combinations
+of Oscillating Motifs http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf In the previous section we investigated
+ring oscillators, which are a particular case of the more general
+three-node oscillator. Here we directly addressed the question of
+which three gene oscillators give the most robust systems. Rather
+than considering individual topologies, we explored the more general
+landscape of possible systems by examining the core architectures.
+We considered the general three-node network given in A with 48 parameters, but restricted
+the model prior space by setting the prior probability of half the
+symmetric systems to be zero, resulting in 9963 independent networks
+(see ). Given the
+similar results between the fixed frequency objective (S1) and the
+regular oscillation objective (S2), we used the latter (the phenotypes
+are shown in the heat map in B). The resultant systems were uniquely classified
+into categories dependent on the core architecture (i.e., ignoring
+the autoregulatory interactions). We found in total 43 out of a possible
+138 architectures that were reproducible, with robustness spanning
+over 2 orders of magnitude. C shows the relative robustness of these categories,
+scaled by the number of topologies in each category. The top ten network
+topologies are shown in D and roughly span an order of magnitude in robustness (Bayes
+factor ≈ 10). We find that the ring oscillator core architecture
+is the most
+robust, which is a form of delayed negative feedback oscillator. This
+is followed by topology N2 that can be referred to as an incoherently
+amplified negative-feedback loop (IANF), and then N3, which is a combination of a delayed negative feedback
+(ring) oscillator and two amplified negative feedback oscillators.
+The N10 system can be considered as as a ring oscillator with additional
+delayed negative feedback; a design principle that has been shown
+to be at the core of the mammalian circadian oscillator. More generally, we observe that the motif of mutual activation and
+repression  →  −|  is an important feature of these high frequency oscillators. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf Upon examination of the number of regulatory interactions within
+each category ()
+we can see that the top network, N1, contains the least number of
+edges (or low complexity). This topology scores highly because our
+definition of robustness automatically takes into account complexity,
+and essentially scores the robustness per biochemical reaction. In
+contrast, networks N8–N10, contain a maximal six interactions
+in their core, plus contain further autoregulatory loops taking the
+total number of interactions to nine, indicating a fully connected
+network. These are penalized for containing a high number of interactions.
+Since our categories represent averages over the autoregulatory interactions
+we examined how negative, positive, and mixed autoregulation featured
+within a topology by counting the number of motifs in which these
+occurred (). We
+found that practically every topology contains some form of autoregulation.
+In particular, positive autoregulation dominates in N1 and N2 as expected.
+However, N3–N7 contain varying amounts of mixed autoregulatory
+interactions in addition to pure positive autoregulation, while in
+N8–N10, mixed and pure negative autoregulation dominate. These
+differences between categories are expected since some core topologies,
+for example N4, are not expected to oscillate without any additional
+autoregulatory interactions. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf To investigate how the frequency
+and amplitude properties of the
+robust oscillators depend on the core architecture we resampled the
+posteriors for the top 10 core topologies and resimulated the dynamics
+(E). We found
+high reproducibility in the stochastic dynamics (). No correlations between amplitude
+and frequency were apparent, indicating there are no explicit trade-offs
+within these categories. There appears to be a natural frequency range
+with these parameter priors that gives oscillations with a time period
+of between 5 and 20 min, and an amplitude range spanning 2 orders
+of magnitude. Interestingly, although we required an average amplitude
+greater than 100 protein molecules, most oscillators have an amplitude
+much higher than this. This implies that the frequency and amplitude
+are related, and that requiring a specific frequency implies a specific
+amplitude range. Here the oscillators are constrained by their frequency
+properties, which gives rise to oscillators with amplitude properties
+that easily satisfy our constraints. In topologies N3–N5, and
+to a lesser extent N2, N6, and N7, we did observe high variability
+in the frequency, which implies a high frequency tunability. This
+is obtained through the addition of positive feedback within the core
+topology, which effectively speeds up the amplified negative feedback.
+We investigated this phenomenon further by performing a regression
+of all the parameters on oscillator frequency and found that the most
+significant parameters were the degradation rates for the mRNA and
+protein species of B and C, plus the edges  and  (). The highest frequency oscillators are formed from
+a combination of high degradation rates and positive (activating)  and The most robust three-gene networks. (A) The regulatory
+interactions
+considered for the three-node oscillator system. The output protein,
+where oscillations are required, is shown in green. (B) Example phenotypes
+of the resulting oscillators. Each row of the heat map represents
+one sampled oscillator system. The yellow and red colors depict the
+high and low amplitude regions, respectively. (C) Motif robustness
+analysis. Each network is classified into a unique category based
+upon its core network topology. In the box plot, the central bar indicates
+the median estimate of relative robustness and the upper and lower
+quartiles correspond to the top and bottom of the box. The points
+correspond to outliers. (D,E) The 10 most robust three-node core topologies
+together with their frequency-amplitude properties. Both the
+Robustness and the Phenotype of the Oscillators Depend
+on Degradation Rates Given the strong dependence of frequency
+on degradation rates we decided to investigate how changing the prior
+assumptions on degradation rates affected our analysis of the three-node
+categories. We changed the prior so that protein and mRNA degradation
+rates were reduced by an order of magnitude with prior distribution
+of (0, 1) min. A,B shows the distribution
+of relative robustness and the ten most robust topologies. Interestingly,
+the ring oscillator is much less robust under this scenario and is
+ranked 21st, which verifies the observation that this topology requires
+very high degradation rates to function robustly. We see a corresponding
+increase in positive feedback within the core topologies which can
+counteract the smaller degradation rates. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf The frequency and amplitude properties of these oscillators
+are
+shown in C.
+We see a doubling in oscillator time period, accompanied by an increase
+in species number, albeit with a similar amplitude range of 2 orders
+of magnitude (see ). We also note the oscillators that previously showed a large variation
+in frequency no longer demonstrate this behavior. The frequency and
+amplitude properties of four different oscillator systems (two-node,
+ring, three-node, and four-node) show no significant differences in
+oscillator frequency and amplitude (see ). These findings suggest that degradation rates are
+key in defining the frequency and amplitude properties of general
+oscillators and also that reducing frequency generally implies an
+increase in amplitude. That robustness and phenotype of oscillators
+are affected by degradation
+rates should come as no surprise. Wong et al. showed that the robustness
+of their gene-metabolic oscillator depended on the nature of protein
+degradation, and Stricker et al. added  tags to construct their robust two-gene oscillator. What we have shown is that this dependence applies
+to a large class of transcriptional oscillators. It also demonstrates
+the importance of engineering protein degradation in real systems, which could be applied to the construction of
+robust oscillators and synthetic circuits more generally. Low frequency oscillators.
+Reanalysis of the three-node networks
+with a reduced prior on the decay rates of the mRNA and protein species.
+(A) The distribution of the 30 most robust topologies. In the box
+plot, the central bar indicates the median estimate and the upper
+and lower quartiles correspond to the top and bottom of the box. (B,C)
+The 10 most robust three-node core topologies together with their
+frequency–amplitude properties. Increasing
+the Number of Regulatory Interactions Increases Robustness http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf While it is known from quantitative biology that feedback interactions
+can increase robustness, these studies have mostly focused
+on a small number of regulatory interactions. Here we examined directly
+how the robustness of the oscillator systems change as the number
+of regulatory interactions increases (). To do this we examined oscillators formed
+from a four node interconnected network with 76 parameters (A). Again we precomputed
+the prior on the model space by removing mirror images (transforming
+only one node) and removing unconnected networks (topologies where
+the output node was unconnected), which resulted in 7 559 460
+networks (see ).
+We calculated the relative robustness by taking the ratio of the model
+posterior probability and the induced prior due to the number of topologies
+with the given number of interactions (). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf We find that robustness
+increases with the number of regulatory
+interactions but only up to around 10 or 11 where it reaches a plateau
+(B). The Bayes
+factor between 5 interactions and 11 interactions is around 6.5 indicating
+a substantial increase in robustness. After the plateau is reached,
+any increase in robustness by adding regulatory interactions approximately
+equals the increase in the (multidimensional) volume of parameter
+space. Another way to express this is that the robustness per biochemical
+parameter is constant. The implications of this are that while increasing
+the number of interactions above 11 will possibly produce systems
+that have an increased level of robustness, the increase in robustness
+will be directly proportional to the complexity (number of interactions).
+If we assume that increased complexity comes at a high price (as is
+generally the case in synthetic biology) then we may conclude that
+systems with 10 or 11 interactions provide a best case scenario (when
+constrained to a maximum of four genes). We may also speculate that
+a similar trade-off could apply to naturally evolved systems and could
+be investigated further. Interestingly we do not see a strong dependence
+of robustness on the number of genes in the system (C). We also split the regulatory
+interactions into those that comprise the core topology and those
+that comprise autoregulatory interactions (, D). We see a similar plateau in the number of core regulatory
+interactions but see a drop in robustness in the four node system
+with four autoregulatory interactions, although the Bayes factor indicates
+this is not a strong effect. Although we can conclude that increasing
+the number of genes from two to four does not seem to give any increase
+in robustness, we cannot rule out that systems with five or more genes
+show a stronger increase in robustness, and also that the relationship
+between robustness and regulatory interactions is different in that
+case. Analysis of robustness and system topology. (A) The regulatory
+interactions considered for the four-node oscillator system. Oscillator
+robustness as a function of (B) total number of regulatory interactions,
+(C) the number of genes and (D) the number of autoregulatory interactions.
+In the box plots, the central bar, top and bottom of the box indicates
+the median, upper, and lower quartiles, respectively. The points correspond
+to outliers. We have presented a mathematical framework
+for the modeling and analysis of robustness in stochastic biological
+systems and applied it to the case of stochastic transcriptional oscillators.
+This framework can be used for the design of systems for synthetic
+biology in order to predict the most robust systems to construct.
+It can also be used to gain understanding of natural biological systems.
+Our analysis of transcriptional oscillators has provided a number
+of insights. We have shown that the oscillator constructed by Stricker
+et al. is the most robust two gene system
+and more robust than the ring oscillator, a fact alluded to but never
+directly shown. In addition, we verified
+the increase in robustness of ring oscillators by the addition of
+positive feedback, but also show how
+this can be achieved in a number of ways and how each of these affects
+robustness. We searched model space for the most robust three gene
+systems possible and arrived at systems comprising known and novel
+oscillator topologies. Our results also indicate that once the structure
+of the system is fixed, it is the degradation of the species, rather
+than the regulatory parameters, that determine oscillator phenotype
+and robustness. Finally we show that increasing the number of regulatory
+interactions increases the robustness of the oscillator systems up
+to a certain level of complexity (number of regulatory interactions).
+This provides evidence that natural systems should display high levels
+of interconnectedness to increase robustness, but also that there
+is a natural limit, beyond which adding further feedback makes no
+difference. This also suggests that the future of synthetic gene networks
+lies in the creation of systems comprising additional connectivity
+to ensure their function across a wide range of conditions. We have
+highlighted interesting network topologies for further study in order
+to gain a deeper understanding of their dynamics (stochastic behavior,
+robustness, chaos), but also made quantitative
+predictions on the robustness of different designs, which will be
+tested in real systems in future work. Realizing these oscillating
+systems and testing the predictions of the framework will further
+our knowledge of the intricate details of biological systems and allow
+us to generate accurate but efficient model descriptions. We
+believe that our approach has wide applicability across quantitative
+and synthetic biology, however there are a number of limitations.
+Our conclusions depend on the modeling assumptions, and here we have
+tried to find a balance between simplicity and explanatory power with
+as much biological detail as possible. We did not explicitly include
+time delays in our model although it is known to be important for
+oscillating systems. Despite this, the model recapitulates
+known results, suggesting that our model of mRNA dynamics with large
+parameter priors causes sufficient delay in the system, although this
+is not expected to be generally valid and is also dependent on other parameter values. A related issue is the prior parameter distributions which
+we generally treat as uniform over a biologically plausible range.
+As our quantitative knowledge improves, for example, with high throughput
+measurement of biochemical parameters, this information can be incorporated into our prior, which should
+be seen as an advantage of the Bayesian approach. The algorithm is
+computationally intensive and requires high performance computing
+to explore the kinds of model spaces that are of interest. While the
+SMC algorithm has desirable properties regarding convergence to the
+true target distribution in the limit of number of particles, there
+is still the possibility of falling into local minima. This can be
+alleviated by running multiple replicates and increasing the number
+of particles, as in this study, but there is always the possibility
+that some part of the space was not explored. Finally it is worth
+emphasizing that our framework is probabilistic in nature and its
+predictions can be interpreted as an average over implementations
+(specific promoters, genes). Any particular implementation of a single
+system may possess properties that make it more or less robust than
+predicted (for example due to temperature dependence). Future developments of our framework will be to
+incorporate contextual
+effects—known to strongly influence gene network dynamics—such
+as coupling with growth dynamics and
+competition for resources. Eventually, this type of approach
+could be combined with whole cell models. The framework will also be used to investigate the design principles
+of more general pulsatile systems, investigate
+systems that provide robust sensing, and also devices for the robust
+delivery of therapeutic molecules. Predictive mathematical modeling
+is at the core of engineering
+principles and forward design. Currently we lack the tools and knowledge
+to achieve this in biological systems. Our statistical framework is
+a significant step in this direction and can provide an engineer with
+the most robust systems achieving a particular design objective, together
+with novel and testable predictions. We believe that because of the
+uncertainty inherent in biological systems, which arises from their
+complexity and stochasticity, coupled with our lack of detailed knowledge
+of both their structure and underlying parameters, probabilistic modeling
+will have a major part to play in the future engineering of biological
+systems. Defining and Calculating
+Robustness http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf Intuitively we
+can think of robustness as a measure of the average performance of
+a system over some space of perturbations. Generally speaking, perturbations can be applied at the mutational
+level, which change the structure of the system, or at the parametric
+level through changes in rates due to internal and environmental interactions.
+Consider a model of a system that is required to perform some objective
+behavior, . We define an evaluation function or
+measure of performance, (, ), under the effect of a perturbation  with probability distribution given by (). We can then define a general form
+for the robustness asIn the case of systems and synthetic biology
+the model often takes the form of a biochemical reaction system, , with an associated set of reaction rate constants θ
+∈ Θ. Here we will focus
+on robustness to changes in the biochemical parameters and, as in
+previous studies, will assume that changes to the parameters, θ,
+occur through processes such as the changing of cell size, temperature
+variations, and cellular contexts. Once
+this mapping has been applied, the probability distribution of perturbations, () becomes the probability distribution
+of reasonable, or physically constrained, parameter values over the
+range of fluctuations and contexts, (θ|), which in Bayesian statistics is known as the prior distribution
+(note we have kept the explicit dependence on ).
+In principle we are free to choose any evaluation function for (θ, ), however a particularly useful
+choice is the probability of observing the objective behavior given
+the value of θ, denoted (|θ, ). Taken as a function of θ this
+is known as the likelihood. The definition of robustness can then
+be expressed aswhich is precisely the model
+evidence (or
+marginal likelihood) from Bayesian statistics, (|). Note this quantity is also the normalization
+constant of the , (θ|, ), which is the probability
+distribution of the parameters that give rise to the objective behavior, (θ|, ) ∝ (θ)(|θ, ). It is this adoption of the likelihood as our evaluation
+function that allows us to interpret our results in a probabilistic
+manner and also provides us with established methods to calculate
+both (θ|, ) and . One advantage in defining  as the integral over Θ is that increasing the size of a model
+(also known as its complexity) increases the size of Θ. This
+automatically penalizes model complexity unless there is a corresponding
+increase in performance (likelihood) (see ). For a typical biochemical system of interest
+Θ is high dimensional. This makes analytical calculation of  impossible for all but
+the simplest systems. In more realistic examples one must use Monte
+Carlo methods such as Markov chain Monte Carlo (MCMC) or sequential
+Monte Carlo (SMC) to either calculate  directly,
+or indirectly through first calculating the posterior (θ|, ). A further complication
+arises when the biochemical system is stochastic and represented by
+either a continuous time Markov process or a system of stochastic
+differential equations (SDEs). In these cases, (|θ, ) generally cannot be written
+in closed form and we must evaluate  using approximate
+methods, known collectively as approximate Bayesian computation (ABC),
+which use simulations to match model output to data. The Bayesian framework allows us to calculate a numerical
+value
+for the difference in robustness between two systems, which is expressed
+through the Bayes factor. The Bayes factor
+for how well two models  and  can achieve an objective behavior is given
+byGenerally speaking, the
+value of BF provides evidence that  satisfies
+the objective behavior better than ,
+across the parameter space defined by the prior distribution. A BF < 3 indicates weak evidence, BF ≈
+3–10 indicates substantial evidence, and a BF > 10 indicates
+strong evidence. Finally it is
+worth noting that in principle one could use a frequentist
+model selection framework to calculate robustness, such as the Akaike
+Information Criterion (AIC). However,
+it has been shown previously that this method does not always perform
+well when applied to the case of discriminating network motif models. Representation of Network Topologies A given network
+topology is modeled by a set of reactions describing the interactions
+of the different mRNA and protein species. Each node in the network
+represents transcriptional and translational processes, and each edge
+represents a regulatory interaction. While we expect the conclusions
+about the robustness of networks to depend strongly on the specific
+modeling assumptions, in order to create a predictive framework, we
+must make some modeling decisions that represent some generalities
+of synthetic gene networks. In the following, we assume that the biochemical
+system is spatially homogeneous, that transcription rates follow Hill-type
+functions with regulatory proteins acting as dimers, and that protein
+and mRNA species degrade through first order processes. In reality,
+the kinetics can be more complex and can include time delays and Michaelis–Menten
+kinetics for active enzymatic degradation, though in principle these
+could also be included. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf From this set of reactions, and assuming
+homogeneous spatial conditions, a Markov jump process (MJP) governed
+by the master equation can be formed, which models the probability
+of each species in the system as a function of time. In principle, this is the most appropriate formalism since it correctly
+accounts for the probabilistic nature of the dynamics. However, there
+exists an approximation to the master equation, known as the diffusion
+approximation, which allows the derivation of stochastic differential
+equations (SDE), also known as the chemical Langevin equation. We chose to use this formalism since their simulation is more amenable
+to parallelization on Graphics Processing Units and is therefore much
+more efficient when simulating ensembles of systems with different
+parameters. Although one assumption underlying
+the SDE representation is a large system size (number of molecules),
+we found a high correlation between summaries generated from SDEs
+and the MJP under the same parameters (). Since we are working in a stochastic modeling setting
+we use the convention that species amount is measured in numbers of
+molecules rather than concentrations. Given a node X, we represent
+the numbers of mRNA and protein molecules
+as  and , respectively.
+Both species have production and decay terms, giving rise to the following
+SDEswhere , ,  are the rate
+constants for mRNA degradation, translation, and protein degradation,
+respectively (all units of min), and the  represents the stochastic nature of the reactions (independent
+Wiener processes). Therefore, the model of a  node
+network consists of a system of 2 SDEs. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf The prior parameter
+distributions are specified through uniform
+distributions to reflect the wide range of possible biochemical parameters.
+Translation and decay rates are given prior distributions of (0, 10) min. The promoter parameters
+for transcription factor binding (corresponding to σ and δ
+in ) are given priors
+of (0, 1 × 10) N. The parameters representing baseline expression (corresponding
+to  in ) are given priors of (0, 500). Promoter
+strengths are given priors of (0, 10000) N min to reflect variations seen in real synthetic promoters. The initial conditions of the network must also
+be specified, which themselves can be treated as parameters. We assign
+a prior of (0, 100) N on the initial conditions
+of all mRNA and protein molecules. Defining the Objective
+for Stochastic Oscillations Oscillatory behavior in deterministic
+dynamical systems can be specified
+in various ways including objective functions minimizing squared deviations
+at regular intervals, Fourier spectra, and through the eigenvalues
+of the Jacobian matrix of the linearized system near the (unstable)
+steady state. Quantifying stochastic oscillations presents
+a challenge since in general the behavior can range from periodic
+with constant amplitude to pulsatile with varying time period and
+amplitude, depending on the level and nature of the noise. Here we take a signal processing approach
+to identifying stochastic oscillations. All systems were simulated
+for  = 100 min. The raw signal for the protein of
+interest is smoothed by applying to the time series a mean filter
+via convolution (C). The signal is then differentiated and maxima and minima are identified
+above a signal-to-noise threshold. The locations of these stationary
+points are used to define the summary statistics , , which are the number
+of maxima and minima respectively, and , , which are the signal level at maxima  and minima , respectively. The objective behavior is then specified
+via distances defined on the summary statistics. For example, in the
+case in which a fixed number of regular pulses is desired, we use
+the following vector valued distancewhere  is the
+number of desired pulses (here we set  = 10), ⟨⟩,
+⟨⟩ are the mean
+number of time points between the maxima and minima, respectively,  is the total number of time points and ⟨⟩, ⟨⟩ are the
+average amplitude of the maxima and minima, respectively. The distances  and  quantify
+how close the observed number of peaks are to the objective,  and  quantify
+the average distance between pulses, and  quantifies the amplitude. The algorithm minimizes all distances
+simultaneously. In this work we assume that the objective is reached
+when  < ϵ where ϵ = (0, 1, 0.1, 0.1,
+0.01). This gives rise to regular oscillations with an amplitude of
+>100 molecules and a frequency of 0.1 oscillations per minute.
+We
+refer to this objective as S1. In addition to the objective
+behavior defining a fixed number of
+pulses, as above, we also developed an alternative objective defining
+regular oscillations. In this case the number of desired pulses is
+free to changewhere the main difference
+is that the number
+of maxima and minima are constrained to be equal through . In this case, the objective is reached when ϵ
+= (1, 0.1, 0.1, 0.01) giving rise to regular oscillations with an
+amplitude of >100 and a variable frequency. We refer to this objective
+as S2. Maximizing Robustness Simultaneously in Model-Parameter Space http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf The algorithm
+proceeds through a series of intermediate distributions defined by
+a decreasing distance to the objective behavior. Each new weighted
+population of parameters is obtained from the previous one by resampling,
+perturbing, and performing ABC with a new distance threshold calculated
+from the previous distribution of distances. Biochemical parameters
+are perturbed using a uniform distribution while edges in the network
+are perturbed using a categorical distribution. It is precisely this
+structure that allows the exploration of model and parameter space
+simultaneously. The algorithm terminates when the desired distance
+threshold, ϵ, is reached. The relative evidence of each model
+present within the posterior distribution is calculated by summing
+all the corresponding weights. Because the algorithm explores models
+in direct proportion to their robustness, it focuses in on systems
+where robustness is high and ignores models where the robustness is
+negligible. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00179/suppl_file/sb5b00179_si_001.pdf The Bayesian framework allows us to place priors
+on model space;
+we can set the priors for particular models to be zero and therefore
+reduce the size of the search space. For example, the space of all
+possible three-node networks contains 3 = 19683 models.
+However, if the output is fixed on one node, say node , then nodes  and , are interchangeable.
+There are 243 networks that are invariant under this symmetry operation
+with 19440 containing a mirror image, leaving 9963 possible nonredundant
+networks (see ).
+This situation is handled in a straightforward manner by precomputing
+the prior over model space. In principle, topologies could also be
+weighted according to other information rather than simply included
+and excluded..

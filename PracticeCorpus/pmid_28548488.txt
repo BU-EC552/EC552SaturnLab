@@ -1,0 +1,632 @@
+RNA–RNA interactions
+drive key processes in biology, such as RNA interference, retroviral genome dimerization, CRISPR-Cas activation and targeting, and post-transcriptional regulation of RNA by
+long noncoding RNAs. RNA is also increasingly
+utilized as a programmable element for the control of gene expression
+and cellular function within the field of synthetic biology. Riboregulators, Toehold switches, Small Transcription Activating RNAs (STARs), and other ribodevices exploit the hybridization
+of a acting RNA with a target mRNA to control
+gene expression at either the transcriptional or translational level.
+Nevertheless, the toolkit for monitoring RNA–RNA hybridization
+events as they occur in real time is limited, relying primarily on
+fluorescent reporter proteins. However, this approach is indirect,
+as the downstream measurements are subject to additional variables
+related to translation, time delays related to fluorophore maturation,
+and additional resource burdens on the system. Monitoring RNA–RNA
+hybridization directly through an RNA-based system is therefore highly
+desirable. RNA-based systems have small genetic footprints and they
+offer improved temporal sensitivity, as signal amplification and decay
+are governed by transcription, degradation and assembly rates of the
+RNA. Furthermore, genetic circuits with a directly reportable output
+driven by RNA–RNA hybridization may provide an alternative
+detection strategy for cell-based or cell-free diagnostics based entirely
+on transcription. Intracellular
+RNA visualization strategies roughly fall into two
+categories: those that are genetically encoded and those that rely
+on chemically labeled probes. Genetically
+encoded strategies allow for nondestructive analysis in real time,
+unlike chemical probes that require exogenous introduction and may
+thereby perturb the system. Several encoded systems for RNA visualization
+have been developed that utilize RNA-protein interactions, such as
+those found in the bacteriophages MS2 and PP7. RNA hairpin motifs
+in these phage genomes serve as binding sites for phage coat proteins.
+When these motifs are inserted into an RNA of interest they can recruit
+coat proteins that have been fused to fluorescent reporter proteins,
+allowing for indirect visualization of the RNA. However, these systems require the insertion of up to 24 copies
+(∼1200 nucleotides) of the binding motif and the use of export
+and localization signals to overcome diffuse fluorescence arising
+from unbound fusion proteins. While some of the limitations of protein-based
+RNA visualization approaches can be mitigated by fluorescence complementation
+assays—which utilize split-fluorescent proteins that only fluoresce
+when brought into proximity through paired RNA binding motifs—these
+approaches still require proteins. Genetically encoded RNA aptamers
+that bind and activate the fluorescence
+of small molecule dyes have seen increasing use in monitoring RNA
+directly without involving reporter proteins. Aptamers are single-stranded,
+functional nucleic acids that fold into three-dimensional structures
+to bind defined molecular targets. Several
+RNA aptamers have been selected against small molecule dyes for which
+fluorescence is activated upon binding and sequestration within the
+aptamer. While the malachite green aptamer (MGA) was the first to demonstrate such fluorescence
+activation, the recent selection of the Spinach aptamer, which binds to a freely diffusible and nontoxic
+dye (DFHBI), has resulted in a surge of publications reporting its
+use in a wide range of contexts, such as serving as the output for
+engineered genetic circuits, as a tool to monitor
+RNA transcription, and as a fluorescent sensor for
+metabolites. Several improvements to the original
+Spinach aptamer have been developed through directed evolution strategies, including the Broccoli aptamer, which was selected  for improved physiological properties. The utility of these aptamers was further expanded by the introduction
+of DFHBI-1T, a brighter aptamer-activatable fluorophore compatible
+with the Spinach family of aptamers and optimized for conventional
+green fluorescence excitation and emission spectra used for GFP detection. Nonetheless, while several direct visualization
+strategies for RNA exist, including those that operate exclusively
+as RNA, none is designed specifically for visualization of RNA–RNA
+interactions. We reasoned that RNA assembly processes could
+be monitored directly
+through the use of a split-aptamer system analogous to the split fluorescent
+proteins that have been used extensively to monitor cosynthesis, colocalization,
+and assembly of proteins. Split fluorescent aptamers could provide
+similar information for RNA, as they would only generate signal upon
+cosynthesis, colocalization, and hybridization of the component nucleic
+acids to form the functional aptamer. Indeed, split versions of MGA and Spinach aptamers have been developed
+for use . However, these systems have not
+been directly observed to function when transcribed . The triphenylmethane dye that binds to MGA is toxic, therefore
+limiting its use in living systems, and the Spinach aptamers are limited
+by weak signal . Multimerization can increase
+signal strength, but can also result in interference between the different
+aptamer modules. Several approaches to multimerizing or splitting
+functional nucleic acids utilize three-way junction (3WJ) architectures, which are replete throughout biology. Because the Broccoli aptamer exhibits improved physiological properties,
+such as lowered dependence on magnesium and higher folding efficiency
+at 37 °C, we reasoned that it would
+serve as an ideal platform for an improved split-aptamer system. We
+further reasoned that multimerization of the aptamer would overcome
+potential issues of low signal and that a self-assembling and thermodynamically
+stable RNA motif, such as a 3WJ, would allow for robust fluorescence
+complementation. Here, we present the binary “Split-Broccoli”
+system
+as a stand-alone RNA logic gate and as a device for monitoring RNA–RNA
+hybridization  and . The design–build–test cycle iterates from  design to  implementation
+and finally to  functionality. The structure-based
+strategy begins with an unsplit dimeric aptamer within a stabilizing
+RNA architecture and continues with its bisection into a two-component
+system. The system assembles reliably  when
+purified components are thermally renatured, and the addition of transcription
+terminator structures improves the “OFF” level of the
+system. At physiological temperature,  assembly
+approximately follows second-order kinetics but appears to be limited
+by kinetic traps that prevent fast refolding into the functional hybrid.
+However, when individual RNAs of the system are cotranscribed , fluorescence signal strength roughly approximates
+the unsplit variant over a 4-h time course. The Split-Broccoli system
+also assembles and activates fluorescence when expressed , whether as a stand-alone AND gate or as a tool to monitor
+an RNA–RNA hybridization event that drives translation of a
+red fluorescent protein. We anticipate that the Split-Broccoli system
+is an enabling addition to the toolkit for RNA biologists. Designs
+for Stabilized Broccoli Aptamers and the Split-Broccoli
+System http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00059/suppl_file/sb7b00059_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00059/suppl_file/sb7b00059_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00059/suppl_file/sb7b00059_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00059/suppl_file/sb7b00059_si_001.pdf The published monomeric and dimeric forms of the Broccoli
+aptamer ( and ) served as starting points for engineering three dimeric forms of
+Broccoli aptamer. First, while the Spinach
+series of aptamers are typically embedded within
+a tRNA scaffold to stabilize
+folding and  accumulation, there are divergent
+reports as to whether Broccoli’s fluorescence activation requires
+transcription within a tRNA context. We therefore compared the performance of  to  without additional
+sequence and also to the Spinach2 aptamer embedded within a tRNA scaffold (). Fluorescence from  was equivalent to that of , but  alone, without additional stabilizing
+base pairs, yielded approximately 25% of signal relative to  (). This represents
+an 8-fold reduction from the expected doubling, consistent with its
+predicted suboptimal folding (). Alternative designs for stabilizing Broccoli dimer without greatly
+increasing transcript size were guided by RNA secondary structure
+predictions using the web-based NUPACK software suite. Adding 3 terminal G:C base pairs to the terminal
+stem—but not 1 or 2 G:C base pairs or 3 pairs that included
+A:U pairs—provided adequate stabilization to favor the expected
+structure, but stabilization by a mixed 4 base pair stem (GAGG:CCTC)
+exceeded that of the other designs. When this 4 base pair stem was
+appended to  to form the 100-nucleotide
+“stabilized dimeric Broccoli” ()
+(), fluorescence was more than
+2-fold enhanced relative to  ().  was therefore
+used as a reference point for further engineering of the aptamers. The second dimeric Broccoli aptamer design exploits the 3WJ motif
+derived from the packaging RNA (pRNA) component of the DNA packaging
+motor from bacteriophage Φ29. This stable element is a proven
+architecture for multimerization of functional nucleic acids and self-assembly from oligonucleotides. We therefore inserted Broccoli monomers into arms 2 and 3 of the
+3WJ to form  (a). Because these arms extend in opposite
+directions from the 3WJ structural core in crystal structures of the
+Φ29 3WJ pRNA, this design is expected
+to keep the monomer units spatially distant and to minimize intersubunit
+misfolding or potential quenching that can arise from chromophore–chromophore
+interactions. While the work reported here was under way, Filonov  reported a similar design (“”) utilizing the same 3WJ element from Φ29 pRNA, but
+with Broccoli monomers inserted into arms 1 and 2. Our  design incorporates a single
+nucleotide substitution (C → U) and conversion of a U:A base
+pair to an A:U pair, as Filonov  observed that
+these changes improved transcriptional yield of full-length RNA by
+interrupting a poly uridine tract that may serve as a cryptic transcription
+terminator. However, we also note that
+these substitutions include an adenosine whose phosphate is implicated
+in coordinating one of the core metal ions of the 3WJ, potentially affecting thermostability of the
+motif. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00059/suppl_file/sb7b00059_si_001.pdf The third dimeric Broccoli aptamer
+design bisects  after first inverting the monomer
+in Arm 2 to ensure that neither
+strand alone would contain the full sequence required to form a functional
+aptamer. In addition, 8 or 12 base pairs were appended on the two
+distal stems to favor complete hybridization of the two strands and
+formation of the desired secondary structure (b). The two autonomous RNA strands of the
+Split-Broccoli system are designated  and . Neither strand contains the full sequence required
+to form a functional Broccoli monomer, and neither is predicted to
+fold into a secondary structure that resembles a functional monomer
+(). Engineering the Split-Broccoli
+system in this manner, wherein fluorescence activation (output) is
+only expected in the presence of both  and  strands (inputs), creates an AND gate capable of
+performing and reporting on logical operations entirely as RNA (c). Design and NUPACK predicted secondary structures of  and . (a) Monomers of Broccoli aptamer
+(green) were inserted into Arms 2 and 3 of the three-way junction
+(3WJ) RNA motif (black) to create the unimolecular, unsplit three-way
+junction dimeric Broccoli (). (b) Design of
+the Split-Broccoli system required inversion of the Broccoli monomer
+present in Arm 2 to ensure that neither  (yellow)
+nor  (blue) strand alone contained the full
+sequence required to independently form a fully functional monomer
+of Broccoli (, :′).
+Predicted hybridization of the two strands was strengthened with the
+addition of terminal stems. (c) The Split-Broccoli system illustrated
+as an RNA AND gate (left) and its corresponding truth table (right).
+Output from the system should be true (1) only when both inputs are
+also true. Assembles  to Reconstitute Fluorescence
+Activation To evaluate performance
+of the Split-Broccoli system, we compared two approaches for assembling  from purified  and  strands. In the first approach, equimolar amounts
+of  and  were mixed and
+incubated with dye in buffer, then unfolded at 90 °C and renatured
+by slow cooling to 37 °C prior to measuring fluorescence. The
+thermally renatured  exhibited approximately
+82% of the signal relative to the unsplit, unimolecular , while neither  nor  strand
+alone generated robust fluorescence signal (a). Fluorescence signal for the renatured  was 22-fold greater than  strand alone, which gave less than 4% of signal compared to . Additionally, the  design exhibited
+higher signal when compared to , suggesting that
+the 3WJ framework reinforces the productive fold better than the minimal
+stem that stabilizes  (a). In the second approach, the two strands
+were first refolded separately and then mixed at 37 °C without
+renaturation to mimic a more biologically relevant assembly process.
+Fluorescence signal for the complex was again strongly above background,
+and little or no fluorescence was observed for either  or  strand alone (b). These patterns were clearly visible when
+these samples were excited with a standard UV-light source (c). For this simple
+mixing approach, fluorescence from the assembled complex was approximately
+60% of the signal from unsplit  under the same
+conditions and was roughly 15-fold over  strand
+alone, which again generated ∼4% signal over the  background sample (b). The data from these two approaches show effective
+reconstitution of aptamer function from the binary Split-Broccoli
+system , with switch-like behavior that serves
+as a two-input AND gate and fluorescence signal strength that is slightly
+reduced relative to the unsplit  and roughly
+equivalent to . assembly of
+the Split-Broccoli system
+in the absence and presence of transcription terminator structures.
+Assembly of equimolar amounts of purified Split-Broccoli RNA components
+( + ) demonstrate robust
+function comparable to fluorescence of the stabilized dimeric Broccoli
+() and , (a) when thermally
+renatured or (b) when simply incubated together at physiological temperature.
+Background signal from either  or  alone remains minimal for both assembly methods. (c) Fluorescence
+of  and the Split-System ( + , thermally renatured) is easily observed
+when excited with longwave ultraviolet light, whereas signal from  alone is only slightly discernible. When transcribed
+with transcription terminator structures (denoted by appending ” to the names of the individual RNAs)
+and assembled  (d, e), the Split-Broccoli
+system exhibits a decrease in relative fluorescence, but demonstrates
+a larger fold-change in fluorescence activation over either  or  alone. (f) Nondenaturing
+gel electrophoresis and dual staining with ethidium bromide and DFHBI-1T
+of the Split-Broccoli system with transcription terminator structures
+suggests that decreased fluorescence of the system is a result of
+incomplete hybridization between  and , rather than nonfunctional assembly. (g) Functional
+assembly of  and  approximately
+follows second-order kinetics ( = [Top][Bottom] = [Top], for equimolar
+mixture). Mean values are shown with error bars to indicate standard
+deviations ( = 5 for panels a, b, d, e;  = 4 for panel g). Transcription Terminator Structures Enhance Activation Ratio http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00059/suppl_file/sb7b00059_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00059/suppl_file/sb7b00059_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00059/suppl_file/sb7b00059_si_001.pdf The RNA species described above were generated by runoff transcription
+of linear dsDNA templates. In contrast, bacterial Rho-independent
+transcription termination utilizes a G:C rich, stem-loop structure
+followed by a U-rich tract that promotes dissociation of the polymerase
+from the DNA template. To characterize
+the performance of  in a more biological
+sequence context, T7 transcription terminator structures were appended
+to both unsplit and split aptamer transcripts, denoted by appending
+“-” to the names of the individual
+RNAs. Neither  nor  was predicted to contain a Broccoli-like secondary structure (), whereas hybridization of these
+two strands was predicted to form the two Broccoli domains flanking
+the 3WJ motif (). Fluorescence
+from thermally renatured  and  strands was 486-fold above signal for either strand alone, representing
+switch-like, digital behavior for the Split-Broccoli system. In comparison
+with runoff transcripts, this improvement in activation ratio can
+be ascribed to the reduction in signal from  alone to background  levels, in spite of
+a decrease in signal from the assembled complex relative to the unsplit  (∼43%, d). Fluorescence activation remained high (186-fold)
+when the complex was assembled by incubating  and  strands at physiological temperature,
+even though signal strength for the complex dropped to approximately
+19% of the unimolecular  (e). Fluorescence signal strength
+for unsplit  and  were
+roughly equivalent under both conditions (), thus justifying comparison of relative fluorescence values
+of terminated transcripts to runoff transcripts. Assembly  Approximately Follows Second-Order
+Kinetics http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00059/suppl_file/sb7b00059_si_001.pdf To address
+the molecular basis for limitations to the  assembly of  and  strands at physiological temperature, assembly of  was evaluated using a native gel stained with ethidium bromide,
+to locate all molecular species, and stained with DFHBI-1T to identify
+functionally assembled complexes. When
+incubated at 37 °C, each individual strand of the Split-Broccoli
+system migrated as a single nonfunctional band, and a new functional
+band appeared when the two strands were assembled together (f, ). However, a substantial amount of input material remains
+unassembled under these conditions, consistent with the observed decrease
+in relative fluorescence for the annealed complex upon adding transcription
+terminator structures (e). Annealing efficiency and fluorescence intensity of the
+system improved when the system was thermally renatured. Although
+each strand remained independently nonfunctional when renatured, a
+second, non-functional isoform is evident for thermally renatured  that is not evident when  was incubated alone at 37 °C, indicating that the terminator
+hairpins may be cross-annealing to form a dimer of . Together, these results suggest that incomplete, rather than nonfunctional,
+assembly is responsible for the decrease in signal when purified components
+of the system are incubated at 37 °C. Robust assembly  may thus be limited by kinetic folding traps within
+one or both strands that prevent fast refolding into the functional
+hybrid. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00059/suppl_file/sb7b00059_si_001.pdf In principle, RNA-based genetic control elements can
+provide rapid responses  or  because signal development does not require translation. To better
+understand assembly kinetics, we measured the rate of functional assembly
+of  at physiological temperature.  and  strands were separately
+folded, mixed with dye, and mixed with each other at equimolar concentrations.
+Development of fluorescence signal was monitored as a function of
+time (), and the rates were plotted
+against input RNA concentrations.  assembly
+approximately followed second-order kinetics (g). The exponent (1.73) falls slightly below
+the expected value of 2.00, potentially as a consequence of competition
+from internal structure within the individual strands, as suggested
+by the native gel mobility shift assay described above. Cotranscriptional
+Assembly of  Improves Signal http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00059/suppl_file/sb7b00059_si_001.pdf Gel purification of RNA under non-native
+conditions can introduce conformational traps. In contrast, cotranscriptional folding  is a sequential process in which the RNA folds from the 5′
+end as synthesis occurs. Furthermore, folding is concurrent with,
+and can be influenced by, other RNA species that are present. Therefore,
+to better characterize  the  potential of the Split-Broccoli system, we evaluated cotranscriptional
+assembly by incubating equimolar amounts of linear dsDNA templates
+corresponding to , , , or both  and  together, and assaying for function in transcription reaction conditions
+optimized for time resolution (). The unimolecular  exhibited
+measurable fluorescence within a few minutes of incubation, and  required approximately ten more minutes as
+the two strands accumulated to a sufficient concentration to associate
+with each other at a detectable level. Although the rate of signal
+development for the unimolecular  is substantially
+faster than  for the first 45 min,
+the rates are approximately equal for both the unsplit and split aptamers
+afterward. Additionally, when compared to  in
+transcription conditions optimized for RNA production,  function is slightly improved and goes to completion, suggesting
+that the inclusion of a 3WJ scaffold does not delay aptamer folding
+(). Cotranscription of the split-aptamer
+system reconstituted nearly all of the function of  (∼88%) and demonstrated a remarkable 124-fold increase in
+signal relative to  strand alone after a
+4-h reaction. Cotranscription of the Split-Broccoli system with terminator
+structures therefore allows for robust functional assembly without
+the requirement for additional  manipulations,
+such as thermal renaturation or coincubation of independently transcribed
+RNA that may be kinetically trapped in alternative, nonfunctional
+structures. Cotranscriptional assembly of  with
+transcription terminator structures improves signal relative to independently
+transcribed and assembled RNA. When cotranscribed with equimolar amounts
+of template DNA in a one-pot  transcription
+reaction designed to maximize time resolution,  (, green) exhibits approximately
+88% of the signal generated by the unimolecular, unsplit variant (, black) after a 4-h reaction. By the final time
+point at 240 min, Split-Broccoli demonstrates a 124-fold increase
+over either  (yellow) or  (blue) alone. Mean values are shown ( = 4) with
+error bars to indicate standard deviations. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00059/suppl_file/sb7b00059_si_001.pdf To determine whether the Split-Broccoli system would function , we constructed expression plasmids for evaluation
+in . Transcripts originate from the
+constitutive P70a promoter and were terminated
+with Rho-independent transcription terminators. Single-insert plasmids
+direct the transcription of either  (pUC19-P70a-3WJdB-T),  (pUC19-P70a-Top-T) or  (pUC19-P70a-Bottom-T),
+while a dual-insert plasmid (pUC19-P70a-Top-T∼P70a-Bottom-T)
+directs transcription of  and , with a 270-nucleotide spacer (∼) between transcription units
+to reduce topological tension arising from simultaneous transcription
+(a and ). As a control, we also
+included a variant of the dual-insert plasmid that was missing the
+second P70a promoter upstream of  (pUC19-P70a-Top-T∼Bottom-T)
+to ensure that signal generated by the dual-promoted Split-Broccoli
+system is not a product of a single runon transcript folding onto
+itself. Transformed bacteria were grown
+to mid log phase and their fluorescence
+was measured by flow cytometry (b,c). For the cell population containing the  insert, mean fluorescence intensity was shifted
+approximately 25-fold (b) relative to pUC19 transformants alone. Importantly, transcribing
+both  and  together
+generated a notable shift (approximately 6-fold above background)
+in mean fluorescence intensity. Fluorescence signal from populations
+containing only  or  inserts exhibited background levels of signal equivalent to the
+unmodified pUC19 plasmid containing no insert, representing a true
+OFF state, as did populations transformed with a plasmid that lacked
+the second promoter for transcribing , indicating
+that transcription of  strand was effectively
+terminated (b,c). These results were further confirmed with fluorescence microscopy
+(d). The Split-Broccoli
+system therefore acts as a stand-alone, all-RNA AND gate , with a true OFF state in the absence of both strands
+and an ON state in their presence. The  system functions when expressed . (a) DNA templates corresponding to  (black),  (yellow),  (blue) were individually cloned into the pUC19 plasmid. A single
+plasmid expressing both  and  was created (pUC19-P70a-Top-T∼P70a-Bottom-T), as was a control
+plasmid for runon transcription which lacked a promoter immediately
+upstream of  (pUC19-P70a-Top-T∼Bottom-T).
+(b) A representative flow cytometry histogram of 5 × 10 events per population illustrates a shift in fluorescence for the
+plasmid containing the Split-Broccoli expression plasmid (green).
+Bacterial populations transformed with plasmids containing either  or  alone, or lacking a promoter
+upstream of , demonstrate background levels
+of fluorescence equivalent to the unmodified pUC19 plasmid control.
+(c) Relative mean fluorescence intensities for flow cytometric analyses
+of transformed populations, normalized to the pUC19 plasmid (set to
+0) and  (set to 1), are shown with error bars
+to indicate standard deviations ( ≥ 4). (d)
+Fluorescence microscopy imaging further validates the  functionality of the Split-Broccoli system, as green fluorescence
+is only observed for  transformed with
+either the unimolecular  encoding plasmid
+or bimolecular  encoding plasmid. Is Functionally Modular and
+Can Be Used to Monitor RNA–RNA Assembly http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00059/suppl_file/sb7b00059_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00059/suppl_file/sb7b00059_si_001.pdf RNA molecules assemble with each other to drive many processes
+in biology. To evaluate whether the Split-Broccoli system could report
+on such assembly events, we chose to monitor activation of an RNA
+Toehold switch. Toehold switches are two-component RNA systems for
+gene regulation in which a -acting RNA (“”) relieves translational repression from
+a -acting hairpin structure (“”) that lies just upstream of a gene of interest. In the absence of a  RNA,
+the  structure effectively sequesters ribosomal
+access to the 5′ UTR. Base pairing of  to  relaxes the 5′ UTR hairpin structure,
+thereby exposing the ribosome binding site and start codon to allow
+for efficient translation initiation. We fused  with a well-characterized  that regulates
+an mCherry reporter protein to generate  and we fused  with the corresponding  RNA to generate  (a,b), and then determined
+fluorescence for bacteria carrying these constitutively expressing
+plasmids. Red fluorescence for bacteria encoding  in the OFF state ( only) showed
+minimal red fluorescence, potentially due to incomplete suppression
+of translation by the Toehold (c, ). Both  alone and  alone exhibited less than
+2% of green fluorescence of the functional  populations. Finally, when the complete Split-Broccoli system was
+fused with the complete Toehold switch system and expressed as two
+discrete transcripts ( + -), both green and red fluorescence
+were activated in the cell population and observed with flow cytometry
+(c, ) and fluorescence microscopy (d). Split-Broccoli is therefore
+modular and can be used to monitor RNA–RNA interactions . An advantage of RNA-based fluorescent reporters over proteins
+such
+as GFP and mCherry is improved temporal sensitivity, as translation
+and fluorophore maturation would not be required for function. To
+investigate how quickly  could be observed
+relative to a translated gene of interest, we utilized an  cell-free transcription and translation system
+(TX-TL) with the Split-Broccoli Toehold
+Switch plasmid ( + -). The TX-TL system is prepared from a crude  cytoplasmic extract and contains the endogenous
+transcription and translation machinery, allowing for rapid  characterization of synthetic gene circuits with -like conditions. Green fluorescence from  was detectable in TX-TL almost immediately
+and increased rapidly before peaking around 90 min (e). In contrast, red fluorescence
+from  took approximately 45 min to detect
+and slowly increased over the remaining time course. While the fluorophore
+maturation time can be improved through the use of alternative fluorescent
+proteins, the nearly instantaneous response of the Split-Broccoli
+system demonstrates the speed at which an RNA-based reporter can act. In this application of the Split-Broccoli system, the RNA–RNA
+hybridization event self-reports through green fluorescence of the
+assembled aptamer, while translational activation of the downstream  gene is subsequently self-reported through red fluorescence.
+Most proteins do not self-report their synthesis and are not so easily
+monitored in real time. The  and  design can be readily adapted to those proteins
+by replacing  with another gene of interest
+for which translation is less readily monitored. The appearance of
+green fluorescence upon induction of  could then be taken as visual evidence that the gene of interest
+was being translated. Although we fused  to an RNA Toehold switch, alternative systems for regulating gene
+expression could also be used, such as those regulated by Small Transcription
+Activating RNAs (STARs). The hybridization
+of an antisense STAR to its cognate sense RNA results in the formation
+of an antiterminator structure that allows transcription of an mRNA
+to continue. The Split-Broccoli system could therefore be used to
+monitor the STAR hybridization event upstream of a gene of interest. Split-Broccoli is modular and can be used to monitor RNA–RNA
+hybridization events . (a) A Split-Broccoli
+Toehold Switch plasmid was constructed to include two constitutively
+expressed transcription units. The first transcription unit encodes  (yellow) and  (gray) sequences
+within the 5′ UTR of the  mRNA (red).
+Translation of the  mRNA is suppressed
+due to sequestration of the ribosome binding site (orange) and start
+codon within the toehold structure (boxed). The second transcription
+unit encodes  (gray) and  (blue) sequences, which can base pair with . (b) Hybridization of  with  allows fluorescence activation of the Split-Broccoli
+system and translation of . (c) Green fluorescence
+(left columns) and red fluorescence (right columns) from flow cytometric
+analysis of populations show background levels of fluorescence for
+plasmids encoding a single transcription unit only ( or ). , which transcribes the Split-Broccoli system, exhibits only green
+fluorescence, while the Split-Broccoli Toehold Switch plasmid ( + ) exhibits
+both red and green fluorescence, indicating both hybridization of
+Split-Broccoli and translation of . Grand
+mean fluorescence intensity ( = 4) is shown with
+error bars to indicate standard deviations. (d) Fluorescence microscopy
+imaging of  harboring the Split-Broccoli
+Toehold Switch plasmid confirms hybridization of the Top and Bottom
+components of  (green fluorescence)
+and activation of  translation (red fluorescence).
+(e) An  cell-free system (TX-TL) was
+used to monitor transcription and translation of the Split-Broccoli
+Toehold Switch plasmid and demonstrates the increased temporal sensitivity
+of  (green fluorescence, left axis)
+over  (red fluorescence, right axis). Mean
+values ( = 3) are shown with error bars to indicate
+standard deviations. The 3WJ RNA architecture is a robust platform
+for dimerization
+of the Broccoli aptamer and allows for a straightforward bisection
+of aptamers into two-stranded systems that can restore function when
+hybridized. We have shown that the Split-Broccoli system functions
+when assembled from purified RNA , in both
+the presence and absence of transcription terminator structures and
+when thermally renatured or assembled at physiological temperature.  performance appeared to be limited by an incomplete
+assembly process that was only partially restored through thermal
+renaturation, suggesting a high kinetic barrier for refolding of the
+RNA components into the hybridized complex. This barrier was inconsequential
+if the components of the system were cotranscribed, allowing for the
+more native RNA structures to hybridize efficiently and productively.
+These findings motivated us to explore the use of the system . Although Split-Broccoli signal  was observable, it was not as robust as the unimolecular  construct. We speculate that this reduction in signal
+could have arisen from instability of one or both of the strands against
+degradative cellular forces, such as RNases, rather than kinetic barriers
+to refolding. The decrease in relative signal could potentially be
+remediated by transcribing the split aptamer system with highly structured
+5′ ends, as the 3′ end terminator structures likely
+offer some protection against nuclease activity targeting unstructured,
+linear RNA. Furthermore, when the Split-Broccoli system was fused
+to an RNA Toehold switch upstream of a fluorescent protein,  fluorescence was observed tens of minutes
+before the fluorescent protein, demonstrating the speed and utility
+of an RNA-based split fluorescent aptamer in monitoring an RNA–RNA
+hybridization event. To the best of our knowledge, Split-Broccoli
+is the first split-aptamer
+system directly shown to function when transcribed  and is the first example of an  logic gate
+with RNA inputs and a directly observable output composed of RNA.
+We posit that Split-Broccoli, or an analogously composed system, can
+be extended to detect RNA–RNA hybridization events nondestructively
+in real time as an alternative to chemically synthesized probes and
+without the requirement of a protein reporter. For RNA-based computation
+strategies that require a measurable reporter in living systems, Split-Broccoli
+may offer an approach that can operate without introducing an additional
+time delay or resource burden required by translating traditional
+protein-based reporters. Additionally, as transcription of the individual
+strands of the Split-Broccoli system can be regulated by independent
+transcription factors, the Split-Broccoli system can be used as an
+AND gate , further expanding the functional
+capabilities of RNA as a programmable and self-reporting molecule
+for RNA–RNA assembly. Broccoli Designs and NUPACK
+Analysis http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00059/suppl_file/sb7b00059_si_001.pdf Sequences for
+the Spinach2 aptamer, Broccoli aptamer and the core domain of the
+Φ29 pRNA 3WJ motif were used as previously published.,  and  designs, with
+and without transcription terminators, were analyzed for predicted
+structures with the NUPACK web application at default settings for
+RNA at 37 °C. For  hybridization, the two input strands were constrained to a maximum
+complex size of 2 and at a concentration of 1 μM each. For details
+of DNA sequences refer to . DNA Templates and RNA Transcription http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00059/suppl_file/sb7b00059_si_001.pdf Oligonucleotides
+for generating DNA templates were ordered from Integrated DNA Technologies
+and ligated to generate PCR amplification templates. In short, oligonucleotides
+corresponding to the left and right halves of each sequence, and a
+reverse complement sequence bridging both halves, were designed. The
+oligonucleotides corresponding to the right half of each sequence
+were phosphorylated for ligation using T4 polynucleotide kinase (New
+England Biolabs). All three oligonucleotides per complete sequence
+were then incubated in equimolar amounts and annealed through a heat–cool
+step prior to ligation with T4 DNA ligase (New England Biolabs). Ligated
+oligonucleotides were PCR amplified with Pfu DNA polymerase, a forward
+primer to add the 5′ XbaI restriction site and T7 promoter,
+and a reverse primer to append the T7 terminator and 3′ XmaI
+restriction site. Amplification products were cloned into the pUC19
+plasmid and inserts were confirmed through sequencing. Plasmids encoding
+the T7 RNA polymerase promoted templates were deposited to Addgene
+(IDs 87307–87310). For details of DNA sequences refer to . Transcription templates
+were generated by PCR amplification of sequence-verified plasmids.
+The pET28c-Spinach2 plasmid (a gift from Samie Jaffrey) was used for
+PCR amplification and transcription of .
+Runoff transcription reactions were performed using T7 RNA polymerase,  transcription buffer (50 mM Tris-HCl pH 7.5, 15
+mM MgCl, 5 mM DTT, and 2 mM spermidine), and 2 mM of each
+ATP, CTP, GTP and UTP. Reactions were incubated at 37 °C for
+a minimum of 4 h and halted with the addition of 2× RNA loading
+buffer (95% formamide and 5 mM EDTA, with trace amounts of Xylene
+Cyanol FF and Bromophenol Blue). RNAs were purified through denaturing
+polyacrylamide gel electrophoresis (0.75 mm 6% TBE-PAGE, 8 M urea)
+and bands corresponding to the expected product size were gel extracted
+and eluted while tumbling overnight in 300 mM Sodium Acetate pH 5.4.
+Eluates were ethanol precipitated, resuspended in buffer (10 mM Tris-HCl
+pH 8.0, 1 mM EDTA), and stored at −20 °C until further
+use. RNA concentrations were determined on a NanoDrop 1000 spectrophotometer
+(Thermo Scientific). Assembly and Fluorescence
+Assays assembly reactions were
+prepared on ice
+with 25 picomoles of each RNA and 250 picomoles of DFHBI-1T dye (Lucerna
+Technologies) in buffer (40 mM HEPES pH 7.5, 100 mM KCl, 1 mM MgCl) at a final volume of 50 μL. For thermal renaturation,
+samples were transferred into a preheated aluminum insert within a
+dry heat block set to 90 °C. Following addition of samples, the
+aluminum insert was immediately removed from the block heater and
+placed on the lab bench to cool to 37 °C before measurement.
+Assembly at 37 °C was performed by placing samples in a dry heat
+block at 37 °C for 15 min before measurement. Samples were then
+transferred into a clear, flat-bottom 96-well plate and measured for
+fluorescence (λ = 472 nm, λ =
+507 nm) on an EnSpire Mulitmode plate reader (PerkinElmer) at room
+temperature. Measurements from  samples, which
+contained buffer and dye, were averaged to establish background signal.
+Background signal was subtracted from all measurements and individual
+readings were normalized for fluorescence relative to . Normalized values were used to calculate mean and standard deviation. Dual Staining Native Gel Shift Assay Ten picomoles
+of each purified RNA (, , ) were incubated at 37 °C for 15 min
+before being loaded onto a 0.75 mm 6% native TBE polyacrylamide gel
+in a final volume of 25 μL with 20% glycerol. Approximately
+1 h after electrophoresis at 20 W in 4 °C, the gel was stained
+according to an in-gel imaging protocol. In brief, the gel was stained with 5 μM of DFHBI-1T at RT
+for 15 min and then imaged using a Typhoon FLA 9000 (GE Healthcare)
+with Alexa Fluor 488 settings (473 nm laser excitation, Y520 emission
+filter). A destaining step was then performed on the gel with 2 washes
+in ultrapure Milli-Q water (EMD Millipore) for 5 min each, followed
+by a 5 min incubation in ethidium bromide at 0.5 μg/mL. The
+gel was then reimaged on a Typhoon FLA 9000 (GE Healthcare) using
+the ethidum bromide setting (532 nm laser excitation, O580 emission
+filter). Densitometry analysis was performed in Fiji. Following a slight linear contrast adjustment, the intensity
+value of each band was estimated. The hybridization yield for the
+annealed complex was calculated according to the following formula:
+[(annealed complex)/(free  + free  + annealed complex)]. Split-Broccoli Assembly Kinetics Purified samples of  and  RNA at various concentrations
+(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, and 0.6
+μM) were independently prepared on ice, in buffer (40 mM HEPES
+pH 7.5, 100 mM KCl, 1 mM MgCl) containing DFHBI-1T at
+4 μM. Samples were aliquoted into a clear, flat-bottom 96-well
+plate and preincubated at 37 °C for 15 min. Assembly was initiated
+by using a multichannel pipet to transfer 50 μL of  samples into 50 μL of  samples at
+equimolar concentrations. Fluorescence measurements (λ = 485/25 nm, λ = 535/25 nm) were taken on an
+Infinite F200 Pro plate reader (Tecan) every 10 s for 3600 s. The
+linear region between 500 and 1000 s was used to fit a line and determine
+the slope (, change in fluorescence as a function
+of time). Slope values from replicate experiments were averaged and
+then plotted against their concentration to obtain a value for the
+rate of assembly. Cotranscription Fluorescence Assay http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00059/suppl_file/sb7b00059_si_001.pdf Cotranscription
+assays were performed with PCR amplification products purified through
+agarose gel electrophoresis (GeneJET Gel Extraction Kit, Thermo Scientific)
+to isolate bands corresponding to the desired DNA template size. Templates
+were quantified on a NanoDrop 1000 spectrophotometer (Thermo Scientific).
+To ensure equivalent transcriptional burden on the RNA polymerase
+across samples, each sample contained a total of 10 picomoles of T7-promoted
+template DNA. For ,  alone and  alone, 5 picomoles of each DNA
+template was added to 5 picomoles of DNA template for an unrelated
+RNA aptamer (80N 433min2) with no observed fluorescence activation
+of DFHBI-1T. Split-Broccoli sample was composed of 5 picomoles of
+each  and  DNA templates,
+while background sample contained 10 picomoles of the 80N 433min2
+control aptamer template. Samples were incubated with 2.5 nanomoles
+of each nucleotide triphosphate (ATP, CTP, GTP, UTP), 1 unit of inorganic
+pyrophosphatase (New England Biolabs), 1 nanomole of DFHBI-1T, and
+40 U of T7 RNA polymerase with its supplied buffer (New England Biolabs)
+in a total volume of 50 μL. Samples were prepared and kept on
+ice until transfer to a flat-bottom 384-well plate and measurement
+on a Synergy HT plate reader (BioTek) prewarmed to 37 °C. Plate
+reader was configured to take readings at 1 min intervals over a period
+of 4 h (λ = 485/20 nm, λ = 528/20
+nm). For Supporting Information , samples volumes were reduced to 20 μL and T7 polymerase was
+used at 100 U, while all other amounts remained the same. Background
+measurement values at each time point were subtracted from sample
+values before calculating mean and standard deviation. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00059/suppl_file/sb7b00059_si_001.pdf Expression plasmids
+for  assays were constructed to contain constitutive  P70a promoters and either a T7 transcription terminator or a derivative of the
+T500 transcription terminator from bacteriophage Φ82. Plasmids for the single insert corresponding
+to , , and  were cloned using standard restriction digest cloning to insert
+the sequence between the XbaI and XmaI sites in the pUC19 plasmid
+and were terminated with the T7 terminator. Dual expression plasmids
+contained the T7 terminator immediately downstream of  and the T500 terminator derivative immediately downstream of . DNA assembly (NEBuilder HiFi DNA Assembly, New England
+Biolabs) was used to insert the two inserts, along with a 270-nucleotide
+spacer sequence, between the NdeI and HindIII sites of the pUC19 plasmid.
+All plasmid inserts were confirmed through sequencing. Plasmids for  transcription by native  RNA polymerase were deposited to Addgene (IDs 87311–87315).
+For details of DNA sequences refer to . The protocol for  assessment in  was adapted from the
+Spinach and Broccoli publications. In short,
+100 ng of each plasmid was transformed into  BL21(DE3) competent cells using a standard heat shock transformation
+protocol. Cells were plated on 2xYT-agar plates containing 100 μg/mL
+of ampicillin and incubated overnight at 37 °C. Single colonies
+from each plate were cultured overnight (∼16 h) at 37 °C
+with 250 rpm shaking in 3 mL of 2xYT broth containing 100 μg/mL
+of ampicillin. Following overnight culture, 100 μL of samples
+were added to 2.9 mL of fresh liquid media until reaching OD = 0.4, at which point 500 μL of sample was pelleted at 2000
+RCF and resuspended in 1 mL Dulbecco’s phosphate-buffered saline
+(DPBS) with calcium and magnesium (Thermo Fisher). 200 μL aliquots
+were then incubated with 200 μM DFHBI-1T at 37 °C for 45
+min prior to assessment on an Accuri C6 flow cytometer (BD Biosciences)
+configured with a 488 nm excitation laser and 533/30 nm filter. For
+each population, 5 × 10 events were analyzed and
+processed using FlowJo software. Samples for fluorescence microscopy
+were prepared as described
+above. Following the centrifugation of freshly diluted overnight culture,
+samples were resuspended in 200 μL of DPBS and plated on poly--lysine-coated 8-chamber glass chamber slides (Lab-Tek). After
+a 45 min incubation at 37 °C, cells were washed twice in DPBS
+and incubated with 200 μM DFHBI-1T in DPBS for an additional
+45 min. Fluorescence images were obtained at 100× oil objective
+magnification using QCapture Suite Plus software and Rolera-XR camera
+(QImaging) mounted on an Olympus 1 × 70 inverted fluorescent
+microscope. Green fluorescence (λ = 470/40 nm,
+λ = 525/50, 33 ms exposure) and bright field images
+were captured and exported into Fiji for
+linear adjustment of the brightness and contrast. Split-Broccoli
+Toehold Switch Assays Toehold (TS2_KS01)
+and Trigger (TS2_AT01) RNA sequences were used as published. Inserts for  and  were synthesized as gBlocks
+gene fragments from Integrated DNA Technologies and cloned into pUC19
+between the XbaI and XmaI restriction sites. For the dual-insert plasmid
+containing  and  (“Split-Broccoli Toehold Switch”), the pUC19-Trigger-Bottom
+plasmid was linearized with NdeI and the insert for  was inserted using Gibson assembly. Each transcription unit contained
+a constitutive  P70a promoter and a T7 transcription terminator.  analysis was performed as described above for  fluorescence, with additional detection for red
+fluorescence using a 670 nm low-pass filter. For each population,
+5 × 10 events were analyzed and processed using FlowJo
+software. Fluorescence microscopy was performed as described for , with the
+addition of a red fluorescence filter set (λ =
+562/40 nm, λ = 624/40, 100 ms exposure). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00059/suppl_file/sb7b00059_si_001.pdf TX-TL transcription and translation reactions (a gift of Julius B.
+Lucks) were prepared and performed as described. In short,  cytoplasmic extract,
+reaction buffer with metabolites and 20 μM DFHBI-1T were added
+to either 8 nM plasmid or HO (blank) on ice, in a total
+volume of 10 μL. Samples were immediately transferred to a flat-bottom
+384-well plate and measured on a Synergy H1 plate reader (BioTek)
+configured with filter sets for green fluorescence (λ = 472, λ = 507) and red fluorescence (λ = 587, λ = 615 nm). Readings were taken
+at 3 min intervals over the course of 12 h. Average blank values at
+each time point were subtracted from sample values before calculating
+mean and standard deviation. Plasmids and their sequences were deposited
+to Addgene (IDs 87314, 87316–87318). For details of DNA sequences
+refer to ..

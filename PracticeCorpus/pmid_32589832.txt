@@ -1,0 +1,944 @@
+From the initially static objects
+to rudimentary switching of states and finally multistage movement,
+environmental triggering, and information relay, the field of DNA
+nanotechnology has evolved to the increasingly
+dynamic, enabled state it is today. Remarkable
+development in building functional nanostructures using DNA molecules
+as fundamental building blocks has elicited
+various stimuli-responsive mechanisms and elementary functions that
+can be integrated into solving sophisticated tasks in a preprogrammed
+manner. In other words, DNA nanotechnology is encroaching on the realm
+of robotics. There is an incredible amount of digital information
+that can be
+encoded into and read from DNA as demonstrated by Church and colleagues. Despite this ingenious and far-reaching approach to use DNA as a
+digital information storage, Richard Feynman once famously postulated that the key feature in biology is not just about
+writing the information, but rather what we could  with it. The information in DNA, , the sequence
+of nucleobases, directs the construction of countless nanoscopic atomically
+precise molecular machines that can perform intricate tasks in a dynamic
+and reliable manner. On the other hand, this protein-dominating machinery
+has evolved to meet its primary function, and therefore, it is remarkably
+demanding—yet possible through  protein
+design—to revamp the machines for any other
+purpose. Thus, one way to manufacture artificial and accurate nanoscale
+tools for performing similarly complex, but now user-defined, functions
+is to harness DNA molecules in additive, bottom-up fabrication. DNA
+molecules and their derivatives, DNA nanostructures, composed of a
+few to dozens of custom-length and -sequence DNA strands and whose
+assembled shapes are therefore also encoded in the sequences of the
+building blocks, can change their conformations
+or behavior in response to a plethora of physical and chemical inputs,
+including heat, presence of certain molecules, pH, and light. Due to the modularity and high addressability of DNA nanostructures,
+the responses of these tiny nanomachines can be engineered toward
+specific applications. Furthermore, while DNA nanostructures are based
+on molecular self-assembly, an intrinsically additive (bottom-up)
+fabrication process, there exists both “bottom-up” and
+“top-down” approaches for designing them. Features can
+be either gradually added to a design from nothing (bottom-up), or
+a user can directly create a 3D model and then systematically route
+a DNA-strand frame around it, sculpting the model’s likeness
+with DNA (top-down). Through these design paradigms DNA nanostructures
+are respectively afforded excellent customizability, addressability,
+and freedom of form. Thanks to effortless automated design and powerful simulation tools, programmable
+DNA-based nanostructures such as scaffolded DNA origami and various top-down fabricated wireframe structures have enjoyed widely spread interest as drug
+carriers, measurement and sensing tools, photonic instruments, molecular templates, spectroscopic rulers, and eventually the dynamic nanoscale devices discussed in depth
+in this review. The first major steps in creating dynamic DNA-based
+systems were
+taken around two decades ago. In the
+very end of the 1990s it was reported how manipulating solution conditions
+could induce simple rotary and linear motion in primitive DNA structures  conformational changes of helices. Soon after, Yurke  presented the first DNA-based molecular tweezers that could reversibly switch between open and closed states by using
+additional DNA strands as fuel. Next, Yan () employed a similarly reversible fuel-based strategy
+to change the hybridization topology of a DNA system, causing it to
+partially rotate between two topologies. These mechanisms of controlled
+movement eventually led to the creation of the first DNA walkers, that could travel step-by-step along a molecular track by consuming
+fuel. These reversible mechanisms were based on so-called -regions. Toeholds are short single-stranded DNA
+(ssDNA) extensions that serve as the docking sites for the reactant
+ssDNA at the end of the dsDNA domains. In other words, they are essentially
+short ssDNA extensions that could initiate the strand displacement
+reaction and energetically favor one of the two sides in this reaction.
+Around the same time, also other kinds of DNA motors were devised, similarly expending various molecular fuel sources to induce a rudimentary cycle of motion. The mechanisms have since
+evolved into more complex ones, and alternative
+regulation methods like external fields, weak base stacking interactions, and
+logic gates have recently opened completely
+new possibilities for building dynamic systems. Currently, we are
+approaching the level of advanced and feasible DNA-based nanorobotics. To probe the mechanical movements of individual DNA nanostructures,
+several single-molecule techniques could be employed. The label-free
+techniques like transmission electron microscopy (TEM) and atomic
+force microscopy (AFM) are commonly applied for acquiring static configurations
+of DNA nanorobots with subnanometer spatial resolution. With the recent
+developments of high-speed AFM (HS-AFM), even dynamic events could
+be recorded with a temporal resolution down to hundreds of milliseconds
+per frame. On the other hand, DNA nanostructures labeled with fluorophores
+could be characterized by the single-molecule fluorescence resonance
+energy transfer (smFRET) to resolve their dynamics with a much higher
+temporal resolution. Fluorescence-based super-resolution imaging, , DNA points accumulation for imaging in nanoscale topography
+(DNA-PAINT) is natively compatible with
+DNA nanostructures for high spatial resolution imaging in aqueous
+environments. Two interesting research areas that deserve to
+be mentioned but
+are not touched here in detail are DNA computing and protein–DNA
+hybrid structures. DNA computing is based on dynamic DNA interactions
+combined with the programmable nature of the DNA function. The programmability
+enables for example creation of neural-networks using DNA molecules
+and thus realization of the neural-computing at the molecular scale
+and scaled up digital circuit computation by DNA strand-displacement
+cascades. Meanwhile, in the hybrids one could combine
+the addressability and modularity of DNA nanostructures with the precision
+and functionality of proteins. For example,
+in the work of Derr () the dynein and kinesin motor proteins—that have also inspired
+many versions of DNA walkers—were attached to a DNA origami
+strut, thereby facilitating a molecular scale tug-of-war between different
+protein populations. While the goals of protein–DNA hybrids
+are similar as for purely DNA-based machines, the approach is fundamentally different as functionality stems more
+from the proteins instead of the DNA components. The topic is thus
+discussed elsewhere. Here, we describe the progress in user-defined robotic DNA nanostructures
+by summarizing the recent achievements of device development for a
+variety of applications. In the context of this review, we define
+nanorobots as dynamic nanoscale devices that display sophisticated
+functions such as multistage and repeatable movement, interconnectivity,
+or autonomous regulation. In particular, we mainly focus on the structurally
+complex DNA nanodevices, , the newly emerged
+ones that usually consist of dozens of DNA strands. First, we introduce
+the mechanisms of the DNA nanostructure movement and provide examples
+of DNA nanostructure-based force spectroscopy, thus laying the foundation
+for all the other emerging implementations. We describe regulatory
+and information relay systems, nanomedical robots for imaging, diagnostics
+and drug delivery, dynamic photonic and plasmonic structures, as well
+as DNA-based instruments driven by external fields. Finally, we discuss
+advanced robotics that are capable of autonomous operation. Principles
+of Mechanical Movement and Characterization of Molecular
+Scale Forces The fundamental core of DNA structures is highly
+specific and based
+on ordered Watson–Crick base pairs. However, DNA is not brittle, but instead pliable and robust. Mechanically
+it behaves as an entropic spring, , when the
+DNA molecule is stretched, the entropy decreases (fewer available
+conformations) thus resulting in a restoring force. A DNA helix can
+be elastically stretched and bent by external forces and in proper
+conditions it possesses the ability to reconstitute itself in case
+part of it unravels due to excessive stress. This malleability makes DNA an excellent building material for durable
+moving parts. DNA retains most of these
+spring-like properties when assembling into larger 3D structures such
+as DNA origami, the mechanical properties of which have been documented
+by Kauert () with
+direct force measurements. Importantly, the architecture of the assembly
+(crossovers, .) affects the bending and torsional
+rigidity of the object. Thus, the mechanical properties can be tuned
+from beamlike stiffness to wire-like flexibility by intelligent design
+of the structures, using only DNA as material. A nice demonstration
+of this was made by Liedl and co-workers, where they crafted prestressed tensegrity structures from DNA origami. Stiff beams can be connected by short single-strands to constitute
+hinges and facilitate restricted, mechanical movement. Marras () used this strategy to
+create DNA origami analogues of a hinge for angular motion, a slider
+for linear motion, a crank-slider that links angular and linear motion
+(a, left panel),
+and finally a Bennet linkage capable of a reversible, 3D movement
+cycle (a, right
+panel). Their hinge was made of two beams connected from their ends
+with short ssDNA wires, enabling angular opening and closing of the
+beams. The slider was built by positioning a mobile DNA origami ring
+around a beam with a stopper ring and then anchoring it from the both
+ends with ssDNA. Three hinges and the slider were then combined to
+constitute the crank-slider. The opening and closing cycle of the
+Bennet linkage could be initiated by addition of single-stranded DNA
+inputs that “zipper” the sides of the linkage together.
+The linkage could then be opened  strand displacement
+of the input strands. After the “zippering” was undone,
+electrostatic repulsion forced the structure to its original, open
+shape. In terms of control, the inherent flaw with floppy ssDNA hinges
+is that they are subject to random, thermal motion. However, the locally
+addressable flexibility also provides the basis for making other kinds
+of joints that offer more direct control. A bit earlier, in 2014,
+Zhou () showed how
+stiffer and more compliant origami components could be combined to
+form a joint-like structure. The stiff regions, 3-fold stacks of layered
+helices, were connected by a singular layer from one end at the middle,
+while the other side was connected by a lone DNA strand acting as
+a spring (b).
+By changing the length of the spring, varying forces were exerted,
+and the joint complied accordingly. In this way, the bending force
+could actually be controlled very carefully. The following year,
+Zhou and his co-workers exploited this
+when they developed a dynamic, compliant
+DNA origami mechanism that displayed two rationally designed stable
+configurations separated by an energetic barrier. The device was an
+assembly of four connected bars that had two possible resting positions
+where no deformation was present. Changing configuration required
+bending the bars, thus creating an energy barrier to overcome. They
+then displayed how such a mechanism could be actuated and released
+by DNA strand inputs and strand displacement, respectively. Employing a ssDNA as a roughly ideal entropic spring, Nickels () were able to craft a
+DNA origami-based nanoscopic force clamp (c). In the clamp, a sample molecule could
+be propped between stiff DNA origami towers by ssDNA springs. The
+force applied to the target molecule could be controlled incrementally
+by changing the length of the ssDNA spring strands base by base. With
+the additional help from Förster resonance energy transfer
+(FRET) pairs, the authors used the clamp to study conformational changes
+in a Holliday junction and the bending that a TATA-binding protein
+causes to a DNA helix. A slightly similar approach was taken by Kilchherr
+and co-workers to study weak DNA base
+stacking forces in a time-resolvable manner. They attached stiff honeycomb-packed
+DNA origami pylons to micrometer-sized beads that could then be manipulated
+with optical tweezers (d). The pylons were connected to each other  a ssDNA tether and the blunt-ended double helices protruded from
+the ends of the pylons. Owing to the optical tweezers, they were able
+to record forces and associated lifetimes for the blunt-ended base
+stacking interactions, resolving the exact moments when stacked bases
+disconnected upon applying a set force. The use of such a novel molecular
+scale tool provided unique insight into the mechanics and dynamics
+of stacking bonds, for example differentiating various nucleotide
+combinations by their lifetimes (e) and allowing observation into the energetics
+of stacking bond formation and dissociation (f). Finally, nanoscale force calipers
+have also been constructed from
+DNA by the research groups of Carlos E. Castro and Hendrik Dietz.
+In a design visually like the hinge in a, the opening angle of the hinge is controlled,
+thereby controlling also the tensile force applied to a sample tethered
+at the ends of the caliper. These have proven especially useful precise
+measurement tools for molecular scale features that may otherwise
+be impossible to characterize. These include various nucleosome properties,
+such as the forces between nucleosomes, nucleosome unwrapping, and the stability
+of nucleosomes. It has become clear
+from above that the structural evolution of
+dynamic objects and the requirements of the delicate molecular scale
+measurements have further increased the importance of a powerful software
+for simulating structural details of the DNA nanoshapes and their
+movement. Here, our main focus is on the different robotic mechanisms
+and their intriguing applications, so the readers are suggested to
+refer to other sources for multiple DNA design and simulation software
+options. Both modeling and validation methods have been recently reviewed
+in ref (), and in
+more detail, for the design of the DNA nanostructures, see, , ref () (various approaches) or ref () (wireframe constructions), and for the simulation software,
+see, , rigid-beam models in finite element frameworks
+(software CanDo), atomistic molecular-dynamics
+simulations, or coarse-grained modeling
+(software oxDNA). DNA nanostructure mechanics and force spectroscopy. (a) Mechanic
+DNA nanostructures. Left panel from top to bottom: a hinge for angular
+motion, a slider for linear motion, and a crank-slider that executes
+angular and linear movement. Right panel: a Bennett linkage. (b) Compliant DNA origami structures. (c) A DNA origami force clamp created using
+ssDNA as an entropic spring (force adjustment demonstrated in the
+left panel). (d) Measurement setup for
+unraveling the base stacking (top left) forces. The opposite DNA origami
+pylons with blunt-ended dsDNA variants (top right panel) are linked
+together through a ssDNA tether and the pylons are attached to the
+optical tweezer beads for force spectroscopy (bottom panel). (e) Average lifetimes of select base stacking
+interactions as a function of force, as measured with the setup depicted
+in (d). Six, four, and two stack arrays are depicted as blue, orange,
+and red data points, respectively. The solid line represents an exponential
+fit of the data. Meanwhile, the dashed line is a visual guide for
+combinations with particularly long lifetimes, that were difficult
+to dissect with the optical trap. (f)
+A free energy diagram of the dissociation of two GC:CG stacks as a
+function of distance. The energy minimum highlights relaxed, fully
+formed stacks (∼20 Å) and a plateau is accordingly reached
+at full dissociation of the stacking (>26 Å). In addition,
+a
+sharp increase in average orthogonal displacement respective to the
+helical axis can be observed as the stacks are pulled apart by the
+measurement rig. (a) Reprinted with permission
+from ref (). Published
+by 2015 National Academy of Sciences. (b) Reprinted with permission
+from ref (). Copyright
+2013 American Chemical Society. (c) Reprinted with permission from
+ref (). Copyright
+2016 The American Association for the Advancement of Science. (d–f)
+Reprinted with permission from ref (). Copyright 2016 The American Association for
+the Advancement of Science. In order to be
+able to handle complex tasks, it may be necessary
+for the components of a system to communicate with each other and
+to propagate information. By triggering one component with the chosen
+input, it can undergo a change and release an output that will in
+turn act as the input for the next component, eventually translating
+into a predetermined function. With these kinds of cascaded selective
+triggering mechanisms and precise internal interactions, system modularity,
+dynamics and automation can be achieved. To this end, several interaction
+cascade and information relay strategies have been devised for DNA-based
+systems. In 2015 Gerling () published a strategy for manipulating connections
+between ready-assembled
+3D DNA structures by the weak base stacking interactions between the
+components, first introduced by Woo and Rothemund using 2D tile stacking (a). The authors created shape-complementary features on the
+lateral surfaces of DNA structures, enhancing the weak interactions
+at these interfaces and effectively docking DNA bundles together in
+a shape-specific manner. The attractive force between the nanostructures
+could be overcome by electrostatic repulsion forces by changing the
+prevalent solution conditions such as salt concentration or temperature.
+Thus, the DNA structures could be reversibly disassembled and recombined
+as necessary, in a time frame of seconds, making them toggleable and
+forming a basis for dynamic functions. Furthermore, combined bundles
+could then constitute a new shape-complementary interface in a manner
+similar to a 3D jigsaw puzzle, that could allow the next structure
+to dock to the previously combined ones. Finally, Gerling  also showed how singular elements of the system could
+be selectively disabled and enabled by using single-stranded DNA loops
+and toehold-mediated mechanisms. By including ssDNA loops at a shape-complementary
+interface and then adding a loop-specific and complementary strand
+to the system, that interface would deform and become unusable for
+assembly. The reverse could then be realized by removing the complementary
+strand  the toehold-mediated hybridization of
+a so-called recovery strand. In this way, the authors presented one
+option for making complex DNA nanostructure systems, where components
+can reversibly interact in a dynamic, cascading manner, and where
+individual elements can be activated and deactivated at will. One
+example is a large-scale reconfigurable lattice based on non-base-pairing
+interactions (a). The individual dynamic cross-like switches (a, middle panel) can be polymerized
+into a network (a, right panel) that reversibly changes between the closed (high
+magnesium level) and open state (low magnesium level) depending on
+the prevalent cation concentration (a, bottom panel). A year later Ke and co-workers introduced
+a rhombus-shape DNA origami nanoactuator (b). The device was composed of a driver and
+a mirror, , four stiff rod-like arms assembled
+into a rhombus shape using flexible ssDNA scaffolds in every corner.
+The conformation of the device (opening angle) was controlled  ssDNA “strut-locking” strands of different
+lengths embedded on driver-side arms. The mirror-side contained two
+capturing strands for cargo attachment. Tunable fluorescent behavior  long-range allosteric regulation was demonstrated by
+attaching two halves of enhanced green fluorescent protein (eGFP)
+to the capturing strands in open conformation. Closing of the device
+with short locking strands regained the strong fluorescence of eGFP
+(b, bottom
+panel). Choi () expanded
+the actuator concept by constructing a reconfigurable DNA accordion
+rack using a network of long DNA beams joined together  multiple flexible joints. Conformational switching in 2D DNA 6 ×
+6 rhombus meshes was controlled by adding DNA lock strands at predefined
+positions in the structure (c). Multistep lattice reconfigurations were generated
+using a toehold-mediated strand-displacement process by repeating
+the locking process after detaching the prior DNA locks. Moreover,
+controlled multistep lattice reconfigurations of the accordion rack
+and the wrapped up 2D DNA configuration resulting in a 3D DNA nanotubular
+structure with various dimensions was demonstrated. One step
+further in the information propagation systems, , transformations with programmable initiation, propagation,
+and regulation was presented by Song () who employed base-stacking interactions as a
+driving force to perform long-range information relay on dynamic DNA
+molecular arrays. The modular system was constructed from dynamic
+multi-interconnected trapezoidal DNA “antijunction units”
+that could switch between two stable conformations  an open intermediate conformation. The array transformation analogous
+to molecular domino array was launched by adding trigger strands at
+the predefined “antijunction” unit. This resulted in
+a conformational switch in an adjacent unit, which then migrated through
+the system without the need of additional strands (d). This is due to declined
+base-stacking and higher energy at the interface between the units.
+The reconfiguration process is reversible since the array can be transformed
+to its initial conformation by releasing the old trigger strands with
+new ones. Such artificial systems allow the study of complex dynamic
+behaviors and allosteric mechanisms observed in biological systems. DNA nanostructures for
+information relay and regulation. (a) Top
+left panel: a dsDNA protrusion (red) fits tightly to the designed
+dsDNA recession (blue) thus stacking the counterparts through non-base-pairing
+interaction. Middle left panel: A reversible DNA switch with designed
+protrusions and recessions. Middle right panel: Working principle
+of a reconfigurable large-scale network obtained by polymerization
+of multiple switches. Bottom panel: TEM images verifying reversible
+switching of the network (closed state: high magnesium concentration;
+open state: low magnesium concentration). (b) A rhombus-shape DNA origami nanoactuator; movement on the driver
+side (left) is mirrored to the right side. The lower panel depicts
+the regaining of eGFP fluorescence by bringing its two halves in close
+proximity using the actuator. (c) DNA
+accordion rack that can adapt different geometries relying on DNA
+lock strand positioning. (d) Long-range
+step-by-step information relay process in DNA “domino”
+nanoarrays, launched by the hybridization of a trigger strand to a
+single unit. (a) Reprinted with permission
+from ref (). Copyright
+2015 The American Association for the Advancement of Science. (b)
+Reprinted with permission from ref (). Copyright 2016 Springer Nature Ltd. (c) Reprinted
+with permission from ref (). Copyright 2018 John Wiley & Sons. (d) Reprinted with
+permission from ref (). Copyright 2017 The American Association for the Advancement of
+Science. Biobased nanorobots are typically operating
+at the subcellular
+level and consist of stimuli-responsive biomaterials with excellent
+precision and efficiency and these nanorobots have recently attracted
+increasing attention particularly in medical applications. With delicate design, nanorobots can outperform
+conventional techniques through a combination of several unique properties,
+such as cargo-loading, degradation resistance, site-targeting, tissue
+penetration and stimuli responsiveness. The multifunctionality makes
+them ideal candidates for drug delivery and imaging. For instance,
+light, ultrasound, and magnetic fields have been utilized
+to transport or trigger the release of loaded drugs or imaging agents.
+Additionally, they may reach targets in the human body that are otherwise
+inaccessible to conventional robotics. As one
+of the most important biomacromolecules in all life forms,
+DNA possesses advantages over other smart materials in the construction
+of such robots. First of all, DNA is intrinsically biocompatible and
+biodegradable, which lightens the concerns on its possible adverse
+effects. On top of this, the tremendous development in automated DNA
+synthesis has enabled production of DNA strands in large quantities,
+yet with site-specific addressability, which may lead to integrated
+functionality, such as drug-loading, site-targeting and stimuli-responsiveness
+within one rationally designed architecture. There are several reviews that have well summarized the design and
+construction of DNA nanostructures, as well as their potential in
+drug delivery applications, while their bioimaging possibilities and biological responses have been
+addressed in others. For an in-depth discussion on the various drug
+payloads and their delivery mechanisms, interested readers are respectively
+referred to ref (). In this section, we will focus on the advances in the emerging
+field of logic-gated dynamic DNA nanorobots in nanomedicine, which
+includes two main categories: imaging/diagnostics and delivery/computing. Yamuna Krishnan’s research group has performed seminal work
+on  imaging using several smart DNA nanorobot
+designs. In their early versions, the nanorobot was constructed with
+several fluorescent dye-modified oligonucleotides that underwent a
+conformational transition of an i-tetraplex in response to protons,
+which was used for pH-mapping (a). The spatiotemporal
+pH-mapping based on the so-called I-switch was demonstrated to be
+efficient in living cells using FRET. Later, the same design was applied
+for pH-mapping in a living organism using nematode  as a model. study revealed that the internalization of I-switch
+to coelomocytes followed a receptor-mediated endocytosis pathway and
+that the nanorobot functioned as efficiently  as . By using two nanorobot designs that
+were modulated with distinct endocytic pathway-trafficking proteins,
+they managed to simultaneously map pH gradients through intersecting
+cellular entry pathways in the same cell. They also extended the design, termed as 2-IM, which could simultaneously
+detect protons and chloride ions in living cells. The 2-IM enters lysosomes through the process mediated
+by a lysosome-targeting tag. Following the entrance, a H-induced conformational change of an i-tetraplex triggers FRET between
+a fluorophore pair while a Cl-sensitive dye reports
+Cl gradient. It was found that 2-IM is able to
+report the pH and chloride ions within one lysosome quantitatively
+and simultaneously. As a demonstration of this concept, 2-IM was employed
+to image fibroblasts derived from skin biopsies of both healthy individuals
+and patients with Niemann–Pick disease resulting in highly
+distinct lysosome subpopulation profiles, thus demonstrating the efficiency
+of 2-IM in disease diagnosis. Other than the simple i-motif structure, a DNA icosahedra
+was also
+designed and used for cargo-loading, which was further employed in
+cell imaging. For example, they introduced three different endocytic ligand (folic
+acid (FA), galectin-3 (Gal3), and the Shiga toxin B-subunit (STxB))
+to the quantum dot (QD)-loaded DNA icosahedra respectively through
+site-specific modification and demonstrated the feasibility to characterize
+the dynamics of endocytic pathways facilitated by Gal3 and STxB. Hence, the QD-loaded DNA icosahedra exhibited
+an excellent platform in real-time endocytic pathway mapping at single-particle
+level. They also loaded the DNA icosahedra with photoresponsive polymers
+and realized targeted spatiotemporal imaging of single endosomes in
+specific cells in . Kuzuya  developed a nanomechanical DNA origami
+plier-like device that consists of two DNA lever domains joined together
+by a Holliday junction. With this design,
+target molecules of various sizes can be detected at a single-molecule
+level with three independent mechanisms: “pinching”,
+“zipping”, or “unzipping”. For example,
+by attaching two ligands to the concavities of DNA arms, the DNA plier
+could cooperatively capture a single target molecule, transforming
+the origami from a cross or antiparallel configuration into a parallel
+closed form (b). The shape transition can then be detected by AFM, spectroscopic
+analysis and agarose gel electrophoresis. Later on, they realized
+a more sophisticated system with precise control over the transitions
+between three structural conformations, thus showing potential in
+molecular computing. In addition
+to the previous examples, Francesco Ricci’s
+research group has also shown remarkable progress in developing a
+variety of antibody sensors using smart DNA robots. Omitting often complex and large DNA nanostructures, they
+have designed sensors that consist of only several functionalized
+DNA sequences and realized sensitive antibody probing based on the
+structural transition of their devices. Other than
+sensors, it is worth noting that with the help of antibodies the group
+has also produced DNA robotic vectors for controlled release of molecular
+payloads. Through deliberate design,
+Douglas  constructed
+a capsule-like DNA robot that can open and close in response to a
+binding antigen (c). In the open state, the nanocapsule
+can be loaded with designated cargos such as nanoparticles and proteins
+through complementary DNA hybridization (c, left panel). The loaded capsule can then
+be closed by two DNA aptamer “locks” and stabilized
+by the guiding staples. Upon interaction with the antigens expressed
+on the human leukocyte surface, the DNA aptamers change conformation,
+which leads to the open state and subsequent display of encapsulated
+cargo. Owing to the modularity of the system, the authors used two
+distinct aptamer “locks” for two different targets/keys
+to “unlock” the capsule, which is equivalent to a logical
+AND gate (shown in c top right panel and bottom panel). By utilizing similar
+devices as above, Amir  developed the universal
+computing system that was operational in
+a living animal. The barrel-shaped DNA
+nanorobot was conjugated with DNA aptamer gates that targeted different
+protein cues, platelet derived growth factor (PDGF) and vascular endothelial
+growth factor (VEGF). Together with the interaction between nanorobots
+that triggered molecular payloads on or off, they managed to realize
+various logic gates (AND, OR, XOR, NAND, NOT, CNOT and a half adder)
+in a living animal model, cockroach (). Possible outcomes of the robot interactions, , drug outputs, depended on different protein cues and the prevalent
+robot states (d). In a more recent report, they also showed that the DNA nanorobot
+in a living  could be controlled
+by human brain activity. An electromagnetic
+field was regulated by an online algorithm which recognized electroencephalography
+(EEG) patterns. The thought-induced switch in the field caused the
+heating of metal nanoparticles that were attached to the gate, which
+led to the opening of nanorobots and subsequent display of payloads. Li  designed an intelligent DNA robot and
+brought the test subject from cultured cells to tumor-bearing mouse
+models, demonstrating a promising strategy for cancer treatment in
+mammals. Their tubular DNA nanorobot
+was loaded with blood coagulation protease, thrombin, and fastened
+along the periphery by targeting DNA, a DNA aptamer (AS1411) that
+targets nucleolin that is specifically expressed in tumor-associated
+endothelial cells (e). Upon intravenous injection in tumor-bearing mouse models,
+it was found that the DNA nanorobots explicitly accumulated on tumor
+vessels where the encapsulated thrombin was released, finally leading
+to inhibition of tumor growth and tumor necrosis. The therapeutic
+effect was confirmed in mouse models bearing melanoma, lung cancer,
+breast cancer, and ovarian cancer, while the safety and immunological
+inertia was proved in mice and Bama miniature pigs. Besides the above-mentioned
+examples, other stimuli have also been demonstrated to be feasible
+in triggering the cargo release from DNA nanorobotics, such as temperature, light, and mRNA. Using a modified capsule design, Ijäs  changed the trigger to a more general subject, pH,
+by replacing
+the aptamer “lock” with Hoogsteen triplexes, dubbed
+pH-latches (f). The Hoogsteen triplexes form at
+low pH, resulting in a closed state of the nanocapsule. When the pH
+was elevated, the Hoogsteen triplexes dehybridized and thus rapidly
+opened the nanocapsule revealing the encapsulated cargo. In this study,
+AuNPs and horseradish peroxidase (HRP) were successfully loaded and
+displayed selectively in response to the specified external trigger.
+Similar process has also been demonstrated by Grossi , but in their approach strand-displacement
+reactions were employed in achieving successive opening and closing
+of the “nanovault” (g). In summary, the genetic information-bearing
+DNA and its derivative
+nanorobots hold tremendous potential for the preparation of personalized
+medicine, especially so with the foreseeable
+simple and cost-effective mass production of DNA nanostructures. As the key limitation, however, detailed elucidation
+on the  features such as the pharmacokinetics,
+structure-performance relationships and circulating half-lives is
+still missing. As of today, no clinical trials have yet been reported, although an increasing amount of efforts have
+been invested in the research on DNA nanostructure stability and behavior
+in physiologically relevant conditions. Currently, covalent cross-linking, intelligent crossover
+design, and structure-dependent digestion have yielded promising results in increasing resistance against
+enzyme digestion, denaturation, and low-magnesium environments. DNA nanorobotics for biomedicine. (a) An i-tetraplex
+for pH-mapping. (b) A nanomechanical
+DNA origami plier for detecting
+target molecules (observed through the plier configuration change). (c) A logic-gated DNA nanorobot for encapsulation
+and display of cargo. Top left panel: the open robot with loaded antibodies.
+Top right panel: Boolean AND gating with two-lock (two aptamer locks
+for robot) and two-key (antigens at the cell surface) combinations.
+Bottom panel: Logic-gating in action; different lock-key combinations
+against selected cancer cells. (d) Universal
+computing with DNA nanorobots; a generalized version of the robots
+shown in (c) with multiple different gate options. The logic-gated
+DNA nanorobots can adopt distinct states, and depending on the interaction
+with the protein cue profile, the interaction can result in different
+drug output. (e) Top panel: Working
+principle of the thrombin-loaded DNA nanorobot that is wrapped into
+a tubular shape using strands with nucleolin aptamers (robot interaction
+with nucleolin opens the robot and displays the cargo). Bottom panel:  mouse model for inhibition of tumor growth and tumor
+necrosis. (f) A reconfigurable DNA origami
+nanocapsule with “pH-latches” for encapsulation and
+display of cargo. The capsule can reversibly open (dsDNA and ssDNA
+do not form a triplex) and close (dsDNA and ssDNA form a triplex)
+upon the pH change. (g) A similar device
+as in (f), but this type of DNA origami nanovault closes and opens
+through strand displacement reactions (DNA keys). (a) Reprinted with permission from ref (). Copyright 2009 Springer
+Nature Ltd. (b) Reprinted with permission from ref (). Copyright 2011 Springer
+Nature Ltd. (c) Reprinted with permission from ref (). Copyright 2012 The American
+Association for the Advancement of Science. (d) Reprinted with permission
+from ref (). Copyright
+2014 Springer Nature Ltd. (e) Reprinted with permission from ref (). Copyright 2018 Springer
+Nature Ltd. (f) Reprinted with permission from ref (). Copyright 2019 American
+Chemical Society. Further permissions related to the material excerpted
+should be directed to the American Chemical Society. (g) Reprinted
+with permission from ref (). Published by 2017 Springer Nature Ltd. Plasmonic
+and Photonic Robots as Sensors and Walkers Photons serve
+as ideal readout signals for nanorobotics as they
+can be detected remotely and instantaneously. To detect the state
+of a DNA nanodevice by optical means, it often requires a mechanism
+to translate the spatial configuration to a measurable optical quantity.
+Two most common mechanisms that have been employed are chiral plasmonics and FRET. Gold nanorods (AuNRs), which have
+distinct longitudinal and transversal plasmon modes, can couple with
+each other in different chiral modes depending on their relative spatial
+configurations. This chirality can thus be measured by circular dichroism
+(CD) spectroscopy. FRET, for one, is a well-established method to
+understand the distance between molecules by measuring the energy-transfer
+efficiency from donor fluorophore to acceptor molecule. In this section,
+recent robotic DNA structures relying on these two mechanisms will
+be discussed, and these nanodevices can be roughly categorized into
+sensors and walkers. DNA nanostructures are actively studied
+and employed as sensing
+units in DNA nanotechnology. The input from DNA sensing strands can
+be translated to a measurable CD or fluorescent output  mechanical reconfiguration of the nanorobots. Based on this operational
+principle, a variety of sensing devices have been built. Kuzyk  have developed a reconfigurable chiral
+plasmonic nanomachine or “metamolecule” that can be
+modified to convert various input signals to a shift in its CD spectroscopy. The framework of the metamolecule consists of two DNA origami beams
+connected  a single Holliday junction that enables
+the free rotation of the beams with respect to each other. One oligonucleotide-functionalized
+AuNR is attached to each beam in a parallel fashion so that the AuNRs
+move following the rotation of the DNA beam (a left panel). The metamolecule can switch
+between a relaxed configuration and a fixed configuration by the sensing
+strands attached at the end or edge of the system. By employing different
+sensing strands, the nanomachine can be used to detect ssDNA and RNA with
+specific sequence (a right panel shows the switching in action), as well as pH
+changes, light irradiation, and aptamer-binding molecules. A similar system has been developed
+by Zhou () Instead
+of using two beams, they employed
+a rectangular platform with a beam able to rotate in a plane parallel
+to the plate. The involvement of the plate provided more addressable
+space for attaching several sets of sensing strands, thus allowing
+the systems to be regulated by multiple aptamer-targets at the same
+time. Wang () have
+taken the approach one step further by combining up to four AuNRs
+together into diastereomers with the help of multiple beam-and-plate
+platforms. Besides these chiral plasmonic approaches, FRET has
+also been used
+as an output of DNA nanorobots. Selnihhin () designed a hinge-like DNA origami beacon equipped
+with donor and acceptor fluorophore arrays (b). The nanosystem can switch between an
+opened and a closed state by the sensor modules attached at the edges
+opposite of the rotation axis. Because of the high number of FRET
+pairs, the beacon can detect a target ssDNA with specific sequence
+at the concentration down to 100 pM and therefore demonstrates its
+potential as a point-of-care diagnostic device. Besides a plasmonic
+signal reporter, the AuNR can also serve as
+a walker itself. Zhou () designed a system that allows a AuNR walker to move along
+a predefined track on a 2D or 3D DNA origami platform. With a stator
+AuNR equipped on the opposite side of the platform, the location of
+the walker is reflected in the CD spectroscopy. The walking behavior
+of the AuNR can be precisely controlled in a reversible stepwise manner
+by fueling the system with specific sets of blocking strands and removal
+strands for toehold-mediated strand displacements. The oligonucleotides
+attached to the surface of the AuNR act as feet during the walking,
+and a series of ssDNA extrusions on the platform serve as the footholds
+thus defining the track of the motion. The walker moves forward as
+the blocking strands cause the feet on the backside of AuNR to dissociate
+from the footholds, while the removal strands simultaneously free
+the footholds in the walking direction. This “release and capture”
+process is demonstrated in c. The authors have also shown that the walker can
+walk on a 3D uneven platform with prescriptive tracks. Such a dynamic
+DNA nanodevice is not only able to report its own structural dynamics,
+but it also enables fine-tuning its plasmonic properties  for optical applications. To expand the toolbox
+of DNA-based dynamic nanomachines for accomplishing
+even more diverse tasks, other types of mechanical movement have also
+been explored. For example, sliding is one important basic motion
+required for many nanofactories. Urban () implemented the same principle of programmable
+walking as above but translated the coordinated walking of two AuNPs
+to a mechanical sliding of two antiparallel DNA origami filaments.
+However, instead of the reporting function of chiral arrangement of
+AuNRs, the sliding was characterized  by a
+FRET pair located at one end of the beams. Powered by similar DNA
+fuels as in ref (), the sliding motion can also be controlled in a stepwise and reversible
+manner. When the two beams slide away from each other, the donor and
+acceptor pairs will be spatially separated with increasing distances,
+and therefore, the progress of the sliding could be monitored by fluorescence
+spectroscopy. In addition, in the attempt to investigate the system
+in more detail, the authors found an intriguing fact that the sliding
+could occur even when the structures were confined by DNA sidelocks.
+However, the underlying mechanism was not clear and needs further
+investigation. Zhan () further
+increased the complexity and motion types of nanomachinery by hierarchically
+assembling multiple DNA origami with AuNP/AuNR and fluorophores. These
+sophisticated assemblies can perform a variety of highly regulated
+and coordinated mechanical movements, which include an independent
+revolving, a synchronized revolving and a complex joint motion. These
+DNA nanomachines and their macroscopic analogues were depicted in d. The authors demonstrated
+that two DNA origami beams equipped with footholds composed of different
+sequences can be independently controlled to revolve around the same
+AuNR by feeding the system with corresponding instructions  toehold-mediated reactions. When the footholds contained
+the same sequence, such motions were synchronized. Furthermore, a
+joint motion which combines simultaneous sliding and revolving were
+also realized by placing the footholds in a shifted pattern. It is
+worth mentioning that all the motions in this work are monitored in
+situ  the changes of fluorescence intensity owing
+to the distance-dependent interactions between fluorophores and AuNRs. Another intriguing implementation of the “release and capture”
+type of walker is a nanoclock designed by Xin () (as shown in e). The clock consists of three DNA origami
+parts: a rectangular plate foundation, a ring-shaped track, and a
+rotary beam. A rotor-stator AuNR pair was equipped with the beam and
+foundation for reporting the structural dynamics. Both the track and
+rotor were connected to the foundation, the only difference being
+that the track was immobilized, while the rotor was linked to the
+foundation  two adjacent scaffold crossovers with
+30 unpaired bases. The long scaffold linkers provide sufficient flexibility
+for the beam to freely rotate along the track. In total, 16 footholds
+were placed on the track, allowing a 360° rotation with 22.5°
+intervals. Periodic CD intensity changes as a function of rotation
+angles were observed for both the clockwise and counterclockwise rotations,
+which were in good agreement with theoretical simulations. While the
+stepwise rotation was still controlled by external inputs, the authors
+realized an autonomous clock by adding DNAzyme sequences as feet and
+replacing footholds with RNA molecules. After activating the DNAzyme
+feet and releasing the rotor, the DNAzyme cut the RNA substrates into
+shorter segments one after another in a time span of a few hours.
+In other words, the autonomous nanoclock was powered by RNA hydrolysis
+with a burnt-bridge mechanism. Dynamic plasmonic and photonic DNA nanodevices. (a) Left
+panel:
+a reconfigurable plasmonic metamolecule made from AuNRs and a DNA
+origami with lock strands (colorful strands) on both sides. Right
+panel: operational principle of the switching between relaxed state
+and left-handed or right-handed state  strand
+displacement. (b) Left panel: a hinge-like
+fluorescence beacon with multiple donor–acceptor pairs and
+sensor modules. Right panel: comparisons of fluorescent spectra and
+energy transfer efficiency between opened and closed state. (c) Working principle of AuNR walking on predefined
+tracks on a DNA origami plate. (d) Macroscopic
+mechanical elements and their corresponding nanoscale counterparts
+in different DNA nanosystems. (e) A
+rotary nanoclock; a DNA origami hand rotates along a ring track  strand displacement. (a)
+Reprinted with permission from ref (). Copyright 2014 Springer Nature Ltd. (b) Reprinted
+with permission from ref (). Copyright 2018 American Chemical Society. (c) Reprinted
+with permission from ref (). Published by 2015 Springer Nature Ltd. (d) Reprinted with
+permission from ref (). Published by 2019 The American Association for the Advancement
+of Science. (e) Reprinted with permission from ref (). Published by 2019 Springer
+Nature Ltd. Robots Guided and Driven by External Fields The plasmonic and nanophotonic mechanisms mentioned in the previous
+subsection may provide instantaneous output information about the
+structural dynamics of DNA nanorobots, but the actuation of the structural
+reconfiguration is still relatively slow when, for example, diffusion-limited
+strand-displacement reactions are employed.
+However, charged DNA nanostructures can be manipulated by electric
+fields based on (di)electrophoretic motion, and therefore, DNA nanomachines with considerably swift responsiveness
+and well-defined temporal and spatial control driven by external electromagnetic
+fields have been realized. Kopperger () fabricated
+a dynamic nanoelectromechanical robotic arm composed of a rigid rectangular
+DNA origami tile equipped with a 6HB arm that was joined to the tile  ssDNA scaffold crossovers (a, top panel). The flexible joint enabled
+stochastic switching of the arm due to transient binding, detected
+from FRET signals generated by the donor fluorophore (Alexa Fluor
+488) on the tip of the arm and two acceptor dyes (ATTO 565 and ATTO
+647N) connected on the opposite sides of the origami tile. Electrically
+driven movement of the robot arm was measured when the system was
+seated at the center of a cross-shaped electrophoretic chamber having
+two perpendicular fluid channels. The electric field was applied by
+two pairs of platinum electrodes inserted in the reservoirs at the
+ends of the channels that resulted in a movement of the pointers,
+detected with an electron-multiplying charge-coupled device camera
+using total internal reflection fluorescence (TIRF) microscopy (a, bottom panel).
+Moreover, the arm enabled electrically driven transport of cargo which
+is useful for the control of photonic and plasmonic processes. This
+DNA robotic arm was reported to be at least 5 orders of magnitude
+faster than previous DNA motor systems and in the same class as adenosine
+triphosphatase-driven biohybrid motors. Unlike electric fields
+that can directly exert forces on the negatively
+charged DNA robotic arms, magnetic fields need magnetic particles
+(MPs) as media to apply their forces. It is challenging to scale down
+the MPs to nanoscale to match DNA nanodevices while still creating
+sufficient forces to overcome thermal fluctuations. Therefore, instead
+of scaling down the MPs, Lauback () designed stiff DNA levers with persistence
+length over 20 μm to match the sizes of micron-scale superparamagnetic
+particles. These levers could be integrated into DNA nanorotors and
+nanohinges to actuate their motions. To facilitate the assembly of
+these nanomachines, one segment of the rigid lever was first connected
+to the nanoscale system, and then it served as a seed to extend the
+microscale lever arm with a NP attached at the end. During the experiments,
+either the lever itself or the stationary part of the rotor or hinge
+was immobilized on the surface  biotin–streptavidin
+affinity (b,
+left panel). Several fluorophores were attached to the lever so its
+movement can be visualized by TIRF, in b the right panel shows the rotor and hinge
+in action. The authors demonstrated the direct manipulation of DNA
+origami nanodevices with subsecond response times and torques ranging
+from ∼20 to 80 pN nm rad at magnetic fields
+of ∼10–100 Oe. Moreover, compared to other systems which
+usually have a few discrete states, a continuous rotation of the rotor
+was established in this magnetic field driven system, exhibiting a
+high level of spatial control over the DNA nanodevices. Yang () composed
+a light-driven nanomachine based on a DNA walker that was fueled by
+350 nm wavelength photoirradiation instead of strand-displacement
+or enzymatic reactions. Walking strands comprising two pyrene moieties
+moved on a rectangular 2D DNA tile along four disulfide-modified “stator”
+strands aligned linearly. Hopping from the cleaved stator to the adjacent
+one took place  duplex formation. Stepwise movement
+of the walker was time-dependent and visualized using HS-AFM. Most of the DNA nanorobots presented in this review so far are
+focused on actuation of a local structural reconfiguration. In fact,
+the locomotion of the entire nanorobot for traveling a longer distance
+is also an essential aspect for many applications, , in targeted biomedicine delivery. Recently, fundamental research
+along this line has been carried out, including proof-of-concept experiments
+on the movement of mechanically interlocked DNA nanostructures on
+DNA filaments or long-range swimmers
+propelled by flagella made from DNA nanostructures (see below). Maier () have
+built a micron-scale swimmer driven by a rotating external magnetic
+field. The hybrid microswimmer consists of a magnetic bead of 1 μm
+diameter and several artificial flagella assembled from tile-based
+DNA n-helix tubes (nHT) having various degrees of twist, which were
+linked together  biotin–streptavidin coupling
+(c). The magnetic
+bead functions as a rotating power-driven hub that follows the homogeneous
+external field rotating perpendicular to the swimming direction. While
+swimming, the DNA flagella formed a hydrodynamically assembled corkscrew-like
+bundle of several micrometers long. The swimmer can propel with a
+speed up to 0.6 μm/s when it was driven by a 3 Hz magnetic field.
+In addition, by manipulating the magnetic field, complex maneuvers
+like moving in a curved path have been demonstrated by fluorescent
+microscopy. Another plausible concept to fabricate microswimmers
+is thermophoresis.
+Herms () and Heerwig () proposed janus-type
+hybrid nanoparticles made from AuNP and DNA origami as self-thermophoretic
+swimmers. The authors predicted that the temperature gradient created
+by the asymmetric particles when the AuNPs absorb energy from laser
+irradiation could generate a slip flow to propel the swimmer forward.
+However, although these nanostructures have been assembled and their
+thermal stability has been studied, experimental work showing the
+swimming behavior has not been reported at the time of this review. Electromagnetic
+field-driven DNA nanorobotics. (a) Top panel: The
+design and the working principle of the electrically driven movement
+of a 6HB robot arm that enables stochastic switching. Bottom panel:
+TIRF images showing the movement of the arm under the electric field
+(- and -coordinates follow sinusoidal
+behavior). (b) Left panel: DNA origami–superparamagnetic
+particle configurations to realize lever, rotor, and hinge systems.
+Right panel: TIRF images showing rotor and hinge system in operation. (c) Left panel: Different helix tube designs
+acting as flagella for magnetic beads. Right panel: Micrographs of
+the tubes (left) and two magnetic beads–DNA origami hybrids
+(twisted and supertwisted tubes, right). (a) Reprinted with permission from ref (). Copyright 2018 The American Association for
+the Advancement of Science. (b) Reprinted with permission from ref (). Published by 2018 Springer
+Nature Ltd. (c) Reprinted with permission from ref (). Copyright 2016 American
+Chemical Society. Arguably, one of the most intriguing classes
+of nanomachinery in
+synthetic biology is autonomous robotics. These robots may be seamlessly
+integrated into biological systems and they could mimic for example
+naturally occurring motor protein functions or execute completely
+unnatural tasks with high efficiency and precision. A number of different
+DNA nanostructure based autonomous robots with defined moving pathways
+have been introduced. One of the earliest examples taking advantage
+of the programmability
+and addressability of DNA origami was presented by Lund () They created an autonomous
+DNA robot able to carry out sequences of actions such as , , , and  on a DNA platform. Previously engineered “molecular spiders” that consist of a streptavidin “body”
+and three catalytic deoxyribozyme “legs” (adapted from
+the 8–17 DNA enzyme) were set to autonomously move along the
+predefined paths coded on a rectangular DNA origami canvas. Movement
+was based on Brownian sensing and modifying tracks of substrate molecules
+by catalytic DNA binding and degradation of oligodeoxynucleotide substrates  hydrolysis. Real time movement of single spider particles
+was tracked by super-resolution total-internal-reflection fluorescence
+video microscopy. Wickham and co-workers employed a
+100 nm long track on DNA origami rectangle to demonstrate stepwise
+directional movement of ssDNA motor through precisely aligned “stators”
+(1D array of complementary single-stranded attachment sites), including
+a distinct start and stop “stators”. A multistep autonomous
+movement at constant speed through stators was initiated by a thermal
+strand displacement reaction to form a motor-stator duplex (a). Hydrolysis by
+restriction enzyme drives the movement of the motor to the adjacent
+intact stator  branch migration. The terminal
+stator has a built-in mismatch in the motor–stator duplex,
+which shuts down the motor and shields it from the nicking enzyme.
+Transport of individual motor molecules was monitored with a HS-AFM
+imaging system. Extension of the concept demonstrated integrated long-range
+transport and information processing. Authors established that the
+path of a ssDNA motor through a network of tracks containing alternative
+routes can be programmed using instructions that are added externally
+(87% operational yield) or embedded internally to the motor (71% operational
+yield). Programmable motion will pave the way, , to the trajectory of computing networks and the evolution of self-
+and cargo-sorting molecular systems and assembly lines. Inspired by a motion of kinesin, Liber () demonstrated dynamic to and fro movement of
+the bipedal motor that can be extended over two DNA origami tiles
+(60 × 90 nm each) that were dimerized using bridging strands.
+Successive deployment of fuel and antifuel strands drives the bipedal
+motor from tile A to B back to A-tile through five footholds moving
+twice across the junction with an overall track distance of 64 nm.
+The uniformity of double-tiles and high operational yield was proven
+by smFRET and alternating laser excitation techniques (ALEX) and assisted by AFM. Gu and colleagues created a proximity-based
+programmable DNA nanoscale assembly line constructed of three distinct
+components: a tensegrity-triangle walker possessing four ssDNA legs
+and three hands, a DNA origami platform that provide an automobile-style
+assembly line, and programmable cargo-donating cassettes mounted as
+stations. Three cassettes, each containing a robotic arm, can be independently switched between two states.
+The ON state (PX) allows transfer and loading of the cargo to the
+walker, whereas for the OFF state (JX) the loading is
+disabled. All locomotion, orientation of the walker, and proximity-based
+attachment events of different Au-NPs is mediated by toehold-binding/branch-migration
+methods, which facilitate programming
+of eight assembly pathways and thus, eight different products. Schematic
+of the molecular assembly line steps and AFM images showing only the
+states of Au-NP cargo is depicted in b. A step toward a cargo-sorting DNA
+robot was introduced by Thubagere () who developed a sophisticated
+algorithm capable of sorting two types of cargo and their destinations
+on a 2D DNA origami platform (c). The DNA robot assembled from three modular domains
+was equipped to pick up and release the cargo at the specified location.
+The robot was designed to perform a random walk which requires no
+supplemental energy. Thus, a single robot was able to perform . 300 steps during the cargo sorting (on average), which
+is a significant enhancement on previously reported bipedal DNA walkers
+that performed tasks while moving. Ketterer and co-workers demonstrated
+the assembly of complex nanomachines from multiple DNA origami elements
+by taking advantage of DNA–DNA interactions. The group fabricated
+a miniature rotary apparatus that was inspired by the FF-adenosine triphosphate (ATP) synthase (d). The device was constructed
+from tight-fitting DNA origami components, including a rotor, a clamp,
+and a socket, by steering the self-assembly with specific DNA hybridization
+events or base-stacking interactions. The rotating devices were not
+driven, but they were shown to exhibit random Brownian motion, as
+observed  single particle fluorescence microscopy
+recordings. Such a prototype equipped with external triggers and control
+of the movement may facilitate a basis toward creating complex and
+sophisticated DNA-based nanomachines. As a fascinating example
+of how the different DNA robots can interact
+with each other, Kaminka () used similar two-state (open-close) devices as explained
+in Amir () This
+time the authors created mixtures of interacting robots that were
+able to recreate biochemistry professor and science fiction author
+Isaac Asimov’s infamous “Runaround” scenario based on his “Three Laws of Robotics”
+L1–L3 (see ref ()). While the story is about a fictional robot and it is often regarded
+as impractical, some of its implementations may be rather thought-provoking
+when considering safety, autonomy and decision making of robotics
+in real life. In Asimov’s book a robot gets stuck at
+equilibrium between
+the laws L2 and L3 during its mission, and is finally freed from this
+condition by overriding both L2 and L3 by the law L1. In this experimental
+setup the populations of logic-gated DNA nanorobots (L1, L2, and L3)
+were chosen in such a way that L1 and L2 formed a logical NOT gate
+(, without a damage signal, L1 is closed and
+L2 is open and active, but when the damage signal is present, L2 is
+closed through binding to L1), and a microRNA molecule (a human miR-16
+analogue) was employed as a damage signal. However, this gate function
+depends on the L1:L2 ratio, as the excess of L2 robots leads to exaggerated
+activity, and on the other hand, the excess of L1 robots halts the
+system. Therefore, the third robot L3 works as a sensor for the L1:L2
+ratio and provides the functionality of the system, in other words,
+the necessary L1:L2 ratio is analogous to the robotic system protecting
+itself (L3). Importantly, as the proportion of robots required to
+exert action is relatively small, some L1 and L2 robots in the system
+may serve as ratio indicators, while others interact on accessible
+L3 robots in order to physically exert the effects. In practice, the
+inputs for the L3 robot are DNA strands attached to L1 and L2 robots.
+The scenario starts with L2 dominating, carrying out its defined task
+(open), followed by a conflict between L2 and L3. Experimentally it
+is reached by closing L3 robots by DNA strands, which mimics a skewed
+L1:L2 ratio thus resulting in a lower activity equilibrium of L2.
+This achieved equilibrium is then terminated by introducing a miR-16
+damage, which leads to L1 override and thus a near-baseline activity
+of L2. Autonomous and semiautonomous DNA origami nanorobotics.
+(a) Top
+panel: a stepwise directional movement of a ssDNA motor through aligned
+“stators” (green) (the hairpin loops are marked in blue).
+Bottom panel: a nicking restriction enzyme cuts the motor-bound stator
+revealing a toehold at the 3′ end of the motor (magenta) that
+drives the motor to the adjacent intact stator by branch migration
+(a “burnt bridges” mechanism). (b) Left panel: a proximity-based programmable DNA nanoscale assembly
+line and its stepwise operation. Right panel: atomic force micrographs
+of the system corresponding to the process steps sketched as states
+(i–vi) in the molecular assembly line. (c) A cargo-sorting DNA robot that employs an irreversible
+strand displacement reaction for picking up and delivering selected
+cargo to a goal on top of a 2D DNA origami platform. (d) A DNA origami rotary device fabricated from tight-fitting
+components showing closed brackets and a docked rotor (left) and an
+undocked, mobile rotor (right). Color code: blue = rotor unit, gray
+= clamp units, red = shape-complementary sockets on the rotor and
+the clamps, respectively. (a) Reprinted
+with permission from ref (). Copyright 2011 Springer Nature Ltd. (b) Reprinted with
+permission from ref (). Copyright 2010 Springer Nature Ltd. (c) Reprinted with permission
+from ref (). Copyright
+2017 The American Association for the Advancement of Science. (d)
+Reprinted with permission from ref (). Published by 2016 The American Association
+for the Advancement of Science. Conclusions and Future Directions In this review we
+have introduced multiple DNA nanomachines that
+are able to execute tasks in a dynamic manner and described their
+main working principles ranging from the fast-moving external field
+driven devices to fully autonomous robots. The classification of the
+most important DNA devices, their sensing/actuation mechanisms, characterization
+techniques, and potential applications are listed in . All of these devices are based
+on programmable DNA nanostructures that are loaded with various (bio)chemical,
+physical, and logical features. During the past ∼40 years,
+the structural DNA nanotechnology has reached a state at which the
+design, fabrication, and cost of intricate DNA objects are no more
+obstacles on the road to real-life implementations. However, to date
+the great number of all presented DNA constructions have been static
+(usually on purpose), and therefore, the coming of age of the mechanically
+moving more complex DNA nanostructures has only recently been witnessed. That also means there are a great deal of challenges
+ahead in creating dynamic DNA devices, such as their stability under
+application-specific conditions. Currently, the DNA robots show considerable promise
+especially
+in biomedicine for rather obvious reasons, and thus prototypes of
+sophisticated delivery vehicles and point-of-care diagnostic molecular
+devices are coming increasingly in view. To just produce more advantageous
+robots may not sound too fancy, but the long-term goal in synthetic
+biology could be for example in the reprogramming of our immune systems
+using active biocompatible DNA machines. This, for one, would indeed
+have far-reaching outcomes. To use DNA nanorobots for realizing such
+scenarios as Isaac Asimov’s Runaround are arguably intriguing;
+however, we still remain miles away from the arenas often depicted
+in science fiction. This is due to the fact that it is extremely hard
+to maintain the autonomy of the device, while trying to increase the
+complexity of its functions. The present-day autonomous devices are
+still operating at the very fundamental level, but looking back into
+the recent rapid development of DNA nanotechnology may give us an
+impression of how swiftly the DNA robots could revolutionize synthetic
+biology and simultaneously open entirely new avenues for scientific,
+medical, and technological exploration. Selected Robot Types,
+Their Mechanisms
+of Action, Characterization Techniques, and Possible Applications Resolving, , DNA conformational changes Resolving DNA base stacking
+interaction DNA hinge + interaction between the investigated species Measuring, , forces between nucleosomes
+and nucleosome unwrapping Base stacking
+(depends on ionic strength) Long-distance step-by-step movement Various conformational
+(, i-tetraplex)
+and structural transitions, DNA transient binding FRET,
+fluorescence microscopy, DNA-PAINT Diagnostics, studying
+pathway dynamics, payload delivery, super-resolution
+imaging, pH-mapping (also ) Diagnostics,
+molecular computing (Logic-gated) aptamer-protein interaction Targeted and programmable
+drug delivery, computing (also ) Strand displacement/pH-sensitive DNA strands/light/temperature/mRNA TEM, FRET, fluorescence microscopy, enzyme kinetics Selective and controlled display/release of molecular cargo Strand displacement/pH-sensitive
+DNA strands/azobenzene-modified
+strands/aptamer-binding Nanomachines
+with rapid and controlled movement Nanomachines with rapid and controlled movement Strand displacement/toeholds/restriction enzyme driven Nanoscale assembly
+lines, cargo-sorting, computing Controlled DNA base stacking
++ Brownian motion Single-particle fluorescence microscopy Toward biomimicking nanomachines Interacting
+dynamic robot populations Binding through hybridization/toeholds, detection of signals
+such as miR Toward safe,
+decision-making robotics.

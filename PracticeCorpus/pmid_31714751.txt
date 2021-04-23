@@ -1,0 +1,331 @@
+In humans, 95% of serotonin
+(5-HT) is found in the gastrointestinal (GI) tract, where release and reception of 5-HT transmits information
+from the gut lumen to gut nerve cells and smooth muscles. Of the seven
+5-HT receptor families, 5-HTR is broadly expressed in
+the gut: on nitrergic neurons that control smooth muscle relaxation,
+cholinergic and nitrergic neurons that control muscle contraction
+and relaxation, enterocytes that control chemical transport, and enteroendocrine
+cells that control the secretion of gastrointestinal hormones. Specifically, 5-HTR is highly expressed in the jejunum,
+ileum, and colon. 5-HTR has
+been implicated in irritable bowel syndrome (IBS), which affects 15%
+of the world population. Agonists of 5-HTR are used for the treatment of irritable bowel syndrome with
+constipation (IBS-C), relieving constipation, abdominal pain, and
+bloating. One of the major challenges in identifying novel 5-HTR agonists is the dearth of 5-HTR high-throughput assays to
+rapidly
+assess large libraries of chemicals. The two-day culture time required
+to test cell motility using colon cells, which naturally express 5-HTR, would be time-prohibitive for a primary screening tool.
+Commercial G-protein coupled receptor (GPCR)-based assays, such as
+SelectScreen (Thermo Fisher) and gpcrMAX (Eurofins) lack
+screens for any member of the 5-HTR family. To our knowledge,
+only one large-scale 5-HTR screen has been performed to
+date, against 976 ToxCast chemicals using guinea pig brain tissue
+and radio-labeled ligand displacement. Previously, we engineered a fluorescence-based 5-HTR assay in yeast by linking expression of human 5-HTR on the yeast surface to green fluorescent protein (GFP) expression. The fluorescent reporter, however, posed some
+practical limitations. Fluorescent readout requires a 4 h chemical
+incubation step for robust GFP expression, and a high-throughput flow
+cytometer for signal readout, thus limiting the assay throughput to
+one 96-well plate per hour. Additionally, the GFP-based 5-HTR assay has only a 3-fold dynamic range and one order of magnitude
+linear range after activation with serotonin. Here, we developed
+a luciferase-based 5-HTR assay
+with an overall assay time of 2.5 h, enabling the use of a luminescent
+plate reader, and achieving a screening throughput of one compound
+per second. Next, we used the assay to screen 1206 compounds coming
+from two commercial chemical libraries, a natural products library
+and an anti-infection library, and discovered five previously unidentified
+5-HTR ligands. We validated three of the five ligands,
+hordenine, halofuginone, and revaprazan, as 5-HTR agonists
+in mammalian cells as they increase motility or wound healing in human
+colon epithelial cells. (A). This work has three significant outcomes. First, the same compound
+discovery workflow can be used, in the future, to screen pharmaceutical
+libraries for the identification of novel 5-HTR agonists
+for the treatment of IBS-C. Second, the increased assay signal provided
+by the luciferase reporter, when compared to the GFP reporter, should
+enable the generation of other high-throughput GPCR-based assays by
+simply swapping the receptor from the cell surface. Third, as antibiofilm
+(hordenine) and antiparasitic (halofuginone) agents affect colon cell
+motility and/or wound healing, antimicrobials may interact not only
+with the gut microbiota, but also with the human host leading to potential
+changes in gut movement and secretion. Finally, with a 5-HTR high-throughput assay in hand, we can now screen gut microbiota
+metabolites to further understand the link between host and gut microbiome. Luciferase-based 5-HTR assay development.
+(A) Workflow
+for the identification and validation of HTR agonists.
+(B) Luciferase-based 5-HTR assay: human 5-HTR was expressed on the cell surface of a yeast engineered to link
+receptor activation to reporter to luciferase gene expression  the yeast mating pathway. (C) 5-HTR-assay
+optimization at a pH = 7 and 100 mg/L serotonin. Luciferase-Based
+5-HTR Assay Development We replaced the GFP
+reporter from our GFP-based 5-HTR assay with NanoLuc luciferase, which
+we optimized for yeast expression (B). As the pH of
+the GI tract hovers between 5.7 and 7.4, we optimized the assay at
+a pH of 7. The 5-HTR assay is composed of two steps,
+(i) ligand incubation leading to luciferase expression, and (ii) luciferase
+substrate incubation leading to luminescence. By co-optimizing both
+incubation steps using serotonin, we concluded that a 2 h ligand incubation
+followed by a 30 min luciferase substrate incubation results in the
+fastest overall assay conditions (2.5 h) with the highest signal increase
+after activation (38-fold) (C). Of note, multiple 96-well plates can be incubated
+simultaneously, as reading the plate for luminescence takes 2 min. Luciferase-Based 5-HTR Assay Validation We
+demonstrate that the assay detects three known 5-HTR agonists
+for the treatment of IBS-C: tegaserod, prucalopride, and
+mosapride, and four other agonists used to treat gastroesophageal
+reflux (cisapride), depression (RS67333), anxiety (zacopride), and nausea (metoclopramide) (A–H). To verify that the agonists
+led to cell luminescence due to 5-HTR activation and
+not  an alternative mechanism, we performed dose
+response curves with the agonists using a control strain carrying
+the luciferase reporter plasmid and a blank plasmid in lieu of 5-HTR. On the basis of ECs, the potency of the agonists
+toward 5-HTR are tegaserod (0.3 nM) > RS67333 (11.0
+nM)
+> prucalopride (41.0 nM) > cisapride (69.9 nM) > serotonin
+(155.0
+nM) > mosapride (256.4nM) > zacopride (616.0 nM) > metoclopramide
+(7.4 μM). These results agree with previous studies that identified
+tegaserod and RS67333 to be more potent than serotonin, and zacopride and metoclopramide to be less potent. Taken together, the luciferase-based HTR assay is capable
+of identifying drugs with ECs ranging from the low nM
+to the μM level. Validation of the 5-HTR assay. 5-HTR assay
+dose response curves with known 5-HTR agonists: (A) cisapride,
+(B) metoclopramide, (C) mosapride, (D) prucalopride, (E) RS-67333,
+(F) serotonin, (G) tegaserod, (H) zacopride. Data was collected in
+triplicate. Shown are means ± s.d. 5-HTR Assay High-Throughput Screening Validation http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00310/suppl_file/sb9b00310_si_001.pdf We validated the assay for 96-well plate high-throughput screening
+using a 3-day plate uniformity experiment (). The assay had an average  factor of 0.74 and an average coefficient of variation
+of 7.7%, meeting the two statistical parameters for high-throughput
+assay acceptance, , a  factor
+of >0.5 and a CV < 10%. Identifying Novel 5-HTR Ligands http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00310/suppl_file/sb9b00310_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00310/suppl_file/sb9b00310_si_001.pdf GPCRs
+expressed in the GI tract tend to bind gut microbial metabolites.
+For example, GPR41, GPR43, and GPR109 bind microbiota produced short
+chain fatty acids. We hypothesize that 5-HTR may bind microbial
+natural products. To explore the range of biological compounds that
+5-HTR may bind, we used the assay to screen a commercial
+803-member chemical natural products library. First, to understand
+the chemical diversity of the library, we broke down each library
+member into 23 chemical descriptors to perform a principal component
+analysis (A, ). The principal components (PC axes)
+reflect the common and unique variances of the chemical descriptors
+with the top three PCs accounting for 64% of the cumulative variances,
+with PC1, PC2, and PC3 capturing 45%, 11%, and 8% of the total variance,
+respectively. On the basis of their PC scores, chemicals can be separated
+into eight chemical spaces (CS) (). All chemical spaces are populated by compounds in the natural
+products library, indicating its chemical diversity. CS3, composed
+of small heteroaromatics with O-containing functionality, is the highest
+populated CS, containing 22% of all chemicals in the library. The
+least populated CSs are CS5 and CS7, each containing 6% of all the
+chemicals tested. In the future, the chemical diversity of the library
+could be improved by introducing more compounds with chiral centers
+and cyclic rings. The screening of the natural products
+library resulted in 12 hits:
+serotonin, tryptamine, 3-indolebutyric acid, -5-hydroxytryptophan
+(-5-HTP), -5-hydroxytryptophan (5-HTP), hordenine,
+genistin, neomangiferin, baohuoside I, baicalein, halofuginone, and
+nalidixic acid (B). Previously, tryptamine and 5-HTP have been shown to bind 5-HTR, and
+baicalein has been shown to bind 5-HTR. Hordenine, nalidixic acid, halofuginone, 3-indolebutyric
+acid, genistin neomangiferin, and baohuoside I have not been previously
+shown to bind 5-HTR. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00310/suppl_file/sb9b00310_si_001.pdf To confirm the natural products library hits, we ran dose response
+curves using the 5-HTR assay strain, and a control strain
+carrying the luciferase reporter and a blank plasmid in lieu of 5-HTR. We confirmed tryptamine and 5-HTP to be ligands of 5-HTR. We could not confirm 3-indolebutyric acid, nalidixic acid,
+baicalein, genistin, baohuoside I, and neomangiferin as ligands of
+5-HTR (). We find,
+for the first time, that hordenine (EC 102.4 μM)
+and halofuginone (EC 1.2 μM) are HTR ligands (C). Except for -5-HTP, all natural products hits, , hordenine, tryptamine, serotonin, and halofuginone,
+belong to CS8. 5-HTR assay identifies natural products as
+novel ligands.
+(A) Principal component analysis of natural products library with
+5-HTR screening hits highlighted. (B) 803-member natural
+product library screening results. The compounds were screened using
+the 5-HTR assay in singlets. -scores
+were normalized to the serotonin positive control, which was set to
+1 (dotted line). (C) Dose response curves of the 4 validated natural
+product hits. Data was collected in triplicate. Shown are means ±
+s.d. High-Throughput Screening of a 403-Member
+Anti-infection Library Hordenine has antibiofilm activity
+against , and halofuginone
+is used for the treatment and prophylaxis of cryptosporidiosis in
+ruminants. Intrigued by the fact that
+antimicrobial agents activate 5-HTR, we explored whether
+other antimicrobials activate 5-HTR. To do this, we screened
+a commercial 403-member anti-infection library at two chemical concentrations:
+(i) 10 μM, the same concentration used to screen the natural
+products library, and (ii) 1 μM due to potential toxicity effects
+of the anti-infection compounds on yeast. On the basis of -scores, the 10 μM screen resulted in four hits:
+proflavine, ethidium bromide, ethacridine, and hordenine, while the
+1 μM screen also resulted in four hits: isepamicin, osalmid,
+revaprazan, and borneol (A). We attribute the absence of 1 μM hits in
+the 10 μM screen to toxicity issues, given that the 5-HTR assay is in cells. Neither proflavine, ethacridine, nor
+revaprazan have been previously shown to activate any serotonin receptor. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00310/suppl_file/sb9b00310_si_001.pdf To confirm the anti-infection
+library hits, we ran dose response
+curves using the 5-HTR assay strain, and a control strain
+carrying the luciferase reporter and a blank plasmid in lieu of 5-HTR. We confirmed proflavine (EC 6 μM), ethacridine
+(EC 2.9 μM), and revaprazan (EC 270
+nM) as HTR ligands (B). We noticed a sharp decline in receptor
+activation at high compound concentrations. A toxicity assessment
+of these compounds shows they are toxic at high concentrations (C). We could not
+confirm ethidium bromide, isepamicin, osalmid, or borneol as 5-HTR ligands (). Screening of a 403 member anti-infective library. (A)
+Anti-infective
+compound screening results at 10 μM (top) and 1 μM (bottom).
+The compounds were screened using the 5-HTR assay in
+singlets. -scores were normalized to the serotonin
+positive control, which was set to 1 (dotted line). (B) Dose response
+curves of the 3 validated anti-infective hits. (C) Toxicity results
+after yeast was incubated for 2.5 h with varying concentration of
+the anti-infective hits. Data was collected in triplicate. Shown are
+means ± s.d. Validating
+5-HTR Ligands  Wound
+Healing and Motility Assays in Colon Epithelial Cells To
+assess the biological relevance of the five 5-HTR identified
+ligands, we tested their ability to activate 5-HTR in
+mammalian cells by inducing cell motility and wound healing in human
+colon epithelial cells (Caco-2). Caco-2 cells endogenously express
+5-HTR and activation of 5-HTR using the agonist tegaserod leads to increased cell motility,
+wound healing, and cell proliferation. Tegaserod (Zelmac) is used for the treatment of IBS-C. To test cell
+motility, we used culture inserts to create a cell free zone to avoid
+cell death and damage. Revaprazan and
+hordenine significantly ( < 0.01) increase cell
+motility (A,B).
+Wound healing was tested by creating a scratch in the cell monolayer
+using a pipet tip. This more closely mimics  wound healing by creating cell damage, such as increasing reactive
+oxygen species at the wound boundary. Incubation of Caco-2 cells with hordenine, halofuginone, and revaprazan
+resulted in a statistically significant increase in wound healing
+( < 0.05) when compared to the buffer control
+(C,D). Proflavine
+and ethacridine did not result in a significant increase in either
+colon cell motility or wound healing. Taken together, revaprazan and
+hordenine results in both increased cell motility and wound healing,
+while halofuginone results only in increased wound healing. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00310/suppl_file/sb9b00310_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00310/suppl_file/sb9b00310_si_001.pdf Antimicrobials
+enhanced colon epithelial cell motility and wound
+healing. (A) Representative photomicrographs of the colon cell (Caco-2)
+migration assay after 48 h with phosphate buffer control (PBS), tegaserod
+(5-HTR agonist, 1 μM), serotonin (1 μM),
+and the five 5-HTR ligands (10 μM). For all photomicrographs
+for migration after 24 and 48 h, see . (B) Quantification of the colon cell migration assay after 48 h.
+The cell migration elicited by revaprazan and hordenine is similar
+to that observed by serotonin and tegaserod, and it is statistically
+significantly different than the PBS control ( <
+0.01). (C) Representative photomicrographs of the Caco-2 wound healing
+scratch assay after 48 h with control (PBS), tegaserod (1 μM),
+serotonin (10 μM), and the 5 identified 5-HTR ligands
+(10 μM). For all photomicrographs of the wound healing scratch
+assay after 24 and 48 h, see .
+(D) Quantification of the colon cell wound healing scratch assay.
+The wound healing elicited by revaprazan, halofuginone, and hordenine
+is statistically significantly different than the PBS control ( < 0.05). Relevance of the Newly
+Identified 5-HTR Agonists
+in the Gut Hordenine is present in malted barley and beer
+(strong beer: 5.16 mg/L; Pilsner: 2.7 mg/L). Assuming all hordenine consumed reaches the colon, a pint of Pilsner
+beer would need to be ingested to reach concentrations that were observed
+to increase colon cell motility and wound healing. Other sources of
+hordenine are athletic performance and weight loss supplements. Halofuginone is used for the treatment
+and prophylaxis of cryptosporidiosis in ruminants with a maximum residue limit of 10–30 μg in
+bovine muscle, fat, kidney, and liver. Chickens treated with halofuginone can expect to lay eggs with up
+to 60 μg/kg halofuginone. One may
+only need to eat half a jumbo egg to reach the levels seen to increase
+colon cell wound healing, assuming all halofuginone reaches the colon. Revaprazan is a proton pump inhibitor that reduces gastric acid
+secretion and reduces inflammation caused by . At a daily dose of 200
+mg/day and assuming it all reaches the colon, the concentration of
+revaprazan in the gut would be 983.6 μM, which is more than
+3000 times higher than the EC of 270 nM. We have developed a rapid and robust luciferase-based 5-HTR assay in yeast with a 38-fold dynamic range and a limit
+of detection in the nM level for serotonin. We applied this assay
+to screen more than 1000 chemicals and identified five new 5-HTR ligands. Three of these ligands, hordenine, halofuginone,
+and revaprazan, activate 5-HTR in mammalian cells, eliciting
+colon cell motility and/or wound healing. The 5-HTR assay
+can now be used to screen large pharmaceutical libraries to identify
+5-HTR agonists for the treatment of IBS-C. The increased
+sensitivity of the 5-HTR luciferase assay over our previous
+GFP-based assay should enable the generation of assays for other 5-HTRs,
+including 5-HTR, the pharmaceutical target of antidepressant
+drugs. A current limitation of
+the luciferase-based 5-HTR assay is the relative high
+background in the no receptor control.
+In the absence of receptor, there is free floating G, which does not need to be dissociated to activate the kinase cascade
+leading to increased gene expression. Sequestering G by expression of
+the yeast endogenous GPCR (Ste2) may reduce basal luciferase levels
+in the control strain. Additionally, mixtures of heterologous GPCR/Ste2
+in the sensor strains could achieve lower basal expression, but the
+system would have to be tuned. The identification of antimicrobials
+binding 5-HTR is
+of profound impact to understanding conditions mediated by serotonin
+receptors. As shown in this work, antimicrobials may not only interact
+with the gut microbiota, but also with the human host leading to potential
+changes in gut movement and secretion. Changes in bowel movements
+and gastrointestinal hormone secretion may at least be partially caused
+by activation of serotonin receptors. Thus, our findings have implications
+for the treatment of IBS-C, which can be treated using antibiotics, and more generally to conditions related to
+serotonin receptor activation, such as depression. Finally, although
+antimicrobials have not been extensively considered as activating
+GPCRs, the availability of this high-throughput GPCR assay will enable
+the analysis of other GPCRs for their binding of antimicrobials. Luciferase-Based
+5-HTR Assay Construction NanoLuc was codon optimized
+for , commercially synthesized
+and cloned into pKM586 between  and  to generate pRS415-Leu2-pFIG1-NanoLuc
+(pEY15). pEY15 was sequenced
+verified using primer EY248. To construct the 5-HTR assay,
+pEY15, and pESC-His3-pTEF1-HTR4 (pTMC18) were cotransformed into the PPY140 (W303 , ) to generate PPY1808. To construct the controls strain lacking 5-HTR, PPY140 was cotransformed with pEY15 and an empty vector
+(PPY111) to generate PPY1809. An overnight
+culture of PPY1808
+was used to inoculate 20 mL of synthetic complete medium with 2% glucose
+lacking histidine and leucine (SD(HL) to an OD = 0.06. After 18 h at 15 °C (150 rpm), PPY1808 was
+centrifuged (3500 rpm, 10 min), and resuspended to an OD = 1. In a white flat bottom 96-well plate, 190 μL of pH =
+7 SD(HL), 8 μL of PPY1808, and 2 μL
+of serotonin (final concentrations 0–4.3 mM) were added. After
+the chemical incubation step (2 h, plates covered with Breathe Easy
+Sealing Membrane, 30 °C, 250 rpm), 20 μL of 1:100 mixture
+of NanoLuc substrate to NanoLuc buffer was added for the luciferase substrate incubation step well (30 min,
+plates covered with Breathe Easy Sealing Membrane, 30 °C, 250
+rpm). Luminescence was read immediately after luciferase substrate
+incubation in a Biotek Synergy 2 plate reader using default settings.
+For the time course assay, the cells were incubated at medium shaking
+speed in a Biotek Synergy 2. Screening of Known 5-HTR4
+Agonists The same protocol
+for serotonin detection was followed. Instead of 2 μL of serotonin
+the same volume of RS67333, zacopride, and metoclopramide in water
+or cisapride, mosapride, tegaserod, and prucalopride in DMSO were
+used to reach a final concentrations between 0 and 10 000 nM.
+Dose response curves were fitted using the dose–response equation
+in Origin Pro 2016. ECs were derived from this function
+by Origin. High-Throughput Chemical Compound Screening High-Throughput
+Assay Validation A three-day assay
+validation was performed according to Iversen, () The same serotonin detection protocol
+was followed. High signal wells have 5 μM of serotonin, mid
+signal wells have 60 nM of serotonin, and low signal wells have 0
+nM of serotonin. Data were analyzed in the Excel template provided
+by Iversen, () using
+activation assay settings with statistics calculated for single replicate
+screens. The
+same protocol used
+for serotonin detection was followed. Instead of 2 μL of serotonin,
+and 2 μL of chemical in DMSO or water from the natural product
+library (Selleck Chemicals L1400, 803 chemicals) or the anti-infection
+compound library (Selleck Chemicals L3100, 403 chemicals) was used
+to a final concentration of 10 μM (and 1 μM in the case
+of the anti-infection library). Each plate contained three negative
+control wells with DMSO or water and three positive controls with
+serotonin (5 μM) in DMSO. Natural product hits were identified
+using a -score as calculated below. The -scores were normalized to the serotonin positive control
+in each 96-well plates. Simplified molecular-input line-entry
+system (SMILES) for 801 of the 803 chemicals in the natural product
+library (lanolin and tea polyphenols are mixtures) were retrieved
+from Selleck Chemicals and PubChem to obtain data on 23 chemical descriptors
+with 8 descriptors representing chemical functional groups, and 15
+descriptors according to Wenderski, () The SMILES were inputted into Instant JChem
+(ChemAxon). PCA was run using
+Solo software (Eigenvector
+Research). Evaluation of the three PCs was conducted using Solo based
+on Eigenvalues. The three PC scores data from Solo were used to create
+3-D scatterplots in MATLAB. The scatterplots were divided into eight
+distinct chemical spaces based on their 3-D coordinates. http://dev.mri.cnrs.fr/projects/imagej-macros/wiki/Wound_Healing_Tool http://dev.mri.cnrs.fr/projects/imagej-macros/wiki/Wound_Healing_Tool Caco-2 cells (ATCC HTB-37)
+were grown at 37 °C with 5% CO in Dulbecco’s
+Modified Eagle Medium (DMEM) with high glucose, sodium pyruvate and
+GlutaMAX or -glutamine (Gibco) supplemented with 10% fetal
+bovine serum and 1% penicillin-streptomycin. Media was changed every
+2–3 days. Once 70–80% confluence was reached in T25
+flasks, cells were detached using 0.05% trypsin–EDTA and diluted
+to a final volume of 15 mL with growth media. Cells were seeded into
+a 48 well plate and allowed to grow until they reached 90–100%
+confluence. Wounds were made with a P200 pipet tip and cells were
+washed with PBS. Cells were incubated in fresh growth media with either
+PBS, 10 μM of chemical hit or 1 μM of serotonin or tegaserod.
+Images were taken on a Leica inverted microscope at 0, 24, and 48
+h. ImageJ MRI Wound Healing Tool  was used to measure wound size. Caco-2 cells were maintained as
+stated above. Ibidi culture inserts were placed in a 24 well plate,
+and 70 μL of cells ((1–2) × 10 cells/mL)
+were placed in both insert wells. Cells were grown overnight to allow
+for attachment. Inserts were removed with sterile tweezers. Cells
+were washed twice with PBS then incubated with either PBS, 10 μM
+of chemical hit or serotonin, or 1 μM of tegaserod. Images were
+taken on a Leica inverted microscope at 0, 24, and 48 h. ImageJ MRI
+Wound Healing Tool was used to measure the cell free zone..

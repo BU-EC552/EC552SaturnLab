@@ -1,0 +1,509 @@
+bacteria are environmental specialists
+(e.g., soil, marine, desert) that synthesize rich repertoires of natural
+products such as antibiotics. Much of this genetic information is
+locked up and cryptically regulated within biosynthetic gene clusters;
+regions of genomic DNA that harbor enzymes and other proteins (e.g.,
+transporters, resistance markers). The key limitation in awakening
+these clusters for natural product discovery is silent gene expression
+and recalcitrant genetics. Traditional strategies to overcome this
+include genetic modification of the host organism to bypass native
+regulatory elements, and the “capture” of the cluster
+and expression in a heterologous host. But this can take several weeks to months to complete with varying
+levels of success: some cryptic clusters remain dormant due to obscure
+native regulation. Fundamental tools that aid these efforts are of
+major interest to the natural product community. Prokaryotic
+cell-free coupled transcription–translation
+systems are emerging as a new tool for studying natural product biosynthesis. Cell-free transcription–translation uses a crude cell-extract
+or purified ribosomes and translation factors, the PURE system, in
+a “one-pot” reaction. cell-extracts, referred to as either TX-TL or cell-free protein synthesis
+(CFPS), are low-cost, straightforward to prepare,
+and provide high recombinant protein yields, of up to 2300 μg/mL. Moreover, metabolism is active, providing ATP regeneration, while amino acid pathways are
+dynamic, providing additional ATP (through -glutamate).
+In addition, certain amino acids deplete and become limiting for protein
+synthesis. In summary, TX-TL provides
+distinct opportunities for natural product biosynthesis: precursors
+for biosynthesis, direct control to feed precursors, short experimental
+time scales (4–24 h), and stable yields. Moreover, we and others
+have shown the potential for automation in cell-free synthesis. Specifically, we have screened up to 500 plasmid variants in 24
+h. While  TX-TL and the PURE system are promising
+for natural product biosynthesis, has limited potential for studying biosynthetic
+gene clusters from , due to a number
+of genetic and metabolic differences. For example, the codon content
+between  (∼70% G+C) and  (51% G+C) is different, while the regulatory sequences
+that control transcription, post-transcription, and overall gene expression
+are distinct. Moreover, secondary metabolism in  is not necessarily well-suited, and often requires further metabolic
+engineering. Notwithstanding,  synthesis of
+heterologous proteins can result in poor expression and solubility. Therefore, we anticipate that a dedicated  TX-TL system for homologous protein synthesis, has several advantages
+for studying natural product biosynthesis. As a first step, we originally
+released a  DSM-40230 (ATCC
+10712) TX-TL system, but this produced low protein yields (36 μg/mL)
+with high batch-to-batch variability. We chose  ATCC 10712 since it is well-suited to synthetic biology.  ATCC 10712 is fast-growing (40 min doubling
+time) and grows dispersedly in liquid culture; most  have slower doubling times and clump in mycelial aggregates.
+Moreover,  has a range of synthetic
+biology tools and is an attractive host for
+industrial biotechnology. In parallel to our
+studies, the Jewett group also established
+a  CFPS system (yields ∼50
+μg/mL), which was further optimized. A recent update to this system highlighted the need for adding individual
+purified translation factors to elevate
+protein synthesis up to ∼400 μg/mL. On this basis,
+we rationalized that protein synthesis, in our original  TX-TL system, could be limited by the use
+of an energy solution derived for an optimal  TX-TL protocol. For a review of the
+biochemical role and origin of cell-free energy solutions, we refer
+the reader to Dopp et al. In brief, TX-TL
+requires a cell-extract, a primary and secondary energy source, amino
+acids, cofactors, molecular crowding agents, and additives (e.g.,
+Mg, spermidine, folinic acid, tRNA) to support protein
+synthesis from a template DNA sequence. Some of these biochemicals
+are present in the cell-extract but may be rate-limiting. The energy
+source is composed of nucleotide triphosphates to drive initial mRNA
+and protein synthesis (primary energy source) and commonly 3-phosphoglyceric
+acid (3-PGA) or phosphoenolpyruvate (PEP) as the secondary energy
+source. 3-PGA or PEP provide ATP regeneration to leverage extended
+protein synthesis. Potentially, primary metabolism could be activated
+in TX-TL to provide reducing equivalents (e.g., NADH, FADH), extra
+energy, and building blocks (e.g., amino acids, malonyl-CoA) for natural
+product biosynthetic pathways, as shown in cell-extract metabolic
+engineering. In this work, we focus on
+upgrading our  system to elevate protein
+synthesis. We also demonstrate its broader potential for cell-free
+synthetic biology, namely, for characterizing DNA parts and activating
+some model biosynthetic pathways. To achieve this, we made some simple
+modifications to the system, allowing yields of up to 266 μg/mL
+of expressed recombinant proteins. We also demonstrate combined transcription–translation
+and biosynthesis of some example natural product pathways, namely,
+melanin and haem biosynthesis. We report an easy-to-follow protocol
+that simply requires three components: DNA, cell-extract, and a master
+mix that we describe in detail. We believe this generic  TX-TL toolkit will be of broad interest to the natural product community,
+complementing experimental wet-lab tools for genome mining studies. To provide an improved  TX-TL toolkit
+for synthesis of high G+C (%) genes and pathways from  spp. and related genomes, a key priority was to optimize protein
+production. Also, a straightforward protocol with minimal batch variation
+was essential, for ease of repeatability. Since bacterial transcription
+and translation is coupled, either these steps, physical parameters,
+or components from the energy solution, limit overall TX-TL activity.
+Therefore, to keep our protocol streamlined, we made the following
+changes: promoter strength, energy solution, ATP regeneration, and
+RNase inhibition. In doing so, we obtained a high-yield protocol with
+minimal variation between different cell-extract batches (A). Overview of  TX-TL optimization. (A)
+Outline of physical and biochemical parameters of  TX-TL and SMM buffer system. Optimization of (B) promoter strength
+from Bai et al.; (C) primary energy source;
+(D) temperature; (E) PVSA; and (F) G6P. Error bars are representative
+of three technical measurements. Previously, we used the  promoter
+to drive mRNA synthesis in  TX-TL. This
+yielded up to 1.3 μM (36 μg/mL) of the model
+superfolder green fluorescence protein (sfGFP) in our previous work. Promoter strength is a key limiting factor in
+heterologous expression systems.  is a strong  constitutive promoter, originally derived from
+the // promoter, with core-35 and -10 boxes of TTGACN and TAGART, respectively. The  promoter is active
+in a range of  spp. through the endogenous
+RNA polymerases and HrdB house-keeping Sigma factor. Bai et al. developed a synthetic promoter library based
+around , using fluorescence-activated cell
+sorting (FACS) to quantity  protoplasts. This included the isolation of a synthetic promoter
+44 (SP44), which is 1.87-fold stronger than . We used  TX-TL to test a panel of promoters developed by Bai et al., with
+SP44 being the strongest (2.63 μM sfGFP) and 2.2-fold more active
+than  (B). We also repeated this across four independent cell-extract
+batches, but still observed strong batch variation. However, SP44
+provided a stronger reporter plasmid to continue the optimization
+process. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf Next, we focused
+on developing a minimal
+energy solution (MES) to identify any nonessential components. The
+standard  TX-TL energy solution used previously, is composed of HEPES buffer, ions (e.g., Mg-glutamate,
+K-glutamate), nucleotide triphosphates (NTPs - ATP, GTP, CTP, and
+UTP), secondary energy source [typically 3-phosphoglyceric acid (3-PGA)
+or phosphoenolpyruvate (PEP)], amino acids, molecular crowding agent,
+and a number of additives. To establish
+a MES for  TX-TL, we first eliminated
+a number of nonessential components from the energy solution. This
+included coenzyme A, tRNA (), NAD, cAMP, folinic
+acid, and spermidine (). While
+we did initially observe a positive response with cAMP, after several
+repeats in batches, this effect was not repeatable. For the HEPES
+buffer component, this was noninhibitory (10–100 mM) and provided
+optimum activity between pH 8–9 (). For the secondary energy source, we found 3-PGA was essential;
+the removal of 3-PGA decreased sfGFP synthesis by 98% (). We tried to replace 3-PGA with alternative
+secondary energy sources but observed only minimal activity: maltose
+(0.13 μM), sucrose (0.15 μM), and pyruvate (0.17 μM).
+Other potential sources such as glucose (with phosphate), PEP, and
+succinate were inactive (). 3-PGA
+is the preferred secondary energy source in a range of nonmodel cell-extract
+hosts, due to its chemical stability
+and high energy potential, with an optimum concentration of 30 mM
+(). For the primary energy source
+(NTPs), there was some basal activity without additional NTPs, but
+addition of 3 mM ATP/GTP and 1.5 mM CTP/UTP provided peak activity
+(). Surprisingly, the removal
+of amino acids only decreased sfGFP synthesis by 45%, with 0.5–1.5
+mM amino acids providing peak activity (data not shown). For a Mg
+screen, we found that MgCl, Mg-glutamate, or Mg-acetate
+were all active (), while high
+levels of K-glutamate (150–200 mM) stimulated increased sfGFP
+synthesis (). This is possibly
+due to additional ATP regeneration via entry of α-ketoglutarate
+into the TCA cycle, as previously shown. Lastly, while we observed reasonable activity without PEG, 1% (w/v)
+PEG 6K was optimum, providing a 44% rise in activity (). However, it is desirable to omit
+PEG for downstream natural product analytical purposes (e.g., LC–MS).
+Finally, on the basis of these observations, we optimized our basic  TX-TL MES system by individually fine-tuning
+the concentration of its core components (3-PGA, NTPs), while leaving
+DNA (40 nM), Mg-glutamate (4 mM), K-glutamate (150 mM), amino acids
+(1.25 mM), and PEG 6K (1%) constant. 3-PGA was most optimum at 30
+mM, while the NTP level (ratio of 2:1 ATP/GTP:CTP/UTP), showed biphasic
+activity, peaking at 3 mM ATP/GTP, with full inhibition at 4 mM. Specific
+data on Mg-glutamate and K-glutamate optimization with four different
+cell-extract batches is presented in . As a combined result of this optimization process, sfGFP synthesis
+was increased to 4 μM, representing a 52% increase. Additional
+ATP Regeneration Pathways In a previous
+study, Caschera et al. highlighted that other glycolytic enzymes function
+in  TX-TL, using the disaccharide maltose
+(or maltodextrin) combined with 3-PGA. This method extended protein
+synthesis up to 10 h, through inorganic phosphate recycling. We investigated whether this part of the metabolism
+is functional in  TX-TL. Therefore, we
+tested the  MES system (with 3-PGA) with
+maltose, glucose, glucose-6-phosphate (G6P), or fructose-1,6-phosphate
+(F16P). Interestingly, maltose, glucose, Glc6P, and F16P all prolonged
+the length of  TX-TL activity from 2
+to 3 h. This was maximal with 5 mM Glc6P and 30 mM 3-PGA (C), at an optimum
+temperature of between 24 and 28 °C (D). All together we observed a 59% increase
+in sfGFP synthesis to 6.37 μM, but lower levels of NTP are required
+(C)—equivalent
+to 1 mM ATP/GTP and 0.5 mM CTP/UTP. We speculate this could be related
+to ATP regulation of the glycolytic enzymes (e.g., hexokinase, fructokinase),
+leading to rapid depletion of ATP and inhibition of protein synthesis.
+However, this requires further investigation as there is limited literature
+on specific glycolytic enzymes from . As a final addition to the system,
+we tested the effect of the inexpensive RNase inhibitor, polyvinylsulfonic
+acid (PVSA). Recently, PVSA, an RNA-mimetic, was shown to improve
+mRNA stability in  TX-TL, but did not increase
+protein synthesis. In  TX-TL, 1 mg/mL PVSA increased sfGFP synthesis up to 5.87 μM,
+in the basic MES system (E). However, while we observed individual improvements
+with either the PVSA RNase inhibitor or the blended G6/3-PGA secondary energy source, in combination, there was no significant
+additive effect with PVSA and G6/3-PGA together.
+This suggested that other rate-limiting factors are at play. In summary, we have made a specific energy solution for  TX-TL with an overall 6-fold improvement in the system. This is
+attributed to the combined use of 3PGA and G6P as secondary energy
+sources and a stronger promoter system. Furthermore, we find this
+can be combined into a single  master
+mix (SMM) solution, further streamlining the reaction process. With
+this simple modification, the TX-TL reaction requires three single
+components that minimize batch variation: SMM solution, plasmid DNA,
+and the cell-extract. Next, we sought to demonstrate the use of this
+simplified system for the testing of plasmid tools and regulatory
+elements for  synthetic biology. Cell-Free Characterization of  Genetic
+Tools for Synthetic Biology It is highly desirable to characterize
+standard DNA parts using rapid and iterative design–build–test–learn
+cycles, the central paradigm of synthetic biology. For  and related strains, either conjugation or protoplast transformation
+is typically used to transfer self-replicating and integrative plasmids
+for the testing of DNA parts for  synthetic
+biology. DNA parts
+are small modular regulatory elements (e.g., promoter, insulator,
+tags, RBS, ORF, terminator) that facilitate downstream combinatorial
+DNA assembly workflows (e.g., Golden Gate) for refactoring gene expression
+pathways. While there are different approaches to quantitate gene
+expression, Bai et al. recently applied a lysozyme method, to study single-cell
+gene expression quantitation of  ATCC
+10712 protoplasts using fluorescence-activated cell sorting. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf We next tested the promoter and RBS elements from Bai et al. in  TX-TL, as well
+as two other important regulatory elements: alternative start codons and terminators. First, we built these DNA parts to be compatible with our previous
+DNA assembly method, EcoFlex. For this
+we had to modify the promoter consensus (prefix renamed, , SP44a instead of SP44) to remove an internal BsmBI site to permit
+MoClo assembly. In addition, to provide comparative  data, we built a new destination vector (cured of BsmBI and BsaI
+sites) from pAV- from Phelan et al. and renamed this StrepFlex (pSF1). pAV- is an integrative shuttle vector developed as a synthetic
+biology plasmid tool for . First, for the promoter library (, SP15a, SP19a, SP23a, SP25a, SP30a, SP40a, SP44a, and ), we assembled this with the RiboJ insulator, R15 capsid RBS, mScarlet-I,
+and the Bba_B0015 terminator. For the RBS library,  was used as the promoter. For the promoter variants, activity ranged
+from 5% () to 100% (). In contrast to earlier results (B), the range of activities for the BsmBI
+cured promoter variants were between 30 and 50% less active across
+the library. For the activity of the RBS variants, this ranged from
+0.7% (SR9) to 117% (SR39) activity relative to the R15 capsid RBS
+(B). We also
+tested two-dimensional promoter and RBS space with sfGFP (C). Lastly, to provide  data, we characterized the mScarlet-I promoter and
+RBS plasmids (from A,B) in  ATCC 10712 () following the approach by Phelan et
+al. Interestingly, there was some significant
+outliers in the RBS library. SR39 (along with the  PET-RBS) was the strongest RBS in contrast to SR40, which was unexpectedly
+weaker both  and . In addition, SR4, an expected weak RBS, was strong in both  and  measurements (A,B, ). This may reflect differences in the
+upstream 5′-untranslated (5′-UTR) region and the use
+of a different fluorescence reporter (mScarlet-I), in comparison to
+Bai et al. However, overall the promoter
+and RBS strengths characterized were broadly consistent with the original
+publication. Another important regulator of
+gene expression is the start codon.
+In most bacteria, ATG is the preferred codon for translation initiation
+through fMet-tRNA. Previously, Myronovskyi .
+used a β-glucuronidase (GUS) reporter to show that the TTG codon
+was stronger than ATG for translation initiation by almost 2-fold
+in both  J1074 and  Tu6071. Using sfGFP and
+mScarlet-I as reporters, our findings suggest that, for  at least, ATG is equivalent in strength to TTG,
+followed by CTG and last GTG as the weakest (C). This also likely changes with coding
+sequences and 5′-UTR. In comparison, for  the order of strength goes as follows: ATG > GTG > TTG >
+CTG. We expect this differs due to high
+GC codon
+bias in . Despite the use of different
+experimental conditions, our results confirm that TTG is a strong
+alternative start codon and that GTG is weak. Nevertheless, the role
+of GTG in regulation is unclear and intriguing due its high frequency
+in  genomes. To the best of our knowledge, no studies have so far reported
+the
+use of terminators for controlling pathway expression in . Using the same experimental format as we previously used in EcoFlex, we tested a selection of Rho-independent terminators
+from the iGEM catalogue (Bba_B0012, Bba_B0015) and from Chen et al. in  TX-TL (D). The latter terminators
+were designed to prevent repetition in DNA elements and protect against
+homologous recombination as previously highlighted. In summary, the activities we observed, strongly follow our previous
+observations in  cell-free. For now, our TX-TL system demonstrates proof-of-concept
+data for prototyping DNA parts in . Rho-independent
+terminators may in future provide tools for refactoring metabolic
+pathways in engineered  strains. Part characterization
+of  regulatory
+elements: (A) Promoter-R15 capsid RBS-mScarlet-I; (B) -RBS-mScarlet-I; (C) Promoter-RBS-sfGFP combinations; (D) variable
+start codons (with sfGFP and mScarlet-I); and (E) variable Rho-independent
+terminators from Chen et al. For terminator
+plasmid design, see Moore et al. 40 nM
+plasmid DNA was incubated in the optimized reaction conditions at
+28 °C as a technical triplicate repeat and repeated on two separate
+days. Unless otherwise stated, the SP44 promoter, PET RBS and Bba_B0015
+were used in constructs, assembled into either pTU1-A () or pSF-1 ( and  shuttle vector). Error bars are representative of three technical
+measurements. TX-TL
+synthesis of high G+C (%) genes http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf Previously, we
+found our  TX-TL system was most active
+with 40 nM of plasmid DNA, using the -sfGFP
+reporter, to saturate protein synthesis. In comparison to  TX-TL, protein synthesis
+is saturated at around 5–10 nM of reporter DNA, which varies
+with different promoters and sigma factors. We questioned whether DNA degradation led to this discrepancy since
+most  degrade methylated plasmid
+DNA with endonucleases. To compare methylated
+and unmethylated plasmid DNA for methylation-specific endonucleases,
+we tested unmethylated and methylated SP44-sfGFP reporter plasmid
+in  TX-TL. Interestingly, there was no
+major change in sfGFP synthesis between unmethylated and methylated
+plasmid DNA, across different DNA concentrations (). We also tested relative plasmid DNA stability
+in  cell-extracts, with the standard
+MES energy solution, and incubated at different time-lengths, followed
+by re-extraction of the plasmid DNA (using the Qiagen plasmid DNA
+purification kit). The extracted plasmid DNA was then separated and
+visualized on a 1% (w/v) agarose gel. This indicated that methylated
+plasmid DNA is stable, during the time (0–4 h) when TX-TL is
+active (). Further to this, we
+tested linear DNA for exonuclease activity. To protect the coding
+sequences, we PCR amplified about 150–250 bases upstream and
+downstream of the coding parts, using the standard SP44-sfGFP reporter
+plasmid. However, in the TX-TL reaction, linear DNA was 95% less active
+than circular DNA, at 40 nM of DNA (). This suggests the  cell-extract
+has exonuclease activity, while endonuclease activity is minimal. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf Since circular DNA degradation was not a limiting factor, we tested
+different fluorescent proteins (A) to determine if the optimum plasmid DNA concentration
+for protein synthesis changes. First, we tested mVenus-I and mScarlet-I,
+combined with the strong SP44 promoter, and compared them to the SP44-sfGFP
+reporter. The maximum yields achieved for these three proteins were
+6.48 μM sfGFP (174 μg/mL), 9.50 μM mScarlet-I (266
+μg/mL), and 7.72 μM mVenus-I (224 μg/mL). Interestingly,
+this was tested in the extract batches presented in , where both SP44-mScarlet-I and SP44-mVenus saturated
+protein synthesis with a lower DNA template (10 nM) than SP44-sfGFP
+(50 nM) (B).
+This was surprising since the coding sequence of mVenus is 96% identical
+to sfGFP, with the exception of 30 mutations and an additional GTG
+(valine) at the second codon for mVenus-I. However, while the optimal
+sfGFP plasmid DNA concentration was 50 nM in this experiment, consistent
+with our previous work, it was not consistent
+in all extract batches (). This
+contrasting result likely relates to either a difference in mRNA stability
+or translation initiation rate between the batches. Since little is
+known about how . control protein
+synthesis, this topic alone merits a separate in-depth investigation. Second, we tested the robustness
+of the system for other proteins
+from high G+C (%) genes (C). We expressed the oxytetracycline enzymes (OxyA,
+-B, -C, -D, -J, -K, -N, and -T) from  that were previously only detectable by Western blotting in our
+original publication, as well as three
+nonribosomal peptide synthetases (NRPS). The latter included the TxtA
+and TxtB NRPS enzymes from thaxtomin A biosynthesis in  and an uncharacterized NRPS (NH08_RS0107360) from . Except for TxtA, most enzymes were discernible
+by either SDS-PAGE (C), while for OxyA (47 kDa) and TxtB (162 kDa), low levels
+(<0.5 μM) were detected by Western blotting using an anti-Flag
+tag (data not shown). We also incorporated a C-terminal tetracysteine
+tag with the oxytetracycline enzymes and mScarlet-I, using the fluorogenic
+biarsenical dye fluorescein arsenical hairpin binder-ethanedithiol
+(FlAsH-EDT), to measure real-time nascent protein synthesis
+(D). Most oxytetracycline
+enzymes showed a significant increase in FlAsH-EDT fluorescence
+( < 0.05), peaking at 120 min, with only OxyN
+producing the weakest response ( = 0.056). However,
+this was still clearly detectable by PAGE or Western. For mScarlet-I,
+the time-lag between the fluorescence signals for FlAsH-EDT2 (immature
+protein) and mScarlet-I (mature protein) allowed us to estimate a
+maturation time of 40 min for mScarlet-I (E). This is in close agreement to a literature
+value of 36 min, calculated . In summary, our  TX-TL system
+is robust for expression of high G+C (%) genes, incorporates multiple
+tools (e.g., tags, plasmid systems) and is comparable to other bacterial
+TX-TL systems. Robust
+and high-yield synthesis of high G+C (%) genes. (A) Synthesis
+of codon-optimized fluorescence proteins. (B) Denaturing PAGE of oxytetracycline
+biosynthetic proteins, fluorescence proteins, and a representative
+NRPS (NH08_RS0107360 from ). (C) Saturation
+of protein synthesis for sfGFP, mVenus, and mScarlet-I with increasing
+DNA concentrations. (D) Real-time detection of protein synthesis with
+C-terminal FlAsH-EDT tag system. (E) Estimation of mScarlet-I
+maturation time with real-time measurement of immature and mature
+protein synthesis. Error bars are representative of three technical
+measurements. Transcription, translation, and biosynthesis http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf The next
+step was to reconstitute a biosynthetic pathway in  TX-TL system. Initially, to show the synthesis of a single enzyme
+and its activity, we selected the GUS reporter enzyme. We synthesized
+the enzyme in the TX-TL reaction from 40 nM SP44-, left for 4 h at 30 °C. The GUS enzyme showed a clear band
+on SDS-PAGE at the expected size of 68 kDa (). To test for GUS activity, an equal volume of the TX-TL
+extract, as well as a negative control reaction, was mixed with X-GlcA
+substrate in increasing concentrations (10, 25, and 50 mg/mL). Only
+the extract from the SP44- reaction developed
+a deep blue pigment within minutes, indicating strong GUS activity
+(A). Next, we selected two metabolic pathways to provide a further test
+for the TX-TL system. We selected two operons from  encoding the melanin and early stage haem biosynthetic pathways
+to provide a discernible output for testing (fluorescence and/or colorimetric).
+Also, both operons were selected from , to improve expression in TX-TL since the codon usage is adapted
+to this host. Streptomyces castaneoglobisporus http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf Melanin is a natural pigment that absorbs ultraviolet
+(UV) light
+to protect cells from DNA damage. Recently, Matoba et al. studied
+the mechanism of tyrosinase and the role of the “caddie”
+protein from  HUT6202. Tyrosinase, TyrC, catalyzes the rate-limiting
+step in melanin biosynthesis. It oxidizes the phenol group (in -tyrosine) into the -quinone intermediate,
+which enters an autocatalytic cascade into the melanin pathway. TyrC
+is dicopper-dependent, with each Cu(II) atom coordinated by three
+His residues, facilitated by MelC1, a small (12.8 kDa) metallochaperone.
+The  tyrosinase operon encodes both
+MelC1 and TyrC. After TX-TL with SP44--, denaturing PAGE shows clear synthesis of TyrC at approximately
+34 kDa (expected 31.4 kDa) although MelC1 was indistinguishable (). In terms of activity, we observed
+brown pigment formation after ∼2 h, only with the addition
+of 1 mM CuCl (B). This indicates L-DOPA formation, which enters an
+autocatalytic cascade, leading to different melanin pigments. This
+suggests TyrC is active, despite the apparent absence of MelC1. Without
+the addition of CuCl or tyrosinase plasmid, the cell-extracts
+remained clear. Previously, Matoba et al. showed that insertion of
+Cu(II) into TyrC by MelC1 involves a transient interaction, and that
+MelC1 is unstable and forms aggregates difficult to detect with PAGE. Also, apo-TyrC is inactive with Cu(II) alone,
+which suggests that our TX-TL system supports the synthesis of both
+TyrC and MelC1. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf Lastly, we tested a three-gene biosynthetic
+operon (-/) that catalyzes
+the early stages of
+haem biosynthesis. This pathway was selected
+since it contains a known fluorescence reporter enzyme CysG, a methyltransferase naturally fused
+as HemD/CysG. We added a pTU1-A-SP44--/- (pTU1-A-SP44-) plasmid
+into the TX-TL reaction, as well as a negative control plasmid (pTU1-A),
+both with and without 5-aminolevulinic acid (5-ALA), which is the
+substrate for the pathway. In the presence of pTU1-A and 1 mM ALA,
+there was some minor background fluorescence (C), which we expected since haem biosynthesis
+is essential. In contrast, with pTU1-A-SP44- and
+1 mM ALA, strong red fluorescence was generated, 20-fold higher than
+background levels in the control reaction (pTU1-A and 1 mM ALA). For
+protein synthesis, while we could detect HemB (35 kDa) and HemC (38
+kDa), the fusion protein HemD/CysG was less clear, with
+other major bands at the expected mass, 58.3 kDa (). To verify pathway function, we ran a semicontinuous
+reaction to facilitate purification by
+separating the haem intermediates from the cell-extract proteins (inset
+image in C).
+Interestingly, LC–MS analysis detected the air-oxidized product
+of the HemD enzyme (uroporphyrinogen III, 837 /), observed as a 6-electron oxidized uroporphyrin III (red
+fluorescent) intermediate at 831 /, typical for these air-sensitive intermediates (). Since uroporphyrinogen III is colorless
+and nonfluorescent, we tried to minimize oxygen levels in the TX-TL
+reaction using a layer of mineral oil in small-scale batch reactions.
+Surprisingly, the pigment and fluorescence still accumulated, suggesting
+that dissolved oxygen levels remain stable in the cell-extract. Interestingly,
+we also found the TX-TL reactions were still active for sfGFP and
+mScarlet-I synthesis (data not shown). This anaerobic activity potentially
+suggests that oxygen is not rate-limiting at the current level of
+protein synthesis activity and is sufficient for folding of the fluorescence
+proteins. Further investigation is needed to determine whether oxidative
+phosphorylation is active in  TX-TL and
+whether this presents a bottleneck to overall ATP regeneration. In
+summary, these results show that our  TX-TL system can support the synthesis of at least three enzymes
+from plasmid DNA in a combined “one-pot” translation,
+translation, and enzymatic pathway. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf cell-free transcription, translation
+and biosynthesis. (A) Codon-optimized  MG1655
+GUS enzyme. (B)  DSM-40230 tyrosinase
+(TyrC) and copper metallochaperone (MelC1). (C)  DSM-40230 early stage haem biosynthetic pathway, HemB, HemD-CysG and HemC. Addition of individual substrates and approximate
+time scales are indicated within the diagram. For details of batch
+and semicontinuous reaction conditions, please refer to methods. For
+a summary of the chemical intermediates, please see . Melanin is a mixed family of pigments spontaneously
+produced from air oxidation of L-DOPA. Fluorescence error bars are
+representative of three technical measurements. Our
+study complements a recent surge in interest in the use of
+cell-free systems for the study of biosynthetic pathways. Here
+we wanted to expand the palette of plasmid tools for the further development
+of  as a synthetic biology chassis by
+developing an optimized streptomyces TX-TL toolkit. Our combined findings show at least a 6-fold improvement
+in protein synthesis over our original  TX-TL system, using the wild-type  ATCC 10712 strain. It is likely genetic modifications that either
+limit RNA degradation or increase translation rates will improve this
+current system. Indeed, Xu et al. recently showed translation factors
+are a clear rate-limiting step for other  cell-free systems. Finally, we demonstrate
+that the semicontinuous system permits reasonable milligram scale-up
+of biosynthetic metabolites and a clean route to purification and
+analysis. In conclusion, our results realize the early stage potential
+of  cell-free for the study of synthetic
+biology for natural products. It provides a native prototyping environment
+for developing synthetic biology tools (e.g., promoters/RBS) and also
+for exploring biosynthetic pathways from these organisms. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf All plasmids were either prepared
+using EcoFlex cloning or by routine materials and methods, as previously
+described. For the PCR of high GC genes
+and operons, Q5 polymerase (NEB, UK) was used, using standard cycling
+or touchdown (72–59 °C annealing) and the addition of
+5% (v/v) DMSO. For tricky amplicons, the protocol was modified with
+an annealing time of 30 s and elongation temperature reduced to 68
+°C. The following bacterial strains were used:  DSM-40230 and  DH10β. Unmethylated
+plasmid DNA was prepared from an  mutant (C2925) obtained from NEB. Plasmids and oligonucleotides
+are listed in . ATCC 10712
+was grown in GYM (prepared in distilled water). The cell-extracts
+were prepared as described previously, with the exception that β-mercaptoethanol was removed from
+the wash buffers and replaced with 2 mM dithiothreitol. Energy Solution
+and Reaction Conditions http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00581/suppl_file/sb0c00581_si_001.pdf The reaction
+mixture contained 8 mg/mL cell-extract, 25 mM HEPES, 1 mM ATP, 1 mM
+GTP, 0.5 mM UTP, 0.5 mM CTP, 30 mM 3-PGA, 5 mM glucose-6-phosphate,
+1.5 mM amino acids (1.25 mM -leucine), 4 mM Mg-glutamate,
+150 mM K-glutamate, 1% (w/v) PEG6K and 5 mg/mL PVSA. All reactions
+were incubated at 28 °C, with 40 nM pTU1-A-SP44-sfGFP and the
+MES or SMM buffer system, unless otherwise stated. At least three
+technical repeats were prepared (for fluorescence measurements) and
+repeated with at least two independent cell-extract batches (from
+A6-A9) prepared on separate days. (See  for chemicals in the SMM buffer.) A 40 μL cell-free reaction (30
+μL SMM + 10 μL plasmid DNA) was incubated in a 2 mL tube
+at 25–30 °C (no shaking) for 6 h. To precipitate proteins,
+1 mL of ice-cold 100% (v/v) acetone was added. Samples were placed
+at −20 °C for 30 min, before centrifugation at 18 000, 4 °C, for 10 min. The supernatant was removed, and
+the pellet was washed with 1 mL of ice-cold 70% (v/v) acetone. Centrifugation
+and supernatant removal steps were then repeated. The pellet was air-dried,
+before resuspending in 30 μL of ddHO and 10 μL
+of 4X NuPAGE lithium dodecyl sulfate (LDS) sample buffer (ThermoFisher)
+and boiled at 100 °C for 5 min. To ensure the pellet was solubilized,
+samples were aspirated with a pipet five times, and if necessary (a
+visible pellet remaining), left for an additional 5 min at 100 °C.
+An amount of 10–100 μg of total protein was then separated
+with a 4–12% (v/v) gradient Bis-Tris gel (ThermoFisher) run
+in an MES buffer system. Proteins were stained with InstantBlue (Generon)
+and destained with ddHO, and the images were recorded
+with the ChemiDoc XRS imaging system (Biorad). TX-TL Fluorescence Measurements Ten microliters of
+cell-free reactions was prepared in a 384-well black clear, F-bottom,
+low-binding plate (Greiner). Reactions were measured as a triplicate
+technical repeat and at least repeated with cell-extracts prepared
+from two separate days. They were measured in a 384-well plate. The
+plate was sealed with aluminum film, SILVERseal (Greiner), and briefly
+centrifuged at 2000 for 10 s. Real-time plate measurements
+were recorded in a CLARIOStar plate reader (BMG Labtech, Germany)
+at 30 °C with 10 s of shaking at 500 rpm prior to measurements,
+using either standard filters (Omega) or monochromator settings (CLARIOStar).
+Purified sfGFP, mVenus-I and mScarlet-I standards were purified, as
+described previously, to estimate protein
+concentration during real-time fluorescence measurements. TX-TL reactions were prepared
+as two components (A and B) in a semicontinuous reaction as follows:
+Component A: 100 μL of standard TX-TL reaction, in the absence
+of PEG, was injected into a Thermo Scientific Pierce 3.5K MWCO 96-well
+microdialysis device. Component B: 1.5 mL of SMM solution with 1 mg/mL
+carbenicillin was placed in a 2.5 mL tube. The microdialysis cassette
+was placed inside the 2.5 mL tube and incubated at 30 °C for
+24 h with shaking (1000 rpm). Samples were acidified with 1% (v/v)
+HCl, centrifuged at 18 000 for 25 min at
+room temperature. The supernatant was loaded onto a Sep-Pak C-18 (50
+mg sorbent) solid-phase extraction cartridge (Waters), washed with
+10 mL of 10% (v/v) ethanol and eluted with 2 mL of 50% (v/v) ethanol.
+All solutions were acidified with 1% (v/v) HCl. Eluted samples were
+dried under vacuum at room temperature, using an Eppendorf Concentrator
+Plus. Samples were dissolved in 150 μL of 1% (v/v) HCl and centrifuged
+again at 18 000 for 25 min at room temperature.
+One microliter of supernatant was then analyzed by LC–MS, performed
+with an Agilent 1290 Infinity system with an online diode array detector
+in combination with a Bruker 6500 quadruple time-of-flight (Q-ToF)
+mass spectrometer. An Agilent Extend-C18 2.1 mm × 50 mm (1.8
+μm particle size) column was used at a temperature of 40 °C
+with a buffer flow rate of 0.5 mL/min. LC was performed with a gradient
+of buffer A [0.1% (v/v) formic acid in water] and buffer B [0.1% (v/v)
+formic acid in acetonitrile]. Separation was achieved using 2% buffer
+B for 0.6 min, followed by a linear gradient to 100% buffer B from
+0.6–4.6 min, which was held at 100% buffer B from 4.6–5.6
+min followed by a return to 2% buffer B from 5.6–6.6 min, along
+with 1 min post-run. Spectra were recorded between a mass range of
+50–1700 / at a rate of
+10 spectra per second in positive polarity..

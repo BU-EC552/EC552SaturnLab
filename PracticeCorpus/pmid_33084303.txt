@@ -1,0 +1,539 @@
+Optogenetic
+technologies, which
+enable control of cell signaling and physiology through light, are
+rapidly expanding in scope beyond initial restrictions to light sensitive
+channelrhodopsins. Optogenetic approaches enable truly dynamic cellular
+perturbation through spatiotemporally precise optical stimulation
+techniques that can be finely tuned through modulation of light wavelength,
+intensity, and frequency. Here, we report the development and initial
+application of an optogenetic receptor system responsive to blue light,
+enabling activation of the bone morphogenetic protein (BMP) signaling
+pathway in the absence of a ligand in many cell types. BMPs
+form part of the transforming growth factor β (TGFβ)
+superfamily of signaling molecules: a group of structurally related
+proteins that perform key cellular regulatory functions throughout
+development and during tissue homeostasis. TGFβ molecules are dimeric when active and initiate signal
+transduction through binding to a Type I or II receptor. Ligand binding
+leads to the formation of a heterotetrameric signaling complex consisting
+of two Type I and two Type II receptors that assemble depending upon
+ligand specificity. In canonical signaling,
+the TGFβ superfamily receptors recruit and activate receptor
+(R)-SMAD proteins, defined by the presence of a short SSXS activation
+motif which enables their interaction with Type I receptors. Despite close structural homology, TGFβ
+superfamily receptors
+are defined as TGFβ-like or BMP-like depending upon their interaction
+with one of two R-SMAD groups; SMAD2/3 in TGFβ-like and SMAD1/5/8
+in BMP-like signaling. Phosphorylated R-SMAD proteins form a complex
+with SMAD4 facilitating their translocation to and accumulation within
+the nucleus. R-SMAD–SMAD4 complexes bind directly to DNA where
+they, in conjunction with other regulatory transcription factors,
+control the expression of an extensive variety of genes despite the
+relatively small number of upstream pathway components. In addition to SMAD-related canonical signaling,
+both TGFβ and BMP receptor complexes recruit and activate a
+variety of other intracellular signaling mediators. Noncanonical signaling,
+primarily through various mitogen-activated protein kinases (MAPKs),
+contributes to the induction of specific TGFβ/BMP cellular responses
+such as epithelial to mesenchymal transition, proliferation, and migration. The ability to elicit a diverse range of
+cellular responses allows
+TGFβ and BMP signals to have multiple roles in directing cell
+fate during development, including the specification of germ layers
+and subsequent specialization of a wide variety of cell types. Indeed,
+many established directed differentiation protocols of human pluripotent
+stem cells (hPSCs) require the activation or inhibition of TGFβ/BMP
+signals throughout multiple stages to drive differentiation. However, control of the BMP signaling pathway is primarily limited
+to the use of inconsistent and costly recombinant growth factors;
+with synthetic small molecules not yet considered potent enough for
+tissue engineering approaches. investigative and developmental models
+primarily rely upon activation or inhibition of signaling pathways
+to elicit a downstream cellular response; predominantly through the
+use of soluble recombinant growth factors or synthetic chemical compounds
+that mimic their activity. However, the use of stimulatory molecules
+to investigate complex biological systems is limited by cellular receptor
+expression and molecule instability. Furthermore,
+the exogenous addition of stimulatory molecules, including growth
+factors or small molecules, does not provide the fidelity or temporal
+precision required for complex systems such as developmental models.
+Biological tools that enable dynamic perturbation of cellular stimuli
+can more precisely examine the interplay of signaling factors that
+occurs within complex molecular networks. For example, technological
+advances in microfluidic- and bioactive biomaterial-based approaches
+have the capacity to provide increased control of signal inputs but
+are still limited by their complexity and low throughput. Optogenetic approaches enable the use of light as a stimulus,
+which
+confers key advantages over traditional pharmacological manipulation,
+including the flexibility of light illumination and dosage precision
+in space and time. Although initial optogenetic approaches were limited
+by the utility of light-sensitive channelrhodopsins, the discovery
+and application of photoreceptor sensory domains with simple activation
+mechanics have enabled the generation of more malleable optogenetic
+tools. Commonly employed photoreceptors include
+flavoprotein blue light response sensors and red light sensitive phytochromes. The light-oxygen-voltage (LOV) flavoprotein family of photoreceptors
+is particularly attractive in photoreceptor engineering due to the
+small size and the versatility of optogenetic manipulations. Optogenetic tools that utilize the LOV sensing
+domain have been used to enable optical control of cellular signaling
+pathways, gene expression regulation, and protein localization. Precise and fine control of TGFβ-superfamily molecules
+has
+focused upon TGFβ-like rather than BMP-like signals through
+various means; including chemical-mediated dimerization of chimeric
+receptors, sequestering and release of TGFβ ligands by biomaterials
+and magnetic induction of TGFβ signaling. In addition,
+several recent studies have described optogenetic induction of TGFβ-like
+signaling, although induction of BMP-like
+signaling has not yet been reported. The combination of factors described
+above triggered us to develop an optogenetic BMP-like signaling system
+as a cost-effective and high-throughput tool to dynamically perturb
+the BMP signaling pathway. Development of an Inducible
+Optogenetic BMP Signaling System http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00315/suppl_file/sb0c00315_si_001.pdf Activation of the canonical
+BMP signaling cascade is controlled
+by the tetramerization of Type I and II receptors in the presence
+of an appropriate ligand. We hypothesized that BMP-like Type I and
+II receptor heterodimerization would be sufficient to initiate signaling,
+as previous work has indicated that TGFβ-like Type I and II
+receptor dimerization can activate the canonical TGFβ-like SMAD2/3
+signaling pathway. Therefore, we constructed two
+optogenetic BMP-like receptors; optoBMPR1B and optoBMPR2 (A,B). We fused the
+aureochrome1 light oxygen voltage (LOV) sensing domain derived from () with the
+intracellular regions of both receptors at the C-terminal end and
+anchored both to the plasma membrane with a myristoylation motif.
+The  LOV sensing domain dimerizes upon
+blue light stimulation; thus forcing the Type I and II receptors into
+close proximity to initiate signal transduction (A). Such a strategy has previously
+proven successful in the light-induced dimerization of TGFβ-like
+nodal receptors and several receptor tyrosine kinases. We then incorporated both receptors into lentiviral doxycycline-inducible
+vectors to enable transgenic genomic integration combined with temporal
+control over receptor expression (). Development of opto-BMP system. (A) Schematic representation of
+the optogenetic BMP (optoBMP) system. (B) Vector illustrations of
+the (top) optogenetic BMP receptors and (bottom) SMAD1/5/8 response
+element reporter (BRE). Optogenetic receptors were designed as follows:
+the cytoplasmic region of either BMPR1B/ALK6 or BMPR2 was inserted
+between a myristoylation signal peptide and the light oxygen voltage
+(LOV) domain. A hemeagglutinin (HA) tag is located at the C-terminus.
+Optogenetic receptors were then inserted into a doxycycline inducible
+second generation lentiviral backbone vector with distinct fluorescent
+protein markers. OptoBMP Can Be Used to
+Modulate SMAD1/5/8 Transcriptional Kinetics http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00315/suppl_file/sb0c00315_si_001.pdf We initially
+characterized activation of the optoBMP system in
+HEK293T cells through analysis of real-time SMAD1/5/8 transcriptional
+kinetics using a BMP-like response element reporter (BRE) (). After 24 h doxycycline treatment
+to induce expression of the optoBMP system, optoBMP-HEK293T-BRE cells
+were illuminated with blue light (470 nm, 0.25 mW/cm)
+for 15 min. After 4 h, a significant, over 2-fold induction of the
+BRE above prestimulation was observed in illuminated cells while cells
+that were kept in the dark did not appear to respond (A). Optical BRE induction was
+not significantly different from that obtained with BMP2. Furthermore,
+we were able to correlate BRE response amplitude with variable light
+irradiance, demonstrating the ability to fine-tune the optoBMP response
+with blue light (B). Analysis of real-time SMAD1/5/8 transcriptional kinetics demonstrated
+a unique light-driven response profile in comparison to BMP2-stimulated
+controls (C).
+BMP2 or light illumination resulted in a response peak after ∼4
+h, but light illumination resulted in a significantly more rapid induction
+of the BRE, as illustrated at 30 min after initial stimulation (D). To ensure the optoBMP system functioned
+through BMP-like receptor
+activation, we treated optoBMP-HEK293T-BRE cells with LDN193189; which
+directly inhibits the kinase activity of BMP-like Type I receptors. Addition of LDN193189 at a low concentration
+(5 nM) is sufficient to inhibit BMPR1A/ALK3 kinase activity but not
+that of BMPR1B/ALK6, which we utilized in the design of the optoBMP
+system. We observed significant BRE induction
+in cells treated with 5 nM LDN193189 30 min after light illumination
+in comparison to cells that remained in the dark (E). Upon application of 50
+nM LDN193189, BRE induction was abolished, indicating that the optoBMP
+system initiates canonical BMP-like signal transduction through light-induced
+opto-BMPR1B kinase activity. Optogenetic activation of opto-BMPR1B
+additionally requires the presence of opto-BMPR2, with neither receptor
+functional when expressed individually (F). Thus, although light-induced LOV dimerization
+may result in the formation of optogenetic receptor homodimers or
+oligomers, the optoBMP system likely functions through transactivation
+of Type I kinase activity by Type II receptors. Through targeting
+the most upstream pathway components for optical
+control, the optoBMP system almost entirely utilizes native cellular
+machinery. As the binding of SMAD1/5/8 to transcriptional targets
+are influenced and directed by cell-dependent expressed cofactors,
+the design of the optoBMP system does not interfere with this process.
+Currently available small molecule compounds that target the BMP pathway
+subvert receptor activation and thus may disrupt or improperly engage
+in additional recruitment of signaling effectors that bind to active
+SMAD1/5/8. Therefore, the optoBMP system
+has greater potential to investigate the roles of BMP signals in any
+natural cellular context. As expression and activation of the optoBMP
+system can be induced at any time upon doxycycline and light illumination,
+respectively, the system subverts native cellular regulatory systems
+driving the expression of specific receptors or the internalization
+and degradation of ligand–receptor complexes. In addition, BMP ligands are promiscuous in their receptor
+activation, and thus light illumination provides precise dosage and
+downstream receptor specificity. Characterization of opto-BMP
+system in optoBMP-HEK293T-BRE cells.
+(A) Analysis of BRE induction 4 h after stimulation with blue light
+or 50 ng/mL BMP2.  = 3 wells per condition across
+five independent experiments. (B) Manipulation of BRE induction through
+stimulation with variable blue light irradiance.  = 3 wells per condition across four independent experiments. (C)
+Analysis of BRE kinetics over 10 h after stimulation with blue light
+or 50 ng/mL BMP2. Response after 30 min shown in panel D.  = three wells per condition across three independent experiments.
+(D) Analysis of BRE induction 30 min after stimulation with blue light
+or 50 ng/mL BMP2.  = 3 wells per condition across
+three independent experiments. (E) Analysis of BRE induction 30 min
+after stimulation with blue light and addition of LDN193189.  = 2 wells per condition across three independent experiments.
+(F) Analysis of BRE induction in cell lines with different optogenetic
+receptor expressed 4 h after stimulation with blue light.  = 3 wells per condition across three independent experiments.
+Data information: In panels A–F data are presented as mean
+fold change in NanoLuc Luciferase activity (RLU) from prestimulation
+across independent experiments. In panels A, B, D, E, and F bars represent
+mean values + standard error of the mean (SEM).  values were generated using an ordinary one-way ANOVA (* < 0.05, ** < 0.01, *** < 0.005, **** < 0.0001, ns = not
+significant). Blue Light Stimulation
+of optoBMP Drives a BMP-like Response
+in a Chondrogenic Cell Line http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00315/suppl_file/sb0c00315_si_001.pdf To investigate the potential
+of the optoBMP system in a relevant context, we transferred the system
+into the immortalized chondrocyte cell line TC28a2 to test the response
+in a skeletal model. BMP signals are
+critical in chondrocyte and osteocyte development and maintenance. Optogenetic receptor expression (detected through
+the tagged hemeagglutinin (HA) signal) was only seen in doxycycline
+treated cells (A), confirming the doxycycline-dependent induction of optogenetic
+receptor expression. We then investigated if activation of the optoBMP
+system induced native SMAD1/5/8 signal transduction. Nuclear accumulation
+of P-SMAD1/5 was analyzed 2 h after 15 min of blue light illumination
+(B). Single
+cell quantification of the mean nuclear intensity of P-SMAD1/5 indicated
+a significant increase in comparison to controls that remained in
+dark conditions (). P-SMAD1/5
+nuclear intensity was observed to be higher in BMP2-treated controls
+that were stimulated continuously for 2 h, but the percentage of positive
+cells in both light and BMP2-stimulated conditions after 2 h was not
+significantly different (C). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00315/suppl_file/sb0c00315_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00315/suppl_file/sb0c00315_si_001.pdf We observed a small increase
+in basal SMAD1/5/8 signaling upon
+doxycycline addition in the absence of light, indicating a low level
+of spontaneous optoBMP activation, most likely as a result of the
+spatial proximity of receptors both expressed at the cell membrane.
+Alternatively, or in combination, continuous doxycycline-driven receptor
+expression may result in receptor excess. However, blue light illumination
+resulted in significant enhancement of SMAD1/5 phosphorylation and
+induction of transcriptional activity in comparison to cells kept
+in the dark. Although not an issue in this study, spontaneous optoBMP
+activation without light may be eliminated through a similar approach
+to that used by Li . in which one of the receptors is localized to the cytoplasm, hence
+allowing signaling solely thorough light-activated membrane localization.
+Supplementation of doxycycline, and therefore expression of the optoBMP
+system, was required to enable blue-light induction of P-SMAD1/5 nuclear
+accumulation. The blue light specificity of the optoBMP system was
+then demonstrated by subjecting optoBMP-TC28a2 cells to variable light
+wavelength stimulations (). There
+was no significant difference in mean percentage of cells positive
+for nuclear P-SMAD1/5 between cells left in the dark and cells illuminated
+with red (670 nm) or green (560 nm) light (D). In addition, activation of the optoBMP
+system with blue light did not induce TGFβ-like SMAD2 nuclear
+translocation, demonstrating specificity in targeting the BMP signaling
+arm of the TGFβ superfamily (). Snail Family Transcriptional Repressor 1 (SNAI1) To illustrate the ability of the optoBMP system to elicit
+a BMP-like
+transcriptional response in optoBMP-TC28a2 cells, we initially measured
+the SMAD1/5/8 response through BRE induction. As with optoBMP-HEK293T
+cells, we found that 15 min of blue light illumination resulted in
+significant induction of a SMAD1/5/8 response after 4 h (E). We then investigated
+whether BRE induction correlated with upregulation of direct BMP-pathway
+target genes 4 h after blue light illumination. Blue light induction
+of optoBMP resulted in significant upregulation of  (, ,  ()
+and  which are all known to be downstream targets of SMAD1/5/8 (F). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00315/suppl_file/sb0c00315_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00315/suppl_file/sb0c00315_si_001.pdf We then investigated whether activation of the optoBMP system
+initiated
+involvement of noncanonical signal transduction through MAPK. Phosphorylation
+of extracellular signal-related kinase (ERK1/2) did not appear to
+be different between nonstimulated cells and those stimulated with
+light or BMP2 (). However, light
+illumination and BMP2 stimulation resulted in significant induction
+of  (); which
+is facilitated through BMP-activation of noncanonical p38 MAPK (). Additionally,
+both light illumination and BMP2 stimulation induced a small but not
+significant increase in  () expression, which has additionally been demonstrated
+to be controlled through noncanonical BMP signals. expression, which can also be BMP-responsive
+through noncanonical mediators, was not
+significantly altered. Therefore, the optoBMP system has the capacity
+to stimulate activation of both canonical and some noncanonical downstream
+BMP targets in a comparable manner to that of BMP2 stimulation. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00315/suppl_file/sb0c00315_si_001.pdf Blue light illumination did not appear to result in upregulation
+of known BMP response genes  or inhibitory , which acts as part of a negative feedback loop, both
+of which are upregulated following BMP2 stimulation. The apparent differences between optoBMP- and BMP2 ligand-driven
+responses may be a result of unique signaling receptor complexes.
+The lack of native BMPR1B/ALK6 expression in TC28a2 cells indicates
+that a BMP signaling response is driven through a BMPR1A/ALK3-BMPR2
+receptor complex unlike the optoBMP system (). Although BMPR1B/ALK6 activation has been demonstrated
+to result in  induction in several cell lines,
+cellular context is known to be important in directing downstream
+BMP signaling and therefore may not totally align with optogenetic
+receptor complex activation in TC28a2 cells. Moreover, BMP2 stimulation used here involved 4 h of sustained signaling
+in comparison to a short 15 min light-induced activation of the BMP
+pathway. In future work we will aim to mimic BMP-ligand induced activation
+through the use of longer durations of light illumination. Induction of a BMP-like response in chondrogenic optoBMP-TC28a2
+cells. (A) Representative immunofluorescence images of cells stained
+for HA tag with or without addition of 100 ng/mL doxycycline for 24
+h. (B) Representative immunofluorescence images of cells stained for
+P-SMAD1/5 2 h after 15 min blue light illumination (right) or having
+been kept in the dark (left). (C) Percentage of P-SMAD1/5 positive
+cells calculated through single-cell quantification of mean nuclear
+P-SMAD1/5 fluorescence intensity. Cells were stimulated with blue
+light illumination or 50 ng/mL BMP2. Threshold for positivity was
+calculated through analysis of unstimulated controls.  = 3 different fields of view per condition across three independent
+experiments. (D) Percentage of P-SMAD1/5 positive cells when stimulated
+with different light wavelengths. Cells were stimulated with either
+red, blue, or green light (0.25 mW/cm) or kept in the
+dark.  = 3 different fields of view per condition
+across three independent experiments. (E) Analysis of BRE induction
+in optoBMP-TC28a2-BRE cells 4 h after stimulation with blue light
+or 50 ng/mL BMP2. Bars represent mean fold change in RLU value 4 h
+from prestimulation + SEM.  = 3 wells per condition
+across three independent experiments. (F) Gene expression analyses
+of BMP-target genes. Cells were stimulated with blue light illumination
+or 50 ng/mL BMP2 and analyzed after 4 h. Gene expression was normalized
+to GAPDH.  = 4 independent experiments. Data information:
+Scale bars in panels A and B represent 100 μm. Data presented
+in panels C–F represent mean values + SEM.  values were generated using an ordinary one-way ANOVA (* < 0.05, ** < 0.01, *** < 0.0005, **** < 0.0001, ns =
+not significant). Application
+of optoBMP in a Human Development Model As human embryonic
+stem cells (hESCs) have proved a useful model
+system for studying development to many different lineages, they are
+a suitable system for testing optogenetic regulation of development.
+To demonstrate the potential of the optoBMP system in this context
+we transduced hESC line MAN13 with the
+optoBMP system. We initially performed verification of pluripotency
+through immunofluorescent staining of established pluripotent markers
+OCT4 and NANOG (A). Then, to determine functionality of the optoBMP system in hESCs,
+we analyzed nuclear accumulation of P-SMAD1/5 after blue light illumination
+(B). Single
+cell quantification of nuclear P-SMAD1/5 indicated significant induction
+of the canonical BMP pathway when compared to cells kept in the dark
+or stimulated with light in the absence of doxycycline (C). To further illustrate optogenetic
+activation in hESCs we analyzed BMP target gene expression. Again
+we observed significant upregulation of direct BMP target genes including , , and  after
+optogenetic stimulation (D). Interestingly, several genes appeared upregulated
+by light illumination and not by BMP2, including differentiation genes  and . As , , and  genes have crucial roles
+during developmental processes, these preliminary data suggest that
+the optoBMP system could be utilized in hPSC development models as
+a substitute for recombinant growth factor supplementation. In this study we demonstrate that short light pulses are
+sufficient
+to alter BMP signaling using the optoBMP system. In the future it
+will be interesting to investigate the effect of complex light stimulation
+patterns and longer illumination periods, as used in several other
+optogenetic studies. Complex cellular responses, such
+as directing cell fate decisions and differentiation, often require
+sustained and specifically timed stimulation, as illustrated by the
+recent  application of an optogenetic Wnt
+tool in hPSCs. In addition, the ability
+to precisely manipulate the amplitude and spatial location of cell
+signaling pathways can be used to investigate developmental signaling
+networks . For example, recent studies in  and zebrafish have demonstrated
+the utility of optogenetic tools in the investigation of embryonic
+signaling dynamics. Furthermore,
+the high-throughput nature and pathway specificity of optogenetic
+approaches additionally lend themselves to live cell screens in drug
+discovery pipelines and further dissection of signaling pathways. Given the involvement of BMP signals in both development and disease,
+the optoBMP system can provide a powerful investigative tool in a
+number of settings. The optoBMP system in its current form carries
+some limitations.
+The two engineered optogenetic receptors are currently incorporated
+into individual expression vectors, thus it is difficult to simultaneously
+express both in difficult-to-transfect cell lines. Random genomic
+integration via lentiviral transduction may also result in early quiescence
+or other growth abnormalities; particularly in clonal cell lines.
+Modification of the optoBMP expression system through CRISPR/Cas9-mediated
+incorporation into genomic safe harbor locus AAVS1 would be useful
+in the future to enable uniform and ubiquitous expression without
+lentiviral transgene silencing; an issue which has been commonly reported
+in the differentiation of pluripotent stem cells. In summary,
+we report the development of a novel optogenetic signaling
+system that enables selective dose and time dependent control of BMP-like
+signals through canonical SMAD1/5/8 and some noncanonical MAPK signal
+transduction with blue light-sensitive BMP receptors. We demonstrate
+that the optoBMP system can reliably recapitulate initiation of the
+canonical BMP signaling cascade in several cell lines through phosphorylation
+and nuclear translocation of SMAD1/5/8 leading to BMP-like transcriptional
+activation, including upregulation of direct BMP gene targets. Extension
+of the optogenetic toolkit to target the BMP pathway will provide
+the means to dynamically probe BMP signals in a wide variety of systems. Optogenetic
+activation of canonical BMP signaling in pluripotent
+optoBMP-hESCs. (A) Verification of pluripotency. Representative immunofluorescence
+images of optoBMP-hESCs stained for pluripotent markers OCT4 and NANOG.
+(B) Representative immunofluorescence images of cells stained for
+P-SMAD1/5 2 h post-15 min blue light illumination. (C) Percentage
+of P-SMAD1/5 positive cells calculated through single-cell quantification
+of mean nuclear P-SMAD1/5 intensity. Threshold for positivity calculated
+through analysis of unstimulated controls.  = 3
+different fields of view per condition across three independent experiments.
+(D) Gene expression analyses of BMP-target genes. Cells were stimulated
+with 15 min of blue light illumination or 50 ng/mL BMP2. Gene expression
+was normalized to GAPDH.  = 4 independent experiments.
+Data information: Scale bars in panels A and B represent 100 μm.
+Data presented in panel C represent mean values + SEM.  values were generated using an using an ordinary one-way ANOVA (* < 0.05, ** < 0.01, *** < 0.0005, **** < 0.0001, ns =
+not significant) in panel C and unpaired two-tailed students -tests in panel D (* < 0.05, ** < 0.01, *** < 0.0005). All vectors were constructed through
+NEB HiFi Assembly or restriction enzyme cloning. Both optogenetic
+receptors were assembled through an initial generation of a vector
+backbone through PCR amplification of opto-mFGFR (a gift from Harald
+Janovjak, Addgene plasmid #58745) to omit the mFGFR coding region.
+The intracellular coding regions of human BMPR1B/ALK6 (fully sequenced
+cDNA clone from Source Bioscience; vector #IRATp970H1175D) and BMPR2
+(Source Bioscience, #IRATp970B1178D) were then PCR amplified and inserted
+into the vector backbone through NEB HiFi Assembly (New England Biolabs,
+#E2621). Each optogenetic receptor was then subsequently inserted
+into a second-generation lentiviral shuttle doxycycline inducible
+vector through NEB HiFi Assembly. Briefly, vector inserts were generated
+through PCR amplification of each optogenetic receptor with 30bp overhangs.
+Vector backbones, pCDH-TRE3G-MCS-EF1a-tagRFP-T2A-TetON3G or pCDH-TRE3G-MCS-EF1a-tagBFP-T2A-TetON3G
+for Type I or II receptor, respectively, were then digested with RI and vector inserts were annealed in through NEB HiFi
+Assembly. Final lentiviral shuttle vectors were designated TetOn-optoBMPR1B
+and TetOn-optoBMPR2. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00315/suppl_file/sb0c00315_si_001.pdf A modified version of a BMP reporter vector
+previously described was constructed.
+The BMP response element (BRE) consisted of multiple SMAD binding
+elements arranged in tandem in forward and reverse orientations, placed
+upstream of the AAV minimal late promoter. The BRE was cloned upstream of a destabilized form of NanoLuc Luciferase
+(Promega) containing a C-terminal protein degradation sequence (PEST
+sequence, NLucP). The completed BRE-NLucP was cloned into a modified
+version of the lentiviral expression vector pCDH-EF1-T2A-copGFP, resulting
+in the construct pCDH-BRE-nLUCP-EF1a-copGFP. Vector maps were generated
+using Snapgene software (). HEK293T (ATCC, #CRL-11268), TC28a2 and SW1353 (ATCC, #HTB-94) cell lines were cultured
+in 75 cm cell culture flasks (Corning) with DMEM (Gibco,
+#11960044) containing 10% w/v fetal bovine serum (Merck, #12103C),
+1% w/v -glutamine (Gibco, #25030081) and 1% w/v penicillin/streptomycin
+(Gibco, #15140122). For routine maintenance, cells were subcultured
+into flasks containing fresh warmed medium at a passage ratio of 1:10.
+Briefly, cells were washed with phosphate buffered saline (PBS; Merck,
+#D8537) before cell dissociation with 3 mL of TryPLE Express solution
+(Gibco, #12604021). Cells were then centrifuged at 700 for 3 min before pellet resuspension and continued passage. MAN13 human embryonic stem cells (hESCs) were cultured in 6-well plates (Corning) coated with 5 μg/mL
+human recombinant vitronectin (Life Technologies, #A14700) in mTesR1
+(StemCell Technologies, #5850) with medium replaced every 2 days.
+For routine maintenance culture, cells were washed with PBS before
+dissociation using 0.5 mM EDTA solution (Invitrogen, #15575-038).
+Cells were centrifuged at 700 for 3 min before being
+subcultured into fresh medium containing 1X RevitaCell Supplement
+(Life Technologies, #A2644501). Lentiviral Particle Production
+and Cell Line Generation All lentiviral particles were generated
+through transfection of HEK293T
+cells using calcium chloride precipitation. Briefly, HEK293T cells
+were seeded in 15 cm dishes at 8 × 10 cells/dish 24 h before transfection with 9 μg of psPAX2, 6
+μg of pMD2.G (VSV), 12 μg of shuttle plasmid (TetOn-optoBMPR1B,
+TetOn-optoBMPR2, or pCDH-BRE-nLUCP-EF1a-copGFP) per dish. DNA was
+added to 2.5 M CaCl before mixing with HEPES-buffered
+saline (containing sodium chloride, HEPES acid, and disodium phosphate).
+The calcium phosphate–DNA coprecipitate was then added dropwise
+to cells. Medium containing lentiviral particles was collected over
+48 h and concentrated at 6000 overnight at 4 °C.
+The lentiviral pellet was then resuspended in 10 mL of ice-cold PBS
+and was centrifuged in a high-speed SW40-Ti rotor (Beckman Coulter)
+at 50 000 for 90 min at 4 °C. Finally,
+the concentrated pellet was resuspended in 200 μL of ice-cold
+PBS and stored at −80 °C. Viral titers were calculated
+through serial dilution of viral preparations before transduction
+of HEK293T cells and flow cytometry analysis of appropriate fluorescent
+markers. HEK293T and TC28a2 cells were transduced with viral particles
+at a multiplicity of infection (MOI) that did not exceed 20 IU/cell,
+while MAN13 cells were transduced at an MOI that did not exceed 10
+IU/cell before being sorted through FACS (BD FACS Aria Fusion). Optogenetic and Chemical Stimulation Prior to optical
+stimulation experiments, all cell lines were seeded in black-walled
+96 well plates at a density of 1 × 10 cells/well
+or in black-walled 24 well plates at 5 × 10 cells/well
+and were maintained in the dark after induction of optogenetic receptor
+expression through 24 h incubation in serum-free medium containing
+100 ng/mL doxycycline hyclate (Merck, #D9891). Optical stimulation
+was performed at room temperature using either a custom-built Arduino-controlled
+LED array device using 470 nm LEDs or
+CoolLED pE4000 at 460 nm. Light irradiance was controlled through
+a piece of custom software (LED array) or directly from the equipment
+control panel (CoolLED). Light illumination was performed at 0.25
+mW/cm for 15 min unless otherwise highlighted. Irradiance
+was measured using a spectroradiometer (SpectroCAL MKII; Cambridge
+Research Systems). Alongside optogenetic stimulation where noted,
+cells were stimulated with 50 ng/mL BMP2 (R&D Systems, #355-GMP)
+or 10 ng/mL TGFβ3 (Peprotech, 100-36E). Inhibition of the BMP
+signaling pathway was achieved through addition of LDN193187 dihydrochloride
+(Tocris, #6053) in combination with optical stimulation at concentrations
+noted. Alongside LDN193187, cells were treated with DMSO vehicle control. Nano-Glo Luciferase Assay System Optogenetic HEK293T
+and TC28a2 cells were seeded in black-walled 96-well plates before
+24 h serum starvation and induction of optogenetic receptor expression.
+Extended NanoLuc luciferase substrate Vivazine (Promega, #N2580) was
+added to live cells (dilution to 1X in serum-free DMEM) 2 h prior
+to stimulations. After optogenetic or chemical stimulations were performed,
+expression of NanoLuc luciferase was detected in an Alligator Luminescence
+System (Cairn Research) using an appropriate exposure time (10–30
+min). Bioluminescent micrographs taken over a period of time were
+stacked using ImageJ software. A region of interest (ROI) was then
+drawn around each well and relative luminescent units (RLU) were calculated
+for each micrograph through Z-stack analysis. Luminescence was normalized
+to background and to the luminescence value prior to the start of
+stimulation. Immunocytochemistry and Imaging Cells were fixed in
+4% paraformaldehyde in PBS for 15 min at room temperature and subsequently
+washed in PBS three times. Fixed cells were then permeabilized and
+blocked in 0.1% Triton-X (Merck, #9002-93-1), 10% donkey serum (DS)
+(Merck, #D9663) in PBS for 30 min at room temperature, before a further
+three PBS washes. Cells were incubated with primary antibodies (Cell
+Signaling Technologies; #3724 HA tag 1:700 dilution, #9516 P-SMAD1/5
+1:200 dilution, #5339 SMAD2 1:200 dilution, #2890 OCT4-A 1:200 dilution,
+#4903 NANOG 1:200 dilution) in 1% DS in PBS at 4 °C overnight
+before being subsequently washed three times in PBS. Cells were then
+treated with AlexaFluor-488- or Alexa-Fluor-594-labeled secondary
+antibodies (Life Technologies #A32790/#A32754, 1.200 dilution in PBS
+1% DS) for 45 min at room temperature before a final three PBS washes.
+Nuclei were visualized through staining with 10 μg/mL 4,6-diamindino-2-phenylindole
+(DAPI - Life Technologies, #D1306) in PBS for 5 min at room temperature
+followed by three washes in PBS. Fluorescent micrographs were taken
+using a Zeiss Axioimager D2 upright microscope and captured using
+a Coolsnap HQ2 camera (Photometrics) through micromanager software
+v1.4.23. Image processing and quantification
+was performed using ImageJ software. Nuclear quantification of P-SMAD1/5
+was performed through an initial identification of nuclear outlines
+through the DAPI channel (358 nm). This was achieved through the “Analyze
+Particles” function of ImageJ after converting the image to
+a binary output. Each nuclear outline identified by ImageJ was then
+applied to the P-SMAD1/5 channel (488 nm) before using the ROI manager
+to measure the mean gray value within each nuclear outline. Values
+that fell 2×SD from the mean were omitted from analysis to eliminate
+false positives or negatives. A threshold mean intensity value to
+determine a positive P-SMAD1/5 response was calculated from analysis
+of nonstimulated control images. RNA Extraction, Reverse
+Transcription, and qPCR Analysis RNA extraction and purification
+was performed using a Qiagen RNeasy
+mini-kit (Qiagen, #74104) according to the manufacturer’s instructions.
+Briefly, cells were dissociated and the cell pellet was resuspended
+in 350 μL of RLT lysis buffer. Cell lysate was then subjected
+to a series of on-column washes, after the addition of 350 μL
+of 70% ethanol, before elution in nuclease-free water (Invitrogen,
+#4387937). After quantification of RNA concentration, 2 μg of
+RNA was converted to cDNA using a high capacity cDNA reverse transcription
+kit (Thermo Fisher Scientific, #4368813). qPCR reaction was then prepared
+using PowerUp SYBR green master mix (ThermoFisher Scientific, #A25742)
+with 10 ng of cDNA per reaction and 400 nM final concentration forward
+and reverse primers. qPCR reaction was run using a BioRad C1000Touch
+Thermal Cycler using the following cycling conditions: denaturation
+at 95 °C for 10 min, 39 cycles of 95 °C for 30 s, 60 °C
+for 30 s and 72 °C for 35 s, final extension at 72 °C for
+10 min, and melt curve analysis at 65 °C for 5 s and 95 °C
+for 30 s. Raw qPCR data were normalized to GAPDH using the 2 method. Primer sequences are listed in . List of Primer Sequences
+Used for
+qPCR Reactions. oBMPR1B and oBMPR2 Indicate Synthetic Optogenetic
+Transgenes Optogenetic TC28a2 cells were seeded
+in black-walled 24 well plates at 5 × 10 cells/well
+before 24 h serum starvation and induction of optogenetic receptor
+expression. Cells were then subjected to optogenetic or BMP2 stimulation
+as described previously. Protein was harvested 2 h poststimulation
+through briefly washing in PBS and lysing cells in 1X cell lysis buffer
+with 6 μM Phenylmethanesulfonyl Fluoride (Cell Signaling Technologies,
+#9803 and #8553). Briefly, cells were incubated on ice in lysis buffer
+for 5 min before lysate was scraped into 1.5 mL tubes and centrifuged
+at 14 000 at 4 °C for 10 min. The supernatant
+was stored at −20 °C. Protein concentration was
+measured using a Pierce BCA assay kit (Thermo Fisher Scientific, #23225)
+before boiling 2 μg of protein at 95 °C for 10 min in lane
+marker reducing buffer (Thermo Fisher Scientific, #39000). Protein
+samples were then subjected to gel electrophoresis at 100 V on a 10%
+Bis-Tris gel (Thermo Fisher Scientific, #NW00100BOX) alongside broad
+range markers (11–245 kDa, NEB P7712S). Protein was transferred
+to a nitrocellulose membrane using an iBlot-2 Gel Transfer and iBlot-2
+Transfer stacks (Thermo Fisher Scientific, #IB21001 and #IB23001)
+before blocking in 1X Tris buffered saline (TBS, Merck, #T5912) containing
+5% bovine serum albumin (BSA) and 0.1% Tween (Merck, #P1379) for 1
+h at room temperature. Membranes were then incubated at 4 °C
+overnight with primary antibodies (Cell Signaling Technologies, #9102
+ERK1/2, #4370 P-ERK1/2) in TBS containing 0.1% Tween (TBS-0.1%Tween),
+before washing three times in TBS-0.1%Tween. Membranes were then treated
+with secondary antibodies (1:15,000 IRDye 680RD Donkey anti-Rabbit;
+LI-COR 925–68071) in TBS-0.1%Tween containing 5% BSA for 45
+min at room temperature before a final three washes in TBS-0.1%Tween
+and detection of protein using an Odyssey CLx imaging system (LI-COR). Statistical Analyses and Figure Generation Figures
+were generated using CorelDraw Graphics Suite or GraphPad Prism 8
+software. Statistical analyses were performed using GraphPad Prism
+8. Comparison between two groups were performed using an unpaired
+two-tailed student’s -test and more than
+two groups with an ordinary one-way analysis of variance (ANOVA) and
+subsequent Tukey’s multiple comparisons test. A  value of <0.05 was indicative of significance..

@@ -1,0 +1,462 @@
+Metabolic
+engineering is the
+enabling technology to rewire cellular endogenous metabolism for the
+optimal production of native metabolites, or endow cells with the
+capacity for synthesizing nonnative chemicals. To date, there are numerous studies of engineering microbes for
+production of commodity chemicals and natural products, including
+the production of cannabinoids, artemisinin, taxol precursors, branched-chain
+alcohols, ornithine, arginine, advanced biofuels, and so on, from different host
+organisms. The primary goal of metabolic engineers is to achieve high
+titer, yield, and productivity (TYP) with improved cost-efficiency
+and process economics. In the past decades, a number
+of prominent metabolic engineering strategies and methodologies have
+been adopted to balance or redirect metabolic flux, such as modular
+pathway engineering, dynamic pathway
+regulation, cofactor engineering, and scaffold-guided
+spatial colocalization of metabolic enzymes, The spatiotemporal or ratiometric control
+of enzyme expression have been proven as efficient strategies to relieve
+metabolic burden and improve the TYP index. However, the complex
+and lengthy synthetic routes from the starting
+carbons, such as glucose, commonly generate low yield and suboptimal
+productivity of desired products, which could be attributed to that
+complex biosynthesis requires the coordinated supply of precursors,
+ATPs, and reducing equivalents (NADPH/NADH) to maintain both cell
+metabolism and product formation. Substrates
+with different entry points into the metabolic network have different
+energetic and redox statuses, which leads to pathway-dependent
+product yields that critically affect cost-efficiency. Thus, providing
+microbes with multiple carbon sources can potentially mitigate these
+metabolic constraints, since it adds an additional degree of freedom
+to cellular systems that can be leveraged for product formation (namely,
+cosubstrate feeding). One recent example
+is to use the acetate-driven acetyl-CoA metabolic shortcut to bypass
+the lengthy and highly regulated glycolytic pathway for efficient
+polyketides and lipids production. Such substrate doping strategy may present a
+metabolic advantage over a single substrate and lead to metabolic
+optimality beyond what can be achieved in single substrate fermentations.
+In other words, single substrate strategies may not be suitable for
+particular metabolic engineering applications. Instead, metabolite
+doping or cosubstrate feeding can overcome intrinsic pathway limitations
+and achieve high carbon conversion efficiency and cost-efficiency. 2-Phenylethanol (2-PE) is a high-value compound widely used in
+the food, fragrance, and flavor industries. High-quality 2-PE is primarily
+extracted from the volatile oil components of rose flower, with a
+marketed price ranging from $150/kg to $200/kg, which suffers from
+economics and scalability issues for sustainable production. Chemically synthesized 2-PE, despite its low-cost
+and high conversion rate, is largely rejected by consumers and IFF
+society (International Flavors & Fragrances) due to safety and
+health issues. As a result, heterologous
+production of 2-PE from microbial host is considered as an economically
+viable alternative to plant extraction. Herein,  was chosen as the host strain because of its strong acetyl-CoA flux
+and high TCA metabolic activity and the ease of genetic toolbox, as demonstrated by its superior performance
+for production of advanced biofuels and oleochemicals. In addition,  is
+also a “Generally Regarded As Safe” (GRAS) organism
+in the food and nutraceutical industry. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00468/suppl_file/sb9b00468_si_001.pdf To demonstrate the utility of substrate cofeeding, we harnessed
+the Ehrlich pathway of  to optimize
+the biosynthesis of 2-phenylethanol (2-PE), with glucose and -phenylalanine as the cosubstrates. The bioconversion process involves
+deamination, decarboxylation, and aldehyde reduction (), with several aromatic byproducts
+branched out from this pathway (). In particular, the deamination is an α-ketoglutarate
+(aKG)-coupled amino transfer reaction and aldehyde reduction is a
+NADH-dependent reduction reaction (). Both the aKG and NADH, as cofactors, are
+derived from glucose. To improve the precursor flux and maximize 2-PE
+production, we have applied a stoichiometric model to determine the
+pathway yield and predict engineering targets (). To improve the overall pathway specificity,
+we characterized and reconfigured all the biochemical reactions in
+Ehrlich pathway by stepwise pathway refactoring more than 20 enzymes,
+and further blocked the competing pathways to eliminate any byproducts.
+On the other hand, cytosolic 2-oxoglutarate (aKG) is the cofactor
+to complete the amine transfer reaction. But aKG is derived from the
+oxidative decarboxylation of isocitrate that is primarily compartmentalized
+in mitochondria, creating a bottleneck for efficient assimilation
+of -Phe, which limits 2-PE production. To improve metabolite
+trafficking across the mitochondria membrane, we constructed an artificial
+aKG source pathway in the cytosol, by coupling a cytosolic aconitase
+with the overflowed citrate from mitochondria. In addition, we further
+improved the aKG supply and 2-PE production by mitigating fatty acid
+synthesis. As a result, the engineered strain ) produced 2669.54 mg/L of 2-PE with 0.702 g/g conversion yield from -Phe, representing about 4.16-fold and 2.07-fold increase over
+the starting strain (641.59 mg/L of 2-PE production with 0.339 g/g), respectively. Taken together,
+refactoring critical enzymes and increasing metabolite trafficking
+as well as mitigating competitive pathways are effective strategies
+to improve the efficiency of overall pathway yield. Central carbon metabolism
+and Ehrlich pathway for synthesizing
+2-PE in . -Phe, -phenylalanine; PPY, phenylpyruvate; PAH, phenylacetaldehyde; , -phenylalanine specific permease; , -phenylalanine transaminases; , 4-hydroxyphenylpyruvate dioxygenase; , prephenate dehydratase; , phenylpyruvate
+decarboxylase; , phenylacetaldehyde reductases; , aldehyde dehydrogenase; G6P, glucose-6-phosphate;
+F6P, fructose 6-phosphate; GAP, glyceraldehyde-3-phosphate; 3PG, 3-phospho-glycerate;
+PEP, phosphoenolpyruvate; aKG, 2-oxoglutarate; DAHP, 3-deoxy-arabino-heptulonate-7-phosphate;
+SHIK, shikimate ; S3P, shikimate-3-phosphate; -Tyr, -tyrosine; -Typ, -tryptophan; , 3-deoxy-7-phosphoheptulonate synthase; ,
+2-oxodicarboxylate carrier; , cytosolic isocitrate
+dehydrogenase; , aconitate hydratases; , diacylglycerol acyltransferase; Characterization of Ehrlich Pathway for 2-PE
+Synthesis in Microbially produced
+2-PE is mainly
+obtained by two routes, namely, the  pathway
+from glucose and bioconversion from -phenylalanine by the
+Ehrlich pathway. Owing to the hard-wired, tightly complex feedback
+regulation and lengthy reaction steps
+(>20 steps) of the  pathway, bioconversion
+by the Ehrlich pathway is considered as the preferred biological route
+to synthesize 2-PE. In the Ehrlich pathway
+(), -phenylalanine is converted to 2-PE through four enzyme-dependent
+processes: (i) extracellular -phenylalanine is internalized
+by amino permeases; (ii) -phenylalanine is transaminated
+to phenylpyruvate by amino transferase with 2-oxoglutarate (aKG) as
+the amine-receptor; (iii) phenylpyruvate is further decarboxylated
+to phenylacetaldehyde by phenylpyruvate decarboxylases; (iv) and finally,
+phenylacetaldehyde is reduced to 2-PE by alcohol dehydrogenases or
+phenylacetaldehyde reductase with NADH as cofactor. In , transaminases and the phenylpyruvate decarboxylase
+are ylARO8 (encoded by gene ) or ylARO9
+(encoded by gene ) and ylARO10 (encoded
+by gene ), respectively. However, the
+specific -phenylalanine permease and phenylacetaldehyde
+alcohol dehydrogenases have not been characterized. To determine the
+ability of  in producing 2-PE,  po1g (leu) harboring an
+empty plasmid pYXLP′ (strain ) was used as control to incubate with different concentrations of -phenylalanine (0, 2, 4, 6, 8, and 10 g/L) in shake flasks.
+Our results (a) indicate that the highest titer of 2-PE reached 720.43 mg/L with
+0.342 g/g yield by adding
+10 g/L -phenylalanine, accompanying with 197.59 mg/L of
+byproduct phenylacetate. Considering economic efficiency (incomplete
+conversion of -Phe), 4 g/L of -phe was able to
+support 641.59 mg/L (b) of 2-PE production with 0.339 g/g yield (c).
+Thus, in the following work, 4 g/L of -phe was determined
+for bioconversion. Initial assessment of using  to produce
+2-PE from -phenylalanine  the Ehrlich
+pathway. (a–c) 2-PE and phenylacetate titer, time profiles
+of cell growth, and 2-PE yield of adding different concentrations -phenylalanine (0, 2, 4, 6, 8, and 10 g/L). (d–f) 2-PE
+titer, yield, and cell growth of respective overexpressing genes , , and . All experiments were performed in triplicate and error bars show
+standard deviation (SD). The * indicates  < 0.01,
+and ** indicates  < 0.05 (two-tailed test). Refactoring the Upstream Ehrlich Pathway
+to Improve 2-PE Yield http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00468/suppl_file/sb9b00468_si_001.pdf -Phenylalanine + 2-Oxoglutarate → Phenylpyruvate
++ -Glutamate (catalyzed by YlARO8) -Phenylalanine + Pyruvate → Phenylpyruvate
++ -Alanine (catalyzed by YlARO9) As suggested by the mathematical model
+(), improving the catalytic efficiency of the Ehrlich
+pathway and increasing aKG supplementation are the key determinants
+to improve 2-PE yield from -phenylalanine. To refactor the
+Ehrlich pathway, we adopted a stepwise pathway engineering strategy.
+First, the native , , and  genes in Ehrlich pathway were overexpressed
+in  po1g under the control of strong
+constitutive TEF-intron promoter. Shaking flask cultivation (d, and e,f for cell growth and 2-PE
+yield) indicates that overexpression of  and  (strain  and ) has little effect on the 2-PE production. However, overexpression
+of  (strain ) increased
+2-PE titer to 922.86 mg/L, about 33% higher than the control strain
+(d), suggesting
+that the reaction catalyzed by phenylpyruvate decarboxylase ylARO10
+is a limiting-step in Ehrlich pathway. Thus, the ineffectiveness of
+overexpressing downstream genes ( or ) is likely due to the limited performance of the
+upstream ylARO10. Specifically, ylARO8 and ylARO9 are both transaminases,
+which catalyze the transamination of -phenylalanine with
+different amine-receptors: Apparently, different amine-receptors (that is 2-oxoglutarate
+and pyruvate) will lead to distinct outcomes (that is -glutamate
+and -alanine) that may affect 2-PE production. Therefore,
+we next constructed strains carrying pYLXP′- and pYLXP′- to identify the
+optimal transaminases, and obtained  and . However, screening of these two strains showed no
+significant differences in 2-PE production (b, and c,d for cell growth and 2-PE yield). We also overexpressed
+a transcriptional activator (encoded by YALI0C18645) to up-regulate
+the expression of  or . However, cultivation of this strain
+() showed deteriorated 2-PE production (b). With this, we
+speculated that cellular uptake of -phe might be the bottleneck
+limiting 2-PE titer. To facilitate the cellular uptake for -phe, we assessed
+a number of -phe permease, including BAP and Gap1 from , PheP from , and three  native
+Gap1 homologues, encoded by  (named as ),  (), and  (), respectively.
+Beyond our expectation, all the tested -phe permeases showed
+decreased 2-PE production compared with control  and  when coupling with expression of  or  (e). Noticeably, abundant
+residual glucose was detected at 96 h (f), suggesting the central carbon metabolism
+of these strains was strongly inhibited. This result is consistent
+with the finding that high level of endogenous -phe induces
+a strong down regulation of cellular metabolism in . We reasoned that a similar effect
+might exist in . Thus, we dropped out
+all other amino acids and only used YNB-glucose with 4 g/L -phe as the nitrogen source. As a result, the highest 2-PE titer
+reached 1632.73 mg/L with 0.547 g/g yield in strain  (a,b) after 144 h cultivation, indicating
+GapY3 is a potent -phe permease. Nevertheless, differences
+of 2-PE titers in strains  and  (1607.46 mg/L with 0.533 g/g) were insignificant, which may be attributed to the poor substrate
+specificity of transaminases ylARO8 and ylARO9. Characterization of upstream module of the Ehrlich pathway: -phenylalanine specific permeases and -phe: 2-oxoglutarate
+transaminase. (a) Flow-chart of shake flask cultivations of engineered
+strains. (b–d) 2-PE titers, cell growth, and 2-PE yield of
+respective overexpressing genes  and ,  and , and  and . (e,f)
+2-PE titers and 96h residual glucose of screening -phenylalanine
+specific permeases with CSM fermentation medium in shake cultivations.
+All experiments were performed in triplicate and error bars show standard
+deviation (SD). The * indicates  < 0.01, and
+** indicates  < 0.05 (two-tailed test). Characterization of the
+downstream module of the Ehrlich pathway:
+phenylacetaldehyde reductases and alcohol dehydrogenases. (a,b) 2-PE
+titers and yield by rescreening -phenylalanine specific
+permeases. Red 1, strain ; Red 2, strain ; Red 3, strain ; Red 4,
+strain ; Red 5, strain ; Red 6, strain ; Black 1, strain ; Black 2, strain ; Black 3, strain ; Black 4, strain ; Black
+5, strain ; Black 6, strain . (c) Manipulations of whole-cell biocatalytic conversion of phenylacetaldehyde.
+PAH, phenylacetaldehyde. (d–g) 2-PE titers, cell growth and
+yield of screening and identifying the optimized phenylacetaldehyde
+reductases or alcohol dehydrogenases. P8–1, strain ; P8–2, strain ; P8–3,
+strain ; P8–4, strain ; P8–5, strain ; P8–6,
+strain . All experiments were performed
+in triplicate and error bars show standard deviation (SD). Refactoring the Downstream Ehrlich Pathway to Improve 2-PE Yield To refactor the optimal alcohol dehydrogenase (ADH) or phenylacetaldehyde
+reductase (PAR), we screened the entire genome of  with putative rose phenylacetaldehyde reductase PARL as the template,
+and identified eight PARs with high similarity (>70%), encoded
+by  (),  (),  (),  (),  (),  (),  (), and  (), respectively. We also codon-optimized and
+synthesized
+the rose-derived  as a positive control. The
+resulting 9 strains, with overexpression of , , , , , , , , and , were incubated with 1 g/L phenylacetaldehyde (c), leading to 2-PE
+titers of 762.71, 703.62, 759.37, 786.58, 435.61, 437.33, 399.11,
+501.10, and 379.28 mg/L (d), respectively. The highest 2-PE titer was produced
+by strain  (). Interestingly,
+the rose-derived PARL performed worst in our test. https://www.ncbi.nlm.nih.gov/genbank/ https://www.ncbi.nlm.nih.gov/genbank/ Similarly,
+we also investigated the performances of alcohol dehydrogenases (ADHs)
+in . Nine  ADHs annotated by Genbank () and GRYC () were tested, including  (),  (),  (),  (),  (),  (),  (),  (), and  (). The resulting strains were tested and only
+suboptimal level of 2-PE were detected in these strains compared to
+the strain harboring the optimal PARs (d), and the best strain (ADH2) produced 723.74
+mg/L 2-PE, which is about 10% lower than strain . http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00468/suppl_file/sb9b00468_si_001.pdf After analyzing the downstream PAR and ADH modules, we chose six
+efficient candidates for further investigation, including ADH2, ADH3,
+PAR1, PAR2, PAR3, and PAR4. These PARs and ADHs were combined with
+the optimal upstream module ,
+leading to strains , , , , , and . When tested
+in shake flask with YNB-glucose media and 4 g/L -phenylalanine,
+these strains produced 2-PE at 1126.62, 902.12, 1109.89, 1166.23,
+960.96, and 1378.98 mg/L, respectively (), representing no improvements in 2-PE titer compared
+to control  (ylARO10-ylARO8-GapY3, 1610.76
+mg/L). We speculated that simultaneous overexpression of four genes
+(>16 000 bp) may lead to genetic instability (loss of plasmid
+or unequal distribution/propagation of plasmid) in . To test this hypothesis, we linearized these plasmids and integrated
+the long DNA cassettes at the pBR docking site of po1g chromosome,
+leading to strains , , , , , and , respectively.
+Shake flask screening indicates that  produced
+1750.46 mg/L of 2-PE with 0.534 g/g yield (f,g, and e for cell growth), the highest titer obtained,
+indicating PAR4 is the optimal downstream module that reduces phenylacetaldehyde
+to 2-PE. So far, the four steps of the Ehrlich pathway (permeation,
+transamination, decarboxylation, and reduction) have been fully refactored,
+and the refactored pathway represents 2.4-fold increase in 2-PE titer
+over the starting strain (∼710 mg/L). Blocking Competing Pathways
+to Improve 2-PE Titer To
+further improve 2-PE yield, we attempted to delete the competing pathways.
+For the convenience of the genetic manipulations, we first knocked
+out gene  in po1f (named )
+to inhibit nonhomologous end joining (NHEJ) and improve the frequency
+of homologous recombination. As mentioned above, the major byproduct
+is phenylacetate, which is the oxidized product of phenylacetaldehyde
+catalyzed by aldehyde dehydrogenases (ALD2 and ALD3). Thus, we sequentially
+knocked out both  () and  () in , obtaining strain . Then the optimal
+upstream and downstream Ehrlich module  was integrated at the genome pBR docking site of , obtaining strain . Although shake flask cultivation
+of  showed no improvement in 2-PE titer, the byproduct
+phenylacetate was significantly decreased to 124.49 mg/L (b, 532.48 mg/L phenylacetate
+in ). In addition, prephenate dehydratase PHA2 catalyzes
+the anaplerotic
+reaction from phenylpyruvate to prephenate (). Deletion of gene  in strain  generated strain . Chromosomally integrated (integrated at pBR docking site) Ehrlich
+module () in po1fk2 (strain ) leads to an improved 2-PE titer of 1809.65 mg/L with
+the yield at 0.570 g/g compared
+to  (b,c, 1735.78 mg/L with yield at 0.550 g/g), but a significant decrease in biomass
+was observed in  (a). On the other hand, 4-hydroxyphenylpyruvate
+dioxygenase (encoded by gene y) could convert
+phenylpyruvate to 2-hydroxyphenylacetate. Therefore, we further knocked
+out y in strain , obtaining
+strain . However, the chromosomally integrated
+(integrated at pBR docking site) Ehrlich module in po1fk3 (strain ) leads to decreased 2-PE production and increased
+phenylacetate titer, which were 1432.43 and 226.17 mg/L (b), respectively.
+This result suggests that y cannot be knocked
+out in this scenario. It is not clear why the deletion of gene  has a negative result, possibly due to the incorrect
+annotation of the reaction directionality of . We have refactored the Ehrlich pathway and blocked the byproducts
+synthesis, and integrated the optimal gene module  to the pBR docking site of the triple knockout strain (, ALD2, ALD3, and PHA2 were knocked out). In previous work, our group
+has established a 26s rDNA/Cre-P-based iterative
+gene integration and marker-curation method. With more than 200 copies of ribosome DNAs in , this technique allows genes of interests to be randomly integrated
+into the genome with multiple copies. Thus, we next sought to apply
+this method and further optimize the Ehrlich pathway, including genes , , and . To obtain a productive strain, we screened 144 genome-integrated
+transformants by 24-well deep plate cultivation in glucose-YNB medium
+with 4 g/L -phenylalanine (d). About 45% of the genome-integrated produced
+2-PE at 900–1000 mg/L, less than 5% of the screened strain
+produced 2-PE over 1200 mg/L. Then the top-performed strains were
+further validated in shake flasks (e,f). Strain  produced the highest 2-PE of 1817.46 mg/L with the yield at 0.590
+g/g. Blocking competitive pathways and integration
+of the Ehrlich pathway
+in 26s rDNA sites to improve 2-PE production. (a–c) Cell growth,
+2-PE titers, phenylacetate titers, and 2-PE yield of blocking competitive
+pathways. (d) Screening of the productive strains based on 24-well
+deep plate cultivations. (e,f) 2-PE titer and yield by further validating
+productive strains with integration of the Ehrlich pathway in flask
+cultivations. 1, strain ; 2, strain ; 3, strain ; 4,
+strain ; 5, strain ; 6, strain ; 7, strain ; 8, strain ; 9, strain ; 10, strain ; 11, strain ; 12, strain . All experiments were
+performed in triplicate and error bars show standard deviation (SD). A Nonnative 2-Oxoglutarate
+(aKG) Shuttle to Improve Metabolite
+Trafficking http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00468/suppl_file/sb9b00468_si_001.pdf As suggested by the mathematical model (), we next sought to improve
+the precursor (2-oxoglutarate, aKG) flux. Noteworthily,  is known for the strong TCA metabolic activity. Indeed, we detected 4.84 g/L of citrate at 72
+h of cultivation in strain  (b). Thus, rewiring
+the overflowed citrate flux to cytosolic aKG is a feasible strategy
+to increase precursor (aKG) supply and improve 2-PE production. Nevertheless,  lacks the cytosolic aconitate hydratase and
+isocitrate dehydrogenase. To construct the cytosolic pathway from
+citrate to aKG (a), we introduced two aconitate hydratases, including CitB from  and AcnA from , and a cytosolic isocitrate dehydrogenase ScIDP2 from . Additionally, by
+searching the genome of  with ScIDP2
+as template, we retrieved a putative cytosolic isocitrate dehydrogenase
+ylIDP2 (encoded by gene ). Subsequently,
+four nonnative aKG source pathways, including -, -, -, and -, were introduced into  by plasmid pYLXP′. The resulting strains , , , and  produced 1733.45, 2146.45, 1737.58, and 1842.85 mg/L of 2-PE with
+yield of 0.574, 0.606, 0.597, and 0.591 g/g in shake flasks (c,d,e), respectively. It indicates the coexpression of  and  could effectively convert
+cytosolic citrate to aKG. In addition, we also overexpressed the mitochondrial
+2-oxodicarboxylate carrier ylODC1 (encoded by gene ) to export 2-oxoglutarate (aKG) out of the mitochondrial matrix
+to the cytosol (strain ,  harboring plasmid pYLXP′--). As expected, the 2-PE titer and yield in  were further increased, reaching 2269.08 mg/L and 0.632 g/g (a,b,c), respectively. On the other hand,  is known to accumulate
+up to 30–60% dry cell weight as lipid. As shown in b, production of 1 mol of fatty acids (stearic acids C18:0) will
+consume 16 mol of NADPH and 9 mol of citrate (acetyl-CoA). As a result,
+the synthesis of lipid competes with aconitase (aconitate hydratases)
+and PARs for cytosolic citrate and NADPH. Specially, diacylglycerol
+acyltransferases have been identified as the rate-limiting steps to
+lipid synthesis  the Kennedy pathway in . Thus, we pursued further
+to knock out the diacylglycerol acyltransferases, encoded by  () and  (), to mitigate fatty acid synthesis.
+Shake flask cultivation of the resulting strain  (po1fk4–2  harboring
+pYLXP′--),  (po1fk4–2  harboring pYLXP′--), and  (po1fk4–2  harboring pYLXP′--) all led to significant improvements
+in 2-PE titers and yield (a,b,c). Specifically, strain  produced
+2669.54 mg/L of 2-PE with yield at 0.702 g/g (a,b,c),
+which was 1.11-fold and 1.18-fold higher than strain . Furthermore, to validate the impacts of  and  deletion on lipid production, we measured
+the lipid titer in strains , , , and  (d), reaching 3.93, 2.06, 2.08,
+and 1.84 g/L, respectively. These results confirmed that fatty acid
+synthesis was indeed mitigated by deleting genes  and . In conclusion, by constructing a cytosolic
+aKG pathway and expression of the dicarboxylic acid transporter (ylODC)
+as well as mitigating fatty acids synthesis, we efficiently improved
+the aKG flux and 2-PE tier and yield. Overcoming cellular compartmentalization
+of 2-oxoglutarate (aKG)
+to increase aKG availability. (a) Construction of cytosolic source
+for 2-oxoglutarate synthesis by coupling bacterial aconitase with
+the overflowed citrate from Krebs cycle. (b) Citrate titers of strain . (c–e) 2-PE titers, cell growth and
+yield of strains , , , and . All experiments were
+performed in triplicate and error bars show standard deviation (SD). Improving 2-oxoglutarate trafficking across the mitochondria
+membrane
+by overexpressing the mitochondrial 2-oxodicarboxylate carrier ylODC1
+and improving 2-PE titer by blocking fatty acid synthesis. (a–d)
+2-PE titers, cell growth, yield, and lipid titers of strains , , , and . All experiments were performed in triplicate and
+error bars show standard deviation (SD). The * indicates  < 0.01 (two-tailed test). Efficient
+microbial synthesis of chemicals necessitates systematic
+debottlenecking, refactoring and optimization of the native or nonnative
+metabolic pathways. With 2-PE as a tested molecule, we analyzed the
+stoichiometric constraints of the Ehrlich pathway toward efficient
+synthesis of the target molecules in . The proposed metabolic model reveals potential engineering targets
+for high yield production of 2-PE with cosubstrate feeding of glucose
+and -phenylalanine. Specifically, guided by the model, we
+identified that the catalytic efficiency of the Ehrlich pathway and
+the precursor 2-oxoglutarate (aKG) supplement might be the rate-limiting
+steps. Stepwise refactoring the Ehrlich pathway and overcoming the
+cellular compartmentalization of precursor (aKG) significantly improved
+2-PE production. By blocking the precursor-competing pathways and
+mitigating fatty acids synthesis, the engineered strain produced 2669.54
+mg/L of 2-PE with yield at 0.702 g/g in shake flasks, which were 4.16
+and 2.07-fold of the starting strain, respectively. The strategies
+reported in this study should be adding value and guide us to engineer
+other complex metabolic pathways for various biomanufacturing applications. Further investigations on relieving 2-PE toxicity and promoting
+cell fitness are viable solutions to improve 2-PE production. Major
+considerations should include 2-PE tolerance/toxicity, medium composition,
+and optimal fermentation processes. In general, mutagenesis coupled
+with high throughput screening is an efficient and convenient way
+to evolve tolerance phenotype. In addition,
+small amounts of organic nitrogen sources, such as peptone and yeast
+extract, benefit cell growth without inhibiting the Ehrlich pathway. Moreover, it was found that both Ca and Mg salts protect the cell and facilitate 2-PE production
+by increasing membrane stability and integrity. Besides, by adding organic solvents as overlays during
+fermentation, 2-PE titer could be increased to 12.6 g/L in the concentrated
+organic layer. These strategies will
+enable us to build a sustainable 2-PE platform at low cost and high
+efficiency. Strains, Plasmid, Primers, and Chemicals http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00468/suppl_file/sb9b00468_si_001.pdf All strains
+of engineered , including the genotypes
+of manipulations, recombinant plasmids, and primers, have been listed
+in . Chemicals
+used in this study include phenylacetaldehyde, -phenylalanine,
+phenylacetate, 2-phenylethanol, 2-oxoglutarate, and citrate, which
+were all purchased from Sigma-Aldrich. Shake Flask and 24-Wells
+Deep-Plate Cultivations Yeast Transformation and Screening
+of High-Producing Strains All
+engineered strains were underwent optimal screening before shake flask
+cultivations (see , a). For shake flask cultivations, seed culture
+was carried out in the shaking tube with 2 mL seed culture medium
+at 30 °C and 250 r.p.m. for 48 h. Then, 0.8 mL of seed culture
+was inoculated into the 250 mL flask containing 35 mL of fermentation
+medium and grown under the conditions of 30 °C and 250 r.p.m.
+for 144 h. One milliliter of cell suspension was sampled every 24
+h for OD, glucose, 2-PE, -phenylalanine, and
+penylacetate measurements. For performing 24-well deep-plate cultivation,
+engineered  strains were first cultured
+in 96-wells pales with 150 μL seed culture medium at 30 °C
+and 1000 r.p.m. for 36 h. Sequentially, 40 μL of seed culture
+was inoculated to the 24-well deep plate with 2 mL fermentation medium
+at 30 °C and 1000 r.p.m. for 96 h, and finally, 1 mL of cell
+suspension was sampled for 2-PE, -phenylalanine, and penylacetate
+measurements. The seed culture medium used in this study was
+the yeast complete synthetic media regular media CSM containing the
+following: glucose 20.0 g/L, yeast nitrogen base (without ammonium
+sulfate) 1.7 g/L, ammonium sulfate 5.0 g/L, and CSM-Leu or CSM-Ura
+0.74 g/L. Two types of fermentation medium were used in our work,
+including nitrogen-limited media CSM and YNB. The nitrogen-limited
+media CSM contained the following: glucose 40.0 g/L, yeast nitrogen
+base (without ammonium sulfate) 1.7 g/L, ammonium sulfate 1.1 g/L,
+CSM-Leu 0.74 g/L, and appropriate -phenylalanine. The nitrogen-limited
+media YNB contained the following: glucose 40.0 g/L, yeast nitrogen
+base (without ammonium sulfate) 1.7 g/L, leucine or uracil 0.2 g/L,
+and appropriate -phenylalanine. Whole-Cell Bioconversion
+of Phenylacetaldehyde To prepare
+the whole-cell biocatalyst, cells were harvested during the exponential
+growth phase (48 h) from the shake flask cultivation. Then, cells
+were washed twice with 100 mM phosphate buffer (pH 7.0), and resuspended
+to an OD of 4 in the same buffer. Next, whole-cell biocatalytic
+conversion of phenylacetaldehyde was performed in 20-ml glass tube
+containing 1 mL of cell suspension (OD = 4) and 1 mL
+phenylacetaldehyde–water solution (2 g/L phenylacetaldehyde)
+at 30 °C and 250 r.p.m. for 4 h. One hundred microliters of cell
+suspension was sampled every 1 h for 2-PE and penylacetate measurements. Yeast Transformation and Screening of High-Producing Strains http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00468/suppl_file/sb9b00468_si_001.pdf The standard protocols of  transformation
+by the lithium acetate method were described as previously reported. In brief, 1 mL of cells was harvested during the exponential growth
+phase (16–24 h) from 2 mL YPD medium (yeast extract 10 g/L,
+peptone 20 g/L, and glucose 20 g/L) in the 14 mL shake tube, and washed
+twice with 100 mM phosphate buffer (pH 7.0). Then, cells were resuspended
+in 105 μL transformation solution, containing 90 μL 50%
+PEG4000, 5 μL lithium acetate (2 M), 5 μL boiled single
+stand DNA (salmon sperm, denatured), and 5 μL DNA products (including
+200–500 ng of plasmids, lined plasmids or DNA fragments), and
+incubated at 39 °C for 1 h, then spread on selected plates. It
+should be noted that the transformation mixtures needed to be vortexed
+for 15 s every 15 min during the process of 39 °C incubation.
+The selected markers, including leucine and uracil, were used in this
+study. All engineering strains after genetic manipulations were performed
+optimized screening by the shaking tube cultivations, and the optimal
+strain was used to perform shaking flask (these data have been shown
+in ). Expression
+Vectors Construction and Pathway Assembly The YaliBrick plasmid
+pYLXP′ was used as the expression vector
+in this study. Plasmid constructions were performed
+by using preciously described methods. In brief,
+recombinant plasmids of pYLXP′- (a single
+gene expression) were obtained by Gibson Assembly method using linearized pYLXP′ (digested by  and I) and the appropriate PCR-amplified
+DNA fragment. Multigenes assembly was achieved by restriction enzyme
+digestion subcloning based on the application of isocaudamers  and . All genes were respectively expressed by the TEF promoter with intron
+sequence and XPR terminator. The modified DNA fragments and plasmids
+were sequenced by Quintarabio. The endonucleases used in this research
+were purchased from Thermo Fisher Scientific or NEB. Gene Knockout
+and 26s rDNA Genomic Integration of Ehrlich Pathway A marker-free
+gene knockout method based on Cre- recombination
+system was used as previously reported. For performing gene knockout, the upstream and
+downstream sequences (both 1000 bp) flanking the deletion targets
+were PCR-amplified. These two fragments, the  cassette (digested from plasmid pYLXP′- by  and ), and the residual
+plasmid backbone of pYLXP′- were joined
+by the Gibson Assembly method, obtaining the gene knockout plasmids
+pYLXP′- The obtained plasmids
+were sequenced by Quintarabio. Next, the gene knockout cassettes were
+PCR-amplified from construction plasmids pYLXP′-, and further transformed into . The
+positive transformants were determined by colony PCR. Next, plasmid
+pYLXP′- was introduced into the positive
+transformants and promoted the recombination of  sites, which recycle the selected marker. Finally, the intracellular
+plasmid pYLXP′- was evicted by incubation
+at 30 °C for 48 h. loxp-URA-ylARO10-ylARO8-GapY3-PAR4 loxp-URA-ylARO10-ylARO8-GapY3-PAR4 loxp-URA-ylARO10-ylARO8-GapY3-PAR4 The standard protocol of 26s rDNA genomic
+integration also has been described in previous reported. For 26s rDNA genomic integration of the Ehrlich
+pathway, the expression plasmid pYLXP′- was digested by  and , and the fragment containing the Ehrlich pathway was inserted into
+linearized pYLXP′- digested by  and , getting pYLXP′-. The homologous arms
+of 26s rDNA, including 26s rDNA 1s and 2s, were PCR-amplified by appropriate
+primers. And next, these two homologous-arm fragments, Ehrlich pathway
+with the  cassette (digested from plasmid
+pYLXP′- by  and ), and the residual plasmid
+backbone of pYLXP′- were joined by Gibson Assembly method, obtaining the 26s rDNA genomic
+integration plasmids prDNAloxP Then, the 26s rDNA genomic integration cassette of the Ehrlich pathway
+was gotten by digesting prDNAloxP with  and , and the integration
+cassette was further transformed into . In addition, the manipulation of recycling the selected marker
+was similar to gene knockout. Quantification of Cell
+Density, 2-PE, Penylacetate, -Phenylalanine, Glucose, Citrate,
+Fatty Acid, and Y Calculation Cell
+densities were monitored by measuring
+the optical density at 600 nm (OD). The concentrations
+of 2-PE, penylacetate, and -phenylalanine were measured
+by high-performance liquid chromatography (HPLC) through Agilent HPLC
+1220 equipped with a ZORBAX Eclipse Plus C18 column (4.6 × 100
+mm, 3.5 μm, Agilent) and a VWD detector. The analysis was performed
+at 215 nm under 40 °C column temperature with a mobile phase
+comprising 50% (v/v) methanol in water at a flow rate of 0.5 mL/min.
+The concentrations of glucose and citrate were also measured by Agilent
+HPLC 1220 equipped with a Supelcogel Carbohydrate column (Sigma, USA)
+and a refractive index detector. HSO (5 mM)
+was used as the mobile phase at a flow rate of 0.6 mL/min at 40 °C.
+The method of quantification of fatty acid was used as previously
+reported. Y is
+the 2-PE yield relative to the consumption of -phenylalanine..

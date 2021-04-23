@@ -1,0 +1,523 @@
+Cellular signaling networks
+are capable of highly sophisticated signal integration and processing,
+elegantly controlling a wide variety of cellular processes with high
+temporal and spatial control. This control is achieved using a number
+of fundamental information processing steps, including the use of
+enzyme-controlled reversible covalent modifications (phosporylation,
+acetylation, ubiquitination .), the compartmentalization
+of proteins in organelles, the recruitment of otherwise weakly associating
+proteins on membrane surfaces or dedicated scaffold proteins, and
+the use of protease-mediated activation of inactive preproteins or
+zymogens. These signaling pathways need to operate simultaneously
+within the crowded environment of a cell, requiring a delicate balance
+between orthogonality and communication between different signal transduction
+pathways. The inherent modularity of natural signaling networks enables
+the application of synthetic biology strategies, both to rewire existing
+signaling pathways and to recreate essential features of biological
+signal processing using  biomolecular networks.
+Thus far, most efforts in the latter area of bottom-up synthetic biology have focused on one specific type of signal transduction
+(protease, phosphorylation or scaffolding), but the construction of
+synthetic protein-based signaling networks that combine different
+signaling strategies is mostly lacking. In this work we report
+a generic strategy to integrate two important
+signal transduction mechanisms, protease-mediated signaling and template-mediated
+assembly of protein complex formation. The classic example of protease
+signaling is the blood coagulation cascade, where sequential activation
+of serine proteases (coagulation factors) is essential for hemostasis. Since this finding, the importance of protease-based signal transduction
+has been established in numerous pathways including cell proliferation
+(ADAM10 and γ-secretase), cell death
+(caspases) and the immune response (cathepsins). Protease signaling often involves cascades
+of sequential activation of pro-enzymes, which provides multiple levels
+of control and an efficient mechanism of signal amplification. The
+inherent modularity of protease-based signaling and the possibility
+for signal amplification make protease activity an attractive tool
+to control and construct protein-based signaling networks, both  and . For example, Lim
+and co-workers developed a synthetic Notch receptor that upon antigen
+binding to its artificial receptor domain gets cleaved, releasing
+a non-native transcriptional activator domain that induces the expression
+of a second chimeric antigen receptor. Huck and co-workers recently reported the  construction of a trypsine-based reaction network that showed oscillations
+in enzyme activation by combining autoactivation of the protease trypsin
+with delayed feedback. Modular protein switches based on autoinhibited proteases
+have been engineered by Alexandrov and co-workers and used as biosensors
+to detect protease activity, ligand binding and protein–protein
+interactions. The recruitment of proteins
+on scaffold proteins represents another
+important mechanism for spatiotemporal control of signal transduction
+cascades. Scaffold proteins are highly
+flexible and modular platforms that enable the cell to perform a wide
+variety of functions using a limited number of components. Well-known examples include Crk, a family of scaffold proteins involved in cellular transformation,
+cytoskeletal changes and phagocytosis, and the Ste5- and KSR- scaffold
+proteins involved in the MAPK pathway. Another major class
+of natural scaffold proteins are the 14-3-3 proteins. 14-3-3 proteins
+exist as constitutive homo- or heterodimers based on 7 different isoforms
+(β, ε, η, γ, ζ, σ, τ), with each monomer containing an amphipathic ligand-binding groove
+that allows specific binding of target proteins that typically contain
+a phosphorylated serine and threonine binding motif. 14-3-3 proteins
+lack intrinsic enzymatic activity but exert their biological activity
+by enhancing the interaction of two target proteins, by binding a
+target protein to prevent its interactions with other biomolecules,
+or shield its sequence-specific or structural features for example
+to protect against degradation. Through these mechanisms
+14-3-3 is involved in the regulation of a wide variety of cellular
+processes including signal transduction, metabolism, cytoskeletal
+dynamics, cell-cycle progression and apoptosis. An attractive
+feature of 14-3-3-mediated scaffolding is that the interaction of
+14-3-3 with certain target proteins can be reversibly induced by addition
+of small molecules such as fusicoccin. This property has been used
+to develop a chemically induced dimerization system based on the fusicoccin-promoted
+interaction between the tobacco plant 14-3-3 protein (T14-3-3c) and
+a C-terminal peptide from the H-ATPase PMA2 (CT52). More recently, we used this T14-3-3c-CT52 interaction
+to dimerize two monomers of apoptosis-initiating caspase-9 that were
+fused to CT52, and thereby activated caspase-9 in a fusicoccin-dependent
+manner on a T14-3-3c scaffold. While endogenous 14-3-3-mediated signal transduction is intimately
+connected with phosporylation-based signaling, we here introduce a
+generic approach to control 14-3-3 activity by proteases. Protease-based
+control of 14-3-3 activity is achieved by fusion of inhibitory ExoS
+peptides  protease-cleavable flexible peptide
+linkers. Three different architectures are explored to achieve optimal
+control of 14-3-3 scaffolding activity using either one or two monovalent
+ExoS peptides or a single bivalent ExoS peptide. The relative efficiency
+of these architectures to block the 14-3-3 templating activity is
+systematically studied using the previously reported fusicoccin-induced
+dimerization and activation of caspase-9. The protease activatable
+14-3-3 scaffolds are successfully applied to construct synthetic biomolecular
+signaling networks, including a three-step (enzyme → scaffold
+→ enzyme) synthetic signaling cascade and a self-activating
+protease signaling network. Design of Protease-Activatable
+14-3-3 Proteins In this
+study we used the tobacco 14-3-3 homodimer (T14-3-3cΔC, from
+here called T14-3-3) to assess various control strategies. This plant
+14-3-3 protein is attractive for the bottom-up construction of orthogonal
+signaling networks, because it is less likely to bind to endogeneous
+14-3-3 target proteins in mammalian cells. Two tobacco 14-3-3 monomers were covalently connected using a flexible
+(Gly-Gly-Ser)-linker to allow specific intramolecular
+control of the scaffolding activity of a T14-3-3 dimer. 14-3-3 activity
+was blocked by intramolecular binding of one or two inhibitory ExoS
+peptides ().
+The ExoS peptide originates from the C-terminal region of  toxin exoenzyme S (QGLLDALDLAS) and binds to 14-3-3 proteins in a phosphorylation-independent
+manner. Three different designs for protease-activatable
+T14-3-3 were explored. In the first design one ExoS peptide is fused
+to the C-terminal T14-3-3 domain  a (Gly-Gly-Ser)-linker that contains a TEV protease cleavage site, blocking
+a single T14-3-3 binding site (; dT1433-Exo). The second design is similar, but contains
+a bivalent ExoS peptide that binds both T14-3-3 binding sites simultaneously
+(; dT1433-BiExo).
+The two ExoS sequences in the bivalent ExoS are linked by a (Gly)-linker, as this linker length was found to be sufficient
+to cover the 30 Å distance between the two 14-3-3ζ binding
+pockets for binding of a natural bivalent peptide derived from protein
+kinase C-ε. In the third approach
+two monovalent ExoS peptides are attached to the T14-3-3 dimer  (Gly-Gly-Ser)-linkers, one to the N-terminus
+and the other to the C-terminus of the engineered T14-3-3 platform
+(; Exo-dT1433-Exo).
+The N-terminal linker contains a Factor Xa protease cleavage site,
+and the C-terminal linker includes a TEV protease recognition site.
+This construct thus requires cleavage by two proteases to become fully
+liberated, which should allow dual input control of the T14-3-3 scaffold
+protein. Engineered protease-activatable dT14-3-3 protein scaffolds. (A)
+Crystal structure of a 14-3-3 dimer (PDB: 4N7G) depicted in gray, each binding groove
+is occupied by an ExoS peptide depicted in red. (B) Schematic representation
+of domain structure and architecture of the three scaffolds used.
+Intramolecular binding of one monovalent ExoS peptide (top), one bivalent
+peptide (middle) or two monovalent ExoS peptides (bottom), to allow
+protease-controlled activation of the 14-3-3 scaffold. The 14-3-3
+domains are fused to each other using a (Gly-Gly-Ser)-linker, and the ExoS peptides (red) are connected to the 14-3-3
+scaffold  (Gly-Gly-Ser)-linkers.
+TEV protease and Factor Xa protease cleavage sites in those linkers
+are depicted in orange and magenta, respectively. Binding of Mono- and Bivalent ExoS Peptides to T14-3-3 http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00217/suppl_file/sb8b00217_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00217/suppl_file/sb8b00217_si_001.pdf The
+affinity of the interaction between 14-3-3 and the monovalent
+and bivalent ExoS peptides is important for successful control of
+14-3-3 scaffold activity. Fluorescence polarization titration experiments
+were used to systematically investigate the binding of fluorescently
+labeled monovalent and bivalent peptides containing either the wild-type
+ExoS peptide or the L423A, L426A, L428A, and L423A/L426A mutants (). These mutations
+were chosen because hydrophobic interactions of these leucines dominate
+the interaction with the 14-3-3 binding site, and mutations of these
+residues have been shown to reduce 14-3-3-binding mediated cellular
+toxicity of the full exoenzyme S. Wild-type monovalent ExoS bound
+to T14-3-3 with a  of 14.1 ± 0.9
+μM, which is 10-fold weaker than the  of 1.14 ± 0.05 μM reported previously for binding
+of wt ExoS to 14-3-3ζ. T14-3-3
+binding was essentially abolished for all monovalent mutant peptides
+except for the L423A mutant, which showed a ∼9-fold decrease
+in affinity compared to the wild-type peptide ( = 127 ± 16 μM). Titration of T14-3-3 to bivalent
+wt ExoS revealed a  of 45.5 ± 8.5
+nM, which represents a 300-fold increase in affinity between mono-
+and bivalent ExoS binding. A similar ∼100-fold affinity enhancement
+has been observed for the 14-3-3ζ binding of two monovalent
+phosphorylated peptides of protein kinase C-ε fused using the
+same (Gly)-linker. The bivalent
+L423A mutant ExoS peptide also showed enhanced binding compared to
+monovalent L423A ExoS, although the increase in affinity was more
+modest, showing a 20-fold lower  of
+5.9 ± 0.9 μM. The bivalent stabilization can be quantitatively
+understood using a thermodynamic model that describes the binding
+of the bivalent peptide to T14-3-3 (), as a function of the monovalent binding affinity () and the effective concentration () for binding the second T14-3-3 binding site after
+the first has been bound (). The
+model yields an effective concentration of ∼1 mM and explains
+how the enhancement in affinity for bivalent ligands depends on the
+affinity of the monovalent peptide. Protease-Triggered Activation
+of ExoS-Inhibited T14-3-3 Scaffolds The mono- and bivalent
+ExoS and ExoS L423A peptides together provide
+a set of inhibitors with affinities ranging between 45 nM to 127 μM,
+allowing a systematic screening of the optimal affinity for protease-activatable
+14-3-3 constructs. For all three designs shown in , protease-activatable T14-3-3
+scaffold proteins with either wild-type peptide (Exo) or the L423A
+mutant (Exo*) were made, yielding a total of 6 different constructs:
+dT1433-Exo, dT1433-Exo*, dT1433-BiExo, dT1433-BiExo*, Exo-dT1433-Exo,
+Exo*-dT1433-Exo*. The scaffold proteins were expressed in  BL21(DE3) and sequentially purified by Ni and Strep-Tactin affinity chromatography using their N-terminal
+His-tag and C-terminal Strep-tag, respectively. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00217/suppl_file/sb8b00217_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00217/suppl_file/sb8b00217_si_001.pdf All proteins
+were obtained in high purity and sufficient yield (≥1 mg/L)
+for our studies (). Please note
+that this yield could probably be further improved by a systematic
+screening for optimal expression conditions (temperature, medium,
+fermentation) and a more efficient purification procedure. SDS-PAGE
+analysis showed that each of the scaffold proteins was efficiently
+and specifically cleaved by its target protease into the expected
+molecular fragments (B,C,D, ). To monitor 14-3-3 scaffold activity,
+we employed the fusicoccin-stabilized
+interaction between 14-3-3 and a caspase-9-CT52-fusion protein. Binding of this fusion protein on the 14-3-3
+scaffold promotes caspase-9 (C9) dimerization, resulting in caspase-9
+activation that can be monitored by cleavage of a fluorogenic substrate
+(A). Because
+CT52 has been shown to bind to the T14-3-3 dimer with a  of ∼1 nM in the presence of fusicoccin, this assay provides a rigorous test for the
+ability of the ExoS peptide to block the 14-3-3 site. For each scaffold
+protein, 14-3-3-templated caspase-9 activity was determined before
+and after protease-cleavage and compared to a control in which the
+same concentration of native T14-3-3 dimer was used (representing
+100% activity) and a control in which no 14-3-3 was present (representing
+0% activity). Scaffold proteins containing a single ExoS peptide
+at the C-terminus
+of the 14-3-3 dimer (dT1433-Exo and dT1433-Exo*) showed scaffold activities
+of 40% and 50%, respectively (E). In both cases, 14-3-3 scaffold activity was almost
+completely restored following protease-cleavage. As expected, more
+efficient inhibition of 14-3-3 activity was observed for the variant
+with wt ExoS. Although the affinity of the wild-type ExoS peptide
+( = 14.1 ± 0.9 μM) is high
+enough to ensure essentially complete intramolecular complex formation,
+the scaffold activity is only partially inhibited because C9-CT52
+strongly competes with this interaction in the presence of FC. The
+bivalent ExoS peptides proved more effective in blocking the 14-3-3-templated
+caspase-9 activation than the monovalent ExoS peptide, showing a residual
+activity of ∼15% for the construct with wt ExoS peptides (dT1433-BiExo, F, left) and 30%
+for the construct with the bivalent L423A mutant ExoS (F, right). Despite the strong
+bivalent interaction between the 14-3-3 dimer and the bivalent ExoS
+peptide, protease cleavage still resulted in efficient activation
+of the 14-3-3 scaffold, yielding restored activity levels between
+80 and 85% (F). The most effective control of T14-3-3 scaffolding activity
+was
+observed for the constructs having monomeric ExoS peptides fused to
+each end of the 14-3-3 dimer. The construct with two wt ExoS peptides
+(Exo-dT1433-Exo) showed complete inhibition of scaffold-activity,
+while the scaffold protein with ExoS-L423A displayed ∼15% remaining
+activity (G).
+Despite this strong blockage, efficient restoration of scaffold activity
+was observed in both cases upon treatment with both proteases leading
+to 75 and 80% recovery, respectively. As a result, the Exo-dT1433-Exo
+displayed the largest dynamic range of scaffold activation of all
+six protease-activatable T14-3-3 scaffold variants. While both proteases
+are required to achieve maximal activation, each of the proteases
+by itself also induced partial restoration of scaffold activity. Digestion
+of the proteins with Factor Xa protease resulted in scaffold activities
+of ∼35% and ∼45% for the constructs containing wild-type
+and mutant ExoS peptides (G), respectively, corresponding well to the data obtained
+for dT1433-Exo and dT1433-Exo*. Remarkably, the TEV protease-cleaved
+proteins displayed a significantly higher C9 activity than the Factor
+Xa-digested proteins, with scaffold activity levels of ∼45%
+and ∼70% for the resulting Exo-dT1433 and Exo*-dT1433. Possibly
+the attachment of the linker connecting the ExoS peptide to the N-terminus
+of the N-terminal T14-3-3 monomer, which is oriented away from the
+T14-3-3 binding grooves, led to a lower effective concentration of
+the peptide close to its binding pocket(s). This effect might have
+been enhanced by the reversed orientation of the ExoS peptide in the
+T14-3-3 binding groove compared to other target peptides, which substantially
+increases the distance between the C-terminus of the ExoS peptide
+and the N-terminus of the N-terminal T14-3-3 monomer (PDB: 2O02). Further, the presence of a His-tag and thrombin cleavage
+site directly upstream of the N-terminal ExoS peptide may have reduced
+its binding affinity. Protease-regulated dT14-3-3
+scaffold activation. (A) Schematic
+representation of dT14-3-3 scaffold activation. After cleavage of
+the ExoS peptide by the protease (TEV and/or Xa), dT14-3-3 is mixed
+with the fusion protein caspase-9-CT52 (C9-CT52) and small-molecule
+fusicoccin (FC). Fusicoccin-induced binding of C9-CT52 to dT14-3-3
+induces C9 dimerization and subsequent activation. (B–D) SDS-PAGE
+gel analysis showing cleavage of noncleaved (−) or protease-cleaved
+(+) dT14-3-3 constructs containing either wildtype or L423A mutant
+ExoS peptide(s) after 2 h of incubation at 25 °C in 20 mM Hepes
+(pH 8.0), 100 mM NaCl and 1 mM CaCl. The band at 48 kDa
+corresponds to the TEV protease. (E) C9-CT52 activation controlled
+by dT1433-Exo (left) and dT1433-Exo* (right). (F) C9-CT52 activation
+controlled by dT1433-BiExo (left) and dT1433-BiExo* (right). (G) C9-CT52
+activation controlled by Exo-dT1433-Exo (left) and Exo*-dT1433-Exo*
+(right). BG represents the background activity displayed by C9-CT52
+in the absence of 14-3-3-scaffold protein. Substrate conversion rates
+(a.u./min) were determined from the initial slopes of the fluorescence
+emission measured over time. Error bars represent SD ( = 3). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00217/suppl_file/sb8b00217_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00217/suppl_file/sb8b00217_si_001.pdf As a
+next step we combined
+the protease-controlled 14-3-3 platform with previously developed
+molecular signaling modules to yield synthetic signaling cascades.
+We previously reported a supramolecular system to control caspase-9
+dimerization based on the cucurbit[8]uril (Q8) mediated dimerization
+of FGG-modified proteins. In this system
+addition of the macrocyclic host Q8 can be used to control the dimerizaton
+of caspase-9 with an N-terminally fused FGG motif (FGG-C9) (). To allow coupling of this Q8-induced dimerization system
+upstream of the protease-activable 14-3-3 scaffolds, we introduced
+caspase-9 recognition sites in two protease-activatable 14-3-3 scaffold
+proteins, dT1433-BiExo* (dT1433-LEHD-BiExo*, B) and Exo-dT1433-Exo (Exo-LEHD-dT1433-LEHD-Exo, D). These scaffolds
+were chosen as they were blocked with different stringency, while
+the residual affinities of the ExoS and bivalent ExoS* peptides formed
+upon protease-cleavage for 14-3-3 are similar. Since caspase-9 activitity
+is used as an input, an alternative output platform to measure 14-3-3
+scaffold activity was required. We therefore developed a new read-out
+system for 14-3-3-templated protein dimerization based on complementation
+of the NanoBiT split-luciferase system (, A). The large NanoBiT fragment (LgNB)
+was fused to a CT52 peptide (LgNB-CT52), and the small NanoBiT fragment
+was fused to CT32 (SmNB-CT32), an N-terminally truncated version of
+CT52 which has similar FC-controllable T14-3-3 binding properties.
+To ensure low background activity in the absence of a template, a
+low affinity variant of small NanoBit was used ( = 190 μM). The split NanoLuc system provided a
+very robust read-out of 14-3-3-templating activity, showing a ∼100-fold
+increase in bioluminescence emission upon addition of T14-3-3 in the
+presence of FC (). The higher
+response observed for the split Nanoluc system compared to the C9-CT52
+system can be attributed to the lower amount of complementation in
+the absence of the 14-3-3 scaffold. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00217/suppl_file/sb8b00217_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00217/suppl_file/sb8b00217_si_001.pdf Having established orthogonal
+input and output functions for the
+14-3-3 scaffold, we assessed its performance in a three-step signaling
+cascade whereby Q8-induced FGG-C9 activation leads to activation of
+the dT14-3-3 scaffold, which subsequently allows scaffolding of both
+LgNB-CT52 and SmNB-CT32, resulting in complementation and restoration
+of NanoBiT luciferase activity (A). dT1433-LEHD-BiExo* and Exo-LEHD-dT1433-LEHD-Exo
+were incubated with FGG-C9 in the absence and presence of Q8 and samples
+were taken at various time points for analysis by SDS-PAGE and bioluminescent
+actvity assays. SDS-PAGE analysis showed almost complete removal of
+the ExoS peptides for both scaffolds within 20 min in the presence
+of Q8, while only ∼50% cleavage was observed after 2 h in the
+absence of Q8. The corresponding activation of 14-3-3 templating activity
+was monitored by measuring the bioluminescence intensity after addition
+of LgNB-CT52, SmNB-CT32, FC and furimazine to each sample (). In the presence of Q8, a strong increase
+in bioluminescence was observed within 10–20 min, which coincides
+with the kinetics of protease-induced scaffold cleavage observed with
+SDS-PAGE analysis. (B,C,D,E, ). In
+the absence of Q8, self-complemented FGG-C9 also induced an increase
+in bioluminescent emission, but this activation was much slower than
+in the presence of Q8. The fully cleaved dT1433-LEHD-BiExo* and Exo-LEHD-dT1433-LEHD-Exo
+scaffolds showed a ∼6-fold and ∼80-fold increase of
+the NanoBiT bioluminescence compared to the nonactivated scaffolds,
+respectively (C,E). The higher level of activation for Exo-LEHD-dT1433-LEHD-Exo
+compared to that of dT1433-LEHD-BiExo* is consistent with the more
+stringent inhibition of the undigested scaffold, which was also observed
+for the C9-CT52 activation (F,G). To assess whether the different reactions
+in the signaling cascade
+are orthogonal we also monitored the increase of Q8-triggered 14-3-3-templated
+NanoLuc complementation by incubation of all components in one pot.
+Similar levels of luciferase activity enhancement were reached upon
+addition of Q8, showing a ∼17- and ∼86-fold increase
+in split-NanoBiT activation for the dT1433-LEHD-BiExo* and Exo-LEHD-dT1433-LEHD-Exo
+scaffold, respectively (F,G). While the reaction rates in the absence of Q8 were not
+influenced, the Q8-induced cleavage appeared somewhat slower compared
+to the separately incubated reactions. Nonetheless, these results
+confirm that the reaction components are mutually compatible and operate
+essentially orthogonal to each other. Synthetic signaling cascade based on caspase-9
+activatable dT14-3-3.
+(A) Schematic representation of signaling cascade in which caspase-9
+containing an N-terminal FGG-motif (FGG-C9) can be activated by cucurbit[8]uril(Q8)-mediated
+dimerization in a supramolecular fashion. The active caspase-9 cleaves
+off the ExoS peptides from the Exo-LEHD-dT1433-LEHD-Exo scaffold,
+which induces NanoBiT luciferase complementation by allowing fusicoccin-enhanced
+LgNB-CT52 and SmNB-CT32 binding. (B,D) SDS-PAGE gel analysis of the
+cleavage of dT1433-LEHD-BiExo* (B) or Exo-LEHD-dT1433-LEHD-Exo (D)
+by FGG-C9 over time, in the presence and absence of Q8. (C,E) Bioluminescent
+readout of the synthetic signaling cascade containing the dT1433-LEHD-BiExo*
+scaffold (C) or the Exo-LEHD-dT1433-LEHD-Exo scaffold (E), in the
+presence (black) and absence of Q8 (gray). Two μM scaffold was
+incubated with 5 μM FGG-C9, and 10 μM Q8 at 37 °C.
+At different time points these samples were diluted 5 times, and mixed
+with 40 nM LgNB-CT52, 40 nM SmNB-CT32, 5 μM FC, 1 mg/mL BSA,
+and 2000-fold diluted furimazine, in 20 mM NaHPO (pH 7.0), 150 mM NaCl, 1 mM EDTA, and 2 mM TCEP. The fold change
+in bioluminescence at 458 nm was determined from the bioluminescence
+emission spectrum measured at each time point compared with the bioluminescent
+emission spectra obtained for the scaffold that had not been incubated
+with FGG-C9 and Q8. (F,G) Synthetic signaling cascade performed in
+a one-pot assay. Fold change in bioluminescence emission at 458 nm
+over time observed for 400 nM dT1433-LEHD-BiExo* (F) or Exo-LEHD-dT1433-LEHD-Exo
+(G) that was mixed with 5 μM FGG-C9, in the presence and absence
+of 10 μM Q8, and further incubated with 40 nM LgNB-CT52, 40
+nM SmNB-CT32, 5 μM FC, 1 mg/mL BSA, in 20 mM NaHPO (pH 7.0), 150 mM NaCl, 1 mM EDTA, and 2 mM TCEP, at
+37 °C. At different time points furimazine (final dilution 2000×)
+was added. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00217/suppl_file/sb8b00217_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00217/suppl_file/sb8b00217_si_001.pdf An intruiging property of protease-based
+signaling is the possibility for self-activation. Self-activation
+is a powerful mechanism of positive feedback control that has been
+reported for a variety of proteases including caspases, the retroviral proteases involved in HIV, and trypsinogen. The successful construction of
+caspase-9 activated 14-3-3 scaffolds provides an attractive synthetic
+platform to study self-activation of protease activity. By replacing
+the Q8-activatable caspase-9 with the original caspase-9-CT52, a system
+can be created in which C9-CT52 functions as both in- and output of
+the protease-controlled 14-3-3 scaffold (). Self-activation was evaluated using the
+Exo-LEHD-dT1433-LEHD-Exo scaffold, as this scaffold showed the strongest
+inhibition and therefore the highest fold increase in activation.
+Self-activation of the scaffold was assessed over time by measuring
+C9-CT52 activity using the fluorogenic substrate Ac-LEHD-AFC, in the
+absence and presence of FC (). To investigate the influence of the C9-CT52 concentration
+on the activation kinetics, experiments were done using 50, 100, or
+200 nM C9-CT52 and 400 nM of Exo-LEHD-dT1433-LEHD-Exo scaffold. As
+a reference, the background activity of C9-CT52 alone was measured,
+and the maximum activity that could be reached was measured by the
+activation of C9-CT52 on the regular 14-3-3 scaffold in the presence
+of FC. In the absence of FC, C9-CT52 activity on the caspase-9 activatable
+scaffold was similar to the background activity observed in the absence
+of any scaffold protein (B, ) over a period
+of 23 h. In the presence of FC, the activity of C9-CT52 on the scaffold
+slowly increased over time, reaching maximal activity after 6–7
+h for the two highest concentrations of C9-CT52 (100, 200 nM), while
+∼50% reactivation was obtained after 23 h when using 50 nM
+C9-CT52. Importantly, self-activation of caspase-9 activity was not
+observed when the Exo-dT1433-Exo scaffold was used, as this scaffold
+cannot be cleaved by caspase-9. The slightly higher caspase-9 activity
+that is observed in the presence of Exo-dT1433-Exo compared to the
+background, can be attributed to competition between C9-CT52 and the
+ExoS peptides for binding to the scaffold in the presence of FC. For
+all samples a small decrease in C9-CT52 activity was observed after
+23 h, which probably reflects a decrease in intrinsic enzyme stability.
+The initial velocity of caspase-9 activation roughly correlates with
+the concentration of C9-CT52, showing a 1.8-fold increase between
+50 nM and 100 nM, and 3.7-fold increase between 50 nM and 200 nM,
+respectively (B,C, ). The slow 14-3-3 activation
+kinetics are probably due to a combination a high  and a low  of caspase
+9 for the 14-3-3-scaffold proteins. These parameters are likely to
+be similar to those for the Ac-LEDH-AFC peptide probe, for which a  of 600 μM and  of 0.2 s have been determined, which
+corresponds to a / = 0.33 × 10 μM s or 1.2 μM h. As far as we
+know, this system represents the first successful example of an  protease signaling network with positive feedback
+loop. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00217/suppl_file/sb8b00217_si_001.pdf Self-activation assay using the Exo-LEHD-dT1433-LEHD-Exo scaffold.
+(A) Schematic representation of self-activation of the Exo-LEHD-dT1433-LEHD-Exo
+scaffold in the presence of C9-CT52 and FC. Background activation
+leads to cleavage of the scaffold which induces dimerization and activation
+of C9-CT52 on the scaffold, enhancing the cleavage of the scaffold,
+resulting in higher C9-CT52 activation. (B) Activation (U mg) of C9-CT52 (200 nM) on the Exo-LEHD-dT1433-LEHD-Exo scaffold (400
+nM) probed by a fluorogenic substrate (Ac-LEHD-AFC) in the absence
+(light gray) and presence of 10 μM FC (dark gray). Controls
+are shown as well of the C9-CT52 activity on the Exo-dT1433-Exo scaffold
+(400 nM) in the presence of 100 nM C9-CT52 and 10 μM FC (black)
+and the background activity of solely C9-CT52 (100 nM, light blue).
+Maximum activity that can be reached is obtained by measuring the
+activation of C9-CT52 (100 nM) in the presence of the native dT14-3-3
+scaffold (400 nM) and 10 μM FC (dark blue). Samples were incubated
+at 18 °C in 20 mM NaHPO (pH 7.0), 150
+mM NaCl, 1 mM EDTA, and 2 mM TCEP. At each time point Ac-LEHD-AFC
+was added to a final concentration of 200 μM. Error bars represent
+SEM ( = 2). (C) Activation (U mg) of C9-CT52 on the Exo-LEHD-dT1433-LEHD-Exo scaffold from the same
+assay as in B and  (200 nM C9-CT52
+black triangle, 100 nM C9-CT52 gray square, 50 nM C9-CT52 light gray
+circle), error bars represent SEM ( = 2). In this work we introduced a generic and modular approach to enable
+protease-based control over protein scaffolding, one of the key mechanisms
+used in signal transduction in nature. Inspired by the mechanism used
+in many natural zymogens, different protein architectures were explored
+in which the 14-3-3 binding sites were intramolecularly blocked by
+one or more ExoS peptides. The modularity of the system enabled easy
+exchange of protease recognition sites and allowed systematic tuning
+of the switching properties by tuning the affinity and interaction
+of the ExoS peptide and 14-3-3. The ability to rationally modulate
+the relative strength of the intramolecular blocking allows adjustment
+of the platform depending on the strength of the downstream protein–protein
+interaction; , in this work we used the strong
+interaction between 14-3-3 and CT52 in the presence of fusicoccin,
+which required strong intramolecular blocking of both 14-3-3 binding
+sites using wt ExoS. However, when using 14-3-3 target proteins with
+lower affinities (, phosphorylated peptides or
+proteins), weaker intramolecular blocking architectures may be more
+suitable. The protease-activatable 14-3-3 scaffold proteins
+developed here
+represent versatile molecular hubs to integrate protease- and scaffold-based
+signal transduction in  protein-based molecular
+logic networks. The modularity of the platform
+provides ample opportunity to program various form of logic operations,
+a first example of which was provided by Exo-dT14-3-3-Exo whose full
+activation required the presence of two different proteases. Similarly,
+OR gates could be obtained by incorporating multiple protease recognition
+sites in a single linker, while more robust AND-gates could be created
+by fusing two wild-type bivalent ExoS peptides to the T14-3-3 dimer.
+Next to altering the protease-controlled 14-3-3 scaffold itself, the
+scaffold could be combined with other protease-based synthetic signaling
+networks, such as the protease-activatable switches developed by Stein
+and Alexandrov, which could be introduced both
+upstream or downstream of the protease-controlled 14-3-3 scaffold. The protease-activable 14-3-3 platform presented here therefore
+provides an orthogonal and tractable molecular model system to understand
+the molecular mechanism of scaffold activity regulation. Compared
+to natural proteases, where self-activation typically results from
+autocatalytic cleavage of a precursor pro-enzyme, our system provides
+enhanced control of self-activation, both by adjusting the concentration
+of the C9-CT52 and by regulating the concentration of the small-molecule
+inducer fusicoccin. This approach could be easily extended to other
+proteases that require dimerization for activation such as the HIV-1
+protease and provide more insight into the critical
+aspects of controlling protease-based signaling, imbalances of which
+have been implicated in in several diseases such as cancer, osteoporosis,
+neurological disorders and cardiovascular and inflammatory diseases. The genetic encoding of protease-activatable
+14-3-3 should also allow  applications, either
+as part of synthetic, orthogonal signaling networks or by integration
+with endogeneous protease-signaling networks involved in cell proliferation,
+cell cycle control, apoptosis and the immune reponse. In addition,
+protease-activatable 14-3-3 activity could be connected to some of
+the protease-inducible or -inducing systems that have been engineered
+in recent years, including split-caspases, split-TEVs, chimeric adapters that reroute tyrosine kinase signaling, membrane-bound receptors for monitoring of protein–protein
+interactions (PPIs) or photoactivatable
+proteases. Finally, the orthogonal control
+over the activity of specific 14-3-3 homo- or heterodimers offered by protease-activatable 14-3-3 may provide
+an attractive approach to further unravel the signaling roles of 14-3-3
+proteins in living cells. Protease Cleavage and Caspase-9
+Activation Optimal
+cleavage conditions were determined by incubating Exo-dT1433-Exo protein
+(2 μM in 80 μL) with 3 different concentrations of Factor
+Xa protease (Novagen, 0.1, 0.2, and 0.5 μg) and TEV protease
+(Promega, 0.5, 1.0, and 2.5 U) for different times (10, 30, 75, and
+120 min) and monitoring cleavage efficiency on a 4–20% Mini-PROTEAN
+TGX Precast SDS-PAGE gel (Bio-Rad). Having established the optimal
+cleavage conditions, 2 μM of each of the proteins that only
+had a TEV cleavage site was digested using 4 U TEV protease for 2
+h at 25 °C, in 80 μL of 20 mM HEPES (pH 8.0), 100 mM NaCl
+and 1 mM CaCl. The proteins that also contained a Factor
+Xa cleavage site were first incubated with 0.8 μg Factor Xa
+protease in the aforementioned buffer for 2 h at 25 °C, followed
+by the TEV protease cleavage step. Subsequently, 2 mM EDTA was added
+to the cleavage mixtures. Caspase-9 activation assays were performed
+by mixing 400 nM 14-3-3 protein (5× diluted from the 2 μM
+protease incubation/control mixtures) with 100 nM C9-CT52, 5 μM
+FC in 100 μL of 20 mM NaHPO (pH 7.0),
+150 mM NaCl, 1 mM EDTA, 1 mM TCEP, 1 mM DTT, and 1 mg/mL BSA, at 37
+°C. The mixtures were prepared in a black, flat-bottom 96-well
+plate (Greiner Bio-One). After ∼20 min incubation, 200 μM
+Ac-LEHD-AFC substrate (Enzo Life Sciences) was added, and the fluorescence
+emission measurement was started on a Tecan Safire2 microplate reader
+for 90 min with 1 min intervals. Fluorescence emission was measured
+at 505 nm (5 nm bandwidth) using excitation at 400 nm (5 nm bandwidth). In the two-step assay,
+first 2 μM dT1433-LEHD-BiExo* or Exo-LEHD-dT1433-LEHD-Exo scaffold
+was incubated with 5 μM FGG-C9 and 10 μM Q8 at 37 °C.
+Control mixtures without FGG-C9 and/or Q8 were prepared as well. Subsequently,
+at different time points these samples were diluted 5 times, and mixed
+with 40 nM LgNB-CT52, 40 nM SmNB-CT32, 5 μM FC, 1 mg/mL BSA,
+and 2000-fold diluted furimazine, in 20 mM NaHPO (pH 7.0), 150 mM NaCl, 1 mM EDTA, and 2 mM TCEP. Bioluminescence
+emission was measured at 11 emission wavelengths equally distributed
+from 398 to 548 nm (20 nm bandwidth) on a Tecan Spark 10 M plate reader
+using integration times of 100 ms. Scaffold cleavage was simultaneously
+analyzed by SDS-PAGE gel analysis. In the one-pot assays, 400
+nM dT1433-LEHD-BiExo* or Exo-LEHD-dT1433-LEHD-Exo was mixed with 5
+μM FGG-C9 and 10 μM Q8, in the presence of 40 nM LgNB-CT52,
+40 nM SmNB-CT32, 5 μM FC, 1 mg/mL BSA, in 20 mM NaHPO (pH 7.0), 150 mM NaCl, 1 mM EDTA, and 2 mM TCEP, at
+37 °C. Control mixtures without FGG-C9 and/or Q8 were prepared
+as well. At different time points, furimazine (2000-fold diluted in
+final sample) was added, and bioluminescence emission was measured
+at 465 ± 20 nm on a Tecan Spark 10 M plate reader using an integration
+time of 100 ms. The bioluminescence emission increases over
+time were fitted using  assuming first order reaction
+kinetics. In ,  is the bioluminescence emission at  = 0,  the final bioluminescent
+emission when a plateau has been reached and  is
+the rate constant. Exo-LEHD-dT1433-LEHD-Exo scaffold,
+Exo-dT1433-Exo or dT1433 (400 nM) was incubated with C9-CT52 (50,
+100, or 200 nM) in the absence or presence of 10 μM FC at 18
+°C in 20 mM NaHPO (pH 7.0), 150 mM NaCl,
+1 mM EDTA, and 2 mM TCEP. A control mixture without scaffold and FC
+was prepared as well. Successively, at different time points fluorogenic
+substrate Ac-LEHD-AFC (final concentration 200 μM) was added
+and fluorescence intensity was measured on a Tecan Infinite F500 plate
+reader using an exication wavelength of 400 nm (bandwidth 20 nm) and
+emission wavelength of 520 nm (bandwidth 25 nm), a gain of 23 and
+integration time of 40 μs. Activity (U mg) was determined from the fluorescent traces and calculated as described
+before..

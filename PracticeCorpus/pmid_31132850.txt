@@ -1,0 +1,367 @@
+Natural evolution is based on
+the random creation of genetic diversity and subsequent selection
+of a desired fitness. Directed evolution
+attempts to improve on and speed up this process in the laboratory.
+Genetic diversity is generated for a target gene, enabling the discovery,
+selection and isolation of variants encoding an improvement in the
+desired fitness (e.g., increased activity). This process can then
+be repeated iteratively to improve the properties of the target molecule
+until an adequate fitness is achieved. This general process is widely used for the engineering of biocatalysts,
+enabling the development of enzymes for applications in industrial
+biotechnology. Since Sewall Wright’s
+original conception, the relationship
+between a protein’s sequence and
+its function(s) is often referred to as a “fitness landscape”. It is conventionally visualized with the position in the sequence
+space represented via Cartesian - and -coordinates and with fitness as a “height”. Proteins
+are known to exhibit rugged landscapes, where a variety of constraints means that sequences of high fitness are surrounded
+by areas of lower or even negligible activity or fitness. The objective of directed evolution is therefore to navigate this
+landscape to discover the best fitnesses possible. Unfortunately, the size of sequence space (the total number of possible
+sequences) is vast and impossible to test exhaustively, even for short
+peptides (full randomization of just 50 amino acids would produce
+a library of 20, ∼1 × 10). As
+with any combinatorial search problem, the experimenter therefore needs
+to devise a strategy that can search efficiently for improved variants
+while at the same time making libraries of a size that can be screened
+or selected for in the laboratory. We demonstrate the benefit of OR-type libraries through
+two approaches
+using monoamine oxidase-N (MAO-N) as the exemplar enzyme target. First,
+a large-scale mutagenesis approach was adopted, mutating 276 amino
+acids of MAO-N (of a total of 495 amino acids); these account for
+every residue known to exhibit a secondary structure. Our approach
+permitted several (typically up to 12) amino acids to be mutated in
+a single library without the combinatorial explosion that would occur
+when using AND-type libraries. We identified multiple variants with
+increased  toward both native and
+non-native amine substrates, including novel activity for new substrates.
+Second, we created combinatorial OR-type libraries for a Combinatorial
+Active-Site Saturation Test (CASTing). Using this
+approach, 10 active-site residues were mutated simultaneously, such
+that many different combinations of two-residue mutations were tested
+in one library. These combinatorial mutations reduced the library
+size ∼4.4 × 10-fold compared to simultaneous
+randomization of all residues (AND mutations). This enabled the screening
+of a library with more diverse mutations compared to conventional
+methods, and the rapid discovery of a new variant exhibiting activity
+toward two novel substrates. Asymmetric
+PCR for the Generation of OR-Type
+Libraries http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00063/suppl_file/sb9b00063_si_001.pdf Numerous studies have utilized asymmetric PCR for
+the purposes of site-directed mutagenesis. In this two-step process, the first step
+consists of an asymmetric PCR that generates a single-stranded DNA
+(ssDNA) product, created by using an unequal concentration of DNA
+oligonucleotide primers. The lower concentration (limiting) primer
+encoding the mutations (termed “mutagenic primer”, MP)
+becomes depleted during the early cycles of the PCR, after which the
+corresponding high concentration (excess) primer continues to amplify
+the amplicon. This generates a ssDNA product encoding all the mutations
+encoded by the mutagenic primers. Following purification, this product
+is then used as a “megaprimer” in a second PCR to amplify
+the full-length gene encoding the library (). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00063/suppl_file/sb9b00063_si_001.pdf An example of OR-type mutations. When randomizing
+multiple amino
+acids (here residues “SIK”, 20 possible amino acids
+for each position), conventional approaches mutated each residue simultaneously.
+This “AND-type” mutagenesis approach creates large numbers
+of variants, as the impact of each position is multiplicative (20
+× 20 × 20 = 8000). In contrast, OR-type libraries can randomize
+any one of these same amino acids, but not all together. In this example
+the impact of each position is additive (20 + 20 + 20 = 60), thus
+significantly reducing the size and complexity of the variant library.
+From another perspective, this OR-type approach is simplifying the
+generation of multiple libraries by synthesizing three different randomized
+libraries in one tube. OR-Type Libraries for Large-Scale Mutagenesis
+of Monoamine Oxidase-N MAO-N is an important industrial biocatalyst
+that oxidizes a variety of primary, secondary, and tertiary amines. Wild type MAO-N (uniprot: P46882) exhibits strong activity toward
+primary amine substrates (see ) that are believed to be similar to the
+native substrates (rates referred to as “wild type speed”).
+In contrast, the wild type enzyme exhibits very low activity ( = 0.17 min) toward the
+primary amine α-methylbenzylamine (α-MBA, chebi:CHEBI:670);
+however, previous directed evolution studies have generated a variant
+(I246M/N336S/M348 K/T384N/D385S termed D5) with a  of 154 min for α-MBA. Hence we devised
+a strategy to seek variants with a “wild type speed”  toward the non-native substrate α-MBA. Our large-scale mutagenesis strategy is guided by the understanding
+that amino acids throughout the protein structure, often distal to
+the active site, have a significant effect on the efficiency of catalysis
+(/ or ). Hence, creating
+mutations throughout the protein structure will enable us to detect
+those variants with significantly increased  for a panel of native and non-native amine substrates. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00063/suppl_file/sb9b00063_si_001.pdf Given that protein secondary structure often follows a regular
+binary pattern of polar (P) and nonpolar (NP) residues (e.g., amphiphilic
+helices can follow a P–NP–P–P–NP–NP–P
+pattern) one strategy to ensure that the majority
+of the searched sequence space encodes proteins with similar secondary
+structure is to follow this semiconservative binary pattern, such that the tertiary structure is more-or-less
+conserved in order to maximize the likelihood of preserving function.
+Hence, we devised a novel codon mutagenesis approach to increase the
+proportion of functional protein variants by binary patterning (). For example, when
+Leu is the starting amino acid, we mutated it using the NTN codon
+(N = A, T, G, or C) to encode Phe, Leu, Ile, Met, or Val. Similarly,
+small side-chain amino acids were mutated to others with small side-chains
+(Ala, Gly, Val) and polar residues with H-bonding potential were mutated
+to other similar residues (Ser, Tyr, Cys, Thr). Secondary structure
+predictions support the hypothesis that our variants maintain the
+α-helical and β-sheet content of the native protein, significantly
+more when compared to full amino acid randomization (). Consequently, our strategy
+is calculated to search a more “functional sequence space”. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00063/suppl_file/sb9b00063_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00063/suppl_file/sb9b00063_si_001.pdf In this study, every
+amino acid in MAO-N D5 exhibiting secondary
+structure was mutated according to our mutagenesis design (see below),
+totalling 276 amino acids. Mutagenic primers were limited to mutating
+three amino acids or less, using our design of ambiguous codons (). These primers were
+used as part of a “set” to mutate single strand α-helices
+or β-sheets in one library. In one example (, ), four mutagenic primers were created in one
+set to mutate 11 consecutive codons. Simultaneous mutation of all
+11 codons together (the same mutations but using AND-type mutations)
+would create 5.9 × 10 genetic combinations, whereas
+a corresponding OR-type library encodes 5136 combinations, a 1.1 ×
+10-fold reduction. Secondary
+structure predictions of a binary pattern library. Using
+α-helix [188]–[198] as an example, every variant encoded
+by our mutagenesis strategy was calculated for its probability of
+forming an α-helix (using NetSurfP). For each amino acid the
+calculated probability is shown (mean and standard deviation), comparing
+our approach to full randomization using the NNK codon. Our variants
+are predicted to exhibit similar levels of secondary structure compared
+to the parent sequence, significantly higher than using full randomization,
+thus supporting our strategy for maintaining secondary structure in
+our variants. An example of how OR-type libraries were
+used to mutate the secondary
+structure of MAO-N in this study. (A) The selected α-helix (residues
+[188]–[198], 11 amino acids) was divided into four, each mutating
+2 or 3 amino acids with a mutagenic primer (MP). The number of variants
+per residue is highlighted, and these follow our mutagenesis strategy.
+OR-type libraries produced by this approach encoded 5136 genetic combinations,
+a 1.1 × 10-fold reduction compared to simultaneous
+AND-type mutations. (B) The design of DNA oligonucleotides for mutagenesis
+is shown for this α-helix, aligned to the target amino acid
+sequence and corresponding DNA sequence. MAO-N Improved Variants to Non-native Amine
+Substrates Using the previously described colony-based screening
+method to analyze oxidase activity by detection of hydrogen peroxide, we screened every OR-type library using α-MBA, attempting
+to improve the  toward this non-native
+substrate. For each library, the top (fastest) colonies were selected
+and the DNA sequenced. Sequences that showed a clear selection for
+a new variant (e.g., a mutation selected multiple times) were characterized. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00063/suppl_file/sb9b00063_si_001.pdf We identified four variants with an elevated  compared to that of the D5 variant (). One variant, A289V ( = 242 min), exhibited a 1.6-fold
+increase to that of its parent D5. We compiled all the screening data
+to understand the mutability of each mutated amino acid, providing
+an insight into the  selection of every amino
+acid mutated in the study (). We discovered strong selection for 120 residues,
+where the amino acid encoded in the parent sequence was invariant.
+Conversely, many amino acids were tolerant of several different mutations
+while still maintaining good catalytic activity. In total, of those
+assessed, 53 residues could encode one other residue, 44 could accommodate
+two mutations, and 50 could accommodate three or more mutations. High-frequency
+selection for a new mutation was discovered for nine amino acids and
+each of these mutations was characterized (above). We also found that
+a strong selection for native (parent D5) residues was more frequently
+observed for amino acids closer to the protein core and to the FAD
+cofactor. Enzymatic improvements for selected MAO-N variants. (A) The most
+significant improved activity to the primary target non-native substrate
+α-methylbenzylamine was demonstrated by the D5 variant A289V,
+exhibiting a 1.6-fold increase to that of D5. (B) Every amino acid
+mutated in this study is shown, with its color denoting whether it
+(i) showed strong selection for the wild-type amino acid (red); (ii)
+exhibited robustness, where at least one alternative mutation could
+be accommodated while still maintaining activity (green); and (iii)
+exhibited strong selection for a new mutation that increased  (blue). (C) Amino acid selection (as in
+panel B) showing the secondary structure elements. Images generated
+using PyMol using MAO-N D5 structure (2vvm). (D) Improved activity
+to three native amine substrates was shown by the D5 variant F128L,
+with a  between 1.6 to 2.25-fold higher
+than the WT, and 2.2 and 3-fold higher than the parent D5 variant. MAO-N
+Activity to Native Primary Amine Substrates http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00063/suppl_file/sb9b00063_si_001.pdf In addition to
+characterizing MAO-N variants toward α-MBA,
+we also tested our variants against the native WT substrates, where
+several variants also exhibited increased activity (, ). Interestingly, the best α-MBA variant
+(A289V) was not the fastest toward these substrates, but F128L was
+faster for all three “native” substrates. F128L activity
+to -amylamine (AA, chebi:CHEBI:74848, 655 min) is the highest  published
+for MAO-N for any substrate to date, 1.7-fold higher than the WT and
+3-fold faster than its parent D5 variant. MAO-N
+Activity to Novel Substrates http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00063/suppl_file/sb9b00063_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00063/suppl_file/sb9b00063_si_001.pdf No published MAO-N variants
+to date (including WT and D5) exhibit
+detectable activity toward the primary amine cyclohexylamine (CHA,
+chebi:CHEBI:15773). However, we detected activity ( = 17 min, ) for one of our variants (A266V).
+To improve this activity, we created double mutants combining A266V
+with other mutations found in this study (both neutral and positive
+for activity). Interestingly, combining A266V with other mutations
+known to improve activity for other substrates (e.g., F128L) did not
+improve activity for CHA ( = 15 min). However, combining A266V with C50T did improve
+activity over 2-fold ( = 38 min). Interestingly, the C50T mutation alone does not
+improve activity ( toward α-MBA,
+AA, BTA, and BZA is not increased), thus demonstrating an unpredictable
+epistatic interaction between A266V and C50T. Given that neither C50
+nor A266 are positioned in the active site (29 and 16 Å from
+the FAD amine where catalysis occurs, respectively, ), such data show that residues distal
+to the active site also contribute specificity for substrates, and
+that mutagenesis of these residues can yield variants with activity
+toward novel substrates. Active Site Mutagenesis Using Combinatorial
+OR-Type Mutations http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00063/suppl_file/sb9b00063_si_001.pdf We envisaged that the benefit of OR-type
+mutations becomes more significant when this method is applied to
+screening multiple combinatorial mutations, given that its additive
+nature prevents the combinatorial explosion of mutation combinations
+associated with conventional AND-type libraries. It is worth noting
+that combinatorial OR-type mutations can also be described as AND–OR
+mutations. To demonstrate this, we created OR-type combinatorial mutations
+for 10 amino acids in and around the active site of MAO-N for CASTing.
+The residues were divided into two sets (each containing five amino
+acids) and the megaprimers for each set were pooled together in the
+second PCR step to create combinatorial OR-type mutations (, ). Each amino acid was mutated using
+the NNK codon (32 possible combinations encoding all 20 amino acids).
+Consequently, in this CASTing library every amino acid substitution
+for all five amino acids in set 1 was mutated with every amino acid
+substitution in set 2. Mutation of all 10 amino acids together (AND-type
+library) would create ∼1 × 10 codon combinations
+(= 32), whereas our library encodes 25600 combinations,
+a 4.4 × 10-fold reduction in DNA library size. Alternatively,
+to recreate each of these mutation combinations without OR-type libraries
+would require the synthesis of 25 separate libraries. This demonstrates
+the benefit of combinatorial OR-type mutations for the screening of
+many mutation combinations, significantly reducing the experimental
+effort of creating all the different mutations separately. Effectively
+this strategy permits the screening of a more diverse number of mutation
+combinations quickly in the search for improved and novel enzyme function. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00063/suppl_file/sb9b00063_si_001.pdf Screening of the CASTing library identified a new variant
+(D5 A209S/L245C)
+with novel activity to two non-native substrates (1-(3-bromophenyl)ethan-1-amine
+and 1-(3-methoxyphenyl)ethan-1-amine; ). These mutations
+were encoded in positions [1] and [5] in sets 1 and 2 (respectively, ), a combination
+that could not realistically have been predicted by structural or
+sequence analysis, thus demonstrating the benefit of our approach. In this study we demonstrate a methodology to
+create a novel type
+of variant library, whereby multiple discrete DNA regions can be mutated
+in an OR-type fashion. The result is that each region contributes
+an additive effect to the total library size (Boolean OR logic), in
+contrast to conventional site-directed mutagenesis methods (utilizing
+AND logic) where multiple mutations create a combinatorial explosion.
+Boolean logic rules have recently been exploited in different biological
+applications, most notably in synthetic biology to provide control
+over cellular systems and pathways. Siuti et al. have implemented logic gate functions in  using recombinases, while others utilize small molecules. However, to our knowledge GeneORator is the first application of
+Boolean OR logic for the construction of variant protein libraries
+for directed evolution. Here, we exploit OR-type libraries to
+implement a novel mutagenesis
+scheme based on the binary patterning feature of protein secondary
+structure. We devised an ambiguous codon design strategy and used
+this to mutate every amino acid in the secondary structure-containing
+regions of MAO-N. This design sought to conserve the pattern of polar
+and nonpolar residues present in the MAO-N sequence, an approach predicted
+to improve the proportion of variants with the secondary structure
+required to create the tertiary fold required for catalysis. Taken
+together, our mutagenesis methodology and library design enabled large-scale
+mutagenesis studies to improve the search of “functional sequence
+space”, in a way that is not economic (nor feasible) using
+existing approaches. Regardless of the codon mutagenesis strategy,
+we have demonstrated that our experimental approach was efficient
+at generating the designed OR-type mutations for screening. A similar
+strategy could be therefore be employed for different enzyme targets
+for which multiple mutations are to be created and screened. In this study we discovered several residues distal to the active
+site that conferred an increase in  in a manner that was not predictable from the knowledge of an amino
+acid sequence, tertiary structure, or catalytic mechanism. Given that
+these mutations are not predicted to alter the protein’s basic
+secondary structure, it is expected that these mutations improve activity
+through the alteration of protein dynamics during catalysis, rather
+than via major ground-state structural changes (see also refs ( and )). Recently, Curado-Carballada
+et al. described molecular dynamics simulations
+of MAO-N wild type and D5 variant, describing the presence of previously
+unknown conformations during catalysis. Interestingly, the F128L variant
+identified in this study is located close to a β-hairpin loop,
+predicted to be involved in the recognition of the different substrates. Given the knowledge of which variants had been screened in each
+library we obtained sequence-activity data for every library that
+was screened. Combining these data with that of the mutations that
+increase  provides important information
+on the selection pressure exerted on every residue in the secondary
+structure during our screening. Interestingly, combining multiple
+mutations known to improve activity together did not yield an additive
+improvement; thus, no double mutants exhibited an increased  for α-MBA above the single mutants.
+Accordingly, the highest activity variant for native substrates (F128L)
+had a neutral effect on activity for CHA (variant D5 A266V/F128L)
+while the neutral mutation C50T had an improved effect on CHA activity
+(variant D5 A266V/C50T). These data serve to illustrate the highly
+epistatic nature of this protein’s fitness landscape. There is widespread interest in exploiting  learning algorithms for biological applications. Machine learning
+provides the opportunity to learn complex sequence-activity relationships
+and to predict variants with improved fitness. Principled search algorithms such as “protein sequence
+activity relationships” (ProSAR) have been used to help engineer
+enzymes by creating partial least-squares (PLS) regression models,
+and recent updates may accommodate epistatic interactions between
+two residues. We envisage that improved technology in DNA library synthesis and
+“deep mutational scanning” will empower learning algorithms to predict proteins with improved
+fitness for a variety of directed evolution applications. Given the
+complexity of protein sequence–activity relationships, especially
+the importance of epistasis, learning algorithms require the ability
+to design specific yet complex DNA libraries for screening. GeneORator
+is capable of creating these libraries in a way that does not suffer
+from the combinatorial explosion associated with conventional libraries,
+and is a powerful tool in the rapid discovery of new biocatalysts
+with improved and novel activity. Design
+of Oligonucleotide Primers for OR-Type Libraries The MAO-N
+D5 gene (uniprot:P46882) was designed using GeneGenie and synthesized using the SpeedyGenes gene synthesis
+method, as previously described. In the design
+of OR-type libraries, first the number of target regions and the number
+of codons to be mutated were identified (typically up to four target
+regions, each containing up to three codon mutations). Flanking sequences
+to these target regions were selected, such that the annealing temperature
+() was predicted to be 60 °C at
+both the 5′ and 3′ termini. The relevant ambiguous codons
+were designed by CodonGenie then inserted
+into the oligonucleotide sequence, depending on the amino acids present
+in the parent D5 sequence. One mutagenic primer was designed for each
+target region, such that a set of primers encoded the same 5′
+and 3′ flanking sequences but each different target region
+mutations. Corresponding end PCR (nonmutagenic) primers were also
+designed with a predicted annealing temperature () of 60 °C for the 5′ and 3′ termini
+of the gene. DNA
+oligonucleotides
+were synthesized by Integrated DNA Technologies. For asymmetric PCR,
+the reaction contained 25 nM mutagenic (limiting, forward read) primer
+and 500 nM end (excess, reverse read) primer, with 0.5 ng μL template (MAO-N D5), 0.2 mM dNTP mix, Q5 reaction
+buffer, and 0.02 U μL Q5 hot-start high-fidelity
+polymerase (New England Biolabs) in 50 μL total volume. The
+PCR consisted of denaturation at 98 °C for 30 s, then 25 cycles
+of 98 °C for 20 s, 60 °C for 20 s, and 72 °C for 40
+s. PCR products containing ssDNA were purified using a PCR purification
+kit (Qiagen). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00063/suppl_file/sb9b00063_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00063/suppl_file/sb9b00063_si_001.pdf For symmetric PCR to assemble the full gene, the
+ssDNA PCR product from asymmetric PCR was used as the megaprimer (reverse
+read) together with the relevant end primer (forward read). The reaction
+contained 16.5 μL of megaprimer, 500 nM end primer, and other
+reagents as above. The PCR consisted of denaturation at 98 °C
+for 30 s, then 25 cycles of 98 °C for 30 s, 60 °C for 20
+s, and 72 °C for 40 s. For combinatorial OR-type libraries, megaprimers
+were created for each set of mutations and pooled together in the
+in the PCR above (also see ref ()). PCR products were visualized and purified by gel electrophoresis
+and gel extraction (Qiagen kit) (). Purified libraries were ligated into a linearized expression
+vector (pET16b, Novagen) using the In-Fusion cloning kit (Clontech),
+following the manufacturers’ protocol. Quality control of the
+synthesized libraries was performed using Sanger sequencing (Eurofins)
+and next-generation DNA sequencing (). Ligation reactions were
+transformed into  competent cells (T7 express,
+New England Biolabs) and spread onto an LB agar with 100 μg
+mL ampicillin covered with a Hybond-N membrane
+(Amersham Biosciences). Following incubation overnight at 30 °C,
+the membrane containing single colonies was transferred to an LB agar
+plate (100 μg mL ampicillin and 1 mM IPTG)
+and incubated for 2 h at 30 °C. Oxidase activity was then assayed
+following the protocol outlined previously. Briefly, the membrane containing colonies was transferred to a membrane
+soaked in 0.1 mg mL HRP (Sigma) and 100 mM potassium
+phosphate pH 7.7 for 30 min (the prescreen). Colonies were then transferred
+to a membrane soaked in 0.1 mg mL HRP, DAB (Sigma),
+2.5 mM α-methylbenzylamine (Sigma), and 100 mM potassium phosphate
+pH 7.7. Oxidase activity was observed by the formation of a brown
+DAB precipitate. Colonies that exhibited the fastest color change
+were picked and inoculated into LB (100 μg mL ampicillin) and grown overnight (37 °C, 180 rpm), and the plasmids
+were extracted using a plasmid miniprep kit (Qiagen). The sequencing
+of variants was performed as above. Expression and Purification
+of MAO-N Selected variants
+were overexpressed by BL21 (DE3)  strain in
+700 mL of LB medium with 100 μg mL ampicillin.
+A 0.5 mM sample of IPTG was introduced to the culture when OD reached 0.6, and the culture was incubated at 25 °C,
+180 rpm. Cells were harvested after 16–20 h and purified using
+5 mL of Histrap FF crude column (GE Healthcare) with an AKTA Explorer
+100 protein purification system as described. Different amine stock solutions
+including α-methylbenzylamine, -amylamine,
+butylamine, benzylamine, or cyclohexylamine (all from Sigma) were
+prepared in 0.1 M potassium phosphate pH 7.7. The final concentration
+range of the substrate was between 0.5 mM and 100 mM. A colorimetric
+assay solution was made up by dissolving Pyrogallol red (0.3 mM final
+concentration) in 0.1 M potassium phosphate, pH 7.7. The assay was
+conducted by combining 35 μL of substrate solution, 50 μL
+of Pyrogallol red solution and 5 μL of horseradish peroxidase
+(1 mg mL) in a flat bottom 96-well plate and started
+by adding 110 μL of purified MAO-N. Assay progress was monitored
+at 550 nm at 25 °C in a Molecular Devices Spectramex M2 plate
+reader. The data were analyzed using Prism7 (GraphPad), which was
+also used to calculate the kinetic parameters , k, and . The data sets generated during the
+current study are available from the corresponding author upon reasonable
+request..

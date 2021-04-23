@@ -1,0 +1,463 @@
+Modern biology
+has illuminated
+the complexity of molecular processes that determine cellular phenotype. For example, while mutations within the coding sequence of a gene
+can alter some phenotype, similar phenotypic effects can also arise
+without any mutations, solely from changes in the levels of the mRNA
+and protein encoded by the gene. The origins and consequences of
+gene expression changes are at least as complex and as difficult to
+unravel as those of coding sequence changes. Disrupting regulatory
+sequences or epigenetic controllers of any gene can have effects that
+propagate through the gene regulatory network causing emergent phenomena such as cell death, phenotype switching, and carcinogenesis. Moreover, gene expression levels can be tighly constrained within
+narrow ranges, or they can differ substantially from cell to cell
+in genetically identical populations, giving rise to complex expression
+patterns with phenotypic consequences. Genetic studies
+have predominantly focused on identifying and characterizing
+phenotypes associated with gene expression through knockout, knockdown,
+and overexpression, but the nuanced effects of gene expression levels
+on phenotype remain poorly understood. For example, simultaneous changes
+in the levels of two proteins can result in synergistic, nonadditive
+effects conceptually similar to mutational epistasis. As a first step toward understanding such effects, multigene
+expression control could reveal how specific protein levels jointly
+induce or suppress a phenotype. Such multigene expression-control
+methods should be precise, reliable, robust, and ubiquitously applicable
+across different cell types. They should enable engineering applications
+that investigate the cell as a black box, generating transfer functions
+of cellular outcomes given a set of gene expression inputs, and may
+be critical for cell fate reprogramming in biomedical applications. Synthetic biology is primed
+to provide such gene expression control
+methods. Synthetic gene circuits are comprised of non-native
+DNA and can manipulate the expression of genes in response to a multitude
+of cues, including external chemicals or intracellular signaling events,
+with possible applications in cellular control, perturbation, reprogramming,
+and outcome reporting. For example, the
+gene expression linearizer circuit offers precise
+protein level tuning compared to widely used induction systems like
+Tet-On, which can have a steep dose–response
+region with uncharacterized variability, making it difficult to titrate
+inducer dosage to achieve desired levels of gene expression. The linearizer
+gene circuit architecture utilizes negative feedback to beget uniform
+protein levels proportional to external inducer dose for any single
+gene. However, whether linearizer gene circuits can independently
+and precisely control the expression of two genes in mammalian cell
+lines has been unexplored. Multigene expression control was
+previously accomplished in yeast
+through the use of human hormone-inducible regulators. However, without negative autoregulation such
+gene circuits might generate nonlinear and noisy gene expression responses.
+Nonlinearity and cell–cell variability can complicate cellular
+control or mapping of gene expression to cellular phenotype. Lastly,
+those gene circuits, while functional in yeast, cannot readily translate
+to mammalian cells due to the use of estradiol and progesterone hormone
+inducers, which are biologically active in mammalian cells and prone
+to elicit off-target cellular responses. Multigene expression control
+has been implemented in mammalian cells as well, but without negative
+feedback, and with unknown variability. Currently, independent and precise control of multigene expression
+in mammalian cells is lacking. Here we introduce a chemically
+inducible system of dual orthogonal
+linearizers to enable studies of individual and joint contributions
+of multiple gene expression levels toward an observable phenotype
+or behavior in mammalian cells. Together, orthogonal linearizer gene
+circuits provide a system that can simultaneously overexpress a pair
+of genes to desirable levels independently and precisely in the same
+cell. This enables exploring the phenotypic landscape of multigene
+expression, to reveal epistasis-like effects unexpected from separately
+controlling single protein levels, or to implement multigene control
+toward the induction of a specific phenotype or cell reprogramming. Developing
+an Orthogonal Linearizer Using the PhlF Repressor
+Protein Gene expression linearizers are gene circuits that
+can linearly and precisely increase the expression of a target gene
+according to inducer dose in eukaryotic cells. This linear, low-noise dependence of average gene expression
+on induction is due to negative autoregulation and identical promoters
+controlling gene expression. The TetR-mLin linearizer gene circuit
+used the Tet repressor protein (TetR) binding to two  operator sequences (2x) in two identical promoter
+regions to repress its own expression as well as that of a reporter
+gene. Increasing concentrations of Doxycycline
+(Dox) relieve repression by TetR, causing the average expression of
+both TetR and the target eGFP protein to increase linearly, with low
+variability across the effective Dox concentrations. This TetR-mLin
+gene circuit can control a gene of interest (GOI) downstream from
+another copy of the TetR-regulated promoter or under the same promoter,
+using a 2A sequence to produce a tetR-GOI
+multicistronic transcript. To precisely
+and independently control the expression of multiple genes simultaneously,
+we aimed to construct a second inducible linearizer gene circuit that
+could function in tandem with the existing TetR-mLin gene circuit.
+Previously, we have shown that TetR-based linearizer gene circuits
+function robustly in yeast and various mammalian cell lines if TetR
+self-represses and its promoter is identical with that of the target
+gene. Whether this holds for a different repressor protein has not
+been tested. In order to replicate the same linearizer gene circuit
+architecture, we chose the candidate repressor protein PhlF, a TetR
+homologue originally derived from . Like TetR, the
+PhlF transcriptional repressor protein contains both a ligand and
+a DNA binding domain. The addition of the inducer chemical 2,4-diacetylphloroglucinol
+(DAPG) allosterically prevents PhlF binding
+to a 30 bp operator sequence ( site). We designed two variants of the PhlF-mediated negative feedback
+gene circuit (PhlF-mLin). These variants bore either a single PhlF
+operator site upstream of the initiator element (PhlFs-mLin) or two
+operator sites flanking the initiator (PhlFd-mLin) in the strong CMV
+promoter driving PhlF expression (). We linked PhlF repressor protein expression
+to the mCherry fluorescent reporter protein through a porcine teschovirus-1
+2A (P2A) self-cleaving peptide. This minimal design allowed us to
+control both PhlF and mCherry expression through a common promoter
+as required by linearizer design, while minimizing sequence length
+to aid in genomic integration. As previously described, these designs featured a nuclear localization
+sequence (NLS) to increase nuclear repressor concentration, Kozak
+sequence (KS) to optimize translation rate, and the Woodchuck post-transcriptional
+regulatory element (WPRE) to increase expression. Our goals were to
+generate a linear, low-noise gene expression response to inducer dose
+with (i) low basal expression in the OFF state; (ii) a high range
+of DAPG doses wherein the gene circuit responds linearly; (iii) appreciable
+fold induction between induced and uninduced states; and (iv) low
+gene expression noise measured as the coefficient of variation (CV). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00534/suppl_file/sb9b00534_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00534/suppl_file/sb9b00534_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00534/suppl_file/sb9b00534_si_001.pdf To test these criteria in the
+novel PhlF linearizer gene circuit
+prototypes, we integrated both genomically into HEK 293 cell lines
+and assessed clonal DAPG dose responses through flow cytometry. In
+order to insert these and subsequent gene circuits into the same genomic
+locus in single copy robustly and reliably, we used Flp-In-293 cells
+bearing a Flp-recombinase compatible FRT site in a well-expressed genomic locus. To minimize any heritable variability
+that could confound our assessment, we sorted polyclonal populations
+into single cell clones prior to downstream experimentation. DAPG
+did not affect the growth rate of the cells. We measured the dose
+response of the cell lines bearing the PhlF-mLin gene circuits across
+a broad range of DAPG concentrations (0 to 25 μM DAPG). For
+each cell line bearing a circuit variant, we seeded samples at different
+inducer concentrations, and allowed gene expression to stabilize over
+∼2 days (confirming that the histograms did not change in time).
+We then measured the steady-state mean and coefficient of variation
+(CV) of fluorescence intensity at each of the inducer doses. Both
+variants showed linearity of mean fluorescence with increasing DAPG
+concentrations prior to saturation (a, d) and consistently
+low noise as measured by CV across all doses (c, f). Single cell
+fluorescence distributions were uniformly narrow and unimodal across
+doses (b, e) and between experimental replicates (). Both variants had comparable
+basal expression in the absence of DAPG () and had linear dose–responses of
+mean fluorescence as measured by L1-norm and  regression (). The PhlFd-mLin
+gene circuit had a higher maximum fold induction, exhibited more pronounced
+linearity across a broader range of inducer doses, and had lower gene
+expression noise as measured by average CV (, b,c and e,f, ) than the PhlFs-mLin variant. Overall, these results
+demonstrate that the existing linearizer gene circuit design applies
+to a repressor different from TetR, enabling similar functional characteristics. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00534/suppl_file/sb9b00534_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00534/suppl_file/sb9b00534_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00534/suppl_file/sb9b00534_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00534/suppl_file/sb9b00534_si_001.pdf To compare these novel phlF-based gene circuits against previously
+established TetR-based linearizer gene circuits, we inserted a TetR-mLin
+construct into the HEK 293 Flp-In cell line as described above and
+conducted a flow cytometry dose response across a validated range
+of Doxycycline concentrations. We likewise
+quantified fluorescence mean and CV dose–responses (g–i and ). As expected, eGFP fluorescence mean
+increased linearly with inducer concentrations (g), with low noise (i, ). We observed
+a somewhat greater range of linearity and fold induction (, ) than previously reported in other cell lines with
+random integration of the TetR-mLin gene circuit. Interestingly, the dose–responses of both PhlF-mLin
+gene circuits had lower slopes than TetR-mLin, requiring larger inducer
+doses to approach saturation. To investigate why this occurs, we conducted
+computational modeling as previously described, which suggested that slower diffusion of DAPG compared to Doxycycline
+across the cell membrane could be causing this slope difference (). Schematic
+of orthogonal linearizer gene circuits: TetR-mLin (top)
+and PhlF-mLin (bottom). At the core of each gene circuit a self-repressing
+protein (TetR and PhlF). The repressor protein inhibits its own expression
+as well as that of the corresponding reporter protein (eGFP and mCherry,
+respectively). A different chemical inducer (Dox and DAPG, respectively)
+alleviates each repression. We created two variants (inset) of the
+PhlF-mLin circuit: one with a single phlFO operator site upstream
+of the initiator element, and another with two operator sites flanking
+the initiator. Steady-state dose responses of individual PhlF-mLin (top)
+and TetR-mLin
+(bottom) gene circuits. (a) Mean mCherry fluorescence intensity calculated
+across 3 independent replicates for each DAPG inducer concentration.
+Flow cytometry measurements of single operator variant phlFs-mLin
+cells cultured under different DAPG doses were taken after the histograms
+did not change anymore (, at steady state). Error
+bars represent standard deviation. The black dashed line is a linear
+fit across the corresponding DAPG inducer concentration range. (b)
+Representative steady-state fluorescence distributions of phlFs-mLin
+at selected doses. (c) Average CV of phlFs-mLin mCherry fluorescence  DAPG inducer concentrations. Error bars represent
+standard deviation calculated across 3 independent replicates per
+inducer dose. (d) Mean mCherry fluorescence calculated across 3 independent
+replicates for each DAPG inducer concentration. Error bars represent
+standard deviation. The black dashed line is a linear fit across the
+corresponding DAPG dose range. (e) Representative fluorescence distributions
+of phlFd-mLin at selected doses. Flow cytometry results of the double
+operator variant phlFd-mLin cells cultured under different DAPG doses.
+(f) Average CV of phlFd-mLin mCherry fluorescence  DAPG inducer concentration. Error bars represent standard deviation
+calculated across 3 independent replicates per inducer dose. (g) Mean
+eGFP fluorescence intensity calculated across 3 independent replicates
+per Dox inducer concentration. Flow cytometry measurements of TetR-mLin
+cells cultured under different Dox doses were taken after the histograms
+did not change anymore (, at steady state). Error
+bars represent standard deviation over 3 replicates. The black dashed
+line is a linear fit across the corresponding Dox inducer concentration
+range. (h) Representative fluorescence distributions of TetR-mLin
+at selected Dox concentrations. (i) Average CV of TetR-mLin eGFP fluorescence
+intensity  Dox inducer concentrations. Error
+bars represent standard deviation calculated across 3 independent
+replicates per inducer concentration. Evaluation Metrics of Clonal Cell
+Lines Bearing Variant Linearizer Gene Circuits Investigating Clonal Heterogeneity http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00534/suppl_file/sb9b00534_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00534/suppl_file/sb9b00534_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00534/suppl_file/sb9b00534_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00534/suppl_file/sb9b00534_si_001.pdf To investigate whether
+gene expression control by the linearizer gene circuits depends on
+the clones bearing the gene circuit, we tested fluorescent reporter
+expression of uninduced and induced isogenic clones () across the two PhlF promoter variants ( = 7 clonal cell lines). We found heterogeneity in dose–response
+across clones, possibly reflecting genetic and epigenetic clone–clone
+differences in global gene expression control. The double operator
+site PhlFd variant, on average, produced clones with lower basal expression
+( < 0.001, ) than the single operator PhlFs variant. Both double operator site
+linearizers (TetR-mLin and PhlFd-mLin) exhibited stronger correlations
+between uninduced and induced expression levels than those of the
+single operator PhlFs-mLin (), suggesting that additional operator sites strengthen the correlation
+between basal expression and saturation levels (). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00534/suppl_file/sb9b00534_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00534/suppl_file/sb9b00534_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00534/suppl_file/sb9b00534_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00534/suppl_file/sb9b00534_si_001.pdf To further understand the variability
+in dose response between clones, we performed flow cytometry measurements
+of higher dose resolution for 3 clones per PhlF-mLin variant (). We found that both variants exhibited
+similar dose–responses (). However, the PhlFd-mLin gene circuit had markedly lower CV and
+therefore gene expression noise (). Across these clones, the PhlFd-mLin gene circuit’s dose–response
+tended to be linear over a greater range of inducer doses (0 to 8.4
+μM DAPG) than the PhlFs-mLin circuit (0 to 5.7 μM DAPG, ). Assessing Orthogonality
+through Inducer Response To
+orthogonally control the expression of two genes simultaneously, linearizer
+gene circuits constructed with different repressor proteins should
+not be cross-inducible. That is, the presence of DAPG in the growth
+medium of cells integrated with TetR-mLin should not elicit eGFP fluorescence
+response, and the presence of Dox should not cause mCherry fluorescence
+changes in cells genetically modified with the phlF-mLin circuit.
+For orthogonal control in the space spanned by the two inducer concentrations,
+visually we expect the PhlF-mLin and TetR-mLin gene circuits to generate
+planar bivariate dose response surfaces, each dose–response
+plane being parallel to one inducer axis and orthogonal to the vertical
+coordinate plane containing the other inducer axis. In other words,
+we expect smooth, planar dose response surfaces of mean fluorescence,
+each invariant either  Dox or  DAPG concentrations in the growth medium (a). Such linear bivariate mappings from inducers onto two
+noninteracting protein levels, wherein the total reporter level depends
+additively on the inducer concentrations, are a special case for more
+complex mappings. Deviations of a phenotype from such additivity would
+indicate interacting gene expression inputs in future applications. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00534/suppl_file/sb9b00534_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00534/suppl_file/sb9b00534_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00534/suppl_file/sb9b00534_si_001.pdf To assess the ability of the PhlF-mLin
+gene circuits to reliably
+and precisely actuate gene expression irrespective of the induction
+state of the TetR-mLin gene circuit, we cultured both linearizer cell
+lines in the presence of either Dox or DAPG. TetR-mLin cells exhibited
+a marked increase in eGFP fluorescence in the presence of Doxycycline
+but behaved as their uninduced cohort in the presence of DAPG. Likewise,
+PhlF-mLin cells increased mCherry fluorescence when cultured in media
+containing DAPG, but did not respond to Dox induction. (b,c) To confirm and quantify
+these findings with greater sensitivity, we conducted 2-dimensional
+dose response measurements across 4 Dox doses and 7 DAPG doses within
+the linear range of each gene circuit on stably selected clonal TetR-mLin
+and PhlF-mLin cell lines. Indeed, we observed that each gene circuit
+still functioned as expected, producing bivariate dose–response
+planes with no visible cross-talk effects from the presence of the
+other inducer chemical. (d,e) We found no significant differences between Dox
+induction groups ( > 0.05) in phlF-mLin cells
+under
+cross-induction as evidenced by one-way analysis of variance (). Likewise, we found no significant
+differences in TetR-mLin cells across DAPG induction (). The mean CV of each gene circuit remained
+low and did not change appreciably across the dose pairs, resulting
+in flat, uniform planes. () Taken
+together, these findings suggest that these gene circuits are not
+cross-inducible (are orthogonal) and thus can be used in tandem. Bivariate
+dose–responses of gene expression for cell lines
+bearing single phlF-mLin and tetR-mLin gene circuits. (a) Schematic
+representation of expected bivariate dose–response surfaces
+(planes) for the PhlF-mLin (left) and TetR-mLin (right) gene circuits
+under pairwise induction by Dox and DAPG. (b) Fluorescence images
+of polyclonal HEK 293 Flp-In cells harboring stably integrated phlFs-mLin
+gene circuit cultured in media without inducer chemicals, Dox-only
+media, and media containing Dox and DAPG. Overlaid eGFP and mCherry
+channels show mCherry expression only in the presence of DAPG. Scale
+bars represent 500 μm. (c) Fluorescence images of polyclonal
+HEK 293 Flp-In cells harboring stably integrated TetR-mLin gene circuit
+cultured in media without inducer chemicals, DAPG-only media, and
+media containing Dox and DAPG. Overlaid eGFP and mCherry channels
+show eGFP expression only in the presence of Dox. Scale bar: 500 μm.
+(d) Bivariate dose response (plane) of clonal HEK 293 Flp-In cells
+harboring the stably integrated phlFd variant of the PhlF-mLin gene
+circuit. Surface representation of mean mCherry fluorescence expression
+across pairwise DAPG and Dox induction doses. Error bars represent
+standard deviation calculated from 3 independent replicates per inducer
+dose-pair. (e) 2-Dimensional slices through the mCherry fluorescence
+plane showing mean fluorescence across DAPG inducer concentrations
+for different Dox concentrations (red colors). (f) 2-Dimensional slices
+through the mCherry fluorescence plane showing mean fluorescence across
+Dox inducer concentrations for different Dox concentrations (green
+colors). No significant differences between Dox groups were detected
+by one-way ANOVA ( > 0.05). (g) Bivariate dose
+response
+of clonal HEK 293 Flp-In cells harboring stably integrated TetR-mLin
+gene circuit. Surface (plane) representation of mean eGFP fluorescence
+expression averaged from 3 replicates across pairwise DAPG and Doxycycline
+induction doses. Error bars represent standard deviation calculated
+from 3 independent replicates per dose-pair. (h) 2-Dimensional slices
+through the eGFP fluorescence planes showing mean fluorescence across
+DAPG inducer concentrations for different Dox concentrations (red
+colors). No significant differences between DAPG groups were detected
+by one-way ANOVA ( > 0.05). (i) 2-Dimensional
+slices
+through the eGFP fluorescence plane showing mean fluorescence across
+Dox inducer concentrations for different Dox concentrations (green
+colors). Multiplexing Orthogonal Linearizer Gene Circuits http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00534/suppl_file/sb9b00534_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00534/suppl_file/sb9b00534_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00534/suppl_file/sb9b00534_si_001.pdf To
+determine whether the TetR and PhlF linearizer gene circuits could
+operate orthogonally in the same cell, we integrated a plasmid bearing
+the TetR-mLin gene circuit into the genome of cell lines with a stably
+integrated PhlF-mLin gene circuit. The plasmid bore constitutively
+expressed zeocin resistance (zeoR) protein which allowed us to select
+for successful integration events with zeocin. Cells surviving selection
+were single cell sorted, expanded, and assessed for orthogonality
+using a 2-dimensional dose response as outlined above. The fluorescent
+reporters chosen in this study were spectrally resolvable, with no
+visible cross-talk between channels. The bivariate steady-state dose–responses
+to two inducer concentrations were linearly increasing planes of protein
+expression, with no cross-induction effects in single cells bearing
+multiplexed linearizers (, ). The expression of mCherry as measured
+by mean fluorescence increased linearly with DAPG concentration. Also,
+mCherry fluorescence for cellular populations induced with increasing
+concentrations of Dox were invariant to Dox dose ( > 0.05, ), generating horizontal
+lines parallel to one another and to the Dox inducer axis for increasing
+DAPG concentrations (c). Similarly, eGFP protein expression as a function of Dox
+induction behaved linearly with no significant response to DAPG levels
+in the medium (f,  > 0.05, ). Noise remained consistently low and did not vary across paired
+inducer concentrations for either gene circuit. These results demonstrate
+that TetR-mLin and PhlF-mLin gene circuits may be used for precise,
+independent, and orthogonal multigene expression control, raising
+the potential for testing phenotypic responses to multiple protein
+levels in mammalian cells. Assessing experimental orthogonality of multiplexed
+linearizer
+circuits. (a) Bivariate dose response of mean mCherry fluorescence
+intensity in HEK 293 Flp-In cells harboring both stably integrated
+phlF-mLin and TetR-mLin gene circuits within the same clonal cell
+line  pairwise DAPG and Dox inducer concentrations.
+Error bars represent standard deviation calculated from 3 independent
+replicates per inducer dose-pair. (b) 2-Dimensional slices through
+the mCherry fluorescence plane showing mean fluorescence across DAPG
+inducer concentrations for different Dox concentrations (red colors).
+(c) 2-Dimensional slices through the mCherry fluorescence plane showing
+mean fluorescence across Dox inducer concentrations for different
+Dox concentrations (green colors). No significant differences were
+found in mCherry fluorescence between groups of Dox concentrations
+(ANOVA,  > 0.05) (d) Bivariate dose–response
+of average mCherry CV across pairwise DAPG and Dox induction doses.
+(e) Bivariate dose–response (plane) of mean eGFP fluorescence
+expression averaged from 3 replicates across pairwise DAPG and Doxycycline
+inducer concentrations. Error bars represent standard deviation calculated
+from 3 independent replicates per dose-pair. (f) 2-Dimensional slices
+through the eGFP fluorescence plane showing mean fluorescence across
+DAPG inducer concentrations for different Dox concentrations (red
+colors). No significant differences were found in eGFP fluorescence
+between groups of DAPG concentrations (ANOVA,  >.05).
+(g) 2-Dimensional slices through the eGFP fluorescence plane showing
+mean fluorescence across Dox inducer concentrations for different
+Dox concentrations (green colors). (h) Bivariate dose–response
+of average eGFP CV across pairwise DAPG and Dox inducer concentrations. Current heterologous
+expression systems are limited in their ability
+to precisely induce gene expression responses in mammalian cell lines.
+Linearizer gene circuits can tune the protein levels of a GOI placed under the control of
+a synthetic promoter. However, cell states and phenotypes are often
+controlled by multiple genes. Likewise, to understand how genes relate
+and interact with one another to produce cell-level responses, we
+need to control the expression of multiple genes. We previously have
+built a TetR-based linearizer gene circuit capable of precisely controlling
+gene expression in various cell types. Ideally, many such linearizers operating independently
+and orthogonally to one another could achieve precise multidimensional
+gene expression control and multivariate phenotype mapping. Toward
+this goal, we constructed additional linearizer circuits utilizing
+a different repressor (PhlF) and its operator sequences, which had
+no operational cross-talk with TetR. We outlined the design, construction
+and validation of the PhlF-based linearizer gene circuit. We further
+demonstrated the orthogonality of this gene circuit to the TetR-based
+linearizer gene circuit and showed the ability of the combined dual-linearizer
+system to control the expression of two individual GOIs precisely
+when genomically integrated into Flp-In-293 cells. Such a toolset
+would beget novel methods of perturbational investigation of nonadditive
+gene expression effects and would enable
+biomedical applications in cellular reprogramming and beyond. Further modification and optimization of the PhlF-mLin
+gene circuit
+orthogonal to TetR-mLin may be possible through the consideration
+of other repressors of the phl gene cluster as well as other inducers in the form of DAPG analogues. One such potential repressor is the  gene.
+This gene-product has recently been identified to bind a 35-bp sequence
+motif in the promoter of  to negatively inhibit
+DAPG biosynthesis in  This mechanism
+is a similar motif to repression through PhlF. The phlH repressor
+protein interacts strongly with DAPG, but has other binding partners,
+including MAPG, which may be used as inducers. Other variants of the TetR-orthogonal PhlF repressor-based
+gene circuit may result in different dose response functions. Moreover,
+other repressors could be employed to
+build additional gene circuits orthogonal to both TetR-mLin and PhlF-mLin. This work focuses on building a technological framework that is
+broadly applicable, bearing the potential to promote basic biology
+or biomedical research. These two orthogonal linearizer gene circuits
+permit precise, linear control of key genes, allowing the investigation
+of the phenotypic landscape through linearly
+tunable expression of driver genes. Depending on the desired experimental
+design, the endogenous GOIs may be deleted in the cell line prior
+to reintroduction under linearizer control. Considering the length
+of the phlFO operator, the orthogonality to the TetR-mLin system,
+and the apparent lack of DAPG toxicity, this new system should be
+broadly applicable for controlling specific protein levels in eukaryotic
+cells, with minimal side effects. Gene regulatory networks governing
+phenotypic outcome are often
+complex. They consist
+of many feedback processes, interacting with one another in nontrivial
+ways. Therefore, studying how network modifications alter gene expression
+and thereby phenotype is difficult. This work serves to broaden the
+range of investigational methods of gene pair relationships. Multiplexed linearizer gene circuits can be used for basic biological
+research of selective and precise perturbation of genes interacting
+with one another in complex networks. They can reveal unexpected interactions between the
+expression levels of two genes, which is analogous to studies of epistasis
+between two or more coding sequence changes. Likewise, these gene circuits can be used for cellular reprogramming or measurements of titrated gene expression contributions toward
+a disease state. For the construction of the PhlF-linearizer,
+DNA bearing a portion of the CMV promoter and either 1× and 2×
+PhlF operator sites and corresponding restriction sites were synthesized
+by GenScript and restriction cloned into the tetR-linearizer plasmid.
+The PhlF and the mCherry genes were cloned in through overlap PCR
+and restriction digest. Plasmids
+were integrated
+into HEK 293 Flp-In cells (Invitrogen, R750–07) through Flp-recombination
+using the pOG44 vector (Invitrogen, V600520) in a 9:1 ratio or pCAG-FlpO
+(Addgene, 63798) in a 1:1 ratio. Two μg total DNA was introduced
+into 1–2 × 10 cells per well using the Lipofectamine
+3000 transfection kit (Life Technologies, L3000008), used as per manufacturer’s
+instructions. Approximately 90% transfection efficiency was confirmed
+with positive control transfection of constitutive eGFP (pmaxGFP,
+Lonza). A negative control was transfected with only the linearizer
+plasmid to test for random integration. Cells were selected 3 days
+post transfection with 50 μg/mL Hygromycin B (Invitrogen, 10687–010).
+Selection dose was chosen  standard kill curve.
+All control wells did not survive selection. Surviving cells
+were single cell sorted into a 96 well plate and grown out for 2 weeks
+before being passaged to flasks. Clones were selected through flow
+cytometry with two inducer doses representing ON/OFF to verify single
+cell population with a uniform fluorescence response. Due to a small
+subpopulation silencing the inset, we maintained selection pressure
+in between flow cytometry experiments. For random integration
+of the TetR-mLin gene circuit into a stably
+expressing cell line bearing a PhlF-mLin gene circuit, we randomly
+integrated the plasmid pDN-D2irTNG4kwh into a clonal HEK 293 PhlF-mLin
+cell line. Two μg total DNA was introduced into 1–2 ×
+10 cells per well using the Lipofectamine 3000 transfection
+kit (Life Technologies, L3000008), used as per manufacturer’s
+instructions. Approximately 90% transfection efficiency was confirmed
+with positive control transfection of constitutive eGFP (pmaxGFP,
+Lonza). A negative control was transfected with only the linearizer
+plasmid to test for random integration. Cells were selected 3 days
+post transfection with 700 μg/mL Zeocin (Thermo Fisher Scientific,
+R25001). Selection dose was chosen  standard kill
+curve. The control well did not survive selection. Dose Response
+and Flow Cytometry Clonal populations
+were outgrown and plated onto 96-well plates at a seeding density
+of 5–10 × 10 cells per well. Cells were dosed
+with media containing appropriate doses of Doxycycline, DAPG, or both,
+with 3 dose replicates per experiment. After a 48 h induction period,
+cells were trypsinized with 0.25% Trypsin-EDTA (Life Technologies,
+25200056), resuspended in calcium and magnesium free 1× DPBS
+(Life Technologies, 14190250), and underwent flow cytometry on a BD
+LSR Fortessa. We obtained 3–10 000 FSC/SSC gated events
+per sample in the FITC (530/30 nm) and PE-Cy5 (695/40 nm) channels.
+Each dose level consisted of 3 replicate samples. For fluorescence microscopy,
+cells were passaged onto 6-well plates and induced for 48 h prior
+to imaging. Images were acquired on a Nikon TiE inverted fluorescence
+microscope equipped with a Nikon DSQi2 Digital Camera using CFI Plan
+Fluor 10×/0.30/16.00 objective and ET Sputter Coat Ex470/40 Dm495
+Bar525/50 FITC/GFP filter for EGFP and a ET Sputter Coat Ex560/40
+Dm585 Bar630/75 TX Red filter for mCherry. Composite images with scale
+bars were assembled in Nikon NIS Elements. FCS files were gated and analyzed using
+custom MATLAB scripts. Cells were adaptively gated with a density-threshold
+fit of log-transformed SSC and FSC values per sample to exclude debris
+and cell clumps. To normalize out autofluorescence from the data,
+we measured fluorescence of the HEK Flp-In parental cell line and
+subtracted the mean fluorescence of the appropriate channel from each
+sample flow event. L1-norm analysis, linear regression fits
+and  were computed for a moving dose
+window starting from uninduced (0 μM DAPG or 0 ng/mL Dox) to
+maximal induction dose used experimentally per gene circuit. Statistical tests including two-sample  tests
+and one-way ANOVA for assessing differences between clones and between
+cross-induced groups, respectively, were conducted in Matlab..

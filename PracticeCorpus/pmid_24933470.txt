@@ -1,0 +1,315 @@
+Transcription activator-like
+effectors (TALEs), proteins secreted by  plant pathogenic bacteria, have been
+a major breakthrough in the rapid and systematic targeting of any
+DNA sequence of choice. Efforts in developing TALE technology have led to applications such
+as activation, repression, deletion, and insertion of a desired DNA
+sequence in an ever-expanding range of model organisms and cell types. TALEs have a modular DNA-binding domain (DBD) consisting of
+repetitive
+sequences of residues; each repeat region consists of 34 amino acids (Figure ). A pair of residues at the 12th
+and 13th position of each repeat region determines the nucleotide
+specificity and are referred to as the repeat variable diresidue (RVD). The last repeat region, termed the half-repeat,
+is typically truncated to 20 amino acids. Combining these repeat regions allows synthesizing sequence-specific
+synthetic TALEs. The C-terminus typically contains
+a nuclear localization signal (NLS), which directs a TALE to the nucleus,
+as well as a functional domain that modulates transcription, such
+as an acidic activation domain (AD). The endogenous NLS can be replaced by an organism-specific localization
+signal. For example, an NLS derived from the simian virus 40 large
+T-antigen can be used in mammalian cells. The RVDs HD, NG, NI,
+and NN target C, T, A, and G/A, respectively. Recent studies
+suggest that NH has a higher specificity for G than NN and results
+in stronger TALE binding. The nucleotide
+preferences of commonly used RVDs appear in Figure . This basic code enables DNA targeting where each RVD corresponds
+to a specific nucleotide. Out of the
+RVDs that have close to a one-to-one correspondence, HD and NH bind
+more strongly to DNA and target C and G, respectively. A list of RVDs and their binding preferences
+for nucleotides appears in Table . There are additional TALE RVDs that can be used for
+custom degenerate
+TALE-DNA interactions. For example, NA has high affinity for all four
+bases of DNA. Additionally, N*, where
+* is an RVD with a deletion in the 13th residue, can accommodate all
+letters of DNA including methylated cytosine. Further work has also shown that S* has the ability to bind to any
+DNA nucleotide. An important consideration
+toward building efficient TALEs is to
+include at least 3–4 strong RVDs in the TALE array while avoiding
+more than 6 weak RVDs in a row, especially at either end of the repeat
+region. For TALEs tested as transcriptional
+activators, the most efficient DBDs range from 15.5 to 19.5 repeats. Identification of new RVDs will likely continue as evidenced
+by
+the characterization of TALE protein analogs recently discovered in . These “RipTALs”
+have a similar repeat variable diresidue domain and several RipTAL
+RVDs appear to have affinity for specific letters of DNA. In the case
+of the  effectors, ND targets C, HN targets
+A and G, and NP prefers C, A, or G. To conclude, it is important to mention that TALE proteins prefer
+a thymine to precede the targeted DNA sequence and may have lower
+affinity for sequences that lack this 5′ T. Additionally, the Brg11 RipTAL prefers a guanine to precede
+the target DNA. Structural
+representation of a transcription-activator-like effector.
+Top left: the corresponding RVD for each letter of DNA, including
+5-methylcytosine. Bottom left: the DNA binding domain of the TALE
+protein includes several repeat modules of 34 residues flanked by
+an N and C-terminus, which may include mammalian NLS or functional
+domains. Right: a list of domains for fusion to TALE and their function
+within cells. Nucleotide
+preference of commonly used RVDs. The affinities for
+all four nucleotides appears for each RVD normalized to the strongest
+reported affinity of RVD HD for letter C. Two separate groups have helped elucidate the crystal structure
+of TALEs. The results show that HD and NN form stronger interactions
+with DNA by forming hydrogen bonds. In contrast, weaker domains, such
+as NG and NI form van der Waals interactions with DNA. Deng et al. examined the crystal structure of dHax3, an artificially
+synthesized TALE with 11.5 repeats comprised of HD, NG, and NS, in
+the DNA-bound and DNA-free states. The
+dHax TALE has a right-handed superhelical pitch of 60 Å, which
+is reduced to 35 Å in the DNA bound state; overall, there is
+a compression of the superhelical structure in the DNA-bound state
+that adds to the flexibility of TALEs binding to DNA with minor shifts. Mak et al. investigated the crystal structure of PthXo1, a TALE
+protein with 23.5 repeats. The structure
+of PthXo1 bound to DNA suggests that a proline at the 27th position
+of each repeat may be important for the consecutive packing of TALE
+repeats and for the TALE-DNA association. Compared to Deng et al.,
+Mak et al. studied a naturally occurring TALE and analyzed a wider
+variety of RVDs, including HD, NG, NI, NN, NS, N*, and NG. Both
+studies analyzed TALE crystal structure data of the TALE DNA-binding
+domain. Recent work on the crystal structure of the N and C-terminus
+of the TALE protein shows that residues 162–288 of the N-terminus
+have four repeat regions that directly bind to DNA and are structurally
+similar to the TALE repeats without specificity. A number of online tools
+are available today for designing TALEs
+to target a specific DNA sequence. Accordingly, commercially available
+kits (summarized in Table ) allow rapid, custom
+assembly of TALE repeat regions between the N and C-terminus of the
+protein. These methods can be used to assemble custom DBDs,
+which are then cloned into an expression vector containing a functional
+domain. Most options for  synthesis
+of TALEs or
+TALE nucleases (TALENs) in the laboratory combine digestion and ligation
+steps in a Golden Gate reaction with type II restriction enzymes. Higher-throughput assembly methods of TALE proteins include Ligation-Independent
+Cloning (LIC), Fast Ligation-based Automatable
+Solid-phase High-throughput (FLASH) assembly, and Iterative-Capped Assembly (ICA). FLASH uses a library of 376 plasmids containing 1-, 2-, 3-, or 4-mers
+to synthesize up to 96 TALEs in less than a day. Alternatively, the iterative capped assembly (ICA) method
+constructs TALEs by sequentially adding monomers to create custom
+length TALEs in parallel without relying on an extensive library. Finally, LIC uses larger overhangs (10–30
+bp) than Golden Gate based assembly; these overhangs remain stable
+during transformation and eliminate the need for a prior ligation
+step. Furthermore, LIC has high fidelity, eliminating the need for
+a selection procedure under optimal conditions. Table  contains a list of TALE
+assembly options. Repositories and libraries of TALE proteins
+may prove important
+in allowing rapid and high-throughput application of this technology.
+An initial effort involved the synthesis of a library of 18 740
+TALEN pairs that span the human genome. Toward genetic screen applications, we recently developed a methodology
+to construct versatile transcription activator-like effector libraries. As a proof of principle, we built an 11-mer
+library that covers all possible combinations of the nucleotides that
+determine the TALE-DNA binding specificity (i.e., approximately 4
+million TALEs). Considering the highly modular nature of TALEs and
+the versatility and ease of constructing these libraries we foresee
+broad implications for genomic assays. Given the application
+of TALE proteins across the genome, one of
+the major concerns with this new technology lies in mitigating off-target
+effects. TALE-NT 2.0 ranks target sites for key characteristics including
+off-target effects (using Target Finder for TALEs or Paired Target
+Finder for TALENs). The off-target predictions
+are based off of RVD nucleotide preference detailed by Moscou and
+Bogdanove. Furthermore, TALgetter is
+a recently developed computational tool that incorporates positive
+and negative efficiencies of each RVD in addition to RVD sequence
+specificities. TALENoffer uses the TALgetter
+algorithm to specifically address off-target effects. TALENoffer can
+rank potential off-target sites and incorporate several parameters
+including homodimer and heterodimer nuclease domains as well as evaluating
+both strands of genomic DNA. Cellectis Bioresearch 4–12 weeks Basic: 4 weeks, validation
+of TALEN with SSA yeast assay. First: 4–9
+weeks, confirmed efficiency in human cells
+and mouse/rat cell lines upon request; validation by deep sequencing. Premium: 12 weeks, validation in custom cell lines,
+and validation
+by deep sequencing. Create TALEs of either 17.5 or 23.5 repeats. Binding sequence must be 19 or 25 bp long and the 5 end must contain a T. Options include a
+nuclease (Fok1), activator (VP16), repressor
+(KRAB), or a functional domain of choice (MCS). Creates TALE nucleases
+(Fok1) or activators (VP64). Offers various
+levels of validation from basic sequencing (2
+weeks) to chromosomal level functional validation (8 weeks). Also offers “safe-harboring” a selected
+gene
+in the AAVS1 chromosomal location via TALEN mediated homologous recombination. TAL library made of 96-mer repeats. Can adopt to high-throughput (automated) or medium
+throughput
+(hand) synthesis. Uses type II restriction endonucleases to ligate anywhere from
+10.5 to 30.5 repeats. Monomers are added
+to a growing chain to create the complete
+DNA binding domain (DBD). Allows custom creation
+of DBD of any length. Library of 2-, 5-, 6-, or 18-mer
+repeats used to assemble a
+DBD with medium or high-throughput. Under
+optimal conditions, additional selection steps can be
+eliminated, reducing the total time. Robotic assisted high-throughput liquid phase assembly. Produces TALE activators, repressors, and nucleases
+that target
+between 14 and 31 base pairs. Functional Domain
+Based Repression and Activation TALE activators and repressors
+function across many eukaryotic
+systems. The majority of the
+repression examples rely on fusing the TALE with a functional domain
+known to interfere with the RNA Polymerase II complex. TALEs with
+either the KRAB domain or the mSin3 interacting
+domain inhibit mammalian transcription. Furthermore,
+TALE repressors in combination with post-transcriptional repressors
+such as shRNA show virtually complete repression in mammalian cells. For activation, fusing the herpes simplex
+virus derived VP-16 or
+VP-64 activation domains to a TALE can cause an increase in transcription. Weaker activation domains such as the AD of human NF-κB add
+to the variety of options for gene activation. Furthermore, as shown on endogenous promoters, combinations of TALE activators can be used
+to introduce synergistic effects. Several C-termini modifications
+have shown robust increase in gene
+expression and may enable stronger activation. Miller et al. used
+a Δ152 truncation (+152) at the N-terminus based on a previous
+study and experimented with truncating
+the C-terminus. Out of the C-terminal truncations tested (+278, +133,
++95, +23), they found that +95 amino acids (AA) yielded nearly ∼70-fold
+higher activation in comparison to the original TALE. Mussolino et al. looked at N and C-termini truncations
+using a luciferase assay and found that 153 AA at the N-terminus and
+17 AA at the C-terminus gave optimal results. Zhang et al. also studied several truncations and found the TALEs
+had the most efficient activation with +240 AA and retained ∼80%
+of activity with +147 AA upstream and +68 AA downstream of the DNA
+binding domain. Data suggests that
+the N-terminus is more important to conserve
+than the C-terminus. While it appears that the ideal TALE architecture
+depends on the specific conditions, it can be concluded from these
+studies that at least 100 residues are needed at the N-terminus and
+∼60 residues at the C-terminus. TALE
+nucleases utilize a C-terminal fusion with the type II restriction
+enzyme FokI to create a heterodimer which produces a double-stranded
+break (DSB) in DNA. Nuclease-induced
+DSBs are repaired by nonhomologous end joining (NHEJ) or homologous
+directed repair (HDR), where homologous recombination (HR) is the
+most important type of HDR. NHEJ is an error-prone mechanism that
+results in a functional gene knockout by creating small insertions
+or deletions (indels) while HR, in combination with a template donor
+DNA sequence, results in a gene insertion or direct nucleotide exchange. Introducing heterodimerization for nuclease activity has been
+a
+significant step toward minimizing off-target effects, first with
+zinc finger nucleases and then with TALENs. Using this technique, two TALEN proteins must
+bind to the plus and minus strand of DNA to create a FokI heterodimer
+and form a double-stranded break. TALENs have been useful in creating knockout strains and studying
+mutations in a variety of organisms such as bacteria, yeast, plants, nematodes, fish, embryos, human cell lines, rodents, and rat embryonic stem cells. In addition,
+TALE nucleases have successfully modified human stem cells, allowing
+editing and gene expression tools for tissue engineering. Several assays allow researchers to assess the cutting efficiencies
+of TALENs. The surveyor method can be used
+to detect DSBs by PCR amplification. Another method is the traffic
+light reporter (TLR) assay, which can be used to determine whether
+a TALEN cuts the target DNA and induces NHEJ or HR. A mutated GFP
+and a frameshifted RFP provide the initial target DNA for the TALEN.
+If HR occurs, a functioning GFP protein replaces the mutated GFP;
+if NHEJ occurs, red fluorescence protein (RFP) is shifted into frame. Though TALE nucleases have wide applications,
+the double strand
+breaks they create are predominately repaired by NHEJ. NHEJ and HR
+are believed to be competing pathways. Error-prone NHEJ is greatly reduced by utilizing TALE nickases,
+which only cut a single strand of DNA. TALE-MutH has recently been
+shown to be an efficient, programmable nickase. Here, a single TALE-MutH protein created the desired single-stranded
+break (SSB) in DNA, thereby inducing the HR repair mechanism. Other
+strategies to create TALE nickases may involve the FokI nuclease,
+where one unit of the heterodimer is catalytically inactive. Site-specific recombinases
+(SSRs) can integrate, excise, or invert
+specified DNA segments. Most SSRs are part of one of two major families:
+tyrosine (λ) recombinases and serine (resolvase/invertase) recombinases.
+Tyrosine recombinases use a Holliday junction to break and rejoin
+single strands in pairs while serine recombinases introduce a DSB
+before strand exchange. Mercer
+et al. created recombinatorial TALE proteins (TALER) by
+fusing a Gin invertase, a serine recombinase, to edit both mammalian
+and bacterial cells at specific locations. This study also shows that in  longer targets
+of 26 and 32 bp recombined 100 fold more efficiently than the shorter
+targets of 14 and 20 base pairs. Translating this assay to mammalian
+cells showed a ∼20 fold efficiency with a 44 bp target and
+∼6 fold efficiency with a 32 bp target, much lower than the
+observed efficiencies in . In mammalian cells,
+the combined use of a zinc finger recombinase and TALER to create
+a heterodimer improved recombinase activity. The presence of methylation on DNA
+target regions was initially
+recognized as a potential limitation of the TALE technology. Subsequently,
+computational modeling of the TALE structure data suggests that RVDs
+which have relatively small side-chains or a deletion at residue 13,
+such as HG and N* respectively, could prevent steric hindrance at
+methylated cytosine (mC). studies confirm that TALENs with N* better accommodate
+methylated regions of DNA. However, HG
+and N* are not highly selective and can accept a purine as well. Further structural analysis from Deng et al. suggests that
+NG may
+also be able to recognize mC. In the
+TALE cipher, NG normally targets T, but experimental data shows that
+methylated cytosines can be targeted by a TALE with NG. Thus, TALE DBDs engineered to target potentially
+methylated DNA targets may require the RVD N* in order to accommodate
+methylated cytosine or cytosine and therefore
+target a region in a state of dynamic methylation. Alternatively, applications that require specific identification
+of mC could utilize NG, which recognizes mC but has low preference
+for cytosine. The ability of TALEs to
+target methylations may allow introducing
+modifications on the DNA level. Indeed, a fusion of the LSD1 demethylase
+to TALE was recently used to demonstrate epigenetic control in mammalian
+cells. The TALE-LSD1 fusion altered the chromatin at enhancers and
+modified gene expression. An approach to regulate TALEs involves the
+use of dimerization
+domains controlled by a small molecule. In this work, the TALE was fused with the Rheo receptor protein,
+which can dimerize with a second protein called the Rheo activator
+that contains a functional domain (e.g., an activation VP-16 domain).
+While the TALE-Rheo receptor fusion can bind to its DNA target, it
+lacks an activation domain and thus does not regulate transcription.
+After the addition of a small molecule, GenoStat, the TALE-Rheo receptor
+dimerizes with the Rheo activator tethered to the VP-16 activation
+domain. The small molecule control of TALE expands the ability to
+bring inducible control to any promoter. The same small molecule dimerization
+methodology was recently adopted to demonstrate inducible control
+of endogenous genes. The protein
+dimerization methodology also allows
+interfacing the function of TALEs with endogenous signals,
+such as hypoxia. In particular, by fusing a TALE DBD with ARNT, which
+forms a heterodimer with the transcription factor HIF-1α under
+hypoxia or CoCl treatment, a TALE can modulate transcription
+in response to hypoxia. Both the ARNT and Rheo fusions led to activation
+of the target promoter under dimerization with the application of
+GenoStat showing a clear dose dependent activation of the target promoter. Recent work on light-inducible transcriptional
+activators (LITEs)
+can be used for spatiotemporal regulation of TALEs. Here, a TALE DBD-CRY2 complex dimerizes with CIB-VP64 when
+induced with blue light (466 nm). This system shows TALE activity
+in as little as 30 min (∼5-fold activation) after blue-light
+induction with full saturation at 12 h (∼20-fold activation).
+The system also demonstrated epigenetic modification using epiTALEs
+where an TALE-CIB1 complex dimerizes with a CRY2-histone effector
+domain in blue light, resulting to 2–3 fold reduction of the
+target gene mRNA. Protein dimerization also allows implementation
+of Boolean logic
+where individual vectors express different parts of a TALE protein
+but only become functional as intein fragments are spliced and combined. Notably, when designing the individual components,
+the placement of the splice site requires careful consideration of
+the secondary structures. Finally,
+TALEs can be used synergistically to fine-tune gene expression.
+Maeder et al. targeted DNA-hypersensitive regions for three genes:
+VEGFA, NTF3, and the microRNA cluster miR-302-367. For the VEGFA gene, 54 TALES were made and tested individually
+for nine regions. Additionally, repeat lengths varying from 14.5 to
+24.5 were tested. In general, TALEs with 16.5–20.5 repeats
+had the highest efficiency, and the results showed up to a 114 fold
+increase in activation above basal level. Synergistic effects for
+all three regions were subsequently tested. Interestingly, for the
+VEGFA region, the 6 TALEs had a synergistic effect when transfected
+at 1/6 the amount of each individual TALE but no synergistic effect
+when transfected together at the higher individual dosage. Of the
+three genes, miR-302-367 had the most noticeable synergistic effect
+with approximately 50-fold increase using all five TALEs together
+rather than each individual effector. Synergistic TALEs may be useful
+to significantly increase efficiency but may increase off-target effects
+at the same time. Perez-Pinera et al. targeted
+four genes, IL1RN, KLK3, CEACAM5, and ERBB2, with six to eight synergistic
+TALEs. Additional data suggests that open chromatin may not be a prerequisite
+to selecting an efficient TALE target site and silenced genes may
+be activated by synergistic TALEs. Testing all 63 possible combinations
+of TALEs for IL1RN, KLK3, and CEACAM5 showed highly tunable gene expression. TALEs hold promise in
+addressing current challenges in rewiring
+endogenous and engineered networks to achieve synthetic biology goals. A timeline listing TALE research papers of outstanding interest
+appears in Figure . The opportunity to apply
+custom-made transcriptional activation and repression, targeted cutting
+and genome modifications, and epigenetic control greatly expands the
+synthetic biology toolkit and will enable the implementation of more
+complex genetic circuits. This genome editing and transcriptional
+control tool is rapidly advancing toward higher precision and efficiency. Furthermore, recent results in optogenetics and small molecule-based dimerizations allow for highly controllable TALE and TALEN
+spatiotemporal function. While transcription activator-like
+effectors show significant promise
+there are still plenty of opportunities for improving their function.
+Single-nucleotide precision in transgene integration and modifications
+remains a challenge for custom genome editing and genetic engineering. Another key challenge is increasing the nuclease selectivity for
+HDR or NHEJ. Finally, while recent results
+offer tools to assess unintended activity, additional work must be performed to ensure tight regulation and
+quality control, particularly toward therapeutics and industrial scale
+applications. Timeline of papers in TALE technology development..

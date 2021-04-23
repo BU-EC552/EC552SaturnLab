@@ -1,0 +1,624 @@
+The construction of a synthetic
+minimal cell is a main challenge in synthetic biology, where bottom-up
+approaches are being utilized to create biological mimicking structures.
+The idea behind building a synthetic minimal cell is to assemble a
+minimum of cellular components (nucleic acids, enzymes, lipids, .) to create a “living cell”, capable of
+executing basal cellular functions. One of the key features defining a cell as a living entity is its
+ability to self-reproduce in which the expansion of the cellular membrane
+is a critical aspect. One approach toward a growing boundary layer
+is the  synthesis of its building blocks followed
+by its self-assembly. Previous attempts on  synthesis of membranes have mainly been based on fatty acids (FAs),
+due to their ability to spontaneously assemble into micelles. However, the intrinsic properties of FAs give them a dynamic profile,
+which allow them to appear as vesicles as well. Large multilamellar
+FA vesicles could be grown by feeding the system with FA micelles,
+causing the multilamellar structures to ultimately divide. Moreover, a simple nonenzymatic FA synthesis
+reaction could be coupled to vesicular growth and division, as an
+example of autocatalytic self-reproduction. Although, these are first steps toward the synthetic engineering
+of a self-reproducing system, membranes based on FAs are intrinsically
+unstable and do not encompass a sizable lumen. In contrast, biological
+membranes consist of much more complex molecules, of which phospholipids
+are the major component. Their amphipathic character allow them to
+orient in a bilayer-like structure to support the barrier function.
+Unlike the previously mentioned simple fatty acid containing membrane
+mimics, additional intrinsic properties of the different types of
+phospholipids are of major importance. This is illustrated
+by the cytoplasmic membrane of ,
+which consists almost completely out of the zwitterionic phospholipid
+phosphatidylethanolamine (PE, 70–75%), the anionic phosphatidylglycerol
+(PG, 20–25%) and depending on the growth phase, varying amounts
+of cardiolipin (CL, 0–10%). While CL is a nonessential component,
+a proper balance is needed between the bilayer forming PG and the
+nonbilayer PE to support the activity of membrane proteins. Anionic
+phospholipids are needed to stabilize membrane proteins and promote
+membrane association of peripheral membrane proteins, while nonbilayer
+lipids are needed for membrane protein folding and assembly. Evidently, any synthetic biology approach toward a self-reproducing
+membrane must rely on phospholipids. Although some successes have
+been obtained for  vesicle formation by assembly
+and chemical synthesis of phospholipid-like structures, most research has focused on the addition of components to a pre-existing
+membrane. Several attempts have been made to mimic boundary layer
+growth  using synthetic compartments, of
+which liposomes are considered the most suitable model due to their
+structural similarity with cellular membranes. For example, chemical
+synthesis of artificial phospholipid resulted in liposomal growth
+and subsequent division of the giant vesicles, which could be coupled
+to amplified DNA proliferation. A more biology based
+approach is illustrated by the enzymatic addition of FAs to pre-existing
+liposomes resulting in spontaneous incorporation, followed by expansion
+of the membrane. Further enzymatic conversion
+of fatty acids into phospholipids is, however, essential to support
+the activity of membrane proteins and to obtain a stable membrane
+system. The most realistic representation of membrane growth
+would be to
+perform the synthesis from within a liposome. In this respect, enzymes
+derived from an  transcription/translation
+system have been encapsulated into liposomes and enzymatic activity was confirmed, Unfortunately, the low fidelity
+of this system combined with experimental limitations of liposome
+encapsulation, render phospholipid biosynthesis highly inefficient
+and insufficient to achieve appreciable liposome growth. To avoid
+the problem of low enzyme production yields, liposomes were recently
+fed with newly synthesized proteins and lipid precursors from the
+outside. However, also in this case phospholipid
+formation was inefficient and the claimed membrane growth of <1%
+from supplied FA-CoA was too small to experimentally demonstrate expansion.
+Furthermore, FA-CoA is an expensive compound and therefore an unsuitable
+building block for the construction of an economically viable synthetic
+cell. Therefore, any approach aiming at appreciable membrane growth
+a mechanism of CoA recycling is needed. To circumvent issues
+with protein synthesis through transcription/translation,
+purified enzymes can be used. We have recently pioneered this method
+to resolve some of the remaining open questions in archaeal ether
+phospholipid biosynthesis. Complete reconstitution
+allows for a simplified design with the potential to produce substantial
+amounts of phospholipids to generate a membrane that grows by expansion.
+Such a system would allow for studies on complex processes that in
+living cells are linked to membrane expansion, among which cell division
+and the insertion of membrane proteins into the lipid bilayer. Here,
+we report on the design and engineering of a complete  phospholipid biosynthesis pathway using eight purified (membrane)
+proteins, to realize the enzymatic conversion of simple fatty acid
+precursors into the final phospholipid species phosphatidylethanolamine
+(PE) and phosphatidylglycerol (PG), two major components of bacterial
+membranes. Since synthesis coincides with the incorporation of lipid
+precursors into a pre-existing liposomal membrane, biosynthesis of
+chemical amounts of phospholipids resulted in membrane expansion and
+yielded membranes in which the polar headgroup and acyl chain composition
+can be altered on demand. Phospholipid Biosynthesis
+Pathway Design Phospholipid
+synthesis has been studied in great detail in the bacterium  and the enzymes involved have been identified
+and characterized. We used the  system as a template to
+develop a versatile  phospholipid biosynthesis
+pathway, combined with enzymes derived from other sources (a). The main principle
+of this pathway is based on a feed with free fatty acids (FAs) to
+yield fatty acyl-Coenzyme A (FA-CoA) that is utilized with glycerol
+3-phosphate (G3P) to generate phosphatidic acid (PA). The PA is further
+converted into phospholipids with different head groups and acyl chain
+composition through a series of additional enzymatic steps. In  phospholipid synthesis starts with the biosynthesis
+of FA-CoA by the type II fatty acid synthase (FASII) using malonyl-CoA
+and acyl-CoA as substrates. However, a more simple approach is to
+use the catabolic enzyme FadD involved in β-oxidation of FAs. Whereas, FASII is a multicomplex enzyme, that carries out cycled
+chain-elongation and subsequent acyl-carrier protein coupling, FadD
+uses already premade FAs in a simple two-step conversion, resulting
+in the direct production of FA-CoA from FAs, adenosine-triphosphate
+(ATP) and CoA. The use of FadD further adds to the versatility of
+the system, as the acyl chain composition in the system can be readily
+determined by the feed of different FAs. The next step is the attachment
+of two acyl-chains to glycerol 3-phosphate (G3P). In , two membrane-associated proteins are responsible for these acylation
+reactions, , glycerol 3-phosphate acyltransferase
+(PlsB) and lysophosphatidic acid acyltransferase (PlsC). PlsB transfers an acyl-chain on to the 1-position of G3P, resulting
+in lysophosphatidic acid (LPA). Subsequently, PlsC attaches another
+acyl-chain to the 2-position of LPA, resulting in PA, a central intermediate
+in phospholipid biosynthesis. As both these enzymes recognize FA-CoA
+as an acyl-chain donor, they can be easily combined with the aforementioned
+FadD. Moreover, the CoA is completely regenerated in these steps and
+thus made available to FadD to activate further FAs. Although a PA-only
+membrane may fulfill some basic requirements such as the barrier function,
+it will not support the activity of membrane proteins. Therefore,
+PA needs to be converted into the two key phospholipid species, phosphatidylethanolamine
+(PE) and phosphatidylglycerol (PG). For this purpose, the central
+precursor cytidine diphosphate-diacylglycerol (CDP-DAG) needs to be
+synthesized from PA with cytidine triphosphate (CTP) by CDP-diacylglycerol
+synthase (CdsA). Next, two additional conversions are needed to yield
+either PE or PG. CDP-DAG can be converted into phosphatidylserine
+(PS) by PS synthase (PssA) utilizing serine, whereupon PS is converted
+into PE by PS decarboxylase (Psd). CDP-DAG can also be converted into
+phosphatidylglycerol-3-phosphate (PGP) by PGP synthase (PgsA) followed
+by the removal of the 3-phosphate by one of the PGP phosphatases (PgpA,
+PgpB, or PgpC) yielding PG. We have previously demonstrated the  conversion
+of PA into PG and PS by using the above-mentioned enzymes from . Interestingly,
+the enzyme PssA from  was far less active  compared to the corresponding enzyme from . Therefore, to develop a high fidelity  phospholipid synthesis pathway, the  PssA was employed. To construct an  phospholipid biosynthesis
+pathway, a substantial quantity of the individual enzyme is needed.
+Herein, the genes of all required enzymes, ,
+8 in total (), were cloned separately into a His-tag containing pET-based overexpression
+vector allowing their overproduction. As most of the enzymes are membrane
+(associated) proteins, membranes were isolated from the overproducing
+strains, after which the enzymes were solubilized with the detergent -dodecyl-β--maltoside (2%, w/v). Subsequently,
+proteins were isolated using Ni-NTA agarose affinity chromatography,
+resulting in pure enzyme fractions (b). Schematic representation of the  phospholipid
+biosynthesis pathway and protein purification. (a) FadD converts simple
+fatty acid (FA) building blocks into acyl-chain donors which are utilized
+by the enzymes PlsB and PlsC to form lysophosphatidic acid (LPA) and
+phosphatidic acid (PA), respectively. PA is further converted into
+CDP- diacylglycerol which serves as precursor for biosynthesis of
+phosphatidylethanolamine (PE) and phosphatidylglycerol (PG). (b) Coomassie
+stained SDS-PAGE gel of the eight lipid biosynthesis enzymes purified
+by Ni-NTA chromatography. The upper-band in lane 6 displays a dimer
+of PgpA. The two bands in lane 8 represent the two individual subunits
+of the Psd enzyme. Proteins Used in
+This Study and Their
+Characteristics number of
+(predicted) TM segments PMP,
+peripheral membrane protein. IMP, integral membrane protein. Formation of Phosphatidic Acid in Detergent Solution http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00265/suppl_file/sb7b00265_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00265/suppl_file/sb7b00265_si_001.pdf For
+the biosynthesis of the bilayer forming phospholipid PA, only
+three enzymes are needed (a). FadD catalyzes the coupling of CoA to a fatty acid
+substrate. This two-step process is driven by the hydrolysis of ATP
+into AMP, resulting in the production of the FA-CoA. When purified FadD was incubated with ATP, CoA and oleic
+acid (C18:1), mass spectrometry demonstrated the formation of the
+CoA derivative (a) concomitantly with the consumption of the FA. In the absence of
+ATP, no conversion was observed. CoA-limiting conditions resulted
+in a proportional consumption of oleic acid and generation of oleoyl-CoA,
+and increased CoA concentrations resulted in higher levels of oleoyl-CoA
+(a), without
+any product feedback inhibition (). The activity of FadD was not further influenced by the presence
+of phospholipids () and could
+be carried out in solution. These data demonstrate that FadD can be
+used to supply the anticipated biosynthesis system with FA-CoA derivatives. PlsB and PlsC both utilize FA-CoA
+to attach the acyl chain on the
+first and second position of glycerol-3-phosphate (G3P), respectively.
+Previous studies on overexpressed PlsB suggest that the enzyme is
+fully integrated into the membrane. However,
+an analysis of the average predicted hydropathy-profile of a family
+of bacterial PlsB homologues (b), does not signify any transmembrane segment, suggesting
+the enzyme may rather be membrane associated. Nevertheless, PlsB could
+be purified from membranes, and efficiently produced LPA from oleoyl-CoA
+and G3P, but only in the presence of phospholipids (mixture of DOPG,
+DOPE and DOPC, 1:1:1 molar ratio) (d). Interestingly, the oleoyl-CoA was completely
+converted into LPA, which contradicts an earlier study that suggested
+a negative feedback inhibition by free CoA on PlsB activity. Although a phospholipid requirement was noted
+before, the need for individual phospholipid species
+is as yet unknown. To further address this, PlsB activity assays were
+performed in the presence of liposomes with different phospholipid
+compositions. Whereas in the presence of both DOPE and DOPG, complete
+conversion of oleoyl-CoA into LPA was obtained in 30 min, replacement
+of either phospholipid species for DOPC resulted in significantly
+lower conversion efficiencies. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00265/suppl_file/sb7b00265_si_001.pdf In contrast to PlsB, the average
+hydropathy analysis of a family
+of bacterial PlsC homologues (c) predicts a single transmembrane segment at the N-terminus.
+This region may function as a membrane anchor to catalyze LPA to PA
+conversion at the membrane interface. PlsC was isolated from membranes
+of an  overexpressing strain (b). When purified
+PlsC in detergent solution was fed with oleoyl-CoA and LPA, formation
+of PA was observed (e). Although the addition of phospholipids seems to enhance
+the PA production, they are not essential for PlsC its activity (e). When PlsC was
+combined with PlsB in detergent solution, a feed with oleoyl-CoA and
+G3P resulted in the formation of PA (), thereby setting the basic requirements for the projected phospholipid
+biosynthesis pathway. Two fundamentally different approaches
+toward a growing membrane
+can be perceived, , the  synthesis of membranes through self-assembly of the phospholipids
+into a bilayer, and growth of an already existing membrane through
+further addition of phospholipids. The  phospholipid
+synthesis pathway did not support  membrane
+synthesis because of the necessity of phospholipids for PlsB mediated
+acyl-chain attachment. Moreover, many of the other proteins involved
+in phospholipid synthesis are multimembrane spanning enzymes, which
+require membranes for proper functioning. Therefore, the system depends
+on the use of already pre-existing membranes for  phospholipid synthesis and membrane expansion, thereby representing
+the natural situation. activity of purified FadD, PlsB and PlsC.
+(a) FadD activity: reactions were performed in the presence of purified
+FadD, as specified. Subsequently, 0.1% of the internal standard DDM
+was added. Products were analyzed by LC–MS, normalized for
+the internal standard and plotted on the -axis.
+Hydropathy profile alignment of (b)  PlsB
+and (c) PlsC (red line), with the averaged hydropathy profile of their
+bacterial protein family (black line). (d) PlsB and PlsC activity.
+Reactions were performed in the presence of purified enzyme and 0.1%
+DDM. Products were analyzed by LC–MS, normalized and plotted. Reconstitution of Phosphatidic Acid Formation To establish
+a system for membrane growth, the enzymes needed for PA formation
+were combined in a single reaction setup and reconstituted into liposomes.
+Herein, PlsB and PlsC were added to a reaction mixture containing
+liposomes such that the final detergent concentration remained below
+its critical micelle concentration (CMC) (0.01%). In this way, the
+liposomes remain intact. To these membranes FadD was added and when
+supplied with oleic acid, CoA, ATP and G3P, a complete conversion
+of oleic acid into PA was observed (a). When only FadD and PlsB were present,
+small amounts of PA were formed, likely because of a contamination
+of PlsB with some PlsC. Using this liposomal system, the phospholipid requirement
+was re-examined.
+In the presence of both DOPG and DOPE, large quantities of oleic acid
+(2.7 mM) were completely converted into PA (b). In the absence of DOPE, the yield of
+PA formation was reduced by 50% even though reactions were carried
+out overnight, whereas in the absence of PG, still complete conversion
+was obtained under the aforementioned conditions. Thus, in the liposomal
+system, PlsB depends more strongly on DOPE than on DOPG. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00265/suppl_file/sb7b00265_si_001.pdf An
+important feature of the three-step cascade reaction toward
+PA biosynthesis is the recycling of CoA. Recycling was validated by
+testing PA formation at concentrations of CoA that were up to 65-fold
+lower than that of oleic acid, which thus would limit FadD for the
+formation of oleoyl-CoA. Indeed, in the presence of FadD and limiting
+amounts of CoA (50 μM), only part of supplied oleic acid (2.7
+mM) was converted into oleoyl-CoA (b). Further addition of PlsB and PlsC resulted
+in the conversion of all oleic acid into LPA/PA which implies that
+the synthesis involves recycling of CoA. Furthermore, when the amount
+of the PlsB and PlsC enzyme is taken into account, it can be concluded
+that the system not only recycles CoA but also catalyzes at least
+2500 turnovers under the conditions employed. Following this procedure
+over time, in about 6 h almost all oleic acid is converted into PA
+(). Due to the broad substrate
+specificity of FadD in β-oxidation,
+the FadD dependent conversion of other FAs into their FA-CoA derivatives
+would provide a mechanism to generate phospholipids with an acyl chain
+composition that mimics that of biological membranes. In addition
+to oleic acid (C18:1). three other fatty acids, , stearic acid (C18:0), palmitoleic acid (C16:1) and palmitic acid
+(C16:0) were tested for PA biosynthesis. Herein, an equimolar mixture
+of these four fatty acids was supplied as substrates to FadD, and
+formation of the different LPA and PA species was examined by mass
+spectrometry. In the presence of FadD and PlsB, all FAs were converted  their respective FA-CoA derivatives into the corresponding
+LPA molecules (a,b). Addition of PlsC results in the production of almost all possible
+variants of PA, although a preference is noted for species with acyl-chains
+that contain at least one double bond (c). Furthermore, stearoyl-CoA and LPA (C18:0)
+both appear to be less preferred substrates as these were only slowly
+incorporated into PA (b,c). Since this phenomenon was not apparent when only the
+combined activity of FadD and PlsB was tested, these data suggest
+that PlsC prefers the unsaturated and shorter acyl chain substrates.
+This matches the  distribution of various
+acyl chains in the phospholipids of (−) Summarizing, the reconstituted system supports a three-step conversion
+of a multitude of FAs and G3P into PA with high efficiency, which
+is limited only by the amount of FAs supplied to the system. synthesis of PA by
+FadD, PlsB and PlsC.
+(a) Stepwise conversion of oleic acid into PA. Reactions were performed
+in the presence of purified enzymes reconstituted into liposomes.
+Products were analyzed by LC–MS, normalized for the internal
+standard POPG and plotted. (b) Synthesis of PA at high oleic acid
+concentration. Reactions were performed as described above, after
+which 0.1% of the internal standard DDM was added. Lipid products
+were analyzed as described above and plotted. Synthesis of
+PA with varying acyl chain composition. An equimolar
+ratio of four different fatty acid species were mixed together and
+incubated with FadD, PlsB and with or without PlsC, and reconstituted
+into liposomes in the presence or absence (control) of ATP as indicated.
+Levels of the four fatty acid species (a), four LPA species (b) and
+nine PA species (c) are displayed for the three reaction conditions.
+Products were analyzed by LC–MS, normalized for the internal
+standard POPG and plotted. Reconstitution of Polar Headgroup Attachment The second
+stage of phospholipid biosynthesis is the formation of CDP-diacylglycerol
+(CDP-DAG), and the subsequent attachment of polar head groups. Previously,
+we have shown that PA can be converted  into
+PG and PS with the corresponding enzymes in detergent solution. However, for membrane growth these reactions
+need to be performed in the absence of detergent. As several of the
+enzymes involved in polar headgroup addition are integral membrane
+proteins (),
+reconstitution into liposomes was again achieved by low detergent
+incorporation keeping the concentration of -dodecyl-β--maltopyranoside below the CMC. Biosynthesis of PE and
+PG starts with the production of the central precursor CDP-DAG from
+PA and CTP by the enzyme CdsA, which attaches a CDP onto PA by dephosphorylating
+CTP. In the absence of CTP, the PA synthesized by the enzyme cascade
+FadD/PlsB/PlsC could not be converted by CdsA (a,b). Addition of CTP resulted in formation
+of CDP-DAG, but the activity was low and most of the PA remained unused.
+Increasing the reaction time or the CdsA concentration did not improve
+biosynthesis (data not shown). We hypothesize that the limited PA
+conversion is caused by a feedback inhibition of CdsA by its product
+CDP-DAG, a phenomenon that has been observed for the CDP-DAG synthesizing
+enzyme from  as well. Therefore, the reaction was coupled to the conversion
+of CDP-DAG into phosphatidylglycerol-3-phosphate (PGP). This reaction
+is catalyzed by the enzyme PgsA that utilizes the glycerol 3-phosphate
+(G3P) already present in the assay. Indeed, in the presence of PgsA,
+high level production of PGP was observed while the further addition
+of the phosphatase PgpA caused the complete conversion of PA into
+PG (a). Similarly,
+a high level of PS production was observed when the system was supplemented
+with PssA and its substrate -serine. Subsequent addition
+of phosphatidylserine decarboxylase, Psd, resulted in formation of
+PE (b). In
+these experiments, introduction of the polar headgroup enzymes and
+their substrates resulted in a complete conversion of PA. Since CDP-DAG
+now is an intermediate in the reaction and does not accumulate to
+high levels, these data support the notion of feedback inhibition
+of CdsA by its product CDP-DAG. More importantly, the work demonstrates
+the functional reconstitution of the entire phospholipid biosynthesis
+pathway with purified enzymes reconstituted in liposomes. biosynthesis of (a) PG, (b) PE and (c)
+mixtures of PE and PG from oleic acid and glycerol 3-phosphate. Reactions
+were performed in the presence of purified enzymes reconstituted into
+liposomes. Products were analyzed by LC–MS, normalized for
+the internal standard POPG and plotted. Reconstitution of a Mixed Phospholipid Membrane http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00265/suppl_file/sb7b00265_si_001.pdf The
+next aim was to simultaneously synthesize PE and PG  by combining all the enzymes used in the aforementioned pathway
+thereby mimicking phospholipid biosynthesis in  cells. In addition, the exact amounts of phospholipids produced
+were quantified by calibration of the mass spectrometry signals based
+on PE and PG standards (). Six enzymes involved in either PE or PG biosynthesis from FAs
+were mixed, and synthesis was initiated by the addition of 2.7 mM
+oleic acid. This resulted in the production of 1.2 mM PG (90%) and
+1.35 mM PE (95–100%), respectively (c), which is close to the theoretically expected
+conversion efficiency as two oleic acid units are needed to form a
+single phospholipid. Subsequently, all eight enzymes were mixed to
+yield a reaction in which both PE and PG are produced simultaneously.
+By varying the ratio of the PG forming enzymes PgsA and PgpA, and
+the PE forming enzymes PssA and Psd, the ratio of PG over PE could
+be adjusted such that a phospholipid mixture is obtained that mimics
+the typical native molar ratio of 30:70 (c). Again, in these reactions the conversion
+of FA into phospholipid is nearly complete. These data show that the
+lipid species composition of the membranes can be controlled on demand. Although phospholipids are synthesized from within the cell, in
+our system substrates and enzymes are supplied from outside of the
+cell. Hereby, we avoid the problem of low substrate availability encountered
+in the past during attempts to mimic vesicle growth from within liposomes.
+Our approach differs dramatically from previous attempts to generate
+phospholipid (,) that could
+only yield minute quantities of phospholipids under poorly controlled
+conditions. As most of the proteins involved in phospholipid synthesis
+are membrane proteins, correct insertion/reconstitution is essential
+for their functionality.  this is a highly
+regulated process where membrane insertion and folding occurs  the Sec-translocon in conjunction with protein synthesis
+at the ribosome. Earlier attempts to synthesize phospholipids were
+based on a low fidelity  enzyme transcription/translation
+system, which resulted in slow and only partial (50%) conversion of
+supplied substrates, while product quantities were too low to observe
+any appreciable membrane growth. Instead, we used the membrane proteins
+isolated from overexpressing  cells and
+these were reconstituted into pre-existing liposomes through detergent
+dilution. As a result, complete conversion of large amounts of substrate
+through all expected intermediates into multiple phospholipid species
+occurred simultaneously. Membrane Expansion by Phospholipid Biosynthesis To
+visualize membrane expansion, a fluorescent assay was used which is
+based on the self-quenching properties of the lipophilic fluorophore
+octadecyl rhodamine B (R18). This probe is commonly used to follow
+membrane mixing during vesicle fusion, and the degree of fluorescence
+quenching decreases upon reduction of the R18 concentration in the
+membranes. Thus, phospholipid biosynthesis
+should result in increased levels of R18 fluorescence. The pre-existing
+liposomes were supplemented with 5 mol % R18, resulting in highly
+quenched fluorescence, which was relieved after the membranes were
+solubilized with the detergent Triton X-100. Subsequently, the enzymes
+and their substrates where added to the R18 labeled liposomes to initiate
+phospholipid synthesis. This resulted in an immediate increase of
+the R18 fluorescence that, by the addition of Triton X-100, increased
+to the reference maximal fluorescence level (). The sudden increase in fluorescence, did
+not dependent on phospholipid biosynthesis, but can be solely attributed
+to the addition of FAs causing swelling and expansion of the liposomes.
+Remarkably, the conversion of oleic acid into PA by the added enzymes
+and their substrates did not result in a further change in fluorescence,
+although under these same conditions mass spectrometry demonstrates
+that all FAs were converted into PA (b). The data suggest that oleic acid initially
+partitions into the liposomes, causing membrane expansion. However,
+this expansion is maintained upon the complete conversion of the FAs
+into PA. Since the level of R18 quenching is linearly correlated with
+the
+concentration of R18 in the membrane, the degree of membrane expansion
+can be calculated being 25–30%. Based on the amount of FAs
+provided (2.7 mM), and phospholipid present in the system (2.67 mM),
+the maximum expansion expected upon complete conversion of FAs into
+PA is 30%, which coincides with the experimentally obtained value.
+The membrane expansion in this system is only limited by depletion
+of substrate. We noted that during the process of phospholipid
+production (PA,
+PE and/or PG), white floating particles were produced in the reaction
+mixture that readily disappeared upon the addition of EDTA. Therefore,
+the morphology of the liposomes was examined by cryo-electron microscopy.
+Herein, phospholipid biosynthesis was induced until PG formation.
+As expected, the liposomes added to the reaction mixture showed a
+general appearance as small unilamellar vesicles with sizes in the
+range of 30–100 nm (a panel 1). Upon the addition of a large quantity of
+oleic acid, significant swelling and likely fusion of the liposomes
+was noted, showing an increase in size to 60–200 nm (a panel 2), which
+confirms the notion of swelling as derived from the R18 assay. Next,
+the enzymes and their substrates were added and phospholipid biosynthesis
+was initiated until complete depletion of the FAs. This resulted in
+the formation of the white particles that by cryoEM are visible as
+stacked membrane layers comprising multilamellar like structures (a panel 3). Addition
+of EDTA resulted in a complete dissolution of the stacked membranes
+and dissolved the white floating particles (a panel 4) yielding normal liposomes. EDTA
+addition did not affect the final R18 fluorescence signal (data not
+shown). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00265/suppl_file/sb7b00265_si_001.pdf The phenomenon of white particles
+already occurs with the production
+of PA, but was not noted during synthesis of LPA. As the stacked layers
+appear in time, likely during PG synthesis a critical concentration
+of the intermediate PA is reached, which induces the white precipitation
+(). PA strongly interacts with
+divalent cations, such as Ca and Mg its negative charge, which can even result in the loss
+of liposomal structures. In our system, this process may even be accelerated
+by uneven growth of the outer leaflet of the membrane as compared
+to the inner leaflet as the enzymes and substrates are added from
+outside of the liposomes. As spontaneous phospholipid flip-flop is
+a slow process (hours), while these lipids are synthesized in an asymmetric
+manner, we hypothesize that the formation of Ca/Mg complexes of PA cause membrane stacking leading to the tubular
+multilamellar structures seen by cryo-EM. These divalent cation-PA
+complexes likely are unable to undergo flip-flop movements. As a consequence
+of large quantities of PA together with an imbalanced growth of the
+outer membrane leaflet size, the vesicle-like structures are disrupted
+and stacked membranes are obtained. This idea is supported by our
+observation that addition of EDTA results in the formation of normal
+vesicle structures. Since the white precipitation is an undesired
+phenomenon, reactions
+were repeated but now with a lower Mg concentration to
+prevent or slow down stacked layer formation. Furthermore, the addition
+of oleic acid was dosed over time, which results in a more gradual
+formation of the PG, thereby keeping intermediate PA levels at a minimum.
+Again, the starting material are small unilamellar liposomes with sizes in the range
+of 30–100 nm (b panel 1). Addition of the first small dose of oleic acid
+together with the enzymes and their substrates resulted in hardly
+any membrane expansion and no vesicle fusion (b panel 2). However, after applying several
+doses of oleic acid, larger vesicles could be detected, indicating
+growth of the liposomes. Furthermore, no stacked layer formation could
+be observed (b panel 3) which underscores the need to control membrane expansion
+by a dosed feed of FAs. Phospholipid biosynthesis induced membrane expansion of
+liposomes.
+Membrane expansion was measured with the R18-self-quenching assay.
+Fluorescent emission spectra of R18 containing liposomes excited at
+540 nm were recorded for the liposomes before (trace 1) and after
+(trace 2) the addition of 2.7 mM oleic acid and the complete conversion
+of oleic acid into PA (trace 3) by FadD, PlsB and PlsC as described
+in the legends of b. Addition of Triton X-100 results in maximum fluorescent
+levels (trace 4) and was used to normalize the samples. Transmission electron microscopic imaging of  synthesized membranes. (a) Different phases during phospholipid
+biosynthesis, starting with small unilamellar liposomes (a1), the
+addition of 1.5 mM oleic acid to yield large swollen vesicles (a2),
+conversion of oleic acid into phospholipid resulting in stacked bilayer
+formation (a3), which is reversed upon addition of EDTA (a4) to yield
+large liposomes. (b) Different phases during phospholipid biosynthesis
+upon the dosed addition of small amounts of oleic acid. Starting with
+small unilamellar vesicles (b1), first addition of 0.3 mM oleic acid
+which does not result in observable vesicle swelling (a2), and formation
+of large vesicles, after multiple additions of small amounts of oleic
+acid to a final concentration of 1.5 mM, converted into phospholipid
+(b3). Here, we report the
+development of an efficient and versatile system
+to generate phospholipids from simple fatty acids, thereby growing
+membranes in a test tube. Membrane biosynthesis is an important and
+essential step in the development of synthetic cells. The system is
+based on a cascade of eight purified (membrane) proteins, which are
+reconstituted into pre-existing liposomes, allowing for the incorporation
+of diverse fatty acyl chains and variations in the polar headgroup
+composition to mimic the phospholipid composition of a biological
+membrane, while recycling the CoA for continuous phospholipid synthesis. The membrane expansion obtained  this system
+is an important step forward toward self-growing vesicles, but further
+steps have to be taken. It should be noted that 2.7 mM of oleic acid
+in the reaction mixture was about the maximal tolerable concentration,
+as higher concentrations of oleic acid at the start of the experiment
+inhibited biosynthesis (data not shown). For continuous phospholipid
+biosynthesis and membrane growth, we therefore envision a controlled
+feeding system in which oleic acid and other FAs are continuously
+added to the reaction vessel, such not to exceed inhibitory concentrations
+and prevent the formation of stacked membranes. Taken together, our
+reconstituted system truly represents a growing cellular like compartment
+that can be used to increase the complexity and address cellular processes
+that are linked to membrane growth, such as membrane protein insertion,
+phospholipid flip-flop and cell division. Bacterial Strain
+and Cloning Procedures Genomic DNA
+of  was used as a template for the
+amplification of genes encoding for the enzymes FadD, PlsB and PlsC.  DH5α (Invitrogen) was used for cloning.
+Plasmids for the  enzyme PssA and  enzymes CdsA, PgsA, PgpA and Psd were as reported. All primers and plasmids used in the present
+study are listed in  and .  BL21 (DE3) was used as a protein overexpression host strain and
+grown under aerobic conditions at 37 °C in LB medium supplemented
+with the required antibiotics, kanamycin (50 μg/mL), chloramphenicol
+(34 μg/mL) and ampicillin (50 μg/mL). Cloning and Expression Vectors Used
+in This Study Expression vector (Kan), T7 promoter Expression vector (Amp), T7 promoter Expression vector (Kan), T7 promoter Expression vector (), T7 promoter gene
+with C-terminus His-tag from  MG1655
+cloned into pRSF-Duet-1 vector using the primers PrME001 and PrME002 gene
+with C-terminus His-tag from  MG1655
+cloned into pet-28b vector using the primers PrME003 and PrME004 gene
+with C-terminus His-tag from  MG1655
+cloned into pet-28b vector using the primers PrME005 and PrME006 gene
+with N-terminus His-tag from  MG1655
+cloned into pACYC-Duet vector using the primers 103 and 106 gene
+with C-terminus His-tag from  cloned
+into pACYC-Duet vector using the primers 89 and 90 gene
+with C-terminus His-tag from  MG1655
+cloned into pACYC-Duet vector using the primers 533 and 534 gene
+with C-terminus His-tag from  MG1655
+cloned into pRSF-Duet vector using the primers 551 and 552 with C-terminus His-tag
+from  MG1655
+cloned into pET-Duet vector using the primers 562 and 563 Oligonucleotide Primers Used in This
+Study AGTCATTCAGTGGTGGTGGTGGTGGTGGGCTTTATTGTCCACTTTGC CATCCTGCCCGGCTGGCCACGAATTTACTAC CACTACGA TATATATCTTTCGTCTTATTATTACCG GCGCTTAGTGATGGTGATGGTGGTGATGATGATTCCATCTCCCAGACTCCAG GCGCTTAGTGATGGTGATGGTGGTGATGATGAAGCGTCCTGAATACCAGTAAC GCCGGCAGCCATCACCATCATCACCACAGCCTGAAGTATCGCCTGATATCTGC GCGCAAAACAATGGCCTGGAGGCTACCTTGTTAAATTCATTTAAACTTTCGCTAC GCGCTTAGTGATGGTGATGGTGGTGATGATGGACCTGGTCTTTTTTGTCGTCAAC CGCGTCAGTGATGGTGATGGTGGTGATGATGCTGATCAAGCAAATCTGCACGC CGGCCTAGTGATGGTGATGGTGGTGATGATGCGACAGAATACCCAGCG Expression and Purification of Phospholipid
+Synthesizing Enzymes Proteins involved in phospholipid synthesis
+were overexpressed
+in  BL21 strain and induced with 0.5
+mM IPTG. After 2.5 h. of induction (4 h. for inducing PssA and PgsA
+synthesis), cytoplasmic and membrane fractions were separated as described. FadD present in the cytoplasmic fraction (supernatant)
+was stored at −80. For all other proteins, the total membranes
+fractions were resuspended in buffer A (50 mM Tris/HCl, pH 8.0, 100
+mM KCl and 15% glycerol) after which they could be stored at −80
+as well. For further purification, 0.5 mg/mL of membranes were solubilized
+in 2% -dodecyl-β--maltopyranoside
+(DDM) detergent for 1 h. at 4 °C. The material was subjected
+to a centrifugation (17 000) step for 15
+min at 4 °C to remove insolubilized material and the supernatant
+was incubated with Ni-NTA (Ni- nitrilotriacetic acid)
+beads (Sigma) for 2 h. at 4 °C. The Ni-NTA beads were washed
+10 times with 40 column volumes (CV) of buffer B (50 mM Tris/HCl,
+pH 8.0, 100 mM KCl, 15% glycerol and 0.05% DDM) supplemented with
+10 mM imidazole, and the proteins were eluted three times with 0.5
+CV of buffer B supplemented with 300 mM imidazole. The cytoplasmic
+fraction of FadD was further purified  Ni-NTA
+agarose affinity chromatography using the same method as described
+above, with the exception that buffer B did not contain any DDM. Purity
+of the eluted proteins were assessed on 12% SDS/PAGE stained with
+Coomassie Brilliant Blue and the protein concentration was determined
+by measuring the absorbance at 280 nm. Extinction coefficients were
+obtained from the ProtParam tool from ExPASy by applying the specific
+amino acid sequence. Chloroform
+stocks of the lipid
+species DOPG, DOPE, DOPC or POPG, POPE, DOPC (Avanti Biochemicals,
+Birmingham, AL) were mixed together in a ratio of 33:33:33, unless
+stated otherwise. Next the lipid solution was dried under a nitrogen
+gas stream for multiple hours, after which the dry lipid film was
+resuspended in a 50 mM Tris/HCl, pH 8.0 buffer. For formation of liposomes,
+a sonication cycle of 15 s on, 15 s off was repeated for 10–40×. Assays for Phospholipid Production All  reactions were performed in 100 μL
+of assay buffer A containing a final concentration of 50 mM Tris/HCl,
+pH 8.0, 10 mM MgCl, 100 mM KCl, 15% glycerol and 2 mM
+DTT. The activity of FadD was assayed in buffer A using 0.5 μM
+enzyme and 550 μM of oleic acid, 40 μM or 250 μM
+CoA and with or without 1 mM ATP. The influence of lipids on FadD
+activity was examined under similar conditions with addition of 2.67
+mM of different lipids as indicated. Activity assays of PlsB and PlsC
+were performed in buffer A with addition of 0.1% DDM, 100 μM
+oleoyl-CoA, 0.5 μM enzyme and with or without 2.67 mM of various
+lipid mixtures, 10 mM G3P or 120 mM LPA (see figure legends). Combined
+activity assays of PlsB and PlsC were performed in buffer A with addition
+of 0.5% DDM, 100 μM oleoyl-CoA, 2.67 mM of phospholipid, 1 μM
+PlsB and 1.5 μM of PlsC and 10 mM G3P, unless indicated otherwise. The stepwise cascade conversion of oleic acid into PA was assayed
+in buffer A in the presence of 0.5 μM FadD, 550 μM or
+(2.7 mM) Oleic acid, 50 μM CoA, 2.67 mM of liposomes, 0.5 μM
+PlsB and 1.5 μM PlsC, 1 (or 4) mM ATP and 10 mM G3P as indicated
+in the figure legends. The conversion of multiple fatty acids into
+a wide variety of PAs was assayed as above, but with 675 μM
+of palmitoleic acid, palmitic acid, oleic acid and stearic acid, respectively. Conversion of oleic acid into PG and/or PE was assayed in buffer
+A with addition of 0.5 μM FadD, 50 μM CoA, 550 μM
+or 2700 μM oleic acid, 1 mM or 4 mM ATP, 2.67 mM liposomes,
+10 mM G3P, 0.5 μM PlsB, 1.5 μM PlsC and, as indicated,
+2 μM CdsA, 3 mM CTP, 1 μM PgsA, 1 μM PgpA, 1 μM
+PssA, 3 mM -serine and 1 μM Psd, unless indicated
+otherwise. All reactions were incubated overnight at 37 °C
+unless stated
+differently. Lipids were extracted two times with 0.3 mL of n-butanol,
+and evaporated under a stream of nitrogen gas and resuspended in 50
+μL of methanol for LC–MS analysis. Fluorescent
+Assays for Membrane Expansion To visualize
+membrane expansion, Octadecyl Rhodamine B chloride (R18) (Biotium
+Inc. Fremont, USA) was incorporated into the liposomes at a concentration
+of 5 mol % during liposome preparation. Synthesis reactions were performed
+in buffer A with addition of 0.5 μM FadD, 50 μM CoA, 2700
+μM oleic acid, 2.67 mM R18 liposomes (DOPC, DOPG, DOPE), 10
+mM G3P, 0.5 μM PlsB, 1.5 μM PlsC and, if present 4 mM
+ATP and 1% Triton X-100. Reactions were quenched with 10 mM EDTA,
+and fluorescence was excited at 540 nm and emission spectra (560–680
+nm) recorded using a QuantaMaster spectrofluorometer controlled by
+the FelixGX program (Photon Technology International, Inc.). Cryotransmission
+Electron Microscopy A few microliters
+of sample was deposited on a holey carbon coated copper grid (Quantifoil
+3.5/1). After blotting the excess of the sample with filter paper,
+the grids were plunged quickly into liquid ethane (FEI vitrobot).
+Frozen-hydrated specimens were mounted in a cryo-stage (Gatan, model
+626) and observed in a FEI Tecnai T20 electron microscope, operating
+at 200 kV. Micrographs were recorded under low-dose conditions on
+a slow-scan CCD camera (Gatan, model 794). Samples from the  reactions
+were analyzed using an Accela1250 HPLC
+system coupled with an ESI–MS Orbitrap Exactive (Thermo Fisher
+Scientific) as described. In short, 5
+μL was injected into a COSMOSIL 5C4-AR-300 Packed Column, 4.6
+mm I.D. × 150 mm (Nacalai USA, Inc.) operating at 40 °C
+with a flow rate of 500 μL/min. Separation of the compounds
+was achieved by a changing gradient of Mobile phase A (50 mM ammonium
+bicarbonate in water) and mobile phase B (Acetontrile). The MS settings
+and specifications used for this analysis were the same as described
+before. Only for the simultaneous synthesis
+of PE and PG (c) 5 μL of sample was injected into a Shim-pack XR-ODS/C18
+column with dimension 3.0 mm × 75 mm (Shimadzu) operating at
+55 °C with a flow rate of 400 μL/min. Separation of the
+compounds was achieved by a changing gradient of Mobile phase A (10
+mM ammonium formate with 0.1% formic acid in water/acetonitrile 40:60,
+v/v) and mobile phase B (10 mM ammonium formate with 0.1% formic acid
+in acetonitrile/propan-2-ol, 10:90, v/v). The MS settings and specifications used for this analysis were the
+same as described before. Spectral
+data constituting total ion counts were analyzed using the Thermo
+Scientific XCalibur processing software by applying the Genesis algorithm
+based automated peak area detection and integration. The total ion
+counts of the extracted lipid products: oleic acid (/ 281.25 [M – H]), oleoyl-CoA
+(/ 1030.35 [M – H]), LPA (/ 435.26
+[M – H]), (DO)PA (/ 699.49 [M – H]), CDP-DAG (/ 1004.54 [M – H]), PGP (/ 853.50 [M –
+H]), DOPG (/ 773.53 [M – H]), PS (/ 786.53 [M – H]), DOPE
+(/ 742.54 [M – H]), palmitoleic acid (C16:1) (/ 253.22 [M – H]), palmitic acid (C16:0)
+(/ 255.23 [M – H]), oleic acid (C18:1) (/ 281.25
+[M – H]), stearic acid (C18:0) (/ 283.26 [M – H]). LPA (C16:1) (/ 407.22 [M –
+H]), LPA (16:0) (/ 409.23 [M – H]), LPA (C18:1) (/ 435.25 [M – H]), LPA (C18:0) (/ 437.26 [M –
+H]). PA (C16:1–16:1) (/ 643.43 [M – H]), PA
+(16:0–16:0) (/ 647.46 [M
+– H]), PA (C18:1–C16:1) (/ 671.46 [M – H]), PA (C16:1–16:0) (/ 645.45
+[M – H]), PA (C18:0–16:1/18:1–16:0)
+(/ 673.48 [M – H]), PA (18:1–18:0) (/ 701.51
+[M – H]), PA (C18:0–C16:0) (/ 675.49 [M – H]), PA (C18:1–18:1) (/ 699.49
+[M – H]), PA (18:0–18:0) (/ 703.52 [M – H]) were normalized for either DDM (/ 509.3 [M – H]) or POPG (/ 747.52 [M – H]) and
+plotted on the -axis as normalized ion count..

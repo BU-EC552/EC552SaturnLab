@@ -1,0 +1,441 @@
+At the most
+basic level, synthetic
+biology relies on the ability to integrate a set of well-defined DNA
+sequences to obtain a desired phenotype. Protein levels are commonly
+controlled by the modulation of transcription and translation initiation
+rates. For example, transcription rates are changed by fusing a gene
+to promoters of varied strength or modulating the degree of repression
+by titrating inducers (e.g., the lac promoter family is modulated
+by IPTG addition) while translation rates
+are controlled by changing the strength and accessibility of ribosome
+binding sites. Libraries of constitutive
+promoters have been developed via mutagenesis of base promoters for
+several model organisms including  and . Inducible promoter systems, such
+as T7/lac and P have been created by fusing repressor sequences
+to promoter sites. Alternatively, biophysical models have been developed
+to predict and guide engineering of translation initiation signals
+in bacteria, thereby providing an additional point of control. While these approaches have allowed
+for the development of complex genetic circuits in , many of these tools have not been developed or validated for use
+in nonmodel organisms. Cyanobacteria are an attractive host
+for metabolic engineering
+due to their innate ability to convert CO and sunlight
+directly into a chemical product of interest, thereby bypassing the
+need for expensive feedstocks. Model strains of cyanobacteria have
+been modified to overproduce a wide variety of products, including sucrose, 2,3-butanediol, and ethylene; however, none of these photosynthetically produced
+products have been at a rate that is economically viable. Attempts
+to increase productivity and titer have been hampered by a limited
+set of genetic tools available for metabolic engineering in cyanobacteria.
+Few promoters have been developed for applied projects in cyanobacteria;
+well-characterized endogenous promoters such as P or P are typically used in
+synthetic biology strategies. These promoters control transcription
+of photosystem genes making them often too strong and undesirably
+sensitive to light. Endogenous metal
+responsive promoters have been developed for use as induction systems
+with better than 100 fold dynamic range; however, the low sensitivity
+and complex off target regulatory effects make these systems difficult
+to use in practice. Finally, several
+orthogonal genetic tools originally developed in  such as P, P, and P,
+have been tested in cyanobacteria with poor or inconsistent results
+across model cyanobacterial systems. Recently, improvements have been made to small molecule induction
+systems in model cyanobacteria. In particular, new IPTG induction
+systems have been described for  sp.
+strain PCC 6803 (PCC 6803) and  sp.
+strain PCC 7942 (PCC 7942). While these works are
+improvements of previously available systems, the dynamic ranges were
+limited: 13-fold for PCC 6803 and 18-fold for PCC 7942. As an alternative
+to IPTG induction, an anhydrotetracyline induction system was developed
+for PCC 6803. This system demonstrated
+a 239-fold dynamic range under dark heterotrophic growth conditions
+but only 49-fold dynamic range under photoautotrophic growth conditions
+when induced with an exceptionally high concentration of anhydrotetracycline
+(10 ug/mL). While there has been some
+development of synthetic biology tools for PCC 6803 and PCC 7942,
+other cyanobacteria used in metabolic engineering remain limited to
+a few native promoters. In particular,  sp. strain PCC 7002 (PCC 7002), an attractive strain for metabolic
+engineering due to its rapid growth rate, high CO fixation
+rate, and halotolerance, has very few promoters of known strength
+and only one reported inducible promoter. The objective of this work was to develop a set of defined
+synthetic
+biology tools that would enable precise control of gene expression
+in PCC 7002. Herein, we present two constitutive promoter libraries
+in PCC 7002 containing promoters with a range of strengths spanning
+3 orders of magnitude. These promoter libraries were used to construct
+an IPTG induction system based on a promoter of cyanobacterial origin.
+Iterative modifications to this system resulted in stronger repression
+and higher intrinsic expression levels. The resulting IPTG induction
+system was capable of a 48 ± 7 fold increase of YFP expression.
+This induction ratio represents over an order of magnitude improvement
+over the next best small molecule inducible system in PCC 7002 but is an order of magnitude lower than P in () Finally, a cyanobacterial ribosome binding site
+(RBS) library was designed with  modeling
+tools and validated in PCC 7002. The models were sufficient to predict
+gross changes in expression, but were not capable of predicting subtle
+differences. We predict that these tools will enable construction
+of more complex genetic circuits in PCC 7002 and increase the number
+of successful metabolic engineering projects in this promising cyanobacterium. Promoter Library Based on the PCC 6803  Promoter Until recently, the  promoter
+from PCC 6803 (P) was the best
+characterized promoter for use in PCC 7002. It was initially designed
+to drive gene overexpression as part of the high-copy plasmid pAQ1
+homologous recombination system. Recently,
+a chromosomal recombination system based on acrylic acid counter selection
+was developed that also used P for gene expression. In preliminary
+studies, we found that a single strong constitutive promoter was not
+applicable for most metabolic engineering applications. Therefore,
+we mutagenized P to create
+a library of constitutive promoters capable of generating more modest
+levels of gene expression. To simplify library construction, P derived from plasmid pAQ1_Exp was truncated from its original 500 bp length
+to a more easily modifiable 89 bp core promoter region. This region
+was chosen based on homology of  promoters in
+closely related cyanobacteria. The resulting promoter was called P for yanobacterial hycocyanin runcated promoter. P strength was compared to P using
+a homozygous chromosomal YFP system in PCC 7002. The truncation reduced
+YFP fluorescence by 50%; however, P expression was not
+significantly affected by high light intensity; in contrast, a ∼30%
+reduction was seen in P controlled
+YFP expression under high light (Figure ).
+Previous transcription profiling in PCC 7002 showed a similar decrease
+in full length P expression under
+high light conditions. These data suggest
+that additional transcription factors beyond core RNA polymerase may
+be involved in generating maximum transcription rates from the P core promoter. To generate a promoter library,
+P was mutagenized
+with error prone PCR and fused with a YFP expression cassette. The
+promoter sequences from 107 strains were determined and aligned based
+on YFP expression. Several of these promoters had duplications or
+mutations outside of the core promoter region and were eliminated
+from further analysis, leaving 29 unique promoters (see  for sequences).
+YFP expression levels were screened in these segregated strains of
+PCC 7002 (Figure A). Of these promoters, 11
+representative samples were chosen for further testing, covering the
+full range of YFP expression levels (Figure B). Expression from individual members of the P library
+spanned 3 orders of magnitude. Several strains displayed higher fluorescence
+than the basal P construct. One such strain, c223, displayed
+two times the YFP fluorescence as P, approaching the
+levels observed with the full length P promoter. The sequence of c223 contained only two point mutations
+relative to the wild type promoter sequence (Figure C). These two mutations, A30T and A67T, were tested individually.
+The latter mutation was sufficient to double YFP expression by itself.
+Interestingly, this mutation changed the P −10
+σ recognition site from TATAAA to TATAAT, the  consensus sequence. Expression of full length
+and truncated PCC 6803  promoters under high
+and low light conditions. Light intensity is
+shown as PAR (photosynthetically available radiation) as measured
+in μE/m·s. The full length P exhibited reduced expression under high light
+(p-value <0.005). No significant difference was observed between
+high and low light conditions for the truncated promoter. Error bars
+represent standard deviations of biological replicates ( = 3). Normalized
+expression levels and sequences of members of the P promoter
+library. (A) Fluorescence values of library members
+normalized to expression level of P (yellow). (B) Fluorescence
+values of a representative sample of library members normalized to
+P (yellow). P is shown in orange and wild type PCC 7002 without a YFP expression
+construct is shown in solid green. Error bars represent the standard
+deviation of biological replicates ( = 3). (C) Sequence
+alignment of the representative library members. The predicted −35
+and −10 regions are highlighted in purple and blue, respectively. Development of a Synthetic
+Promoter Library in PCC 7002 The latter finding raised the
+question of whether promoter libraries
+would be consistent between  and PCC 7002.
+We therefore cloned and tested a series of well-characterized  promoters to determine if they could serve as a
+second library in PCC 7002. A subset of the BioBrick promoters derived
+from part BBa_J23119, a σ consensus promoter, were
+combined with a synthetic 5′ UTR containing a RBS designed
+using a ribosome binding site calculator and YFP (Figure A). http://parts.igem.org/Part:BBa_J23119 http://parts.igem.org/Part:BBa_J23119 The expression level of these
+constructs were quantified under
+standard growth conditions and compared to constructs using P. The
+expression cassette containing the promoter BBa_J23119, the strongest  promoter, generated 35 ± 3% of the fluorescence
+of the strain using promoter P, one of the strongest promoters in PCC 7002. The closely related
+PCC 7002 homolog of P, P, drives the expression of SYNPCC7002_A2209,
+the third most abundant transcript in PCC 7002. Fluorescence from the other library members were all lower
+than BBa_J23119 spanning 2.5 orders of magnitude (Figure B). To increase the range of expression levels,
+additional permutations of BBa_J23119 were made, resulting in promoters
+pMB1, pMB2, and pMB3 (Figure A). When the
+relative fluorescence generated by these promoters in PCC 7002 were
+compared with the corresponding  strengths
+published on the BioBrick Web site (), a weak correlation was observed ( = 0.434) (Figure A). The mechanism behind
+this weak correlation is unclear but could be due to differences in
+the transcription machinery of these two organisms. Interestingly,
+the σ transcription factors of  and PCC 7002 share strong homology, particularly at regions involved
+in DNA binding. In response to this weak interspecies correlation,
+the P promoter library was evaluated in  YFP expression cassettes from the 11 representative library members
+were inserted into an  plasmid in order to
+test relative expression. As was seen with the synthetic promoter
+library, there was only weak correlation between the relative expression
+of the P library in PCC 7002 and  ( = 0.366) (Figure B). Schematic drawing and
+expression levels of the synthetic promoter
+library. (A) Drawing of synthetic promoter and 5′ UTR. Sequences
+for promoters J23119, pMB1, pMB2, and pMB3 are presented. The labeled
+transcription start site was determined for J23119 and pMB2. The promoter
+region is outlined in light green with the −35 and −10
+regions in purple and light blue, respectively. The 5′ UTR
+is shown in blue with the RBS in red. (B) Expression levels of the
+synthetic promoter library relative to J23119. Error bars represent
+standard deviations of biological replicates ( =
+3). Comparison of promoter libraries in PCC 7002 and . (A) Comparison of BBa_J23119 derived promoters in  and PCC 7002 relative to the expression level of J23100.  = 0.434. (B) Comparison of the  derived promoter library in  and PCC 7002
+relative to the truncated  promoter.  = 0.366. Error bars represent the standard
+deviation of biological replicates of biological replicates ( = 3). Redesigning the P Promoter for IPTG Induction While the constitutive promoter
+libraries offered a range of expression
+levels, many metabolic engineering projects require promoters that
+can be controlled in response to environmental signals. To make P responsive to the common laboratory inducer IPTG, the core
+promoter sequence was modified by replacing native sequence with  operators to allow for binding of the  repressor, LacI. Specifically, two  operator
+sequence variants Oid and O1 were individually inserted
+42 base pairs upstream of the predicted −35 promoter region
+and directly downstream of the predicted −10 promoter region
+of P, respectively, resulting in a promoter called P (Figure A). Insertion of these
+two operators caused a 76 ± 5% decrease in its intrinsic promoter
+strength relative to P (Figure B). Next, the  gene under the  P promoter was inserted downstream of
+the YFP terminator. Addition of the  cassette
+resulted in decreased fluorescence relative to P.
+Fluorescence was restored upon addition of 1 mM IPTG (Figure B). The resulting construct demonstrated only 4-fold
+induction but provided a starting point for promoter engineering. Since this construct was fully inducible, an increased dynamic range
+would require stronger repression in the absence of the inducer and/or
+stronger expression in the absence of LacI. Poor repression could
+be attributed to suboptimal spacing of the operators or poor LacI
+expression. Attempts to move the operators closer together resulted
+in dramatic decreases in the intrinsic expression level of the promoter,
+resulting in constructs with limited utility and little increase in
+repression (data not shown). As an alternative, the promoter driving , P was replaced with
+members of the synthetic promoter library (Figure C). Several of these promoters, in particular P, resulted in reduced induction system leakiness relative to the  promoter. Replacing the P promoter in the original induction
+system with P resulted in a strain with 12-fold induction.
+This system was further improved by making a single amino acid substitution,
+W220F, in  which had previously been shown to
+strengthen LacI dimerization and provide tighter repression than wild
+type LacI. This construct, cLac94, with
+P driving the expression of a modified , resulted in a system with 38 ± 6 fold induction using 5 mM
+IPTG (Figure A). A higher IPTG concentration
+was needed to achieve maximum induction, possibly due to the tighter
+DNA binding exhibited by  W220F. Initial development of
+an IPTG induction system based on the P promoter. (A)
+Fluorescence of PCC 7002 strains harboring
+promoters constructs normalized to P expression. Insertion
+of  operators resulted in a ∼80% decrease
+in expression relative to P. Introduction of  resulted in repression that was removed by the addition
+of IPTG. (B) Expression levels of uninduced  induction
+strains with various  promoters relative to expression
+of P. (C) Optimization of  expression
+and activity using different promoters driving  and the W220F mutation improving lacI binding. Error bars represent
+the standard deviation of biological replicates ( = 3). Increasing the Intrinsic
+Strength of P-Based Induction System Optimizing  expression resulted in tight repression
+and a larger dynamic range
+upon induction of the P promoter. However, with these
+modifications, the maximum expression reached only 15 ± 2% relative
+to P (Figure A). To address
+this limitation, the P region of cLac94 was mutated
+to incorporate advantageous base-pair changes discovered during the
+construction of the P promoter library (Figure B). The first P mutation tested
+was A67T, which was identified by testing the mutations present in
+the strong P library member c223. The A67T mutation
+in the P construct, cLac109 increased YFP expression
+by 255 ± 21% upon induction with IPTG; however, it also significantly
+increased the leakiness of the promoter (defined as expression in
+the absence of IPTG), resulting in only a 11 ± 1 fold induction
+range (Figure B). Deletion of A67 (cLac124)
+provides a shorter overlap between the −10 and the downstream
+operator, analogous to the strong P promoter. This deletion resulted in 96 ± 10% derepressed expression
+but only an 8-fold dynamic range. Finally, the spacing between the
+P −35 and −10 binding site was reduced
+from 18 to the more common 17 base pairs, resulting in construct cLac142
+(See Figure B). This resulted in a maximum
+derepressed expression of 30 ± 10% and a 34-fold induction. See  for all  induction promoter sequences. The increased expression seen when mutating the −10
+promoter
+sequence to the  σ consensus
+sequence led us to try mutating the −35 P from
+CAGACA to the  consensus sequence TTGACA,
+creating the construct cLac143. This mutation increased the derepressed
+promoter strength of P to 235 ± 32% relative
+to constitutive P. In the presence of LacI and absence
+of IPTG, YFP was expressed at 4.9 ± 0.2% of P resulting
+in a potential 48 ± 7 fold range of expression upon addition
+of IPTG (Figure A). Titration of IPTG resulted
+in qualitatively similar fluorescence curves (basal expression up
+to 10 μM and maximum expression at 1 mM) for the constructs
+with the highest dynamic range, cLac94 and cLac143 (Figure ). Diagram and induction
+levels for IPTG inducible promoters. (A)
+Expression of induced and uninduced IPTG inducible promoters relative
+to P. With the exception of the P control,
+all strains contain  expressed by P. All cLac### strains have the additional W220F mutation in  while cLacMB2 contains wildtype  Error bars represent standard deviation of biological replicates
+( = 3) (B) List of IPTG inducible promoters with
+fold induction potential (fold change between 0 and 5 mM IPTG) and
+sequence comparison. The  operators are highlighted
+in yellow, the −35 sequence is highlighted in purple, and the
+−10 sequence is highlighted in green. Titration of inducible promoter constructs cLac94 and
+cLac143 with
+varying concentrations of IPTG. Promoter cLac94 is shown in blue and
+promoter cLac143 is shown in red. Both strains contain  W220F expressed with pMB2. Error bars represent standard deviation
+of biological replicates ( = 3). The
+performance of the
+P induction system increased as mutations moved its
+sequence toward the  consensus. This observation
+led us to reconsider P as a viable inducible promoter
+in PCC 7002. Using our optimized  repression
+cassette, we replaced the P core promoter with P using either one or two  operators.
+The maximum derepressed YFP expression was similar for the one and
+two operator constructs, 188 ± 9% and 179 ± 10% relative
+to constitutive P, respectively. However, the noninduced
+P promoter expression with one operator was significantly
+more leaky than the version with two operators resulting in a 6 (cLac145)
+and 23 fold induction range (cLac146), respectively (Figure A). The cLac146 induction system has the advantage
+of using a shorter promoter region; however, it has a lower dynamic
+range than both cLac94 and cLac143 making it less useful for genetic
+control in PCC 7002. P could prove be a useful compliment
+to PcptOO, avoiding unwanted chromosomal recombination events due
+to regions of strong homology in strains with multiple gene insertions. Design and Construction of a PCC 7002 RBS Library To
+test whether an RBS library could be predictably constructed for PCC
+7002, the Shine–Delgarno region of the previously described
+pACSA_J23119_YFP (AGGGAT) was modified using the RBS Library Calculator to create an 8-member library (degenerate base
+sequence ASGMGR) specific to PCC 7002 with a predicted 143 fold range
+of translation initiation rates. Two additional
+Shine–Delgarno sequences that were predicted to induce strong
+translation initiation rates were added (AGGGGG, AGGGAG), which increased
+the predicted library range to 213-fold. YFP fluorescence data in
+PCC 7002 showed that, in practice, this library provided a 30-fold
+range of protein expression with a weak correlation to their predicted
+strengths (Figure A). qPCR analysis of these
+strains showed that one library member, AGGAGA, had a significantly
+higher YFP transcript level than any of the other library members
+(Figure B). The YFP expression cassettes were
+sequenced and no mutations were present (data not shown). Excluding
+AGGAGA removed an outlier and improved the fit of the model from  = 0.3760 to  = 0.7443 (Figure A and B). The RBS library
+sequences were also back calculated with two alternative translation
+rate prediction programs: the UTR Designer and the RBSDesigner. In this case,
+the correlation of the experimental data to the predicted expression
+level provided by the UTR Designer (Figure C) was similar to the RBS Calculator prediction; however, the analogous
+correlation to the RBSDesigner prediction was weaker (Figure D). These data suggest that the RBS Calculator is
+useful for designing RBS parts in PCC 7002; however, as shown in a
+recent paper by Li et al., fine control
+of RBS strength may not be possible with this prediction program. Evaluation
+of the RBS library versus predicted transcription initiation
+rates. (A) RBS Calculator v1.1 transcription initiation rate data
+was compared with YFP fluorescence by anchoring both data sets to
+AGGGAT, which is the RBS sequence of the original pJ23119_YFP construct.
+YFP fluorescence is represented as a percentage of constitutive P YFP fluorescence. Error bars on experimental data represent
+standard deviation of biological replicates ( =
+3). Starred library member AGGAGA had significantly higher YFP transcript
+than every other library member (Figure 8B), which likely explains
+its observed deviation from the prediction. (B) Relative YFP transcript
+levels quantified by qPCR normalized to  Transcript
+levels for AGGAGA was significantly higher (95% CI) than every other
+strain in the RBS library. All other library members showed no significant
+difference between them (95% CI). Correlation of the predicted translation initiation rates from
+the RBS Calculator to experimentally determined YFP fluorescence.
+(A) Correlation with AGGAGA included ( = 0.3760). (B) Correlation with AGGAGA removed ( = 0.7443). (C) Correlation of the experimental data
+set, excluding AGGAGA, to the UTR Designer ( = 0.7843). (D) Correlation of the experimental data set,
+excluding AGGAGA, to the RBS Designer ( = 0.04448). Error bars on experimental data represent standard deviation
+of biological replicates ( = 3). PCC 7002 has the potential
+to become an
+important photosynthetic chemical production platform. To date, few
+products have been successfully made with this strain. This may, in
+part, be due to the dearth of genetic tools available for the strain.
+In this study, we developed two orthogonal constitutive promoter libraries
+with a 3 and 2.5-fold dynamic range respectively and used these libraries
+to optimize the most tightly controlled IPTG induction system available
+for any cyanobacterial species. Finally, we performed the first evaluation
+of the RBS Calculator in PCC 7002. The resultant RBS library showed
+a moderate correlation to the predicted values suggesting that the
+RBS library calculator can be used in PCC 7002 to predict gross differences
+in expression. A representative subset of the promoter library, RBS
+library, and IPTG inducible strains were also tested for relative
+expression at high cell densities (OD ∼ 5) with
+high correlation to the data collected during log phase (OD 0.5, data not shown). This suggests that strains produced using
+these tools can be reliably used in higher density chemical production
+environments. The gene expression tools presented here, along with
+our previously published acrylic acid counter selection system enable rapid construction of finely controlled
+genetic circuits within PCC 7002 and should accelerate the field of
+synthetic biology within cyanobacteria. Acrylic acid was obtained
+from Fisher Scientific (AC16425). Restriction enzymes, Phusion DNA
+polymerase, and T4 DNA ligase were purchased from New England Biolabs
+(Ipswich, MA). All other chemicals and reagents were purchased from
+either Fisher Scientific or Sigma-Aldrich. Unless otherwise noted,
+PCC 7002 was grown in Media A and maintained on 1.5% agar
+plates. Unless otherwise noted, cultures
+were grown in 10 mL volumes bubbled with air at 35 °C with a
+light intensity of 200 μE/m·s.  were grown in lysogeny broth (LB). All strains used in this study
+are listed in .  DH5α was used for cloning of plasmids.
+Wild Type PCC 7002 was obtained from the Pasteur Culture Collection.
+Unless otherwise indicated, all genetic tools (i.e., promoters, ribosome
+binding sites) were constructed as fusions to the EYFP reporter gene and cloned into pACSA_pcpcB_YFP. The resulting plasmids contained the YFP expression
+cassette flanked with DNA sequences that would enable homologous recombination
+at the  loci of the PCC 7002 chromosome. Plasmids
+were amplified and stored in  DH5α prior
+to transformation into PCC 7002 according to published protocols. Homozygous recombinants were isolated using
+an acrylic acid counter selection as previously described. Segregation was confirmed by colony PCR. See  for the oligonucleotide
+sequences used in this study. The standard deviations of the correlated
+values were propagated whenever average YFP fluorescence levels were
+compared. All experiments began with
+isolation of single colonies from freezer stocks of segregated mutants.
+Cultures of PCC 7002 expressing YFP were grown in triplicate to an
+OD 0.5–1. Cultures were normalized to 1.5–3
+OD·mL and centrifuged at 3000 for 12 min. The resulting pellets were aspirated, resuspended in
+300 μL BugBuster Protein Extraction Reagent (Novagen), rocked
+at room temperature for 30 min, and centrifuged at 16 000 for 25 min at 4 °C. The florescence of the resulting
+supernatant was measured (excitation 514 nm, emission 527 nm) using
+a Tecan M1000 plate reader. YFP expression in  was similarly tested by growing DH5α containing pACSA plasmids
+with promoter or RBS library members in 5 mL of LB overnight at 37
+°C with shaking. After 16 h the cultures were normalized to OD and split into triplicate 5 mL tubes and grown overnight
+again. The cultures were normalized to OD and 200 μL
+of each culture was analyzed for YFP fluorescence by plate reader. Construction of a Promoter Library Based on the PCC 6803 P Promoter P, a truncated version
+of the P promoter, was constructed
+by annealing two complementary, phosphorylated oligonucleotides. The
+resulting double stranded DNA cassette was cloned by restriction digestion
+and ligation to yield pACSA_P_YFP. The library of P mutants was created using the GeneMorph II Random Mutagenesis
+Kit (Agilent). Error prone PCR was conduced using the kit’s
+instructions with primers cpt error prone F and cpt error prone R
+(). pACSA_P_YFP plasmid DNA (0.1 ng) was used as a template to maximize
+mutation frequency. The resulting PCR products were serially used
+as a template for additional rounds (four total) of error-prone PCR,
+each time using 0.1 ng template per reaction. Once amplified (using
+Phusion polymerase), the promoter libraries were cloned into pACSA_P_YFP cassette using  I/ I restriction sites. The resulting plasmids were replicated in DH5α,
+pooled, and transformed into PCC 7002 for double homologous recombination
+into the  locus as previously described. Approximately 100 mutants were segregated and confirmed to be homozygous.
+The truncated P promoter region was amplified from each
+isolate using GoTaq DNA polymerase (Promega, Madison WI) and sequenced
+(Functional Biosciences, Madison WI). Promoters from 11 of the library
+members were moved back into the pACSA_P_YFP construct
+using  recombination assembly with overlapping
+primers (Gibson 2011) using the primer pairs indicated in . The resulting
+assemblies were transformed into  DH5α
+and confirmed by sequencing. Construction of a Synthetic Promoter Library The J23119
+promoter sequence was obtained from the BioBrick part BBa_J23119 (iGEM
+Registry of Standard Biological Parts, ). The RBS was designed to have 40 000 arbitrary translation
+initiation units as predicted by the RBS calculator. These two parts were combined with the plasmid pACSA_P_YFP to create pACSA_J23119_YFP
+in a two part Gibson Assembly using primer pairs indicated in . Derivatives of
+this construct were made by replacing promoter Bba_J23119 with Bba_J23100,
+Bba_J23101, Bba_J23105, Bba_J23108, Bba_J23109, Bba_J23110, Bba_J23114,
+and Bba_J23117, along with three novel promoter sequences pMB1, pMB2,
+and pMB3. These constructs were made using a two piece Gibson Assembly
+using primer pairs indicated in . Transcription start sites were mapped using the 5′
+RACE System for Rapid Amplification of cDNA Ends, Version 2.0 (Invitrogen). Construction of the IPTG Inducible PCC 7002 Strains pACSA_P_YFP was modified to be IPTG inducible by sequentially
+inserting two operators and the P_ repressor cassette proximal to YFP. The downstream
+operator was added by Quikchange site directed mutagenesis (Agilent)
+and then the upstream operator was inserted by Gibson assembly to
+produce the construct, pACSA_P_YFP. The P_ −expression cassette was
+added to pACSA_P_YFP using the  I restriction site. Primers used to produce these constructs are
+described in . LacI mediated repression was improved by replacing the P promoter in pACSA_P_YFP_P_ with members of the synthetic
+promoter library using Gibson Assembly (see  for primers used). LacI repression was
+further improved by making a W220F point mutation via Quikchange site
+directed mutagenesis. Additional mutations within P were created using Quikchange (see  for primers used). P_YFP_P_ and P_YFP_P_ were constructed
+using two part Gibson Assembly using the optimized pACSA_P_YFP_P_ plasmid as
+a template and primers identified in . All  constructs were
+stably inserted into the  locus of PCC 7002 as
+previously described. Segregation was confirmed by colony PCR. Design
+and Construction of the RBS Library The RBS
+Library Calculator was used to design
+an RBS library based on the untranslated region and YFP coding sequence
+of pACSA_J23119_YFP. The library was constructed using Quikchange
+mutagenesis with primers shown in . A degenerate oligonucleotide pair was used to construct
+the majority of the library. All library members were stably inserted
+into the  locus of PCC 7002 as previously described.
+Segregation was confirmed by colony PCR. qPCR Analysis of the RBS
+Library in PCC 7002 RNA extraction
+methods and DNase treatment were adapted from prior studies by adding an additional glass bead lysis step
+during the lysozyme treatment. Samples were vortexed every 2 min during
+the 6 min incubation at 64 °C. cDNA was synthesized using random
+hexamers and 500 ng total RNA by the iScript cDNA Synthesis Kit (Bio-Rad)
+according to the given instructions. RT-qPCR was performed on 10 μL
+reactions using iQ SYBR Green Supermix on a CFX Connect Real-Time
+PCR Detection System (Bio-Rad). Then, 1 μL of the cDNA reaction
+was added to each reaction, and purified PCR products of genes of
+interest were used to create standard curves for each primer pair.
+Denaturation at 95 °C for 3 min was followed by 36 cycles of
+95 °C for 15 s, 54 °C for 30 s, and 72 °C for 1 min.
+A melt curve with was generated with increments of 0.5 °C every
+5 s. The statistical significance of transcript levels differences
+between the library members were calculated using Tukey’s multiple
+comparisons test..

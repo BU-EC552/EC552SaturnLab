@@ -1,0 +1,469 @@
+Metabolic
+engineering requires
+the optimization of native and heterologous pathways in order to maximize
+the yield of the desired chemical product, prevent the buildup of
+toxic intermediates, and maintain cell viability. A common strategy
+is finely tuning the expression of each cellular component using titratable
+systems. These systems rely on exogenous inducer molecules
+to tune the expression levels of regulated genes; by varying the concentration
+of the inducer, the expression levels of the gene can be manipulated
+without additional genetic modifications to the host organism. A number
+of titratable systems are available that were derived from or inspired
+by natural processes—including nutrient utilization pathways, riboswitches, antibiotic resistance cassettes, quorum sensing, and light sensing. Metabolic engineering has been more frequently adopting nonmodel
+organisms that already possess desired pathways or have adapted to
+environments that parallel production conditions. Achieving titratable control in these organisms is more
+challenging because of limited genetic tools as well as growth conditions
+that perturb the stability and function of the inducers or regulators.
+However, these organisms often encode multiple sugar utilization pathways
+that can serve as ready-made titratable systems. Sugar utilization pathways are generally composed of transporters
+that import the sugar into the cytoplasm, catabolic enzymes that shunt
+the sugar into central metabolism, and regulators that activate the
+expression of the transporters and the enzymes when bound to the sugar
+(Figure A). Furthermore, pathways often respond
+to their individual sugar, offering orthogonal systems for the coordinated
+optimization of gene expression. The drawback of co-opting natural
+utilization pathways is their
+potential to exhibit undesirable behaviors. While an ideal titratable
+response should be uniform and linear (Figure B), sugar utilization pathways have been shown to exhibit bimodal,
+sharp responses that prevent fine-tuning of expression levels in all
+cells of the population. These responses can be attributed to positive feedback within the
+pathway, which emerges from the sugar inducing the transporters that
+import more sugar into the cell. The pathways also possess
+negative feedback from induction of the catabolic enzymes that break
+down the sugar. While negative feedback
+would be expected to counterbalance positive feedback, sugar catabolism also degrades the inducing sugar. With all of these
+contributing factors, a fundamental question is how to modify a given
+pathway to achieve a desirable titratable response. A powerful
+model has been the -arabinose utilization
+pathway in . This pathway encodes
+one high-affinity transporter (encoded within the  operon) and one low affinity transporter (encoded by the  gene), is well characterized, and has been regularly
+used for inducible control. This pathway has also been shown to exhibit
+a bimodal response, complicating its use as a titratable system. Accordingly, previous efforts sought to eliminate
+bimodality through the overexpression of one transporter along with
+multiple alterations to the pathway. Khlebnikov and co-workers demonstrated
+that heterologously expressing the low-affinity transporter AraE could
+remove bimodality, which required disrupting both endogenous transporters. Separately, Morgan-Kiss and co-workers demonstrated that heterologously
+expressing a substrate-relaxed mutant of the lactose transporter could
+eliminate bimodality in a strain lacking the -arabinose
+transporters and catabolic enzymes. As
+a result, the consensus is that overexpressing a transporter and stripping
+away almost all native components of the pathway should be performed
+to achieve titratable control. While these studies laid the groundwork
+for generating utilization pathways with titratable responses, they
+called for extensive genetic manipulations (i.e., plasmid-based expression
+of a transporter, disruption of multiple genetic loci) that may be
+difficult to achieve in nonmodel organisms and may not reflect ideal
+configurations for titratable control. In addition, a systematic analysis
+of all pathway alterations remains to be performed, which could reveal
+other configurations that require fewer modifications or generate
+a more desirable titratable response. Here, we systematically
+evaluated how natural utilization pathways
+can be altered to achieve titratable control. Mathematical modeling
+and experimental probing of the -arabinose utilization pathway
+revealed distinct trade-offs when altering the pathway: (i) constitutively
+expressing the low affinity-transporter yielded the most linear response
+but required additional modifications to eliminate bimodality, (ii)
+constitutively expressing one transporter and deleting the other transporter
+had both positive and negative effects on the response properties
+specific to the selected transporter, and (iii) sugar catabolism linearized
+the response and reduced the extent of bimodality at the cost of elevated
+sugar concentrations to induce the pathway. Within these trade-offs,
+one of the most desirable responses came from a single alteration:
+constitutively expressing the high-affinity transporter. Furthermore,
+maintaining sugar catabolism improved the linearity of the response
+at higher cell densities, perceivably due to negative feedback through
+depletion of the exogenous sugar. Similar trends were observed for
+the -xylose utilization pathway, suggesting broad applicability
+of our findings. These insights demonstrate that there is no perfect
+set of typical alterations when co-opting sugar utilization pathways,
+wherein the optimal configuration will depend on the specific demands
+placed on the titratable system. Co-opting sugar utilization pathways for
+titratable control of
+gene expression. (A) Components of inducible sugar utilization pathways.
+High affinity (T) and low-affinity (T) transporters
+import the sugar into the cell, while catabolic enzymes (E) shunt
+the sugar into central metabolism. Transcription regulators (R) up-regulate
+the expression of the transporters and the enzymes, but only in the
+presence of the sugar. (B) Desirable properties for a titratable response.
+These properties include a uniform response at all inducer concentrations,
+a large dynamic range (high δ), low inducer concentrations to
+induce the pathway (low EC), and strong linearity (low
+η). We considered four metrics to assess the desirability of the response
+(Figure B): the extent of bimodality (the
+number of peaks in the fluorescence distribution), the dynamic range
+of the response (δ, measured as the ratio of expression levels
+at full and no induction), the inducer concentration to achieve half-maximal
+induction (EC), and the steepness of the response curve
+(η, measured as a Hill coefficient). An ideal titratable system
+would exhibit uniform expression across the cell population at all
+inducer concentrations, a large dynamic range, a low inducer concentration
+to achieve half-maximal induction, and a low Hill coefficient reflecting
+the steepness of the response curve. We used these metrics as the
+basis to evaluate the predicted or measured behaviors of sugar utilization. Simple
+Mathematical Model of Sugar Utilization We built
+a simple mathematical model of sugar utilization to qualitatively
+explore how different alterations to the pathway influence the response
+properties (see ).
+This model was composed of two transporters that import sugar into
+the cell, one enzyme that breaks down the sugar, and one regulator
+that binds the sugar and subsequently activates the expression of
+the transporters and the enzyme. This general configuration captures
+the -arabinose utilization pathway and many other pathways
+found in microorganisms. Parameter values were selected for one high-affinity/low-capacity
+transporter and one low-affinity/high-capacity transporter at biologically
+relevant expression strengths and activities to yield a bistable response
+(Figure , see ). This configuration parallels the -arabinose
+utilization pathway and creates an undesired behavior for titratable
+control. Simple mathematical model predicts trade-offs when altering the
+pathway structure. (A) The model assumes a base pathway comprising
+a high-affinity/low-capacity transporter (T) and a low-affinity/high-capacity
+transporter (T) that import extracellular sugar (S) into the cell, a catabolic enzyme (E) that degrades the
+sugar, and a constitutively expressed regulator that upregulates the
+expression of the transporters and the enzymes when bound to the sugar.
+The steady-state expression levels of the enzyme are reported as a
+function of extracellular sugar concentration. Note that all variables
+were nondimensionalized as part of the model derivation. Dashed lines
+indicate bifurcation regions. To alter the pathway, T was
+constitutively expressed (C,D) and the activity of T was
+further eliminated (E,F), T was constitutively expressed
+(G,H) and the activity of T was further eliminated (I,J),
+and the activity of the catabolic enzymes was eliminated (B,D,F,H,J).
+Three strengths of constitutive expression were selected for T and T (low, light blue; medium, blue; high, dark
+blue). See  for
+more details. Experimentally Probing -arabinose Utilization to Explore
+Model Predictions We concurrently altered and assessed the -arabinose utilization pathway in  K-12.
+This pathway was attractive because of its extensive characterization, its widespread use as a titratable system, and its bimodal response that prevents titratable
+control. The pathway
+comprises three enzymes (encoded by ) that
+shunt -arabinose into the pentose phosphate pathway, a low-affinity
+transporter (encoded by ), a high-affinity transporter
+(encoded by ), and a dual transcription regulator
+(encoded by ) that upregulates the expression
+of all other pathway components when bound to -arabinose
+(). A third -arabinose-responsive
+gene () encodes a putative transporter, although
+this gene appears to contribute negligibly to the pathway response and thus was not considered in our analyses. To measure the
+response to -arabinose, we equipped the wild type (WT) strain
+of  MG1655 with a low-copy plasmid encoding
+the  promoter upstream of the green fluorescent
+protein (GFP) gene. The associated strain
+was then grown for 6 h in a defined medium supplemented with different
+concentrations of -arabinose to mid log phase (ABS ∼ 0.4) and subjected to flow cytometry analysis (). The incubation time was selected
+such that longer incubation times would yield similar fluorescence
+distributions (). Figure  displays representative response curves while Table  reports the calculated response metrics. The response
+curves are depicted as dot plots to capture the extent of bimodality
+within each fluorescence distribution (the relative size of each dot)
+and the fluorescence of each subpopulation (vertical location of each
+dot). Following this approach, the WT strain yielded a bimodal response
+across a wide range of -arabinose concentrations (Figure A, Table ) similar to previous
+observations. Probing alterations to the -arabinose
+utilization pathway
+in . The wild type pathway (A) was subjected
+to different alterations:  was constitutively
+expressed (P-) (C,D) and  was further deleted (Δ)
+(E,F),  was constitutively expressed (P-) (G,H) and  was further
+deleted (Δ) (I,J), and  was deleted (Δ) (B,D,F,H,J). Each designated
+strain was back-diluted into M9 minimal medium supplemented with the
+indicated concentration of -arabinose and grown for 6 h
+to ABS ∼ 0.4 prior to flow cytometry analysis.
+For unimodal distributions, the resulting mean fluorescence is plotted.
+For bimodal distributions, two dots are plotted to represent the mean
+fluorescence and the relative number of cells in the induced (black)
+and uninduced (white) subpopulations (see  for more details on the flow cytometry analysis). The diameter
+of each dot is directly proportional to the fraction of cells in that
+subpopulation. Gray boxes indicate the limit of detection due to autofluorescence.
+Each dot plot is representative of at least three independent experiments
+conducted on separate days. See Table  for
+the response metrics that account for the replicate experiments. Response Metrics
+for Each Alteration
+of the -arabinose Utilization Pathway in Listed values
+are the mean and
+S.E.M. (dynamic range, δ; Hill coefficient, η) or the
+geometric mean and geometric S.E.M. (effective concentration to achieve
+50% induction, EC) for three independent experiments
+conducted on separate days. All values reflect cultures grown to ABS ∼ 0.4 unless indicated otherwise. The dynamic range
+was calculated as the ratio of the maximal to minimal mean fluorescence
+of the entire population, with autofluorescence subtracted from each
+value. The large error associated with the dynamic range can be attributed
+to basal levels approaching autofluorescence of cells lacking the
+reporter plasmid. Constitutively
+Expressing the High-Affinity Transporter More
+Readily Generates a Uniform Response We considered different
+alterations to sugar utilization pathways that were previously applied:
+constitutively expressing one of the transporters, deleting the other
+transporter, and deleting the catabolic genes. From a network
+perspective, each alteration affects feedback within the pathway:
+constitutively expressing or deleting the transporter genes disrupts
+positive feedback, whereas deleting the catabolic genes disrupts negative
+feedback. While differential growth on the sugar could also impart
+feedback, we found that the addition
+of -arabinose did not have a major impact on growth rates
+for any of the pathway alterations (). We first explored the impact of constitutively expressing
+either transporter to partially disrupt positive feedback in the pathway.
+Within the model, we replaced the regulator-dependent expression term
+for either transporter with different constant values. We found that
+all evaluated expression strengths of the high-affinity transporter
+eliminated the bifurcation region (Figure C). In contrast, only the highest expression strength of the low-affinity
+transporter eliminated the bifurcation region (Figure G). In both cases, increasing the promoter strength reduced
+the EC value by allowing greater sugar import at lower
+extracellular concentrations. Because positive feedback is required
+for bistability, the model predictions suggest that the high-affinity
+transporter rather than the low-affinity transporter primarily drives
+bistability, at least under the selected parameter set. To experimentally
+probe model predictions, we replaced the native  or  promoter with a medium-strength,
+synthetic promoter (P- or P-) and measured the response to -arabinose (Figure C,G). Paralleling
+model predictions, constitutively expressing the high-affinity transporter
+eliminated bimodality, whereas constitutively expressing the  low-affinity transporter reduced but did not eliminate
+bimodality. These results clearly demonstrate that (i) constitutively
+expressing the high-affinity transporter  more
+readily generated a uniform response and (ii) only a single modification
+was required to fully convert a bimodal response into a uniform response. Trade-offs when Deleting One Transporter We next explored
+the impact of deleting one of the transporters when the other transporter
+was constitutively expressed. Within the model, the second transporter
+was removed by setting its maximal activity (α,
+α) equal to zero. The resulting impact on the predicted
+response was mixed and specific to the transporter (Figure E,I). Removing the high-affinity transporter from
+the pathway with a constitutively expressed low-affinity transporter
+eliminated the bifurcation region but also shifted the curves to higher
+extracellular sugar concentrations (Figure I). This effect may be attributed to the high-affinity transporter
+allowing sugar import at lower sugar concentrations while driving
+positive feedback within the pathway. In support of model predictions,
+deletion of the  operon (Δ) from the -arabinose pathway with constitutively expressed  resulted in a uniform response with a modest but statistically
+significant increase in the EC value (p-value = 0.019)
+(Figure I, Table ). The model predicted that removing the low-affinity transporter
+from the pathway constitutively expressing the high-affinity transporter
+had a negligible effect (compare parts C and E in Figure ). While this may suggest that the low-affinity
+transporter is poorly induced for our parameter set, the low-affinity
+transporter alone could mediate full induction of the pathway at high
+extracellular sugar concentrations (). Deletion of  (Δ) from the -arabinose utilization pathway constitutively
+expressing  also maintained the uniform response
+(Figure E). However, there was a significant
+decrease in the EC value (p-value = 0.008) and a significant
+increase in the Hill coefficient (p-value = 0.003). These changes
+would suggest that the low-affinity transporter contributes more than
+that predicted by the model by extending the concentration range that
+titrates the response. These changes also suggest that deletion of
+the low-affinity transporter poses a distinct trade-off: a lower EC value at the cost of a sharper response. Trade-offs
+when Eliminating Sugar Catabolism We next
+explored the impact of removing sugar catabolism. Previous work concluded
+that catabolism posed a barrier to a titratable response by breaking
+down the inducing molecule. Separately,
+sugar catabolism was predicted to entirely eliminate bistability, suggesting conflicting contributions. To examine
+the impact of removing catabolism in the model, we set the activity
+of the enzyme equal to zero (α = 0) and evaluated
+the impact on the response metrics for all pathway configurations
+(Figure B, D, F, H, J). The model predicted
+both positive and negative effects of removing catabolism. As a positive
+effect, removing sugar catabolism lowered the apparent EC value by preventing the intracellular breakdown of the sugar. As
+two negative effects, removing sugar catabolism enhanced the propensity
+for bistability and sharpened the response. Both negative effects
+can be attributed to sugar catabolism conferring negative feedback
+on the pathway similar to negative feedback in transcriptional circuits. To test these predictions,
+we deleted the  operon (Δ) from all strains and measured the single-cell response curves (Figure B, D, F, H, J; Table ).
+For all pathways (Figure ), the response metrics
+aligned with model predictions. In particular, removing -arabinose catabolism significantly lowered the EC value
+(p-values = 1 × 10 to 0.008), with over 100-fold
+differences in some cases. Furthermore, removing -arabinose
+catabolism sharpened the response (p-values = 3 × 10 to 0.005) and increased the propensity for bimodality. Finally,
+removing -arabinose catabolism did not have a consistent
+impact on the dynamic range, where a statistically significant increase
+was observed for only two strains (P-, p-value = 0.027; P- Δ, p-value = 0.010) (Table ).
+Thus, we conclude that removing -arabinose catabolism poses
+a major trade-off between the amount of sugar necessary to induce
+the pathway and the sharpness of the response. Breakdown of the Sugar
+Can Help Linearize the Response Catabolism can deplete the
+reserve of sugar in the medium, which
+has been viewed as a barrier to the generation of titratable systems. However, such depletion would form negative
+feedback by depleting the available sugar to induce the pathway, potentially
+benefiting the response. To explore these potential effects, we first
+modified the simple model to allow for the depletion of the extracellular
+sugar through catabolism (see ). The resulting model was then employed to predict the response
+in the presence of catabolism. As part of the model, we could specify
+the relative volume of the cells to the medium (ν), which dictates
+in part the rate of depletion. We specifically focused on the pathway
+with the constitutively expressed low-affinity transporter (T = 0.02) and the deleted high-affinity transporter (α = 0) that yielded a graded response in the presence or absence
+of sugar catabolism. The model predicted that depletion of the extracellular
+sugar flattened the curve and elevated the EC value (Figure A). High depletion (ν = 0.01) was detrimental
+based on the sharp response close to saturating sugar concentrations,
+although intermediate depletion (ν < 0.01) improved the overall
+linearity of the response. To test these predictions,
+we cultured the P- Δ and P- Δ Δ strains for 6 h to final
+cell densities ranging from ABS ∼ 0.004 to ABS ∼ 1.0 (Figure B). Our reasoning
+was that extracellular -arabinose would be more depleted
+at higher densities, but only in
+the strain with catabolism. For this strain, we observed higher EC values and lower Hill coefficients with increasing cell
+densities, paralleling model predictions (Figure C, Table ). For the strain lacking
+catabolism, we observed similar EC values and Hill coefficients
+for all cell densities. These findings provide further support for
+a surprising benefit of sugar catabolism at higher densities and offer
+a separate form of negative feedback in sugar utilization that may
+generate more desirable titratable responses. A notable downside to
+this strategy is that the extent of induction peaks and then decreases
+over time at higher cell densities (), potentially complicating the tuning of expression levels. Effect of cell density in the presence or absence
+of sugar catabolism.
+(A) Model predictions for the pathway with a constitutively expressed
+low-affinity transporter (T = 0.2) and the deleted high-affinity
+transporter (α = 0) when accounting for depletion
+of extracellular sugar through catabolism. Each simulation was conducted
+to τ = 10. The different curves reflect the relative volume
+of the cells to the medium (ν). Note that all variables were
+nondimensionalized as part of the model derivation. See  for more details. (B)
+Growth curves for the P- Δ strain with or without (Δ) sugar catabolism in defined medium with or without 10 mM -arabinose. Each value represents the mean of three independent experiments.
+The SEM for each measurement was smaller than the symbol. (C) Representative
+dot plots for both strains in log phase grown to the indicated final
+cell densities. See Figure  for more information
+on the dot plots. Each dot plot is representative of at least three
+experiments conducted from independent colonies. See Table  for the response metrics that account for the replicate
+experiments. Similar Trends When Linearizing the Response to -xylose To extend the generality of our insights, we focused on the -xylose utilization pathway in . Similar
+to the -arabinose utilization pathway, the -xylose
+utilization pathway encodes a high-affinity transporter and a low-affinity
+transporter, a transcriptional activator that recognizes -xylose, and enzymes that shunt -xylose into the pentose
+phosphate pathway (). Also paralleling
+the -arabinose utilization pathway, the -xylose
+utilization pathway exhibits a bimodal response when tracking the
+activity of the  promoter (Figure A). We first asked how constitutively expressing the native high-affinity
+transporter () impacts the response. Paralleling
+the -arabinose utilization pathway, constitutively expressing
+the endogenous copy of  resulted in a graded
+response at all examined -xylose concentrations (Figure B). We next deleted the catabolic operon () to evaluate the impact of removing -xylose
+catabolism. Further paralleling the -arabinose utilization
+pathway, deletion of the catabolic operon significantly reduced the
+EC value (99.8 μM ×/÷ 2.20 to 0.033 μM
+×/÷ 1.10, p-value = 0.0014) at the cost of an increased
+Hill coefficient (1.00 ± 0.08 to 1.58 ± 0.24, p-value =
+0.019) (Figure B). Collectively, we were able
+to generate a linear response to -xylose through a single
+alteration and observed similar trade-offs when further deleting sugar
+catabolism, all matching our observations for the -arabinose
+utilization pathway. Linearizing the response to -xylose. The wild type  strain (A), the strain constitutively expressing
+the high-affinity transporter  (B), and the
+strain constitutively expressing the high-affinity transporter  and lacking the catabolic operon  (C) each harbored the reporter plasmid pUA66-pxylA. The designated
+strain was back-diluted into M9 minimal medium supplemented with the
+indicated concentration of -xylose and grown for 6 h to
+ABS ∼ 0.4 prior to flow cytometry analysis. See
+Figure  for more information on the dot plots.
+Each dot plot is representative of at least three experiments conducted
+from independent colonies. Design Rules to Engineer Sugar Utilization
+Pathways for Titratable
+Control Overall, our combination of mathematical modeling
+and experimental probing of -arabinose and -xylose
+utilization suggest general design rules when co-opting natural sugar
+utilization pathways as titratable systems. The principal rule is
+that there is no single, perfect set of alterations within the commonly
+used set that we investigated. Instead, each alteration comes with
+specific trade-offs beyond the required number of genomic alterations.
+Accordingly, the best set of alterations will depend on the demands
+of the desired titratable system. For instance, systems that rely
+on expensive inducers would opt for modifications that minimize the
+EC value, whereas systems that require fine-tuning would
+minimize the Hill coefficient. The trade-offs principally applied
+to the EC value and the Hill coefficient, whereas alterations
+did not predictably impact the dynamic range. The next rule
+pertains to the need for a uniform response free of bimodality. A
+uniform response can be most readily achieved by constitutively expressing
+the high-affinity transporter rather than the low-affinity transporter.
+Theoretically, sufficient expression of either transporter can eliminate
+bimodality, although the high-affinity transporter could be expressed
+at much lower levels. The advantage of this strategy is that lower
+expression conserves cellular resources and limits the toxicity of
+overexpressing membrane proteins. The third rule relates to
+trade-offs associated with removing one
+transporter when the other is constitutively expressed. Removing the
+high-affinity transporter can help eliminate bimodality at the potential
+cost of a higher EC value, whereas removing the low-affinity
+transporter reduces the EC value at the cost of a sharper
+response. An alternative would be constitutively expressing the second
+transporter, which could be explored in future studies. A final
+rule pertains to sugar catabolism. Aside from requiring
+higher sugar concentrations to induce the pathway, sugar catabolism
+helps reduce the extent of bimodality and linearizes the response.
+Linearization may be further enhanced when cultures are grown to higher
+cell densities. Achieving consistent densities between experiments
+may be challenging and entry into stationary phase may alter pathway
+activity (). Furthermore, sugar
+catabolism may perturb central metabolism as part of metabolic engineering
+that complicates the results. However, the enhanced linearity would
+offer finely tuned control over gene expression that may be essential
+when precise pathway optimization is needed. The design rules
+described above were extracted from a simple model
+and probing of -arabinose utilization. The rules also applied
+to the -xylose utilization pathway, suggesting broader applicability.
+However, many utilization pathways exhibit variations on the simple
+pathway, such as anabolic pathways or
+pathways that are induced by metabolic intermediates. Further analysis of these pathways will offer insights
+into the desirability of their natural responses and any required
+manipulations. Separately, we relied on a more restrained parameter
+set to probe alterations. Further interrogating parameter space may
+reveal other parameters and design rules tailored to the behavior
+of the native pathway. With additional insights, a set of more detailed
+design principles could be developed. The end result will be reliable
+means to convert the myriad of sugar utilization pathways in the microbial
+world into versatile titratable systems for fundamental genetic studies
+and for the engineering of microorganisms with optimized metabolic
+processes. All strains used in
+this work were derived from  K-12
+substrain MG1655 and are listed in . With the exception of [Δ P]::[ P], all
+genome modifications were achieved by PCR amplifying the  or  resistance cassette from pKD3 and recombineering
+the linear DNA into NM400 through mini-λ-mediated recombination. The corresponding oligonucleotides are listed
+in . To insert the constitutive
+promoters, the promoter sequence (J23110 from the Registry of Standard
+Biological Parts) was included in one of the primers used to amplify
+the resistance cassette followed by a second set of primers to add
+the homology arms for recombination. Successful recombinants were
+verified by PCR and by sequencing. The genomic locus with the resistance
+cassette was then transferred to MG1655 by P1 transduction. In the
+case of Δ::, the  cassette was excised with the pCP20 plasmid to allow
+for the subsequent insertion of the  cassette
+as part of the replacement of the promoters for  or for . All
+P1 transductions were verified by PCR. In the case of [Δ P]::[ P], the amplified  cassette was
+recombineered directly into MG1655 using pDK46. Once generated,
+each strain was transformed with the pUA66-ParaB or pUA66-PxylA reporter
+plasmid encoding the low-copy sc101 origin-of-replication, the promoter
+region of the  operon or the  operon, respectively, and a downstream copy of  with a strong ribosome-binding site sequence. The reporter plasmids along with the cloning and recombination
+plasmids are listed in . Each
+reporter plasmid offers a balance between maximizing the fluorescence
+for high sensitivity and minimizing the copy number to limit titration
+of the transcription regulators AraC and XylR. Strains
+harboring the reporter
+plasmid were streaked out from glycerol stocks onto LB plates supplemented
+with appropriate antibiotics. Single colonies were then inoculated
+in 2 mL of M9 minimal medium (1X M9 salts, 10 μg/mL thiamine,
+2 mM MgSO, 0.1 mM CaCl supplemented with 0.4%
+glycerol, 0.2% casamino acids, and 0.25 μg/mL kanamycin) and
+grown overnight at 250 rpm and 37 °C. The overnight cultures
+were then back-diluted into 2 mL of the same medium with varying concentrations
+of the indicated sugar and grown under the same conditions for 6 h
+to a final ABS of ∼ 0.4 unless indicated otherwise.
+Cell density measurements were performed on a Nanodrop 2000c (Thermo
+Scientific). For the time-course experiments (), cultures were grown for the indicated time
+to the same final ABS of ∼ 0.4. Cells were diluted 1:100 in
+1× PBS and run on an Accuri C6 flow cytometer (Becton Dickinson)
+equipped with CFlow plate sampler, a 488 nm laser, and a 530 ±
+15 nm bandpass filter. Cells were gated based on forward scatter (FSC-H)
+and side scatter (SSC-H) using a gate set based on experiments with
+DRAQ5 dye (Thermo Scientific). A lower cutoff of 11 500 au
+for FSC-H and 500 au for SSC-H was used to eliminate the appearance
+of excessive noise. At least 20 000 cells were collected for
+each sample. See  for more
+information on the analysis. Curve Fitting to Extract Performance Metrics The Hill
+equation ( = */( + ) + , where , , and  are fit constants and  is the fluorescence
+in the absence of the inducing sugar) was used to fit the mean fluorescence
+values () across the different applied concentrations
+of applied sugar (). Curve fitting was performed
+using the least-squares approach with the natural log of the measured
+and predicted mean fluorescence values. Of the fit values,  is the Hill coefficient (η),  is
+the EC value, and ( +  – AF)/( – AF) is the dynamic range
+(δ) (where AF is autofluorescence of the cells harboring the
+pUA66 plasmid). All simulations
+were conducted
+in MATLAB. The ordinary differential equations were integrated using
+the Euler method. The stable and unstable steady-states were calculated
+by implementing the arc-length continuation method. The details of
+the model can be found in , including its derivation and the selected values for the model
+parameters. P-values were
+calculated using
+the student  test with unequal variance when comparing
+all parameter metrics. The test used one tail for expected changes
+between metrics (e.g., an increase in the Hill coefficient) and two
+tails when no changes were expected. EC values were assumed
+to follow a log-normal distribution..
