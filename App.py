@@ -61,8 +61,12 @@ class Worker(QRunnable):
         # Right now, just testing if we can send and recive information from a thread
         print(self.args[0])
         print("Thread start") 
-        query_result = "Thanks main very cool " + self.args[0] 
-        time.sleep(5)
+        # query from main
+        query = self.args[0] 
+        # integrate some querying thing here    
+
+        query_result = "whatever"
+        time.sleep(1)
         self.signals.result.emit(query_result)
         print("Thread complete")
 
@@ -71,11 +75,11 @@ class mainWindow(QMainWindow):
     def __init__(self, *args, **kwargs):
         super(mainWindow, self).__init__(*args, **kwargs)
         # Initialization Parameters
-        self.title = "SaturnLab - GenBank Search Engine"
+        self.title = "SaturnLab - Search Engine"
         self.left = 50
         self.top = 50
-        self.width = 600
-        self.height = 200
+        self.width = 1080
+        self.height = 720
         self.initUI()
 
         # Initialize Thread Queue
@@ -87,6 +91,14 @@ class mainWindow(QMainWindow):
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
 
+        # set widget as main window
+        wid = QWidget(self)
+        self.setCentralWidget(wid)
+
+        # create Layout
+        grid = QGridLayout()
+        wid.setLayout(grid)
+
         # create the search bar (just a text box)
         # search bar constraints
         tb_x = 20
@@ -94,22 +106,41 @@ class mainWindow(QMainWindow):
         tb_w = 280
         tb_h = 40
         self.textbox = QLineEdit(self)
-        self.textbox.move(tb_x,tb_y)
         self.textbox.resize(tb_w,tb_h)
+        grid.addWidget(self.textbox, 0,0)
 
         # create search button next to the search bar
         # search button constraints (distance from search bar)
         s_dis = 30
         self.searchButton = QPushButton("Search", self)
-        self.searchButton.move(tb_x + tb_w + s_dis, tb_y)
+        #self.searchButton.move(tb_x + tb_w + s_dis, tb_y)
         self.searchButton.clicked.connect(self.search_click)
+        grid.addWidget(self.searchButton, 0,1)
 
         # Create a button in the window
         self.button = QPushButton('Show text', self)
-        self.button.move(20,80)
+        #self.button.move(20,80)
+        grid.addWidget(self.button, 1,0)
         
         # connect button to function on_click
         self.button.clicked.connect(self.on_click)
+        
+
+        # make list view below search bar
+        # search results constraints
+        sr_dis = 120
+        sr_w = 100
+        sr_h = 100
+        self.searchResults = QListWidget(self)
+        #self.searchResults.move(tb_x, tb_y + tb_h + sr_dis)
+        self.searchResults.insertItem(0, "Best Paper Ever")
+        grid.addWidget(self.searchResults, 2,0)
+        self.searchResults.resize(sr_w,sr_h)
+
+        # make a large label to the write of the list view
+        self.paperView = QLabel("test", self)
+        grid.addWidget(self.paperView, 2,2)
+
         self.show()
     
     @pyqtSlot()
@@ -118,9 +149,13 @@ class mainWindow(QMainWindow):
         QMessageBox.question(self, 'Message yah', "You typed: " + textboxValue, QMessageBox.Ok, QMessageBox.Ok)
         self.textbox.setText("")
 
+
     # Don't need slots for local main functions that are called
+    # populate list view
     def display_results(self, results):
         QMessageBox.question(self, 'Search Results', "From Thread: " + results, QMessageBox.Ok, QMessageBox.Ok)
+        # loop and print json dictionary
+        
 
 
     @pyqtSlot()
