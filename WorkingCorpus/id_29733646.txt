@@ -1,0 +1,606 @@
+Biological
+systems have been
+classically explored by perturbing their genetic components and then
+determining the phenotypic consequences. These perturbations are typically
+achieved either through DNA mutagenesis, including random and targeted
+gene disruption  various techniques, or by RNA
+interference. However, such alterations are
+typically either irreversible or incomplete. This limits the characterization
+of pathways with toxic or conditionally lethal outputs. Generic
+molecular tools that regulate protein stability synthetically
+at a post-translational level, and in a reversible fashion, are vital
+for the detailed understanding of conditional functions. To this end, various methods have been developed
+that directly control target protein levels inside living cells. These include protein degron systems induced by auxin, light, or
+destabilizing domains (DDs). Here, we mainly focus on the DD-based degron system. The DD strategy involves genetically fusing the protein of interest
+to a small unstable protein domain. This DD-fusion protein is recognized
+by the cellular protein quality control machinery, which will then
+degrade the whole fusion protein. However, in the presence of a DD-specific
+small molecule drug, the DD assumes a folded state and becomes stable,
+allowing the target protein to carry out its normal biochemical function. This methodology therefore allows the possibility
+to study both loss- and gain-of-function phenotypes of any protein
+of interest (POI) from a single POI-DD genetic construct. Recently, two orthogonal streamlined versions
+of these DD methods
+were developed that control target protein levels in a rapid, reversible
+and tunable fashion. The first engineered DD is based
+on a human FK506-rapamycin-binding protein (FKBP) with 107-amino acid
+residues. Point mutations in FKBP (F36V and L106P) confer instability
+to fusion partners, which can be rescued by the cell-permeable high
+affinity small molecule, Shield-1 (Shld-1). The second orthogonal DD is engineered from an  dihydrofolate reductase (DHFR) protein with 159-amino
+acid residues. Similarly, a few key mutations confer instability to
+DHFR, which can be rescued by the highly permeable small molecule
+drug, Trimethoprim (TMP). These systems
+have been demonstrated to function in a variety of contexts, including
+mammalian cell cultures, live mice, viral infections, and in pathogens
+like  and . However, both FKBP and DHFR DDs display high background levels in
+the absence of any drug. This basal level of
+expression is often sufficient for the target fusion protein to carry
+out its normal biochemical function and thereby precludes the observation
+of any loss-of-function phenotype. The double
+architecture for these DDs has recently been shown to minimize the
+background expression levels, but a systematic exploration
+should further expand the uses of this powerful methodology. In this study, we establish the background levels of the original
+FKBP and DHFR DDs by developing an accurate quantification method.
+Further, by systematically testing double architectures for these
+original DDs, we show a reduction in the background levels to a very
+low level compared to the original DDs, in the absence of any drug.
+We demonstrate the applicability of the least-background double architecture
+by developing a drug-stabilizable Gal4 expression system for . We show the functioning of the new
+drug-inducible Gal4 system in the format of the widely used Gal4-UAS
+bipartite expression system . Finally, we
+demonstrate the tightness of the regulation provided by the least
+background architecture, by regulating the expression of a highly
+toxic cell death-inducing transgene . This
+proof-of-concept application demonstrates the broader applicability
+of the double architecture constructs. A Ratiometric
+Quantification Method for DD Characterization The original
+FKBP and DHFR DD studies compared the destabilization
+effects relative to the uninduced conditions. This approach basically omits the background levels as it baselines
+the destabilization effects by rescaling to the uninduced condition,
+and further normalizes the resulting data to the induced condition.
+Hence, we needed an alternative quantification method to directly
+compare the different DD-fusion constructs in terms of  and . To this end, we repurposed a
+commonly used method for expressing multiple genes under the same
+promoter regulation in eukaryotes. This
+method involves the coexpression of two different fluorescent proteins,
+mCherry and enhanced Green Fluorescent Protein (eGFP), under the same
+constitutive  promoter, making use of the
+highly efficient self-cleaving 2A peptide sequence from  virus (). This design ensures the ratiometric expression
+of both upstream  and downstream . We fuse the individual DDs to eGFP
+and use the mCherry as a reference to measure the amount of fusion
+protein synthesized (a). By first normalizing the eGFP fluorescence intensity to
+mCherry intensity, this eliminates any cell-to-cell variability resulting
+from plasmid vector dosage due to transient transfection, or inherent
+stochastic gene expression. Finally, normalizing the resulting ratiometric
+score to a wild-type control eGFP (without DD), allows straightforward comparisons of DD-tagged fusion
+protein abundance at a percentage level. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00302/suppl_file/sb7b00302_si_001.pdf To quantify the destabilizing effects of the original DDs,
+we have
+cloned the individual DDs in frame with a C-terminal eGFP (DHFR-eGFP
+and FKBP-eGFP) (see ). Since fusing
+DDs to the N-terminus is known to exert a stronger destabilizing effect
+compared to C-terminal fusions, we therefore chose the former configuration
+for quantifying the original DDs. We
+transiently transfected these constructs into  S2R+ cells, and measured the resulting fluorescence intensities
+from mCherry and eGFP proteins after 3 days, by flow cytometry. The
+DHFR-eGFP showed ∼18% background in the absence of TMP, but
+could only be stabilized to ∼28% of the wild-type control eGFP
+without DD, upon induction with TMP (b). By contrast, for the FKBP-eGFP fusion,
+the background level was found to be higher at ∼38% without
+a drug, while the Shld-1 drug stabilized the level fully (b). As expected,
+the wild-type control eGFP without DD, remained 100% in both the absence
+and the presence of TMP and Shld-1 drug molecules (b). This suggests that the
+organic solvents used to dissolve the drug molecules, and the drugs
+themselves have no effect on the control eGFP fluorescence intensity,
+indicating of no apparent off-target effects (). Further titrations with various
+concentrations of the drug molecules showed that the DD-fusion protein
+levels can be tuned to a desired range using appropriate concentrations
+of the drugs, albeit to a low fold-induction (c). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00302/suppl_file/sb7b00302_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00302/suppl_file/sb7b00302_si_001.pdf To further validate the fluorescence-based
+ratiometric quantification
+method by an orthogonal method, we directly quantified the protein
+abundance levels of mCherry and eGFP or FKBP-eGFP, in the absence
+and presence of the stabilizing drug, by performing a Western blot
+(). This quantification
+method also involved the same data processing steps as the fluorescence-based
+quantification method, but instead utilized the protein band intensities
+quantified by an immunoblot (see ).
+Interestingly, this quantification method is consistent with the fluorescence-based
+quantification (). In particular, no significant difference (-value
+= 0.4) in the background levels are observed between the two orthogonal
+methods, in the absence of drug. Moreover, in the presence of drug,
+both methods confirm the level of abundance of FKBP-eGFP back to that
+of wild-type levels, which is within the measurement error. This confirms
+that the differences observed among the different DD-fusion constructs
+in the fluorescence based ratiometric quantification method are indeed
+reliable. Since the fluorescence-based quantification method involves
+the high-throughput collection of single-cell data by a flow cytometry,
+we chose this method for the subsequent quantification of the DD constructs. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00302/suppl_file/sb7b00302_si_001.pdf The high background levels observed for DHFR-eGFP (∼18%)
+and FKBP-eGFP (∼38%) DD constructs could be due to transient
+transfection: the multiple copies of the DD constructs in individual
+cells, resulting from transient transfection, would result in more
+mRNA and this might ultimately produce more fusion protein, that could
+overload the proteasome machinery. To test this,
+we created stable  S2R+ cell
+lines of DD constructs by utilizing the coexpressed Puromycin selection
+marker (see  and a). We measured the fluorescence intensities
+of mCherry and eGFP proteins after 3 days of the drug treatment in
+the stable lines, using flow cytometry (). Both in the absence and the presence of drug molecules,
+the DHFR- and FKBP-DD constructs displayed low background and low
+stabilization levels. However, this resulted in almost exactly the
+same level of inducibility to that of the transient transfection-based
+quantification. Based on this, we chose to characterize subsequent
+constructs in transient state. The background levels observed
+for DHFR-eGFP (∼18%) and
+FKBP-eGFP (∼38%) are rather high in  S2R+ cells. Given that these systems have been widely used in the
+several organisms and cell types, they may have been performing better than in our observations. This
+suggests that there may be differential degradation of the unfolded
+protein by the ubiquitin–proteasome system in different organisms. To test this, we subcloned the DHFR-eGFP and
+FKBP-eGFP constructs into a mammalian expression vector (see ). We further quantified the resulting constructs
+in human embryonic kidney 293T cell line (HEK293T). Interestingly,
+we observed only ∼0.9% and ∼10% background levels for
+DHFR-eGFP and FKBP-eGFP, respectively (d). This is a large reduction in the background
+levels for these constructs in HEK293T  S2R+
+cells. However, in the presence of their respective drug molecules,
+DHFR-eGFP could only be partially stabilized (∼8% of the wild-type
+abundance), while FKBP-eGFP stabilized to the wild-type level of abundance.
+As a result, these original DDs show 9- and 11-fold inducibility in
+mammalian cells (d). However, qualitatively, their properties remain the same as in  S2R+ cells: DHFR-DD displays low background
+in the absence of a drug, while FKBP-DD reaches the wild-type level
+of abundance (d). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00302/suppl_file/sb7b00302_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00302/suppl_file/sb7b00302_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00302/suppl_file/sb7b00302_si_001.pdf To further assess the accuracy of ratiometric quantification
+method,
+we compared it to a simpler relative normalization by omitting the
+mCherry fluorescence signal, on the data obtained for the DHFR-eGFP
+and FKBP-eGFP constructs in  S2R+
+cells (b) and
+mammalian HEK293T cells (d). This revealed a ∼13- and ∼26-fold
+induction in  S2R+ cells (), whereas there was
+a ∼79 and ∼153-fold induction in mammalian HEK293T cells
+(). This suggests
+that simple relative normalization overestimates the fold-induction
+by omitting the actual background levels. Furthermore, there is an
+increase in the variability of eGFP fluorescence observed particularly
+for the uninduced condition (). This can be attributed to the noise resulting from the
+plasmid vector dosage of the transient transfection or inherent stochastic
+gene expression, which could not be filtered-out due to the omission
+of the reference mCherry fluorescence intensity. Overall, the quantification
+revealed that the DHFR-DD displays lower background levels than the
+FKBP-DD in an uninduced state. However, the FKBP-DD could be stabilized
+fully upon induction with a drug, whereas the DHFR-DD could not. Notably,
+the ratiometric quantification method allows a highly reproducible
+comparison between DD constructs. Quantitative assessment
+of the background levels and inducibility
+of drug-controllable destabilizing domains (DDs) engineered from bacterial
+DHFR and human FKBP proteins, by flow cytometry. (a) Overview of the
+quantification method developed to quantify the DD fusion proteins.
+The gene construct shows a multigene operon constitutively transcribing
+one mRNA. After translation, three independent proteins (mCherry,
+DD-eGFP and Puromycin selection marker) are derived from the self-cleaving
+2A peptide (T2A). The DD-eGFPs are intrinsically unfolded and are
+hence degraded; they are only stabilized by adding a small molecule
+drug (blue diamond) that is specific to each DD. Hence, GFP fluorescence
+increases relative to the mCherry control upon induction with a drug.
+(b)  S2R+ cells with transient expression
+of these constructs were treated with and without their respective
+inducer drugs, and the mCherry and eGFP fluorescence was measured
+by flow cytometry. The histogram shows the normalized mean eGFP fluorescence
+in the mock-treatments with DMSO or Ethanol (−) and the presence
+(+) of 10 μM drug (TMP for DHFR; Shld-1 for FKBP). Control eGFP
+without DD: DMSO and Ethanol and 10 μM TMP and Shld-1. The fold-induction
+and statistical significance resulting from a  test
+are summarized with multiple asterisk marks representing the level
+of significance (**** = -value ≤ 0.0001 and
+n.s. = -value > 0.05). (c) Titration curve of
+DHFR-eGFP
+and FKBP-eGFP with various concentrations of TMP and Shld-1 drugs,
+respectively. Triangles and filled circles are experimental results,
+whereas the green line is a fitted Hill function. (d) Same as in (b)
+but for the human embryonic kidneys cell line (HEK293T). The error
+bars represent the standard deviation over the mean across the  biological replicates (b and d,  = 5
+and c,  = 3). , the maximum
+s.d. observed for DHFR-eGFP is ±0.38%, hence most error bars
+are invisible in (c). A Double DD Architecture
+Reduces the Background Levels and Improves
+the Fold-Induction http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00302/suppl_file/sb7b00302_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00302/suppl_file/sb7b00302_si_001.pdf An ideal DD should have 0% background
+level in the absence of a drug, and should be stabilized back to 100%
+upon induction with the drug. Each of the two original DDs possesses
+one good property that is close to an ideal DD: DHFR displays a low
+background levels, while FKBP can be stabilized back to 100% with
+the drug (b
+and d). We therefore reasoned that creating
+chimeric DDs by combining the individual DDs might capture their best
+qualities. Consequently, we fused the gene coding for the DHFR and
+FKBP in frame to the N-terminus of eGFP to create a chimeric DD architecture,
+DHFR-FKBP-eGFP. This architecture resulted in a relatively stable
+fusion protein, which showed a high background of ∼29% in the
+absence of both drug molecules. Moreover, this could only be stabilized
+back to ∼38%, resulting in a rather poor inducibility of 1.3-fold
+(). However, the
+introduction of a single zinc finger domain as a structured linker
+(zfln; 33-amino acid residues) in between the DHFR- and FKBP-DD, reduced
+the background level from ∼29% to ∼18% (). This is same as the
+background level of the parent DHFR-DD (b), thus demonstrating the acquisition of
+desired property from the parent DHFR-DD. However, this chimeric architecture
+could only be stabilized back to ∼39% upon induction with both
+drug molecules. This percentage of stabilization is higher than the
+parent DHFR-DD (28%, b), but does not reach anywhere near the 100% of the other
+parent FKBP-DD. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00302/suppl_file/sb7b00302_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00302/suppl_file/sb7b00302_si_001.pdf Because of the promising results with the structured
+linker separating the DDs, we next fused the gene coding for the FKBP-DD
+to the C-terminus of the DHFR-eGFP construct, to make a DHFR-eGFP-FKBP
+chimeric DD architecture. The quantitative assessment of this design
+revealed a much lower background level of ∼10% in the absence
+of drugs, while stabilization with both TMP and Shld-1 could be achieved
+up to ∼42% (a). In the absence of drugs, the chimera degraded ∼2-
+and ∼4-times more efficiently than the parent DHFR- and FKBP-DD,
+respectively, hence drastically reducing the background levels (a). Additionally,
+the stability of DHFR-eGFP-FKBP was increased by a factor of ∼2,
+when compared to the parent DHFR-DD. Overall, this increased the inducibility
+range to a factor of ∼4-fold, which is an improvement on the
+parent DDs. In the presence of just one drug, DHFR-eGFP-FKBP could
+only be partially stabilized to ∼21% (). The maximum stabilization was achieved (∼42%)
+only in the presence of both TMP and Shld-1 drug molecules, demonstrating
+the specificity of the two orthogonally acting drugs (). Since the DHFR-DD has a higher propensity to degrade than
+FKBP-DD,
+this might account for the incomplete stabilization of the DHFR-eGFP-FKBP
+chimeric DD. We therefore made a double DD architecture, FKBP-eGFP-FKBP.
+Indeed, the quantitative assessment revealed a strong degradation
+without drug (∼18% background level), and a full stabilization
+was achieved with Shld-1. This design also degraded ∼2-times
+more efficiently than the parent FKBP-DD, in the absence of the drug,
+hence also reducing the background level (a). Overall, this resulted in a ∼7-fold
+inducibility, hence widening the tunability (a and b). Although the DHFR-eGFP-FKBP
+and FKBP-eGFP-FKBP DD architectures
+degraded much better than the parent DDs in the absence of drug, there
+was still considerable background levels (10–18% background
+expression). This could be attributed to the lower propensity of FKBP-DD
+to degrade in the absence of a drug, compared with DHFR-DD. We therefore
+made a double DHFR-DD architecture, DHFR-eGFP-DHFR. This variant revealed
+a very strong degradation in the absence of drug (∼1% background
+level), and was stabilized back to 16% in the presence of TMP. Since
+this design degrades ∼17-times more efficiently in the absence
+of drug than the parent DHFR-DD, it was the lowest background DD system
+tested up to that point (a). However, with TMP, this architecture was stabilized
+∼2-fold less than the parent DHFR-DD. Nevertheless, this resulted
+overall in a ∼15-fold inducibility, making it the most tunable
+DD architecture (a and b). Recently, new DHFR-DD variants were engineered that
+are described
+as performing better in organisms that grow optimally at room temperature. We therefore further quantified the background
+levels and inducibility of these DHFR-DD variants. Our quantitation
+revealed that the DHFR-DD variant 07 (DHFR07) displayed a high background
+level of ∼13% (a). Despite this, TMP could stabilize the level back to ∼51%,
+which is higher than DHFR and results in a ∼4-fold induction.
+By contrast the other construct, DHFR-DD variant 22 (DHFR22), displayed
+only ∼3% background expression, which is the lowest background
+among the parent DDs. Upon induction with TMP, this variant could
+be stabilized back to ∼37%, resulting in an overall induction
+of ∼11-fold, which is the highest among the parent DDs (a). Since these new DDs appeared promising,
+we systematically created
+the double architectures for DHFR07, DHFR22 and FKBP DDs. We quantified
+the resulting constructs for their background levels and inducibility
+(b). As before,
+there were trade-offs between background and induction levels, resulting
+in fold-inductions between ∼5- and ∼30-fold. Most interestingly,
+the double architecture DHFR22-eGFP-DHFR22 displayed as low as ∼0.5%
+background, making it the least background DD architecture described
+so far. Upon induction with TMP, the level could be stabilized back
+to ∼12%, which is lower than the parent DHFR22-DD (37%), but
+still results in a ∼25-fold induction. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00302/suppl_file/sb7b00302_si_001.pdf In both single
+and double architectures, the DD sequences occur
+immediately downstream and upstream of the self-cleaving T2A peptide
+sequence, respectively. Since the cleavage of polypeptides occurs
+during translation, DD sequences might influence the processing efficiency
+of T2A sequences to produce independent polypeptides. To verify this,
+we performed a Western blot analysis on both single and double DD
+architecture constructs (). This confirms the correct processing of the T2A sequences. We finally chose the least-background DHFR22 variant to explore
+further the single and double DD architectures . Because for classes of proteins that function at extremely low
+levels such as transcriptional activators, it is preferable to have low background levels, rather than the
+maximum possible stability, in order to completely suppress the function
+in an uninduced state. Quantitative assessment
+of the background levels and inducibility
+of the double architectures derived from the parent DHFR- and FKBP-DD
+in  S2R+ cells. (a) Histogram showing the
+normalized mean eGFP fluorescence in mock-treatments with DMSO and/or
+Ethanol (−) and the presence (+) of 5 μM Shld-1 and/or
+5 or 10 μM TMP drug inducer molecules. The horizontal lines
+indicate the mean eGFP fluorescence of parent DHFR (dot) and FKBP
+(hyphen) DDs in the absence of drug. (b) Titration curve for chimeric
+DDs with TMP and/or Shld-1. Other labels are as for . Quantitative assessment
+of the background levels and inducibility
+of DHFR-DD variants in  S2R+ cells that
+are optimized for room temperature. (a)
+Histogram showing the normalized mean eGFP fluorescence for the DHFR-DD
+variants 07 and 22 in mock-treatments with DMSO (−) and the
+presence (+) of 100 μM TMP. (b) Histogram showing the normalized
+mean eGFP fluorescence for the double architectures derived from the
+parent DHFR-DD variants 07 and 22, and with FKBP-DD. The horizontal
+lines indicate the mean eGFP fluorescence of parent DHFR-22 (dot)
+and DHFR-07 (hyphen) DDs in the absence of drug. The error bars represent
+the standard deviation over the mean across the 5 biological replicates.
+Other labels are as for . The Least-Background
+DD Architecture Tightly Regulates a Lethal
+Phenotype in One of the most
+challenging applications of the least-background DD architecture is
+to apply it to signal-amplifying transcriptional activators. These proteins often function at extremely low
+levels to initiate the transcription of target genes. The Gal4 transcriptional activator regulates transgene
+expression under upstream activating sequence (UAS) promoter, which
+is a widely used expression system in . Despite much progress with the existing Gal4-UAS system, there is
+still a need to improve its functionality, especially to temporarily
+express genes that result in lethality upon constitutive expression. This is challenging because of the issue of “leakiness”:
+even low background expression cannot be tolerated due to the lethal
+phenotype. We sought to compare the background levels of the
+original and double architecture DDs . Hence,
+we constructed both DHFR22-Gal4 () and DHFR22-Gal4-DHFR22
+() architectures, by fusing the  in frame with the transcriptional activator  (a). To facilitate
+the easy monitoring of the drug-induced phenotype, we spatially restricted
+the expression of these constructs to the  eye. This was achieved by placing the expression of the constructs
+under the control of the glass multiple reporter () eye-specific enhancer (a). We created transgenic flies from these two constructs,
+by inserting them into the same genomic locus, to minimize the host
+chromatin context influence on their expression. To test the inducibility of the DHFR22-DD architectures , we genetically crossed the driver transgenic fly
+lines to a reporter line that encodes  under
+the  promoter. Feeding the  adult flies on standard fly food, supplemented with various
+concentrations of TMP, resulted in the induction of  reporter expression. The level of eGFP fluorescence observed in
+the  eye increased with the amount of TMP
+in the food (b and c). However, the mock-treated population from the original
+DHFR22-DD architecture () showed no significant
+difference in the level of eGFP fluorescence compared to the double
+() architecture. This population in turn did
+not show a significant difference in eGFP expression when compared
+with that of the negative control population (b and c, Curly of Oster, ). The latter negative control population encodes dominant Curly
+wings phenotype  marker instead of the 1xDHFR
+or 2xDHFR driver transgenes. As expected, this negative control population
+further showed no significant difference in eGFP expression among
+the various TMP drug conditions. The observation that there was no
+significant eGFP fluorescence difference between the mock-treated  and a negative control population indicates
+that the fluorescent microscopy used to quantify the eGFP fluorescence
+intensity is not able to differentiate the weak background eGFP signal
+from that of the cellular autofluorescence. Because of this reason, we could not assess the background levels
+at this stage (but see below). Overall, the induction experiment demonstrated
+that the DHFR-DD-Gal4 system is functional in a whole animal. To further assess the background levels of both the original and
+double DHFR22-DD architectures, we applied the driver lines in regulating
+a lethal phenotype, induced by the expression of a pro-apoptotic gene.
+For this, we chose head involution defective gene, , which executes a cell death pathway in . The  larvae from  and  crosses
+with - line, were exposed
+to mock- and drug-treated conditions to test for background and drug-induced
+expression of  in the eye. This resulted in the
+expected phenotype of structural defects in the eye in a drug-dependent
+manner ().
+However, the original single DHFR22-DD architecture (1xDHFR) showed
+a mild phenotype even in the absence of TMP. The mild phenotype observed
+in  genotype progenies shows complete
+penetrance (b). Also, in the  data, the original architecture
+displayed a higher undegraded background level compare to the double
+architecture (). This can be attributed to the background expression of 1xDHFR22
+that could activate the transcription of  even
+in the absence of TMP. This is the main limitation of single DDs.
+By contrast, the double DHFR22-DD architecture (2xDHFR) had a normal
+wild-type eye phenotype in the absence of TMP (). Particularly, we observed no progenies
+with the 2 genotype that displayed
+eye defects in absence of TMP (b). This suggests that 2xDHFR is completely silent
+in the absence of TMP. In the presence of 1.5 mM TMP,
+we observed complete loss of eye
+in both single and double architecture DHFR22 constructs. However,
+we observed no or very few emergent adult flies with the  genotype, in proportion to the  genotype
+(expected 50% each according to Mendelian inheritance principles,
+given the crosses between heterozygote  driver line and homozygote  reporter
+line). These progenies show a normal development until the pupal stage,
+but no or very few adult flies emerge from the pupal case. This is
+indicative of the lethality associated with higher expression of . This result is consistent with the constitutively active
+Gal4 driver line. The  larvae from  (Gal4 without DHFR22) and - crosses also show a complete penetrance of lethality
+(data not shown). However, in the case of  genotype flies, we do rarely observe the eclosion of a few adult
+flies from the pupal case (b, high error bar). This could be due to the low exposure
+of these larvae to TMP. The larvae that are in the later stage of
+the third instar stop feeding and climb away from their food for pupariation.
+Such larvae eventually eat less TMP compared to the first and second
+instar larvae, and hence appear to have sublethal levels of  expression. This manages to rescue the lethality associated
+with high expression of . These larvae show complete
+loss of eyes upon maturation in to adult stage. On the other hand,
+flies with  genotype did not show
+any lethality in the 1.5 mM TMP condition. This suggests that the
+expression level of  achieved with the 2xDHFR22
+construct in 1.5 mM TMP is below the lethal level. Importantly, this
+is sufficient to induce eye defects in adult flies (a). However, with TMP, we observed
+that on average 84% of progenies with the 2 genotype displayed the eye defects phenotype (b). This is because the larvae that are in
+the later stage of the third instar stop feeding and climb away from
+their food for pupariation immediately upon inoculation of the fly
+food with TMP. This effect may be tuned to attain 100% by excluding
+the third instar larvae during inoculation. Moreover, a negative control
+encoding a  dominant marker showed a wild-type
+phenotype both in mock- and drug-treated conditions, suggesting that
+the TMP drug has no apparent off-target effects. Taken together, the  data also support the improvement of the double
+DHFR22-DD architecture over the original in regulating a developmental
+lethal phenotype. 1xDHFR22;UAS-eGFP, 2xDHFR22;UAS-eGFP The drug-stabilizable Gal4 variants 1xDHFR22 and 2xDHFR22 function  in the format of the widely used Gal4- bipartite expression system for . (a)
+Schematic representation of the constructs used to create drug-inducible
+Gal4 driver lines.  encodes the single DHFR-DD
+architecture with the DHFR variant 22, as a fusion to the  transcription factor.
+A nuclear localization signal (NLS) is added N-terminally and expression
+is driven by the eye-specific enhancer, glass multiple reporter (). Similarly,  encodes the double
+architecture of DHFR22-DD. (b) A population of  progenies from  and  genetic crosses with  reporter line was
+allowed to feed on standard fly food supplemented with DMSO (mock-treatment)
+or various concentrations of TMP for 5-days. A negative control population
+was derived from the Curly wings phenotype resulting from a dominant  marker from the heterozygote 1xDHFR or 2xDHFR driver
+line. Samples of the population were imaged by fluorescence microscopy.
+Representative images of adult fly eyes display an increase in eGFP
+fluorescence intensity as a function of the inducer TMP. The upper,
+middle and lower panels display, respectively,  progenies with genotypes  and . Scale bar: 1 mm. (c) Quantification
+of eGFP fluorescence intensity in the  adult
+eyes either mock-treated with DMSO or with various concentrations
+of TMP. Data are presented as the mean fluorescence detected per eye.
+The statistical significance resulting from a one-way ANOVA and Tukey’s
+post hoc test is summarized with asterisk marks representing the level
+of significance (n.s.= -value > 0.05, * = -value ≤ 0.05, *** = -value ≤
+0. 001, and **** = -value ≤ 0.0001) on the
+indicated data set. The error bars represent the standard deviation
+over the mean across the biological replicates ( = 8–76 individual eyes per dose). A drug-stabilizable Gal4 driver with double DHFR22-DD
+architecture
+regulates  cell death gene expression tightly
+without any observable background. Genetic crosses were set up between
+a Gal4-driven reporter line ( encoding a
+pro-apoptotic gene  under the UAS enhancer) and
+drug-inducible  variants:  and  under a GMR enhancer. The resulting  population of third instar larvae were allowed
+to feed on standard fly food supplemented with DMSO (mock-treatment)
+or 1.5 mM of TMP. Eyes from emerged adult flies were imaged by bright-field
+microscopy. A negative control population was derived from the Curly
+wings phenotype resulting from a dominant  marker
+from the heterozygote 1xDHFR or 2xDHFR driver line. (a) Representative
+images showing structural defects in the adult eyes are displayed.
+Scale bar: 30 μm. (b) Quantification of the structural defects
+observed in the  adult eyes. The statistical
+significance of  tests are summarized with multiple
+asterisk marks representing the level of significance (n.s. = -value > 0.05, and **** = -value ≤
+0.0001), on each indicated data set. The error bars represent the
+standard deviation over the mean across the five independent experiments
+( = 2–48 flies). N.B. several conditions
+produced consistent results across the individual experiments (, zero s.d. and hence no error bars are displayed). In this study, we have
+developed an accurate quantification method
+to compare different DD constructs more directly, and found that the
+original DHFR-DD displays less background, whereas the FKBP-DD can
+be stabilized fully. We took advantage of these properties to make
+double architectures that drastically reduce background levels, albeit
+with some trade-off with respect to the maximal levels of stabilization
+achieved with drug. Nonetheless, the double architectures are suitable
+for applications requiring extremely low background levels over the
+maximum stability trait. We demonstrated
+the possible use of the least-background DD architecture
+by constructing a new drug-inducible transgene expression system for
+the widely used model organism, . By implementing a drug-inducible control of a cell death gene,
+we demonstrated the advantage of the double architecture in tight
+regulation of transgene expression. This new drug-inducible Gal4-UAS
+expression system offers the potential for tighter spatial and temporal
+control of transgene expression. For example, here we used an eye-specific
+enhancer to drive expression of the DD-Gal4, but this can be easily
+adapted to generate further tissue-specific driver lines, to allow
+for wider spatial–temporal control of UAS-transgenes. The regulation of a transcription factor
+activity in a drug-dependent
+manner provides a direct ability to control genetic program of a cell
+at the time of one’s choosing. A plethora of well-characterized
+transcription factors is known, but small-molecule regulation is still
+not widely used. Our study demonstrates the use of DD elements to
+build these kinds of useful tools. Thus, the low-background DD architectures
+developed here should be generally applicable. Furthermore, the drug-mediated
+creation of tunable and reversible protein aggregates using DDs serves
+as a good model system to understand protein aggregation associated
+pathologies. Low background DD architectures
+could help in discovering the fundamental cellular mechanisms involved
+in unfolded protein clearance and unfolded protein response mounted
+cellular stress. These could also be
+used to explore the differential degradation of unfolded proteins
+by the ubiquitin–proteasome system in different organisms. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00302/suppl_file/sb7b00302_si_001.pdf The low background expression that is achieved by the double architecture
+can be attributed to the specific configuration of the individual
+DDs in the architectures. The low background effect is clearly not
+resulting from a simple dosage effect of the multiple DD copies. For
+instance, the chimeric DD architectures DHFR-FKBP-eGFP and DHFR-eGFP-FKBP
+show different background expression and inducibility ( and , respectively), indicating
+that the configuration of the individual DDs in the architectures
+matters. Furthermore, the concatenation architecture resulting from
+two or three copies of FKBP-DD in a row at the N- and/or C-terminus
+of the protein also showed no significant improvement over the single
+and double copy architecture. Taken together, these
+observations indicate that there may exist a context-dependent recognition
+of the unfolded protein domains in a protein, by the cell degradation
+system. In other words, given the differences in the degradation abilities
+of the fusion proteins with multiple unfolded domains, either in the
+N- or C-termini, or in both the N- and C-termini, this indicates independent
+mechanisms of recognition or degradation. In conclusion, these improved DD architectures
+should further widen
+the broad range of applications that currently rely on the control
+of protein function with small-molecules and may also reopen the studies that have been previously
+hindered by the high-background levels of the parent DDs. The DHFR- and FKBP12-based destabilization
+domains used in this study were originally developed by the Wandless
+lab. The following
+DD variants were used in this study: DHFR (Addgene plasmid #29325),
+DHFR07 (#47080), DHFR22 (#47076) and FKBP (#31763). Corresponding
+DNA sequences were fused either 5′ or 3′ of the  gene by overlap PCR extension and were cloned into
+the pAc5-STABLE2-puro multicistronic
+vector, using XbaI and dIII restriction enzymes,
+and were verified by sequencing. The selected constructs were further
+cloned into the mammalian expression vector pTargeT by TA cloning,
+for measuring in human cell lines. To create constructs for
+use in , first a basic vector backbone
+was constructed by cloning the overlap PCR product from glass multiple
+reporter,  basal promoter, and simian virus
+40  sequences, with appropriate restriction
+sites, into the pCR4-TOPO vector (Invitrogen). The cloned cassette
+in this vector was flanked by short 40 base pairs (bps)  recombinase sites, allowing site specific
+integration into the genome  ΦC31 recombinase
+mediated cassette exchange. The  DNA
+sequence was fused either to
+5′ or 3′ of the  gene by overlap
+PCR extension, and was further fused to mCherry sequence, in frame,  the self-cleaving peptide sequence T2A, derived from . The full-length
+PCR products were cloned into the basic vector backbone using AgeI
+and HindIII restriction enzymes. Cell Culture, Transfection
+and Antibiotic Treatment S2R+
+cells were obtained from the  Genome Resource
+Center (DGRC). Cells were cultured in  Schneider’s
+medium (Gibco), supplemented with 10% of fetal bovine serum (FBS),
+1% of penicillin/streptomycin, at room temperature, in a humidified
+chamber. The human embryonic kidney 293T cell line (HEK293T) was obtained
+from American Type Culture Collection (ATCC), and was cultured in
+DMEM (Gibco) supplemented with 10% FBS, 1% of penicillin/streptomycin
+at 37 °C in a humidified incubator with 5% CO. Transfections were performed using Effectene reagent (Qiagen), following
+the manufacturer’s instructions, using 0.1 μg of DNA
+with a DNA:Enhancer ratio of 1:8 and DNA:Effectene ratio of 1:10.
+50 μL of the transfection complexes were added to each well
+in a 96-well plate seeded with 1 × 10 (S2R+) cells
+or 1 × 10 (HEK293T) in 100 μL of medium. All
+transfections were performed in triplicates to quintuplicates. For stable cell line creation, transfections were performed in  S2R+ cells using 0.4 μg of DNA with the
+same DNA:Enhancer and DNA:Effectene ratio, in a 6-well plate seeded
+with 4 × 10 cells. At 72 h post-transfection, the
+cells were selected in 10 μg/mL puromycin for a further 11 days. Drug Treatment and Flow Cytometry Cell cultures were
+titrated with various concentrations of the appropriate orthogonal
+drugs. 1.5 μL of different concentrations of 100× concentrated
+drug solution (TMP in Dimethyl sulfoxide (DMSO) and/or Shld-1 in absolute
+Ethanol) was added to the wells to achieve the final concentration.
+For cultures without any drug, corresponding volumes of solvents (DMSO
+and/or Ethanol) were added. The plates were incubated for 72 h before
+harvesting for measuring the fluorescence by flow cytometry: fluorescence
+measurements were performed on a BD LSRFortessa cell analyzer flow
+cytometer. The eGFP fluorescence was measured using a 488 nm excitation
+laser and a 515–545 nm emission filter, while mCherry fluorescence
+used 561 nm excitation and 600–620 nm emission. A minimum of
+10 000 cells was measured from each sample. From these single-cell
+fluorescence intensities, we further computed the mean fluorescence
+intensity per cell representing the population average for both mCherry
+and eGFP separately using the FlowJo software (Treestar, Inc., San
+Carlos, CA). The mean eGFP fluorescence values were normalized to
+mCherry fluorescence intensities after subtracting for autofluorescence
+derived from mock-transfected cells. The resulting ratiometric scores
+were further converted to %, based on the ratiometric score of the
+control eGFP, without DDs or drug, but with the respective solvents
+of the drugs. Western Blot and Quantitative Analysis S2R+ cells were harvested
+in 1x Laemmli sample buffer 72 h post-transfection.
+The lysates were resolved on a AnykD Criterion TGX Stain-Free protein
+gel (BioRad). The separated protein bands were subsequently transferred
+onto a Nitrocellulose membrane using an iBlot gel transfer device
+(Invitrogen). The FLAG-tagged mCherry and eGFP were detected using
+the primary antibodies anti-FLAG (F3165; Sigma), anti-α-Tubulin
+(T5168; Sigma) and anti-eGFP (Roche), respectively, at a 1:5000 dilution,
+and a peroxidase-conjugated sheep antimouse secondary antibody (Jackson
+ImmunoResearch) at a 1:50 000 dilution. Signals were detected
+using SuperSignal West Pico PLUS chemiluminescent substrate (Thermo
+Scientific) and a LAS-3000 imaging system (Fujifilm). The mean
+protein band intensity values were extracted using freely available
+Fiji software. The eGFP intensity values
+were normalized to mCherry protein band intensities after subtracting
+background. The resulting ratiometric scores were further converted
+to %, based on the resulting ratiometric score of the control eGFP
+(without DDs or drug, but with Ethanol). For experiments
+involving TMP treatment, standard fly food was mixed with different
+concentrations of 100× concentrated TMP, after liquefying the
+food in the microwave. Fluorescence experiments were performed using
+1 to 5 day-old adult progenies, obtained from the genetic crosses
+between heterozygote  and  driver lines with a homozygote - reporter line. After 5 days in the food vials with various concentrations
+of TMP, fly heads were imaged for fluorescence. For experiments involving
+eye structural defects, larvae (from heterozygote  and  with homozygote - reporter line crosses) were inoculated into
+food vials with DMSO or 1.5 mM TMP. Larvae were incubated in these
+vials until the eclosion of adult flies. Emerged adult fly eyes were
+imaged. Imaging and Quantitative Analysis All the microscopy
+images were acquired using either Leica MZ16 F or Zeiss Axio Zoom
+V16 fluorescence stereo microscope, mounted with a DFC300 FX or Axiocam
+506 mono digital cameras, respectively. For representative eGFP fluorescence
+images, background intensities were subtracted and false colored,
+further linearly adjusted for levels using freely available Fiji software. Images were finally assembled using Adobe Illustrator
+version CS6. From all the acquired eGFP fluorescence images,
+quantitative fluorescence intensities were extracted as follows: The
+region of interest was drawn around the fly eye and the mean fluorescence
+intensity of a pixel in this region was calculated for each eye. The
+background intensities were subtracted, by calculating mean pixel
+intensities from the areas around the  head
+object, and plotted on a graph, by calculating the mean over all the
+data for each condition..

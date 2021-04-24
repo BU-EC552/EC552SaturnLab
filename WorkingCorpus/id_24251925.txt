@@ -1,0 +1,324 @@
+Gene regulatory
+networks are
+complex biological circuits that control a wide variety of cell-type
+specific phenotypes. One aim of synthetic biology is to recapitulate
+this level of regulation within synthetic biological circuits to enable a range of biotechnological and therapeutic applications. To date, prokaryotic regulatory systems (e.g., , , and ) have proven tremendously valuable for the construction
+and implementation of synthetic genetic circuitries. Such examples
+include toggle switching, counting, biocomputation, timing, oscillation, communication, and controlled expression
+of therapeutic genes. Many of these circuits,
+however, are based on a limited set of simple modular components.
+Although these elements allow for straightforward and rapid assembly
+of synthetic devices, they may not be optimal for the design of sophisticated
+transcriptional networks that rely on
+endogenous genetic elements or coregulatory factors. As such, there
+is a pressing need for adaptable tools capable of providing highly
+regulated control of gene expression in eukaryotic cells. Transcription
+activator-like effectors (TALEs) are a class of naturally
+occurring DNA-binding proteins that can be utilized for the design
+of hybrid DNA-modifying enzymes. A typical
+TALE DNA-binding domain consists of a series of 33- to 35-amino acid
+repeats that each recognizes a single base pair (bp) of DNA via two
+adjacent amino acid residues, termed repeat variable diresidues (RVDs)
+(Figure ). TALE repeats
+can be assembled into custom DNA-binding domains capable of recognizing
+virtually any contiguous DNA sequence. Synthetic TALE arrays have
+been fused to numerous effector domains including transcriptional
+activators and repressors, nucleases, and site-specific recombinases. Because
+of this versatility and the relative ease with which they can be constructed,
+TALEs have found broad utility in biotechnology and the biomedical sciences. Recent studies have demonstrated
+the effectiveness of TALEs for
+synthetic biology. Most notably, combinations of TALE transcription
+factors (TALE-TFs) have been shown to synergistically activate gene
+expression in human cells, providing synthetic
+biologists with a framework for devising novel circuits that mimic
+the complexity of natural systems. Unlike the more commonly used tetracycline-inducible
+system used in the first study to successfully
+impart chemical control over endogenous gene expression with designed
+transcription factors, TALE-TFs can be
+engineered as two-hybrid systems to allow for gene induction only
+in the presence of light or endogenous
+stimuli. These approaches, however, are
+limited by numerous factors, including low inducer sensitivity, toxicity,
+and the necessity dual-gene systems to accommodate the two-hybrid
+approach. To address this, we set out to develop a versatile new class
+of ligand-dependent transcriptional activators by combining steroid
+hormone receptor ligand-binding domains (LBDs) with custom-designed
+TALE-TFs, a strategy that permits conditional activation of gene expression
+in response to small-molecule stimuli. Such an approach should allow
+for the control of a variety of TALE-TFs using a number of distinct
+small molecules, and facilitate the design of highly responsive synthetic
+networks that interact with endogenous genetic components. We
+began by fusing the LBDs from the murine estrogen (ER) and human
+progesterone (PR) receptors to a synthetic 15-repeat TALE protein
+designed to recognize the AvrXa7 binding site linked to the VP64 transactivation domain (Avr15-VP64). The ER
+and PR proteins are prototypical members of the nuclear steroid hormone
+receptor family. In the absence of hormone, these receptors are inactive
+due to association with several destabilizing factors. Upon ligand
+binding, however, these hormone receptors are released by the inactivating
+complex, undergo intermolecular homodimerization, and bind their target
+DNA to activate transcription (Figure a).
+We and others have previously shown that zinc-finger
+transcription factors fused to these
+LBDs modulate gene expression in response to specific chemical stimuli.
+As the natural ligands of these mammalian receptors mediate significant
+biological activity and thus may stimulate induction of unwanted and
+potentially confounding gene networks, we employed mutants of the
+ER and PR proteins that no longer bind their natural substrates but instead
+recognize the synthetic agonists 4-hydroxytamoxifen (4-OHT) and RU486,
+respectively. We also investigated whether Avr15-VP64 could activate
+gene expression in response to the insect hormone ponasterone A (PonA)
+when fused to a single-chain regulator composed of LBDs from the retinoid
+X-α/ecdysone (RXE) heterodimeric receptor systems (Figure b). Unlike the ER and PR proteins, which must dimerize to become active,
+the single-chain RXE protein functions as a monomer, as RXEs undergo
+an intramolecular rearrangement in response to ligand, enabling gene
+regulation from a single DNA binding site. All LBDs were fused between
+the C-terminus of the TALE DNA-binding domain and the N-terminus of
+the VP64 transactivation domain, as illustrated in Figure . Supporting
+Information Figure S1 To assess the ligand-responsiveness of each
+chimeric TF, we developed
+a transient reporter assay that correlates gene activation with increased
+luciferase expression. We introduced five direct repeats of the 15-bp
+Avr15 TALE binding site upstream of a luciferase reporter gene and
+cotransfected human embryonic kidney (HEK) 293T cells with reporter
+plasmid and expression vectors for each TALE-TF (Figure a). Luciferase expression was measured 24 h after introduction
+of 4-OHT, RU486, or PonA. In the absence of ligand, we observed negligible
+amounts of luciferase expression; however, in the presence of the
+appropriate small-molecule, we observed robust gene expression for
+each Avr15-VP64 fusion (Figure b–d).
+Notably, each ligand-inducible TF stimulated gene activation only
+in the presence of its intended inducer (). This orthogonality suggests that these
+systems could be used for the construction of multiplexed gene regulatory
+networks. Notably, the single-chain RXE-Avr15-VP64 activator demonstrated
+substantially higher levels of gene activation (∼1400-fold)
+than the homodimeric PR-Avr15-VP64 (∼90-fold) and ER-Avr15-VP64
+(∼350-fold) proteins after induction. All subsequent experiments
+were, therefore, performed using the RXE regulatory system. Supporting Information Figure S2 To determine whether the RXE LBD regulates gene expression
+over
+a wide range of ligand concentrations, we evaluated the dependence
+of gene activation by the RXE-Avr15-VP64 protein on PonA concentration.
+We found that luciferase expression increased linearly in response
+to PonA concentrations from 100 nM to 5 μM and that the highest
+level of induction occurred with 10 μM PonA (>1600-fold)
+(Figure e). We observed no luciferase expression
+with PonA
+concentrations less than 50 nM. Intriguingly, the ER and PR proteins
+exhibited switch-like behavior by inducing high levels of gene expression
+in the presence of 10 nM 4-OHT and 1 nM RU486, respectively (), indicating
+that the ER and PR domains are less tunable than the RXE LBD. Taken
+together, these findings indicate that RXE-based TFs are sufficiently
+sensitive for applications that require tunable forms of gene activation. intercellular adhesion molecule 1 Supporting Information Figure S3 Supporting Information
+Figure S3 Next, we sought to determine whether the RXE-based activators could
+regulate gene expression at target sites derived from human promoter
+regions. To test this possibility, we constructed eight RXE-TFs that
+target distinct sites located within 700-bp of the transcriptional
+start site (TSS) of the  () gene. Abnormal ICAM-1 levels are associated
+with inflammation and atherosclerosis. All eight TALEs were composed
+of 14.5 repeats (in order to target 15-bp sequences) and designed
+to target sequences across the entire promoter region in the 5′
+to 3′ orientation (Figure a). Notably,
+TALE design was constrained only by the standard requirement for a
+5′ thymidine nucleotide. In the future, this restriction might
+be removed as a recent report has described the development of TALE
+frameworks that demonstrate no base restrictions at this position
+and allow for any sequence to be targeted. To assess the potency of each individual RXE-TF, we created luciferase
+reporter constructs containing four direct repeats of each individual
+TALE target upstream of the luciferase gene (Figure a). We cotransfected HEK293T cells with a single reporter
+plasmid and the corresponding RXE-TF expression vector and measured
+luciferase expression 24 h after induction with 5 μM PonA. Six
+of the eight RXE-TFs (A, B, C, E, F, and H) increased luciferase expression
+by more than 75-fold in response to PonA, and negligible amounts of
+gene expression occurred in the absence of hormone (Figure b). The most potent activator, RXE-TF F, enhanced
+luciferase expression by more than 500-fold after induction with hormone
+(Figure b). Interestingly, we found that two
+of the eight RXE-TFs (D and G) were unable to induce significant levels
+of gene expression in response to PonA. Further analysis revealed
+that the corresponding constitutively expressed (noninducible) TALE-TFs
+were also unable to significantly enhance gene expression, suggesting
+an inherent limitation within these TALEs or their target sites (). In general,
+the RXE-TFs enhanced gene expression to within 2- to 5-fold that of
+constitutively expressed TFs (). Next, we evaluated whether
+the active RXE-TFs could regulate gene
+expression from a full-length promoter sequence. To test this, we
+cotransfected HEK293T cells with a reporter plasmid that contained
+∼1000 bp of the  promoter with expression
+vectors for each individual  RXE-TF. With the
+exception of RXE-TF F, which activated luciferase expression ∼30-fold,
+we found that each RXE-TF (A, B, C, E, and H) induced only modest
+levels of gene activation (Figure c). However,
+we found that cotransfection and simultaneous induction with combinations of RXE-TFs led to an apparent synergistic increase in gene activation.
+In particular, codelivery of RXE-TFs B and F led to a ∼65-fold
+increase in luciferase expression in the presence of PonA (Figure c). Intriguingly, simultaneous induction of all
+six RXE-TFs led to only a ∼30-fold increase in gene activation,
+indicating that the relative positions of the TALE binding sites impact
+cooperative gene activation. octamer-binding
+transcription factor 4 Supporting Information Figure S4 To examine the generality of the
+RXE regulatory system, we constructed
+and tested seven RXE-TFs composed of 14.5 repeats and designed to
+target sites within 800 bp of the TSS of the human  () gene, which
+has been implicated in both tumorigenesis and pluripotency (Figure a). Five of the seven RXE-TFs (A, B, C, E, and G)
+induced luciferase expression at levels near that of constitutively
+expressed TFs (Figure b and ). In particular, two RXE-TFs
+(A and B) increased luciferase expression by more than 300-fold in
+response to PonA. We note that four direct repeats of the binding
+sites were also used in these reporter systems. To evaluate whether
+these RXE-TFs could also regulate gene expression in the context of
+the full promoter sequence with a single TF binding site, we cotransfected
+a luciferase reporter plasmid that harbored ∼1000 bp of the  promoter with individual RXE-TFs. As with TFs targeting
+the  promoter, individual -targeting RXE-TFs demonstrated only modest levels of gene activation,
+but cotransfection of combinations of these TFs led to ∼40-fold
+increases in luciferase expression in the presence of hormone (Figure c). Supporting Information Figure S5 Supporting Information Figure S6 Lastly, we sought to determine
+whether RXE-TFs could regulate the
+expression of an endogenous human gene. To investigate this possibility,
+we transfected HeLa cells with combinations of the most potent RXE-TFs
+designed to target the  promoter and then evaluated
+surface expression of ICAM-1 via flow cytometry (Figure a and ). In the absence of hormone, we detected no appreciable increase
+in ICAM-1 expression relative to expression on mock-transfected cells
+for any combination of RXE-TFs. At 48 h after induction with 10 μM
+PonA, however, we observed that ∼5–10% of all cells
+transfected with individual (F) and multiple combinations of RXE-TFs
+(B/F; E/F; H/F; and all RXE-TFs) showed an increase in ICAM-1 expression
+(Figure b). In particular, ∼10% of
+HeLa cells cotransfected with RXE-TF F or with the combination of
+RXE-TFs E and F showed a significant increase in ICAM-1 expression.
+Most notably, we found that the RXE-TFs up-regulated ICAM-1 expression
+at rates within 2-to 3-fold the corresponding constitutively expressed
+TFs ().
+These values are similar to those previously reported with ligand-inducible
+zinc-finger transcription factors; however,
+alternate delivery methods could be used to improve the potency of the RXE-TFs. Finally, because
+the  locus is likely epigenetically silenced
+in HeLa cells, we could not assess the
+ability of the -targeting RXE-TFs to induce
+activation of the endogenous gene in this particular cell type. Taken
+together, these findings suggest that, when coupled with TALE technology,
+the RXE regulatory system is a generally effective means for regulating
+the expression of endogenous human genes. Fusion of designed TALE-TFs with
+LBDs derived from steroid hormone
+receptors enabled the generation of a new class of potent, adaptable,
+and conditional transcriptional activators. Our most active transcriptional
+regulator was controlled by the retinoid X-α/ecdysone receptor
+system and effectively regulated transgene expression in response
+to the insect hormone ponasterone A in a dose-dependent manner. These
+ligand-responsive activators also regulated expression of an endogenous
+human gene at levels that approached those observed with constitutively
+expressed transcriptional activators. Unlike recently described light-sensitive
+zinc-finger and TALE transcriptional activators, this hormone-responsive gene
+regulatory system is not based on a two-hybrid system (i.e., single-gene
+system) and thus may be simpler to implement within gene networks.
+Synthetic sensors and circuits have been constructed using a well-defined
+suite of bacterial TF-promoter systems, and the use of artificial
+zinc-finger transcription factors has been shown to be an effective
+means for wiring synthetic transcriptional circuits in eukaryotic
+cells. The range of sequences that can
+be rapidly targeted to novel sequences by these components is limited,
+however. The stringent, dose-responsive, and conditional gene regulatory
+system described herein will provide synthetic biologists with a new
+means for wiring and rewiring similar types of circuits with the added
+potential of multiplexing. An important goal for future studies
+will be to determine the extent
+of off-target effects induced by the RXE-TFs, as recent studies have
+indicated that TALEs composed of 18.5 repeats can potentially tolerate
+up to 3 nucleotide mismatches. High-throughput
+RNA sequencing (RNA-seq) could be used to evaluate off-target transcriptional
+activation. Finally, although it remains
+unknown whether recently described CRISPR/Cas-based transcriptional
+modulators are compatible with the regulatory systems described in this work,
+this active area of research could dramatically expand the utility
+of this approach. Ligand-inducible
+TALE transcription factors. (a) TALE-TF proteins
+fused to ligand-binding domains (LBDs) from the estrogen receptor
+(ER) or progesterone receptor (PR) undergo intermolecular dimerization
+in response to 4-hydroxytamoxifen (4-OHT) or RU486, respectively,
+and up-regulate gene activation from DNA sequences that contain two
+direct or inverted repeat TALE binding sites. (b) TALE-TF proteins
+fused to the chimeric single-chain retinoid X-α/ecdysone (RXE)
+LBD undergo intramolecular rearrangement in response to ponasterone
+A (PonA) and up-regulate gene activation from target DNA that contains
+only a single TALE binding site. E.D. indicates effector domain. Activation
+of gene expression by ligand-responsive TALE transcription
+factors. (a) Schematic illustration of the luciferase reporter system
+used to evaluate ligand-inducible TALE-TF gene activation. Avr15 target
+site repeats indicated. (b–d) Fold-activation of luciferase
+expression observed with the (b) PR/RU486, (c) ER/4-OHT, and (d) RXE/PonA
+regulatory systems. (e) Fold activation of luciferase expression observed
+by RXE-TFs with increasing concentrations of PonA. Error bars indicate
+standard deviation ( = 3; -value
+< 0.0005; paired -test). Ligand-dependent gene activation from the  promoter by RXE-TFs. (a) (left) Location (red circles) of the TALE
+binding sites within the ICAM-1 promoter region, and (right) the sequence
+of each target site. 5′ thymidine nucleotides highlighted red.
+(b and c) Fold activation of luciferase expression after co-transfection
+of RXE-TF expression plasmids with luciferase reporter plasmids containing
+(b) four direct repeats of the  TF binding
+site or (c) the full-length  promoter upstream
+of a luciferase reporter gene. Error bars indicate standard deviation
+( = 3; -value < 0.0005; paired -test). Ligand-dependent gene activation from the  promoter by RXE-TFs. (a) (Left) Location (red circles) of the TALE
+binding sites within the  promoter region, and
+(right) the sequence composition of each target site. 5′ thymidine
+nucleotides highlighted red. (b and c) Fold activation of luciferase
+expression after co-transfection of RXE-TF expression plasmids with
+luciferase reporter plasmids containing (b) four direct repeats of
+the  TF binding site or (c) the full-length  promoter upstream of a luciferase reporter gene. Error
+bars indicate standard deviation ( = 3; -value < 0.0005; paired -test). Regulation of endogenous
+ICAM-1 expression by RXE-TFs. (a) Location
+(red circles) of the TALE-binding sites within the  promoter region, and (right) the sequence composition of each target
+site. (b) Percentage of HeLa cells that showed an increase in ICAM-1
+expression by flow cytometry after transfection with RXE-TFs targeting
+the endogenous ICAM-1 promoter. Data was normalized to mock-transfected
+cells. Error bars indicate standard deviation ( =
+3; -value < 0.002; paired -test). Supporting Information Table S1 TALE arrays were constructed as
+previously described using the Golden
+Gate TALE assembly protocol described by Cermak et al. Synthesized TALE arrays were released by SfiI
+digestion and ligated into the same restriction sites of the previously
+described expression vectors pcD-ER-E2C-VP64, pcD-PR-E2C-VP64, pcD-RXE-E2C-VP64, and pcD-E2C-VP64 to generate pcD-ER-Avr15-VP64, pcD-PR-Avr15-VP64, pcD-RXE-Avr15-VP64,
+pcD-RXE-ICAM-1–1, , 3...8-VP64, pcD-ICAM-1–1,2,3...8-VP64,
+pcD-RXE-Oct-4–1,2,3...7-VP64, and pcD-Oct-4–1,2,3...7-VP64.
+Correct assembly of each TALE construct was verified by sequence analysis
+(). Supporting Information Table S2 To generate luciferase reporter plasmids, a fragment of the  gene was PCR amplified with the primers 5′
+TALE-Luc-AvrXa15, 5′ TALE-Luc-ICAM-1 1,2,3...8, or 5′
+TALE-Luc-Oct-4 1,2,3...7 and 3′ Luc-Rev. PCR products were
+digested with XhoI and SphI and ligated into the same restriction
+sites of pGL3-Basic (Promega) to generate pGL3-ICAM-1 1,2,3...8 and
+pGL3-Oct-4 1,2,3...7. The  promoter was PCR
+amplified from genomic DNA isolated from HEK293 cells with the primers
+5′ Oct-4-Prm and 3′ Oct-4-Rev. The PCR product was digested
+with SacI and dIII and ligated into pGL3 Basic
+to generate pGL3-Oct-4. The pGL3-ICAM-1 reporter plasmid has been
+previously described. Correct construction
+of each plasmid was verified by sequence analysis. All primer sequences
+are provided in . HEK293T cells (American Type Culture
+Collection; ATCC) were maintained in Dulbecco’s Modified Eagle’s
+Medium (DMEM) containing 10% (v/v) Fetal Bovine Serum (FBS) and 1%
+(v/v) Antibiotic-Antimycotic (Gibco). Cells were seeded onto 96-well
+plates at a density of 4 × 10 cells per well and
+established in a humidified 5% CO atmosphere at 37 °C.
+At 24 h after seeding, cells were transfected with 200 ng (total)
+of TALE-TF expression vectors (individual or combinations), 5 ng of
+pGL3 reporter plasmid, and 1 ng of pRL-CMV (Promega) using Lipofectamine
+2000 (Life Technologies) according to the manufacturer’s instructions.
+At 24 h after transfection, cells were incubated with 50 nM to 50
+μM PonA (Life Technologies), 10 nM RU486 (Enzo Life Sciences),
+or 100 nM 4-OHT (Sigma-Aldrich). At 24 h after induction, cells were
+lysed with Passive Lysis Buffer (Promega), and luciferase expression
+was determined with the Dual-Luciferase Reporter Assay System (Promega)
+using a Veritas Microplate Luminometer (Turner Biosystems). Data are
+expressed as fold-activation, which was calculated as the average
+luciferase activity of triplicate samples normalized to the luciferase
+activity of cells transfected with pGL3 reporter plasmid and an empty
+expression vector.  luciferase expression
+from pRL-CMV was used to normalize for transfection efficiency and
+cell number. HeLa cells (ATCC)
+were maintained in
+DMEM containing 10% FBS and 1% antibiotic-antimycotic. Cells were
+seeded onto 24-well plates at a density of 1 × 10 cells per well and established in a humidified 5% CO atmosphere at 37 °C. At 24 h after seeding, cells were transfected
+with 800 ng (total) of TALE-TF (individual or combinations) expression
+vectors using Lipofectamine 2000, according to the manufacturer’s
+instructions. At 24 h after transfection, cells were incubated with
+10 μM PonA. At 48 h after induction, cells were harvested and
+incubated on ice for 30 to 60 min with PE-conjugated mouse anti-human
+CD54 (BD Biosciences). Cells were washed and resuspended with PBS/1%
+FBS, and cell-surface expression of ICAM-1 was measured by flow cytometry
+(FACScan Dual Laser Cytometer; BD Biosciences; FACSDiva software).
+For each sample, 10 000 live events were collected, and data
+were analyzed using FlowJo (Tree Star, Inc.). Relative ICAM-1 induction
+is expressed as the increase in the percentage of PE-positive cells
+in comparison to mock-transfected cells..

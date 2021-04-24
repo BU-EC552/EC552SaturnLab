@@ -1,0 +1,473 @@
+All processes
+in cells are subject
+to variation in the numbers or states of involved molecules. These
+random fluctuations cause gene expression noise, which is the variation
+of the numbers of gene products across a population of clonally identical
+cells. Experimentally one can distinguish between two types of noise
+that affect expression of a particular gene. Extrinsic or global noise is caused by the fluctuations of concentrations,
+state, or location of factors that affect multiple genes or even the
+entire cell, such as the number of ribosomes as a limiting factor
+for overall protein production. Intrinsic
+or gene-specific noise is caused by the stochasticity of the biochemical
+reactions during each step of the expression of an individual gene,
+including transcriptional (, transcription initiation),
+post-transcriptional (, mRNA degradation), (co)translational
+(, translation initiation) and post-translational
+processes (, protein degradation). While in some cases variability in expression
+within a population
+of cells might be beneficial, as in the case of environmental stress
+response, expression noise typically reduces
+cellular fitness and is generally counter-selected. Low noise is especially important for cellular
+processes that require a certain stoichiometry of involved proteins. Similarly, noise control is important to achieve reliable function
+of complex synthetic genetic circuits. Consequently, several strategies for noise reduction have
+been
+recognized in living organisms and applied in the design of synthetic
+genetic circuits. One common strategy is to use negative feedback
+loops, , by transcriptional repression. However, such negative feedback control of gene
+expression has been shown to have very limited efficiency and comes
+at high cost. Decoupling noise from the
+mean expression has also been achieved by altering the expression
+of upstream regulators of the target gene or by inserting inducible promoters with different noise characteristics. In principle, noise can be effectively
+controlled  the basic rate constants of gene expression. In the simplest model of gene expression, the
+steady state
+concentration of a protein is governed by the rate constants of four
+processes: transcription, mRNA degradation, translation, and protein
+degradation. Here, , the same amount of a protein
+can be produced when the gene is transcribed at a high rate but transcripts
+have a low translation rate, or when the gene is transcribed at a
+low rate but the translation rate is high. In the first case, many
+mRNA molecules are translated at a low rate, whereas in the second
+case fewer transcripts are produced but translated at a higher rate.
+The first scenario generally results in lower variation of protein
+concentration over time, because stochasticity of transcription is
+averaged out due to a high number of transcripts. Here, we describe an approach to decouple the mean
+expression from
+the expression noise of a gene by using two different inducers, independently
+controlling the transcription rate and the mRNA degradation rate,
+respectively. Stochastic simulations of an analytical model that links
+gene expression to population-level distributions of protein showed
+that the noise in this system is mainly governed by transcriptional
+bursts at low promoter activities. Finally, we used our noise tuner
+to control signaling noise and therefore the amount of conveyed information
+in the yeast mating pathway, a prototypic signaling pathway for synthetic
+biology. Design and Implementation
+of a Noise Tuner http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00279/suppl_file/sb8b00279_si_001.pdf In order
+to decouple mean gene expression levels from expression noise in , we built a system that allows
+independent control of both transcription rate and mRNA degradation
+rate for a specific gene. This system that we term “noise tuner”
+employs a doxycycline-inducible Tet-promoter to vary mRNA production
+and a ribozyme regulated by a small molecule theophylline to adjust the mRNA half-life (a). Doxycycline binds to the
+constitutively expressed reverse tetracycline trans-activator (rtTA), which is then recruited to Tet-operator (TetO)
+sites within the Tet-promoter and initiates transcription. The mRNA
+degradation rate is controlled by a ribozyme sequence in its 3′
+untranslated region (3′-UTR). This sequence folds into a stem
+loop and exhibits autocatalytic endoribonuclease activity that is
+inhibited by binding of theophylline, which therefore increases gene
+expression (). Additionally, a
+short synthetic transcriptional terminator is placed downstream of the gene. Hereinafter, we will refer to
+a combination of 3′-UTR and transcriptional terminator as a
+3′ regulatory region (3′-RR). For proof of concept, we genomically integrated noise tuner
+modules
+controlling the expression of the yellow-green fluorescent protein
+mNeongreen into yeast and measured fluorescence
+in single cells by flow cytometry. Additionally, our reporter strains
+constitutively expressed a blue fluorescent protein mTurquoise2, which
+allowed for cell-by-cell normalization of the mNeongreen signal and
+thus effective elimination of extrinsic noise sources (see below). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00279/suppl_file/sb8b00279_si_001.pdf First, we tested the efficacy of expression regulation for two
+different ribozymes, (L2b8–47 and L2b8-a1-t41, here termed
+Ribo 1 and Ribo 2), which yielded different
+absolute levels of protein expression but showed similar, approximately
+13-fold, relative changes upon addition of theophylline (). If not mentioned otherwise, subsequent
+results reported here were obtained with ribozyme Ribo 2, which generally
+confers lower expression. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00279/suppl_file/sb8b00279_si_001.pdf Next, we tested whether the synthetic
+3′-RR conferred expression
+levels within the range of native yeast 3′-RRs. For this purpose,
+we compared the noise tuner containing Ribo 2 to constructs with the
+identical Tet-promoter and mNeongreen sequences, but different native
+yeast 3′-RRs, which have been shown to result in either very
+high or low reporter expression, respectively. We found that the noise tuner operates within the lower
+range of expression strengths (b, upper panel); however, if required, higher overall
+expression can be achieved by employing the 3′-RR with ribozyme
+Ribo 1 (). We also calculated
+gene expression noise in these experiments. Here, the noise in protein
+levels, , fluorescence intensities, across the
+population is given as the robust coefficient of variation (see ). We found that gene expression noise at
+a given expression intensity correlates with the overall expression
+strength conferred by a 3′-RR (b, lower panel). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00279/suppl_file/sb8b00279_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00279/suppl_file/sb8b00279_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00279/suppl_file/sb8b00279_si_001.pdf We noticed that stronger
+transcriptional stimulation (, doxycycline concentration)
+led to lower gene expression noise at
+a given median expression level. To further explore the relationship
+between transcription, mRNA degradation and noise, we adjusted steady
+state expression of the noise tuner with different combinations of
+doxycycline and theophylline concentrations to differentially control
+transcription and mRNA degradation rates. From that, we derived a
+comprehensive expression landscape () and a noise landscape that integrates the median expression of
+the fluorescence marker in a population of cells with the variation
+around that median (a). In the noise matrix, “isomedian” lines indicate
+same median expressions that have been obtained with different combinations
+of transcription and mRNA degradation rates (a). We observed that while the noise levels
+at a given median expression were reduced with increasing transcription
+rate, noise was not affected by changes in mRNA degradation rate.
+As a consequence, when a given median expression level is reached
+using high transcription rate and low transcript stability, the population
+of cells exhibits a significantly (up to 2-fold) lower coefficient
+of variation as compared to populations with lower transcription rate
+and higher transcript half-life (b). Similar results with overall higher expression
+levels were obtained when using Ribo 1 for noise tuning (), whereas no effect of theophylline
+was observed for a control strain without the ribozyme (). Since the noise tuner adjusts gene-specific factors of expression,
+it is expected to primarily control intrinsic noise, whereas global
+expression noise should be largely removed by normalization to mTurquoise2
+levels. To verify this, we performed a reduced gate size analysis,
+which can be used in yeast to discriminate between extrinsic and intrinsic
+contributions to the observed noise. The
+analysis was done by selecting subsets of cells according to their
+forward (FSC) and side scatter (SSC) signals in flow cytometric measurements.
+FSC and SSC provide information about cell size and granularity, so
+that by reducing the subset size by applying a smaller gate, sources
+of extrinsic variation are filtered out. We found that noise for non-normalized
+data was somewhat reduced for smaller, morphologically more similar
+subsets of cells, while it remained virtually unchanged for normalized
+data (c). We
+conclude that extrinsic factors make only minor contribution to gene
+expression noise in our non-normalized data and cell-wise normalization
+to the constitutive reporter essentially eliminates those factors.
+Noise in the populations on different ends of the same isomedian line
+changes up to 2-fold. Design and benchmarking
+of a noise tuning system. (a) Schematic
+depiction of the noise tuner. In a Tet-ON system doxycycline activates transcription of the fluorescent
+mNeongreen reporter gene by binding to the constitutively expressed
+reverse tetracycline trans-activator (rtTA, not shown). Addition of
+theophylline prevents mRNA degradation by disrupting the ribozyme
+cleavage activity in the 3′-UTR. (b) Comparison of the noise
+tuner with constructs harboring native 3′ regulatory regions
+measured by flow cytometry. All constructs are identical in their
+Tet promoter and mNeongreen fluorescent reporter gene and differ only
+in their 3′ RRs that confer low (FZF1t, GIC1t) or high (TPS1t,
+ADH1t) expression. Top panel: Dose–responses
+with 0 to 12.8 ng/μL doxycycline. The noise-tuner transcript
+was either unstable (0 mM theophylline, “NT”) or fully
+stabilized (12.8 mM theophylline, “NT + theo”). Bottom
+panel: The noise tuner exhibits similar inverse noise-median correlation
+as native 3′ RRs. Noise is given as the robust coefficient
+of variation (robust CV, see ). Median
+fluorescence intensities normalized to a constitutively expressed
+mTurquoise2 reporter gene are given in arbitrary units (a.u.). Higher
+median fluorescence intensities correspond to induction with higher
+doxycycline concentrations. Gene expression noise is decoupled from
+mean expression by orthogonal
+control of transcription rate and mRNA degradation rate. (a) Median-noise
+landscape for noise-tuner expression at different combinations of
+doxycycline and theophylline concentrations. Colors indicate noise;
+lines indicate identical median normalized fluorescence, interpolated
+from the measured data (“isomedian lines”). At intermediate
+expression range, noise levels can be adjusted for a given median
+expression by use of different combinations of doxycycline and theophylline.
+The measured robust CV decreases when a median is reached with higher
+transcription rates and correspondingly lower mRNA degradation rates.
+(b) Example histograms of populations with similar median expression
+but different noise settings. Populations with higher mNeongreen transcription
+and mRNA degradation rates (red) display lower heterogeneity than
+populations with lower rates (blue). Insets indicate the compared
+populations from (a). (c) Deconvolution of measured noise. For populations
+shown in (b), noise is plotted against the radius of a circular gate
+around the median forward (FSC) and side scatter (SSC) values. Decreasing
+gate sizes lead to more homogeneous FCS-SSC populations, effectively
+filtering out the extrinsic component of the observed noise. In contrast to autofluorescence-subtracted raw
+data (solid lines), noise of autofluorescence-subtracted data normalized
+to a constitutively expressed mTurquoise2 reporter (dashed lines)
+is virtually independent of the gate size. To further
+examine the mechanisms
+behind different dependencies of noise tuner mean expression and noise
+on doxycycline and theophylline levels, we turned to a theoretical
+analysis of the distribution of protein copy numbers in a population
+of cells. In this model, the distribution
+of protein levels depends on only two parameters: , where  is
+the mRNA transcription rate and  is
+the protein degradation rate, and , where  is
+the translation rate and  is the mRNA
+degradation rate (a). The parameter  corresponds to the translational
+burst size—the average number of proteins translated per mRNA—while  can be interpreted as the average number of mRNA transcribed
+during the lifetime of a single protein. According to the model, the
+mean protein number μ per cell can be expressed as the two parameters’
+productwhile the CV can be expressed
+as We note that if the burst size  ≫ 1, meaning
+that if a large number of protein molecules are being produced from
+a single mRNA molecule, then the factor in brackets in  is approximately 1. Thus, in this
+regime, the CV depends only on the parameter , , on the transcription rate and the protein degradation
+rate. The burst size  is generally believed to be
+large, due to the fact that for most genes the translation frequency
+is greater than the mRNA decay frequency. The probability for mature mRNA molecules to encounter the translation
+machinery is higher than to encounter the RNA decay machinery, leading
+to multiple translation events during the lifetime of an mRNA molecule. The independence of the CV on the burst size was further confirmed
+by stochastic simulations, which could reproduce the experimental
+observations in a biologically reasonable parameter space (see ). While the mean protein number was maximized
+when both,  and , were high, the
+CV showed dependence on  but not on  (b). Consequently, the model can also reproduce the experimentally observed
+decoupling of the mean protein number in a cell from its CV. c exemplifies two
+pairs of simulated distributions with similar mean protein number
+but different CVs and which are in qualitative agreement with the
+experimental results in b. The employed two-stage model (ON model) assumes a
+constantly accessible
+promoter and thus, does not factor in all sources of burstiness in
+transcription. The related three-stage model
+(ON–OFF model) takes promoter ON and OFF states into account
+to reflect heterochromatin remodeling. However, using the three-stage
+model would require us to include two additional, unknown parameters  and , which
+are the rates for promoter activation and deactivation, respectively.
+Since we have no experimental data to constrain these parameters,
+we restricted ourselves to the simpler ON model. Furthermore, we can
+show that the observed behavior (CV independent of  when  ≫ 1) holds also for the ON–OFF
+model. From eq 21 in ref (), we find thatThe first term corresponds
+to the noise arising from transcription and translation, while the
+second term corresponds solely to the noise arising from transitions
+between promoter ON and OFF stages. As in , for  ≫ 1 we find
+that the CV does not depend on . A simple mathematical model can reproduce the observed
+median-noise
+relationship. (a) Schematic depiction of the employed model. The protein
+number within single cells is defined by the synthesis and degradation
+rates of mRNA and protein ( and  and  and , respectively), which are used to calculate
+the coefficients  and . (b) Simulated
+protein number and CV as a function of  and . Lines indicate same mean protein number, colors indicate
+CV. Scaling of  and  axes was
+chosen to correspond to experimentally observed expression intensities
+with different doxycycline and theophylline concentrations. (c) Comparison
+of protein number distributions for simulated populations with different
+values for  and . Insets indicate
+the compared populations from (b). Populations that reach a certain
+mean protein number with higher  and lower  show a smaller variance in protein number. Tuning of Information
+Flow through a Signaling Pathway http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00279/suppl_file/sb8b00279_si_001.pdf Finally, we tested the operation
+of the noise tuner in the context
+of a cellular network to investigate whether changing the noise levels
+of individual network components could change the noise of the pathway
+output. We chose to probe noise sensitivity of the yeast mating pathway
+(a), a prototypic
+MAPK pathway and a model system for signal transduction. In haploid
+yeast cells, this pathway detects and transmits a pheromone signal
+emitted by cells of the opposite mating type to induce a mating response. As investment in mating carries high cost and
+leads to cell-cycle arrest, induction
+of the pathway normally occurs with high precision and overall low pathway noise (; compare to b). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00279/suppl_file/sb8b00279_si_001.pdf We applied the noise
+tuner to control expression of an upstream
+negative feedback regulator Sst2 that has been shown to act as noise
+suppressor of the pathway. Instead of
+measuring the regulated gene directly, in this case we quantified
+the pathway output by means of a mNeongreen reporter gene controlled
+by the promoter of the pathway response gene . For regulation of , we tested different combinations
+of doxycycline and theophylline () and chose two that gave similar pathway output but were expected
+to result in different noise levels. Two populations with these different  expression settings were stimulated with different
+doses of pheromone, indeed resulting in similar pathway activity over
+the range of applied pheromone concentrations (b). However, noise in the pathway output
+was substantially different over essentially the whole range of output
+levels (c),
+with higher noise in Sst2 being unambiguously manifested in higher
+signaling and consequently output noise. From this we conclude that
+(i) Sst2 noise can be regulated by the noise tuner, and (ii) changes
+in Sst2 noise are transmitted, at least qualitatively, through the
+cascade without being filtered out. We thus demonstrate that the noise
+tuner can be used for studying cellular networks, , for identifying components whose noise-characteristics are critical
+for robustness of the whole network. Pathway noise impacts the
+amount of information that can be conveyed
+through the pathway. In order to quantify the precision at which cells
+could determine the pheromone concentration we calculated the mutual
+information between the input and output signals, which is a key metric
+for the accuracy of a signaling pathway. We found an up to 50% change in mutual information with low-noise
+compared to high-noise  settings (d). Thus, noise changes generated
+by the noise tuner resulted in significant changes in signal transduction
+accuracy of the mating pathway. Calibration of noise in a signaling pathway component alters noise
+of pathway output. (a) Schematic depiction of the yeast pheromone
+signaling (mating) pathway. Yeast cells sense pheromones secreted
+by the opposite mating type  a G-protein coupled
+receptor. The signal is transduced through a mitogen-activated protein
+kinase (MAPK) cascade and ultimately induces the expression of pheromone
+response genes (PRG), such as the upstream negative feedback regulator
+Sst2. As a pathway activity readout, mNeongreen (mNG) driven by PRG
+promoter P was genomically integrated. (b) Dose response
+curves of the pathway reporter. Blue and red indicate high noise and
+low noise condition of  expression, respectively.
+Cells were stimulated for 180 min with different concentrations of
+pheromone. Lines indicate medians of normalized fluorescence, shaded
+areas show the corresponding median absolute deviations. Low noise
+(8.5 ng/μL doxycycline) and high noise (1 ng/μL doxycycline,
+10 mM theophylline) conditions for  expression
+were chosen in order to achieve similar pathway responses. (c) Pathway
+reporter noise at different pathway activity levels for high and low
+noise  conditions. Points from left to right
+indicate stimulation with increasing pheromone concentrations as in
+(b). Over the whole pathway activity range, the population of yeast
+cells with low noise in  expression displays
+a lower robust CV in the pathway reporter output than the population
+with high noise in  expression. (d) Pathway information
+transmission is more precise with lower noise in  expression. Mutual information between pheromone input and pathway
+output plotted against the pathway output for better comparison (see  for calculation). Precision is highest at
+intermediate reporter activity and overall higher with lower noise
+in Sst2. Points indicate stimulation with different pheromone concentrations
+as in (b) and (c). In
+this work, we present a novel approach to effectively decouple
+mean and noise of yeast gene expression, allowing us to flexibly adjust
+different levels for median expression and noise in clonally identical
+cells. The noise tuner acts on two basic rates of gene expression,
+with two small molecule inducers individually controlling transcription
+and mRNA degradation rates. In this system, the transcription rate
+determines the noise level, whereas adjustment of the mRNA degradation
+rate allows for similar mean expression levels with different promoter
+activities. We found that this is consistent with a mathematical model
+of gene expression, which shows that for genes with sufficiently high
+protein lifetime, transcript stability has only little effect on noise. Comparison to constructs with native 3′-RRs suggests that
+the low-expression noise tuner operates at the lower end of the physiological
+mean-noise space that can be conferred by 3′-RRs. A more stable
+ribozyme shifts the expression toward higher levels while maintaining
+the noise tuning capabilities. The noise tuners presented here can
+produce more than 2-fold difference in noise over a 5-fold range of
+mean expression levels. We demonstrate that the described noise control
+system could be used to study noise sensitivity of cellular networks
+and to identify pathway components which are critical for robustness. Noise control by regulation of mRNA levels,
+as demonstrated here,
+may be not only highly effective but also metabolically cheap, given
+the generally low numbers of mRNA molecules, as compared to protein molecules, which are several magnitudes higher. Furthermore, due to its simplicity, the noise
+tuner might find common application in the design of synthetic genetic
+circuits that lack robustness if they do not contain noise dampening
+modules. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00279/suppl_file/sb8b00279_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00279/suppl_file/sb8b00279_si_001.pdf All plasmids
+used in this study
+are listed in . Plasmids were either
+cut with PmeI (New England Biolabs) or PCR-amplified to yield linear
+DNA with homology sequences on both ends. All primers are listed in . For PCR-amplified DNA, the homology
+was introduced by primer overhangs of at least 50 bp. PCRs were performed
+using PrimeSTAR GXL DNA polymerase (Takara). The resulting single
+integration constructs were transformed into  strains using a standard lithium acetate protocol. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00279/suppl_file/sb8b00279_si_001.pdf All  strains in this study
+derived from haploid SEY6210 mating type  and are listed
+in . The strain used for the proof
+of concept of direct noise control (YMFM050) was built by transformation
+of 1 μg of PmeI-digested plasmid pMFM048. The plasmid contains
+the mNeongreen reporter gene, kind gift of Hyun Youk, driven by an
+inducible TetO7-promoter. Downstream of the coding sequence the construct
+contains the L2b8-a1-t41 inducible ribozyme, provided by Christina Smolke, and the minimal terminator sequence
+T(Synth27). To construct the plasmid,
+individual PCR fragments containing the parts were joined by Gibson
+assembly. The ribozyme was introduced using restriction ligation  AvrII and XhoI. On the basis of YMFM050, the strains
+with native 3′ RRs (YMFM101, 102, 103, 104) were constructed
+by  tagging with PCR fragments created from
+primers with homology overhangs and the templates pAA263, pAA207,
+pAA208, pAA209, and pMFM065, respectively. The  noise mating pathway reporter strain
+was constructed by  tagging of strain YAA328
+with a PCR fragment derived from pAA263 to integrate the TetO7 promoter
+upstream of the native  open reading frame and
+subsequently integrating a PCR fragment derived from pMFM058 to replace
+the native 3′ RR downstream of the  open
+reading frame with the inducible ribozyme and the minimal terminator. All experiments were performed
+with cells grown in low fluorescent synthetic defined media (LD).
+Cells were inoculated from single colonies and grown at 30 °C
+with shaking overnight for at least 16 h. Day cultures were inoculated
+to an initial OD of 0.05 and grown at 30 °C with shaking for
+5 to 6 h to an OD between 0.4 and 0.8 prior to the measurement. For
+mating pathway stimulation experiments, media was supplemented with
+2 μM casein and cells were grown to at least OD 0.2 prior to
+stimulation with pheromone. For strains harboring genes controlled
+by Tet-promoter and inducible ribozyme, doxycycline and theophylline
+were added to the final concentrations as indicated in the results
+section. Due to the low solubility in aqueous solutions, LD containing
+theophylline was prepared by adding the appropriate amount of theophylline
+powder directly to the media. One liter synthetic defined low
+fluorescent media contains 6.9
+g YNB (Formedium), 790 mg of the appropriate amino acid mix (Formedium),
+and 2% glucose (Roth). Selection of transformants was done on agar
+plates containing YNB, glucose and the appropriate amino acid dropout
+mix, supplemented with 1.5% agar (Becton Dickinson) for transformants
+with auxotrophic marker. Transformants with antibiotic marker KanMX
+were selected using plates containing YPD (Roth), 1.5% agar and 500
+mg/mL G418 (Formedium). Flow Cytometry Measurements and Noise Calculation Yeast
+cells were grown in 24-well plates and then transferred to a 96-well
+plate. Using a high throughput sampler, cells were injected into an
+LSR Fortessa Special Order flow cytometer (BD Biosciences). Fluorescence
+was measured with lasers of two different wavelengths; 488 nm for
+mNeongreen and 447 nm for the constitutively expressed mTurquoise2.
+Using the BD FACS DIVA software (BD Biosciences), cells were gated
+in a FSC-A/SSC-A plot to exclude debris. Per sample, 50 000
+cells from within the gate were acquired. To account for autofluorescence,
+a yeast strain was measured that contained the mTurquoise2 intrinsic
+control module but not the mNeongreen gene. The signal for green fluorescence
+of every individual cell was compared to the distribution of the corresponding
+signals of the autofluorescence strain. Treating the control distribution
+as a probability distribution, a random value of that distribution
+(based on the probability) was subtracted from the measured fluorescence
+of each individual cell. When the value was within the range of the
+background distribution, the random value was picked only from the
+part of the distribution that was lower than the measured value. This
+method of background subtraction works under the prerequisite that
+the background fluorescence of a given cell is bounded by 0 and the
+fluorescence signal of that cell. As a result, for distributions that
+overlap with the distribution of the autofluorescence control, cells
+toward the left end of a population are deducted a smaller value than
+cells toward the right end of the population. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00279/suppl_file/sb8b00279_si_001.pdf The median absolute
+deviation is given aswith the fluorescence intensity
+of an individual cell, . Median and
+MAD were calculated for the set of autofluorescence-subtracted values
+and cells that deviated from the median by more than five times the
+scaled MAD (= MAD/0.6745) were excluded from the subsequent analysis.
+The resulting value for each cell was then divided by the fluorescence
+value of the constitutively expressed mTurquoise2 expression control
+to normalize for the general expression state of each individual cell.
+Median and MAD were calculated from the resulting set of values and
+outliers were removed as above. A final median and MAD was calculated
+for the remaining cells. As a measure for noise, the robust coefficient
+of variation (rCV) was calculated asIsomedian lines (a, 3b, ) were
+plotted using MATLAB’s  function. The simulation is based on a
+two-stage model of gene expression as has been analyzed by Shahrezaei
+and Swain. The model describes the probability
+distribution of protein numbers in a cell, based on the underlying
+probabilities of mRNA synthesis , mRNA
+degradation , protein synthesis  and protein degradation  (see also a). Given the assumption that the protein lifetime is much
+longer than the lifetime of a transcript (), a probability distribution can
+be derived
+for the steady state protein number :where the production
+and degradation
+probabilities are reformulated as mRNA production per protein lifetime  and the translational
+burst size . Γ() denotes the
+gamma function to
+take noninteger values into account. To confirm that the CV
+becomes independent of the translational burst size  as long as  ≫ 1, we performed stochastic
+simulations of the four processes above using the Gillespie formulism as was also done by Shahrezaei and Swain. We
+fixed the protein half-life to be 2 h, which is a conservative estimate
+based on GFP data, resulting in the protein
+degradation rate . We varied
+the parameter , thereby achieving a corresponding
+range in values of the mRNA synthesis
+rate . Up to a normalization, the set
+of values for  and  were chosen
+by non-negative matrix factorization (using the function  in MATLAB) of the matrix of experimental mean fluorescent values
+(similar to a). Since the mean is given theoretically by ,
+this provides a conversion from the doxycycline and theophylline concentrations
+used in the experiment to (up to an unknown factor) the corresponding  and  values. The normalization factors
+were chosen to match the experimental range of rCV and to give reasonable
+values for the mean number of molecules and the burst size. Finally,
+the protein synthesis rate was fixed at  = 0.11 s such that the range of mRNA half-lives
+fell within the biologically expected range (minutes). The resultant
+values werewhich corresponded to mRNA synthesis rates
+(in units of hour) ofand
+mRNA half-lives (in units of minutes)
+of Simulations were performed using these
+values, and the properties
+of the steady-state protein distribution were compared to the experimental
+result (a and b). Because the flow cytometry measurements do not
+provide us with single-molecule data, reverse calculation of  and  from the experiments is only possible
+in terms of an unknown conversion factor and therefore was not included
+in this study. Calculation of Mutual Information Mutual information
+describes how much information (in bits) from an input distribution
+(here: pheromone concentrations) can be inferred from an output distribution
+(here: fluorescence intensities). In the experiments described in
+this study, only the output distribution is known (continuous data
+sets of fluorescence intensities), whereas the input can only be described
+by discrete values (20 pheromone concentrations ranging from 0 nM
+to 18.75 nM). We used the formula derived in ref () to calculate the mutual
+information  between a discrete data set  and a continuous data set :with the discrete probability
+function () and the continuous
+densities μ(, ) and μ(). We calculated (, ) for a moving window of four experimental subsets of subsequent
+pheromone concentrations, considering
+pheromone/fluorescence data of 45 000 cells for each subset.
+For the 20 pheromone concentrations tested, this resulted in 17 values
+for mutual information (first window: 1–4; last window: 17–20). We note that the absolute values of mutual information calculated
+is somewhat arbitrary as it depends heavily on the number of different
+inputs measured: A high-resolution dose–response with many
+input pheromone concentrations contains only little mutual information
+when adjacent concentrations are compared. In contrast, when only
+off- and on-state of the pathway are compared (0 nM and 18.75 nM pheromone),
+the mutual information increases, but the results would not allow
+to quantify differences between the high-noise and the low-noise setting..

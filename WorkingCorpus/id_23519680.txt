@@ -1,0 +1,401 @@
+Synthetic genetic systems commonly
+use genetic elements whose functional properties are already known.
+Modularity of the elements is key to this enterprise, so that elements
+from diverse genetic backgrounds can be combined with simple linker
+sequences into interacting networks that create new pathways and functions
+(e.g., ref ()). It
+is commonly assumed that the nonfunctional sequences used to join
+the different molecules are inconsequential. Yet the linker sequences
+used to join the different modules may have regulatory effects and
+might impair fitness. Here we consider whether modularizing a genome
+per se disrupts the patterns of gene expression that are important
+to fitness. A model system for evaluating this question is the
+bacteriophage
+T7. T7 is one of the best understood of the tailed phages from molecular
+and physiology perspectives. It has also
+been used in studies of in vitro evolution, with characterizations
+of fitness during adaptation and of molecular evolution across the
+entire genome accompanying the adaptations; T7 has been the subject of an empirically based, kinetic simulation
+model. More recently, the first 30% of
+the T7 genome was refactored, a form of modularization, mostly by
+insertions of short DNA sequences between genes and between genes
+and regulatory elements, in part to render the genome amenable to
+systematic analysis of gene and element function. The wild-type T7 genome is close-packed, and although only
+a few coding sequence overlap, many ribosome-binding sites are in
+the coding sequence of the upstream gene; such genetic organization
+may be highly sensitive to precise position effects . However, refactoring
+did not create, destroy, or otherwise modify elements of known essentiality
+to T7. It is thus possible to test the fitness effect of refactoring
+per se, without the complications associated with new combinations
+of genes and regulators. Plaque size and other simple assays had suggested
+that refactoring had fitness costs, but
+one could not infer just how impaired the engineered genome was, nor
+whether most or just a few elements were detrimental. Here we
+propagate this refactored T7 to enable it to evolve and
+correct any defects by adaptation. We identify which elements are
+lost during adaptation and how fitness evolved, in order to assess
+the implications of genome modularization and which types of modularization
+are problematic. Last, we suggest how experimental evolution may not
+only identify design problems but also lead to improved engineering. T7 is a member of the  that infects Gram-negative enteric bacteria.
+Its dsDNA genome is ∼40 kb, with nearly 60 genes but little
+coding sequence overlap. One distinguishing
+characteristic of T7 is that it encodes a phage-specific RNA polymerase
+and 17 phage-specific promoters, along with typical DNA metabolism
+and structural genes. The phage-determined regulation of gene expression
+provides a basis for understanding and modeling the quantitative dynamics
+of the intracellular life cycle; this
+understanding likewise provides a basis for positioning design elements
+to avoid disrupting genes and regulatory elements. T7 can evolve to
+grow extremely rapidly when hosts are maintained in excess and attains
+a growth rate of 44 doublings per hour, or over 10 descendants
+per hour in broth at 37 °C. This
+high intrinsic fitness enables the virus to grow well even when its
+genome has suffered numerous insults, either by design or mutation,
+so it is well suited for genome manipulations. The intrinsic high
+fitness of T7 also means that slight disruptions of the genome are
+readily detected and thus it is well suited for identifying potential
+problems with synthetic designs. A large number of T7-like genomes
+have been sequenced; although they can vary extensively at the nucleotide
+sequence level, they exhibit extensive synteny, varying mainly by
+the presence or absence of genes with homology to homing endonucleases
+that have no known role in the T7 life cycle and by the exact complement
+of non-essential (in the laboratory) early genes. Many recognized
+regulatory elements are also conserved by genome position in T7-like
+genomes. Most genes and elements impacted by the refactoring of Chan
+et al. fall into the non-essential category:
+only five of the 21 genes modified are normally considered to be essential.
+However, the number of progeny per infected cell can be reduced by
+perhaps an order of magnitude, and fitness of a mutant phage can likely
+be reduced (relative to wild-type) by 10–15 doublings/h before
+plaque morphology differences or titers are readily noted. Thus although
+any single engineered change may have little effect on the expression
+of a non-essential gene or function of a dispensable regulatory element,
+the combination of many changes introduced at the same time may exert
+a significant disruption in the phage life cycle. T7αβ (the refactored T7) and T7 (wild-type)
+were each separately adapted for rapid growth under two conditions:
+using BL21 as host in LB and the K-12 host IJ891 in M9 glucose media.
+The former condition is collectively referred to as “broth”
+(subscripted as LB), the latter as “M9” (subscripted
+as M9). The two broth adaptations consisted of ∼100 generations
+of serial transfer, whereas the M9 adaptations consisted of ∼700–1000
+generations of growth in a continuous flow system followed by brief
+adaptations by serial transfer. All environments provided unlimited
+hosts for the bulk of the adaptation period, so selection favored
+rapid growth of the phage populations. The M9 environment was
+designed after initial results from the
+T7αβ broth adaptation revealed a single deletion
+that included the loss of several early genes (–) and extending ∼200 bases upstream
+of . Deletions extending into early genes have
+been commonly observed in prior adaptations in broth of both wild-type
+and various mutant T7 strains, but never with loss of sequences upstream
+of . As the deletion in the broth adaptation removed
+14 design elements, the intent with the replicate adaptation in M9
+was to create an alternative environment that would maintain at least  and . We hoped to determine whether
+their associated design elements were explicitly deleterious or were
+merely deleted as part of a large region whose net presence was deleterious.
+M9 media is known to favor retention of , and host IJ891 (, containing the type I restriction enzyme EcoK1)
+was expected to select for , which defends the
+phage against type I restriction. The M9 environment was thus expected
+to retain at least 4 and possibly 8 of the 14 elements lost in the
+LB adaptation of T7αβ. Molecular Evolution of Design Elements Both adaptations
+of T7αβ resulted in the deletion or modification of several
+design elements (Figure ). Sequencing was
+performed on the evolved populations; changes are reported only if
+they exceeded 50% as those not reaching 50% would be unlikely confer
+a significant fitness benefit. Of the original 65 design elements,
+40 were maintained after adaptation in M9 glucose and 45 in broth
+(unintended design element duplications are neglected in these totals,
+and most design elements were lost as pairs). Despite vastly different
+levels of molecular evolution between the M9 and broth conditions
+( give
+all changes in the adaptations, and Figures  and  show changes in the refactored portion
+of the genome), both adaptations of T7αβ resulted in deletions
+of (i) early region genes and associated design elements (genes –, with associated losses
+of 10 design elements in M9 and 14 in broth), (ii) the two elements
+that separated genes  and , and (iii) the two elements between  and . Sequences in (ii) and (iii) evolved back to wild-type.
+No other design elements were lost or modified in T7αβ, but six other design elements were lost or modified in
+T7αβ (Figure ). Elements
+D4R-D5L and D9R-D10L were lost as part of the large deletion of the
+early region in T7αβ but were lost as separate
+deletions in T7αβ. We can attribute the M9
+deletion of D4R-D5L specifically to a fitness cost of those design
+elements because no T7 genes or regulatory elements were affected.
+The M9 deletion of D9R-D10L included the 3′ end of , so the fitness benefit of this deletion need not have
+been due to loss of the design elements. Both adaptations to M9 experienced far more and
+different types
+of molecular evolution than is typical in T7 adaptations using broth
+(ref (), as is also
+evident when comparing the M9 and broth adaptations here, Figures , , and ). Although the M9 adaptations
+were done mostly in chemostats and thus for longer than we typically
+adapt by strict serial transfer, there is no precedent for this much
+molecular evolution in the many adaptations we have done previously
+in broth, some of which also used a chemostat. The increased evolution
+in minimal media was surprising, as minimal media may be imagined
+to be more typical than broth of the native T7 environment, which
+is likely sewage. It is noteworthy that the evolved T7 retained complete  and  genes,
+as designed, whereas T7αβ evolved partial
+deletions of both. The initial T7αβ carries a 5-codon
+deletion in 0.3 (), but surprisingly,
+plating assays showed that the gene was functional. Nevertheless,
+loss of an intact  presumably imparted some detriment
+to the phage. The evolved phage retained 4 of 5 Eco KI sites, so the
+absence of functional  would have led to a much
+larger loss of fitness on IJ891. If such a result holds up on further
+replication, one might speculate that the loss of  and  in T7αβ but not
+in T7 argues that modularization altered the benefit
+of those early region genes. However, additional testing is required
+to rule out that the engineering merely altered the types of deletions
+most likely to arise, and that the loss of  and  in T7αβ in turn merely reflects
+the first deletion that arose with a net benefit. It is clear that
+neither T7αβ gene  nor  is required to be intact for growth on IJ891 in M9 glucose media
+at 37 °C. Evolution of design elements
+in the refactored portion of T7 (α
+and β sections, extending into gene ). Gene
+sizes are drawn to scale, so the genome is split near the midpoint
+of the αβ region rather than at the junction separating
+α and β (within gene ). The top genome
+in each trio is the engineered genome, showing locations of design
+elements (blue dots), genes, and some regulatory elements (alternating
+light colors). Design elements from refactoring are labeled above
+the genome, genes below. The lower two genomes, representing the LB
+(broth) and M9 adaptations, show the locations of design elements
+that persisted throughout the adaptation as well as (i) deletions
+in red (numbered consecutively, spanning the portion of the genome
+deleted), (ii) substitutions, either as thin, vertical black lines
+if occurring outside design elements or as white circles if inside
+the element, and (iii) insertions shown in green. No insertions and
+only one substitution occurred in the LB adaptation (for this portion
+of the genome). Two substitutions in the M9 line are obscured by the
+design elements, one near U3 and one near 15L. Insertion locations
+are shown without shifting the downstream frame of reference. Most
+design elements were created in pairs and are too close together for
+adequate resolution here, so only the rightmost element in each pair
+is labeled (e.g., the construction of D10R-D11L-gene , D11L-D12L is represented in the figure as 11L, gene 1, 12L). Each
+element label gives the number of elements represented by the label;
+a “3” is due to unintentional duplication of an element
+in the design. See  for details of these changes as well as changes in the remainder
+of the genomes. Evolution in control adaptations of the wild-type genome.
+As in
+Figure , except the phage genomes are the
+wild-type T7 (top) and the two adaptations initiated with wild-type;
+only that portion of the wild-type genome overlapping with the refactored
+region of T7αβ is shown. Deletions (shown in red in proportion
+to their size) are numbered consecutively; substitutions are shown
+as thin black vertical lines; insertions are shown in green in approximate
+proportion to their size but without displacing the reference frame
+downstream. The only change observed in the LB adaptation over this
+portion of the genome was a deletion, but there was profoundly more
+change in the M9 adaptation. See  for details of these changes as well as changes
+in the remainder of the genomes. Plaque sizes and other assays had
+indicated that the fitness, especially at 37 °C, of the initial
+T7αβ was much reduced from that of wild-type. The adaptations performed here provide insight
+into which elements are problematic and how much fitness is depressed
+by the remaining elements. Fitness of T7αβ was indeed
+depressed in both environments relative to that of T7 (Figure ). Despite considerable fitness improvement, both
+adaptations of T7αβ approached, but did not reach, the
+fitness of wild-type phage adapted to the same conditions. However,
+in broth the residual fitness discrepancy is small, suggesting that
+the remaining design elements have little impact on fitness. Furthermore,
+our measure of fitness is a growth rate, highly sensitive to small
+changes in generation time (e.g., lysis time), so this residual fitness
+impact is possibly due to subtle phenotypic effects. Note that fitness
+of an evolved T7αβ depends not only on residual design
+elements but also on changes in other parts of the genome, so a difference
+in fitness between an evolved T7αβ and an evolved T7 need not be due to remaining design elements. As one example,
+T7αβ is missing large parts of  and , whereas T7 is not, a difference
+that likely enhances the fitness of T7. Fitness of wild-type
+and refactored T7 before (light blue) and
+after adaptation (magenta). Fitness of the evolved T7 is
+significantly higher than that of the evolved T7αβ in
+the corresponding growth media (M9:  = 6.9,  = 0.0023; broth:  = 5.18,  = 0.0066; significance levels
+assume a 2-tailed test). Bars represent 1 std error. Extensive refactoring of part of the phage
+T7 genome created substantial
+fitness costs. The fact that no genes were eliminated or added in
+the design suggests that the fitness effects are due to regulatory
+effects on the phage life cycle. Small changes in the level of transcription
+or translation of a gene, resulting from synthetically altering intergenic
+regions, may have large effects on overall phage fitness, especially
+when fitness is measured as growth rate and is thus sensitive to changes
+in generation time, as here. Adaptation of the refactored phage in
+two environments led to substantial fitness increases but fell short
+of the fitness of T7 adapted to the same conditions. Nevertheless,
+the majority of design elements remained intact in both adaptations,
+which means that these changes to the wild-type sequence did not grossly
+perturb gene expression. This observation bodes well for the evolutionary
+stability of  designs of synthetic regulatory
+circuitry. The fitness of T7 when grown under conditions of
+unlimited hosts
+is easily depressed by regulatory changes, even seemingly minor ones.
+When fitness is as high as 40 dbl/h, small changes in lysis time–as
+little as 0.1 min, only slightly less than 1% of the latent period–have
+a meaningful effect on fitness, so the
+phage is highly sensitive to the duration of its life cycle. It is
+thus not surprising that the introduction of short segments between
+genes could impair fitness, but the expectation now is that the effects
+of most individual insertions should not be large. However, a perspective
+on the fitness cost of engineering is provided by adaptation of the
+wild-type genome. The wild-type genome is itself imperfectly “designed”;
+it invariably evolves/adapts when grown in a constant environment,
+and the adaptation is usually environment-specific. It is thus expected that any form of genetic engineering
+will also have fitness effects in at least some environments. Indeed,
+plasticity of a genome enables some level of growth in very different
+environments where an optimal, specialist genome may not replicate.
+Where adaptations are particularly informative is in identifying “universal”
+design flaws, i.e., those elements lost or modified in both environments
+(parallel changes). The design elements lost in parallel across
+these adaptations are
+too few to draw any strong conclusions about general types of design
+problems. The deletions identical to both adaptations were of the
+design elements used to separate overlap between genes  and  and a spacer inserted to increase the 2-base
+gap between  and . Both deletions
+were facilitated by sequence duplication between the insert and the
+3′ end of the upstream gene. In contrast, the inserts placed
+between  and , between  and , and between  and  (all originally with 1-base overlaps or
+1-base separations) had similar characteristics yet remained intact.
+D15R (shown as 16L in Figure ) was also lost
+or modified in both adaptations, yet the intergenic region into which
+it was placed is relatively large. The attempted separation of the
+overlap between genes  and  was
+unsuccessful (Chan et al., 2005), but this overlap is now known to
+affect the translational coupling of gene  and
+gene , and a successful
+cloning may have been strongly selected against during propagation
+of T7β. Interestingly, the Δ5 deletion that arose in the
+T7M9 adaptation removes much of gene  and even
+causes a frameshift, but the hairpin that sequesters the gene  ribosome binding site would still be disrupted as ribosomes
+translate the mutant  RNA, thereby allowing translational
+coupling. The potential importance of sequences outside coding regions
+cannot be overemphasized when designing synthetic stand-alone genetic
+elements. Thus, some overlaps and short intergenic regions have substantial
+regulatory significance, but we cannot yet predict them with confidence. Deletions of the early region were also observed in both adaptations.
+The fact that a single, large deletion was observed in the broth adaptation
+prohibits any conclusion about the fitness effects of the associated
+design elements . In the M9 adaptation, however,
+deletions (Δ1, Δ2, and possibly Δ4) in the early
+region occurred that were limited to design elements (and perhaps
+remnants of a deleted gene, in the case of Δ4), suggesting those
+elements were specifically detrimental. Even so, because this region
+is subject to much evolutionary change it is difficult to correlate
+detrimental effects with specific design elements. Although
+deletions shorten the genome, allowing it to be replicated
+faster, and although some deletions may remove coding sequences, lessening
+the energy cost of translation, it is not obvious that either contributes
+significantly to T7 fitness. The majority of newly replicated T7 DNA
+is not packaged into new particles and overall cellular protein synthesis
+is reduced after T7 infection. Given the
+complexities of the adaptation of T7αβ, perhaps the only
+accurate way to assess fitness costs of individual elements is to
+introduce them one at a time into a preadapted wild-type genome. Such
+an approach is not obviously feasible with so many design elements. More elements were lost in the M9 than in the broth adaptation.
+A confounding effect in this comparison is that considerably more
+evolution occurred outside design elements in M9 than in broth, suggesting
+that the wild-type T7 genome is not intrinsically as well-suited for
+growth in M9 as in broth. The large number of changes observed serves
+as a reminder that attempts to modularize a genome presumes an evolutionarily
+stable state. Modularization elements are unlikely to be stable if
+the intrinsic elements of the genome are themselves unstable. Fitness impairment from refactoring/modularization is not unique
+to phages. The MIT ‘Biobrick’ toolkit contains a highly
+versatile, modularized set of elements for bacterial gene expression,
+but the elements are intrinsically unstable when bacteria are allowed
+to adapt. There are two components to
+the evolutionary instability: an intrinsic fitness cost and the rate
+at which mutations arise that improve fitness. Enhanced evolutionary
+stability was achieved by redesigning the elements to reduce sequences
+prone to deletion. Such an approach
+may be useful for creating a refactored T7 with
+enhanced evolutionary stability, especially in the design regions
+expanded by sequence duplication. However, avoiding sequences prone
+to deletion does not itself overcome the basic problem that design
+elements may impose a fitness cost. Yet this redesign approach does
+suggest a stepwise protocol by which genome engineering may be augmented
+with experimental evolution. The initial adaptation of a synthetic
+genome will identify problematic elements by their loss or modification.
+Those elements may then be re-engineered in an informed way into the
+adapted genome, which still retains many of the original elements.
+For example, the redesign may avoid sequences most prone to deletion
+(e.g., by eliminating repeats) but also introduce various types of
+extra sequences to potentially affect regulation. Subsequent adaptation
+of the re-engineered genome may then allow evolution to improve the
+redesigned elements without removing them, ultimately attaining a
+fully modularized genome with minimal fitness cost. The bacterial and phage strains are
+described in Table . All are from the collection
+of I.J.M. or J.J.B. LB broth was 10 g NaCl, 10 g Bacto tryptone, and
+5 g Bacto yeast extract per liter. M9 media (6.78 g NaHPO, 3 g KNPO, 0.5 g NaCl, 1
+g NHCl, 1 mM MgSO4) was supplemented with 0.2% glucose
+and 0.01 mM CaCl. Plates used LB broth with 1.5% Bacto
+agar. Determinations of phage titers used plates overlaid with soft
+agar (0.7% Bacto agar in LB) containing a suitable density of hosts.
+T7αβ and its parent phages T7α and T7β were
+kindly provided by Sri Kosuri and Drew Endy in November, 2005. Titers
+of the stocks, which were those that had been used by Chan et al. for sequencing, were very low, but it is not
+known when the loss of infectivity occurred. Phages were plated on
+BL21 at 30 °C. All T7β plaques, but only a minority of
+T7α and T7αβ plaques contained phages that grew
+on  B (which selects for a functional  gene). A single plaque of each phage with the desired
+phenotype was used to provide parental stocks for this study. host used for adaptation in M9 media host used for adaptation in broth/LB media “refactored” T7 genome (Genbank ,  into
+gene , wild-type thereafter) refactored
+T7 phage used to start adaptations wild-type phage used to start adaptations T7αβ with changes evolved for growth on IJ891 in
+M9 glucose assess genetic stability of design elements T7αβ with changes evolved for growth on BL21 in
+broth/LB assess genetic stability of design elements T7 evolved for growth on IJ891 in M9 glucose comparison of adaptation between modularized and wild-type
+genomes T7 evolved for growth on BL21 in broth/LB comparison of adaptation between modularized and wild-type
+genomes The purpose of the adaptations
+was to select rapid phage growth. Adaptation to BL21 in LB broth used
+serial transfer, as described elsewhere. Briefly, cells
+from a frozen aliquot were added to 10 mL broth in a 125 mL flask,
+grown for 1 h to ∼10 cells/mL, whence at least
+10 phage were added. Following phage addition, cultures
+were grown for 20–60 min (until an adequate density was attained),
+and then an aliquot added directly to the next flask, whose cells
+had been grown 1 h. Cultures were sometimes allowed to proceed to
+lysis, ensuring recombination from high multiplicity infections. T7 was grown for 21.5 h (80–100 generations), T7αβ for 26 h (100–120 generations), assuming a 12–15
+min generation time. Adaptations
+of T7 and T7αβ used host IJ891
+in M9 glucose media but were each carried out in two stages. The initial
+stage was growth in a two-stage chemostat, in which actively growing
+IJ891 in M9 glucose was fed continuously into a tube with phage. Phage growth in a chemostat environment can
+select traits other than fast growth, so a second stage of adaptation was instituted to eliminate any
+mutations not enhancing growth. Following extensive growth in the
+chemostat, the final population was recombined against the starting
+phage, and the recombinant pool was grown by serial transfer. Serial
+transfer with IJ891 in M9 glucose used the same methods as with BL21
+in LB. T7αβ was grown for 339 h in a chemostat,
+then for 7 h by serial transfer following recombination with the initial
+T7αβ; T7 was grown for 226 h in a chemostat,
+then for 6.5 h by serial transfer following recombination with T7. Assuming a 20-min generation time in M9, the durations span
+∼1000 generations and ∼700 generations. Fitness was measured in the serial transfer
+environment, the main difference being that phage densities in fitness
+assays were maintained at least 10-fold lower than cell density throughout
+to ensure that hosts were never limiting. All measurements of evolved
+phages were made on the final populations; those of initial phages
+were made on lysates made from isolates. Fitnesses were calculated
+from titers during a continuous serial transfer, 1 and 2 h after phage
+were added to the first culture to allow attainment of an approximate
+stable age distribution of infections. At transfer, a sample from the donor flask was treated with chloroform
+to stop phage growth, for plating at a later time; in one case of
+a phage with very low fitness, it was necessary to plate directly
+from the culture rather than from samples treated with chloroform
+(used with the initial T7αβ in M9). Fitness estimates
+accounted for any transfer/dilution across multiple cultures during
+the assay and are presented as doublings per hour, an absolute growth
+rate that applies regardless of phage generation time. DNA was obtained from phage by phenol extraction
+and subjected to “454” pyrosequencing at the University
+of Texas Genomics Core; final populations were used to make the lysates
+used for DNA extraction. Reads were analyzed by the mapping program  (). The final, evolved populations were subjected
+to sequencing, and changes are reported only if they exceeded 50%
+of the populations, to avoid dealing with sequencing errors associated
+with the 454 technology; changes not reaching 50% would also not likely
+have had high fitness. To estimate the extent to which this criterion
+reflected the magnitudes of molecular evolution in the lines, the
+evolved T7αβ population was reanalyzed to
+provide the quantitative levels of polymorphism. Of the changes shown
+in Figure  (and those given in ), all but one of the changes
+were apparently fixed; the deletion starting at 6689 was at 75% frequency.
+Had the frequency threshold been 20% instead of 50%, only 1 additional
+change would have been reported in the refactored region (an intergenic
+substitution between gene  and  at 24%). Thus, the 50% threshold did not give a misleading picture
+of the evolution. Our initial isolate of T7αβ, a
+clonal population, differed at a few sites from the sequences reported
+in GenBank (; the
+sequence of our initial isolate is provided in ). Note that the genome reference used
+in  use genome
+positions of our template () instead of the positions from the GenBank entries  and ..

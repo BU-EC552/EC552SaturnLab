@@ -1,0 +1,463 @@
+Enterococci
+have undergone
+a remarkable metamorphosis in the last quarter century, from low grade-pathogens
+to a major burden to health care systems. Before the first reports of vancomycin-resistant enterococcus (VRE)
+strains in the late 1980s, these microbes were considered harmless,
+if not helpful, commensals of the human gastrointestinal (GI) tract.
+Now enterococci are also viewed as a major cause of hospital-acquired
+infections. According to these recent
+reports, VRE colonization in health-care institutions has reached
+endemic proportions. VRE are easily spread through direct contact
+and are resilient and versatile organisms thriving on nearly every
+type of environmental surface tested. As a consequence, patients with
+VRE infection have increased mortality, morbidity, length of hospital
+stay, and hospital costs, in comparison to uninfected groups. The enterococcal strains that dominate pathogenesis
+in the human GI tract are  and . Most enterococcal infections are caused by ; yet,  is currently
+the most difficult to treat. As of 2007, 80% of  isolates were vancomycin resistant compared to just over 5% of . Since the
+source for many enterococcal infections is the intestinal
+tract, antibiotic technologies that can effectively prevent or treat
+enterococcal intestinal colonization may limit the public health harm
+caused by these microorganisms. Lactic acid bacteria (LAB) have emerged as potential vehicles for
+drug delivery in the GI tract. They are
+bile-resistant organisms and have the ability to survive passage to
+the GI tract. Importantly, some of these LAB are generally recognized
+as safe (GRAS) for human and animal consumption. is a model LAB, being one of
+the most amenable expression cell factories for heterologous protein
+secretion. Indeed,  is being explored as the first genetically modified organism used
+alive for the treatment of human Crohn’s disease by the production
+of interleukin-10 in the GI tract. Several expression systems have been developed in LAB. One of the
+most successful and widely used inducible systems is the NIsin Controlled
+gene Expression (NICE) system. The NICE system is based on the  operon, which is involved in the biosynthesis of nisin
+A, a post-translationally modified antimicrobial peptide produced
+by several strains of . In previous experiments, induction is initiated with nisin
+A in culture, before LAB are supplied to animals. Consequently, the
+recombinant bacteria entering the host are activated, producing the
+protein of interest, not unlike in the case of a constitutive promoter. The difference, of course, is that the NICE
+system will be turned off once the intracellular nisin A is degraded.
+It may then be difficult to control the duration of protein production
+or the amount produced. Other LAB expression systems are inducible
+under various conditions
+such as phage attack, temperature or pH shift, or the presence of
+specific sugars. Regulation of gene expression
+with these promoters is challenging, often because of leaky expression.
+To say that there are limits in these expression systems is not to
+say that they have little or no value. Nonetheless, an ideal system
+would be one that remains inactive when administered to the host,
+survives passage to the GI tract and then produces the proteins of
+interest only when needed, for example, only in the presence of pathogens.
+Here, we discuss such a LAB-based system that acts as a sensitive
+enterococcal detection device and then, upon detection, produces and
+secretes a molecular arsenal of antimicrobial peptides to specifically
+target the sensed enterococci. We designed a set of vectors
+based on the pheromone-mediated intercellular
+signaling system pCF10 that regulates expression of conjugative plasmid
+transfer genes in  This plasmid
+contains genes for resistance to tetracycline, virulence factors,
+along with genes for conjugative plasmid transfer. Conjugation and plasmid transfer between donor cells and
+receiver cells is stimulated by pheromone cCF10. This heptapeptide
+(LVTLVFV) is produced from a conserved chromosomal gene present in . cCF10 induces
+high gene expression in donor cells carrying pCF10. When donor cells import cCF10 into the cytoplasm, the pheromone
+binds to the pCF10-encoded master protein regulator PrgX. This binding
+abolishes repression of transcription of the prgQ operon, encoding
+conjugation genes. The donor cells produce reduced
+but still active levels of cCF10. This
+residual pheromone activity is neutralized by the production of peptide
+iCF10 from the prgQ locus of pCF10. Peptide
+iCF10 (AITLIFI) competes with cCF10 for binding to PrgX, opposes cCF10
+effects, and causes PrgX to repress gene expression. While the direct effects of the regulatory peptides on
+transcription initiation from the  promoter  are modest, the multiple layers of post-transcriptional
+regulation via antisense RNAs and interference between colliding RNA
+polymerase elongation complexes (illustrated in the  Figures S1 and S2) endow the system
+with extremely tight control and a high dynamic range of expression. We engineered cCF10-inducible vectors in  to express bacteriocins. Bacteriocins are defined as ribosomally
+synthesized peptides produced by bacteria that inhibit the growth
+of other closely related bacteria. We focus on class IIa enterocins,
+particularly, enterocin A (EntA), enterocin P (EntP), and hiracin
+JM79 (HirJM79). These are antimicrobial peptides (AMPs) produced by
+enterococci, with strong antimicrobial activity against other enterococci,
+including VRE. The two organisms share common protein expression
+machinery allowing the transfer of components from one to the other.
+In , we discuss previous examples of
+successful cloning of enterococcal components into . Experiments reveal that the recombinant LAB are able to detect
+the cCF10 naturally produced by  and to
+respond by producing the bacteriocins with high activity against enterococcal
+strains. and  are
+threats to human health partly because of their remarkable ability
+to acquire and spread determinants of antibiotic resistance via horizontal
+gene transfer. employ peptide-pheromones as signals to communicate with each other
+and trigger the expression of genes involved in conjugation and plasmid
+transfer. We turned their capacity to
+detect their own cell population density against enterococci by hijacking
+components of plasmid pCF10 to engineer recombinant LAB capable of
+sensing and responding to enterococcal pheromones. In the following,
+we detail how (1) we designed a set of inducible and constitutive
+expression vectors for controlled expression of proteins by , (2) the engineered -based systems are induced in the presence of , (3) the recombinant  produce and secrete
+bacteriocins with activity against  and , and (4) we combined sensing and inhibition components
+so recombinant LAB can be used to detect  and then produce a molecular arsenal of antimicrobial peptides to
+target the sensed enterococci. To our knowledge, this is the first
+LAB-based system engineered for both detection and inhibition of specific
+pathogens. Function and Optimization of the Detection System in LAB Supporting
+Information Figure S1 Supporting Information Figures S1
+and S2 We designed and tested a set of expression plasmids in , originally characterized in , for their ability to confer expression of
+a transcriptional  reporter gene in response
+to exogenously supplied cCF10 peptide (). Plasmid pBK2 encodes the key components
+of the pCF10 genetic switch. Plasmid pBK1 contains a deletion of the , and thus shows no repression of the  promoter. In plasmid pBK2idT, the deletion of three nucleotides
+from  leads to the production of an inactive
+iCF10-derivative, which can no longer bind to PrgX, reducing PrgX
+repression (). As expected, highest levels of β-gal production
+were observed for -pBK1, where the absence
+of  prevents the repression of P by
+PrgX, and therefore P works as a constitutive promoter,
+with the expression of  always on (Figure ). Strains carrying either pBK2 or pBK2idT both
+produced β-gal upon induction with the pheromone cCF10, with
+the latter strain showing higher levels of induced expression (Figure ). Although we presented induction results using
+50 ng/mL of cCF10, we found that lower levels of pheromone (25 ng/mL
+and 10 ng/mL) resulted in comparable expression. To increase sensitivity to exogenous cCF10, we cloned and
+expressed  (coding for PrgZ, a surface cCF10-binding
+protein known
+to mediate pheromone import) under the
+control of the strong constitutive promoter P, in the
+plasmids pBK2 and pBK2idT. The β-gal activity from recombinant
+strains originated, -pBK2Z and -pBK2idTZ, was approximately 15% higher than that from
+strains lacking  (-pBK2
+and -pBK2idT, respectively). Overall, pheromone-detecting  produced the highest β-gal activity when
+carrying vector pBK2idTZ. This vector presents two major improvements
+over the original pBK2. The first is the elimination of the repressor
+molecule iCF10. There is then no iCF10-cCF10 competition for PrgX.
+Consequently, the P promoter is on, until cCF10 is sufficiently
+degraded. The second difference is the presence of prgZ regulated
+by the strong constitutive promoter P. PrgZ is an extracellular
+peptide-binding protein, acting as a strong receptor of cCF10. PrgZ delivers cCF10 to the oligopeptide permease,
+Opp, which subsequently imports it inside the cell for induction.
+It is worth noting that deletion of prgZ in  decreases the sensitivity of the donor cells to cCF10. We have also observed that the presence of PrgZ
+is not necessary for pheromone import, presumably because OppA can
+fulfill this role, albeit with lower affinity. Nevertheless, the overexpression of  markedly augments cCF10 transport inside , in effect enhancing the activity of P. Current
+results confirm previous studies, demonstrating that the
+PrgX-PrgQ system is tightly regulated. In the absence of cCF10,
+we observed no measurable β-gal production. As discussed previously,
+out of the opposing and overlapping orientation of the P and P promoters emerges a synergy of transcriptional
+interference with antisense regulation. This synergy results in a tightly regulated bistable switch behavior.
+Other LAB inducible systems, such as the NICE or the SakP-based system
+(pSIP), have been shown to be efficient and well regulated when using  or  as hosts, respectively.
+However, they often exhibit significantly leaky basal activity in
+other hosts. Furthermore, these other systems
+typically rely on the autoregulation of the inducer via a two-component
+system composed of a membrane histidine protein kinase (HPK) and a
+response regulator (RR). In some cases,
+these systems can only be used by specific strains containing the
+regulators integrated in the chromosome or by employing two different
+plasmids. In our system, the inducer cCF10 is transported to the cytoplasm
+where it directly interacts with the repressor PrgX, to modulate gene
+expression by P. All the components involved in the regulation
+are located within a single plasmid. In addition, the cCF10 inducer
+peptide is nontoxic, allowing the use of very high inducer levels,
+without impacting growth of the producer strain. These results demonstrate
+the function of the pCF10 pheromone sensing system in  and how the natural system can be manipulated to vary the sensitivity
+to an inducing signal. β-gal activity
+(Miller Units) from recombinant  strains carrying engineered plasmids (pBK1, pBK2,
+pBK2iDT, pBK2Z, pBK2idTZ). Exponential cultures of each strain were
+induced with 100 ng/mL cCF10 90 min prior to harvesting cells for
+β-gal assay. The results are shown as averaged results from
+two independent experiments, each done in triplicate. The error bars
+represent the standard deviation. To determine whether the natural production
+of pheromone cCF10 by  is sufficient to
+induce the expression of  by recombinant , we carried
+two different sets of experiments, in semisolid and liquid medium. When  and recombinant  were grown together on agar plates, we observed three different
+levels of β-gal production: high, medium, and low. As observed
+in Figure A, -pBK1
+exhibited high levels of β-gal production on the plate. The
+interaction between recombinant -pBK2Z or -pBK2idTZ with  OG1RF
+triggered the expression of  by these two strains.
+β-gal production was higher when using -pBK2idTZ. No β-gal production was detected in those colonies
+located outside the area of interaction with  OG1RF. The observable response
+to cCF10 was markedly improved when the
+experiments were repeated in liquid medium. We mixed either  OG1RF or  JRC101
+(a cCF10 deficient strain) with -pBK2idTZ
+in cocultures at different ratios. Substantial induction of  reporter expression was observed at different  OG1RF/-pBK2idTZ ratios
+(Figure B). Furthermore, no β-gal production
+was detected when growing -pBK2idTZ together
+with  JRC101, or when any of the strains
+was grown alone, confirming that the promoter controlling  is tightly regulated by cCF10, secreted by  OG1RF. To probe the specificity of the
+system toward , we repeated the liquid
+experiments using instead different  spp.,
+that are naturally non producers of cCF10.
+No significant β-gal production was detected in the media, which
+confirms the high specificity of the pheromone cCF10 against PrgX. expression of recombinant  in coculture with . (A) Plate experiments:
+10 μL dot of  OG1RF and 5 μL
+dot of recombinant  (pBK1, pBK2Z and pBK2idTZ)
+grown in BHI plates supplemented with X-gal. The blue staining corresponds
+to the expression of  by recombinant  strains. These are representative images of an
+experiment that was repeated several times. (B) Absorbance at OD and image of  OG1RF and -pBK2idTZ grown in cocultures at different ratios
+(v/v) in M9X media. The results shown are averaged from two independent
+experiments, each done in triplicate. The error bars represent the
+standard deviation. cCF10-Inducible Bacteriocin Production by We constructed three separate constructs, replacing  in pBK2idTZ with the genes SP:, or , coding for
+the bacteriocins enterocin A, hiracin JM79, and enterocin P, respectively.
+In each case, along with one of the enterocins, we cloned the corresponding
+immunity gene (, ,
+and , respectively). Furthermore, we constructed a polycistronic sequence with the
+6 genes (three AMPs and three corresponding immunity genes), and cloned
+it into pBK2idTZ (dubbed pBK2idtZ:Bac). In order to quantify
+bacteriocin inhibition with our expression vectors, we first induced
+the recombinant  cultures with cCF10, collected
+the supernatants and then tested them against various  and  indicator strains. We had previously
+determined that the maximum or near-maximum expression levels were
+obtained 3 h after inducing  with cCF10
+at an OD of 0.4. In order to increase the bacteriocin
+concentration in the medium and avoid false negatives, we also performed
+protein precipitation of the supernatants with ammonium sulfate. Both
+the concentrated and nonconcentrates supernatants from recombinant  showed antimicrobial activity against all the
+strains tested in an agar diffusion test (ADT) (see Figure  for results using  8
+as indicator). The activity against enterococci was most accentuated
+when all
+three bacteriocins were expressed from the same strain, although modest
+antimicrobial activity was exhibited by the supernatants containing
+individual bacteriocins. No activity was observed in the supernatant
+of the control strain  NZ9000-pBK2idTZ. Subsequently, we tested the activity of supernatants from -pBK2idTZ:Bac by a 96 well plate assay. We observed
+inhibition against all  and  indicator strains used in the study (Table ). Notably, the antimicrobial activity from the
+supernatants was higher against  compared
+to . Three of the  strains tested had been identified by the University of Minnesota
+Clinical Microbiology Laboratory as exhibiting high-level Vancomycin
+resistance with minimum inhibitory concentrations >256 mg/mL whereas
+one strain (7a) was sensitive to Vancomycin (Dr. Patricia Ferrieri,
+personal communication). All four isolates were equally susceptible
+to killing by bacteriocin-producing LAB, suggesting the potential
+utililty of this system in control of multiresistant enterococci in
+clinical settings. In this work,
+we used the bacteriocins enterocin A, hiracin JM79,
+and enterocin P, all of them naturally produced by enterococcus spp. All three peptides have been previously cloned and expressed in  individually, showing antimicrobial activity against  and  spp. We observed a substantial increase of antimicrobial activity when
+the three were produced and secreted together. The synergistic effect
+of combining different bacteriocins has been previously studied and
+exploited to reduce the count of food borne and pathogenic bacteria
+in various applications. This type
+of synergism is presumably the result of the lower chance
+for an individual enterococcus cell to resist all three molecules.
+Genes for bacteriocin production as well as for immunity against these
+three bacteriocins are common among enterococci, but apparently only
+in a few cases do the genes for the three bacteriocins appear within
+the same enterococcal strain. Nevertheless,
+and perhaps not surprisingly, we observed the appearance of mutants
+resistant to all three bacteriocins in our plate experiments. The
+appearance of resistant mutants to class IIa bacteriocins has been
+previously documented. A potential future
+exploration can combine the use of class IIa bacteriocins with other
+bacteriocins or peptides having different modes of action. Antimicrobial activity of supernatants (SN) and ammonium
+sulfate
+precipitated peptides (AS) from recombinant  strains. Exponential cultures of each strain were induced with 100
+ng/mL cCF10 120 min prior collecting the supernatants. The antimicrobial
+activity was determined by an agar well diffusion test (ADT) with  8 as the indicator microorganism. Antimicrobial Activity (Bacteriocin
+Units/mL) of Supernatants from Recombinant  NZ9000-pBK2idTZ:Bac, against Different  and  Indicator Strains Exponential cultures
+of each strain
+were induced with 100 ng/mL cCF10 120 min prior collecting the supernatants.
+The results are shown as averaged results from two independent experiments
+that were each done in triplicate. ± represents the standard
+deviation. Coculture Detection and Inhibition The ultimate goal
+of this work was to engineer  strains to
+detect  in the environment and then produce
+a set of antimicrobial peptides. Once we established that both detection
+of  and production of active bacteriocins
+by recombinant  were separately functional,
+we tested whether  could perform both tasks
+concurrently. The lactococcal strain selected for this set of experiments
+was  pBK2idTZ:Bac, the one with the highest
+sensitivity to cCF10 as well as the highest antimicrobial activity
+against . We grew this strain in coculture
+with  OG1RF, under two different conditions,
+with or without an external addition of cCF10, and measured the enterococcal
+viability over time. We also cocultured  pBK1:Bac with  OG1RF, in order to determine
+the inhibition caused by the constitutive system. To further verify
+that the inhibition of  is caused by the
+expression and production of the three bacteriocins and discard any
+antimicrobial activity from the native lactococcal strain, we cultured
+the control strain -pBK2idTZ together with  OG1RF. To show that the induction of the AMPs
+is specifically triggered by cCF10, we cultured  pBK2idTZ:Bac together with  JRC101,
+an  OG1RF-derivative with a knockout in
+the gene coding for cCF10. As observed in Figure , the highest reduction of  OG1RF
+counts was achieved by -pBK1:Bac and -pBK2idTZ:Bac induced with cCF10. Under these conditions
+we observed reductions of the enterococcal strain of up to 6 and 4
+logarithmic units, respectively, in the first 2 h postinoculation.
+However, when using uninduced -pBK2idtZ:Bac
+we observed a reduction of up to 2-fold in the total number of enterococcal
+CFU in the coculture in comparison with the control (Figure ). These differences were not significant during
+the first 3 h, and reached the highest levels after 5–9 h of
+coculture. A useful comparison is
+one between the AMP-containing supernatants
+and commonly used antibiotics (Ampicillin, Vancomycin, and Streptomycin).
+In Figure , 8
+growth curves are presented when the bacteria are treated with supernatant
+from -pBK2idtZ:Bac and with each of the
+three antibiotics. The results are indicative of the inhibitory activity
+of secreted bacteriocins on  We note that
+we observe similar profiles for other enterococcal strains studied
+here. The inhibition of  OG1RF
+by uninduced -pBK2idtZ:Bac is significant
+compared to the inhibition
+by the control lactococcal strain. Because the pheromone-levels produced
+naturally by  are low (around 2 ×
+10 M), we can conclude that the systems described
+herein are notably sensitive to cCF10. Certainly, there is room for
+improvement, as exogenous cCF10 in higher quantities induces much
+stronger expression of genes in  Future
+strategies may involve transcriptional autofeedback loops to amplify
+initial signals, for example, modifying  to express additional cCF10 in the presence of enterococcus-produced
+cCF10. Another direction may involve the design of other bacteriocins.
+In Figure A, it can be observed that  OG1RF is starting to grow again, albeit slowly,
+after approximately 5–6 h. As a first explanation this may
+be attributed to the stability of the pheromone and antimicrobial
+peptides. As  counts decrease, there is
+likely less cCF10, which may result in less bacteriocins expressed
+from the prgX/prgQ system. The finite stability of these peptides
+may then result in a dynamic interplay between the two species in
+coculture. More stable peptides may then further tip the balance in
+favor of . To conclude, we note that
+there is an increasing volume of scientific
+evidence for the beneficial role some LAB play in human health. The
+pBK systems described here exhibit several advantages in comparison
+to expression systems previously described for LAB. Arguably the most
+significant advantage is pathogen detection. These detection-based
+promoter systems allow for spatiotemporal control, ideally releasing
+proteins at the site and time of infection. In our experiment, we
+used other closely related bacteria, such as , and found no detection responses. This reinforces the idea that
+the production of recombinant peptides by LAB would specifically be
+triggered upon detecting . This concept
+can potentially be explored with other pheromone systems, endogenous
+to different enterococcal, or other bacterial, strains. We note
+that there are significant regulatory, ethical, environmental,
+public health, and public policy aspects for the development and use
+of a technology that is based on genetically modified organisms. Yet,
+we believe that it would be out of the scope of the current manuscript
+to discuss in length these important aspects of technology use. Nonetheless,
+we note that technology applications that face surmountable obstacles
+may be related to animal health. Certainly, there is a need to explore
+alternative technologies to antibiotics used in agriculture. We can
+envision important benefits to farm animals and humans that may be
+realized with successful development of the proposed technology. This
+intervention may result in healthy animals, decrease the emergence
+of antibiotic-resistance in foodborne pathogens, decrease the supply
+of antibiotics to animals, and reduce the rates of transmission of
+infectious diseases from animal farms to humans. viability when grown in coculture
+with recombinant  strains. (A)  OG1RF viability at different time points when cocultured
+with -pBK2idTZ (blue diamonds), -pBK1:Bac (purple x’s) or -pBK2idTZ:Bac induced with 100 ng/mL cCF10 at time 0 (yellow circles).
+The viability is expressed as the log of the total  OG1RF colony forming units per ml (CFU/mL).
+(B)  OG1RF viability at different time
+points when cocultured with -pBK2idTZ:Bac
+(red squares) and, shown again for cross-reference to Figure 4A, -pBK2idTZ (blue diamonds). Also shown is  JRC101 (a cCF10 deficient strain) viability
+when cocultured with -pBK2idTZ:Bac (green
+triangles). The viability is expressed as the total number of  CFU/mL. Cell ratios are as described in the
+text. All results are shown as averaged results from two independent
+experiments, each done in triplicate. The error bars represent the
+standard deviation. inhibitory activity comparison between
+secreted bacteriocins and commonly used antibiotics. Growth curves
+of  8 treated with different antibiotics
+and the supernatant of -pBK2idTZ:Bac. An
+overnight culture of  8 was diluted to
+an optical density at 600 nm (OD ) of 0.1 in BHI broth
+supplemented with different antibiotics: Ampicillin 100 μg/mL
+(Amp 100), Vancomycin 50 μg/mL (Vanco 50) and Streptomycin 50
+μg/mL (Stm 50); and with a 10% (v/v) supernatant of  pBK2idTZ:Bac (Bact 10%).  8 grown in the absence of any treatment was used as control. The
+cultures were incubated at 37 °C and the OD was
+measured at various time periods. The experiments were repeated three
+times. The error bars represent the standard deviation. Bacterial Strains,
+Growth Conditions, and Plasmids Bacteria used in this study
+are listed in Table .  NZ9000 was cultured at 30 °C
+in M17 broth (Oxoid Ltd., Basingstoke, U.K.) supplemented with 0.5%
+(w/v) glucose (GM17). The  strains were
+grown in BHI broth (Oxoid) at 37 °C.  strains were grown in LB broth (Fisher Scientific, Fair Lawn, NJ,
+U.S.A.) at 37 °C, with shaking. Agar plates were made by the
+addition of 1.5% (wt/vol) agar (Oxoid) to the liquid media. When necessary,
+Rifampicin (Sigma Chemical Co., St. Louis, MO, U.S.A.) was added to
+the media at 50 μg/mL, and chloramphenichol at 5 μg/mL
+or 20 μg/mL, for  or , respectively. Bacterial Strains Used in This Study plasmid-free
+strain, derivative of MG1363; pepN::nisRK, nonbacteriocin
+producer ATCC 700802; St. Louis, MO, U.S.; first
+isolated vancomycin-resistant
+and first sequenced  genome Boston, MA, U.S.;
+Gent/Kan/Strep/Tet/Erm/Pen resistant, β-lactamase-producing
+isolate ATCC 47077; plasmid-free, Rif/Fus resistant mutant of OG1;
+common laboratory strain OG1RF,  (not producer
+of cCF10) U.K.; Rif/Fus resistant mutant; common laboratory strain UMN isolate, Amp/Vanc/Linezolid resistant UMN isolate,
+Amp/Linezolid resistant UMN isolate, Amp/Vanc/Linezolid resistant UMN isolate,
+Amp/Vanc/Linezolid resistant Construction of Plasmids and  Transformation Supporting Information Table S1 Plasmids were constructed using standard molecular cloning techniques. All restriction enzymes were purchased from
+New England Biolabs (Beverly, MA, U.S.A.). Primers used in PCR reactions
+are listed in . Fragments obtained and plasmids used are listed in Table . Detailed information on the plasmids constructed
+and the structure of engineered promoters can be found in the suporting
+information ( Materials
+and Methods, Figures S1 and S2). Electrocompetent  cells were transformed with a Gene Pulser XCell (Bio-Rad
+Laboratories, Hercules, CA, U.S.A.) as described previously. Plasmids and Fragments
+Used in This
+Study ; inducible expression vector
+carrying the prgX/prgQ system and ; constitutive
+expression vector;
+pBK2 derivative with a deletion of the entire ; inducible expression vector;
+pBK2 derivative with 1 amino acid deletion (19Tdel) in the  region coding for iCF10 pBK2idT derivative with 23::PrgZ pBK2idTZ derivative
+with HirJM79 202-bp I fragment
+containing 23 constitutive promoter and a restriction
+site for I 1,628-bp HI-RI fragment
+containing the enterocin A structural gene ()
+with its immunity gene (), the enterocin P structural
+gene () with its immunity gene () and the hiracin JM79 structural gene ()
+with its immunity gene () 538-bp HI-RI fragment
+containing 546-bp HI-RI fragment
+containing 504-bp HI-RI fragment
+containing To
+determine the sensitivity
+of the expression vectors to cCF10, we used a β-galactosidase
+(β-gal) assay to measure the levels of lacZ expression from
+recombinant  upon induction with pure cCF10
+added externally. Strains were grown overnight in GM17 medium
+and then diluted 1:5 into fresh GM17 medium and grown for an additional
+hour (OD = 0.4–0.5) before addition of cCF10 (50 ng/mL). After
+induction the cultures were incubated for 90 min. β-gal assays
+were performed as described previously. Activity was expressed as Miller Unit equivalents (MU). Expression
+of lacZ by  in Coculture
+with β-gal activity of -pBK2idTZ was also measured when grown in coculture
+with cCF10 producing  OG1RF. For
+liquid experiments the strains  OG1RF
+(OG),  JRC101 (JR) and  NZ9000-pBK2idTZ (NZ) were grown overnight in their respective liquid
+media. The cultures were reinoculated and grown to an OD of 1. Then OG and NZ or JR and NZ were inoculated into 1 mL M9 media
+and M9 media supplemented with X-gal (250 μg/mL) (M9X) at different
+ratios (v/v) (OG/NZ and JR/NZ at 10:50; 50:50; and 100:50). As positive
+control NZ was grown in M9 and M9X media with cCF10 (50 ng/mL). The
+cocultures were incubated overnight at 32 °C for 16 h and then
+β-gal activity was measured by subtracting the OD values from the cocultures grown in M9X and M9. For plate
+experiments OG, NZ,  NZ9000-pBK2iZ
+and  NZ9000-pBK1 were grown overnight in
+their respective liquid-media. The cultures were reinoculated and
+grown to an OD of 1, then 10 μL of OG were spotted
+in BHI-agar plates supplemented with X-gal (250 μg/mL). Once
+dried, 5 μL of the  cultures were
+spotted into the edges of the OG drop and let dry. The plates were
+incubated overnight at 32 °C for 16h and then  expression was observed by the growth of blue staining colonies. The antimicrobial activity
+of individual colonies was examined by the stab-on-agar test (SOAT),
+as previously described. Recombinant
+LAB cultures, transformed with either pBK2idTZ:Bac, pBK2idTZ:EntA,
+pBK2idTZ:HirJM79, and pBK2idTZ:EntP were induced for bacteriocin production
+at an OD of 0.5, using 50 ng/mL cCF10. The induced cultures
+were grown at 32 °C during 2 h. Cell-free culture supernatants
+(SN) were obtained by centrifugation of cultures at 12 000, 4 °C for 10 min, filtered through 0.2 μm pore-size
+filters (Whatman Int. Ltd., Maidstone, U.K.), and stored at −20
+°C until use. Ammonium sulfate precipitation (AS) was performed
+to increase peptide concentration. Ammonium sulfate (4 g; Sigma) was
+added to 10 mL SN, mixed and let stand on ice for 1 h. Then the tubes
+were centrifuged at 12 000, 4 °C for
+10 min, the SN discarded and the precipitated pellet eluted in 1 mL
+fresh GM17. The antimicrobial activity of the supernatants was examined
+by an agar well diffusion test (ADT) and a microtiter plate assay
+(MPA), as previously described using  8 as indicator microbe. With the MPA, growth
+inhibition of the sensitive culture was measured spectrophotometrically
+at 620 nm with a microplate reader (SpectraMax Plus384; Molecular
+Devices, Sunnyvale, CA). One bacteriocin unit (BU) was defined as
+the reciprocal of the highest dilution of the bacteriocin causing
+50% growth inhibition (50% of the turbidity of the control culture
+without bacteriocin). The antimicrobial activity of recombinant -pBK2idTZ:Bac was also tested against different  and  strains using
+the MPA. Growth-Inhibition in Coculture
+with Recombinant Overnight cultures
+of recombinant -pBK2idTZ, -pBK2iDTZ:Bac, and -pBK1:Bac were inoculated
+(20%) in 20 mL fresh media until an OD of 0.5. The cultures
+were then inoculated with 2 × 10 CFU (Colony Forming
+Units) (200 μL) of  OG1RF and let
+grow at 32 °C. One of the -pBK2idTZ:Bac/ OG1RF cocultures was also induced with 50 ng/mL
+cCF10 at time 0. In parallel, and as negative control, -pBK2idTZ:Bac was inoculated with the non-cCF10 producer  JRC101. Samples were taken every hour for 10
+h, and the number of CFU per mL (CFU/mL) was determined by plating
+10 μL of serial dilutions of the cocultures on GM17 agar plates
+supplemented with Rifampicin. The plates were incubated at 37 °C
+for 16 h, and the number of viable  OG1RF
+cells was assessed by counting CFUs..

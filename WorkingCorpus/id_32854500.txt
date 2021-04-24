@@ -1,0 +1,471 @@
+http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00296/suppl_file/sb0c00296_si_001.pdf The construction
+of novel, reliable
+genetic circuits relies largely on the reproducible characterization
+of standard genetic parts. Fluorescence is often used as a quantitative
+output for engineering genetic circuits and can be measured in microplate
+readers or flow cytometers. Plate readers are particularly suited
+for high throughput applications, such as understanding temporal dynamics
+of multiple different constructs and conditions simultaneously. However,
+the data are bulk measurements that obscure population heterogeneity.
+Flow cytometry reveals this information but has more limited throughput
+capabilities. Recently, an inexpensive and easily implementable protocol
+to convert green fluorescence measurements from both instruments into
+intercomparable standard units of molecules of equivalent fluorescein
+(MEFL) per particle was validated across hundreds of laboratories
+in the international Genetically Engineered Machine (iGEM) competition. Measurements of standard calibrants are used
+to create calibration curves to convert the arbitrary units (a.u.)
+of individual machines to standardized units, a technique that has
+previously been established. Currently, however, software tools
+for calibration and normalization exist across multiple platforms
+and different coding languages including MATLAB (for example, TASBE
+Flow Analytics), Python (CytoFlow and FlowCal), R (flowBeads), and Excel (iGEM’s Plate Reader Calibration
+preformatted data sheet).  compares the features between current
+free calibration software tools for plate reader and flow cytometry
+data. Although this variety offers choice to end users, it makes high-throughput
+application difficult and time-consuming. In addition, autofluorescence
+normalization for plate reader measurements is often implemented inconsistently
+and in an “” manner, even though
+it has been shown to be critical particularly when measuring fluorescent
+particles that share a similar emission wavelength with nonfluorescent
+cells. Consequently, standards for calibration
+and normalization have yet to be widely adopted and fluorescent data
+collected from microplate readers and flow cytometers is currently
+still often reported in arbitrary units. Our goal is to create a single,
+open source, easily usable tool to calibrate and normalize both plate
+reader and flow cytometer data to comparable standard units. Here we present FlopR, a full calibration and normalization package
+in R, the free and open source programming language, for both flow cytometry and microplate reader fluorescent
+data. FlopR normalizes raw data, then uses data from measurements
+of standard calibrants to generate calibration curves and convert
+sample data recorded in arbitrary units to units of molecules of equivalent
+fluorophore (MEF) per particle. We demonstrate FlopR can accurately
+normalize and calibrate fluorescence data from  that are constitutively expressing GFP to agree with normalized
+and calibrated literature values. Finally, we show FlopR can reconstruct
+the growth of individual fluorescent subpopulations of cells from
+plate reader data of heterogeneous bulk cell cultures, demonstrating
+its potential for complex and high throughput applications such as
+studies of dynamics within mixed microbial consortia. Full Normalization
+and Calibration Workflow FlopR has
+been designed to be simple to use for people with a limited background
+in programming. As such, it only requires one function call to normalize
+and calibrate an entire folder of flow cytometry data or a file containing
+microplate reader data. The full workflow is shown in  and a detailed tutorial can
+be found on the GitHub page. As there is no common format for microplate
+reader data, a function to parse the data into a standard format is
+required. We provide an example parsing function, spark_parse(), which
+converts data from Tecan microplate readers. Flow cytometry data, in the form of .fcs files,
+are processed using
+the process_fcs_dir() function. The function takes several arguments
+that control its behavior. A folder containing the .fcs files is specified
+and any file with a filename that matches the given pattern is processed.
+The data are first trimmed to remove debris and then singlet events
+are isolated from doublets and larger aggregates, as specified in
+the methods. If normalization and/or calibration is required, the
+names of the fluorescence channels to be processed are given. If a
+nonfluorescent control file is provided, it is first processed as
+above, after which the geometric mean of each fluorescence channel
+is calculated. These values are then negated from the other samples
+to provide normalized fluorescence values. If calibration of the flow
+cytometry data is desired,
+an .fcs file with “beads” as part of the filename must
+be in the folder. Calibration is performed using measurements of fluorescent
+beads labeled with known quantities of fluorophore. The peak values
+in each channel, produced by the bead manufacturer, need to be given
+to the function. If values are only given for a subset of the fluorescence
+channels, only those channels specified will be calibrated. A plot
+of the calibration curve for each fluorescent channel is produced
+along with the locations of the bead peaks identified by the software.
+If these peaks have not been correctly identified, the user can modify
+a function argument; increasing the value may be necessary if erroneous
+peaks have been identified. If the bead identification still fails,
+the bead peak locations can be specified manually. If desired, a plot
+will be saved showing the trimming, normalization, and calibration
+of the data. Each processed .fcs file will have additional columns
+for normalized and calibrated events, and is saved in a new folder. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00296/suppl_file/sb0c00296_si_001.pdf The microplate reader workflow consists of two distinct parts:
+generation of calibration parameters, and generation and processing
+of sample data. The user should first prepare and measure a plate
+of standard calibrants (, microspheres and fluorescein)
+at a range of dilutions, following the protocol developed for the
+iGEM competition and described in . The calibration data
+from the plate reader is first parsed and if using a Tecan plate reader
+the provided spark_parse() function can be used. The function needs
+to be provided with the path to the calibration data in the form of
+a .csv file, and the path to a .csv file detailing the layout of the
+calibration plate. This outputs a formatted .csv file. The generate_cfs()
+function uses the parsed calibration data to produce a .csv file that
+can then be used to calibrate later plate reader experiments. This
+protocol does not need to be carried out before every experiment but
+should be carried out regularly—roughly monthly—to ensure
+that the parameters reflect the machine’s current behavior. To process experimental plate reader data, the user should first
+create a .csv file with details of the samples and their position
+on the plate. The experimental data can then be parsed in the same
+way by providing the spark_parse() function with the path to the data
+and layout .csv files. The parsed data can then be given to the process_plate()
+function. One or more blank and nonfluorescent control wells can be
+specified. The names of the channels for absorbance and fluorescence
+measurements also need to be given. These should be the respective
+column names found in the input .csv file. We use a model based approach
+for autofluorescence normalization, detailed below, and allow the
+user to select the most appropriate model for their data. If the prior
+calibration protocol has been carried out, the experimental data can
+be converted to calibrated units. The gain level used for each fluorescence
+channel needs to be given along with the .csv file produced by generate_cfs().
+The output is saved as a .csv file containing all the original data,
+along with normalized and calibrated absorbance and fluorescence values. Full plate reader and
+flow cytometry data processing by FlopR,
+including relevant function calls. FlopR normalizes and calibrates
+parsed plate reader sample data using the process_plate() function,
+and cleans, normalizes and calibrates .fcs flow cytometry data stored
+in a directory using the process_fcs_dir() function. FlopR outputs
+processed data in comparable, standard units of MEF/particle. Normalization of Autofluorescence in Plate Reader Data http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00296/suppl_file/sb0c00296_si_001.pdf Careful
+normalization of plate reader data is required to correctly
+remove autofluorescence from the measurements of sample of interest.
+Incorrect normalization can diminish the dynamic range of the measured
+fluorescent output, particularly in the case of GFP. Often normalization is done simply by subtracting the fluorescence
+of a negative control consisting of nonfluorescent cells from the
+fluorescence of the cells of interest at the same time point. To calculate
+the fluorescence per OD, the normalized fluorescence is then divided
+by the blank-normalized OD. We describe this first, and most rudimentary,
+approach as “time normalization”. This time-based normalization
+does not take into account growth differences between the nonfluorescent
+control and the sample population, which can be common in cells containing
+genetic circuits that may affect growth. A second normalization strategy, “Time OD normalization”,
+takes the ratio of fluorescence to OD of both types of cells first,
+and then subtracts nonfluorescent cell measurements from those of
+the cells of interest. This can help account for differences in OD
+between the two types of cells but assumes a proportional relationship
+between OD and autofluorescence over time. Equations for “time
+normalization” and “time OD based normalization”
+are given in . Another
+normalization approach involves using spectral unmixing of the main
+identified autofluorescent agents; however, this
+requires detailed knowledge of the source of the autofluorescence. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00296/suppl_file/sb0c00296_si_001.pdf Our approach is to fit an absorbance  autofluorescence calibration curve of the nonfluorescent
+control cells (a), which gives autofluorescence as a function of absorbance over
+time for normalization. Previous mechanistic models have suggested that autofluorescence
+is proportional to the total volume of cells while flavin production
+and cell size remains constant. However,
+cell size is not constant across growth phases and
+production of flavins increases on approach to stationary phase. This means that autofluorescence is not linearly
+proportional to optical density. Indeed, we have observed that the
+relationship between OD and autofluorescence is monotonic from lag
+phase to early stationary phase, but during stationary phase autofluorescence
+increases while absorbance remains stable. Furthermore, over very
+long time periods, wells containing nonfluorescent cells can show
+a decrease in absorbance while maintaining the same level of autofluorescence
+(). Due to the complexity of modeling
+this relationship, we chose a nonlinear smoothing approach to fit
+an autofluorescence calibration curve. The user can choose the best
+fitting nonlinear model, and has the options of a generalized additive
+model (GAM), locally estimated scatterplot
+smoothing (LOESS) model, a second-order
+polynomial or exponential model to fit the data. Extrapolation is
+a weakness of the two smoothing models. If the nonfluorescent control
+population does not grow as well as the samples, it may be better
+to choose one of the other models. However, this is an uncommon scenario
+in synthetic biology since engineered strains are often burdened by
+the circuits they carry. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00296/suppl_file/sb0c00296_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00296/suppl_file/sb0c00296_si_001.pdf In order to show quantitatively the performance of the different
+normalization approaches in cases of growth differences between normalized
+cells and normalizing cells, we grew nonfluorescent cells at different
+starting dilutions for 15 h ().
+Accurate normalization of nonfluorescent cells should remove all autofluorescence,
+so the “ground-truth” fluorescence is expected to be
+zero (shown in c as the orange dashed line). The mean absolute error (MAE) from
+the zero-fluorescence ground truth can then be used as an indicator
+of normalization performance. Pairs of wells, inoculated at different
+starting densities, were normalized against each other using the three
+different normalization methods (), and their MAE calculated during the main growth phase of the sample
+well (b). As
+the difference in starting dilution between the wells increases, the
+deviation from zero of both time normalization methods (“time
+normalization” and “time OD normalization”) increases
+substantially. FlopR fitted normalization also shows a moderate increase
+but it is considerably smaller than the other types of normalization,
+indicating more consistent normalization performance, independent
+of growth. c shows the normalized MEFL per particle of a subset of these nonfluorescent
+wells over time. In the middle panel, the sample well and normalizing
+well are identical indicating that all methods perform well. Time-based
+normalization methods are particularly prone to poor normalization
+at early time points, when delays or differences in the start of exponential
+growth of the two populations are emphasized. Fluorescence normalization in plate readers.
+(a) GAM fit of the
+absorbance  fluorescence of a well containing nonfluorescent
+control cells used for FlopR normalization. (b) Comparison of normalization
+performance by mean absolute error from the expected zero-fluorescence
+ground truth for nonfluorescent control cells using FlopR normalization,
+time normalization, or time OD normalization. Initial inoculates were
+serially diluted by a factor of 3:8. The fold difference is the pairwise
+initial dilution difference between sample and normalizing well. (c)
+MEFL per particle timecourses of nonfluorescent cells calculated using
+time normalization, time OD normalization, or FlopR normalization
+at different starting concentration of cells for the sample well and
+normalizing well. Orange dashed lines show the expected “ground
+truth” zero-fluorescence. Calibration of Plate Reader
+and Flow Cytometer Fluorescence
+Data After normalization, FlopR converts the fluorescence
+of the cell sample of interest from arbitrary units to standardized
+units of MEF per particle by multiplying the normalized values with
+conversion factors generated from measurements of standard independent
+calibrants. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00296/suppl_file/sb0c00296_si_001.pdf For the microplate reader calibration, measurements
+of a calibration plate of serial dilutions of fluorescein and microspheres
+measured prior to the main experiment are used as calibrants to generate
+conversion factors using FlopR’s generate_cfs() function. Fluorescein
+shares similar excitation and emission wavelengths to green fluorescent
+protein (GFP), and the microspheres used are of approximately the
+same size and diameter as . Our protocol was adapted from the iGEM standard
+protocols and is available in the . The plate reader calibration plate
+is measured under all of the potential experimental conditions under
+which the fluorescent cells of interest will be measured in future
+experiments, including plate type, well volume or lid type, and with
+a range of gain settings. This is so that conversion factors generated
+from the calibration plate data will be valid for future experiments
+under a range of conditions. In particular, we note that the relationship
+between gain and conversion factors on the plate reader that we used
+was linear. This allows us to estimate the conversion factors if an
+experiment is run with a gain that was not calibrated against. To
+process data from the calibration plate, measurements are checked
+for validity to ensure they are not saturated and a model incorporating
+pipetting error is fitted to the remaining
+data. Plots are produced showing the fit for each measured condition,
+allowing the user to visually check the results. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00296/suppl_file/sb0c00296_si_001.pdf For flow cytometry
+calibration, FlopR uses measurements of standard
+calibration particles (also called calibration beads). The calibration
+beads have known quantities of fluorophore bound to them and often
+present a range of intensities. To identify the bead fluorescence
+peaks measured by the flow cytometer, FlopR uses a Gaussian kernel
+density estimate from the R “stats” package, as opposed to Gaussian mixtures models or k-means
+clustering models used in other flow cytometry data calibration software. This allows us to provide the user with a single parameter to modify
+(the bandwidth, which is equal to the kernel standard deviation) if
+the default settings are unsuccessful at identifying bead peaks (). The default bandwidth that we have
+specified (0.025) prevents over smoothing of narrow peaks at high
+fluorescence intensity, but details of when and how to change the
+bandwidth are in the tutorial. From experience with other software
+tools, even with the ability to control parameters, bead peak identification
+can fail, so we also provide the ability for users to manually specify
+peak locations. Corresponding values of MEF for each identified peak
+are provided by the calibration bead manufacturer and are input into
+FlopR by the user for the specific bead lot and brand used (full details
+available in the FlopR tutorial). The identified peaks are checked
+for validity by comparing the fold change in measured fluorescence
+of adjacent peaks to the expected fold change from the manufacturer
+and discarding those that are more than 25% outside what is expected.
+A model developed for FlowCal, which includes
+bead autofluorescence, is then fitted to produce coefficients for
+conversion between measured fluorescence in arbitrary units and calibrated
+fluorescence in MEF. Demonstrating FlopR Function with Constitutive
+GFP Expression
+Data We sought to demonstrate the use of FlopR using constructs
+that constitutively expressed GFP with differing strength promoters
+(a). b shows the results
+of measurements of three different strength constructs on a plate
+reader and flow cytometer, compared against literature values of the
+same constructs. We followed the protocol
+conducted by the iGEM interlab study, in which only a single time
+point is measured, so it is worthwhile to note that these were normalized
+following the interlab protocol and were not normalized for autofluorescence
+according to FlopR’s normalization fit. In this case the nonfluorescent
+control cells and GFP-expressing cells showed similar growth dynamics,
+so time-based normalization is expected to give accurate results.
+The results show that FlopR produces results that are not only consistent
+between replicates sampled on different days, but that are also comparable
+with results from the literature that were measured on different instruments
+and processed using other software. Demonstration of FlopR-produced MEFL per
+particle values measured
+by flow cytometry or on a plate reader. (a) Three different constitutive
+GFP expression constructs were tested, with promoters J23101, J23106,
+and J23117. (b) Fluorescence measurements on different days compared
+to literature values for the same plasmids. Plate reader data shows the geometric mean and standard deviation
+of 12 replicates on 2 days. Flow cytometry data shows the geometric
+mean fluorescence intensities and standard deviation of 11 replicates
+over 2 days. Applying FlopR to Identify
+Bacterial Subpopulations in Bulk
+Plate Reader Measurements Finally, we used FlopR’s
+normalization capabilities to identify specific subpopulations of
+cells in mixed cultures to demonstrate its potential applications
+beyond green fluorescence calibration. There has been growing interest
+in engineering multicellular consortia; however, identifying
+the growth dynamics of individual strains within a mixed culture remains
+challenging. We use a previously described system in which bacteriocin-producing fluorescent “killer”
+cells were mixed at different starting fractions with nonfluorescent
+competitor cells, and use FlopR to process the data measured in a
+microplate reader and flow cytometer over 12 h (a). Traditionally, separation of the two
+population fractions is only possible by clustering in flow cytometry
+data (b), but
+sampling is manual and low throughput, and it requires different fluorescence
+proteins in either strain or high expression of a fluorescent protein
+in order to adequately distinguish between subpopulations. In this
+case, population fractions are simply calculated using the numbers
+of cells of each population in each cluster. The killer cells were
+engineered to produce two fluorescent proteins, GFP and mCherry, so
+that clustering could be performed using both fluorescence channels
+without the issue of spectral overlap of the competitor and killer
+cell populations when fluorescence expression is weak. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00296/suppl_file/sb0c00296_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00296/suppl_file/sb0c00296_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00296/suppl_file/sb0c00296_si_001.pdf To reconstruct population fractions from plate reader data, we
+make the assumption that fluorescent cells in a monoculture are representative
+of the same cells in a coculture. With this assumption, we can use
+a positive control well composed of only fluorescent killer cells
+to create an absorbance–fluorescence calibration curve specific
+to killer cells using one of the fluorescence channels (). This calibration curve allows us
+to take into account the fact that fluorescence per cell may not remain
+constant over time: a similar premise to the autofluorescence calibration
+curve described previously. At each time point, the fraction of killer
+cells was calculated bywhere () is
+the normalized fluorescence of the sample at time , OD() is the
+normalized absorbance of the sample at time , and  uses the calibration curve
+to get the expected fluorescence at the given absorbance assuming
+an entirely killer population. The calculated fraction of killer cells
+from measurements in both instruments are shown in the bottom panel
+of d, and a
+comparison is presented in c, both showing that FlopR can closely reconstruct
+accurate subpopulations of cells from bulk data. This fraction can
+then be multiplied by the calibrated particle count of the mixed wells
+to get the growth timecourses of individual subpopulations (top row
+of d). At high
+starting fractions of killer cells, the competitor cells are immediately
+overwhelmed and the killer dominates the culture (right column of d). However, at low
+initial killer cell fractions, the competitor cells experience an
+initial growth phase, until the concentration of bacteriocin is sufficiently
+large to begin eliminating the competitors. Reconstruction of cell
+population fractions from plate reader measurements does not require
+spectral separation of the two subpopulations and therefore the use
+of both fluorescent protein channels is not necessary. It is indeed
+possible to reconstruct cell fractions using the green fluorescence
+channel () giving similar results
+to the reconstruction using red fluorescence in . The same coculture system was explored
+over a larger range of population ratios as well as a variety of starting
+population densities and the final plate reader calculated population
+fraction was compared with flow cytometry data (). These results further demonstrate the accuracy
+of our method. However, the data also show that at low population
+densities the subpopulation fraction calculation may produce inaccurate
+estimates due to noisy measurement of absorbance in the plate reader
+at those densities. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00296/suppl_file/sb0c00296_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00296/suppl_file/sb0c00296_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00296/suppl_file/sb0c00296_si_001.pdf We performed a sensitivity analysis to determine
+how the true population
+fractions, fluorescence intensities and absorbance values, along with
+errors in measurement of absorbance and fluorescence, affect our ability
+to correctly estimate population fractions (). We approximate measurement error by assuming measurements
+are normally distributed around the true value and examine two scenarios:
+the error is proportional to the measurement, and the error is constant
+regardless of the magnitude of the measurement (). In the former scenario a measurement error of
+1% produces a sensitivity of 1 (all population estimates are within
+5% of the true value), a 2% error gives 0.94 and a 5% error gives
+0.63 sensitivity. These hold regardless of the population ratios,
+fluorescence intensity or absorbance. However, when the measurement
+error is constant, the sensitivity decreases as the fluorescence intensity
+or absorbance decrease because the error proportionally gets larger.
+It is likely that true measurement error for plate readers is proportional
+to the magnitude of the measurement down to a minimum error. This
+would correspond with our observations in  of accuracy diminishing at the lowest population densities. Using FlopR to monitor
+population dynamics of individual populations
+within heterogeneous bulk plate reader measurements. (a) Mixed cocultures
+of fluorescent killer cells and nonfluorescent competitor cells at
+different starting ratios were measured and compared using FlopR.
+(b) Distinct subpopulations are easily identifiable by clustering
+flow cytometry data. (c) Comparison of plate reader calculated killer
+cell fractions and flow cytometry measured killer cell population
+fractions for wells at identical time points. (d) Dynamics of individual
+cell populations (orange or gray for killer and competitor, respectively)
+reconstructed from plate reader data using FlopR. The top panel shows
+timecourses of cell number of strains reconstructed from plate reader
+data. The bottom panel shows timecourse data of killer cell population
+fractions calculated from plate reader data or measured from clustered
+flow cytometry data. Data for (d) is mean and standard deviation of
+two replicate wells measured on the same day. FlopR is a free and open source software tool
+that allows direct
+comparison of flow cytometry and plate reader green fluorescence data.
+Future extensions to the software should include fluorescence calibration
+for colors other than green fluorescence. For example, calibrants
+for red fluorescence, such as TexasRed, are currently being investigated. Size calibration—currently available in other flow cytometry packages—can also be added, which may be of particular
+use in order to understand changes or differences in morphology of
+different bacterial strains. Size calibration may be particularly
+important to understand the size of microsphere to use as a calibrant
+to avoid over- or under-estimation of population size, as differences
+in particle size can cause large differences in light scattering,
+particularly when the size of the particle approaches that of the
+incident light wave, as is the case with bacteria. Alternatively, the cells themselves could be used to create
+the calibration curves for specific strains: by measuring the number
+of cells in a known dilution in the flow cytometer, it would be possible
+to estimate the number of cells in a dilution series of the same sample
+measured in the plate reader. In addition, determination of the MEFL
+per individual GFP protein, for example by flow cytometry and liquid
+chromatography–mass spectrometry, would be useful to gain quantitative information on how many proteins
+per cells are producing that fluorescence. This would be highly beneficial
+to enable the coupling of computational models to experimental data.
+As this software is open source, it can also be extended with methods
+for calibration of other instruments and approaches, such as fluorescence
+microscopy, or other imaging techniques. http://www.github.com/ucl-cssb/flopr Measurement standards help reproducibility, transparency and collaboration
+within the scientific process. Despite this, fluorescence remains
+identified as a problematic measurement area. We hope this tool will be of use to the synthetic biology community
+to facilitate and encourage the use of standardized units in fluorescence
+measurements. The full details on how to use the package and requirements
+can be found in the tutorial on FlopR’s GitHub repository at . http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00296/suppl_file/sb0c00296_si_001.pdf All plate reader experiments
+were done on a Tecan SPARK Multimode Microplate Reader, using 96 well
+black, clear bottom plates (Corning). Specific plate reader settings
+for the individual experiments of each figure are outlined in . All fluorescence measurements were
+made from the top of the plate, with 125 μL cell cultures. Plate
+reader data for  and 5 was collected throughout the timecourse. Plate reader data
+for b was collected
+at a single time point, following the protocol detailed in Beal  and available at . All flow cytometry experiments
+were carried out on an Attune NxT Flow Cytometer. Green fluorescence
+was measured on the BL1 channel (excitation laser: 488 nm, emission
+filter: 530/30 nm), and red fluorescence on the YL2 channel (excitation
+laser: 561 nm, emission: 620/15 nm). Cell cultures were diluted 1
+μL in 200 μL of filtered PBS, with 3 mixing cycles and
+minimum 3 wash rinses between samples. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00296/suppl_file/sb0c00296_si_001.pdf As is noted in , data for  and  were measured
+at excitation and emission wavelengths of 485/20
+nm and 535/20 nm for green fluorescence. These differ by 3 nm for
+excitation and 5 nm for emission from the flow cytometer excitation
+and emission wavelengths of the BL1 green fluorescence channel in
+the flow cytometer. However, as both the plate reader’s excitation
+and emission bandwidths are 20 nm and the flow cytometer bandpass
+filter is 30 nm, the small difference in the settings is negligible,
+and the measurements from both instruments are still comparable. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00296/suppl_file/sb0c00296_si_001.pdf The full protocol for generating
+serial dilutions of plate reader calibrants is detailed in . Briefly, fluorescein isothiocyanate
+(Sigma-Aldrich, CAS: 3326-32-7) dissolved in PBS and 0.89 μm
+monodisperse silica microspheres (Cospheric: SiO2MS-2.0 0.890um-1g)
+suspended in microbiology grade water were used to create serial dilutions
+in a 96 well black, clear bottom plate (Corning), with four replicate
+dilution series for each calibrant. Due to the quick settling time
+of the microspheres, their dilutions were remixed by pipetting up
+and down immediately before measurement on the plate reader. For flow
+cytometry calibration, one drop of Spherotech Rainbow calibration
+particles (Biolegend catalog number: 422903, these are identical to
+Spherotech catalog number: RCP-30-5A (8 peaks) Spherotech lot number:
+073112) was mixed with 300 μL of PBS and measured using the
+same settings as the relevant experiment. Strains and Cultures Conditions http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00296/suppl_file/sb0c00296_si_001.pdf All plasmids, strains,
+and antibiotic working concentrations used are listed in . For  and  cells were
+cultured in M9 minimal media supplemented with 0.4% glycerol and 0.2%
+casamino acids throughout the experiments. Cells for the experiment
+in b were cultured
+in LB media throughout the experiment, following the standard iGEM
+protocol. For , 5 mL cultures were grown overnight in 14
+mL round-bottom vented cap culture tubes at 37 °C and 200 rpm
+in a SciQuip ZHWY-103D incubator, then diluted 1:1000 in fresh M9
+media to a total of 5 mL in a new 14 mL tube, grown for 6 more hours
+at 200 rpm, diluted in fresh M9 media to a target OD 700 nm of 0.1
+and total volume of 5 mL, then diluted stepwise by a factor of 3/8
+(for initial starting dilution ratios of 1, 0.375, 0.141, 0.053, 0.020,
+0.007, 0.003, and 0.001) and final well volume of 125 μL per
+well in a 96 well black, clear bottom plate. For , 5 mL overnight cultures were
+diluted 1:100 in fresh M9 media to a total of 5 mL in 14 mL flasks,
+then mixed at the specified ratios to a final volume of 125 μL
+per well in a 96 well black, clear bottom plate. Each file
+within the folder given as the dir_path argument is initially processed
+to remove debris using the flowClust package to discriminate between bacterial and debris populations using logged
+forward-scatter height  side-scatter height.
+This uses a t-mixture model with a Box-Cox transformation to fit the
+clusters and integrated completed likelihood to determine if there
+is a debris population or not. If two populations are found, the one
+with the greater mean forward-scatter height is chosen as the sample
+population and the other is discarded as debris. If the data has already
+had debris gated out during the experimental setup, the user can indicate
+as such by setting the pre_cleaned argument to TRUE. In this case,
+the 10% outliers are removed, and the remaining events are chosen
+as the sample population. Next we attempt to remove doublets and larger
+cell aggregates using the singletGate() function provided by the flowStats
+package. This fits a linear model to
+logged side-scatter height  side-scatter area
+and discards events outside the 90% confidence interval. The manipulation
+of the flow cytometry data within FlopR relies heavily on functions
+provided by the flowCore package. The events from a nonfluorescent
+control are trimmed to remove debris and select singlets, as above.
+The geometric mean of each fluorescence channel is calculated, with
+5% of observations from each end of the distribution removed prior
+in order to prevent skew from extreme values. Sample data are then normalized by negating these calculated values
+from each event in each fluorescence channel..

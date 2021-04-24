@@ -1,0 +1,930 @@
+Increased
+ability to engineer
+microbial hosts has led to quick expansion of synthetic biology applications
+ranging from therapeutic cells to biological production of fuels,
+chemicals, and pharmaceuticals. This ability
+has been enabled by the availability of novel genome editing tools,
+such as CRISPR-Cas9, by rapid and affordable DNA sequencing and synthesis
+services, and by the use of modular and standardized DNA parts that
+allow quick assembly and optimization of genetic systems. Such tools
+are especially well established for the commonly used model and production
+organisms such as . Another widely
+used model and production host with a comprehensive collection of
+engineering tools is the yeast . However, development of the tools in  lags behind as compared to . Especially
+tools for gene expression control need to be developed further. The orthogonality of gene expression systems
+is an important feature
+to limit or, in the best case, completely avoid the cross-talk between
+the engineered gene circuit and the native cellular regulation. The
+use of homologous (native) DNA regulatory parts in an expression system
+can lead to unintended behavior that is caused, for instance, by changing
+growth conditions during extended bioprocesses. This is due to the
+often poorly understood, complex native cellular regulation in which
+several transcription factors and other regulators are involved and
+can influence the performance of the expression system. Adjustability, expression output stability and predictability, the
+ability to reach high expression levels, and independence on specific
+inducer compounds are also desirable features of gene expression tools.
+To address these challenges, a number of recent studies describe development
+of orthogonal gene expression tools for . In most cases, the gene expression tools are based on the use of
+synthetic transcription factors (sTF) consisting of modular parts,
+such as DNA binding proteins, receptor domains, and transcription
+activation domains. Modularity of the different parts is a great advantage
+as it allows design of sTFs with desired functions and target specificities.
+In addition, the existing parts typically originate from evolutionarily
+distant organisms, such as bacterial repressor proteins, zinc finger domains, transcription activator-like
+effectors (TALEs), or the Cas9 null mutant
+(dCas9) protein, which have no homologues in yeast and thus potentially
+provide a high degree of orthogonality. The expression level
+of a target gene is, to a large extent, dependent
+on the (sTF-dependent) promoter strength, which in turn is defined
+by the modules used in the expression system. The core promoter as well as the number of sTF binding sites, or their distance from
+the core promoter, are the most important and commonly modified parameters
+which determine the synthetic promoter strength. In addition, the affinity of the sTF to
+its binding sites and the capacity of the activation domain to recruit
+transcription machinery can greatly affect the target expression levels.
+For example, the use of strong transcription activation domains, such
+as VP16 or Gal4, can lead to significantly higher expression levels
+compared to weaker activation domains, such as B42. In challenging genetic engineering applications,
+cellular hosts may be designed to contain complex genetic circuits
+performing intricate biological tasks. The construction of such systems
+typically requires simultaneous use of several sTFs each controlling
+a specific sub-operation in the circuit. For functional
+establishment of such genetic tools, a spectrum of transcription factors
+needs to be carefully characterized, especially for the absence of
+cross reactivity, and also for functionality in relation to different
+core promoters and binding sites used in the target synthetic promoters.
+However, many of the systems developed in yeast so far have been based
+on the use of a single sTF. At the same time, the orthogonality of
+different sTFs and synthetic promoter modules have not been studied
+extensively. For example, several synthetic transcription factors
+have been successfully used in engineered genetic circuits, and a wide variety of promoters and core promoters is also available. However, a comprehensive characterization and
+comparison of different DNA parts, as well as their detailed analysis
+once integrated into complex expression systems, is often not available.
+In addition, the methods used for the characterization vary greatly.
+This represents a significant challenge for the design and establishment
+of robust genetic circuits in which precise balancing of expression
+levels is required. In this study, we developed and characterized
+in depth a set of
+orthogonal transcription factors and synthetic promoter parts for
+use in complex genetic networks in yeast. The orthogonal transcription
+factors were engineered to either upregulate (sTF) or downregulate
+gene expression (synthetic repressor, sRep). In addition, a library
+of core promoters was tested and characterized. As a result, we established
+a novel setup for a bistable switch using the developed DNA parts.
+The bistable switch herein has two distinct expression states and
+a genetic memory allowing it to retain its programmed status in the
+absence of inducer compounds over 80 generations (12 days). The functionality
+of the switch was demonstrated by switching between two branches of
+the violacein biosynthetic pathway resulting in on-demand formation
+of different end-products. To develop a modular toolbox for
+gene expression in yeast, a set of sTFs were constructed and expressed
+under the  core promoter (cp). We previously showed that cp provides a
+low and constitutive expression level. It could thus be well suited even for expression of strong sTFs,
+which can have detrimental effects on growth if expressed at high
+level. The test platform
+for the sTFs was composed of synthetic promoters that control the
+expression of the reporter gene Venus (yellow fluorescent protein)
+(A). The synthetic
+promoters contained eight binding sites for the sTF to be tested followed
+by the cp. The sTFs are modular and consist of
+a bacterial DNA binding protein, the SV40 nuclear localization signal,
+and a C-terminal VP16 activation domain (VP16AD). The DNA-binding
+protein modules were selected from the previously characterized bacterial
+repressors with a DNA-binding motif. The tested repressors were LexA, SrpR, PhlF, TetR, Bm3R1, TarA, LacI, GalR, Orf2, IscR (NCBI Reference Sequence: NP_252504.1), and BrlR (NCBI Reference Sequence: NP_253565.1), of which SrpR, PhlF, TetR, Bm3R1, TarA, and Orf2 belong to the
+TetR repressor family. LacI, LexA, and
+TetR are DNA-binding proteins commonly used in synthetic expression
+systems in eukaryotic hosts. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf For testing of the system, the
+sTF and the reporter genes were
+integrated in a single copy in the genome of . The capacity of the sTFs to form a functional expression system
+was tested by analyzing the reporter gene Venus fluorescence (A). Six sTFs proved
+to be highly functional and able to activate reporter gene expression
+at significant levels, Bm3R1-sTF being the strongest activator (B–C). The
+other sTFs, based on LacI, GalR, Orf2, IscR, or BlrR DNA-binding proteins
+did not activate the reporter gene, or alternatively they caused severe
+morphological changes or growth inhibition. These candidates were
+not analyzed further. The analysis of the six functional sTFs revealed
+a high level of orthogonality. No cross-reactivity was observed with
+the binding sites of the other sTFs (B and Supporting Information, ), with the exception of the SrpR binding
+site, for which a minor activation was triggered by LexA-, TetR-,
+and TarA-sTFs. In case of TarA-binding sites, also a negligible activation
+by the SrpR-sTF was detected. Most of these side-activities are likely
+due to minor sequence similarities found in the corresponding binding
+sites (). Negligible expression
+of the reporter was observed in the absence of an sTF (C). In addition, with the exception
+of the TarA-sTF, the expression of sTFs did not affect growth (). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf To achieve adjustable gene
+expression levels, the sTF-dependent
+promoters were engineered to contain 0, 1, 2, 4, or 8 sTF binding
+sites. A clear increase in the reporter gene expression was observed
+in response to increasing number of the sTF binding sites in strains
+containing LexA-sTF, SrpR-sTF, PhlF-sTF, or TarA-sTF (C). However, in the case of
+Bm3R1-sTF and TetR-sTF, already one or two binding sites resulted
+in maximal expression level of these synthetic promoters. As expected,
+the expression level of the sTFs itself had a strong influence on
+the range of expression level of the reporter gene (). To directly assess the functionality of
+the expression system,
+transcription level analysis was carried out for strains containing
+expression systems with two or eight sTF binding sites (D). With the exception of the
+PhlF strains, the relative differences in reporter gene transcription
+level corresponded to the Venus fluorescence level. In the PhlF strains,
+the Venus reporter transcription level was similar to those in the
+TetR and Bm3R1 strains, although the fluorescence signal was similar
+to those in the LexA and SrpR strains. Comparison of the transcription
+level to strong native genes ( and ) revealed that higher expression level was achieved by the strongest
+versions of the engineered promoter systems as exemplified by the
+fact that the reporter transcript level significantly exceeded the
+levels of  and . http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf Characterization
+of orthogonal activators. (A) Scheme of the synthetic
+expression system for testing of the engineered transcription activators.
+Two genome-integrated DNA cassettes provide expression of the synthetic
+transcription factor (sTF) and the reporter gene (Venus). The selected
+sTFs are expressed from the  core promoter, ensuring
+a low and constitutive expression level. The sTF-specific binding
+sites (BS) upstream of the  core promoter form
+the synthetic promoter for the reporter gene (Venus). (B) Orthogonality
+matrix of the sTFs and their binding sites. The specificities and
+off-target activities of the sTFs were analyzed in strains carrying
+all combinations of the sTF and 8 BS reporter cassette pairs. The
+fold activation represents fluorescence ratio between the strain containing
+the sTF-BS pair and the corresponding strain lacking the sTF cassette.
+The values are calculated from three biological replicates. The corresponding
+fluorescence values are listed in . (C) Tuning of gene expression level by different sTFs. The modified
+reporter cassettes with sTF-dependent promoters containing varying
+numbers (0–8) of the sTF-specific BSs were used. The strain
+“8 BS (wo sTF)” represents a negative control strain
+lacking the sTF cassette. The values represent the mean of three biological
+replicates ± standard deviation (SD). (D) Transcription analysis
+of the selected strains (from C) with 2 or 8 BSs in the sTF-dependent
+reporter cassette promoters. “P” represents the parental
+strain without the sTF and reporter genes. The values represent the
+mean of two biological and two technical replicates ± SD. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf The construction of genetic circuits
+requires tools that enable adjustable and robust gene expression control.
+The sTFs described above enabled tuning of target gene activation.
+To achieve tight repression, the DNA binding property of the sTF proteins
+were considered for use as repressors. To test this, SrpR, PhlF, TetR,
+Bm3R1, and the previously used LacI were fused to SV40 NLS to facilitate nuclear localization
+and to generate synthetic repressors (sRep). In addition, the synthetic
+promoters were modified by the introduction of sRep-specific binding
+sites in the core promoter downstream of the TATA-box. The concept
+of the synthetic repression system for testing the repressors is shown
+in A. The test
+system was constructed as an extension of the LexA-based expression
+system with four binding sites (A), where the cp was replaced
+with a spectrum of modified core promoters that originate from  (cp, cp, cp),  (cp, cp), and  (cp). A separate sRep expression
+cassette was introduced which provided the control of repressor abundance
+via the thiamine repressible  promoter. The activity
+of p is dependent on thiamine concentration,
+allowing the dose-dependent regulation of sRep levels (). A set of yeast strains was constructed
+with three expression cassettes
+integrated in single copy in their genomes: (1) the LexA-sTF cassette,
+expressing sTF under the cp for constitutive
+activation of the reporter gene expression; (2) the reporter (Venus)
+cassette, where the reporter gene was under the control of an sTF/sRep-dependent
+synthetic promoter; and (3) a corresponding sRep expression cassette.
+In addition, control strains lacking the sRep cassette were constructed
+to assess the performance of the fully activated system. The highest
+activation of the reporter gene expression was observed in the presence
+of high thiamine concentration (800 μg/L, p repressed) (B,C), where the reporter gene expression was at similar level as
+in strains lacking the sRep (C). Lowering the thiamine concentration led to a gradual
+activation of the sRep expression, resulting in decreased reporter
+levels and eventually full repression of reporter expression in the
+absence of thiamine (B,C). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf As expected, the introduction of the sRep binding
+site affected
+the core promoter functionality. In most cases, the modified core
+promoters showed decreased activity as compared to the wild-type versions
+(). The results are in line with
+previous reports showing that the introduction of repressor binding
+sites affect native core promoter elements which are important for
+proper transcription initiation. It appears
+that already at low level, some sReps show higher capacity to repress
+the reporter expression than others. The  promoter,
+used for the sRep transcription control, is fully repressed at thiamine
+concentration of 800 μg/L, and it is only mildly activated at
+400 μg/L (). The Bm3R1-
+and TetR-sReps-mediated repression was more sensitive to decreasing
+thiamine concentration from 800 to 400 μg/L compared to SrpR-
+and PhlF-sReps (C). This could indicate higher affinity of the “stronger”
+sReps to their binding sites. This is in line with the results obtained
+for the activation function of the sTFs (C), where the Bm3R1- and TetR-based sTFs
+triggered higher expression levels of the reporter gene than the SrpR-
+and PhlF-based sTFs. Characterization of orthogonal repressors.
+(A) Scheme of the synthetic
+repressor (sRep) system for testing of the sReps and the corresponding
+repressible core promoters. The LexA-sTF functions as a constitutive
+activator for the reporter gene (Venus). The production of sReps leads
+to repression through binding within the core promoter and blocking
+of transcription initiation. The sTF is constitutively expressed from
+the cp, whereas the sReps are expressed from
+the thiamine repressible  promoter. The sRep
+system is encoded by three DNA cassettes each integrated in separate
+loci in the genome. (B) Transcription analysis of an example strain
+containing the sRep system with Bm3R1-based sRep and cp with two Bm3R1-specific binding sites. Cells were cultivated in
+varying thiamine concentrations to adjust the level of the sRep expression.
+The values represent the mean of two biological and two technical
+replicates ± SD. (C) Reporter (Venus) fluorescence in strains
+carrying different sRep systems cultivated in various thiamine concentrations.
+“No rep” represents control strains without the sRep-cassette
+(cultivated in 400 μg/L thiamine concentration). The values
+represent the mean of three biological replicates ± SD. Establishment of a Bistable Switch http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf To test the established
+tools in the control of a complex, multilayered, genetic circuit,
+a novel type of a bistable switch was designed with a genetically
+encoded memory function. The structure of the bistable system is shown
+in the A,B
+(and its alternative version B in the ). The switch is activated by introduction of a strong temporal signal
+that causes activation of downstream genes leading to a stable state
+of the circuit, with the simultaneous repression of the genes required
+for the opposite state. Upon removal of thiamine, transcription of
+the TetR-sTF is triggered, while in the presence of galactose transcription
+of the Bm3R-sTF is switched on. In the system, the signals are mediated
+by modified versions of Bm3R1- and TetR-sTFs (“Switch cassette”, A,B). In the Bm3R1-sTF,
+a shortened version of the Cln2 degradation tag was introduced to the C-terminus of the protein to generate Bm3R1-sTF-Cln2-sh.
+In the TetR-sTF, the VP16 activation domain was replaced by the weaker
+B42 activation domain (B42AD) to generate TetR-B42. These modifications
+were made to eliminate toxicity of highly overexpressed sTFs containing
+VP16AD. Addition of the degradation tag decreases the effective abundance
+of the Bm3R1-sTF-Cln2-sh protein and also decreases the activity of
+the VP16AD (our unpublished observation). The overexpression of sTF
+with B42AD does not have a negative impact on the fitness of yeast
+cells. The expression of these transcription
+factors was controlled by the galactose-inducible  promoter (for Bm3R1-sTF-Cln2-sh) and the thiamine-repressible  (for TetR-B42) promoter (A,B). The choice of these promoters was motivated
+by two key features important for the functionality of the bistable
+switch; they confer very low or no background transcription in the
+repressing conditions and provide very high expression levels when
+induced (). At the core of the system is the
+“Control cassette”
+which allows switching between two mutually exclusive expression states:
+TetR state and Bm3R1 state. The cassette has a novel bidirectional
+architecture in which two engineered core promoters the cp and the cp, selected based on the repression
+assay (C),
+were fused together in opposite directions. These core promoters control
+the expression of TetR-sTF and Bm3R1-sTF simultaneously. Once the
+system is set to the TetR state, the TetR-sTF should activate its
+own expression, forming a feed-forward loop (A). At the same time, the TetR-sTF should
+act as a repressor for the Bm3R1-sTF through binding at the  core promoter. Once the system is in the opposite,
+Bm3R1 state, the expression of the Bm3R1-sTF forms a feed-forward
+loop and simultaneous repression of the TetR-sTF (B). An important feature of
+the “Control cassette” is the moderate strength of both
+core promoters and the high repression capacity of the sTFs. These
+features provide mutually exclusive expression of the sTF and the
+stability of each state. The output signal of the bistable circuit
+was monitored via a “Reporter
+cassette” containing expression cassettes for reporter genes
+encoding either BFP (blue fluorescent protein) or Venus. In the cassette,
+upstream of the repressible core promoters, four binding sites for
+TetR-sTF or Bm3R1-sTF have been implemented to control the expression
+of Venus (TetR-BSs + cp) and BFP (Bm3R1-BSs
++ cp), respectively (A,B). Thus, in the Reporter cassette, TetR-sTF
+activates Venus expression and simultaneously represses BFP expression,
+whereas Bm3R1-sTF functions in the opposite manner. In addition, the
+bistable switch system contains a “Diagnostic cassette”
+which was used to indirectly monitor the expression pattern and level
+of the sTFs in response to switch state changes. The Diagnostic cassette
+contained the same repressible-core promoter architecture as used
+in the Control cassette, but here the presence of the TetR-sTF activates
+the expression of KO2 (orange fluorescent protein) gene, whereas the
+Bm3R-sTF drives the expression of mCherry (A,B). All four cassettes of the bistable
+switch system were integrated
+in a single copy to four separate loci in the  genome, and the resulting strain was subjected to a series of tests
+to assess the functionality of the engineered genetic circuit. First,
+detailed transcription analysis was performed to characterize the
+dynamics of the transitions between the states (C). The initial “synchronization”
+of the whole cell population into the TetR state was achieved by cultivating
+the yeast cells in the absence of thiamine. This triggered strong
+upregulation of the TetR-B42 resulting in activation of the TetR state
+(i.e., TetR-sTF feed-forward loop and the production of Venus and
+KO2 and simultaneous repression of the Bm3R1 state) (C). When thiamine was provided
+again (cells transferred into the complete SCD medium), the TetR-B42
+transcription was rapidly inactivated. The active TetR-sTF feed-forward
+loop, however, retained the circuit in the TetR state and provided
+stable expression of Venus and KO2 while simultaneously repressing
+the Bm3R1 state. The transition from the TetR into the Bm3R1 state
+was triggered by transferring the cells into a galactose-containing
+medium. This led to a rapid induction of the Bm3R1-sTF-Cln2-sh expression
+from the Switch cassette and inhibition of the TetR-state transcription
+activity (C).
+There was a several hour delay in the Bm3R1-state activation that
+is likely due to the presence of residual TetR-sTF protein and its
+association with the binding sites at the cp that is driving the Bm3R1-sTF expression. Once this sTF was degraded
+or diluted through cell proliferation, Bm3R1-sTF-Cln2-sh initiated
+the Bm3R1 feed-forward loop and the expression of BFP and mCherry.
+When galactose was removed (cells transferred into the SCD medium)
+and the Bm3R1-sTF-Cln2-sh transcription was inactivated, the Bm3R1-sTF
+resumed the control over the circuit. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf The functionality and
+robustness of the bistable switch was tested
+by extended continuous cultivations and serial transitions between
+the states. The cells were initially synchronized (switched) to either
+the TetR or Bm3R1 state, and then repeated cycles of switching between
+the states were performed over 16 days (D). After each switch, while the cultivation
+was continued in non-inducing conditions (SCD), the fluorescent protein
+production stabilized and remained stable until the next switch, as
+monitored by the fluorometry measurements on the population level
+(D). The single-cell
+analysis performed by flow cytometry revealed that virtually all cells
+in the populations showed the predicted fluorescence pattern in each
+state (). The circuit performed
+remarkably well, in accordance with the design; importantly, it remained
+functional over a long time period. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf The ability of the bistable
+switch system to maintain the programmed
+state for extended time is an essential feature for any application.
+Therefore, we investigated the stability of the circuit in a memory
+test. For this, the cells were first synchronized to either the TetR
+or Bm3R1 state and then subjected to continuous growth in non-inducing
+SCD medium for 12 days (E). In the case of TetR state, the system remained highly
+stable for the duration of the whole experiment. The Bm3R1 state showed
+also a stable pattern; however, at the late stage of the experiment
+(after 10 days) a small increase of Venus and KO2 fluorescence levels,
+associated with the TetR state, were detected (E). The fluorescence flow cytometry performed
+after 6 days of cultivations in non-inducing medium showed that virtually
+all the cells in both populations were in the correct state (). These results show that the developed
+gene expression tools provide a predictable and robust performance. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf Performance of the bistable
+switch circuit. (A,B) Schemes of the
+bistable switch circuit states. The genetic system is encoded by four
+DNA cassettes, each integrated in separate loci in the genome. The
+circuit operates in two distinct and mutually exclusive states, TetR
+and Bm3R1, respectively. Transcriptional activation is indicated by
+a filled arrow, the vertical line in front of the arrow indicates
+simultaneous repression of the other direction. An open arrow next
+to core promoters (CPs) indicates the direction of transcription activation
+facilitated by the CP. (A) The TetR state is triggered by the absence
+of thiamine (via the p). Expression of TetR-B42
+in the switch cassette activates transcription of the TetR-sTF and,
+simultaneously, blocks the Bm3R1-sTF expression in the control cassette.
+By the action of the TetR-sTF, a feed-forward loop is formed to ensure
+stable maintenance of the TetR state, resulting in expression of Venus
+in the reporter cassette and KO2 in the diagnostic cassette. At the
+same time, TetR-sTF acts as a repressor for Bm3R1-sTF, BFP, and mCherry.
+(B) The Bm3R1 state is activated in the presence of galactose (via p), and all the regulatory events in the circuit are
+reversed (switched) as compared to the TetR state. The Bm3R1-sTF-Cln2-sh
+activates the expression of the Bm3R1-sTF to form another feed-forward
+loop triggering a cascade of activations and repressions resulting
+in a stable state. (C) Time course transcription analysis of the bistable
+switch during the transition between the states. The cells were switched
+to the TetR state in the absence of thiamine for 24 h (yellow box)
+followed by cultivation in non-inducing SCD medium (white box). Subsequent
+switch to the Bm3R1 state was triggered by a 24 h cultivation in the
+presence of galactose (gray box), followed by another cultivation
+in non-inducing SCD medium (white box). In the heat map, the values
+are relative to the maximum transcript level of each gene (in percent).
+The value 100% corresponds to the highest measured signal in the time
+course. The  transcription was used as a reference
+value in the analysis. The shown values are the mean values of two
+biological and two technical replicates. The absolute (numerical)
+values from this analysis are listed in the . (D) The system was switched several times between the
+TetR and Bm3R1 states by cultivating cells for 24 h in the inducing
+conditions, in the absence of thiamine (yellow shading) or in the
+presence of galactose (gray shading), followed by a 48 h cultivation
+in non-inducing conditions (SCD). Each cultivation was refreshed every
+day for the duration of the experiment (16 days). The color of the
+yeast cells in the scheme represents the main fluorescent protein
+expressed in each state, Venus (yellow) or BFP (blue). The fluorescence
+values in the graphs represent the mean of four biological replicates
+± SD. (E) memory test of the bistable switch. Either the TetR
+or the Bm3R1 state was switched on, followed by cultivation in non-inducing
+SCD medium for 11 days (culture diluted in fresh medium every day).
+The fluorescence values represent the mean of four biological replicates
+± SD. Bistable Switch in Control of a Metabolic Pathway The
+utility of the bistable switch system was tested in a metabolic pathway-engineering
+example. We employed the system as a transcription regulator of the
+heterologous violacein pathway in ,
+allowing switching between two alternative branches of the pathway.
+The pathway consists of five enzymes—VioA, VioB, VioC, VioD,
+and VioE—which convert -tryptophan into violacein
+via formation of different pigment molecules (A). The first
+part of the pathway, consisting of VioA, VioB, and VioE enzymes, leads
+to protodeoxyviolaceinic acid (PDVA) formation. This intermediate
+can be non-enzymatically converted into a green-colored pigment, prodeoxyviolacein
+(PDV). In the next step, VioD enzyme converts PDVA into protoviolaceinic
+acid (PVA), followed by the VioC-catalyzed conversion to violaceinic
+acid, which is spontaneously transformed into the final product, the
+purple-colored violacein (V). PVA can also be converted non-enzymatically
+into another green pigment, proviolacein (PV). Expression of
+the entire pathway results predominantly in the formation of violacein.
+However, the VioC has also a side activity and can convert PDVA into
+deoxyviolaceinic acid, which is further spontaneously transformed
+into a red-colored pigment, deoxyviolacein (DV). Thus, by altering
+the expression of  and  genes
+in the presence of constitutively produced VioA, VioB, and VioE enzymes,
+it should be possible to generate a yeast strain capable of producing
+either red DV or green PV. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_001.xlsx Supplementary sequences and strains http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf To test this, VioA, VioB, and
+VioE enzymes were constitutively
+expressed in the  strain forming the
+VioABE background strain ( and  file). Into
+this strain, the bistable switch system was implemented to control
+the  and  expression (B). For this purpose,
+we used an alternative version of the bistable switch (Version B, ), where the core promoters driving
+the expression of target genes (here  and ) did not contain the repression binding sites. This
+design provides higher expression levels of the target genes. The
+characteristics of the version B switch are shown in detail in the . No Diagnostic cassette was used in
+the violacein pathway application. The cells were initially switched
+into either TetR or Bm3R1 state, and then transferred and cultivated
+in the non-inducing SCD medium (C). In the TetR state, the expression of  gene was maintained by the circuit, and the pathway flux was directed
+toward the formation of PV (C and ). In the
+Bm3R1 state, the production of red-colored DV was observed through
+activation of the  gene, and also a small amount
+of violacein (V) was detected (C and ). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_001.xlsx Transcription analysis was performed on samples collected during
+the cultivations (). The analysis
+confirmed that the bistable circuit maintained the programmed states
+in the cells. Especially, the TetR state showed stable expression
+profiles of the genes over the course of the experiment. In the Bm3R1
+state, however, the transcript level of the  gene
+was decreased over time, while there was an increase in the  gene expression. This corresponds to the appearance
+of small amounts of violacein (V) in the culture. In conclusion, the
+results describe a broad toolbox for precise gene expression control
+in . http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf Bistable switch in the violacein pathway control.
+(A) Scheme of
+the violacein pathway and the pathway metabolites: PDVA, protodeoxyviolaceinic
+acid; PVA, protoviolaceinic acid; PDV, prodeoxyviolacein
+(green pigment); DV, deoxyviolacein (red pigment); PV, proviolacein
+(green pigment); and V, violacein (violet pigment). Parts of the pathway
+controlled by the bistable switch are indicated by green shading (the
+TetR-state specific) and pink shading (the Bm3R1-state specific).
+(B) Scheme of the genetic circuit controlling the expression of  and  genes. The bistable switch
+is based on the version B of the system, where the core promoters
+of the control cassette are non-repressible (cp and cp). Detailed characterization of the
+version B is shown in . The TetR
+state (green arrows) activated by absence of thiamine and maintained
+by the TetR-sTF feed-forward loop results in stable expression of . In the absence of VioC enzyme (TetR state), the end-product
+of the pathway is green-colored PV. The Bm3R1 state (brown arrows)
+activated by the presence of galactose and maintained by the Bm3R1-sTF
+feed-forward loop results in stable expression of . In the absence of VioD enzyme, in this state, the VioC activity
+leads to formation of the red-colored DV. (C) A schematic presentation
+of the experiment and the UPLC analysis of the intracellular pathway
+metabolites. The cells were initially switched to either the TetR
+or the Bm3R1 state by a 24 h cultivation in inducing conditions, followed
+by cultivation in non-inducing SCD medium for 48 h (cultures diluted
+in fresh medium every day). UPLC analysis was performed on the metabolites
+extracted from cells at the end of each cultivation. The pigment formation
+was also visible in cells initially switched to the TetR or the Bm3R1
+state and subsequently grown on non-inducing SCD solid medium for
+2 days (agar plate sections shown next to the UPLC chromatograms). Engineering
+of increasingly complex synthetic gene circuits requires
+robust and predictably performing gene expression tools. In this study,
+we set out to establish such tools and to demonstrate their utility
+in the implementation of synthetic genetic networks in yeast. The
+developed toolbox contains a set of orthogonal DNA-binding proteins
+that, depending on their design, acted either as activators (sTFs)
+or as repressors (sReps). In addition, we engineered and characterized
+a library of core promoters, which can be used together with the sTFs
+and sReps to create functional genetic devices with predictable performance.
+Finally, we took advantage of the characterized toolbox and developed
+a novel type of bistable switch as an example for the assembly of
+a complex genetic circuit using these tools. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf The sTFs tested
+in this study were expressed under the control
+of the cp whose basal transcription activity
+provides sufficient expression of the sTF. The absence of upstream
+regulatory sequences is a key advantage in using only the core promoters
+to provide constitutive expression of the sTF. In addition, it is
+important to maintain the sTF expression level low as the sTF overexpression
+can lead to toxic side effects. Moreover, some core promoters are functional across a wide spectrum
+of species. This allows design of broadly applicable expression systems
+for different hosts. For instance, cp, cp, and cp from , or cp from , used here for the expression of an sTF () or in the sTF-dependent promoters
+(), have been
+successfully employed in an expression system for a broad spectrum
+of fungal species (Rantasalo et al., manuscript in preparation). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf Not all of the tested bacterial repressors were suitable for use
+as the DNA binding (and dimerization) parts of the sTFs. Only 5 out
+of 11 candidates were able to trigger reporter gene expression without
+any visible negative impact on the fitness of the modified hosts (). Two sTFs were functional in terms
+of reporter gene activation, but their use resulted in undesirable
+phenotypes: expression of the TarA-based sTF led to a mild growth
+retardation (), whereas the GalR-based
+sTF caused a severe growth defect associated with a high genetic instability
+of the sTF expression cassette (data not shown). This suggests off-target
+activation of some endogenous yeast genes by these sTFs with harmful
+consequences. The BlrR-based expression system was disqualified due
+to an intrinsic activation of the reporter cassette even in the absence
+of the sTF, possibly by an endogenous transcription factor (data not
+shown). The LacI, Orf2, and IscR did not constitute a functional expression
+system, as no reporter fluorescence was detected in the modified hosts
+(data not shown). However, among the selected functional sTFs, high,
+but not equal, expression level of the reporter gene was observed.
+The Bm3R1- and TetR-sTFs conferred the strongest capacity to activate
+transcription (C), which could indicate a high affinity of these synthetic TFs to
+their binding sites in the target promoters or higher stability of
+the sTF proteins in . http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf One of the
+most important features of the engineered gene expression
+systems is the possibility to fine-tune expression levels of target
+genes. An obvious approach, also applied in other synthetic expression
+systems, is modulating
+the number of sTF binding sites in the sTF-dependent promoters. We
+tested a range from one to eight binding sites in the upstream sequence
+of the sTF-dependent promoters (C) and found that expression tuning was possible only
+for the weaker activators (LexA-, SrpR-, and PhlF-sTFs), while the
+strong activators (TetR- and Bm3R1-sTFs) had a narrow range of expression
+level close to the maximum output. This indicates that relatively
+high basal transcription activity of the cp,
+in combination with high affinity of the strong sTFs, could be responsible
+for full activation of the target gene transcription. We attempted
+to reduce the expression of the strongest sTF (Bm3R1-sTF) by using
+weaker core promoters for its expression to decrease its concentration
+and to enhance regulation based on the binding site-number (). This resulted in a broader range
+of expression outputs likely due to lower occupancy of the binding
+sites in the promoter and consequently a more pronounced effect of
+the number of binding sites in transcriptional regulation (especially
+in case of the very weak cp). Other important
+parameters of an expression system are the maximal
+achievable level of transcription and a stable expression pattern
+in diverse conditions. The level of transcription provided by the
+expression system developed here exceeds the transcription level of
+the strongest native genes in  (e.g., , D). In addition, it seems that the level of reporter expression in
+the strongest versions of the system, especially the Bm3R1-sTF-based
+system, conferred a maximal achievable transcription output of the
+fully activated core promoter used in the sTF-dependent promoter (cp). It is known that the core promoter, as part of
+a full promoter, has a strong impact on the overall expression level. Therefore, it is likely that the expression
+output of the Bm3R1 system could still be increased if a stronger
+core promoter is used in the sTF-dependent target gene promoter. The
+strong native promoters (such as p, p, p, etc.) are traditionally used for heterologous
+gene expression in , and they are usually referred to as constitutive promoters
+with stable expression outputs. In fact, the activity of these promoters
+is highly dependent on the conditions, conferring the highest activity
+in the presence of glucose (fermentative growth) and being strongly
+down-regulated during respiratory and stationary growth phases. This could be a disadvantage
+in many applications where robust and stable expression is desirable.
+The expression system developed here is designed to be constitutive,
+as it does not contain any regulatory sequences (such as native upstream
+elements in the promoters), which are often subject to conditional
+control. This makes these novel tools, especially the Bm3R1-based
+version, an attractive candidate for applications in which high and
+stable expression levels are needed. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf However, the highest possible
+expression of a target gene is not
+always the aim in biological engineering tasks. In addition to precise
+regulation of transcriptional activation, controlled down-regulation
+of expression can also be an essential feature for the development
+of genetic circuits. Especially in metabolic engineering, redirecting
+metabolic fluxes through temporal and/or targeted repression of selected
+native or heterologous genes could improve availability of crucial
+substrates or prevent excessive accumulation of intermediates compromising
+the productivity or fitness of the production organism. Complex genetic
+circuits typically rely on fast responses and exact expression levels
+of their parts, which is hard to achieved by only transcriptional
+activation. We therefore developed a synthetic repression system with
+a well-characterized set of synthetic repressors (sReps) and corresponding
+core promoters (A). The system was based on engineered core promoters containing
+binding sites for the sRep in their structure, where the sRep binding
+aims to block the recruitment of RNA polymerase or general transcription
+factors to the core promoter. We showed that the
+level of repression was directly dependent on the sRep concentration
+(). Already
+very low levels of sRep led to mild repression in the case of Bm3R1-sRep
+and TetR-sRep. This implies high affinity for these proteins to their
+binding sites that are present in the engineered core promoters. To
+achieve complete repression, however, very high levels of the sReps
+needed to be produced. This could be problematic in applications where
+tight repression is needed, but an advantage in applications where
+only partial downregulation of transcription would be beneficial,
+such as in decreasing flux through an essential metabolic pathway.
+A tight repression functionality could be implemented to the current
+sReps by the addition of a specific repression domain. An important outcome of the repression system
+is the set of modified core promoters, which confer a broad range
+of activities (). This information
+can now be utilized in the construction of sTF-dependent expression
+systems with a high range of achievable expression levels, and it
+highlights the importance of the core promoter (together with variable
+numbers of the sTF-binding sites) for the overall performance of the
+expression system. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf The predictable behavior of expression tools
+is an essential attribute
+for efficient strain engineering. However, due to the complex nature
+of biological systems, even the tools generally considered as “orthogonal”
+can sometimes behave unexpectedly. To demonstrate the predictability
+of the tools developed here, we established two versions of bistable
+switch circuits (version A, , and version B, ), where the proper functionality strongly depends on the exact performance
+of each of its components. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf By design, bistable systems have
+two distinct and stable states,
+and the transition between the states occurs as a response to temporal
+input signals. A few artificial bistable
+switch-like circuits have been previously developed for various hosts,
+such as for , yeast and mammals. However, as
+opposed to previously developed systems in yeast, our circuit includes a robust memory function, which was demonstrated
+to retain its programmed status for at least 12 days of continuous
+cultivation. The two circuit versions differed only in types of the
+core promoters used in the Reporter cassette; this however had significant
+consequences on their functions. While the use of repressible core
+promoters in version A resulted in faster responses upon switching
+to the opposite state, in version B the use of unmodified core promoters
+led to much higher expression levels of the target genes (BFP and
+Venus). Also other interesting phenomena were associated with the
+functionality of individual parts. In both versions, it seemed that
+the transition from the TetR into the Bm3R1 state was slower than
+the reverse transition. This was particularly visible on the lower
+level of the Bm3R1-state-specific fluorescence at the beginning of
+cultivation in the SCD medium after each transfer from galactose,
+and a longer time needed for stabilization of the Bm3R1-state fluorescence
+outputs (D, ). This might be caused by higher affinity
+and/or longer half-life of the TetR-sTF, which could result in the
+observed slower transition between the states. In addition, analysis
+of reporter protein fluorescence confirmed differences between system
+versions observed at the transcription level. In version B, there
+was clearly a visible delay in the disappearance of the fluorescent
+proteins encoded by the Reporter cassette after each switch to the
+opposite state (). In general,
+the generated bistable switch systems showed very robust functionality
+and prompted us to apply this tool in a metabolic engineering task. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_002.pdf The violacein biosynthetic pathway was selected as an example metabolic
+pathway to demonstrate the utility of the bistable circuit (). The bistable switch
+was used to control/switch carbon flux between two branches of the
+pathway leading to two different pigments. The functional expression
+of the violacein pathway, namely the upper part consisting of VioA,
+VioB, and VioC enzymes, in the tested yeast strain resulted in a significant
+growth defect. This was likely to be associated with a too efficient
+consumption of -tryptophan by the pathway, as the addition
+of excessive amount of -tryptophan to the culture media
+partially rescued growth (data not shown). Regardless of this challenge,
+the bistable switch proved to provide mutually exclusive control of
+production of the end-product pigments, either proviolacein (PV) or
+deoxyviolacein (DV), depending on the state of the circuit (C and ). In the Bm3R1 state, however, also
+some violacein (V) appeared to be co-produced together with DV. This
+was most likely caused by the low expression level of the  gene forming the whole violacein production pathway
+in the Bm3R1 state (). The architecture
+of the violacein cassette (B), where the  gene is downstream
+of the  gene, may have caused a weak long-distance
+activation of the cp of the  gene by the Bm3R1-sTF bound in the promoter of the  gene. This phenomenon could be eliminated if repressible CPs, such
+as those in version A of the bistable switch, would be used. In conclusion,
+we demonstrated here that these well-characterized and robustly performing
+DNA parts can be highly useful tools in the development of sophisticated
+genetic circuits, which can find multiple applications in biotechnology. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_001.xlsx Supplementary sequences and strains strains which
+were used as parental strains in this study were CEN.PK102-5B (H3900;
+ura3-52, his3-delta1, leu2-3,112, TRP1, MAL2-8c, SUC2), CEN.PK111-32D
+(H3891; URA3, HIS3, leu2-3,112, TRP1, MAL2-8c, SUC2), CEN.PK113-5D
+(H3895; ura3-52, HIS3, LEU2, TRP1, MAL2-8c, SUC2), CEN.PK113-7A (H3888;
+URA3, his3-delta1, LEU2, TRP1, MAL2-8c, SUC2), and CEN.PK102-3A (H3899;
+ura3-52, HIS3, leu2-3,112, TRP1, MAL2-8c, SUC2), which were kindly
+provided by Dr. P. Kötter (Institute of Microbiology, J.W.
+Goethe Universität). H-number indicates strain number in VTT’s
+internal collection. List of constructed  strains are shown in the  file. Media used in the experiments
+and the strain
+construction were yeast extract peptone with -glucose (YPD,
+20 g/L bacto peptone (Becton Dickinson), 10 g/L yeast extract, and
+20 g/L -glucose) and synthetic complete medium (SCD, 6.7
+g/L yeast nitrogen base (Becton Dickinson), 20 g/L -glucose,
+and 790 mg/L complete supplement mixture (Formedium)) with different
+dropout variations: SCD without uracil and leucine (SCD-UL), SCD without
+histidine and leucine (SCD-HL), and SCD without histidine, uracil,
+and leucine (SCD-HUL). For the CRISPR/Cas9-mediated gene integrations
+into  locus, lysine-deficient SCD medium supplemented
+with 100 mg/L thialysine was used. Medium used in the repression experiments
+was SCD with varying thiamine concentrations (0, 100, 200, 400, or
+800 μg/L). The yeast nitrogen base without thiamine and amino
+acids (Formedium) was used and supplemented with thiamine (Merck)
+to the desired concentration. The media used in the bistable switch
+experiments were SCD supplemented with additional glucose and thiamine
+(SCD-extra; SCD with 40 g/L -glucose and 1000 μg/L
+thiamine), SCD without thiamine (SCD-wo-thi; 20 g/L -glucose
+and 0 μg/L thiamine), and SC with galactose (SCgal; SC with
+20 g/L -galactose and 400 μg/L thiamine). Media used
+in the experiments with bistable switch with violacein pathway were
+supplemented with an additional 1000 mg/L tryptophan. Media used in
+the induction analysis of p and p were SCD-extra-wo-thi (SCD with 40 g/L -glucose and 0
+μg/L thiamine) and SCgal-extra (SC with 40 g/L galactose and
+1000 μg/L thiamine). Corresponding agar plate media were prepared
+by supplementing liquid medium with 20 g/L of agar. All the plasmids used in this study were cloned
+according to the manufacturer’s protocol using Gibson assembly
+(New England Biolabs) or restriction enzyme-based techniques (Thermo
+Fisher Scientific). Kapa Hifi enzyme (Kapa Biosystems) was used for
+all PCR reactions. Ligation and Gibson assembly mixes were transformed
+into  TOP10 by electroporation, and the correctness
+of plasmids was confirmed by analytical digestion and sequencing.
+Synthetic DNA fragments and primers were obtained from Integrated
+DNA Technologies. transformations
+were done using the standard lithium acetate protocol. Either the expression cassettes were released
+using I restriction enzyme from plasmids, or the
+plasmids were linearized using I restriction enzyme
+prior to the transformation. The cassettes were integrated into yeast
+genome into the following loci:  (Venus cassettes,
+and Reporter or violacein cassettes of bistable circuits),  (sTF and sRep cassettes, and Control cassettes of bistable
+circuits),  (Switch cassettes of bistable circuits),  (LexA-sTF cassette for repressor strains, and Diagnostic
+cassettes of bistable circuits), or  (VioABE
+cassette) (integration flanks used in the expression cassettes are
+listed in ).
+Expression cassettes containing violacein pathways genes , , and  were PCR amplified
+from the plasmid using the primers oCC-121 and oCC-122 containing
+5′ and 3′ flanking sequences for the integration into  locus. The genome integration was facilitated using
+CRISPR/Cas9 by co-transforming the plasmid pCC-036 containing Cas9
+under p and guiding RNA (gRNA) for  expressed under p. The gRNA protospacer sequence
+was AGACCAGATAGAACATGAGA. The transformed
+cells were selected on plates containing thialysine. Integration Loci of Transformed Expression
+Cassettes integration locus (protein ID in JGI) selection marker (selection condition) 50 bp (−80 to −31 bp upstream
+of start codon) 50 bp
+(+1 to +50 bp downstream of stop codon) 50 bp (−50 to −1
+bp upstream of start codon) 50 bp (+1 to +50 bp downstream of stop codon) 48 bp (−109 bp to −62 bp upstream
+of start codon) 50 bp
+(+1 to +50 bp downstream of stop codon) no selection marker (selection in gRNA plasmid) 60 bp (−60 bp to −1 bp upstream of start codon) 60 bp (+1 bp to +60 bp
+downstream of start codon) http://genome.jgi.doe.gov/programs/fungi/index.jsf http://genome.jgi.doe.gov/programs/fungi/index.jsf Joint Genome Institute’s
+database, . http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_001.xlsx Supplementary sequences and strains Single colonies
+were isolated
+from transformation plates and regrown on the corresponding selection
+plates. Phenol–chloroform method was conducted to extract genomic
+DNA from yeast cells. First, 600 μL of glass beads, 600 μL
+of 1xTE (pH 7.5), and 600 μL of phenol–chloroform–isoamyl
+alcohol solution (50% phenol, 48% chloroform, 2% isoamyl alcohol)
+were mixed, and the extraction was done using Precellys24 homogenizer
+(Bertin Instruments). The aqueous layer was diluted 100x into water
+to obtain template for the copy number analysis. Copy number analysis
+was conducted with quantitative RT-PCR Lightcycler 480II (Roche) using
+LightCycler 480 SYBR Green I Master (Roche) according to the manufacturer’s
+instructions. The signal from target gene was compared to signal from
+the  gene. The clones containing a single copy
+of the transformed cassette (ratio ∼1:1 toward the ) were selected for further use. The primers used in
+copy number analysis are listed in the  file. Fluorescence Measurement
+with Fluorimeter Cultivation
+samples were collected by centrifugation and resuspended with 200
+μL of water. A 200 μL portion of the suspension was transferred
+to Black Cliniplate (Thermo Fisher Scientific),, and fluorescence
+was measured with Varioskan (Thermo Electron Corporation). The excitation/emission
+wavelengths for measurement of BFP (blue fluorescent protein) were
+399/456 nm, for Venus (yellow fluorescent protein) 510/530 nm, for
+mCherry (red fluorescent protein) 587/610 nm, and for KO2 (orange
+fluorescent protein) 550/570 nm, respectively. A 5 nm bandwidth and
+500 ms measurement time were used in each measurement. Cell density
+(OD) measurement was done for normalizing fluorescence
+measurement results. After fluorescence measurement, cells were diluted
+100× into water, and then OD was measured with
+Varioskan (photometric measurement mode, wavelength = 600 nm, bandwidth
+= 5 nm, measurement time = 100 ms) using transparent microtiter plate
+(Nunc 96F, Thermo Fisher Scientific). The arbitrary units (AU) reported
+in figures were obtained by dividing the fluorescence measurement
+value by the OD value. Transcription Analysis
+and RT-PCR Cell cultivation
+samples were pelleted by centrifugation and washed with cold water.
+Cell pellets were frozen with liquid nitrogen and samples were stored
+at −80 °C. Total RNA was extracted using RNeasy
+Mini Kit (Qiagen; protocol for yeast). DNase treatment (DNase I RNase-free,
+Thermo Fisher Scientific) was performed to remove residual genomic
+DNA from the samples. Transcription First Strand cDNA Synthesis Kit
+(Roche) was used for the cDNA synthesis according to manufacturer’s
+protocol. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_001.xlsx Supplementary sequences, and strains Diluted cDNA samples were mixed with primers, and
+LightCycler 480
+SYBR Green I Master (Roche) according to manufacturer’s protocol.
+The RT-PCR was conducted using Lightcycler 480II (Advanced Relative
+Quantification Tool; Roche). The primers which were used in transcription
+analysis are shown in the  file. Target gene expression levels were normalized
+using expression levels of ubiquitin-protein ligase encoding gene , which has been reported
+to confer exceptional transcription stability in various conditions
+making it suitable for such use. Cells to be analyzed were
+diluted into 1x PBS prior to the analysis. Venus, and BFP fluorescence
+was measured from 10 000  cells
+using FACSAria III (BD) flow cytometry. BFP was measured using the
+375 nm laser and 450/20 nm filter, whereas Venus was measured with
+488 nm laser and 530/30 nm filter. No gating was performed on the
+data. Violacein Pathway Metabolite Analysis For the analysis
+of the intracellular violacein pathway metabolites, yeast cells were
+collected from 4 mL of a liquid cultivation by centrifugation. The
+cell pellets were disrupted by adding 500 μL of preheated methanol
+and incubating at 95 °C for 15 min. Samples were centrifuged
+and the supernatants were analyzed. Violacein, proviolacein,
+deoxyviolacein, and prodeoxyviolacein were qualified using the ACQUITY
+Ultra Performance Liquid Chromatography (UPLC) system (Waters) with
+ACQUITY Van Guard pre-column and ACQUITY UPLC HSS T3 2.1 × 100
+mm, 1.8 μm analytical column. The columns were maintained at
+40 °C; 0.1% formic acid in acetonitrile (eluent A) and in water
+(eluent B) were used as eluents with the flow rate of 0.5 mL min as follows: 0–1.5 min, 95% A, 5% B; 1.5–7.0
+min, decrease 16.9% min A, increase 16.9% min B; 7.0–9.0 min, 2% A, 98% B; 9.0–9.1
+min, increase 15.5% s A, decrease 15.5% s B; 9.1–11.5 min, 95% A, 5% B. Injection volume
+of 2 μm was used for the analytes. Absorbance was measured with
+a UV/vis detector at 600 nm. Analysis of Orthogonal
+Activators http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_001.xlsx Supplementary sequences and strains Fluorescence Measurement with Fluorimeter The functionality
+of each sTF and orthogonality in  was
+tested by fluorescence measurements. The experiments were initiated
+by pre-cultivating  cells (strains marked
+with asterisk in the column “Analysis of orthogonal activators”
+in the  file) at 30 °C on YPD plates for 24 h. Four ml of SCD-UL medium
+in 24-well plate was inoculated to initial optical density of 0.2
+(OD) by the pre-culture. Three parallel replicates were
+cultivated for each strain. Cells were cultivated 18 h at 28 °C,
+800 rpm. Fluorescence was measured as described in the “”
+section. Transcription Analysis
+and RT-PCR In addition to the fluorescence measurements, transcription
+analysis was performed for the subset of the strains. Strains containing
+sTF and Venus expression cassettes either with 2 or 8 sTF binding
+sites (strains H4603, H4605, H4608, H4610, H4613, H4615, H4618, H4620,
+H4623, H4625, H4628, H4630, H4878, H4880, H4883, and H4885) were pre-cultivated
+on SCD-UL plates for 24 h (30 °C). Strain H3888 was used as a
+control strain (P). Cells were grown in SCD-UL in identical way as
+described above in the fluorescence analysis, and samples for transcription
+analysis were collected after 18 h of cultivation. Samples were processed
+as described in the “” section. The growth of strains containing an sTF
+expression cassette and 8BS version of the Venus expression cassette
+(strains H4605, H4610, H4615, H4620, H4625, and H4630) were analyzed.
+H3888 was used as a control strain (WT). Cells were pre-cultivated
+24 h on SCD-UL plates at +30 °C. Aliquots of 4 mL of SCD-UL in
+a 24-well plate were inoculated to optical density OD of 0.2, and cells were cultivated 24 h (+30 °C, 800 rpm). Optical
+density was measured after 24 h of cultivation, and this culture was
+used to inoculate SCD-UL medium to optical density of 0.1. Inoculated
+SCD-UL medium was transferred to a Bioscreen microtiter plate (250
+μL per well), and the growth was followed with Bioscreen C MBR
+automated turbidometric analyzer (Growth Curves Ltd.) at 30 °C.
+OD measurement was taken every 30 min. Five biological
+replicates were cultivated for each strain. Analysis of Orthogonal
+Repressors http://pubs.acs.org/doi/suppl/10.1021/acssynbio.8b00076/suppl_file/sb8b00076_si_001.xlsx Supplementary sequences and strains Fluorescence Measurement with Fluorimeter The functionality
+of repressors and engineered core promoters (with repressor binding
+sites) was tested by fluorescence analysis. The analysis was initiated
+by pre-cultivating  cells (strains marked
+with asterisk in the column “Analysis of orthogonal repressors”
+in the  file) on YPD plate at 30 °C for 24 h before starting the experiment.
+Four ml of SCD medium with 0, 100, 200, 400, and 800 μg/L thiamine
+was inoculated in 24-well plate to initial optical density of 0.2
+(OD). Strains lacking repressor cassette (but containing
+the integrated cassette with URA3 selection marker) were cultivated
+only in standard SCD containing 400 μg/L thiamine (standard
+YNB (Becton Dickinson) used for the SCD preparation). Three parallel
+replicates were cultivated for each strain at 28 °C (800 rpm)
+for 18 h, and the fluorescence was measured as described in the section
+“”. In addition, the activity of p in
+varying thiamine concentrations was tested using the same experimental
+setup (strain H5127). Transcription Analysis and RT-PCR Transcription analysis was performed on
+the yeast strain containing cp (strain
+H4888). Cells were pre-cultivated on YPD plate for 24 h at 30 °C,
+and 4 mL of SCD containing 0, 100, 200, 400, and 800 μg/L thiamine
+in 24-well plate was inoculated to initial optical density (OD) of 0.2. Two parallel replicates were cultivated at 28
+°C (800 rpm) for 18 h, and the samples for the transcription
+analysis were prepared as described in the section “”. Analysis
+of the  and  Promoter Induction Fluorescence Measurement
+with Fluorimeter Strain containing bidirectional cassette p-Venus
+and p-BFP was cultivated
+overnight in 65 mL of SCD-extra (30 °C, 250 rpm). Cultivation
+was split into two tubes (32.5 mL per tube) and pelleted by centrifugation.
+Supernatant was removed, and pellets were suspended into 300 mL of
+SCD-extra-wo-thi (induction of p) or SCgal-extra
+(induction of ) medium. Cells were cultivated
+at 30 °C (250 rpm), and 50 mL samples (one biological replicate)
+were collected at 2, 4, 6, 8 and ∼18 h of the cultivation.
+Venus and BFP fluorescence was measured from the samples as described
+above in the section “”. Analysis of the Bistable
+Switch Fluorescence Measurement with Fluorimeter The continuous-growth
+tests for the serial switches and the “memory tests”
+were done by sequential cultivations of the cells in liquid media
+at 28 °C (800 rpm). The cultivation volume was in each case 4
+mL (four biological replicates), and each cultivation was continued
+for 24 h. The follow-up 4 mL cultivations were inoculated by 30 μL
+of the previous cell culture, and the length (in days) of each consecutive
+cultivation is indicated in the figures. The fluorescence measurement
+was performed after each 24 h of cultivation as described in the section
+“”. The serial switch experiment was started by pre-cultivating
+strains H5206 (switch version A) and H5208 (switch version B) on SCD-UL
+plates for 24 h at 30 °C. Next, 4 mL of medium, either SCD-wo-thi
+(initiating the TetR state) or SCgal (initiating the Bm3R1 state),
+was inoculated to initial optical density (OD) of 0.2.
+After 24 h of cultivation in these inducing media (28 °C, 800
+rpm), the cultivation was continued in SCD-extra for 48 h (culture
+refreshed after 24 h of cultivation). After cultivation in SCD-extra,
+cells in the TetR state were transferred into the SCgal medium, and
+the cells in the Bm3R1 state into the SCD-wo-thi medium for next 24
+h. After that, cultivation was again continued for 48 h in SCD-extra
+(culture refreshed after 24 h of cultivation) prior to next cultivation
+in either SCD-wo-thi or SCgal. In total, the cultivation was continued
+for 16 days. Fluorescence flow cytometry was also performed for the
+samples collected at the end of days 3 and 6, as described in the
+section “”. Fluorescence
+Measurement with Fluorimeter The “memory test” was done by switching
+cells first
+to either TetR or Bm3R1 state. After that, the cultivation was continued
+in SCD-extra, and the programmed state of the cells was followed by
+fluorescence measurements. The experiment was started by cultivating
+strains H5206 (switch version A) and H5208 (switch version B) in 4
+mL of either SCD-wo-thi (TetR state) or SCgal (Bm3R1 state) for 24
+h (28 °C, 800 rpm). The subsequent cell cultivations in SCD-extra
+were inoculated using 30 μL of cell suspension from each previous
+cultivation, and the cultivation was continued for the next 24 h (28
+°C, 800 rpm). The inoculation of fresh SCD-extra was repeated
+always after 24 h. The experiment was continued for 12 days in total.
+Fluorescence measurement was done every day after 24 h of cultivation
+as described in the section “”. In addition, fluorescence
+flow cytometry was performed on samples collected at the end of day
+6. Transcription
+Analysis and RT-PCR In addition to fluorescence measurements, transcription analysis
+was performed on the bistable-switch strains. Strains H5206 (switch
+version A) and H5208 (switch version B) were cultivated in 50 mL of
+SCD-extra-wo-thi for 24 h at 30 °C (250 rpm). This culture was
+used for inoculation of 150 mL of the SCD-extra medium to initial
+optical density of 0.2 (OD). Cells were cultivated at
+30 °C (250 rpm), and samples were collected for transcription
+analysis at time points 0, 2, 6, and 24 h to monitor dynamics of the
+transcription pattern stabilization after transfer from inducing conditions
+to non-inducing condition. After 24 h of cultivation in the SCD-extra
+medium, the cells were transferred to SCgal-extra medium (150 mL,
+initial OD of 0.2). Samples for transcription analysis
+were collected at 3, 8, and 24 h to monitor dynamics of the transcription
+responses during switch of the system into the opposite state. Finally,
+the cells were transferred from the SCgal-extra medium into 150 mL
+of the SCD-extra medium (initial OD of 0.2), and samples
+were collected at 2 and 6 h to monitor stabilization in the newly
+gain state. RNA extraction, cDNA synthesis, and RT-PCR were done as
+described in the section “”. Analysis of the Violacein
+Pathway Control by the Bistable Switch The experiment was
+done in a similar way as the bistable switch
+“memory test”. Strains H5285 (switch-controlled VioC
+and VioD) and H5285 (VioABE background strain) were first pre-cultivated
+on the SCD-extra plates for 24 h at 30 °C. The liquid cultivation
+was started by inoculating 4 mL of either SCD-extra-wo-thi medium
+(switch to the TetR state) or SCgal medium (switch to the Bm3R1 state)
+to OD of 0.8 by the pre-cultures. The inducing cultures
+were carried out for 24 h at 28 °C (800 rpm), after which the
+cultivations were continued in non-inducing conditions (SCD-extra)
+for 3 days. Cells were transferred into fresh medium every 24 h using
+100 μL of previous culture. All the media (liquid and plates)
+used in this experiment were supplemented with additional 1000 mg/L
+tryptophan. Transcription
+Analysis and RT-PCR Violacein Pathway Metabolite Analysis Samples for transcription analysis (two biological
+replicates) and for liquid chromatography were collected after every
+24 h. Samples were pelleted by centrifugation and washed with cold
+water. Cell pellets were frozen in liquid nitrogen and stored at −80
+°C. Transcription analysis and liquid chromatography were conducted
+as described in the sections “” and “”, respectively. The number of used replicates in each experiment
+is shown in figure legends as well as in the methods discussion. The
+results represent averages of individual data values. Error bars given
+in graphs represent ± one standard deviation..

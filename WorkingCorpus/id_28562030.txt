@@ -1,0 +1,379 @@
+During expression
+genetic information
+is diversified by various mechanisms. Even when encoded in a single
+genetic locus, many proteins occur in several isoforms, which result
+from alternative promotor usage or alternative splicing. Another way
+of diversification is a process called RNA editing. This
+refers to the insertion or deletion of nucleotides and to the enzymatic
+deamination of cytosine and adenosine resulting in the formation of
+uridine and inosine, respectively. Upon editing in the open reading
+frame (ORF) single amino acids can be recoded. Furthermore, RNA editing
+can interfere with RNA splicing, microRNA activity, and RNA stability.
+Such diversifications can affect almost any property of a protein
+including substrate specificity, catalytic efficiency, protein localization,
+stability, and others. As correct subcellular localization is essential
+for proper functioning, mislocalization can act as a strategy to control
+a protein’s function. One example is the cytosolic sequestering
+of transcription factors like NF-B or the glucocorticoid
+receptors, which translocate to the nucleus in response to specific
+signaling cues. Synthetic biology has exploited the induction of translocation
+as a strategy to control genetic networks. One example for the latter
+is the engineered Cre-ER(T2) system for the conditional switch of
+gene function . The information
+about the subcellular localization is typically
+encoded in short peptide-segments, so-called localization signals. Some signals, like the nuclear localization signal
+(NLS), can be found anywhere in a protein. Whereas others, like the
+ER-targeting sequence, are typically found in the N-terminus and are
+proteolytically cleaved off during translation. If protein isoforms differ in their localization, such
+signal peptides are typically in- or excluded by alternative promotor
+or splice sites usage. We were wondering if site-directed RNA editing
+could be harnessed for that purpose. We and others have recently engineered artificial guideRNA-dependent
+editing machines that allow for the introduction of single A-to-I
+substitutions at targeted sites in selected transcripts inside living
+cells, a process called site-directed RNA editing. To
+achieve this, we have fused the catalytic domain of a human adenosine
+deaminase acting on RNA (hADAR) with a SNAP-tag that allows for the
+formation of highly defined 1-to-1 covalent conjugates between the
+guideRNA and the deaminase. The approximately
+20 nt long guideRNA steers the deaminase to any arbitrary transcript
+in a readily programmable way. As the deaminase acts only on double-stranded
+RNA the guideRNA component provides the basis for substrate specificity.
+By chemical modification and sequence refinement, the selectivity
+and efficiency of the editing reaction can be further fine-tuned. So far, we and others have applied site-directed RNA editing strategies
+in human cell culture, in living organisms, and in  eggs, to manipulate reporter genes and to repair disease-related
+mutations in CFTR and PINK1 mRNAs. Furthermore, we recently demonstrated
+the possibility of controlling the guideRNA–deaminase assembly
+by light, which enabled us to extent RNA editing by photocontrol . Here, we now
+demonstrate a simple strategy to apply RNA editing
+for triggering the inclusion of an additional peptide signal into
+both, the N- or the C-terminus of a protein. We apply the strategy
+for the inclusion of a nuclear localization signal (N- or C-terminal)
+and for the switching between a cytoplasmic and a membrane-bound isoform
+in human cell culture. Furthermore, we demonstrate the light control
+of the isoform switch. The C-terminal inclusion of
+an additional peptide signal appears particularly straightforward
+by putting the signal into the 3′-UTR directly behind an amber
+Stop codon (UAG), . Upon editing the Stop codon to Trp (UIG) the additional
+signal is inserted C-terminally. The analogous strategy at the N-terminus
+appears more challenging. We explore here the activation of an alternative
+Start codon in the 5′-UTR, as it is conceivable to edit an
+isoleucine codon (AUA) into a methionine/Start codon (AUI), . Prior to editing,
+the downstream Start codon would be used only. However, after editing
+the upstream Start should dominate, as cap-dependent translation typically
+applies the first Start codon after the cap. Nevertheless,
+site-directed RNA editing inside the 5′-UTR has not yet been
+reported. Also within natural editing sites, editing in the 5′-UTR
+is strongly underrepresented. Thus, it
+was unclear if the preinitiation complex of translation and the editing
+machinery will interfere. To assess both strategies in a comparable
+manner, we decided to start with the inclusion of a nuclear localization
+signal (NLS) derived from the SV 40 Large T-antigen (PKKKRKV), which can be put to both, the N- or C-terminus. To visualize the localization phenotype, we
+chose the transcript of the editing enzyme (SNAP-ADAR2) as the editing
+target. On one hand, the enzyme is strictly localized in the cytoplasm
+when lacking an NLS. On the other hand, the enzyme is readily stained
+with fluoresceine-O6-benzylguanine (BG-FITC) to assess its localization
+by fluorescence microcopy. Furthermore,
+this procedure allowed us to stay with the ectopic expression of a
+single construct which simplified transfection and phenotypic analysis. Three Different Constructs for Editing-Dependent Isoform Switching The NLS has been included
+either N- or C-terminally into the SNAP-deaminase protein. The Ig-leader sequence, which signals plasma membrane localization,
+has been included N-terminally into an HA-tagged eGFP. The C-terminal
+platelet-derived growth factor receptor transmembrane domain (PDGFR-TMD)
+is a single transmembrane α-helix that anchors the protein to
+the plasma membrane by pointing the N-terminus outside. The expected
+localization phenotype (cytoplasm, nucleoplasm or outer membrane)
+is indicated. Editing-Dependent Inclusion
+of the NLS into the C-Terminus under
+Transient Expression According to , two plasmids were constructed that contain
+SNAP-ADAR2 under control of the CMV promotor. In one construct, the
+NLS was put in frame at the C-terminus (SA-TGG-NLS). When transfected
+into 293T cells and BG-FITC-stained 48 h later, a clear nuclear localization
+was visible (a). The other construct contained a single G-to-A mutation between
+the SNAP-ADAR and the NLS which inserts a premature Stop codon and
+thus shortens the open reading frame (SA-TAG-NLS). When expressed
+and stained comparably, a clear cytoplasmic phenotype was visible.
+The latter construct was the substrate to study the editing-dependent
+phenotype switch. For editing, 293T cells were first transfected with SA-TAG-NLS
+(or SA-TGG-NLS in the control) and were then reverse transfected with
+a guideRNA. When the matching guideRNA was used, BG-FITC staining
+revealed a clear appearance of nuclear SNAP-ADAR2 protein (a) that resembles
+the phenotype of the positive control. We found this new, mixed cyto-/nucleoplasmic
+phenotype in 48 ± 9% of the transfected cells. Sanger sequencing
+revealed an editing yield of 74 ± 9%. We assume two reasons for
+the mixed (cytoplasmic/nuclear) phenotype after editing. First, editing
+was incomplete, and second, some of the stained SNAP-ADAR2 protein
+was old protein from the SNAP-ADAR expression prior to induction of
+the editing event by transfecting the guideRNA. The isoform switch
+was strongly dependent on editing. It did neither occur in the presence
+of an NH-guideRNA incapable of conjugation, nor in the presence of a BG-guideRNA with a
+mismatching (mm) sequence (a). However, due to the high levels of SNAP-ADAR2 protein
+and its transcript under transient expression, low levels of guideRNA-independent
+editing were detectable (a, graph). Even though this low-level editing did not
+result in a visible nuclear localization phenotype, we aimed to further
+improve the performance of the system by genomic integration of the
+SNAP-ADAR construct. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00113/suppl_file/sb7b00113_si_001.pdf Editing-dependent switch from SNAP-ADAR2 to SNAP-ADAR2-NLS
+under
+transient (a) and genomic (b) expression. (a) Fluorescence imaging
+of FITC-stained SNAP-ADAR (green) and Hoechst 33342-stained nuclei
+(blue). SA-TGG-NLS is the positive control for the nuclear localization
+phenotype after editing. Quantitative analysis of the editing experiment:
+Blue shows the editing yield from Sanger sequencing. Red shows the
+amount of cells that are positive for SNAP-ADAR expression and show
+nuclear localization. mm BG-gRNA: mismatching BG-guideRNA. Black bars
+show the standard deviation from  = 3 independent
+experiments. The scale bars represent 20 μm. (b) Analogous experiment
+as in panel (a), but under genomic expression of the SNAP-ADAR constructs.
+n.d. = neither RNA editing nor nuclear localization was detectable.
+Further data and controls are shown in the , Figure S1–S3 for transient and S4–S6
+for genomic expression. C-Terminal NLS-Inclusion Works Also under
+Genomic Expression To obtain a weaker and more homogeneous
+expression, the respective
+constructs were integrated as a single copy into the genome of 293
+Flip-In cells under control of the Tet-on CMV promotor (inducible
+genomic expression). Fluorescence microscopy confirmed the homogeneous,
+inducible and much weaker expression of the editase under genomic
+control (b).
+Again, the cytoplasmic (SA-TAG-NLS) and nucleoplasmic (SA-TGG-NLS)
+phenotypes in the controls were clearly visible (b). As expected, and in contrast
+to the conditions before, the editing was now fully dependent on the
+presence of the matching BG-guideRNA. Lacking the guideRNA or applying
+a mismatching or an NH-guideRNA gave no detectable editing
+yield. The editing yield with the matching BG-guideRNA was 50 ±
+8% and thus stayed a bit below that under transient expression. The
+same trend holds also true for the isoform switch. About 34 ±
+2% of the cells showed the switch from pure cytoplasmic to a mixture
+of cytoplasmic and nuclear localization, demonstrating the C-terminal
+NLS inclusion in an editing-dependent manner under genomic expression
+of the construct. Editing-Dependent Inclusion of the NLS into
+the N-Terminus (Transient
+Expression) http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00113/suppl_file/sb7b00113_si_001.pdf As depicted in , two plasmids were constructed that contain
+two Start codons each embedded in a strong Kozak sequence (5′-CCACC-G). One of the Start
+codons was located in front and one behind the NLS. In the construct
+ATGG-NLS-SA, both Start codons are appropriate to start translation.
+According to the scanning model of cap-dependent translation one expects
+this construct to predominantly use the Start codon prior to the NLS
+and thus to express the full NLS-SNAP-ADAR2 protein. Accordingly, transient expression of this construct in 293T cells
+showed exclusive nuclear localization of SNAP-ADAR (a). The construct ATAG-NLS-SA
+differs from the latter by a single G-to-A mutation in the upstream
+Start codon, thereby creating a 5′-CCACCAUG
+sequence that is supposed to be inappropriate to start translation
+prior to editing (AU) but to turn into a strong initiation
+signal after editing (AU). Transient expression of
+this construct gave almost exclusive cytoplasmic localization of SNAP-ADAR.
+Only a small number of cells (10 ± 4%) showed a faint nuclear
+staining (), which might result
+from a minor translation initiation from the unedited AUA Start codon,
+as it is embedded in a very strong sequence context. However, in a
+similar setting it was reported that the plasmid-borne sequence 5′-CCACCG is unable to initiate translation when transfected into
+COS cells. Clearly, the faint nuclear
+staining was not due to (guideRNA-independent) editing, as the editing
+yield in absence of the guideRNA was below the detection limit (≤2%). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00113/suppl_file/sb7b00113_si_001.pdf For editing, 293T cells
+were transfected with either of the two
+constructs and reverse transfected with a guideRNA. Protein localization
+was analyzed by fluorescence microscopy after BG-FITC staining. After
+transfection of the editing substrate (ATAG-NLS-SA) and the matching
+BG-guideRNA, we found a clearly visible nuclear staining that resembled
+that of the positive editing control (ATGG-NLS-SA), a. Similar to the results at
+the 3′-UTR, we found a mixed nucleo-/cytoplasmic phenotype
+in 57 ± 5% of all cells. After editing the nuclear staining of
+the protein was much stronger compared to the occasional faint nuclear
+staining observed prior to editing (). Sequencing of the mRNA revealed an editing yield of 58 ±
+4%, in good agreement with the mixed phenotype. Again, the isoform
+switch was dependent on the editing event and did not happen in the
+presence of a mismatching or conjugation-incompetent NH-guideRNA. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00113/suppl_file/sb7b00113_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00113/suppl_file/sb7b00113_si_001.pdf Editing-dependent
+switch of SNAP-ADAR2 to NLS-SNAP-ADAR2 under
+transient (a) and genomic (b) expression. Experiment and analysis
+follows the description given in . SA* marks the construct with the activated
+E488Q deaminase. The scale bars represent 20 μm. Further data
+and controls are shown in  for transient and  for
+genomic expression. Editing in the 5′-UTR under Genomic
+Expression Requires
+an Activated Deaminase Again, we tested editing under genomic
+expression of the 5′-UTR constructs. Upon induction, both constructs
+behaved as expected showing either the strict nuclear (ATGG-NLS-SA)
+or cytoplasmic localization (ATAG-NLS-SA) with strongly reduced but
+homogeneous expression over the entire culture. Compared to the expression
+under transient conditions, the occasional appearance of faint nuclear
+staining in the ATAG construct was almost abolished (below 3%). However,
+the editing-dependent isoform switch was disappointing. The nuclear
+phenotype was visible in no more than 11 ± 4% of the cells. However,
+this matched the low editing levels of 13 ± 1% (b). The editing reaction might
+suffer from the comparably low concentration of editase and substrate,
+which might slow down the editing reaction. To test if a faster enzyme
+would help to improve the performance, we engineered two new cell
+lines that contain again either the ATAG or ATGG construct, but now
+with a SNAP-ADAR2* protein that contains a well-described, single
+point mutation in the deaminase domain (E488Q) that is reported to
+speed up deamination by at least 1 order of magnitude. The two new constructs behaved indistinguishable
+from their less active counterparts in terms of expression level,
+homogeneity and localization phenotype. However, in the editing experiment
+the new constructs showed a robust isoform switch. A clear change
+to the mixed nuclear/cytoplasmic phenotype was found in 46 ±
+4% of the cells, resulting from an improved editing yield of 42 ±
+2% (b). As
+seen before, the switch was fully dependent on editing. Consequently,
+the nuclear phenotype was seen in ≤4%, when no guideRNA, a
+mismatching guideRNA, or an NH-guideRNA was used, reflecting
+the low editing yields obtained under these conditions (≤4%).
+Substitution of the deaminase by a more active variant boosted the
+performance of the system by 3-fold in terms of editing yields and
+number of cells with a phenotypic switch and brought the editing at
+the 5′-UTR to a level comparable to that at the 3′-UTR. Isoform Switching Can Be Controlled by Light Light
+is an attractive trigger to manipulate biological systems. We tested if a recently introduced strategy
+to control the editing process by controlling the assembly reaction
+could be applied for the light-control of 5′-UTR editing. As
+described earlier, guideRNAs have been made that mask the SNAP-reactive
+BG moiety with the Npom photocage to render it inactive for the assembly
+reaction. Then, the editing reaction
+can be started by treating the cells under the microscope with a short
+UV-light pulse (365 nm, 5 s). First, we studied the system with the
+wildtype ATAG-NLS-SA construct under transient expression. The light
+flash had no effect on the negative (NH-guideRNA) and
+the positive editing control (BG-guideRNA) in terms of editing yield
+(4 ± 2% and 53 ± 1%) and localization phenotype (19 ±
+4% and 57 ± 5%), a. However, when applying the Npom-protected BG-guideRNA,
+a clear photoinduction of editing yield and isoform switch was detectable.
+Without irradiation, 19 ± 6% of cells showed a faint nuclear
+staining, whereas 53 ± 12% of the cells showed the switch to
+a clear nuclear staining after irradiation (a). This was in accordance with the photoinduced
+change of editing levels from 13 ± 5% before to 40 ± 8%
+after irradiation. As before, the ATAG-NLS-SA construct suffered from
+the occasional formation of faint nuclear staining under transient
+expression. Thus, we also tested
+photocontrol under genomic expression. As
+before, editing yields and phenotype switching were dissatisfying
+with wildtype enzyme and stayed below 20% (b, graph). However, the E488Q variant of
+the deaminase was helpful again, and the positive editing control
+(BG-guideRNA) gave robust nuclear staining in 46 ± 4% of the
+cells, matching the respective editing yields of 45 ± 4% (b). The negative
+editing control (NH-guideRNA) showed virtually no editing
+(≤4%) and also the occasional faint nuclear staining was strongly
+reduced (≤4%). When applying the Npom-protected guideRNA, a
+clear photoactivation was visible. Before irradiation 12 ± 2%
+of the cells showed the nuclear staining, whereas 41 ± 3% showed
+nuclear staining after irradiation. Again the effect was clearly depending
+on the editing yields which changed from 13 ± 2% before to 37
+± 5% after irradiation, see b. Thus, protein isoforms can be switched
+by light simply by photocontrolling the assembly reaction of editase
+and guideRNA, both under transient and genomic expression. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00113/suppl_file/sb7b00113_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00113/suppl_file/sb7b00113_si_001.pdf Photoinduced switch of SNAP-ADAR2 to NLS-SNAP-ADAR2 under transient
+(a) and genomic (b) expression. SA* marks the construct with the activated
+E488Q deaminase. The scale bars represent 20 μm. Further data
+is shown in  for transient
+and  for genomic
+expression. 5′-UTR
+Editing Enables to Switch Localization from the
+Cytoplasm to the Outer Membrane Induction of protein translocation
+from the cytoplasm to the nucleoplasm under control of small molecules
+and/or light has been achieved earlier, either by engineering fusion
+proteins to become controllable by small molecules (f.i. the Cre-ER(T2)
+system) or by the ectopic expression
+of proteins with site-specifically photocaged amino acids. The latter strategies are feasible because trafficking into the
+nucleus is a posttranslational mechanism applied to fully folded proteins.
+As RNA editing happens before translation, isoform switches become
+feasible that are decided cotranslationally and thus are impossible
+to control at the protein level. A conceivable example is plasma membrane
+localization. The respective signal peptides are found in the very
+N-terminus of a protein. Once the nascent
+signal peptide leaves the exit at the ribosome, it is recognized by
+the signal recognition particle that recruits the translating ribosome
+to the ER. At the ER, translation continues, the signal peptide is
+cleaved off during translation inside the ER and the protein is inserted
+into the membrane cotranslationally. We explored how RNA editing can be used to switch protein isoforms
+from a cytoplasmic to a membrane-anchored localization. For this a
+construct was made that contains an editable Start codon (AUA*) followed
+by the 22 amino acid Igκ chain leader sequence, an alternative
+Start codon (AUG), and an HA-tagged GFP protein (). At the very C-terminus,
+the construct contains the transmembrane domain (TMD) of the PDGF
+receptor that anchors the protein to the plasma membrane displaying
+the GFP and the HA-tag to the extracellular side of the cell. The
+analogous ATGG construct served as the positive editing control. To
+assess the phenotype, immunofluorescence microscopy was applied. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00113/suppl_file/sb7b00113_si_001.pdf Under transient expression (293T cells) of the positive control
+(ATGG), the HA-GFP is clearly localized to the outer membrane, as
+visualized by a rim-like anti-HA-immunostaining in fixed but not permeabilized
+cells (a).
+In contrast, the negative editing control (ATAG) gave no rim-like
+anti-HA-staining (f.i. b). However, when cells were permeabilized prior to immunostaining
+(), the cytoplasmic expression
+of the construct was clearly detectable. When cotransfecting the ATAG
+construct with SNAP-ADAR2-BFP and reverse transfecting the matching
+BG-guideRNA, the HA-immunofluorescence showed again the rim-like staining
+of the outer membrane in 43 ± 2% of the cells that have been
+positive for GFP and BFP fluorescence (c). This phenotypic switch was again clearly
+depending on the editing yield (64 ± 5%). It did not occur in
+the absence of a guideRNA or in the presence of a mismatching or NH-guideRNA (b). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00113/suppl_file/sb7b00113_si_001.pdf Editing-dependent switch of HA-GFP-PDGFR-TMD localization from
+the cytoplasm to the plasma membrane under transient coexpression
+with the BFP-tagged editase (SNAP-ADAR2). Imaging was carried out
+after fixation, without permeabilization: HA-immunostaining with AlexaFluor-594
+(red), GFP (green), and BFP (blue). (a) positive control for plasma
+membrane localization; (b) negative editing control; (c) editing;
+(d,e) light-dependent editing experiment. The scale bar represents
+20 μm. Further data and controls are shown in . Translocation to the Outer Membrane Can Be Controlled by Light http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00113/suppl_file/sb7b00113_si_001.pdf Finally, we tested to switch the isoforms under control of light.
+As before, we put the Npom photocage on the guideRNA. When applying
+the Npom-BG-guideRNA, a modest residual editing activity was detected
+(9 ± 1%), however, no outer-membrane staining was detectable
+(<2%, d).
+After irradiation with 365 nm light a clear membrane staining became
+visible in 31 ± 3% of the cotransfected cells (e). Accordingly, the editing
+yield increased from 9 ± 1% prior to 44 ± 5 after irradiation.
+UV-irradiation had no influence on the editing yield or localization
+phenotypes of the positive (BG-guideRNA) or negative (NH-guideRNA) editing controls (). Overall, isoform switch from cytoplasmic to the outer membrane
+can be controlled at the posttranscriptional level, and photocontrol
+is readily included. RNA editing
+can be applied to switch protein isoforms. This is
+not restricted to the recoding of amino acids or splice sites, but
+can be harnessed for the inclusion of additional N- or C-terminal
+peptide signals by editing of Start and Stop codons. UTRs in mammals
+are typically around 100 nt long, but can extent to 1000 nt or longer.
+Thus, even the N- or C-terminal inclusion of large protein domains
+is conceivable. Our artificial editing
+strategy that relies on the RNA-guided SNAP-tagged deaminases enables
+this without detectable interference with translation and translation
+initiation. It can be accomplished either under transient or genomic
+expression. The usage of the SNAP-deaminases further allows for a
+ready inclusion of light-control. The method might well complement
+current methods in synthetic biology, including optogenetics and other optochemical approaches. On one hand it enables light-controlled isoform
+switches that are impossible at the protein-level. This holds particularly
+true for phenotypes that separate already during translation and thus
+are inaccessible with caged or otherwise engineered proteins, as demonstrated by the switch to an outer-membrane anchored isoform.
+On the other hand, the method might complement approaches that depend
+on the light-dependent (in)activation of genes, which typically require massive genetic engineering. To our knowledge,
+this is the first report about redirecting protein localization from
+the cytoplasm to the membrane. In combination with light-control,
+our tool could provide new opportunities to address biological questions
+in basic research. In the future, proteins might be steered to the
+cell surface by using light-activated RNA editing to manipulate intracellular
+signaling but also extracellular events like cell–cell and
+cell–matrix interactions in a spatiotemporal manner. Editing
+under Transient Expression 293T cells were
+grown in DMEM + 10% FBS + 1× P/S, 5% CO. Plasmid
+transfection was done with 300 ng of the respective plasmid/well with
+Lipofectamine 2000 in DMEM + 10% FBS. The respective guideRNA (2.5–10
+pmol/well) was reverse transfected with Lipofectamine 2000 in DMEM
++ 1% FBS. Cells were seeded on coverslips (DMEM + 1% FBS + HEPES).
+After 24 h cells were harvested for RNA sequencing or stained with
+BG-FITC for fluorescence microscopy as described before. Editing under Genomic Expression 293-Flp-In T-REx cells
+were induced in DMEM + 10% FBS + 15 μg/mL blasticidinS + 100
+μg/mL hygromycinB + 10 ng/mL doxycycline, 5% CO.
+The respective guideRNA (5–20 pmol/well) was reverse transfected
+with Lipofectamine 2000 in DMEM + 10% FBS + 10 ng/mL doxycycline.
+Cells were seeded on coverslips (DMEM + 10% FBS + HEPES + doxycycline).
+After 24 h cells were harvested for RNA sequencing or stained with
+BG-FITC for fluorescence microscopy. Experiments were carried
+out as described above with an additional irradiation step 4 h after
+guideRNA transfection. Cells were washed and the entire well was irradiated
+with 365 nm light on the microscope (Zeiss CellObserverZ1, 365 nm
+LED light source) for 5 s under full power at 5× magnification.
+Then the protocol was continued as described above. To visualize the localization of SNAP-ADAR2,
+acetylated BG-FITC (final concentration 2 μM) was applied to
+the cells together with a blue Hoechst stain (Thermo Fisher, R37605)
+for 30 min. Cells were fixed with formaldehyde and permeabilized with
+0.1% Triton X-100. Cover glasses were mounted using Shandon Immu-Mount
+(Thermo Fisher, USA). Cells
+were fixed with
+formaldehyde and blocked with PBS + 10% FBS at 4 °C overnight.
+Cells were stained with a primary mouse anti-HA-antibody (Sigma-Aldrich,
+H9658) diluted 1:1250 in PBS + 5% FBS for 1.5 h at room temperature,
+and a secondary antimouse antibody conjugated to AlexaFluor-594 (Thermo
+Fisher, A-11005) diluted 1:1500 in PBS + 10% FBS for 45 min at room
+temperature. Cover glasses were mounted using Dako mounting medium
+(Dako North America, USA). Microscopy was performed with a Zeiss CellObserverZ1
+under 600× total magnification..

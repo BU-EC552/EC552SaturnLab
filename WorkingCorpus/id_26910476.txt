@@ -1,0 +1,270 @@
+Computation
+depends on memory, and the ability to clear previous
+memory storage imposes a lower
+limit on the energetic costs of computation (Landauer’s Principle). Memory effects have been explored in biological computation as well. In dividing cells from bacteria to metazoa, phenotypic memory has
+been well-established as an important factor in both natural and synthetic
+contexts, and strategies for engineering it with gene circuits have been developed. While memory can arise from a variety of sources, one important mechanism is via inheritance of
+protein concentrations. Most naturally occurring proteins in bacteria,
+and synthetic networks lacking specific degradation tags in any cells,
+can have a strong effect on memory because protein degradation is
+dominated by dilution from growth, and growth rate can have a global
+effect on gene expression. Expression
+levels of proteins have been shown to affect the dynamics of bacterial
+signaling in some contexts but not others. Expression costs in natural and synthetic circuits can also create
+a growth feedback loop where expression or production of a toxic agent
+creates a metastable or bistable population growth dynamic with different
+growth rates between subpopulations of cells. In nonlaboratory
+environments, the effects of growth arrest on synthetic circuits may
+be an important factor; determining how to engineer appropriate generational
+phenotypic information transfer is an important challenge. Many
+classic and modern studies in
+bacteria have characterized mechanisms and characteristics
+of growth arrest and modulation of proliferation in bacteria. As bacterial cells spend most of their time
+in a growth-arrested state, the residual protein content from previous
+environments may have a strong effect on resumption of growth. The
+well-known stochasticity of gene expression in single cells, combined
+with a dynamic loss of growth-mediated dilution during the transition
+to growth arrest, creates the possibility of a distribution of memory
+levels in growth arrested populations. As cells enter growth arrest,
+fluctuations in protein concentrations could become frustrated, quenched
+at levels far from the previous steady state. Thus, in common with
+kinetic trapping in protein assembly, multiallelic optimization in evolution, and glass formation in physics, competing
+dynamics stand to lock transient fluctuations in place. This effect
+then leads to random configurations with potentially diverse phenotypes
+on resumption of growth, similar to cases of bet-hedging studied in
+the past. Such an effect could have implications for
+computation in living matter, and stands to have important practical
+consequences in the evolution and synthetic biology of gene networks. Here we characterize conditions that affect the accumulation of
+long-lived proteins during growth arrest and analyze their implications
+for survival of information during the growth arrest transition. We
+hypothesized that the competing time scales of protein dilution and
+growth arrest would dominate the level of phenotypic molecular memory
+from the previous environment. Mathematical models demonstrate the
+existence of a critical time scale of growth arrest, below which memory
+is an important factor and beyond which it is effectively erased.
+Considering the unpredictable nature of future environments and potential
+differential fitness effects of surviving proteins, we determined
+the optimally flexible memory level of cells (i.e., highest information
+transfer with the least mean residual protein) based on timing and
+cooperativity of the growth arrest rate. As a result of these analyses,
+we arrive at two novel conclusions about computation and memory in
+growing cells with long-lived components. First, there is a parameter
+manifold that distinguishes high-memory and memoryless regimes depending
+on the suddenness of the growth arrest transition. Second, an almost-memoryless
+regime represents a flexible phenotype where residual information
+from the previous environment can be retained, but easily discarded,
+depending on the phenotypic needs in the future environment. The flexible
+phenotype can arise if the growth arrest transition is sufficiently
+switchlike and the initial distribution of protein sufficiently skewed.
+This result suggests a strategy for encoding flexible synthetic phenotypic
+memory by designing programmed cellular growth arrest with appropriate
+parameters, which may be useful for synthetic biology in contexts
+outside of the laboratory. We
+begin with a simple mean-field mathematical model of protein
+concentration, ⟨⟩, in the presence
+of competing time scales of first-order loss and growth arrest, cellular
+growth being driven by extrinsic (i.e., non-) stresses.
+While protein synthesis is capable of continuing after growth arrest
+in bacteria, many naturally occurring
+gene expression events are halted as part of the regulated transition
+into growth arrest. We therefore restrict consideration
+to the case where synthesis has already stopped, and ask what effect
+remaining growth has on protein concentrations and information transfer
+across growth arrest transitions. For this protein (or ensemble of
+proteins degraded at identical rates), we havewhere  represents the initial degradation rate (the growth
+rate
+of the cell in the previous, faster-growing environment),  ∈ [0,1] represents a decreasing function of time,
+and δ represents the rate of growth-independent protein degradation,
+absent active enzymatic degradation of , δ
+≪ (). In principle,  could fluctuate nonmonotonically
+between [0,1] to represent arbitrary dynamical changes from alterations
+in protein synthesis and degradation as well, but here we analyze
+the dynamics of entering a longer-lived growth arrest state. Cellular growth arrest traps long-lived molecules
+at concentrations
+strongly dependent on initial conditions. (a) Illustration of the
+growth arrest process quenching cytoplasmic protein degradation at
+present levels. In the model, the cell has already stopped producing
+more of the protein (red), and subsequent growth lowers its cytoplasmic
+concentration until growth has ceased. (b) We consider three models
+of growth arrest with Hill functions: gradual arrest ( = 1), steeper arrest ( = 2), and instantaneous
+arrest ( → ∞, a Heaviside step function).
+(c) Resulting predicted mean-field protein dynamics for the three
+arrest models at various arrest rates . Protein
+concentrations represent fraction of initial concentration, . Parameter δ = 10 for these plots. We have some initial protein concentration, (0)
+= . The goal is to identify the possible
+outcomes of protein concentrations at various time scales. Experiments
+have shown that batch cultures of  can stop growing at a variety of speeds, depending on the stressor. Growth rates of single cells undergoing growth
+arrest appear to be dominated by the extrinsic conditions as well, suggesting that a deterministic forcing function
+is an acceptable approximation. To capture a wide variety of deterministic
+growth transition dynamics, let us exploit the convenient Hill function: . Here
+parameter  represents
+the halfway point of growth arrest, and  determines
+the sharpness of the loss rate (a). Then the solution to  is, in the most general case, of the formwith ,  > 0, where  is
+the ordinary hypergeometric function. Three cases of  are informative for intuitive purposes:  = 1,  = 2, and  → ∞ (a). They correspond
+to gradual loss of growth, intermediate steepness of growth, and a
+fast switch between the highest growth rate and complete growth arrest.
+These cases also simplify , creating familiar closed-form functions:where θ is the Heaviside step
+function.
+We can see by inspection of  and of their nondimensionalized graphs () that there is a distinct
+growth arrest rate regime where the concentration of  is frozen in arbitrary concentrations that are sensitive to the
+rate of arrest before eventual growth-independent protein loss has
+a significant effect (b–d). (In the interest of studying time scales on which
+residual protein concentrations are capable of persisting in growth
+arrested cells, hereafter we assume that nongrowth-mediated protein
+degradation is negligible: δ → 0). On that time scale,
+more gradual growth arrest transitions soften the edges of the high-memory
+regime. Generally, as the transition becomes less sharp, the quenching
+parameter  must be larger for memory to form, corresponding
+to a shorter time to reach the growth-mediated protein half-life.
+In terms of growth arrest physiology, this means that a gradual downregulation
+of growth-limiting factors in response to stress will reduce memory
+compared to more extreme events. What are realistic
+parameters that could result in controllable
+protein memory? That is, given a known concentration of initial protein,
+what arrest parameters are necessary to attain either effective memory
+extinction or residual protein at a certain concentration? http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00229/suppl_file/sb5b00229_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00229/suppl_file/sb5b00229_si_001.pdf In
+the discrete growth rate switch after the growth arrest transition
+( → ∞), we arrive at the frozen protein
+concentration * = e. For the case of  = 2, we similarly have * =  e. Therefore,
+parameters selecting for sufficiently large * can
+be clearly chosen for  ≥ 2. There is no mathematically
+clear threshold for the frozen concentrations with  = 1 because gradual loss of protein concentration continues indefinitely. We can get an estimate for when each case is approaching a high-memory
+state by taking the logarithmic sensitivity of () to  ():For  → 0,  → −∞
+with  (memoryless regime). For  → ∞,  ≈ 0 for all  (“perfect”
+memory regime). The transition between the regimes occurs when  ≈ . Here, there is an initial transient with an eventual slowing down
+of protein dynamic sensitivity, settling to a sensitivity near the
+ratio / in the case of  = 1 (). When this loss rate is lower than the fluctuation rate
+of the environment, phenotypic memory is a significant factor. This
+result is also precisely the sensitivity of frozen protein concentrations
+to changes when the instantaneous switch to growth arrest occurs, , in the case of  → ∞. Then for a given characteristic time scale τ, the threshold
+for the high memory regime is approximated byand we can
+find it precisely only with implicit
+equations. For instance, in the case of  →
+∞, and assuming τ > 1/, we have  = /) where  is the product logarithm,
+or the Lambert  function: the inverse of () = e. Analytical
+prediction of exact time evolution of a gamma-distributed
+protein in an infinite, deterministically growth arresting population.
+(a) Example of the distribution evolving over time. Parameters: α
+= 10, β = 10,  = 1,  → ∞,  = 1, δ = 0. (b) Comparison
+of probability distribution dynamics for different orders () of growth arrest. All other parameters are the same as
+in panel a. Probabilities are normalized so that red is the maximum
+probability over all time, and blue is the minimum. Another way to view the kinetics of protein survival is to consider
+a constant number of proteins, , in
+an initial cell volume Ω, and follow the (deterministic)
+growth of cell volume. Mathematically, this is equivalent to , with δ = 0 and
+protein concentration asConsider  to
+be a random variable in an initial distribution, (), that is well-characterized, parametric,
+and has a multiplicative scaling rule. Because the time evolution
+of the system is deterministic, we can exploit multiplicative scaling
+to analytically derive time evolution of the distribution and its
+entropy. For example, if the protein is initially in a gamma distribution,  ∼ Gamma(α, β) and  ∼ Gamma(α,). The distribution over time is then simply () ∼ Gamma(α,β/Ω()) (). This
+is a biologically relevant model of protein concentrations because,
+in many parameter regimes, protein distributions in bacteria and other organisms are well-approximated
+by gamma distributions (though other parametrizations, such as log-normal
+and Fréchet distributions, have been suggested as well). We now explore the implications of various
+growth arrest rates assuming an initial gamma distribution. We can compute the relative entropy, or Kullback–Leibler
+divergence, without the need for special
+functions in the entropy term itself after cancellation of terms,
+and avoiding some of the problems given by the standard entropy in
+a continuous probability density function. The divergence is asymmetric:In words, this equation gives the divergence
+of information over time, in units of bits. In practice, the divergence
+is often symmetrized, but that is unnecessary because we are concerned
+with irreversible divergence from an initial condition with time.
+For brevity, we refer to the divergence at a given time as (). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00229/suppl_file/sb5b00229_si_001.pdf For the gamma distribution
+we have a divergence ofwhere the 0 subscript indicates
+the initial
+condition, ψ is the digamma function, and Γ is the gamma
+function. Because α is constant
+with time, and canceling the β terms,  simplifies toThe three specific growth models
+considered
+above ( = 1, n = 2,  →
+∞) give the following solutions:Various limits make  more intuitive. For example, choosing time
+units of /ln 2 = 1, for  → ∞ and  > 1/,
+we get , and so for slow (later) growth arrest,
+the divergence is approximately α/ bits while
+for fast (immediate) growth arrest it approaches 0.  graphs the divergence for a selection of parameter
+values. Divergence
+of information during the growth arrest process. In
+an infinite population, a gamma distribution of proteins relaxes for
+10 units of time as the growth arrest rate parameter, , is scanned. Parameter δ = 0 in all cases (see main
+text): (blue) mean protein,  ×
+⟨⟩; (green) K-L divergence, , for α = 0.1, β = 1000; (light green)  for α = 1, β = 100; (orange)  for α = 10, β = 10. (red) K-L divergence for α
+= 100, β = 1. (a)  = 1; (b)  = 2; (c)  → ∞. Distribution properties and divergence of protein concentrations
+during growth arrest. (a) Example distributions with identical initial
+mean = 100. (b) For a given growth arrest rate parameter , the shape parameter, α, necessary for maximal divergence, *. Black line,  =  for
+reference. (c) Mean protein concentration  × ⟨⟩ and shape parameter α
+for various maximal divergence thresholds * for
+the case of  → ∞. The shape parameter of the gamma distribution scales
+the divergence
+of information between initial and final states (). Populations undergoing sharper growth arrest
+transitions that have more highly skewed distributions of proteins
+(i.e., smaller α) have a small divergence (e.g., less than 1
+bit) for a larger part of the growth arrest rate parameter space (, a). Then it should be possible to choose a shape parameter
+(i.e., choose a shape of the protein gamma distribution) that simultaneously
+minimizes the divergence and the protein concentration. Clearly, because
+these quantities do not have the same units, comparing them directly
+depends on the goal of the application: choosing a threshold amount
+of relative entropy and a threshold concentration of protein is necessary.For divergence threshold *, the shape parameter
+is (for  > 1/ and  → ∞):which has a nearly linear relationship with  (b). Plotting this with the mean protein concentration parametrically
+over  illustrates the shape needed to attain a divergence
+no larger than various threshold levels (* = 0.1,
+1, 5 bits; c). Thus, distributions of cells rarely expressing a protein, but
+doing so in bursts, appear to maximize the flexibility of cellular
+populations. We have characterized relaxation kinetics of a
+cellular protein
+distribution subject to deterministic growth-mediated dilution as
+growth stalls, representative of many cases in natural or synthetic
+systems after protein synthesis has been halted. The results predict
+that proteins can become trapped at an arbitrary concentration depending
+on the relative time scales of dilution and growth arrest, assuming
+that growth-independent protein degradation is negligible. Such an
+effect provides the potential for phenotypic memory, useful for creating
+computation in single cells across growth rate transitions, but erasable
+with a brief period of growth. Our results suggest that slight
+cooperativity in the growth arrest
+rate (with a Hill coefficient ≈ 2) should be sufficient to
+trap protein concentrations for arbitrary amounts of time in the absence
+of other degradation effects. A possible limitation of this
+analysis is the deterministic nature
+of the growth arrest transition in the models. While stress is often
+associated with stochastic induction of growth arrest mechanisms, and cell volumes can fluctuate, changes
+in cell volume over time show reversion to the mean, and extrinsic stresses can simultaneously arrest cell populations. This suggests that our approximation is useful,
+even if it does not capture some aspects of fluctuations. In , important new characteristics of the
+relationship between protein synthesis and growth arrest have recently
+been revealed. When growth arrest is strongly induced via a specific
+mechanism, it appears to be accompanied by a burst of expression of
+genes relevant to the particular stress. Furthermore, stationary phase bacteria are capable of having protein
+synthesis induced even after growth arrest, with resulting linear
+accumulation of expressed protein, but
+the patterns of what naturally present genes are subject to this phenomenon
+has yet to be established. Thus, it will be pressing in further studies
+to explore the competition between protein synthesis and degradation
+during growth arrest as well. While a standard entropy measure was
+sufficient to be revealing about information transfer in this study,
+cases with competing synthesis and degradation processes may require
+a more sophisticated information measure, such as transfer entropy, to handle nonmonotonic dynamical transitions. The different time scales of loss of protein mass and information
+that can be attained suggest a method for applying a cost/benefit
+relationship to arrive at a maximally flexible protein memory strategy,
+by creating skewed distributions and inducing sharp transitions to
+growth arrest. Systems with bursty gene expression (known to occur
+in many bacterial subsystems) in sufficiently large
+populations should be able to meet these criteria. Populations that
+use bet-hedging survival strategies likely
+already conform to these requirements. Exploiting this principle could
+potentially be useful for programming memory without excessive cost,
+and for improving fitness in fluctuating environments where previous
+memories may no longer be beneficial. Studies have shown the importance
+of fitness in synthetic circuits with long memory for their evolutionary
+stability, underscoring the potential
+utility of optimized protein memory. Most studies in bet-hedging
+have emphasized the role of skewed
+phenotypic distributions in preparing for uncertain future environments. Our results suggest that one important aspect
+of bet-hedging is its effect on memory: the ability of a cellular
+population to be responsive to the previous environment if it recurs,
+yet also to eliminate the residual cost if it is unnecessary. A previous
+study found that the  sporulation decision switches between memoryless and high-memory
+states, suggesting that the strategy
+of minimal memory with maximal information transfer has precendence
+in evolution. Mathematical analysis and
+simulations were performed with Mathematica
+10.2 (Wolfram Research)..

@@ -1,0 +1,496 @@
+A main aim of synthetic biology is to design
+and build biological
+systems to perform desired functions in a predictable manner. Within this framework, one area of study is spatial pattern formation:
+several artificial gene networks have been inspired by biological
+patterning systems. For example, synthetic stripe patterns have been
+engineered in transcription-translation reactions , over bacterial cell lawns, and over fields of mammalian cells. Many of these studies have explored a central
+paradigm in embryonic
+developmental patterning: the French Flag model of stripe formation. In the model, different genes are expressed in
+a concentration-dependent manner from a spatial chemical gradient
+formed by a diffusing signal or morphogen. Our ability to engineer
+spatial morphogen gradients—and ultimately artificial patterning
+systems—is only now developing. In this study, we wished to
+add to the synthetic biology toolbox for building such systems. Bacteria are the most commonly used chassis for building and studying
+artificial gene networks because of their robustness and general ease-of-use. For example, a synthetic bacterial
+system was recently developed that employed quorum-sensing machinery
+to make fluorescent stripe or band patterns, as a function of gradients
+of diffusible molecules. The system used
+genetically encoded enzymes to produce acyl homoserine lactone molecules
+(AHLs) that were secreted from sender cells, resulting in concentration-dependent
+gene expression in nearby receiver cells. Reflecting their importance,
+several groups have focused on engineering similar cell–cell
+communication modules and band-forming systems, primarily in bacteria but also in yeast. Indeed, engineering patterning in 2-dimensional (2D) bacterial systems
+is developing rapidly; recent examples include highly intricate fractal
+patterns that emerge from the effects of physical interactions. Despite these advances, there is a need to develop more patterning
+and cell–cell communication tools in mammalian systems. Mammalian models to make patterning systems have been explored
+far less than their microbial counterparts. Indeed, as a whole, eukaryotic
+synthetic biology has fewer developed examples
+of network engineering. These include the rational design of memory
+in eukaryotic cells, a tunable oscillator, a nitric oxide sender–receiver system, and a recent mammalian band-forming network. The latter study was the first example of a synthetic
+mammalian morphogen gradient readout system and deployed chemical
+gradients of tetracycline, which were detected by engineered gene
+networks in Chinese Hamster Ovary cells, so as to generate different
+GFP outputs at low, middle, or high tetracycline concentrations. This
+resulted in single GFP stripes over 2D fields of cells. In this
+study, we wished to develop similar mammalian gradient
+readout systems but using only genetically encoded components that
+could be delivered entirely as DNA. The main reason was to enable
+the engineering of stripe-forming networks that require both positive
+and negative feedback; this cannot be achieved if the diffusing morphogen
+is chemically synthesized, as with a tetracycline morphogen. Certain gradient-readout networks (French-flag type) and all reaction-diffusion
+patterning systems (Turing- or Gierer–Meinhardt-type) require feedback connections. Our long-term goal is to make stand-alone
+genetic programs, such as French-flag or Turing systems, that will
+execute and form patterns when engineered into cells. When considering
+this type of engineering problem, we quickly realized
+that we lack a lot of tools to engineer many types of patterning gene
+network. For instance, the 3-node activator-inhibitor networks for
+gradient-detection band-forming systems have been explored exhaustively
+in a computational atlas, but we lacked
+the tools to make even the simplest activator-inhibitor diffusion
+systems in mammalian cells. We therefore decided to expand the repertoire
+of parts for such engineering and, in doing so, we chose a new cell
+chassis. We selected a cell line, which already had elements of a
+’developmental’ program: the Madin–Darby canine
+kidney (MDCK) cell line spontaneously forms hollow multicellular spheres
+in 3D collagen culture. We reasoned that we might be able to to graft
+spatial patterning networks on top of the MDCK cyst scaffold, to generate
+synthetic morphogen gradients, incorporating diffusing activation
+and inhibition interactions. Conveniently, MDCK cells are known to
+activate certain genes in response to an extracellular protein: hepatocyte
+growth factor (HGF), which could be used as a diffusing extracellular
+activator. A trunctated form of HGF (NK4) represses HGF-signaling and could be used as a diffusing inhibitor in
+our system. A short-term aim was simply to explore whether we
+could make sender–receiver
+gene expression regions on single cysts. The idea was to show whether
+one region of a cyst could express and secrete a functional, diffusible
+activator or inhibitor molecule (HGF or NK4) and thus control gene
+expression of a fluorescent reporter on a distal region of the same
+cyst. We envisaged this kind of system to be a prototype for a synthetic
+developmental pattern on a single cyst, where more complicated patterns
+might eventually be built-up, layer by layer. A longer-term
+aim was to develop tools for spatial patterning network
+engineering, including the eventual design of artificial French-flag
+or Turing patterns, as mentioned above. In this study, we therefore
+developed a toolkit of components and methods to deliver them locally
+in 3D culture, to make functional sender–receiver interactions,
+for both activator and inhibitor signaling. In 2D culture, MDCK
+cells form polarized epithelial monolayers,
+with apical, basal, and lateral cell membrane surfaces. By contrast,
+when single MDCK cells are seeded in a collagen type I matrix, each
+cell grows to form a polarized spherical monolayer enclosing a fluid-filled
+lumen. After 6 days’ growth, the
+resulting cysts are hollow spheres of ∼200 cells (∼50
+μm diameter)(Figure a). Hepatocyte growth factor (HGF) binds the extracellular c-Met
+receptor
+tyrosine kinase on cysts, ultimately
+inducing branching hollow tubules, and differential gene regulation. This led us to hypothesize that HGF could be used as a synthetic
+morphogen signaling molecule. Supporting Information Figure S1 As our aim was to use DNA-encoded
+components, we first tested HGF
+gene expression by transient transfection. Whereas we could get ∼60%
+DNA transfection efficiency with lipofectamine in standard 2D MDCK
+culture and <1% with PCR-coated beads (), we
+were initially unable to see transfection in collagen 3D culture.
+To overcome this issue, we developed a new localized transfection
+method for MDCK cysts, by growing the cysts in between two layers
+of collagen (Figure b). The top layer was
+peeled away with fine tweezers to reveal accessible portions of the
+cysts for transfection. Consequently, a CMV-EGFP reporter could be
+delivered to one face of a cyst with high efficiency: 72 ± 7%
+s.d. of cysts were locally transfected (142 cysts total; 3 independent
+experiments)(Figure c). Within these transfected
+cysts, as determined by confocal microscopy, the transfection efficiency
+was estimated to be 22 ± 11% s.d. (73 cysts; 3 independent experiments). A bicistronic construct expressing both HGF and EGFP could also
+be locally transfected and resulted in cyst tubulation (Figure d). This demonstrated that HGF DNA could be locally
+delivered, expressed as protein, and secreted in a functional form,
+at levels sufficient to exert a morphogenic effect on nearby receiver
+cells. To build a synthetic gene network where cells would secrete
+HGF
+to change gene expression in neighboring cells, it was first necessary
+to engineer an HGF-dependent reporter. HGF activates c-Met signaling
+pathways, altering the expression of many genes, including matrix
+metalloproteinases (MMPs). For example, HGF activates the MMP-1 promoter. Based on this, we designed an MMP-1 promoter
+construct driving a destabilized d2EGFP (). Supporting Information Movie
+S1 We
+generated stable cell lines with MMP-1-d2EGFP and examined the
+response of cysts to HGF in 3D cell culture. Qualitatively, the fluorescence
+increased markedly over 16 h of HGF-exposure (Figure a–h; ). Not all cells in this isogenic cell line turned green
+in response to uniform HGF, because of biological variability in individual
+cell responses within cysts. We observed this variability throughout
+our experiments, and the effect is not to be confused with the localized
+transfections, where only some cells contain the gene constructs (e.g.,
+Figure ). Tubulation can also be seen in Figure ; although this phenotypic output is the natural
+result of HGF signaling, it was not the focus of our study . Rather, we concentrated on fluorescent outputs which
+are more easily quantified. In fact, to reduce potential interference
+with downstream engineered networks, it is possible that the tubulation
+response could be eliminated with shRNAs. To quantify HGF induction, we analyzed timelapse microscopy
+images
+of cysts in collagen. We found that the fold-induction of GFP with
+different HGF concentrations was highly reproducible (Figure a). Thus, we were able to fit an HGF-GFP dose-reponse
+curve (Figure b). HGF had an effective concentration
+for 50% GFP activation (EC) of ∼17 ng/mL and a
+maximum response of ∼4-fold (). HGF-GFP induction was also verified at the
+RNA level with quantitative real time PCR (qRT-PCR): 17 ng/mL HGF
+(50 ng in a 3 mL well) induced GFP about 4-fold (Figure c. Above this HGF concentration, the cysts tend
+to dissociate (scatter) into single cells, and so, we avoided such
+conditions in subsequent experiments. Supporting Information Figure S2 It should be noted that we also tested the cell
+line in 2D culture
+and found a slightly lower maximum induction up to ∼1.7-fold
+(). Since
+MDCK cells in 2D culture tend to be highly motile and give lower signal
+to background, we focused on the 3D system. Overall, having established
+the conditions for reporter activation, the next step was to see if
+we could control the system with a repressor. NK4 is a synthetic
+HGF fragment, composed of the N-terminal 447
+amino acids, including four kringle domains. NK4 binds to c-Met but does not induce receptor dimerization and
+activation. In fact, NK4 inhibits the mitogenic, motogenic, and morphogenic
+activities of HGF and is the most complete HGF antagonist described. Thus, NK4 was the ideal candidate for adding
+a repressor function to our HGF-induced MMP-1-d2EGFP cyst system. Supporting Information Figure
+S3 To quantitate NK4 repression, we used the same microscopy approach
+as for assaying HGF induction. We tested increasing concentrations
+of NK4, versus the reporter cell line with 17 ng/mL HGF (Figure d). We were thus able to estimate the effective
+NK4 concentration for 50% inhibition (IC): 38 ng/mL (). Furthermore, 350
+ng/mL of NK4 repressed the system fully, so that GFP was undetectable
+above background (). NK4 is therefore a suitable repressor for our synthetic
+system. To build dynamic systems that respond to changing conditions,
+it
+is necessary that reporter induction be reversible. In principle,
+system reversibility could be influenced by several processes including
+the degradation of HGF inducer, the shut-down of signaling to the
+pMMP-1 promoter, or the degradation of expressed GFP. We therefore
+designed experiments to test whether the system was reversible at
+any of these levels. First, we measured the half-life of the
+destabilized d2EGFP in MDCK cysts using
+a bleach-chase approach (Figure a). The GFP
+half-life ( = 9.2 h) is longer than
+the two hours reported in other cells but does confirm protein turnover.
+We compared this result to measuring GFP half-life using a standard
+cycloheximide treatment. We thus obtained  = 2.9 h (Figure b), which is closer to the 2 h half-life reported in the literature. Cycloheximide inhibits protein biosynthesis
+and is toxic to the cell, compared with the less invasive bleach-chase
+method. The two methods may therefore represent upper and lower bounds
+for d2EGFP protein degradation under varying conditions of cell metabolism.
+It may be possible that cycloheximide stimulates protein decay machinery
+as a response to the shock of ribosome inhibition, decreasing apparent
+half-lives. Notably, the bleach-chase method is said to compare well
+to the gold standard of radioactive pulse chase to measure half-lives, and both methods are less invasive than cycloheximide
+treatment. Further studies to elucidate differences between these
+methods would be desirable in the future. We next tested the effect of adding and washing away HGF.  samples (Figure c) should
+comprise the decay of cell signaling and d2EGFP expression, after
+HGF removal (apparent  = 10.8 h).
+Since this HGF removal result corresponds closely to the measured
+upper bound of the half-life of d2EGFP (bleach-chase), we can conclude
+that signaling switches-off rapidly once HGF is gone and that GFP
+protein degradation is the main limiting process in system reversibility. We further tested whether HGF itself degraded in long-term incubation
+(Figure c). The  sample
+should comprise the intrinsic decay of HGF, cell signaling and d2EGFP
+expression (apparent  = 21.2 h). Since
+cell signaling and d2EGFP degrade much faster, the majority of this
+slow decline is likely to be from HGF degradation. Overall, signal
+switch-off is a combination of HGF half-life, pathway signaling decay,
+and GFP half-life; these factors will all have to be considered when
+modeling outputs in downstream network engineering studies. Finally, we tested whether NK4 could repress activation even after
+HGF was allowed to activate the system for a defined period, such
+as 2 or 4 h. The result was that NK4 could indeed block activation
+even after a sustained exposure to HGF (Figure d). In summary, the reporter system is reversible at various levels,
+which is useful for building dynamic synthetic networks. Supporting Information Movie S2, S3 Supporting Information Figure S4 Having
+established that the MDCK:MMP-1-d2EGFP cell line formed
+cysts that could respond reversibly to recombinant HGF, we next combined
+this with the localized transfection technique (Figure b) to see whether locally delivered DNA (encoding HGF) could
+send signals to neighboring cells, within the same cyst. We therefore
+constructed a bicistronic CMV-promoter expression construct, with
+red fluorescent reporters for marking transfection (mCherry or dsRed,
+as indicated, depending on the FACS or microscopy applications). The
+HGF coding sequence was expressed via an internal ribosome entry site
+(IRES). The pCMV-mCherry-IRES-HGF plasmid could be locally transfected
+to form red patches on single cysts (Figure ). These mCherry-expressing cells also secreted functional HGF, as
+determined by the nearby induction of green fluorescence (via MMP-1-d2EGFP)
+and tubulation (Figure h,j; ). Secreted HGF could also
+be detected in the cell culture medium by ELISA, up to ∼0.5
+ng/mL (). The induction of green cells around the red source region
+was a
+first step toward our aim of a synthetic ‘developmental’
+program. The next step was to see if we could control this process
+with a repressor. We therefore transiently transfected HGF and NK4
+constructs together and achieved a repression of HGF signaling (Figure k). Repression was stable over 24 h, although we
+did not perform any observations after this time point. Overall, this
+shows that secreted NK4 can be produced at sufficient concentrations
+to block secreted HGF. Having explored HGF and NK4 activities
+on single cysts, we moved
+to larger fields containing hundreds of cysts, on 35 mm culture plates.
+Our motivation was to set up a system employing larger spatial scales
+for diffusion-gradient based patterning. The fields were made with
+the same 2-layer method as before (Figure b), but 3 mm diameter glass beads or 2 mm diameter microcapillaries
+were used to mold or gouge out ‘wells’ in the collagen.
+The aim was to visualize the diffusion of activator, in the presence
+or absence of inhibitor, by adding sender cells to the wells. To visualize cell fields, we used an automated wide-field inverted
+fluorescence microscopy system. Using low magnification settings,
+we took multiple overlapping regions of the collagen gel culture (e.g.,
+750 × 600 μm), using the custom software and scripting
+tools of the microscope. Phase contrast microscopy allowed us to focus
+automatically on the cyst plane. The images were then aligned and
+stitched together to make a large image (e.g., 13.6 mm ×1.7 mm;
+Figure a). Using a region of HGF-secreting MDCK sender cells
+resulted in gradients
+of GFP expression over a field of receiver cysts (Figure a). Tubulation could be seen to occur along the
+diffusion gradient (Figure a; insets). We
+quantified and visualized the gradients of reporter gene output using
+timelapse series of data (Figure a; right; ). Thus, we calculated
+an effective diffusion constant for HGF by fitting a diffusion model
+onto the observed gradients (; Figure S5). The value we obtained of 3.1 × 10 mm/min is similar to another published
+estimate of HGF diffusion in collagen. Next, we looked at the effects of NK4 repression on the HGF
+signaling
+gradient, by producing different amounts of HGF and NK4 from the same
+sender well (Figure b). HEK293T sender cells
+were transfected with plasmids expressing CMV-HGF-IRES-DsRed plus
+CMV-NK4-CBD-IRES-DsRed (HEK293T were used here rather than MDCK because
+of their high transfection efficiency). We found that NK4 repression
+modulated the observed gradients, according to the dose of repressor
+cells (Figure b). Finally, we explored
+whether a gradient of HGF-induced GFP expression
+in receiver cysts could be modulated by a gradient of NK4 repressor.
+For this, we set up a collagen matrix with two sender wells, approximately
+9 mm apart. Purified HGF or NK4 were added at opposite ends, allowing
+diffusion over a field of reporter cysts, while taking timelapse GFP
+fluorescent images (Figure c). By quantifying
+the time series, we observed the evolution of the response (Figure c; right). We found that NK4 can both repress and
+restrict the spread of HGF-induced gradient. Overall, the system
+we have developed is reproducibly and reversibly
+controlled by secreted HGF activator and NK4 repressor, both on the
+scale of single cysts and in widefield views, suggesting that these
+components are promising candidates for engineering synthetic patterns. In this study, we built a set of tools for linking gene expression
+and secreted extracellular activator or inhibitor molecules, in the
+MDCK mammalian cell line, to allow the engineering of synthetic patterns. The MDCK cell line was chosen because it has been reported to respond
+with changes on gene expression to the diffusing extracellular activator
+HGF and to a related inhibitor, NK4. Thus, the cells contained potential elements
+that could be developed toward engineering spatial patterning networks,
+such as French-flag-type stripes, or reaction-diffusion
+patterns. In this pilot study, we aimed to test whether
+sender cells could secrete functional activators, or inhibitors, and
+thus change reporter gene expression in distal receiver cells. MDCK cells can be cultured in both 2D and 3D and we found that
+that the 3D MDCK cyst system was preferable for our purposes: (i)
+the cells in 3D were not motile as in 2D; (ii) reporter background
+was lower in 3D (resulting in a greater signal/background ratio);
+(iii) the collagen culture matrix provided a suitable environment
+for controlled diffusion of HGF and NK4. Supporting Information Movies S1–S3 Furthermore, the 3D
+system allowed us to develop a localized transfection
+method, employing a dual-layer collagen dish, where cysts growing
+at the layer interface could be locally transfected in a bull’s
+eye pattern. This technique enabled us to make a simple patterning
+program: a circular red mCherry-expressing region on a cyst secreted
+HGF and, over time, neighboring colorless regions began to turn EGFP
+green and to tubulate. The motivation was thus to work toward building
+an artificial developmental program step-by-step. (see ). It should be noted that throughout the present study the cysts
+tubulated in response to HGF. Because there are no known feedbacks
+between tubulation and HGF signaling, this did not impair our downstream
+efforts to engineer cell signaling and communication; in fact, the
+tubulation acted as a convenient additional phenotypic output to indicate
+the presence of active HGF. However, for some network engineering
+applications, it could be advantageous to block tubulation, to program
+cells without any change in physiology. For this purpose, Lipschutz
+and colleagues have reported that an shRNA targeted to MMP-13 can
+inhibit tubulogenesis. In the future,
+it would be interesting to see whether an HGF-GFP reporter cell line,
+stably expressing this shRNA, could function without tubulation. Moving beyond patterning at the scale of single MDCK cysts, a larger
+scale spatial configuration was chosen because this was more appropriate
+for studying morphogen systems, where gradients and stripes are engineered
+on the scale of fields of cells. Using the larger-scale
+setups, we showed that gradients of activation could be modulated
+by the dosage of activator and inhibitor. Although it is outside
+the scope of the current work, dowstream
+experiments will test the possibility of using these components to
+build simple wide-field cell–cell communication networks, involving
+positive and negative feedback, such as the French-flag or Turing
+systems mentioned above. To enable such dynamic network engineering,
+we established here that the MMP-1-HGF fluorescence induction process
+was reversible and could be repressed by the NK4 repressor. Moreover,
+the components we have developed are modular and work together consistently,
+in dose-dependent manners. Using these criteria, the toolkit could
+be further expanded component-by-component in the future, to make
+more sophisticated gene network programs based on secretion, diffusion,
+activation and repression. Thus, we hope to contribute to the field
+of patterning network engineering within mammalian synthetic biology. Mammalian systems provide a diverse range of cellular machinery
+for synthetic biology. First, the mammalian single plasma membrane
+lends itself well to synthetic cell–cell communication applications
+because it can be easily traversed by fusions with secretory protein
+signal peptides. Second, a wide range of receptors and secreted signaling
+factors are available as candidates for re-engineering. Third, eukaryotes
+often contain many splice variants within the same gene, with different
+agonist or antagonist function. The NK4 used in this study is a good
+example of a truncated protein that retains only part of its original
+function: receptor binding without any activation. Although bacterial
+protein domains are often modular, the ease with which eukaryotic
+activators can be converted into inhibitors via differing exon usage,
+raises interesting questions about their potential to evolve antagonistic
+or self-repressive networks. Although
+we are far away from building structures or organs from
+the bottom-up, the stepwise approach reported here reveals that modular
+network components can indeed be isolated and grafted onto existing
+systems. This results in reproducible systems behavior, using both
+intra- and extracellular components. In mammalian synthetic biology,
+we are still at the beginning of finding out what is possible and
+what is not. Ultimately, our drive is to understand systems by building
+them. Localized transfection
+method for 3D MDCK culture. (a) MDCK cells
+seeded into collagen grow into hollow spherical cysts (∼200
+cells) over a period of 6 days. (b) Schematic view showing two collagen
+layers in a 35 mm diameter dish. A second layer, comprising collagen
+mixed with the seeding cells, allows cysts to develop at the interface
+between the layers. The top layer is peeled away to allow transfection
+of one face of the cysts. A new collagen layer is then poured on top.
+(c) A typical MDCK cyst, locally transfected with EGFP under a constitutive
+CMV promoter. (d) Local transfection with HGF under a CMV promoter,
+followed by an internal ribosome entry site (IRES) and the EGFP gene.
+A schematic view (below) shows the transfected region (green) secreting
+functional HGF, which diffuses around the cyst to induce tubulation.
+Phase contrast light microscopy images are superimposed with the GFP
+fluorescence channel. Scale bars: 50 μm. Supporting Information Movie
+S1 Engineering
+an HGF-responsive reporter cell line. HGF induces green
+fluorescence and tubulation in MDCK-MMP-1-d2EGFP cysts. (a–h)
+A cyst was treated with 10 ng/mL HGF for 16 h. Images were taken every
+two hours after adding HGF. Note the low basal fluorescence in MDCK
+cysts in 3D culture (panel a). A typical cyst is shown and can also
+be seen in timelapse (). Scale bars, 50 μm. HGF and NK4 dose–responses in the
+MDCK:MMP-1-d2EGFP stable
+cell line. (a) HGF response over 24 h for 5 HGF concentrations. The
+relative GFP response is calculated by normalizing to the fluorescence
+from 0 ng/mL HGF samples (all data: mean of 4 experiments). (b) Maximum
+responses reached in 24 h as function of HGF concentration. These
+allow an estimation of maximum EGFP response ( = ∼4-fold), the effective concentration for 50%
+induction (EC = 17 ng/mL), and a Hill coefficient for
+activation ( = 1.2). (c) qRT-PCR of EGFP RNA with
+17 ng/mL HGF (mean of 3 experiments; comparison to two housekeeping
+genes, GAPDH and UB). (d) NK4 repression of 17 ng/mL HGF. Maximal
+GFP responses (relative to 0 ng/mL HGF samples) over a 24 h period
+are plotted as a function of NK4 concentration. The NK4 concentration
+for 50% inhibition of an  GFP signal
+can also be calculated (IC = 38 ng/mL). For all calculations
+see . Reversibility of HGF
+induction of MDCK:MMP-1-d2EGFP reporter cysts.
+(a) Measuring the half-life of d2EGFP in cysts with bleach-chase. Fluorescence after bleaching (red) converges
+to the nonbleached profile (blue) with exponential dynamics, revealing
+the protein removal rate by calculating the slope of a linear fit
+between the difference of bleached and unbleached samples, on a semilog
+plot (below). Data are from 68 cysts (unbleached) and 43 cysts (bleached).
+α = 0.075 h ± 0.003;  = 0.97;  = 9.24 h. (b)
+d2EGFP half-life measurement after inducing cysts with 8.3 ng/mL HGF
+for 15 h and then blocking protein synthesis with 6.6 μg/mL
+cycloheximide.  = 2.9 h (mean of 3
+experiments). (c) Reversibility of induction after adding 8.3 ng/mL
+HGF, from  = 0–24 h, and either washing (green)
+or leaving unwashed (red). Quantification is from microscopy between  = 30–50 h (mean of 3 experiments). (d) NK4 represses
+HGF-induced fluorescence even when NK4 is added 2 or 4 h after HGF
+(mean of 3 experiments). All error bars: 1 s.e.m. Supporting Information Movie S2 Supporting Information Movie S3 Localized sender–receiver patterns in single MDCK cysts.
+The MDCK-MMP-1-d2EGFP reporter cyst is locally transfected with pCMV-mCherry-IRES-HGF
+(red region). The red region secretes HGF which diffuses extracellularly
+to induce distal GFP expression and tubule formation. (a–h)
+Images taken from 6 h after transfection, at 2 h intervals. A typical
+cyst is shown and can also be seen in timelapse (). (i, j) An independent example
+of the same setup at 6 h (i) and 14 h (j); this cyst goes on to tubulate
+after 14 h (). (k) Locally transfecting MDCK wt cysts with CMV-EGFP-IRES-HGF
+activator (green) or mCherry-IRES-NK4 (red), or both together (yellow).
+Images taken after 24 h. Cotransfecting NK4 blocks HGF-induced tubulation.
+Scale bars, 50 μm. Sender cell regions produce gradients
+of HGF-induced and NK4-repressed
+fluorescence in collagen matrices containing MDCK-MMP-1-d2EGFP receiver
+cysts. (a) A widefield view of the receiver region next to a well
+(not shown) containing 21 000 MDCK sender cells (transfected
+with CMV-HGF-IRES-dsRED and sorted by FACS for dsRED). The composite
+image is stitched from multiple 752 × 599 mm images and shows
+the fluorescence and tubulation of the cysts at time point 16.5 h,
+with close-up views in the insets below. Timelapse data were thus
+collected and used to obtain the diffusion gradient response profile
+over time (right). Average intensity values at particular spatial
+points (black dots) were used to fit the diffusion model shown by
+the color axis surface profile (see  for diffusion constant calculations). (b) Quantification
+of NK4 repression of HGF-induced GFP gradients from mixtures of transfected
+HEK293T sender cells added to single sender wells (HEK293T were used
+because of high transfection efficiency). Sender cells expressed CMV-HGF-IRES-DsRed
+plus CMV-NK4-CBD-IRES-DsRed. Fluorescence images were quantified with
+ImageJ (Radial profile plugin). (c) Interaction of an HGF gradient
+with an NK4 gradient. Sender wells were created approximately 9 mm
+apart and the indicated amounts of purified HGF or NK4 were added
+at opposite ends, allowing diffusion over a field of reporter cysts,
+while taking timelapse GFP fluorescent images (images shown: 18.5
+h). The images were quantitated (right; see ) to obtain response profiles over time, showing
+that NK4 restricts the HGF-induced fluorescent gradient. MDCK cells were cultured
+in MEM with 10%
+FBS, 100 IU/ml penicillin, 100 mg/mL streptomycin, and 2 mM -glutamine at 37 °C, 5% CO. For 3D MDCK culture, cells were trypsinized and resuspended to 3
+× 10 cells/ml in a type I collagen solution containing
+PureCol (3 mg/mL), Advanced BioMatrix 5005-B, 10× MEM, NaHCO (2.35 mg/mL), -glutamine (29.2 mg/mL), and 1 M
+HEPES (pH 7.6). Cells in suspension were added to wells containing
+a cell-free collagen mix (polymerized previously at 37 °C) and
+were incubated at 37 °C (without CO2) for 20–30 min. Two
+milliliters of liquid media was added above the collagen layers and
+replaced every 2–3 days. For the analysis of gene expression
+diffusion patterns, cysts were seeded as described above, in a 35
+mm plate containing a 2 mm diameter glass capillary, which was then
+removed to make a ‘well’ for seeding sender cells. Localized Cyst Transfection in Three-Dimensional Collagen Gel
+Culture MDCK cysts were grown (as above) in 35 mm plates.
+After 8 days, the top collagen layer was carefully peeled off with
+the help of fine tweezers. Cysts were
+transfected with 4.5 μg plasmid DNA and 20 μL Lipofectamine
+per plate, with incubation at 37 °C for 5 h. The medium was removed
+and a new collagen layer added. The plate was then incubated in a
+37 °C oven (in the absence of CO) for 20–30
+min. Two milliliters of fresh liquid medium was then added for 24
+h further culture. MDCK cells were
+transfected with
+Lipofectamine according to the manufacturer’s instructions.
+Twenty-four hours post transfection, green FITC+ cells were enriched
+with a FACSaria cell sorter, and were grown for 1 week in MEM with
+a supplement of G418 (500 μg/mL; PAA Laboratories P11–012)).
+The cells were again sorted by FITC signal, into individual wells
+of a 96-well plate, and were grown to confluency. Cells were treated
+with HGF (50 ng/mL, 24 h), and candidates with increased fluorescence
+were further tested for their response to HGF, in 3D culture. The
+cell line V384A2 had the strongest induction and was used in all subsequent
+experiments. Production and Quantification of NK4 HEK 293T cells
+were transfected with CMV-NK4 using Effectene (Qiagen) according to
+the manufacturer’s instructions. Twenty-four hours post transfection,
+the MEM medium was replaced with fresh medium. After a further
+24 h, the supernatant was collected and concentrated using Amicon
+Ultra Centrifugal Filters (30K molecular weight cut off). NK4 in the
+concentrated supernatant was quantified with a Quantikine ELISA kit
+for human HGF (R&D Systems), according to the manufacturer’s
+instructions. All images
+shown were taken
+with a Zeiss Live observer microscope system, at 10× (0.3 NA)
+or 20× (0.5 NA) magnification (indicated), 37 °C and 5%
+CO. A 300 W Xenon arc bulb was used for illumination and
+a 38HE filter set for acquisition. Cysts were imaged every 45 min
+with an exposure of 5s. The cysts were grown as described above on
+MatTek 6-well glass bottom dishes (thickness no. 1.0; glass diameter
+20 mm). For the differential response experiments, at  = 0 h, medium was replaced with 1 mL of MEM, with the appropriate
+HGF concentrations, to a total collagen-plus-MEM volume of 3 mL. For
+the reversibility experiments, 25 ng/mL HGF was added at  = 0 h and washed 2 × 1 h with MEM and 1 × 1 h with PBS
+at  = 24 h. GFP signals were collected with a 5
+s exposure time and 15 ms in the phase contrast channel. Twenty images
+were taken for each concentration. Images were analyzed with a custom
+MATLAB script. Regulatory functions were fitted to estimate the 50%
+effective or inhibitory concentrations of HGF and NK4 (EC, IC), maximum fold-responses, and the Hill coefficient
+() (). RNA was isolated with the Qiagen RNA mini Kit.
+After 20 h of HGF induction, the top collagen layer was removed. RLT
+buffer was added directly to the lower layer and immediately transferred
+to a 1.5 mL polyethylene tube and processed according to the manufacturer’s
+protocol. RNA was reverse transcribed with the SuperScript III first-strand
+synthesis mix (Invitrogen). Primers for GFP sequence and controls
+are as follows: GFP Fwd, CCTGAAGTTCATCTGCACCA; Rev, AAGTCGTGCTGCTTCATGTG;
+canine Glyceraldehyde 3-phosphate dehydrogenase, GAPDH Fwd, AACATCATCCCTGCTTCCAC;
+Rev, GACCACCTGGTCCTCAGTGT; Ubiquitin-specific Peptidase UB Fwd, CAGCTAGAAGATGGCCGAAC;
+Rev, ACTTCTTCTTGCGGCAGTTG. The fold change was calculated using the
+Pfaffl method. Wide-Field Fluorescence
+Microscopy MDCK cysts were
+grown as above in 35 mm plates. A 2 mm diameter glass microcapillary
+was fixed vertically in the 2-layer collagen culture to make a well.
+After 8 days, the capillary was removed and transiently transfected
+HEK293 sender cells were injected into the well. After 20 min settling
+time, the top collagen layer was carefully peeled off with the help
+of fine tweezers, and a new collagen
+layer added, as above. Automatic mosaic imaging of large areas
+(Zeiss Cell Observer HS system: AxioObserver Z1 microscope; AxioCam
+cooled CCD camera; 10×, 0.3 NA objective): overlapping fields
+were imaged in fluorescence and phase contrast. The mosaic pattern
+was generated and acquired using autofocusing of the transmission
+channel, with custom Zeiss Visual Basic for Applications (VBA) and
+Commander Module routines for the pattern generation. Large field
+images were then aligned and stitched using ImageJ functions..

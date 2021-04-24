@@ -1,0 +1,245 @@
+The high-level
+heterologous
+production of membrane proteins in  and other
+hosts has proven challenging, especially due to oversaturation of
+the membrane protein biogenesis machinery. Common systems for recombinant protein production, such as those
+based on the strong T7 promoter, often lead to the jamming of chaperones
+and membrane translocation systems, consequently making it impossible
+to produce correctly folded membrane proteins at high levels. Several  strains and expression systems
+have been developed to improve the production of especially bacterial
+membrane proteins. Commonly used systems include the  Walker strains (C41(DE3),C43(DE3)), BL21-AI, and the more
+recently developed  Lemo21(DE3). These systems rely on downregulating the levels of T7 RNA polymerase
+(T7RNAP), consequently reducing expression rates to better accommodate
+translocation and folding of membrane proteins. Particularly,  Lemo21(DE3) has
+been constructed to fine-tune transcription through an indirect control
+of T7RNAP activity through -rhamnose-inducible production
+of its inhibitor, T7-lysozyme (LysY). The system has proven
+successful and has been recently streamlined into a one-plasmid system
+named pReX, but it requires the properly
+timed addition of two different inducer compounds: -rhamnose
+and the expensive IPTG (isopropyl β--1-thiogalactopyranoside).
+Additionally, to date, neither Lemo21(DE3) nor any other currently
+available system has successfully demonstrated long-term (>24 h)
+continuous
+production of membrane proteins in . Realizing
+inducer-free, stable production remains a major challenge, which is
+relevant for many synthetic biology applications. This includes, for
+example, the heterologous production of transporter membrane proteins
+in microbial cell factories to be used in (continuous) production
+processes, or signal-transduction membrane proteins in strains that
+need to function as a biosensor over a long time. Another limitation
+in heterologous protein production relates to
+ribosome binding site (RBS) accessibility. Several proteins,
+including membrane proteins, have been categorized as “difficult-to-produce”
+due to strong mRNA secondary structures in the 5′ untranslated
+region (5′-UTR) and in the start of the coding sequence (CDS),
+which impede the proper translation initiation at the RBS. Some efforts aimed at resolving such structures rely on fusing well-expressed
+short peptide tags to the N-terminus of membrane proteins. However, fusion peptides can
+affect protein stability, structure, and function. Furthermore, translation initiation has been successfully
+improved by randomly mutating nucleotides around the start codon, which enhanced the production
+of several “difficult-to-produce” membrane proteins,
+but this method requires a high-throughput screening or selection
+approach. To overcome the limitations of state-of-the-art membrane
+protein
+production, we explored an alternative method for protein expression:
+the so-called bicistronic design elements (BCDs). The system is based on a constitutive promoter and tuning
+by using two RBSs that are translationally coupled. The first RBS
+mediates strong translation initiation of a short leader peptide,
+while the second RBS, which is located within the leader peptide’s
+CDS and drives the translation of the protein of interest, has a tunable
+strength ().
+It is hypothesized that the intrinsic helicase activity of the ribosomes
+translating the leader peptide can unwind potential secondary structures
+of the mRNA, thereby eliminating translation initiation problems near
+the second RBS and the start of the target CDS. In this work, we employ a library
+of translational coupling elements
+to tune and optimize the constitutive production of several bacterial
+membrane proteins. A medium-strength, constitutive promoter (P14)
+and 22 variable-strength translational coupling elements (BCDs) were
+selected from the work of Mutalik et al.; the BCD elements can be inserted seamlessly in the expression vector
+using a simple golden gate-based cloning method (). We tested our system for the expression of four different
+membrane
+proteins: YidC, AraH, and two rhodopsins. YidC is a membrane-translocation
+chaperone in , which has been frequently used
+as a model for studying membrane protein production. AraH is the integral membrane
+component of the  arabinose ABC transporter,
+which is considered a “difficult-to-produce” protein
+because of its translation initiation limitations in a typical pET
+vector; GR is a proton-pumping rhodopsin photosystem
+from the cyanobacterium , and
+TR is a thermophilic rhodopsin from . For the two first proteins, YidC and AraH, GFP was fused
+to their
+C-terminus, rendering YidC-GFP and AraH-GFP. All the 22 BCD variants
+were cloned separately into expression vectors carrying YidC-GFP and
+AraH-GFP. We then estimated levels of membrane inserted YidC and AraH
+by measuring fluorescence levels. C-terminal GFP only folds properly
+and results in fluorescence when membrane proteins fused to the GFP
+are integrated into the membrane and do not end up in inclusion bodies,
+hence providing a quantitative approximation for membrane-embedded
+expression. The expression of YidC-GFP and
+AraH-GFP by different BCD elements was ranked in order of the translation
+initiation strengths previously observed for each BCD element in the
+work by Mutalik et al., in order to allow
+for a systematic analysis of their fluorescence (a,e). For both fusion proteins,
+the tested BCD variants resulted in a
+range of GFP fluorescence-signals, suggesting different levels of
+functional membrane protein production. In the case of YidC-GFP, a
+rough pattern was observed considering the correlation between the
+fluorescence and the expected translation initiation strength of the
+different BCD constructs. BCD elements up to BCD19 generally resulted
+in increased levels of production, whereas elements stronger than
+BCD19 mostly resulted in lower production levels (a). Some of the strongest translation
+initiation variants resulted in negligible and/or highly irreproducible
+production levels. For example, in some replicate cultures the strong
+BCD2 gave high expression but in several other cultures expression
+was completely absent (ranging from no expression to 70 000
+RFU/mL). When the BCD-based expression was compared to the optimized
+Lemo21(DE3)-based expression of YidC-GFP, the latter gave rise to
+an emerging nonproducing subpopulation of cells after 22 h, as indicated
+by flow cytometry analysis, whereas the production by the highest-producing
+BCD19-YidC-GFP remained homogeneous (c). In agreement with this observation, Western
+blot analysis revealed that the formation of YidC-GFP in inclusion
+bodies was reduced for the BCD19 versus optimized Lemo21(DE3)-expression
+(b). Moreover,
+the medium-strength BCD19 yielded approximately twice as much production
+per cell than  Lemo21(DE3), which was previously
+proven to be a superior production system for YidC-GFP over other
+commonly used systems such as  C41(DE3) and
+C43(DE3). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00101/suppl_file/sb9b00101_si_001.pdf In the case of AraH-GFP,
+a similar trend was observed, that is,
+increasing levels of fluorescence were measured up to BCD19. However,
+unlike for YidC-GFP, no large decrease or unstable AraH-GFP production
+was observed for stronger BCD elements, and the strongest BCD2 produced
+at similar high levels as BCD19 (e). AraH-GFP production by BCD19 and BCD2
+was compared to the production by a previously optimized pET vector
+(pET-opt-AraH-GFP), which was obtained by screening a large library
+of vectors with mutations around the start codon. The volumetric production by both BCDs was found to be
+higher than that of pET-opt-AraH-GFP under the originally optimized
+conditions, mainly due to a higher biomass yield (e, ). Production by the BCDs also resulted in less inclusion
+body binding protein than pET-based production, while a nonfolded
+protein could not be clearly detected in Western blot for any
+construct (f). Additionally, production by pET-opt-AraH-GFP resulted in a small
+emerging nonproducing population of cells after 22 h of cultivation,
+as revealed by flow cytometry analysis, while production by the BCD
+elements was still fully homogeneous (g). Notably, by screening a library of only
+22 BCD variants, we were able to find clones for which the production 
+was comparable (per cell) or even better (per volume) than that of
+the previously optimized pET-opt-AraH-GFP, which required the high-throughput
+screening of a large library of variants (1.6 × 10) through fluorescence-activated cell sorting (FACS). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00101/suppl_file/sb9b00101_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00101/suppl_file/sb9b00101_si_001.pdf To further estimate the production stability
+of the medium-strength,
+high-producing BCD19 and the strongest translation initiation element
+BCD2, we assessed production per cell by flow cytometry during longer
+serial cultivation experiments up to 72 h. Remarkably, BCD19-YidC-GFP,
+and for AraH both BCD19 and BCD2, result in stable homogeneously producing
+populations, even after 72 h (d,h, ). For BCD2-YidC-GFP,
+however, only 2 out of 4 precultures prepared for the stability experiment
+maintained their initial production level, despite the fact that the
+colonies used for initial inoculation were selected on the basis of
+high fluorescence. This demonstrated again an unstable production
+phenotype for the strong BCD2 with YidC, as observed we observed in
+earlier experiments. The two stably producing precultures were further
+inoculated for the long-term experiment in fresh medium, and their
+production decreased over the course of time (d, ).
+The strong translation initiation of YidC-GFP driven by BCD2 seemed
+to stress the cells, favoring the emergence of nonexpressing cells
+in the population (d), which may have been caused by suppressing mutations in
+plasmids or the genome (not further characterized). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00101/suppl_file/sb9b00101_si_001.pdf The BCD
+system was further employed to optimize the production
+of bacterial rhodopsin proteins. These simple membrane-bound light-harvesting
+energy systems can be employed for light-driven cell-factories or optogenetic regulation. When properly folded in the cytoplasmic membrane, rhodopsins
+are known to bind the retinal pigment, leading to red pigmentation
+of the host cells. Rather than cloning all the BCDs
+in parallel, this time the 22 BCD variants were pooled, cloned into
+the vectors containing GR or TR, and transformed as a library. Clones
+of the resulting transformation were then randomly picked and grown
+in 96-well plates with retinal (). For both GR and TR, 11 clearly red-pigmented pellets were identified
+out of 89 and 96 screened clones, respectively. For each of the rhodopsin
+proteins, three intensely red clones were selected for further characterization.
+In the case of GR, one of the selected clones contained BCD14 and
+the other two carried BCD15. For TR, BCD9, BCD12, and BCD21 were identified.
+All these variants are in the medium-strength range of the BCD system. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00101/suppl_file/sb9b00101_si_001.pdf Production of GR and TR by the best rhodopsin-producing BCD variants
+was scaled up from deep-well plates to 10 mL cultures in 50 mL tubes.
+While all elements rendered very similar levels of GR expression (i), the production
+of TR significantly differed from one BCD to another; BCD9 performed
+significantly better than BCD12, while BCD21 gave the lowest production
+(j). These
+three variants performed very similar when grown in deep-96-well plates,
+while the results of the production assays in 50 mL tubes are significantly
+different. This indicates that results are not always comparable when
+scaling-up from deep-well plates (0.5 mL culture) to test tubes (10
+mL culture). The previously discussed  strains of YidC-GFP and
+AraH-GFP were  initially grown directly in 10 mL cultures
+in 50 mL tubes, and now compared with their performance in deep-well
+plates (0.5 mL culture) (), confirming
+differences in performance depending on culture conditions. This reflects
+the common challenge of optimizing and scaling up recombinant production.
+However, the optimization for the BCD system in scaled-up conditions
+is quite feasible given the limited number of tuning variants that
+need to be tested. We then compared the production of GR and
+TR to the levels produced
+by the Lemo21(DE3) system, which was optimized in tubes. Compared
+to rhodopsin production by the Lemo21(DE3) system, the best performing
+BCD variants for GR and TR resulted in at least 2-fold and 3-fold
+higher volumetric rhodopsin production, respectively (i,j). The here employed
+BCD system outperforms the membrane protein productivities
+of previously established approaches. Moreover, the BCD system provides
+stable membrane protein production for at least 72 h, a stability
+never reported to date. While most current systems for membrane protein
+production are limited to specific  strains,
+the applied P14 constitutive promoter allows our system to be generally
+applicable in all  strains. By applying the
+principles of our method and potentially including different promoters
+and/or BCDs, our system is likely feasible for bacterial membrane
+protein production in other bacterial hosts as well. The BCD system
+may also be applicable for producing certain eukaryotic membrane proteins
+in  although expression of eukaryotic proteins
+in bacterial hosts may lead to issues that cannot be solved just by
+tuning expression strength and tackling RBS-accessibility, this includes
+issues  as glycosylation or the requirement of eukaryotic-like
+membrane lipids. Overall, it is anticipated
+that the here described approach for bacterial membrane protein production
+will be useful for many future studies, ranging from biochemical characterization
+to cell factory and biosensor engineering. Expression vector design and assembly. (a) The standard expression
+vector contains a medium-strength constitutive promoter, RBS1, which
+allows for strong translation initiation of a leader peptide, and
+a translationally coupled, variable RBS2, mediating translation initiation
+of the coding sequence (CDS) of the membrane protein of interest. (b) Vectors are assembled with different BCD
+elements. First, the vector is amplified by PCR, subsequently it is
+digested by type IIS restriction enzymes. The latter allows for seamless
+assembly with a library of annealed oligo pairs (encoding the different
+BCD variants), which have overhangs complementary to the digested
+vector. Production of YidC-GFP,
+AraH-GFP, and rhodopsins by BCD elements
+and comparison to state-of-the art systems. (a) Volumetric YidC-GFP
+production based on whole-cell fluorescence measurements and final
+growth yields for the BCD constructs, and a comparison to Lemo21(DE3)-based
+production at optimized (2 mM -rhamnose) and nonoptimized
+(0 mM -rhamnose) conditions. BCD variants are ordered in
+the -axis based on previously reported translation
+initiation strength. (b) Western blots
+performed with antihis-tag antibody (upper panels) to visualize both
+inclusion body and well-folded YidC-GFP-his, and anti-IbpB (lower panels) to visualize inclusion body binding protein B. (c)
+Single-cell production of YidC-GFP analyzed by flow cytometry for
+several increasing strength BCD elements and optimized Lemo21(DE3).
+(d) Single-cell production of YidC-GFP by BCD19 and BCD2 in a 72 h
+stability experiment. (e) Volumetric AraH-GFP production based on
+whole-cell fluorescence measurements and final growth yields for the
+BCD constructs, and a comparison to pET-opt-AraH-GFP. BCD variants are ordered in the -axis
+based on previously reported variant strength. (f) Western blots performed with antihis-tag antibody (upper
+panels) to visualize both AraH-GFP-his, and anti-IbpB (lower panels) to visualize inclusion body binding protein. (g)
+Single-cell production of AraH-GFP analyzed by flow cytometry for
+several increasing strength BCD elements and pET-opt-AraH-GFP. (h)
+Single-cell production of AraH-GFP by BCD19 and BCD2 in a 72 h stability
+experiment. (i) Volumetric Gloeobacter Rhodopsin (GR) and (j) Thermophilic
+Rhodopsin (TR) production determined by spectroscopy, and pictures
+of red-pigmented pellets. All cultivations were performed in 10 mL
+of medium in 50 mL tubes, for YidC-AraH and AraH-GFP at 30 °C,
+for rhodopsins GR and TR at 37 °C, and for pET-opt-AraH-GFP in  BL21(DE3) pLysS at 25 °C (as optimized for
+in original work). BCD-based production was measured after 22 h of
+cultivation, while Lemo21(DE3) and pET based production was measured
+after 22 h of induction. Whole-cell fluorescence or rhodopsin quantification
+data are based on at least three biological replicates. For 72 h stability
+experiments  BL21(DE3) harboring BCD vectors
+were reinoculated 1:50 into fresh LB kanamycin medium every 24 h.
+Notation: RFU, relative fluorescence units; OD, optimal
+density of 600 nm..

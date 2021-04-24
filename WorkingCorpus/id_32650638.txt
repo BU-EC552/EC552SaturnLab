@@ -1,0 +1,503 @@
+, as a “generally
+regarded as safe” (GRAS) yeast, has been extensively engineered for the production
+of oleochemicals, fuels, and commodity chemicals. The abundant acetyl-CoA and malonyl-CoA
+precursors in  have been harnessed
+for synthesizing plant secondary metabolites in recent years, including
+flavonoids, polyketides, polyunsaturated fatty acids, and isoprenoids. A large collection of customized genetic toolkits, including Golden-gate
+cloning, genome integration, CRISPR-Cas9/Cpf1 genome editing, transposons, auxotrophic markers, and promoter libraries have accelerated our ability
+to perform targeted genetic manipulations. Different from ,  lacks Crabtree effects generating no overflowed metabolism toward
+ethanol under high glucose conditions, which might be more suitable for high gravity fermentation and process
+control.  is reported to valorize
+a broad range of cheap and renewable feedstocks, including sugars, volatile fatty acids, alkanes, and municipal organic
+wastes. This substrate flexibility provides us an environmentally
+friendly approach to upgrade low-value carbons to high value chemicals
+with reduced carbon footprint and improved process economics. Aromatic compounds have wide applications ranging from health care
+to the food industry, nutraceutical supplements, and pharmaceutical
+intermediates, which collectively represent a multibillion-dollar
+global market. Although metabolically engineered  has achieved gram-per-liter levels of aromatic compounds, primarily
+phenylpropanoids, yeast proves to be a more attractive
+host, due to its GRAS status, robust cell growth, tolerance of harsh
+conditions (such as low pH and high osmolarity), and the spatially
+organized subcellular compartment for regio- or stereoactivity of
+cytochrome P450 enzymes. Up to date, various metabolic
+engineering strategies have been implemented in  and  to improve aromatics production,
+including expression of the feedback-insensitive DAHP synthases and chorismite synthase, enhancing the shikimate
+pathway and modular microbial coculture. A number of studies have been focused on optimizing the endogenous
+Ehrlich pathway to produce 2-phenylethanol up to 3–6 g/L; however, the expensive precursor -phenylalanine was fed
+into the biphasic bioreactors, restricting its economic
+potential for large-scale production. The highest titer of 2-phenylethanol
+production from the  shikimate pathway was
+reported recently as 1.58 g/L (13 mM) from . There is a pressing need to explore
+the metabolic potential of alternative yeast for aromatics production. In this work, we attempted to engineer the nonconventional oleaginous
+yeast () as a competitive platform
+host to produce aromatic derivatives (). With 2-phenylethanol (2-PE) as the testbed
+molecule, we systematically characterized and removed the bottlenecks
+of the endogenous shikimate pathway, resulting in the production of
+2426.22 ± 48.33 mg/L (19.85 ± 0.40 mM) of 2-PE from glucose,
+the highest titer ever reported from the  shikimate
+pathway. Using this yeast as chassis, we further redirected the shikimate
+flux toward other aromatics and achieved high titers of -coumaric acid (593.53 ± 28.75 mg/L), violacein (366.30 ±
+28.99 mg/L, highest titer reported in yeast), and deoxyviolacein (55.12
+± 2.81 mg/L, highest titer reported in yeast) in shaking flasks,
+indicating the superior metabolic potential of  as an aromatics-producing host. This report highlights the prominent
+metabolic characteristics of  as
+a chassis for production of various aromatics and natural products
+with economic values. biosynthetic routes for 2-PE, -coumaric acid, resveratrol, and violacein production through
+the shikimate pathway in . PEP,
+phosphoenolpyruvate; E4P, erythrose-4P; DAHP, 3-deoxy-arabino-heptulonate-7-phosphate;
+4HPP, 4-hydroxyphenylpyruvate; PAH, phenylacetaldehyde; 2-PE, 2-phenylethanol;
+ylTKT, transketolase; ylPYK, pyruvate kinase; ylARO3, 3-deoxy-7-phosphoheptulonate
+synthase; ylARO4, 3-deoxy-7-phosphoheptulonate synthase; ylARO5, 3-deoxy-7-phosphoheptulonate
+synthase; ylARO1, pentafunctional AROM polypeptide; ylARO2, chorismate
+synthase; ylARO7, chorismate mutase; ylTRP2, anthranilate synthase;
+ylTRP3, anthranilate synthase; ylTRP4, anthranilate phosphoribosyltransferase;
+ylTRP1, phosphoribosylanthranilate isomerase; ylTRP5, tryptophan synthase;
+ylTYP1, prephenate dehydrogenase; ylARO8, aromatic amino acid aminotransferase;
+ylARO9, aromatic amino acid aminotransferase; ylPHA2, prephenate dehydratase;
+ylARO10, phenylpyruvate decarboxylase; ylPAR4, phenylacetaldehyde
+reductases; ylHPD, 4-hydroxyphenylpyruvate dioxygenase; ylALD2, aldehyde
+dehydrogenase; ylALD3, aldehyde dehydrogenase; scARO7, the feedback-resistant chorismate mutase from ; BbxfpK, phosphoketolase from ; AcxpkA, phosphoketolase from ; ecaroG, the feedback-resistant 3-deoxy-7-phosphoheptulonate
+synthase from ; scARO4, the feedback-resistant 3-deoxy-7-phosphoheptulonate synthase
+from ; rgTAL, tyrosineammonia-lyase
+from ; pc4CL, 4-coumarate-CoA
+ligase from ; VvSTS1, resveratrol
+synthase from ; VioA, tryptophan oxidase;
+VioB/VioE, protodeoxyviolaceinate synthase; VioD, protodeoxyviolaceinate
+monooxygenase; VioC, violacein synthase. All violacein pathway genes
+were amplified from the genomic DNA of . Right corner shows the chromosomal integration of the chosen pathways. Synthesis of 2-PE from Shikimate Pathway http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00185/suppl_file/sb0c00185_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00185/suppl_file/sb0c00185_si_001.pdf In this work,
+the  endogenous
+metabolite 2-phenylethnol (2-PE, an aromatic alcohol that is widely
+used as flavor and fragrance agent) was chosen as a target molecule
+to determine the bottlenecks of the shikimate pathway. 2-PE synthesis
+is a metabolic branch derived from shikimate pathway, in which 2-PE
+is synthesized through four enzyme-dependent cascade reactions starting
+from chorismate (a). To identify the potential limiting-steps in 2-PE synthesis, we
+first systematically overexpressed all genes that are involved in
+2-PE synthesis under the control of strong constitutive pTEF-intron
+promoter, including genes  (, encoding phenylacetaldehyde reductase),  (, encoding phenylpyruvate
+decarboxylase),  (, encoding prephenate dehydratase), and  (, encoding chorismate mutase). Besides gene , individual overexpression of genes , , and  did not result
+in a significant increase in 2-PE titer (); however, combining all four genes (strain ) led the strain to produce 55.53 ± 0.85 mg/L of 2-PE
+from glucose (),
+a 6.55-fold increase in comparison with the control strain (without
+any gene overexpression, 8.48 ± 0.50 mg/L), indicating that the
+four enzymes in the Ehrlich pathway are essential to channel the carbon
+flux toward 2-PE synthesis. In addition, chorismate mutase (ARO7)
+is known to be strictly feedback inhibited by aromatic acids. To resolve this issue, introduction of a feedback-resistant
+chorismate mutase ScARO7 originating from  further improved 2-PE production
+up to 87.63 ± 4.67 mg/L (strain , b), which was consistent with
+the previous report. We have configured
+the Ehrlich pathway to achieve  2-PE synthesis
+from glucose with enhanced titer. ylPAR4-ylARO10-ylARO7-ylPHA2-scARO7 http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00185/suppl_file/sb0c00185_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00185/suppl_file/sb0c00185_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00185/suppl_file/sb0c00185_si_001.pdf We subsequently optimized the shikimate pathway
+to unlock the potential
+of  for production of aromatic
+compounds. The entire Ehrlich pathway for 2-PE synthesis contains
+multiple genes with total size more than 16 000 bp. To simplify the genetic manipulations, we integrated
+the 2-PE pathway at the genomic  loci
+(encoding acetyl-CoA hydrolase) with the integration plasmid pURLA-. The resultant strain  produced 50.13 ±
+0.62 mg/L of 2-PE from glucose (b). In , shikimate
+pathway is consisted of seven enzymatic steps, which starts from precursors
+erythrose-4-phosphate (E4P) and phosphoenolpyruvate (PEP) and ends
+up with chorismate (). By overexpressing genes  (, encoding pentafunctional aromatic protein),  (, encoding bifunctional
+chorismate synthase),  (, encoding DAHP synthase),  (, encoding DAHP synthase), and  (, encoding DAHP synthase) in strain , we generated
+strains , , , , and  that were able to produce 2-PE
+with titers at 62.53 ± 1.28, 52.80 ± 2.18, 59.49 ±
+1.70, 54.71 ± 0.87, and 57.16 ± 2.64 mg/L (), respectively. Strains , , and  showed slight increase
+of 2-PE titer compared with strain . However, by simultaneous
+overexpression of genes  and , 2-PE production was increased to 84.64 ± 4.42 mg/L (strain ).
+Further overexpression of , , and  did not have a significant effect on
+2-PE titer (strain , 78.28 mg/L, ), which is possibly due to the allosteric
+regulation of DAHP synthase by aromatic amino acids, a common phenomenon
+in . Validating and relieving bottlenecks in
+the Ehrlich pathway for
+2-PE synthesis. (a) Enzyme cascade reactions of 2-PE production from
+chorismate. (b) Time profiles of 2-PE titer, cell growth, and phenylacetate
+titer of strains carrying the 2-PE pathway. All experiments were performed
+in triplicate and error bars represent standard deviations (SD). Relieving Metabolic
+Bottlenecks in the Shikimate Pathway Heterologous DAHP synthases
+scARO4 (originating from ), AroG, and AroG (originating from ) previously have been shown to be feedback-resistant
+of aromatic
+amino acids regulation. We next introduced
+three variants of the feedback-resistant DAHP synthases into the 2-PE
+chassis strain, and generated strains , , and . Shake flask cultivation of strains , , and  led to the
+production of 313.13 ± 10.16, 48.70 ± 5.92, and 430.11 ±
+33.05 mg/L of 2-PE (a,b), respectively. This result clearly demonstrates that
+overexpression of scARO4 and AroG are
+effective to remove the shikimate pathway bottleneck in . Likewise, the results indicated the importance of relieving allosteric
+regulation of DAHP synthase to increase carbon flux toward shikimate
+pathway. ylPAR4-ylARO10-ylARO7-ylPHA2-scARO7 On the other hand, we sought to
+eliminate the synthesis of aromatic
+amino acids byproducts, including phenylalanine, tryptophan, and tyrosine.
+For this purpose, five genes (c) were chosen as knockout targets, including  (, encoding prephenate
+dehydrogenase),  (, encoding anthranilate synthase),  (, encoding anthranilate synthase),  (, encoding aromatic amino acid aminotransferase),
+and  (, encoding
+aromatic amino acid aminotransferase). By sequentially deleting , , , , and  in strain
+po1fk (which is Ku70-deficient), we got strains  (auxotroph
+of tryptophan),  (auxotroph of tryptophan and tyrosine),
+and  (auxotroph of tryptophan, tyrosine and phenylalanine).
+Then the  2-PE pathway () was introduced into these auxotrophic
+strains (YL18, 19, and 20), leading to strains YL21, YL22, and YL23.
+In comparison to the parental strain  (87.63 ±
+4.67 mg/L of 2-PE titer), strains , , and  led to 2-PE production (d) increased by 2.65-fold (231.84
+± 1.46 mg/L), 3.49-fold (306.30 ± 43.57 mg/L), and 3.86-fold
+(338.35 ± 26.41 mg/L), respectively, despite that negative effect
+was observed in the cell growth. This result suggests that blocking
+of aromatic amino acids formation may further relieve allosteric regulation
+of DAHP synthase by -Phe, -Tyr, and -Trp, and simultaneously mitigate precursor competition. ylARO2-ylARO3-ylARO4-ylARO5-scARO4 ylPAR4-ylARO10-ylARO7-ylPHA2-scARO7 Taken
+together, we have proved that introduction of feedback-resistant
+heterologous DAHP synthases and blocking aromatic amino acids formation
+are both effective to debottlenecking the shikimate pathway in . We next combined these two strategies
+to boost the 2-PE yield. Genes encoding  and  were
+sequentially integrated at genome loci of  and , to generate the chassis strain . By expression of the 2-PE pathway () in strain , the
+engineered strain produced 508.58 ± 26.52 mg/L of 2-PE (strain , e), which was 1.18-fold, 1.50-fold, and 59.97-fold increase over
+the , , and the starting strain , respectively. On the other hand, the operation
+of shikimate pathway is driven
+by the upstream precursors erythrose-4-phosphate (E4P, that is derived
+from pentose phosphate pathway) and phosphoenolpyruvate (PEP, that
+is derived from glycolysis). To further unlock the shikimate pathway,
+we next turned to rewire the carbon flows in the central carbon metabolism
+to optimize the supply of both E4P and PEP. Relieving bottlenecks in shikimate pathway. (a) The shikimate pathway
+of . (b) Phenylacetate, 2-PE, and
+cell growth profile of strains coexpressing ylARO1, ylARO2, and the
+feedback-resistant DAHP synthases encoding genes. (c) Deletion of
+amino acids, including phenylalanine, tryptophan, and tyrosine in . (d) Phenylacetate, 2-PE, and cell growth
+profile of mutant strains deficient in phenylalanine, tryptophan,
+and tyrosine formation. (e) Phenylacetate, 2-PE, and cell growth profile
+of mutant strains (deficient in phenylalanine, tryptophan, and tyrosine
+formation) expressing the shikimate pathway. All experiments were
+performed in triplicate, and error bars represent standard deviations
+(SD). Removing Pentose Phosphate
+Pathway Bottleneck to Boost Precursor
+E4P http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00185/suppl_file/sb0c00185_si_001.pdf Metabolic flux analysis indicates that the available
+carbon flux toward E4P is as least 1 order of magnitude lower than
+the flux to PEP in yeast, which suggested
+the availability of E4P is the key step to maximizing flux to shikimate
+pathway. Overexpression of gene  (, encoding transketolase) improved 2-PE titer to 598.36 ± 0.46
+mg/L (strain , ), a 1.18-fold increase over the strain . This result indicates that the supply of E4P indeed was a bottleneck. ylPAR4-ylARO10-ylARO7-ylPHA2-scARO7 ylPAR4-ylARO10-ylARO7-ylPHA2-scARO7 ylPAR4-ylARO10-ylARO7-ylPHA2-scARO7 http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00185/suppl_file/sb0c00185_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00185/suppl_file/sb0c00185_si_001.pdf In the pentose phosphate pathway, phosphoketolase splits fructose-6-phosphate
+into E4P and acetyl-phosphate (a). In a recent
+study, overexpression of heterologous phosphoketolase BbxfpK from  led to a 5.4-fold increase of intracellular
+E4P concentration in . We therefore introduced the codon-optimized
+phosphoketolase BbxfpK and AcxpkA (originating from ) into our yeast chassis to generate strains  and , respectively. However, we observed
+declined 2-PE production () in both strains  (191.72 ± 7.97 mg/L
+of 2PE) and  (146.76 ± 9.64 mg/L of 2PE). As
+plasmids’ genetic instability (i.e., unequal distribution/propagation
+of plasmid) was observed in our previous research, we speculated that
+a similar effect was occurred in strains  and . To resolve this issue, linearized gene fragments (see ) containing pYLXP′-- and pYLXP′-- were integrated at the pBR docking site of strain , generating strains  and , respectively. As expected, shake flask cultivation of strains  and  led to a 133.64% (679.66 ±
+1.14 mg/L) and 139.33% (708.58 ± 56.52 mg/L) improvement in 2-PE
+titer (), compared
+to the parental strain . This result clearly demonstrates
+that manipulation of the phosphoketolase pathway is a feasible strategy
+to channeling carbon flux toward E4P. After this, we integrated genes , , and  at 26s rDNA site in strain  with the helper plasmid
+prDNAloxP--, obtaining
+strain . However, expression of the 2-PE pathway
+() in strain  gave almost same
+amount of 2-PE (strain , 719.67 ± 51.14 mg/L, b) compared to strain . We speculate that the engineered yeast chassis has sufficient
+E4P flux to maintain the shikimate pathway. Rewiring carbon distribution
+toward precursors E4P and PEP. (a)
+Phosphoketolases provide precursor E4P to drive shikimate pathway.
+(b) Time profiles of 2-PE, cell growth, and phenylacetate of strains
+with chromosomal integration of transketolase ylTKT, phosphoketolases
+BbxfpK, and AcxpkA at genomic 26s rDNA sites. (c) Time profile of
+2-PE, cell growth, and phenylacetate of strains with pyruvate kinase
+ylPYK deletion in YPD medium. (d) Time profiles of glucose consumption
+of strain YL35. (e) Improving 2-PE titer by feeding glucose and minimizing
+byproduct phenylacetate by deleting aldehyde dehydrogenase. All experiments
+were performed in triplicate, and error bars represent standard deviations
+(SD). Removing Glycolytic Pathway
+Bottleneck to Boost Precursor PEP ylPAR4-ylARO10-ylARO7-ylPHA2-scARO7 ylPAR4-ylARO10-ylARO7-ylPHA2-scARO7 ylPAR4-ylARO10-ylARO7-ylPHA2-scARO7 http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00185/suppl_file/sb0c00185_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00185/suppl_file/sb0c00185_si_001.pdf To shift the metabolic
+equilibrium and further improve carbon flux
+toward shikimate pathway, we moved to boost the precursor availability
+of PEP. A previous study found that blocking
+the reaction of PEP to pyruvate by deleting pyruvate kinase could
+dramatically increase the intracellular pools of PEP. To validate
+this strategy in , we attempted
+to delete pyruvate kinase encoding gene  (). Reports found that yeast with pyruvate kinase
+deficiency could not grow in the complete synthetic media (CSM) with
+glucose as sole carbon source. To successfully
+delete  () in YL31
+background chassis, we replenished 0.5 g/L of acetate in the selective
+CSM-plate (see ) to rescue
+the growth phenotype and obtained stain . However,
+strain  carrying the 2-PE pathway () showed a remarkable decrease in
+both biomass and 2-PE production in the synthetic minimal media, even
+with the feeding of acetate (stain , ).
+Interestingly, when the same strain () was cultivated
+in YPD medium with 5 g/L sodium acetate, we observed robust cell growth
+( can also grow in YPD medium without acetate, as
+shown in ). To this
+end, we integrated the 2-PE pathways () into chassis  and cultivated YL33 with YPD medium containing 5 g/L sodium acetate
+(YPA medium). The generated strain  significantly
+improved 2-PE production to 1572.70 ± 67.82 mg/L in YPA medium
+(c). The control
+strain  (integration of 2-PE pathway  in strain ) produced
+1252.41 ± 19.02 mg/L of 2-PE with YPA media under the same cultivation
+conditions. This result confirmed that blocking PEP consumption by
+deletion of  is a promising strategy for enlarging
+flux toward shikimate pathway. Interestingly, the highest 2-PE
+titer of strain  (1572.70 ± 67.82 mg/L) was
+obtained at 72 h, and subsequently, 2-PE was gradually oxidized to
+PEA (phenylacetic acid), which reached 1481.8 mg/L at 120 h (c). We speculate
+that the metabolic bottleneck may be shifted from E4P/PEP to NADH
+due to the exhaustion of glucose (d): the engineered cells need to oxidize
+2-PE to generate NADH and maintain metabolite homeostasis. To resolve
+this issue, feeding with 40 g/L of glucose effectively mitigated the
+synthesis of PEA (e). As a result, we obtained a final 2-PE titer at 2426.22
+± 48.33 mg/L (e). To further improve 2-PE titer, we next sought to eliminate
+byproducts formation in strain  by knocking out , , and  (encoding aldehyde dehydrogenases), resulting in strains  and . Deletion of genes  and  (strain ) did not significantly
+improve 2-PE production (2214.14 ± 26.48 mg/L, e), in addition, further deletion
+of gene  (strain ) led to a
+remarkable decrease in both cell growth and 2-PE production. This
+is possibly due to the reversibility of  that
+contributes to the reduction of PEA to 2-PE. In summary, we obtained the  platform strain  with optimized metabolic flux
+toward the shikimate pathway. This chassis strain was validated for  production of 2-PE at 2426.22 ± 48.33 mg/L
+(strain ), a 286-fold increase over the initial strain
+(8.48 ± 0.50 mg/L). This is the highest 2-PE titer from the  pathway reported to date. To demonstrate the utility
+of this 2-PE-producing platform, we turned to synthesize other aromatic-derived
+compounds, including -coumaric acid (the derivative
+of tyrosine), resveratrol (the derivatives of -coumaric
+acid), and violacein (the derivative of tryptophan) in the following
+section. Harnessing  chassis strain for -coumaric acid and violacein
+production. (a) The  pathway for -coumaric acid synthesis.
+(b) Phenylacetate, cell growth, -coumaric acid,
+2-PE, and glucose consumption profile of the engineered chassis from
+the  pathway. (c) Violacein biosynthetic pathway
+and yeast colonies with violacein accumulation. (d) Time profiles
+of violacein, deoxyviolacein, and glucose consumption of the violacein-producing
+strain. (e) Violacein cell culture harvested from synthetic minimal
+media (strain po0fkV) and YPD media (YL41). All experiments were performed
+in triplicate, and error bars represent standard deviations (SD). Extend the 2-PE Platform for Production of Aromatic Derivatives http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00185/suppl_file/sb0c00185_si_001.pdf In line with the optimization of 2-PE production, we decided to
+extend the yeast chassis to produce other aromatic derivatives, namely -coumaric acid and violacein. -Coumaric
+acid is the deamination product of tyrosine (a), which is the universal precursor in the
+synthesis of flavonoids, aromatic polyketides, and lignin polyphenols. By simply overexpressing a codon-optimized tyrosine ammonia lyase  (originating from ) and  (that
+has been deleted in the platform strain) in the yeast chassis , the resulting strain  produced 398.12
+± 29.39 mg/L of -coumaric acid with glucose
+supplementation (b). However, 994.02 ± 49.68 mg/L of 2-PE was detected, indicating
+a strong competing flux from the endogenous Ehrlich pathway. Thus,
+we next blocked 2-PE synthesis by deleting gene  (encoding prephenate dehydratase), the obtained strain  produced 593.53 ± 28.75 mg/L of -coumaric
+acid with yield at 7.42 ± 0.36 mg/g glucose (b), a 1.49-fold increase compared
+to the control strain. We further extend the -coumaric
+acid pathway for resveratrol synthesis by introducing genes  (4-coumarate-CoA ligase from ) and  (resveratrol synthase
+from ). Unexpected, only 12.67 (±2.23) mg/L of resveratrol was detected
+in shake flasks (), indicating the existence of other rate-limiting precursors such
+as malonyl-CoA in the chassis strain. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00185/suppl_file/sb0c00185_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00185/suppl_file/sb0c00185_si_001.pdf Violacein is a naturally
+occurring purple pigment with proven chemotherapeutic activity against
+tumors and cancers. Both violacein and its derivate
+deoxyviolacein have demonstrated a broad range of biological activities. By introducing violacein biosynthetic genes
+(VioA, VioB, VioC, VioD, and VioE, c), we previously obtained violacein production
+around 31 mg/L in . Surprisingly, overexpression of genes , , , , , , and  in
+strain  led to the accumulation of black pigment
+in the fermentation broth (). Violacein and deoxyviolacein reached 366.30 ± 28.99
+mg/L and 55.12 ± 2.81 mg/L (d), which were 2.88-fold and 2.51-fold increase
+over the control strain (, 126.99 ± 9.08 mg/L
+of violacein and 21.98 ± 3.75 mg/L of deoxyviolacein) and 5.23-fold
+and 10.44-fold higher than the production reported in our previous
+work. To further improve the violacein
+and deoxyviolacein production, we enhanced tryptophan availability
+by overexpressing genes , , , , and . However, no significant improvements of violacein (348.43 ±
+27.21 mg/L) and deoxyviolacein (58.21 ± 4.62 mg/L) titer were
+observed in strain , suggesting that the supply of
+tryptophan was sufficient in strain  and there might
+be other limiting steps in the violacein pathway. Besides, we also
+attempted to block the chorismite-competing pathway by deleting . No positive colonies were obtained in the background
+of strain  with several attempts, but  could be deleted in po1fk. The specific reason for our inability
+to delete  is not clear, which might be due
+to the metabolic burden of violacein accumulated in the cell negatively
+impacting cell fitness. However, the colonies with genome integration
+of violacein pathway (po0fkV) in YPD plate showed that use of the
+same promoters and terminators may lead to the occurrence of genetic
+instability: a minor fraction of the restreaked colonies lost the
+ability to produce violacein (). Thus, the frequency of using multiple identical promoters
+and terminators should be minimized when integrating several genes
+in one genome locus in . Interestingly, when the violacein-producing strain  was tested in the complete synthetic media (CSM-Leu), we obtained
+less than 50% (180 mg/L) of violacein, compared to the violacein production
+with YPD media (366.3 mg/L). We speculated that the presence of tryptophan
+in the CSM-leu media (consisting of 50 mg/L tryptophan) might feedback
+inhibit the expression of critical enzymes in the violacein biosynthetic
+pathway. Switching to a CSM-Leu media with reduced tryptophan (20
+mg/L) indeed improved violacein production to 271 mg/L, indicating
+the presence or buildup of tryptophan strongly represses the enzyme
+activity in the violacein pathway. The high violacein titer (366.3
+mg/L) obtained in the YPD media might be due to the slow release of
+tryptophan from yeast extract and peptone, which may not render feedback
+inhibition effect on the violacein biosynthetic pathway. While exact
+inhibition constants () of tryptophan
+to critical enzymes in the violacein biosynthetic pathway will be
+important for us to optimize amino acid composition in the CSM media,
+the use of chromosomally integrated strain cultivated in YPD media
+may bypass this feedback inhibition effect and improve aromatic compounds
+production. Additionally, future investigations of strains , , and  should be performed
+under
+fed-batch cultivation with benchtop bioreactors and pilot-scale tests
+to improve the titer, yield, and productivity of 2-PE, -coumaric acid, and violacein. Major bioprocess considerations should
+be targeted at optimizing the culture medium, relieving 2-PE toxicity
+and promoting cell fitness, as well as reducing the separation and
+purification cost for 2-PE, -coumaric acid, and
+violacein. Biphasic fermentation with end-product stripping might
+be an effective way to remove product inhibition. Considering that
+lignin is widely distributed in nature and it is made up with a variety
+of aromatic monomers, coculture of  with lignin-degradation microbes, including  and ., with
+solid-state or liquid cocultivation, might provide an attractive approach
+to valorize lignin and produce other complex aromatic derivatives. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00185/suppl_file/sb0c00185_si_001.pdf In summary, by circumventing the intrinsic limitations of the endogenous
+shikimate pathway, we successfully engineered an oleaginous yeast
+chassis that produces 2426.22 ± 48.33 mg/L of 2-PE, 593.53 ±
+28.75 mg/L of -coumaric acid, 366.30 ± 28.99
+mg/L of violacein, and 55.12 ± 2.81 mg/L of deoxyviolacein. To
+the best of our knowledge (), this result represents the highest 2-PE, violacein, and
+deoxyviolacein titer from the  shikimate pathway.
+This report highlights the prominent metabolic characteristics of  as chassis for production of various
+aromatic derivatives. is an oleaginous yeast with
+a superior metabolic capability to produce a large portfolio of fuels,
+oleochemicals, and natural products. In this work, we systematically
+overcame the rate-limiting steps of the endogenous shikimate pathway
+and built a sustainable biorefinery chassis strain for  synthesis of aromatics. We determined that relieving
+the feedback-inhibition of DAHP synthases is critical to channel flux
+to shikimate pathway. We also demonstrated that eliminating byproduct
+formation (-Phe, -Tyr, and -Trp) plays
+an important role in mitigating the feedback regulation of DAHP synthase.
+Overexpression of phosphoketolase and deletion of pyruvate kinase
+provided a sustained metabolic source for E4P and PEP, which forms
+the driving force to lead carbon flux through shikimate pathway. To
+demonstrate the utility of our engineered  chassis strain, three natural products, 2-PE, -coumaric acid, and violacein, which were respectively derived from
+phenylalanine, tyrosine, and tryptophan, were chosen to test the chassis
+performance. With the engineered chassis , we obtained 2426.22 ± 48.33 mg/L of 2-PE, 593.53 ± 28.75
+mg/L of -coumaric acid, 12.67 ± 2.23 mg/L of
+resveratrol, 366.30 ± 28.99 mg/L of violacein, and 55.12 ±
+2.81 mg/L of deoxyviolacein. These results highlight the metabolic
+versatility of , and the native
+shikimate pathway could be unlocked to produce a variety of aromatics
+and natural products with economic values. Strains,
+Plasmid, Primers, and Chemicals http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00185/suppl_file/sb0c00185_si_001.pdf All stains
+of engineered , including the genotypes,
+recombinant plasmids, and primers have been listed in . Chemicals used
+in this study were all purchased from Sigma-Aldrich. Codon-optimized
+heterologous synthetic genes, including genes , , , , and , were ordered from GENEWIZ (Suzhou,
+China). Codon-optimization was performed with the IDT Web site. For performing shake flask
+cultivations, seed culture was carried out in the shaking tube with
+2 mL seed culture medium at 30 °C and 250 r.p.m. for 48 h. Then,
+0.8 mL of seed culture was inoculated into the 250 mL flask containing
+30 mL of fermentation medium and grown under the conditions of 30
+°C and 250 r.p.m. for 120 h. One milliliter of cell suspension
+was sampled every 24 h for OD, glucose, and desired
+metabolism measurements. Seed culture medium used in this study
+included the yeast complete synthetic media regular media (CSM, containing
+glucose 20.0 g/L, yeast nitrogen base without ammonium sulfate 1.7
+g/L, ammonium sulfate 5.0 g/L, and CSM-Leu 0.74 g/L) and complex medium
+(YPD, containing glucose 20.0 g/L, yeast extract 10.0 g/L, and peptone
+20.0 g/L). Fermentation medium used in this study also included the
+yeast complete synthetic media regular media (CSM, containing glucose
+40.0 g/L, yeast nitrogen base without ammonium sulfate 1.7 g/L, ammonium
+sulfate 5.0 g/L, and CSM-Leu 0.74 g/L) and complex acetate medium
+(YPA, containing glucose 40.0 g/L, yeast extract 10.0 g/L, peptone
+20.0 g/L, and sodium acetate 5.0 g/L). Yeast Transformation and
+Screening of High-Producing Strains http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00185/suppl_file/sb0c00185_si_001.pdf The standard protocols
+of  transformation
+by the lithium acetate method were described as previously reported. In brief, one milliliter cells was harvested during the exponential
+growth phase (16–24 h) from 2 mL YPD medium (yeast extract
+10 g/L, peptone 20 g/L, and glucose 20 g/L) in the 14 mL shake tube,
+and washed twice with 100 mM phosphate buffer (pH 7.0). Then, cells
+were resuspended in 105 μL transformation solution, containing
+90 μL 50% PEG4000, 5 μL lithium acetate (2 M), 5 μL
+boiled single stand DNA (salmon sperm, denatured) and 5 μL DNA
+products (including 200–500 ng of plasmids, lined plasmids
+or DNA fragments), and incubated at 39 °C for 1 h, then spread
+on selected plates. It should be noted that the transformation mixtures
+needed to be vortexed for 15 s every 15 min during the process of
+39 °C incubation. The selected markers, including leucine, uracil,
+and hygromycin, were used in this study. All engineering strains after
+genetic manipulations were performed optimized screening by the shaking
+tube cultivations, and the optimal strain was used to perform shaking
+flask (these data have been shown in ). Single-Gene and Multigenes Expression Vectors
+Construction In this work, the YaliBrick plasmid pYLXP′
+was used as the
+expression vector. The process of plasmid
+constructions also has been reported. In brief, recombinant plasmids of pYLXP′- (a single gene) were built by Gibson Assembly of linearized pYLXP′
+(digested by  and I) and
+the appropriate PCR-amplified or synthetic DNA fragments. Multigenes
+expression plasmids were constructed based on restriction enzyme subcloning
+with the isocaudamers  and . All genes were respectively expressed by
+the TEF promoter with intron sequence and XPR2 terminator, and the
+modified DNA fragments and plasmids were sequenced by Quintarabio. A marker-free gene knockout method based
+on Cre- recombination system was used as previously
+reported. For performing gene knockout,
+the upstream and downstream sequences (both 1000 bp) flanking the
+deletion targets were PCR-amplified. These two fragments, the -- cassette
+(digested from plasmid pYLXP′-l by  and ), and the gel-purified
+plasmid backbone of pYLXP′ (linearized by  and ) were joined by Gibson Assembly, giving
+the knockout plasmids pYLXP′--- ( is the
+deletion target). Next, the knockout plasmids were sequence-verified
+by Quintarabio. Then, the gene knockout cassettes were PCR-amplified
+from the knockout plasmids pYLXP′---, and further transformed into . The positive transformants were determined
+by colony PCR. Ku70 (Po 1f background) was knocked out by screening
+more than 200 yeast colonies. Other knockout strains were built on
+top of the Ku70-deficient strains. Subsequently, plasmid pYLXP′- was introduced into the positive transformants and promoted
+the recombination of  sites, which recycle the
+selected marker. Finally, the intracellular plasmid pYLXP′- was evicted by incubation at 30 °C in YPD media
+for 48 h. Here,  is the uracil marker, and  is hygromycin marker. Specifically, for deletion of
+gene , final concentration of 0.5, 1, 1.5, 2,
+2.5, 5 g/L acetate was added into the selective CSM-Ura plate to rescue
+the cell growth. Besides integration of linearized plasmid, other
+genomic manipulations in platform strain , including
+gene knockout and integration of desired genes, hygromycin resistance
+gene was used as the selective marker grown on YPD plate containing
+200 mg/L hygromycin. Genomic Integration of Desired Genes http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00185/suppl_file/sb0c00185_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00185/suppl_file/sb0c00185_si_001.pdf In this work,
+genomic integration of desired genes were performed in two different
+ways: site-specific genomic integration plasmids or application of
+pBR docking platform by linearizing the plasmid pYLXP′ with
+digested enzyme . Here, to meet specific requirements,
+we constructed three genomic integration plasmids pURLK, pURLA, and
+pHyLD, corresponding to the ,  (encoding acetyl-CoA hydrolase, named as Ace), and  (encoding lactate dehydrogenase, named as LDH) genomic sites, respectively.
+The procedure of using these three plasmids was similar as that of
+gene knockout protocol. Plasmid maps and sequences for pURLK, pURLA,
+and pHyLD have been uploaded in the . Specifically, desired genes could be assembled
+into pURLX based on restriction enzyme subcloning by using the multiple
+cloning sites (see plasmid maps in  files),
+and the integration cassettes of desired genes were retrieved by digesting
+plasmid pURLX- with enzyme . Additionally, the standard protocol of 26s rDNA genomic integration
+by plasmid prDNAloxP was used in this work, with detailed protocol
+described in previous work. ylPAR4-ylARO10-ylARO7-ylPHA2-scARO7 ylPAR4-ylARO10-ylARO7-ylPHA2-scARO7 The
+application of pBR docking platform was achieved by linearizing the
+plasmid pYLXP′ with  restriction enzymes.
+It should be noted that plasmids pYLXP′- and pYLXP′- have more than 2  digestion sites, and thus,
+we performed site-directed mutagenesis to change the  site to  site in plasmid pYLXP′, generating
+plasmid pYLXPs′. Subsequently, gene fragments in pYLXPs′-, pYLXPs′- and its derivates were linearized
+by  digestion, and then the linearized fragments
+were integrated at genomic pBR docking site. Quantification of Biomass,
+Glucose, 2-PE, -Coumaric Acid, Resveratrol, Violacein,
+and Deoxyviolacein Cell densities were monitored by measuring
+the optical density at
+600 nm (OD). The concentrations of 2-PE, phenylacetate,
+glucose, -coumaric acid, resveratrol, violacein,
+and deoxyviolacein were all measured by high-performance liquid chromatography
+(HPLC) through Agilent HPLC 1220. In detail, 2-PE and penylacetate
+were measured at 215 nm under 40 °C (column oven temperature)
+with a mobile phase containing 50% (v/v) methanol in water at a flow
+rate of 0.5 mL/min equipped with a ZORBAX Eclipse Plus C18 column
+(4.6 × 100 mm, 3.5 μm, Agilent) and the VWD detector. The
+concentrations of glucose were measured by a Supelcogel Carbohydrate
+column (Sigma, USA) and a refractive index detector with HSO (5 mM) as the mobile phase at a flow rate of 0.6 mL/min
+at 40 °C. To quantify the concentration of -coumaric acid, 0.1 mL of fermentation culture was mixed with 9-fold
+volume of absolute methanol (100% v/v), vortexed thoroughly, and centrifuged
+at 12 000 r.p.m. for 10 min. The supernatants were analyzed
+at 304 nm under 40 °C (column oven temperature) with a mobile
+phase containing 45% (v/v) methanol in water at a flow rate of 0.5
+mL/min equipped with a ZORBAX Eclipse Plus C18 column (4.6 ×
+100 mm, 3.5 μm, Agilent) and the VWD detector. To quantify the
+concentration of resveratrol, 0.25 mL of fermentation culture was
+mixed with an equal volume of ethyl acetate and appropriate glass
+beads, vortexed at 30 °C for 24 h, and centrifuged at 12 000
+r.p.m. for 10 min. Then, 100 μL supernatants of top organic
+layer was transferred to glass vial and evaporated to dryness, then
+resolubilized with 100 μL of methanol. Resveratrol samples were
+analyzed with the same HPLC protocols as -coumaric
+acid. To quantify the concentration of violacein and deoxyviolacein,
+0.20 mL of fermentation culture was mixed with 5-fold volume of ethyl
+acetate and appropriate glass beads, vortexed at 30 °C for 24
+h, and centrifuged at 12 000 r.p.m. for 10 min. The supernatants
+of top organic layer were analyzed at 570 nm under 40 °C (column
+oven temperature) with a gradient method with two solvents, water
+(A) and methanol (B), at a flow rate of 0.4 mL/min equipped with a
+ZORBAX Eclipse Plus C18 column (4.6 × 100 mm, 3.5 μm, Agilent)
+and the VWD detector. The elution started with 100% of solvent A,
+the fraction of solvent A was decreased linearly from 100% to 20%
+(0–5 min), and maintained at 20% for 3 min (5–8 min),
+then the fraction of solvent A was increased from 20% to 100% (8–12
+min), and maintained at 100% for 1 min (12–13 min)..

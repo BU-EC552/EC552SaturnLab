@@ -1,0 +1,570 @@
+An established
+research practice
+used in synthetic biology is the transplantation of metabolic reactions
+from one species to another, with wide-ranging potential applications
+including metabolic gene therapy, production
+of crops without fertilizer, and more fundamental
+applications in research, such as optogenetics. The exquisite temporal
+and spatial precision achieved through optogenetics have been used
+to develop an assortment of powerful analytical tools to control biological
+functions such as gene expression, neural activity, cell signaling, secretion, peroxisomal trafficking, and protein activity. Metabolically engineering cells to endogenously produce specific
+chromophores enables many optogenetic applications, including genetically
+encoded systems for optical control of genes. Many of the systems used and characterized for these applications
+utilize proteins that require red and far-red responsive phytobilin
+chromophores like phycocyanobilin (PCB) and phytochromobilin (PΦB).
+These molecules originate from phytochrome systems in cyanobacteria,
+algae, and plants, but are not naturally made in many fungal species,
+bacteria, or animal cells. Production of these chromophores requires biliverdin
+IX-alpha (BV), a degradation product of heme, and the enzymes phycocyanobilin:ferredoxin
+oxidoreductase (PcyA) or phytochromobilin:ferredoxin oxidoreductase
+(HY2), respectively (A). Several groups produced PCB and
+PΦB in  by expressing PcyA or HY2
+along with heme oxygenase (HO1), without adding a ferredoxin (Fd)
+and ferredoxin-NADP-reductase (FNR) reduction system from
+the same species as the PcyA or HY2 enzymes. Likewise, Müller  tested PCB production
+in mammalian cells by expressing cyanobacterial PcyA and HO1 in the
+mitochondria but did not cointroduce a cyanobacterial Fd-FNR system. Müller  reasoned
+that localizing PcyA and HO1 in the same cellular compartment where
+the chromophore precursor (heme) is produced would enhance PCB production. However, in addition to heme, HO1, PcyA, and
+HY2 also depend on Fd activity, leaving open the possibility that
+Fd and not heme was limiting. Most cells already contain
+endogenous Fd; therefore, researchers
+have not typically considered it when transplanting enzymes from one
+species to another. However, Beale  and Frankenberg  demonstrated that Fd activity on PcyA from  sp. PCC 7120 varies greatly depending on the species
+Fd comes from. Similarly, mammalian Fds have
+also been shown to be highly specific to their target enzymes, suggesting
+that Fd and/or FNR may be limiting for chromophore production in mammalian
+cells. Consequently, to increase production of
+molecules like PCB for optogenetic uses in animal cells, we investigated
+the limiting factors for the PCB and PΦB production in mammalian
+cells. To evaluate the rate-limiting reactants for endogenous
+chromophore
+production, we systematically tested each component of the biosynthetic
+pathway, including Fd and FNR. We showed that Fd+FNR is the primary
+rate-limiting component, followed by heme. The increased PCB production
+found with the addition of Fd+FNR was further improved by testing
+different stoichiometric expression levels of each enzyme. Endogenous
+PCB production was greatly increased compared to previous approaches that did not consider metabolic engineering
+with Fd+FNR systems. To demonstrate the utility of increased
+chromophore production
+for optogenetic applications, we chose a PhyB-based optogenetic system,
+which utilizes PCB and has been used to control a wide array of biological
+processes. Since the light sensitivity of PhyB is proportional to
+the amount of chromophore in the cell, to apply PhyB optogenetic tools
+in transgenic animal models, it will be essential to genetically encode
+a high level of chromophore production. Able to produce significantly
+more chromophore than before, we fully
+genetically encoded the red/far-red PhyB-PIF3 two-hybrid gene switch
+for the first time. A genetically encoded PhyB-PIF3 system with
+PCB production is particularly
+significant because when bound to PhyB, chromophores such as PCB:
+(i) are extremely sensitive to light (high absorbance/extinction coefficient),
+(ii) have a long-lived activation state, ranging from tens of minutes
+to hours, (iii) are reversible upon illumination
+with a specific wavelength of far-red light, and (iv) respond to wavelengths optimal for tissue penetration.
+The reversibility of this system with far-red light allows for additional
+spatial control by enabling suppression of gene activity with far-red
+light in specific locations. After adapting
+the PhyB-PIF3 system from Shimizu Sato () for mammalian cells, we found that it can induce
+gene expression by several hundred fold, it is reversible with a stable
+“on state” in the order of hours, and it requires very
+low amounts of red light for maximum activation (calculated to be
+below the equivalent of 40 nW/cm of continuous light for
+full activation over 24 h). Since genetically encoding the system
+maintains a constant supply of chromophore, we were also able to find
+that the light intensity required for maximal gene activation depends
+on the duration of illumination. More generally than optogenetics,
+there are numerous biomolecules
+produced in bacteria and plants that are Fd-dependent. Matching the
+Fd species to a biosynthetic production pathway makes possible the
+metabolism of many other classes of molecules such as lipids, sterols,
+luciferins, quinones, carotenoids, nitrates/nitrogen, and sulfites
+not normally produced in those cells. Increasing production of these classes of molecules can improve
+agriculture, increase the production of pharmaceuticals, and enable
+other tools for synthetic biology. PCB and PφB production is limited by Fd+FNR
+in mammalian
+cells. (A) The metabolic pathway forPCB synthesis including the NADPH/FNR/Fd
+redox cascade (Heme: ChemSpider ID 4802, Bv: ChemSpider ID10628548,
+PCB: ChemSpider ID 16736730). (B) HEK293 cells were analyzed for phytobilin
+production using the plasmids shown. Phytobilin production was measured
+by covalent linkage to PhyB followed by immunoprecipitation with anti-HA,
+Zn-PAGE and Western blots. sPCYA and tPCYA produce PCB and aHY2 produces
+PΦB. Cells were either transfected with two ferredoxin-dependent
+enzymes (ho1 and pcyA or ho1 and HY2) alone (condition M2) or along
+with matching Fd+FNR (tpetF+tpetH) plasmids (condition M4). ho1 =
+heme oxygenase, pcyA = phycocyanobilin:ferredoxin oxidoreductase,
+HY2 = phytochromobilin:ferredoxin oxidoreductase, petF = ferredoxin,
+petH = ferredoxin:oxidoreductase/FNR, NE = No Enzymes, SYNP2 = Synechococcus
+PCC7002 and THEEB = , ARATH = , MTS = Mitochondrial
+Targeting Sequence, P2A = 2A self-cleaving peptide, IRES = Internal
+Ribosome Entry Site, NLS = Nuclear Localization Sequence, DBD = DNA
+Binding Domain. Regulation
+of PCB Production in Mammalian Cells by Fd, FNR,
+and Heme http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00413/suppl_file/sb7b00413_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00413/suppl_file/sb7b00413_si_001.pdf Given that previous studies have shown that PCB
+production can be limited by heme, Fd or FNR, we tested limiting factors of PCB production in mammalian cells
+using combinations of these components in excess. Zinc-PAGE PhyB immunoprecipitation
+assays in Human Embryonic Kidney (HEK293) cells were used to test
+PCB production with metabolic enzymes from two species:  (SYNP2/sPcyA) or  (THEEB/tPcyA). We tested PCB production under two
+conditions, either mitochondrial-HO1+PcyA () or mitochondrial-HO1+PcyA+Fd+FNR
+(), (B). When either species of HO1+PcyA enzymes were expressed,
+we detected low levels of PCB (B, ). However, when all four enzymes
+HO1+PcyA+Fd+FNR () were expressed, we observed a striking
+increase in PCB levels (B), which agrees with recent findings from Uda () To exclude the possibility
+that this was specific to cyanobacterial enzymes, we also produced
+the plant chromophore PΦB, by replacing the cyanobacterial PcyA
+with a plant homologue  HY2. PcyA and
+HY2 showed the same Fd+FNR dependence (B, ). It is noteworthy that the Fd+FNR-dependent
+increase in PΦB production was still observed when plant HY2
+was used along with cyanobacterial HO1/Fd/FNR. We chose SYNP2 Fd+FNR
+for recycling HY2 because SYNP2 Fd was more similar than THEEB Fd
+in amino acid sequence identity to  Fds
+and specifically the major ferredoxin that recycles HY2 in  (). However, PΦB production may be further
+increased by employing  Fd+FNR enzymes.
+It may be possible to predict compatibility of a transplanted ferredoxin-dependent
+pathway to the host cells Fd based on sequence similarity as shown
+in . These findings show that excess
+Fd+FNR activity can increase PCB or PΦB production in mammalian
+cells (B). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00413/suppl_file/sb7b00413_si_001.pdf Next, we delineated the limiting factors for the endogenous production
+of chromophores in mammalian cells. We decided to test PCB production
+in both the cytoplasm and mitochondria because the endogenous ferredoxin
+system of mammalian cells is localized in the mitochondria; therefore,
+we considered the cytoplasmic enzyme localization as a condition with
+negligible endogenous Fd+FNR activity. We show in A that expression of cytoplasmic-PcyA+HO1
+() is not sufficient to produce significant levels
+of PCB (lane 3  lane 2). When cytoplasmic-PcyA+HO1
+was cotransfected along with cytoplasmic Fd+FNR ()
+higher, but statistically nonsignificant levels of PCB were detected
+(lane 3  4,  > 0.05). Similarly,
+when PcyA+HO1 were localized to the mitochondria (),
+very low levels of PCB were detected (lane 5). However, when PcyA+HO1
+and Fd+FNR were all localized to the mitochondria (), PCB production was significantly increased when compared to PcyA+HO1
+only () (lane 5  6,  < 0.001). These findings were corroborated by imaging PhyB-bound
+PCB using the Cy-5 channel (blue) (). These results demonstrate that the Fd+FNR system is the primary
+limiting factor of the PCB production pathway in mammalian mitochondria,
+but it is not sufficient for high levels of PCB production when expressed
+in the cytoplasm. Since heme is a metabolic precursor in the PCB
+production pathway,
+we systematically tested if it was limiting for PCB production in
+either the cytoplasm or in the mitochondria. We hypothesized that
+if heme was a limiting factor for PCB production in the cytoplasm,
+then the addition of excess heme would increase production. While
+a faint band was visible in +heme (A lane 9), it was indistinguishable
+from cells transfected with PhyB and no enzymes and given excess heme
+(A lane 8).
+However, excess heme significantly increased levels of PCB production
+in the  condition (lanes 4 and 10,  < 0.01). In addition, we found that Fd+FNR was limiting when
+comparing +heme to +heme (lanes 9 and
+10,  < 0.01). This demonstrates that heme is
+the limiting factor for PCB production when an excess of Fd+FNR is
+present in the cytoplasm. Importantly, PCB production was not influenced
+by excess heme when enzymes were localized to the mitochondria (–heme and +heme, lanes 6 and 12).
+This confirms that Fd+FNR is primarily limiting in both the cytoplasm
+and the mitochondria and that heme is secondarily limiting only in
+the cytoplasm. To further investigate the PCB production dependence
+on Fd, we
+transfected cells with two, three or all four enzymes in the pathway:
+PcyA-HO1 (), PcyA+HO1+Fd (), or PcyA+HO1+Fd+FNR
+(), along with PhyB for all conditions (B). We show in B that the addition of Fd to
+PcyA+HO1 () significantly increased PCB production
+compared to PcyA+HO1 alone () ( <
+0.05). Importantly, Fd+FNR () produces significantly
+more PCB than adding Fd alone ( < 0.01), demonstrating
+that for maximum PCB production both Fd and FNR are required. While we considered testing the overexpression of the host cell’s
+Fd+FNR, there are noteworthy advantages to using orthogonal Fd+FNR
+matching the species of the transplanted metabolic pathway. The mammalian
+Fd+FNR may be able to reduce BV bound to PcyA but only at a fraction
+of the rate of the cyanobacterial Fd+FNR. The required overexpression
+needed for the host cell’s system to perform at the same production
+rate would therefore more likely disturb the cell’s metabolism.
+Using an orthogonal system would be more efficient and would also
+less likely interact with the host cell’s metabolic proteins.
+Matching the orthogonal enzyme species thus allows for minimal perturbation
+of the normal host cell physiology and at the same time maximize production
+rates. Order of rate limiting factors of PCB production in mammalian
+cells.
+(A,B) HEK293 cells were analyzed for PCB production using the plasmids
+shown. PCB production was measured by covalent linkage to PhyB followed
+by immunoprecipitation with anti-HA, Zn-PAGE and Western blots. (A)
+PCB production was compared with excess (+heme) and without (−heme),
+using the cytoplasmic expression of pcyA+ho1 alone (condition C2)
+or with cytoplasmic pcyA+ho1+fd+fnr (condition C4); mitochondrial
+expression of pcyA+ho1 alone (condition M2) or with mitochondrial
+pcyA+ho1+fd+fnr (condition M4) ( = 4). (B) Cells
+were either transfected with two ferredoxin-dependent enzymes alone,
+ho1 and pcyA (condition M2), or along with a matching fd:tpetF (condition
+M3) or along with matching fd+fnr:tpetF + tpetH (condition M4) ( = 4). ho1 = heme oxygenase, pcyA = phycocyanobilin:ferredoxin
+oxidoreductase, HY2 = phytochromobilin:ferredoxin oxidoreductase,
+petF = ferredoxin/fd, petH = ferredoxin:oxidoreductase/fnr, NE = No
+Enzymes, SYNP2 = Synechococcus PCC7002 and THEEB = , ARATH= ,
+IRES = Internal Ribosome Entry Site, NLS = Nuclear Localization Sequence,
+MTS = Mitochondrial Targeting Sequence, P2A = 2A self-cleaving peptide,
+DBD = DNA Binding Domain. One-way ANOVA with Bonferroni post-test
+was used to calculate  values using GraphPad Prism
+5.01. (*) =  < 0.05, (**) =  < 0.01, (***) =  < 0.001. Error bars = Standard
+Deviation.  = independent experiments. Effects of PcyA, HO1 and Fd+FNR Stoichiometry on PCB Production
+Levels http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00413/suppl_file/sb7b00413_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00413/suppl_file/sb7b00413_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00413/suppl_file/sb7b00413_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00413/suppl_file/sb7b00413_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00413/suppl_file/sb7b00413_si_001.pdf Okada () demonstrated that Fd forms stable complexes with both HO1 and PcyA.
+Therefore, we hypothesized that PCB production may be further optimized
+through enzyme stoichiometry. We transfected separate PcyA+HO1 and
+Fd+FNR plasmids at different ratios and observed that PCB production
+was highly dependent on the ratio between PcyA+HO1 and Fd+FNR (A). Considering this,
+to serve as a quantitative guide for optimizing PCB production, we
+developed computational models of this pathway using coupled ordinary
+differential equations (model details in ). We tested the enzyme stoichiometry using a functional
+PhyB-PIF3 luciferase gene expression system adapted from Shimizu Sato () (B). First, we used optimized versions of
+the PhyB-PIF3 switch, including optimizing DNA binding domains (), activation domains (), and reporter constructs (). Next, the stoichiometry was tested by transfecting different
+ratios of the PcyA+HO1 and Fd+FNR plasmids and illuminating the cells
+with red light for 24 h (timeline of illumination as shown in ), followed by a luciferase assay to
+compare gene induction levels. We found that gene activation levels
+were also highly dependent on enzyme stoichiometry, with only the
+17:1 PcyA+HO1:Fd+FNR showing any measurable response to light (C and D,  < 0.01). This demonstrates how chromophore
+levels influence the performance of PhyB optogenetic systems. Stoichiometry
+of PCB production constructs. (A) PCB production
+assay comparing plasmid ratios of pcyA+ho1 to fd+fnr using the plasmids
+shown. Transfection ratios are indicated in boxes below the Western
+blot. PCB production was measured by covalent linkage to PhyB followed
+by immunoprecipitation with anti-HA, Zn-PAGE and Western blots. (B)
+Schematic of the PhyB-PIF3 light switch. PhyB is fused to a DNA Binding
+Domain (DBD) and bound to a light-sensitive chromophore (PCB). The
+PhyB-DBD fusion remains bound to the UAS promoter. PIF3 is fused to
+an Activation Domain (AD). Upon absorption of a red photon (660 nm),
+PhyB changes conformation and recruits PIF3 to the promoter region.
+The AD fused to PIF3 then activates the gene downstream of the promoter.
+Upon absorption of a far-red photon (735 nm), PhyB changes conformation
+that leads to PIF3 unbinding, removing the AD from the promoter, shutting
+the downstream gene off. (C) Plasmid maps for endogenous PCB production
+and PhyB-PIF3 light switchable promoter. (D) Luciferase gene activation
+levels using endogenously produced PCB with several ratios of pcyA+ho1:petF+petH
+( = 3). (E) Three construct designs consisting of
+all four biosynthetic enzymes on a single plasmid and a single plasmid
+for PIF3 and PhyB. (F) Testing gene activation comparing single plasmid
+biosynthetic plasmids ( = 7). ho1 = heme oxygenase,
+pcyA = Phycocyanobilin:ferredoxin oxidoreductase, petF = ferredoxin,
+petH = ferredoxin:oxidoreductase/FNR, MTS = Mitochondrial Targeting
+Sequence, P2A = 2A self-cleaving peptide, NLS = Nuclear Localization
+Sequence, IRES = Internal Ribosome Entry Site, AD = Activation Domain,
+DBD = DNA Binding Domain, R/FR = Red light/Far-red light. Error bars
+= Standard Deviation, (*) =  < 0.05, (**) =  < 0.01. Statistics were calculated using one-way ANOVA
+with Bonferroni post-test using GraphPad Prism 5.01.  = individual experiments. Mammalian PhyB-PIF Gene Switch Using Endogenously Produced PCB http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00413/suppl_file/sb7b00413_si_001.pdf After identifying the requirements for high levels of endogenous
+PCB production, we sought to encode all four biosynthetic enzymes
+on a single plasmid. Our original four enzyme plasmid (pPKm-245) contained
+all PCB biosynthetic enzymes separated by P2A sequences to achieve
+a 1:1:1:1 expression level of each enzyme. However, the results in A–D suggested that PCB production could be further
+optimized by modifying the plasmid’s expression stoichiometry.
+To this end, we replaced one of the P2A sequences with an Internal
+Ribosomal Entry Site (IRES), which typically gives 1 order of magnitude
+lower expression to the gene following the IRES sequence. The plasmid pPKm-244 was generated by placing an IRES between  and , leading to higher PcyA-HO1
+levels and lower Fd+FNR levels (E). We also constructed a plasmid, pPKm-248, containing , , and  all placed
+after the IRES sequence. This plasmid results in minimized heme oxygenase
+and Fd+FNR activity while keeping higher levels of PcyA (E). Using the experiment
+timeline in , we found that lowering
+HO1 and Fd+FNR levels with the pPKm-248 plasmid produced 1.8-fold
+( < 0.05) and 2.2-fold ( <
+0.01) higher gene activation levels than pPKm-244 and pPKm-245 respectively
+(F). In addition
+to producing more PCB, lower expression of HO1, Fd and FNR should
+provide maximal PCB levels with minimal interference in the host cells
+metabolism. Light Sensitivity of the Mammalian PhyB-PIF3
+Gene Switch Using
+Endogenously Produced PCB PhyB-PIF optogenetic systems in
+animal cells have mostly been characterized in conditions where PCB
+is added externally. However, PCB degrades rapidly in cell culture
+media, which affects PhyB’s light
+sensitivity over long time spans. Since
+our constructs enable constant endogenous production of PCB, we sought
+to test the light sensitivity of the PhyB-PIF3 switch (pPKm-230) with
+the endogenously produced chromophore. We illuminated transfected
+cells with the activating red light, at different intensities for
+24 h, and found that light intensities of 1.00 μmol/m/s, 0.1 μmol/m/s, and 0.01 μmol/m/s achieved similar high levels of gene activation (B and D). In contrast, transfected cells illuminated with a light intensity
+of 0.001 μmol/m/s had a significantly lower gene
+response ( < 0.05). Since the system is bistable, we reasoned that activating with intensities
+between 1.0 and 0.01 μmol/m/s, which activate the
+system over a long time span (24 h), may not represent saturating
+amounts of light for shorter illumination times. To test this hypothesis, we characterized the gene switch
+using these same light intensities, but with a single 1 min pulse
+of red light (C and E). Unlike the 24-h illumination experiment,
+we found that when we illuminated the cells with red light for 1 min,
+light intensities of 0.1 μmol/m/s and 0.01 μmol/m/s had a significantly lower gene response than an intensity
+of 1.0 μmol/m/s ( < 0.001).
+This finding highlight that for characterizing these light responsive
+bistable proteins, we should consider both the light intensity and
+duration of illumination. For example, our results using 0.1 μmol/m/s and 0.01 μmol/m/s show that those intensities
+are not saturating with a 1 min pulse, but those same intensities
+induce saturating activation levels over 24 h (D and E). This is
+expected from a system that is bistable with a long-lived activation
+state, inactive molecules not activated
+in the first minute will be activated later if light is continuously
+applied, eventually activating all of the light-sensitive molecules. Light
+sensitivity of the genetically encoded PhyB-PIF3 switch.
+(A) Plasmids optimized for an endogenous PhyB-PIF3 light switchable
+promoter. (B) Pulsing program for 24-h illumination experiments. (C)
+Pulsing program for 1 min illumination experiments. (D) Gene response
+to a 24-h pulse with several light intensities ( = 4). (E) Gene response to a 1 min pulse with several light intensities
+( = 4). (F) Gene activation responses using 1 μmol/m/sec or 0.1 μmol/m/sec of continuous light
+compared with using 0.1 μmol light at different pulse intervals
+for 24 h ( = 3). The blue stars indicate the
+minimal light dose for saturating activation using 24-h illuminations.
+(G) Pulsing program for testing the duration of activation. Pulsing
+was done as in B. (H) Gene response to pulsing at increasing intervals.
+Cells were pulsed for 1 min using 1 μmol/m/sec 660
+nm light, followed by darkness for the indicated times for a total
+of 24 h ( = 5). The blue arrows indicate the minimal
+light dose for saturating activation using 24 h illuminations. (I)
+Total light flux during 24 h period of illumination for experiments
+in D and H. Cont. = continuous
+illumination, 1 min/4 min = 1 min red light, 4 min darkness, 1 min/9
+min = 1 min red light, 9 min darkness, 1 min/29 min = 1 min red light,
+29 min darkness. ho1 = heme oxygenase, pcyA = Phycocyanobilin:ferredoxin
+oxidoreductase, petF = ferredoxin, petH = ferredoxin:oxidoreductase/FNR
+IRES = Internal Ribosome Entry Site, MTS = Mitochondrial Targeting
+Sequence, NLS = Nuclear Localization Sequence, P2A = 2A self-cleaving
+peptide, AD = Activation Domain, DBD = DNA Binding Domain, R/FR =
+Red light/Far-red light. Error bars = Standard Deviation, (*) =  < 0.05, (***) =  < 0.001. Statistics
+were calculated using one-way ANOVA with Bonferroni post-test using
+GraphPad Prism 5.01.  = individual experiments. Endogenous Mammalian PhyB-PIF3
+Gene Switch Bistability and Reversibility
+with Far-Red Light We further tested the light sensitivity
+and bistability by shining activating red light at different pulse
+intervals (F). As controls, we illuminated HEK293 cells with continuous 1.0
+μmol/m/s or 0.1 μmol/m/s red light
+for 24 h and found they reach similar levels of gene activation. In
+addition to continuous illumination, we utilized alternating light/dark
+cycles composed of 1 min of red light and 4, 9, or 29 min of darkness
+(1 min/4 min, 1 min/9 min, 1 min/29 min respectively) for 24 h. Continuous
+red light at 0.1 μmol/m/s, as well as the 1 min/4
+min and 1 min/9 min conditions, did not produce statistically different
+activation levels (F). In contrast, the condition with 0.1 μmol/m/s of red light pulsed at 1 min/29 min had significantly lower activation
+levels than continuous light and pulsed light in the 1 min/4 min and
+1 min/9 min conditions (F,  < 0.05). Because the 1 min/9 min
+(blue star) condition has one-tenth the number of photons as 0.1 μmol/m/s in total photon flux, it is equivalent in the number of
+photons to 0.01 μmol/m/s of continuous illumination
+or 183 nW/cm for 660 nm red light. This agrees with the
+result where the same total amount of light is applied continuously,
+suggesting that the activation state of PhyB is much longer than the
+9 min dark interval (D and F). Interestingly, we
+also found that cells containing the PhyB-PIF3 system had a slightly
+higher level of gene activation in the darkness than cells in the
+presence of far-red light, potentially due to the bistability of the
+protein (F).
+Thermodynamically, in darkness, a mixed population of species (Pf
+and Pfr forms) is the expected nature of a bistable molecule, since
+some PhyB molecules can spontaneously switch to the “activated
+state”. Therefore, the proportion of activated PhyB molecules
+should be higher in darkness than when PhyB is illuminated with a
+deactivating far-red light. Since pulsing the light on a minute
+time scale achieved similar
+levels of activation as continuous light (F), we decided to test the duration of the
+activated state of PCB bound PhyB (PhyB·PCB) by increasing the
+spacing between red light pulses as shown in G. Our results show similar levels of gene
+activation for red light pulses delivered for 1 min every 8, 6, 4,
+2, 1 h, and a half hour at 1 μmol/m/s (H). However, a pulse
+delivered every 12 h (a total of two pulses in the 24 h period) produced
+significantly lower gene activation than the pulses delivered in the
+shorter intervals (H). It is possible that those two pulses in the 24-h period
+delivered too little total amount of light to fully activate the system
+(I). However,
+this data still supports that the switch effectively stays “on”
+for at least 8 h following a 1 min pulse of 1 μmol/m/s of red light (H, blue arrow). In terms of total light delivery (μmol/m), the 1 min pulses every 8 h using 1.0 μmol/m/s is effectively equivalent to the number of photons with continuous
+light at 0.0021 μmol/m/s or 38nW/cm for
+660 nm light, which is a strikingly small amount of light and speaks
+to the high sensitivity of this system. One hallmark of PhyB
+based optogenetic switches is their conformational
+reversibility upon absorption of another photon of a different wavelength. While the ability for PCB bound PhyB (PhyB·PCB)
+to isomerize upon red light absorption and reverse upon far-red light
+absorption has been previously shown, whether
+the PhyB(1–621)-DBD and PIF3(1–524)-AD interaction was
+reversible by far-red light when expressed in mammalian cells has
+not been tested. To test the reversibility of
+the switch, we exposed HEK293 cells, transfected with the PhyB-PIF3
+switch and endogenously producing PCB constructs (A), to either 24 h of red light,
+12 h of red light followed by 12 h of darkness, or 12 h of red light
+followed by 12 h of far-red light (B). Luciferase expression was significantly
+lower in cells shifted into darkness after 12 h of continuous red
+light than cells exposed to 24 h of light ( <
+0.05), indicating PhyB reversed to its inactive state once red-light
+illumination ended. Compared to switching from red light to darkness,
+switching from red to far-red light showed significantly lower luciferase
+expression, indicating that the far-red light inactivated the gene
+switch (red box,  < 0.05). This result indicates
+that after red light activation, the switch remains on for some time
+in the darkness and that it can be switched off with far-red light.
+This finding has important implications for the switch’s ability
+to control genes since it shows that the gene expression levels can
+be titrated temporally by timing the duration of red light or by red
+light followed by far-red light. Thus, this system can be used for
+spatial control by patterning red and far-red light for targeted localization
+of gene activation. PhyB-PIF3 light switch
+bistability and reversibility with far-red
+light and performance in several cell types. (A) Plasmids optimized
+for an endogenous PhyB-PIF3 light switchable promoter. (B) Testing
+the reversibility of the PhyB-PIF3 light-switchable promoter in mammalian
+cells. Cells were in darkness, illuminated with 735 nm far-red light,
+660 nm red light for 24 h, or with 12 h or red light followed by darkness
+or followed by far-red light ( = 3). (C) Testing
+the PhyB-PIF3 light switch in four different cell types. Cells were
+transfected, then illuminated with red light for 24 h as shown in C ( = 4). ho1 = heme oxygenase, pcyA = phycocyanobilin:ferredoxin oxidoreductase,
+petF = ferredoxin, petH = ferredoxin:oxidoreductase/fnr, IRES = Internal
+Ribosome Entry Site, MTS = Mitochondrial Targeting Sequence, NLS =
+Nuclear Localization Sequence, P2A = 2A self-cleaving peptide, AD
+= Activation Domain, DBD = DNA Binding Domain, R/FR = Red light/Far-red
+light. Error bars = s.d., (*) =  < 0.05, Statistics
+were calculated using one-way ANOVA with Bonferroni post-test using
+GraphPad Prism 5.01.  = individual experiments. Genetically Encoded PhyB-PIF3
+Gene Switch in Several Mammalian
+Cell Lines http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00413/suppl_file/sb7b00413_si_001.pdf We also tested the PhyB-PIF3 gene switch performance
+in different cell types containing endogenously produced PCB. We transfected
+HEK293, hepatocellular carcinoma (HUH-7), HeLa, and mouse fibroblasts
+(3T3) cells with the PhyB-PIF3 gene switch and HO1+PcyA+Fd+FNR plasmids
+(pPKm-230 and pPKm-248, respectively). We used 1 μmol/m/s of red light illumination in a cycle composed of 1 min
+pulses of red light followed by 4 min of darkness, for a duration
+of 24 h (C).
+The PhyB-PIF3 switch with endogenously produced PCB activated luciferase
+about 280-fold in HEK293 cells, 70-fold in HUH-7 cells, 300-fold in
+HeLa cells and 440-fold in 3T3 cells. These findings show that the
+system is effective in producing PCB and activating different mammalian
+cell types. While we have highly optimized the PhyB-PIF3 light switch
+with endogenously produced PCB, there are several ways to customize
+the levels of activation or leakiness to tailor it to specific cell
+types and applications. For example, different activation or repression
+domains could be used (). In addition,
+there are still other permutations of gene fusions that can be tested
+in future studies that may further enhance this system, such as using
+a DBD on the N-terminus of PhyB or optimizing linker sequences. Using
+a stronger or tissue-specific promoter to drive expression of PCB
+or PΦB biosynthetic enzymes may also lead to higher activation
+levels or can restrict light sensitivity to specific cell types. As presented in this research, using wavelengths
+that are optimal for tissue penetration, the PhyB(1–621)-PIF3 gene switch with endogenously produced
+PCB is among the most light-sensitive optogenetic switches. We have shown that the Fd+FNR system is the rate-limiting factor
+for the production of the chromophores PCB and PΦB in the mitochondria
+of mammalian cells, and is limited by the Fd+FNR system followed by
+heme in the cytoplasm. The ability to produce PCB and PΦB with
+PcyA and HY2, respectively, suggests that matching reduction systems
+that efficiently supply electrons to a metabolic pathway can also
+enhance the production of other bilins and other classes of molecules.
+This finding creates new opportunities for engineering synthetic systems
+to produce these chromophores, along with many other molecules. This
+has potential industrial applications in decreasing costs of crop
+production, producing plant molecules in microbes, or delivering therapeutic
+molecules  genetically encoded pathways. Genetically encoding endogenous production of chromophores like
+PCB also enables the use of several existing and compatible optogenetic
+tools to regulate cell signaling, cell migration, or protein localization without the addition of exogenous chemicals. This makes possible
+the use of PhyB when constant levels of PCB are required, facilitating
+potential  applications, or when the addition
+of PCB to samples is not practical (such as when samples are in a
+sealed container or for long illumination times). This study achieves
+the long-sought goals in optogenetics of enabling high-level production
+of the chromophores PCB and PΦB in mammalian cells and demonstrates
+a more general method for efficiently producing molecules from one
+species in another. Zinc-PAGE-Immunoprecipitation
+Assays Protein G PLUS-Agarose
+(ThermoFisher, 22851) beads were prepared by adding 200 μg anti-HA
+(clone HA-7, Sigma H9658) into 2 mL 25% agarose. After overnight binding
+at 4 °C, unbound anti-HA was washed off four times with 1×
+Phosphate-buffered Saline (PBS, pH 7.4, ThermoFisher, 10010023). For
+each 6-well plate, 500 000 HEK293 cells (ATCC, CRL-1573) were
+transfected using 2.5 μg DNA and 6 μL of Lipofectamine
+2000 per well (ThermoFisher Scientific, 11668019). For heme experiments,
+media or media containing 10 μM heme (Frontier Scientific, H651–9),
+was exchanged 18 h after transfection and again 43 h after transfection.
+Heme was dissolved at 10 mM in 100 mM NaOH and sterile filtered with
+a 0.22 μM filter (Millipore, SLGP033RS). Cells were then harvested
+with RIPA buffer (1% Triton X-100, 0.5% Sodium Deoxycholate, 25 mM
+Tris pH 8.0, 150 mM NaCl, 0.10% SDS and 2.5 mM EDTA, and 2× protease
+inhibitors (Sigma, P8340–1 ML)), immediately placed on ice,
+sonicated briefly and then centrifuged for 30 min at 21 000. BCA assays (ThermoFisher Scientific, 23225) were used
+to determine the protein concentration of resulting supernatant/lysates.
+Equal masses for each protein sample were diluted with two parts of
+cold PBS, then loaded onto Protein G PLUS-Agarose beads containing
+anti-HA (preparation above), for overnight binding while mixing at
+4 °C. Next beads were washed and boiled in sample buffer (30%
+glycerol, 10% SDS, 300 mM Tris pH 6.8, 0.03% Bromophenol Blue, 179
+mM 2-Mercaptoethanol). After loading and running the samples in a
+SDS-PAGE gel, the gels were incubated in SDS-PAGE Running Buffer (25
+mM Tris, 192 mM glycine, 0.1% SDS) containing 10 mM Zinc Acetate for
+10 min prior to imaging in a Fluorochem E (Protein Simple). Gels were
+then transferred onto nitrocellulose and probed with the primary antibody
+anti-HA 1:5000 (Sigma, clone HA-7, H9658), and by Goat anti-Mouse
+secondary antibody 1:5000 (ThermoFisher, 32230). Western blots were
+imaged in a Fluorochem E (Protein Simple). Gel bands were quantified
+using the FIJI (ImageJ) gel analysis tool. HEK293 cells (ATCC, CRL-1573),
+plated at 100 000 cells per well in a 24-well plate, were transfected
+24 h after plating on polylysine (Sigma P6407–5 mg) coated
+coverslips in each well. 43 h later, the media was exchanged with
+fresh media or media+5 μM PCB (Frontier Scientific, P14137)
+for the NE+PCB control. One hour later, cells were rinsed in 1×
+PBS and then fixed in 4% Paraformaldehyde in 1× PBS for 10 min.
+Cells were then washed with 1× PBS before incubating in permeabilization
+buffer (5% BSA + 0.3% TritonX-100 in PBS) for 30 min, followed by
+incubating with primary antibodies, anti-FLAG mouse monoclonal 1:1000
+(Sigma, F3165) and polyclonal anti-HA rabbit 1:500 (Santa Cruz, Y-11)
+in antibody buffer (2% BSA + 0.2% TritonX-100 in PBS) at 4 °C
+overnight. Next coverslips were rinsed twice and washed three times
+in 1× PBS and then incubated in antibody buffer containing goat
+anti-mouse AlexaFluor 488 1:1000 (ThermoFisher, A11001), and goat
+anti-rabbit AlexaFluor 568 1:1000 (ThermoFisher, A11011). Coverslips
+were rinsed and washed again, then mounted with Fluoromount-G (SouthernBiotech,
+0100–20). Images were taken using a DeltaVision RT Deconvolution
+Microscope. Cell Culture, Transfection, Light Induction
+and Reporter Gene
+Assays http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00413/suppl_file/sb7b00413_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00413/suppl_file/sb7b00413_si_001.pdf Human Embryonic Kidney 293 cells (HEK293, ATCC CRL-1573)
+were cultivated in Dulbecco’s Modified Eagle Medium (DMEM,
+Gibco, 11965–092) supplemented with 10% fetal bovine serum
+(FBS, Omega Scientific, FB-02) and 100 U/mL of penicillin and 0.1
+mg/mL of streptomycin (Gibco, 11548876). All cells were cultured under
+5% CO at 37 °C. Cells were seeded at 100 000
+HEK293 cells per well in 24-well plates, 24 h before transfection.
+Transfection of plasmids was achieved through lipofection following
+the manufacturer’s instructions and protocol (Lipofectamine
+2000, ThermoFisher, 11668019). For each transfection reaction, a total
+of 0.5 μg of plasmid DNA was combined with specific plasmid
+ratios for each experiment as detailed in . A construct with Renilla luciferase reporter plasmid DNA
+was included as an internal transfection control in all transfections.
+The culture medium was replaced with fresh medium 24 h after transfection
+and the plates were placed inside black boxes (Hammond Manufacturing
+Company, 1591ESBK) for the remainder of the experimental procedure.
+For conditions where external PCB is added, 15 μM of PCB (Frontier
+Scientific, P14137) from a 20 mM stock dissolved in DMSO (Santa Cruz
+Biotechnology, sc-202581) was supplemented in fresh medium 24 h after
+transfection (). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00413/suppl_file/sb7b00413_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00413/suppl_file/sb7b00413_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00413/suppl_file/sb7b00413_si_001.pdf Light
+induction was programmed to start 12 h after medium replacement. Each
+black box was equipped with a circuit consisting of six red LEDs (660
+nm, Thorlabs, M660L3), except for the dark boxes and far-red boxes
+which had no LEDs or a single far-red LED (735 nm, Thorlabs, M735L2),
+respectively. In addition, each black box circuit was designed to
+allow for fine adjustment of light intensity (circuitry is shown ), from 0.0008 to 200 μmol/m/s. Light intensity was measured in μW at the cell level,
+converted to μmol/m/s (light sensor area = 63.6
+mm), and adjusted for each experiment design using Sper
+Scientific Direct’s Laser Power Meter (SSD, 8400). Detailed
+information on wavelengths, illumination intensity, and duration used
+for each experimental procedure and data shown are detailed in . Pulse duration and total illumination
+times were electronically controlled  a LabVIEW
+computer driving an Arduino microprocessor and custom-made circuits
+(see ). Luciferase assays were carried
+out using the Dual-Luciferase Assay system (Promega, PRE1960), and
+following the manufacturer’s protocol. Cells were lysed immediately
+after removing from the incubator using the manufacturer’s
+instructions. Firefly and Renilla Luciferase activities were measured
+from cell lysates using the luminometer module of the Infinite 200
+PRO multimode reader (Tecan). Results of luciferase activity assays
+are expressed as a ratio of firefly luciferase (Fluc) activity to
+Renilla luciferase (Rluc) activity. Illumination Circuits and
+Software http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00413/suppl_file/sb7b00413_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00413/suppl_file/sb7b00413_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00413/suppl_file/sb7b00413_si_001.pdf The light control
+system employs an Arduino Uno and a light intensity control circuit
+() driven by a user interface
+developed in LabVIEW (National Instruments) to control each box’s
+LED intensity (). This system
+is ideal for precise timing and light-intensity control of each experimental
+box while allowing for user-determined experimental start delay, illumination
+frequencies, and control of the total duration of the experiment.  contains a full description
+of the illumination apparatus, user interface, and circuitry. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00413/suppl_file/sb7b00413_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00413/suppl_file/sb7b00413_si_001.pdf Using PySB, we generated
+an  model to describe the
+biochemical interactions among the enzymes that compose the hypothesized
+PCB-production pathway, as seen in A. The quantitative mathematical model was
+parametrized () by experimental
+data and uses ordinary differential equations to describe the changes
+in the concentration of the molecular components of the reaction.
+We probed the proposed model directly as proposed in the literature
+and similar pathways published. We complement this work showing the model’s agreement with
+the tested pathway, demonstrating how heme, Fd, and FNR are rate limiting
+factors for the production of PCB, as confirmed experimentally in ,  and . A full description of the kinetic
+model can be found in . Marvin was used for drawing and displaying chemical
+structures in A and Graphical Abstract, Marvin 17.28.0, 2017, ChemAxon ()..

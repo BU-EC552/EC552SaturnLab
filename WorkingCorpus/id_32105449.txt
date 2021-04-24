@@ -1,0 +1,606 @@
+Synthetic
+biology aims to design
+programmable cells that combine sensing and molecular computing operations
+with on-demand production of therapeutic relevant proteins. Engineered living materials (ELMs) integrate genetically engineered
+cells with free-standing materials and represent a new class of environmentally
+responsive living devices with designer physicochemical and material
+properties. Ideally, ELMs provide mechanical robustness to engineered cells,
+prevent their migration to the environment, and allow cells to be
+viable for extended periods of time. As it has been difficult to efficiently
+immobilize genetically modified microorganisms (GMMs) in ELMs, their
+release into the environments poses a major challenge for future synthetic
+biology applications. To date, strategies for containing
+GMMs inside a living device are based on the physical confinement
+by multilayer materials. Hybrid micropatterned devices
+that combine layers of elastomer and microporous hydrogel have enabled
+the exchange of information with the surrounding environment via diffusion
+of chemical inducers and their sensing by GMMs while displaying high
+mechanical resilience. Nevertheless,
+the low porosity of the physical barriers mitigating bacterial escape
+also significantly hampers the diffusion of macromolecules, reducing
+the repertoire of synthetic biology applications to biosensing and
+release of small therapeutic molecules. Programmable interactions
+between GMMs and their surroundings have
+recently gained interest as the design of multicellular structures
+such as engineered biofilms enables a higher control over shape and
+functionality of ELMs. Inducible secretion of fibrous
+proteins drives the emergence of molecular architectures supporting
+the artificial biofilms. Interestingly, such biofilms are self-regenerating
+and are able to perform advanced tasks such as multistep enzymatic
+bioremediation, and are viable over weeks. Inspired by this strategy,
+we propose to leverage the formation
+of programmable interactions between surface-displayed proteins on
+genetically engineered cells and hydrogel constituents to ensure cell
+containment within a living material while simultaneously allowing
+production and delivery of large therapeutic molecules.The “Platform
+for Adhesin-mediated Trapping of Cells in Hydrogels” (PATCH)
+is based on engineered  expressing a recombinant
+adhesion protein that stably anchors the cells to a hydrogel matrix,
+avoiding entrapment by stringent physical barriers (a). Bacterial adhesins are
+modular cell-surface proteins that bind different ligands in a highly
+specific manner. While strategies for programmable cell–cell
+interactions via adhesins have been reported, methods that allow adhesin-mediated cell-material interactions have
+not been described. We engineer  bacteria
+to surface-display a Ca-dependent glucose-binding adhesin
+which has strong interactions with dextran-based hydrogels (b,c for details).
+The engineered adhesin, referred to as A, is derived
+from the  ice-binding protein
+(IBP) which helps these bacteria to assemble into
+multispecies biofilms on ice. Compared to conventional living
+material designs, our hydrogel-based material has large pores with
+diameters ranging from 10 to 100 μM, which substantially improves
+the diffusion of macromolecules through the matrix. Furthermore, our
+results reveal efficient containment of adhesin displaying bacteria
+with a retention factor of up to 100-fold higher compared to bacteria
+that lack the adhesin. PATCH may help simplify the design of ELMs
+and could reduce the use of multimaterial or multilayer devices aimed
+at immobilizing GMMs. Hydrogels with antimicrobial activity have become
+a major focus
+in biomedical research due to their unique qualities such as high
+biocompatibility and ease of drug loading and release. As an application of PATCH, we anchor engineered  that produce and secrete an antimicrobial enzyme called lysostaphin
+inside a dextran-based hydrogel (d,e) and show successful inhibition of  growth including a methicillin-resistant (MRSA)
+strain. Due to the rising incidence of resistance, MRSA is becoming
+increasingly difficult to treat by conventional antibiotics. In the United States alone, MRSA causes approximately
+11 000 deaths annually. Since
+lysostaphin functions by cleaving the pentaglycine components of the
+cell wall of  including MRSA, it is highly specific in killing the bacterium.
+Importantly, lysostaphin is an enzyme that differs from small-molecule
+antibiotics, and is effective against antibiotic resistant infections. Taken together, our study demonstrates PATCH
+as a programmable living material foundry with potential applications
+in biosensing and controlled delivery of therapeutic proteins. Overview of the design elements for PATCH. (a)  (, orange ovals with black outlines)
+expressing a cell-surface adhesin (orange-black sticks) with a high
+affinity for glucose are retained inside dextran-based hydrogels.
+(b) Cell surface display of the A adhesin is regulated
+by cotransforming  with two expression vectors
+(A; yellow). A was
+cloned into a pET24a vector (pET24a-mpa) under the control of a T7
+promoter (pT7-Lac) inducible by IPTG. The engineered adhesin contains
+the membrane anchor (orange), extender (orange), and sugar-binding
+domains (SBD, pink circle) derived from IBP of
+the Antarctic bacterium, . The 23-kDa C-terminal fragment of hemolysin protein A (HlyAc, dark
+blue circle) functions as a Type I Secretion Pathway (T1SS) sequence
+specific to , which was grafted to the end
+of A to promote its cell-surface-display. The other
+two  T 1SS components HlyB (dark green) and
+HlyD (light green) were expressed from a pSTV28 vector (pSTV28-hlyb/d)
+under the control of a lac promoter (pLac) inducible by IPTG. The
+T1SS outer-membrane component (TolC) constitutive to  BL21 cells is colored brown. (c) X-ray crystal structure of the A sugar-binding domain (SBD), which is responsible for
+binding to the dextran component of the hydrogel matrix. Ca are illustrated as large blue-green spheres, waters are indicated
+by small red spheres. The sugar-binding site is occupied by a glucose
+molecule (green backbone; stick representation). The figure was rendered
+using UCSF Chimera. (d)  (green; A/lyso) is re-engineered
+to surface-display the A adhesin and secrete the
+bacteriocin lysostaphin via the T1SS. HlyAc (small dark-blue circles)
+was added to the C-terminus of lysostaphin (small red circles) via
+a cleavable linker. The lysostaphin-HlyAc fusion construct was under
+the control of a pBAD promoter (inducible by arabinose) on the pSTV28
+vector that also contains the pLac-HlyB/D. The modified vector is
+named pSTV28-hlyb/d_lyso.e) Schematics of the designed living material
+with anti- activity. Left: Surface-expression
+of A allows  to bind to
+the dextran matrix, thereby retaining the bacteria in the hydrogel
+(boundary marked by blue dashed lines). The engineered  inside the hydrogel can secrete lysostaphin (small red
+circles), which diffuses freely to the exterior environment to inhibit
+the growth of  (gold spheres), including
+a methicillin-resistant strain (MRSA). Gold spheres with dashed boundaries
+indicate dead  cells killed by lysostaphin. Synthesis and Characterization of Dextran-Based
+Hydrogels http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00404/suppl_file/sb9b00404_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00404/suppl_file/sb9b00404_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00404/suppl_file/sb9b00404_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00404/suppl_file/sb9b00404_si_001.pdf Dextran-based hydrogels are relatively simple to
+synthesize, robust
+in various shapes and highly biocompatible. The glucose-based
+nature of the biopolymer makes dextran an ideal material for anchoring  expressing A. The dextran (500
+kDa) polymer was functionalized by methacrylation to yield methacrylated
+dextran (Dex-MA) (), which was subsequently cross-linked into a covalent hydrogel via
+radical polymerization. The resulting
+hydrogel is easy to handle (i.e., not brittle or very viscous), and
+can be adapted into various shapes tailored for different applications.
+Further analysis of the wash solution of these hydrogels using NMR
+and FT-IR spectroscopy demonstrated that negligible concentrations
+of unreacted monomers are released from the hydrogel (), which makes it suitable for keeping bacteria viable and likely
+safe for various medical applications. Scanning electron microscope
+(SEM) analysis showed that the dextran-based hydrogel has an overall
+microporous structure with pore diameters ranging from 10 to 100 μm
+(). These large pores would allow
+unrestricted diffusion of macromolecules, as well as the propagation
+of native  cells (2–5 μm), resulting
+in the migration of bacteria to the outside of hydrogel (). To stably
+anchor  to dextran-based hydrogel, we designed
+a new adhesion protein, A, that binds glucose with
+high affinity and can be surface-displayed on . A is derived from the giant adhesin IBP (1.5 MDa) (a) found on the cell surface of the Antarctic Gram-negative
+bacterium, . IBP binds its bacterium to ice and facilitates the formation of symbiotic
+biofilms with other microorganisms.IBP has a C-terminal signal sequence enabling its secretion
+by the Type I Secretion System (T1SS) specific to  (a). At the N terminus, IBP contains
+an “anchor module” that helps retain the protein to
+the cell surface by plugging the T1SS outer-membrane pore. The protein
+further consists of 120 identical 104-aa tandem repeats that serve
+to project a set of ligand-binding modules away from the cell surface
+to interact with their target molecules, including various carbohydrates,
+proteins, and ice. The sugar-binding domain (SBD) of IBP binds to glucose in a Ca-dependent manner, and is used in this study to
+allow engineered bacteria to bind to dextran-based hydrogels. The extremely large molecular
+weight of IBP
+would likely prevent its use as a modular protein for cell-surface
+display in . We therefore introduced several
+modifications resulting in an engineered IBP-based
+variant, A, optimized for cell-surface display.
+First, we reduced the number of central IBP repeats
+from 120 to 15, lowering the molecular weight by approximately 5-fold
+(to 330 kDa; b). These 15 tandem extender domains can project the sugar-binding
+domain (SBD) approximately 90 nm away from the cell surface. Next, the C-terminal domain (181 aa) of IBP was replaced by a 23 kDa C-terminal sequence of the  hemolysin protein A (HlyAc) (b), which enables translocation of the protein
+to the cell surface via the Type I secretion pathway (T1SS) specific
+to . The engineered  genes were placed
+in a pET24a vector. Since the genome of  BLR
+(DE3) does not contain the T1SS machinery genes  and  required for secretion (pSTV28-; b), a pSTV28 vector carrying
+these two genes was cotransformed with the adhesin-pET24a vector (b). We refer to bacterial
+cells cotransformed with these plasmids as A cells and will use this notation throughout this article
+for other variants. Additional variants were created by replacing
+the N-terminal domains of A with a fluorescent
+protein (A-mRuby2), which was used
+to validate the localization of the adhesin by confocal microscopy
+(b). It has
+been reported that fluorescent proteins fold rapidly in the bacterial
+cytosol before being secreted by T1SS, and their large size prevents
+full passage through the outer-membrane pore of the secretion system. Thus, mRuby2 serves as an “anchor” to hold A to the cell surface, while the remaining parts of the
+protein protrude into the extracellular environments. As a control,
+we prepared A cells by cotransformation
+with a pET24a plasmid that only encodes for HlyAc (pET24a-) and the pSTV28_ vector. As
+detailed later in the paper, we also created A cells capable of secreting the bacteriocin lysostaphin to
+target . The resulting variant
+is referred to as A/lyso. Next, a combination of flow cytometry and confocal microscopy
+was
+used to validate the expression of A on the outer
+surface of . A/lyso (cells capable of expressing both A and lysostaphin proteins, d, details below) and A/lyso control cells were incubated with rabbit antisera
+raised against the central repeats of A. After
+unbound primary antibodies were removed by washing, cells were further
+incubated with a fluorescently labeled (Alexa 488) secondary antibody
+(c, top schematics).
+As expected, A/lyso cells
+(c, red histogram)
+showed a median fluorescence level approximately 5-fold higher than
+that of the A/lyso cells (c,
+gray histogram), validating the surface localization of the adhesin.
+Confocal microscopy studies using the A-mRuby2 variant revealed successful overexpression of the protein
+as evident by the evenly distributed red fluorescence inside of the
+cells. The surface display of this protein is demonstrated by the
+green immuno-fluorescence on the exterior of the cells. As the primary
+antibody targets the A extender region consisting
+of 15 identical 104-aa repeats, it is likely that multiple antibodies
+bind to an individual adhesin protruding from the T1SS outer-membrane
+pore. This results in amplification of green fluorescence from the
+Alexa488 secondary antibodies, which appears as green clusters on
+the cell surface (d). These data are in agreement with the flow cytometry data.
+In summary, we designed a novel IBP-based protein
+for cell-surface display in  and characterized
+the expression and localization of this protein using flow cytometry
+and confocal microscopy. Construct design
+of the engineered A adhesins
+and its localization to  cell surface. (a)
+Linear domain map of the native 1.5-MDa IBP with
+four of its functional regions illustrated as membrane anchor (orange),
+central extenders (orange repeats), sugar-binding domain (pink), and  T1SS sequence (brown). Dotted lines indicate
+the ∼100 central repeats omitted in the figure. (b) Linear
+domain maps of engineered constructs of A expressed
+and surface-displayed by . (c) Immuno-detection
+of A by flow cytometry. Top schematic shows immunodetection
+of A through an antibody raised against its central
+extender domains. Histograms (bottom panel) illustrating fluorescence
+distribution of the immuno-detection experiments done with A/lyso (gray) and A/lyso (red) cells. (d) Fluorescence
+localization after immunostaining (green) of A-mRuby2
+(red) obtained using confocal microscopy. Top schematic shows the
+immunodetection of A through an antibody raised
+against its central extender domains. Bottom panels show images obtained
+from confocal microscopy. The A-mRuby2 cells are displayed in the top two panels, while the detection of A on  outer surface by immuno-staining
+with fluorescently labeled secondary antibodies (Alexa 488, green
+patches on the cells) are shown in the bottom two panels. Scale bar
+indicates 2 μm, and is representative for all confocal images
+in this panel. MpA Efficiently Retains  inside Dextran-Based
+Hydrogels http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00404/suppl_file/sb9b00404_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00404/suppl_file/sb9b00404_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00404/suppl_file/sb9b00404_si_001.pdf To validate if the surface expression of A retains  inside dextran-based
+hydrogels, we designed two experiments to quantify the migration of
+bacteria through the hydrogel matrix into surrounding liquid or solid
+media. A and A cells were loaded into cubic-shaped hydrogels (), which were subsequently partially
+submerged in LB medium (a). To estimate bacterial migration from the gel to the surrounding
+medium, samples of the medium were harvested at different time points
+and plated for quantification by counting the colony forming units
+(CFUs). Samples taken immediately after loading of bacteria showed
+similar numbers (∼10) of A and A cells leaking
+into the medium. We hypothesize that this initial leakage originates
+from the large pore size of the hydrogel matrix resulting in a portion
+of loaded bacteria directly flowing through the gel without binding
+to dextran. After unbound cells were removed by refreshing the medium,
+very few A bacteria were present in
+the medium outside of the hydrogel in the next 24 h (approx. 30 CFUs).
+In sharp contrast, up to 100-fold A cells were present in the medium (approx. 2 ×10 CFUs) (b).
+SEM analysis was performed to gain visual insight into how bacteria
+interacted with the hydrogel. We observed that A bacteria formed thin layers of microcolonies on the
+lamina of the hydrogel due to their strong interaction with the gel
+matrix (c,d).
+In contrast, A bacteria showed
+a significantly sparser distribution (), indicating a weaker interaction with the hydrogel, which was consistent
+with the results obtained from the leakage experiments. In a different
+experiment we assessed the capability of A in retaining
+the  to the dextran-based matrix, by comparing
+the relative affinity of A and A cells to small hydrogel cylinders
+(∼100 mm). Hydrogels were preincubated with either A or A overnight, and then extensively washed to remove unbound bacteria. A or A that remained bound to the hydrogels were released into a solution
+by homogenization and were quantified by CFU counting. As expected,
+hydrogels retained roughly 4-fold more A bacteria compared to those that contained A (), demonstrating
+the significantly stronger interaction between the bacteria and the
+hydrogel caused by A expression. Next, we tested whether surface display of A
+also inhibits migration of bacteria into a surrounding solid medium.
+Small disk-shaped dextran hydrogels (thickness, 0.75 mm; diameter,
+8 mm) were fabricated. The hydrogel disk was then placed on a LB-agar
+plate, and A/lyso cells
+or A/lyso control
+(1 μL) was loaded to the center of the disk. Bacterial migration
+from the center of the hydrogel matrix was monitored for up to 72
+h (e). We quantified
+the average colonized area outside the hydrogel disk based on four
+replicates. We observed that after roughly 10 h, A/lyso cells started to migrate to
+the outside of the hydrogel, whereas A/lyso cells were retained for at least another 25 h (f,g). After 72 h A/lyso cells colonized
+a surface 8-fold larger compared to A/lyso cells (f,g). Furthermore, uninduced A/lyso cells did not show significant differences
+in migratory behavior compared to either induced or uninduced A/lyso control (-IPTG, f–h). The
+expression and secretion of an additional protein, lysostaphin, which
+was induced by arabinose (details below, d), did not appear to hamper A-mediated retention of the engineered  to
+the hydrogel matrix (f). These results further consolidated our findings that A surface display can substantially enhance the retention
+of bacteria inside dextran-based hydrogels through its sugar-binding
+capability. Characterization of the A adhesin mediated retention
+of  inside a dextran-based hydrogel matrix.
+(a) Experimental design to quantify bacterial migration from the hydrogel
+matrix into liquid medium. Leakage of MpA (orange) from
+a hydrogel cube was assessed by counting the colony forming units
+(CFUs) present in the LB medium surrounding the hydrogel, and compared
+with the leakage obtained from A cells (blue, negative control). (b) Bacterial migration was quantified
+immediately after bacterial loading (initial leakage) and over the
+following day. Right panel: representative images of plates at the
+same dilution are shown to illustrate the difference in migration
+between A and A samples after 24 h (Day 1). Dots on the bar graph
+represent the results of individual experiments. (c) Scanning electron
+microscopy images obtained from the dextran-based hydrogel inoculated
+with the MpA inside of the bacterial
+loading chamber (cross-section). (d) Zoomed-in view of an area of
+panel c, showing a bacterial microcolony of A formed on the lamina of the hydrogel matrix. Scale bars (green)
+in panels c and d indicate 10 μm. (e) Representative images
+showing the migration of  through the matrix
+of a disk-shaped hydrogel, which was assessed by estimating the surface
+area colonized by the bacteria (A/lyso or A/lyso) on the outside of the hydrogel disk over time. Arrowheads indicate
+the presence of nascent colonies of  (A/lyso in blue) and (A/lyso in orange). Scale bar represents 2
+mm. (f,g,h) Quantification of the time-dependent migration of engineered  (A/lyso in blue and A/lyso in orange) through the hydrogel matrix. Average area and standard
+deviation of the bacteria-colonized regions outside of the hydrogel
+were calculated from replicates of that in panel e over 72 h ( = 4). (f) Experiments performed in the presence of both
+inducing agents, IPTG for adhesin surface display, and arabinose for
+lysostaphin expression (Ara). (g) Experiments performed in the presence
+of IPTG, but in the absence of Ara ( = 3). (h) Experiments
+performed in the absence of IPTG or Ara ( = 3). Application of PATCH - Living Material Engineered
+to Kill MRSA Having developed PATCH, we next assessed whether A bacteria can be used to deliver functional
+proteins . We focused on engineering  to secrete lysostaphin, a bacteriocin produced by  to kill . The full-length lysostaphin is a 50-kDa preproenzyme with
+a modular domain architecture including a 36-aa N-terminal signal
+peptide followed by a region comprising 15 tandem repeats of 13-aa,
+and the peptidase and cell-wall-targeting (CWT) domains at the C terminus. After its secretion from , the signal peptide and the repetitive region of prepro-lysostaphin
+are sequentially cleaved to reveal its active form, with the CWT domain
+binding to its substrate on  cell surface
+and the peptidase domain responsible for the catalytic cleavage of
+the glycil–glycine bonds. As the functional construct
+of lysostaphin was engineered for secretion via the T1SS by , the N-terminal  signal
+peptides and the tandem repeats of the preprolysostaphin were deemed
+redundant and therefore not included in the design (b). Instead, the HlyAc sequence
+required by  T1SS was fused to the C-terminus
+of lysostaphin via a linker consisting of a thrombin-cleavage site
+flanked by tetraglycine motifs. Although the lysostaphin would in
+theory compete with the A adhesin for the T1SS
+ducts, our data reveal sufficient secretion of functional lysostaphin
+(). The design of the linker motifs was
+intended such that the HlyAc domain can be selectively removed to
+release the catalytic form of lysostaphin. In addition, a 6X Histidine-tag
+was fused to the C-terminal end of the lysostaphin-HlyAc fusion protein
+for purification and detection purposes. The lysostaphin-HlyAc construct
+under the control of a pBAD promoter (inducible by arabinose) was
+incorporated into the pSTV28-, resulting in
+the pSTV28_ vector (d). The pSTV28- was cotransformed with pET24a_ vector to create A/lyso bacteria. As a control, we also prepared cells lacking A expression (A/lyso), which have been transformed with the pET24a_ and the pSTV28_ vectors. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00404/suppl_file/sb9b00404_si_001.pdf To reveal
+successful secretion of the 50-kDa lysostaphin-HlyAc,
+cell-free medium of A/lyso was analyzed by Western blotting with antihistag primary
+antibodies. As expected, a band of approximately 50 kDa was detected
+for the intact lysostaphin-HlyAc (). In addition, a much more intense band was observed at approximately
+25 kDa, which indicated the presence of HlyAc alone. This observation
+suggested that lysostaphin-HlyAc construct had been cleaved after
+secretion. Given the capability of lysostaphin to cleave pentaglycine
+and the presence of two tetraglycine motifs linking lysostaphin and
+HlyAc, it is possible that the fusion protein underwent site-specific
+autolysis. Nevertheless, this would have no negative impact on the
+enzymatic capability of lysostaphin as it frees up its catalytic domains
+from HlyAc. We quantified the efficacy of the secreted lysostaphin-HlyAc
+against , using an adapted version of Kirby-Bauer
+(disk
+diffusion) test (a). We applied cell-free medium of A/lyso bacteria to Mueller-Hinton
+agar plates prestreaked with . After an
+overnight incubation period, clear round exclusion zones formed where
+the medium was applied, indicating the effective inhibition of  growth (b). In contrast, cell-free medium from the A cells showed no activity against , indicating that growth inhibition was solely
+caused by lysostaphin secretion. A/lyso cells were unable to inhibit the growth of a different
+Gram-positive pathogen, ,
+demonstrating the specificity of lysostaphin. To further consolidate
+this result, we spotted living A/lyso cell cultures onto a Mueller-Hinton agar plate streaked with
+the notorious methicillin-resistant  (MRSA), which is a major cause for hospital-acquired infections
+worldwide. Strikingly, we observed clear
+halo-like exclusion zones surrounding the A/lyso cells, indicating the inhibition of MRSA
+growth (c).
+These results demonstrate that sufficient amount of functional lysostaphin
+was secreted even though the A adhesin and lysostaphin
+compete for T1SS ducts. In sharp contrast, no such inhibition zones
+separated the  cells without lysostaphin-producing
+capability (A cells) and MRSA.
+Consistent with the results above, A/lyso cells could not kill . These results demonstrated the high specificity and promising potential
+of  lysostaphin secretion for treating antibiotic-resistant -related infections. After demonstrating that A/lyso cells can secrete functional
+lysostaphin , we next investigated whether
+PATCH could kill MRSA, without leakage
+of GMMs. This would be a key step toward demonstrating the feasibility
+of this novel platform for different applications. As anticipated,
+very few  cells induced with A/lyso migrated outside of the hydrogel disks
+into the surrounding Mueller-Hinton agar medium after 96 h (d). Remarkably, the
+bacteria-loaded hydrogel disks are also effective in killing MRSA,
+as exclusion zones developed around the periphery of the devices.
+This demonstrates free diffusion of functional lysostaphin through
+the hydrogel matrix to the exterior environments. In contrast, when A expression was not induced (IPTG-), A/lyso cells were not restrained to the hydrogel,
+resulting in their migration into the exterior agar medium (d, two panels on
+the right). When only lysostaphin expression was induced (IPTG-, Ara+),
+was the inhibition zone significantly larger than when both A and lysostaphin were induced (IPTG+, Ara+). We reason
+that since the adhesin plugs a significant fraction of T1SS machineries,
+halting A production resulted in higher secretion
+levels of lysostaphin. Furthermore, a control experiment in which
+lysostaphin expression was not induced (IPTG-, Ara-) resulted in the
+absence of an inhibition zone, which validates the responsiveness
+of our system toward arabinose induction (d). Taken together, we have created a living
+hydrogel hosting adhesin-mediated self-retaining . As an application of this versatile platform, we demonstrated a
+prototype living material with anti-MRSA activity. PATCH with Anti- activity. (a) Schematic
+of the adapted Kirby-Bauer test for assessing the anti- activity of lysostaphin-secreting  as an application of PATCH. (b) Evaluation of bactericidal activity
+of the cell-free media collected from A/lyso, A, A/lyso and A/lyso cells against  and . White
+arrows indicate where the samples were applied. Black arrows indicate
+the target bacteria streaked on the plates. Growth inhibition zones
+are marked by a red arrow. (c) Evaluation of bactericidal activity
+of A/lyso, A, A/lyso and A/lyso (no lysostaphin-producing capability)  cells
+against Methicillin-resistant  (MRSA) and . Images were captured
+after an incubation time of approximately 48 h. d) Evaluation of bactericidal
+activity of the living hydrogels with engineered MpA/lyso against MRSA. MpA/lyso cells were spotted to the centers
+of the hydrogel disks, which were placed onto Mueller-Hinton agar
+plates streaked with MRSA. The images were captured after an incubation
+period of 96 h. The adhesin- and lysostaphin-functionalities were
+controlled by induction by IPTG and/or Arabinose (Ara), respectively.
+White arrowheads point to the edge of the hydrogel disks as outlined
+by thin white circles. One challenge that impedes the deployment of living
+functional
+materials for biomedical applications outside the lab is the requirement
+of sustaining viable cells while restricting their escape from the
+device. To the best of our knowledge, this study shows the first example
+toward confinement of GMMs by actively implementing adhesive interactions
+between microorganisms and a fully synthetic material. The basis of
+PATCH is in contrast with conventional methods for engineering living
+materials, which typically rely on the presence of a physical barrier
+provided by submicrometer matrices of multilayer hybrid materials.
+Our work demonstrates one application of PATCH as a living material
+foundry for clearing pathogenic bacteria by  production and secretion of lysostaphin. PATCH presents a
+versatile toolbox that can be tailored to the
+need of various applications such as biosensing and smart drug delivery
+in a deployable “Sense-kill” manner, which opens the door for a wide range of future research. Given
+the modularity of bacterial adhesins, PATCH can be easily tailored
+to other materials. Besides the SBD, another ligand-binding domain
+of A can be used to bind peptide-based materials. In addition, the  pilus domain FimH has
+high specificity for mannose-based structures. Other constituents
+of PATCH such as gel porosity can be tuned to modulate the diffusion
+of various therapeutic compounds secreted by the bacteria. Identification of soluble  molecules capable of regulating the expression of lysostaphin would
+enhance the responsiveness and specificity of the current system.
+Implementing an alternative secretion system for lysostaphin might
+result in higher levels of  drug delivery.
+Crucially, integration of the expression systems into the genomes
+of the engineered microorganisms will help diminish the spreading
+of antibiotic resistant genes to pathogens via the plasmids. To address
+further safety concerns, we envision that the platform could be adapted
+to other microorganisms that previously demonstrated their innocuity
+for humans, and were used in other animal models for synthetic biology
+applications, such as  Nissle 1917 strain
+(EcN) or . As such, this work constitutes an
+important methodological improvement in the field of living functional
+materials and living material foundries, and could have implications
+for therapeutic applications. A gene encoding
+a smaller version of IBP (Genbank accession: ABL74378.1
+and ABL74377.1) with only 15 central repeats was synthesized and purchased
+from GenScript (). The gene was codon-optimized for expression in , and the central repeats were made as different as possible at the
+DNA level to reduce the chance of recombination. Next, the -specific Type I Secretion System (T1SS) sequence
+near its C terminus (181 aa) was replaced by the  T1SS sequence (last 213 aa of the Hemolysin A protein, HlyAc, also
+codon-optimized and synthesized by GenScript) to result in the A adhesin (b). A fluorescent variant of A, A-mRuby2, was created by replacing the membrane anchor
+(412 aa at the N terminus) of the adhesin with mRuby2 (b). Each A construct was placed between the  and  sites in a pET24a vector. Genes encoding for two other
+machinery proteins ( and ) of  T1SS were placed between the  and HI sites in a pSTV28 plasmid
+as described. The  genes were PCR amplified from a pLG575 plasmid kindly provided by
+Professor Dr. Peter Sebo (Institute of Microbiology of the Czech Academy
+of Sciences). Approximately 10 of either
+induced A/lyso or A/lyso cells were collected,
+blocked with 1 mg/mL bovine serum albumin (Sigma-Aldrich) in a buffer
+containing 20 mM Tris-HCl pH 9, 150 mM NaCl, and 5 mM CaCl (Buffer A), and incubated (1:100, 1 h) with rabbit antiserum raised
+against the central repeats of A. After washing
+with buffer A (2×), cells were incubated with a goat antirabbit
+secondary antibody (Alexa 633, Invitrogen; 1:100, 1 h) and then analyzed
+by a Fluorescence Activated Cell Sorter (Aria III, BD Sciences). The
+stained cells were gated based on forward and side scattering. At
+least 10 000 gated events were analyzed and plotted using the
+FlowJo software. Cells were prepared
+in a similar
+way as those for flow cytometry experiments described above. A-mRuby2-expressing cells were collected, blocked with
+1 mg/mL bovine serum albumin (Sigma-Aldrich) in Buffer A, and incubated
+(1:100, 1 h) with rabbit antiserum raised against the central repeats
+of A. After washing with buffer A (2×), a
+secondary (goat antirabbit) antibody conjugated with a fluorophore
+(Alexa 488, invitrogen) was used to label the cell-surface-exposed A-mRuby2. Samples were mounted on the stage of a confocal
+laser scanning microscope (Leica SP8) equipped with solid-state lasers
+(488 and 638 nm), a Plan APO 63× water immersion objective (NA
+1.2) and hybrid detector. Fluorescent images were acquired using the
+Leica LAS X software. Synthesis of Methacrylated Dextran http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00404/suppl_file/sb9b00404_si_001.pdf Dextran T500 (500
+kDa, Pharmacosmos) (4 g, 24.7 mmol glucopyranose unit) was dissolved
+in 36 mL of dimethyl sulfoxide (DMSO) and degassed with argon for
+15 min. After dissolving 800 mg of 4-dimethylaminopyridine (DMAP,
+Sigma-Aldrich), 2.4 mL of glycidyl methacrylate (GMA, Sigma-Aldrich)
+was added. The solution was stirred at room temperature for 44 h and
+the reaction was stopped by adding 6.6 mL of 1 M HCl to neutralize
+the DMAP. The reaction mixture was transferred to a SnakeSkin Dialysis
+bag (molecular weight cutoff: 10 kDa, Thermo scientific) and dialyzed
+against demineralized water at room temperature with changing water
+3–4 times a day for 72 h. Next, the methacrylated dextran solution
+was lyophilized and stored at −30 °C before use. For NMR
+measurements, pharmaceutical-grade dextran 500 and methacrylated dextran
+samples were prepared in 10 mg/mL CDCl and 1 mg/mL DO, respectively. The samples were measured on a Bruker Avance
+3 HD NanoBay spectrometer (H NMR 400 MHz) at 23 °C.
+The degree of substitution, which is the percentage of methacrylated
+glucose monomers, was calculated with the formula (/1.04) × 100, where  stands
+for the average integral of the protons of the double bond, indicated
+with 22′ and 22′′ in the spectrum,  stands for the integral of the anomeric proton, indicated with 4
+in the spectrum, and 1.04 is the correction factor for the average
+4% of α – 1, 3 linkages in dextran (). Dextran-Based Hydrogel Preparation An aqueous solution
+of methacrylated dextran (5% w/v, 200 mg methacrylated dextran in
+4 mL of HO) and ammonium persulfate (4.5 mg) was degassed
+with argon, stirred, and cooled in an ice bath for 15 min. From here
+on, all preparation was done at 4 °C in a cold room. After the
+addition of 5 μL of tetramethylethylenediamine (TEMED), the
+solution was mixed vigorously for 4–5 s and poured into the
+mold for hydrogel formation via freezing at −20 °C. Assessment and Quantification of Unreacted Monomers Present
+in Hydrogel Wash Solutions by NMR and FT-IR Samples of the
+wash solution were prepared by soaking a ready-to-use hydrogel (10
+× 10 mm) in 5 mL of UP-mQ (ultrapure miliQ for analytical purposes).
+After 72 h the gel was removed, and the UP-mQ was freeze-dried in
+a 50 mL falcon tube. Subsequently, 800 μL of DO
+was added to the falcon tube and sonicated for 5 min. This solution
+was filtered through a syringe filter (0.2 μm) to remove residual
+dextran hydrogel that was still present in the sample. For NMR measurement,
+a sample (0.2% methanol as an internal standard) was measured on a
+Bruker Avance 3 HD NanoBay spectrometer (1H-NMR 400 MHz) with a water
+suppression scan. The liquid-state IR spectrum for the sample was
+recorded on a PerkinElmer Spectrum One spectrometer in a CaF cell. The NMR and FT-IR experiments were performed at 23 °C. Mold Fabrication for the Cubic Hydrogel http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00404/suppl_file/sb9b00404_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00404/suppl_file/sb9b00404_si_001.pdf The device
+mold was fabricated in two steps. First, a poly(methyl methacrylate)
+(PMMA) mold was made using a CO laser (see ) and glued to a flat PMMA using an
+acrylic glue. Second, a PDMS prepolymer mixture was prepared in a
+10:1 ratio (PDMS: curing agent) and poured over the mold. This was
+thermally cured in an oven at 65 °C for 2 h, and then the polymer
+was carefully peeled off from the mold (see ). A side hole (θ = 2 mm) was made at the center using
+metallic punches. In the side holes, glass needles were inserted before
+the hydrogel was poured in. Preparation of the Cubic Hydrogel for the
+Quantification of
+Bacterial Leakage Activated methacrylated dextran solution
+was poured into a PDMS mold with a pin placed through the central
+hole from one side to the center of the cubic mold. Removal of the
+pin after the solidification of the pregel solution resulted in an
+empty chamber within the hydrogel for loading bacteria. The casted
+methacrylated dextran was kept frozen at −20 °C overnight,
+and later thawed at room temperature, washed with 20 mL of Milli-Q,
+and allowed to swell for 5 min. Next, the gel was washed with 20 mL
+of 0.05 M NaOH followed by 20 mL of Milli-Q and stored at 4 °C
+in a falcon tube with fresh Milli-Q. Activated methacrylated dextran
+was casted in a mold used for fabrication of acrylamide-based gels
+for SDS-PAGE (Mini PAGE mold, Bio-Rad). This resulted in the fabrication
+of a 0.75 mm-thick homogeneous sheet. After washing, the hydrogel
+disks were formed by punching off the sheet with a 8 mm hole puncher,
+and stored in fresh Milli-Q at room temperature. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00404/suppl_file/sb9b00404_si_001.pdf Cloning procedures were performed following
+the Gibson assembly method. Reagents and competent
+DH5a cells used for cloning were from the NEBuilder HiFi DNA Cloning
+Kit (Product E5520S New England Biolabs). Q5 High-Fidelity 2X Master
+Mix was used for long PCRs (Product M0492SNew England Biolabs 240
+County Road Ipswich, MA 01938–2732). The correct gene products
+were confirmed by DNA sequencing (BaseClear BV. Sylviusweg 74 2333
+BE Leiden, The Netherlands, ). Unless otherwise noted, all bacteria
+were grown at 37 °C. Cultures were grown overnight in LB supplemented
+with selective antibiotics from single colonies of freshly transformed
+cells. Overnight cultures were further diluted 100-fold in fresh LB
+supplemented with selective antibiotics. After 3 h incubation, cells
+were chemically induced (0 or 5 mM arabinose, 0 or 0.5 mM IPTG) (OD = 0.8) and further grown for 3 h. Note timing is important
+for ensuring optimum protein expression levels and therefore functionality
+of the system. Bacterial Leakage Experiment with the Cubic
+Hydrogels (Liquid
+LB Medium) Cubic hydrogels were soaked in LB medium supplemented
+with 30 μg/mL chloramphenicol, 100 μg/mL kanamycine, 5
+mM CaCl, and 0.5 mM IPTG for 1 h and transferred to an
+empty sterile Petri-dish by tweezers with the opening of the bacteria-loading
+chamber facing upward. Excess LB was pipetted out of the central chamber.
+Engineered  (7 μL, OD is approximately 1) were pipetted into the central chamber of the
+cubic hydrogel placed in a sterile Petri-dish. Next, 25 mL of medium
+was added to the plate gradually to roughly 80% (8 mm) of the height
+of the cubic hydrogel incubated at room temperature. The medium was
+collected at two different time points after the bacterial loading
+(10 min and 24 h) and plated (100 μL) for the quantification
+of bacterial leakage by CFU counting. The LB medium and Petri-dish
+were refreshed after each sample collection to prevent the overgrowth
+of bacteria. Experiments for Assessing Bacterial Retention
+to the Hydrogels Approximately 100 μL of activated
+methacrylated dextran solution
+was poured into individual wells of 96-well plate to make hydrogel
+cylinders. To bind bacteria to the dextran-based hydrogel, each hydrogel
+cylinder was incubated with 5 mL of A or A (OD = ∼1) in the
+presence of 0.5 mM IPTG and 2 mM CaCl in a shaking incubator
+overnight (37 °C, 250 rpm). The hydrogels were then transferred
+to a fresh culture tube containing 5 mL of a sterile buffer (10 mM
+Tris-HCl, 150 mM NaCl, and 2 mM CaCl) with antibiotics
+(for A, chloramphenicol only;
+for A, both kanamycin and chloramphenicol).
+The hydrogels were washed in the buffer with shaking (200 rpm, 20
+°C) for 1 h. The hydrogels were then transferred to fresh culture
+tubes and homogenized with a glass rod before resuspending in 100
+μL of the wash buffer. Serial dilutions of the samples were
+plated onto agar plates with appropriate antibiotics, and CFUs were
+counted the next day for quantification of bacteria bound to the hydrogel. Dextran gels seeded with
+cells were first fixated in 4% formaldehyde for 20 min, and further
+kept in Milli-Q water. Samples were further sliced using a scalpel
+to show the cross-section of the bacterial loading chamber and sputter
+coated with a 9 nm-gold layer using an EMITECH K575X Peltier-cooled
+SOP Turbo sputter coater Dual. The gels were imaged at 5 kV in a FEI
+Quanta 3D field-emission SEM, equipped with an Everhart-Thornley secondary
+electron detector Bacterial Leakage Experiment with the Hydrogel
+Disks (LB-Agar
+Medium) Prior to use, dextran-based hydrogel disks were soaked
+in LB medium supplemented with 30 μg/mL chloramphenicol, 100
+μg/mL kanamycine, and 5 mM CaCl. Next, 100 μL
+of a solution containing chemical inducers (0 or 5 mM arabinose, 0
+or 0.5 mM IPTG) were spread on LB-agar plates supplemented with antibiotics
+and CaCl. The surface of the LB-agar substrate was allowed
+to dry by incubating the plates at 37 °C for 30 min. Hydrogel
+disks were set on the agar-LB surface and quickly dabbed dry using
+clean, dust-free, paper tissue, and further incubated for 10 min at
+37 °C. A drop (1 μL) of engineered  culture was placed in the center of hydrogel surface on the LB agar
+medium within Petri dishes. The migration of the engineered  was tracked by imaging for 4 days. Pictures were
+analyzed using ImageJ/Fiji. Antibacterial
+Activity Tests (Modified Kirby-Bauer Test) Master mix solutions
+(100 μL) containing various chemical inducers
+(0 or 5 mM arabinose, 0 or 0.5 mM IPTG, 5 mM CaCl) were
+spread onto 15 mL Mueller-Hinton agar plates, which were dried by
+incubating them at 37 °C. Further, a protocol of a standard Kirby-Bauer
+test was followed. Briefly, bacterial cultures of  (methicillin resistant) or  was diluted to OD of 0.4–0.6, and streaked
+across the Mueller-Hinton agar plates with a cotton swab before they
+were tested against various antibacterial treatments. Various engineered  cells including A/lyso, A/lyso, A/lyso and A/Lyso were spotted (5–10 μL) onto the plates, and their effects
+on the growth of  were observed and photographed. Approximately 3 h after
+lysostaphin induction with 5 mM arabinose, 100 mL of engineered  cell culture was spun down by centrifugation (4000
+rpm) for 15 min at 4 °C. The cell-free-medium was then harvested
+after the removal of residual cells by filtering (0.2 μm cutoff).
+To remove the antibiotics present in the growth medium, the cell-free-medium
+was buffer-exchanged into buffer A and concentrated approximately
+30-fold using Millipore spin cassettes (molecular weight cutoff: 10-kDa).
+The cell-free medium was further tested by applying a drop of 5 μL
+onto the surface of the prestreaked plates (see antibacterial activity
+tests). Living Hydrogel with anti-MRSA Activity Dextran-based
+hydrogel disks were briefly dried using a sterile cotton swab and
+then placed on the Mueller-Hinton agar plates streaked with methicillin-resistant . Prior to their infusion into the
+hydrogel disks, the engineered  cells were
+washed to 2 times in LB to ensure complete removal of antibiotics
+(growth medium). Next, a drop (1 μL) of the induced  cells was placed at the center of the dextran-based
+hydrogel disk surface. Plates were further incubated at 37 °C
+for up to 4 days, and the effects of bacteriocin-producing living
+hydrogels were visualized by imaging with a DSLR camera (Canon 600D,
+50 mm lens). Pictures were analyzed using ImageJ..
