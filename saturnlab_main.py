@@ -120,31 +120,31 @@ def saturnlab_extract(input_text):
 
     # extract parts names, methodology, and concepts
     # cleave excessive documents
-    filtered_corpus = parts_prep(list(original_corpus.values()))
-    for i, text in enumerate(filtered_corpus):
+    filtered_text = parts_prep(list(original_corpus.values()))
+    for i, text in enumerate(filtered_text):
         if len(text) >= 50000:
-            filtered_corpus[i] = text[:49998]
-
+            filtered_text[i] = text[:49998]
+    filtered_corpus = dict(zip(list(original_corpus.keys()), filtered_text))
     # set id for deployed model
-    entity_responses = []
-    concept_responses = []
+    entity_responses = {}
+    concept_responses = {}
     model_id = '116b1006-b509-463c-b13e-a57f7a6749f3' 
-    for textfile in filtered_corpus[:1]:
+    for pmid, textfile in filtered_corpus.items():
         response_entity = natural_language_understanding.analyze(
             text=textfile,
-            features=Features(entities=EntitiesOptions(limit=1, model=model_id))
+            features=Features(entities=EntitiesOptions(limit=2, model=model_id))
             ).get_result()
         response_concept = natural_language_understanding.analyze(
             text=textfile,
-            features=Features(concepts=ConceptsOptions(limit=1))
+            features=Features(concepts=ConceptsOptions(limit=2))
             ).get_result() 
-        entity_responses.append(response_entity)
-        concept_responses.append(response_concept)
+        entity_responses[pmid]= response_entity
+        concept_responses[pmid] = response_concept
         # print(json.dumps(response_entity, indent=2))
         # print(json.dumps(response_concept, indent=2))
 
 
-        return stub, entity_responses, concept_responses
+    return stub, entity_responses, concept_responses
 
 
 
