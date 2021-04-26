@@ -1,4 +1,5 @@
 # this is a python script that holds functions for parsing and managing text in NLP uses
+# https://towardsdatascience.com/topic-modeling-and-latent-dirichlet-allocation-in-python-9bf156893c24
 from Bio import Entrez
 from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
@@ -15,7 +16,6 @@ def bow_corpus(original_corpus):
     for idx in range(len(docs)):
         docs[idx] = docs[idx].lower()  # Convert to lowercase.
         docs[idx] = tokenizer.tokenize(docs[idx])  # Split into words.
-
     # Remove numbers, but not words that contain numbers.
     docs = [[token for token in doc if not token.isnumeric()] for doc in docs]
     # Remove words that are only one character.
@@ -26,7 +26,6 @@ def bow_corpus(original_corpus):
     # Lemmatize the documents.
     lemmatizer = WordNetLemmatizer()
     docs = [[lemmatizer.lemmatize(token) for token in doc] for doc in docs]
-    
     # Compute bigrams.
     # Add bigrams and trigrams to docs (only ones that appear 20 times or more).
     bigram = Phrases(docs, min_count=20)
