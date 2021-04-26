@@ -1,93 +1,87 @@
 # this is a script for retrieving user input and displaying results of genetic sequences
-from Bio import Entrez
 from gensim.models import LdaModel
-from nltk.tokenize import RegexpTokenizer
-from nltk.stem.wordnet import WordNetLemmatizer
-from gensim.corpora import Dictionary
-from nltk.corpus import stopwords
 import pprint
-
-
-def bow_corpus(original_corpus):
-    docs = list(original_corpus)
-    # Tokenize the documents.
-    
-    # Split the documents into tokens.
-    tokenizer = RegexpTokenizer(r'\w+')
-    for idx in range(len(docs)):
-        docs[idx] = docs[idx].lower()  # Convert to lowercase.
-        docs[idx] = tokenizer.tokenize(docs[idx])  # Split into words.
-
-    # Remove numbers, but not words that contain numbers.
-    docs = [[token for token in doc if not token.isnumeric()] for doc in docs]
-
-    # Remove words that are only one character.
-    docs = [[token for token in doc if len(token) > 2] for doc in docs]
-
-    # Lemmatize the documents.
-
-    lemmatizer = WordNetLemmatizer()
-    docs = [[lemmatizer.lemmatize(token) for token in doc] for doc in docs]
-    
-    # Compute bigrams.
-    from gensim.models import Phrases
-
-    # Add bigrams and trigrams to docs (only ones that appear 20 times or more).
-    bigram = Phrases(docs, min_count=20)
-    for idx in range(len(docs)):
-        for token in bigram[docs[idx]]:
-            if '_' in token:
-                # Token is a bigram, add to document.
-                docs[idx].append(token)
-
-    # Remove rare and common tokens.
-    # Create a dictionary representation of the documents.
-    dictionary = Dictionary(docs)
-
-    # Filter out words that occur less than 20 documents, or more than 50% of the documents.
-    dictionary.filter_extremes(no_below=2, no_above=0.5)
-    print(docs[0])
-    # Bag-of-words representation of the documents.
-    corpus = [dictionary.doc2bow(doc) for doc in docs]
-    return corpus, dictionary
-
-def bow_string(doc):
-    from nltk.tokenize import RegexpTokenizer
-    from nltk.corpus import stopwords
-    from gensim.corpora import Dictionary
-    import numpy as np
-    doc = doc.lower()
-    # tokenize string
-    tokenizer = RegexpTokenizer(r'\w+')
-    doc = doc.lower()  # Convert to lowercase.
-    doc = tokenizer.tokenize(doc)  # Split into words.
-    # remove stopwords
-    stop_words = stopwords.words('english')
-    user_terms = [token for token in doc if token not in stop_words]
-    # convert terms into word-order agnostic 2D list
-    print(user_terms)
-    user_array = np.array(user_terms)
-    user_corpus = [np.roll(user_array, i) for i in range(len(user_terms))]
-    user_corpus = [list(arr) for arr in user_corpus]
-    print(user_corpus)
-    # create dictionary and bag-of-words
-    dictionary = Dictionary(user_corpus)
-    text_corpus = [dictionary.doc2bow(doc) for doc in user_corpus]
-    return text_corpus
+from saturnlab_textprep import bow_corpus, bow_string,search
+import os
+from os import path
+import json
+import xmltodict
+import requests
+import xml.etree.ElementTree as ET
+import xmltodict
+from json_flatten import flatten
 
 """
 Recieve input from user and map search terms to LDA topic distribution.
+This script first recieves input from the user and then maps these string to the exisiting model. 
+The map of this user input is then matched with the maps of connected papers. The papers are ranked in order of relavence to 
+the search term by taking the dot product of the user input map with the map of the respective papers.
+The papers with the highest dot product are recommended and displayed, along with their parts (courtesy of IBM).
 """
+# change path to model and import
+os.chdir('/Users/cullenpaulisick/Documents/EC552/Project/EC552SaturnLab/Models/Modelv2')
+lda = LdaModel.load('modelv2.gensim')
 
-lda = LdaModel.load('model1.gensim')
+# change working directory back to main script
+scriptpath = os.path.abspath(__file__)
+dname = os.path.dirname(scriptpath)
+os.chdir(dname)
+
+# get user input
 input_text = input("Search Terms: ")
 user_terms_corpus = bow_string(input_text)
-print(user_terms_corpus)
-print(type(user_terms_corpus))
-print(len(user_terms_corpus))
-for doc in user_terms_corpus:
-    print(list(lda[doc]))
-print(lda.print_topics(num_words=5))
+# create user map
+user_map = lda[user_terms_corpus[0]]
+print(user_map)
+# extract relevant papers from pmc
+papers_results = search(input_text)
+paper_Ids = papers_results['IdList']
+print("Recieving text data from NCBI...")
+# recieve full text from web
+payload = {'db':'pmc', 'id':paper_Ids}
+response = requests.get("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi", params=payload)
+string_xml = response.text
+tree = ET.fromstring(string_xml)
+xml_str = ET.tostring(tree, method='xml')
+text_data = (xmltodict.parse(xml_str))
+
+# create text corpus from raw text data
+kwds = {}
+original_corpus = {}
+print("Creating dataset from text data...")
+# code to convert ini_dict to flattened dictionary
+for i, paper in enumerate(text_data['pmc-articleset']['article']):
+    try:
+        pmid = paper['front']['article-meta']['article-id'][0]["#text"]
+        flat_data = flatten(paper['body'])
+        # apply filter for any value over 10 characters in length
+        text_res = dict((key, flat_data[key]) for key in flat_data.keys() if (len(flat_data[key]) > 30) and ('{' not in flat_data[key]))
+        concat_text = " ".join(list(text_res.values())) + "."
+        concat_text = concat_text.replace("[]", "").replace("[,]", "")
+        original_corpus[pmid] = concat_text
+        kwds[pmid] = paper['front']['article-meta']['kwd-group']['kwd']
+    except:
+        pass
+
+# create bag-of-words representation for corpus 
+corpus_texts = list(original_corpus.values())
+print(len(corpus_texts))
+bag_of_words = bow_corpus(corpus_texts)
+bag_of_words_corpus = bag_of_words[0]
+print(len(bag_of_words_corpus))
+dictionary = bag_of_words[1]
+# create LDA mapping for papers returned from search
+paper_mapping = {}
+for i, text in enumerate(bag_of_words_corpus):
+    paper_mapping[list(original_corpus.keys())[i]] = lda[text]
+
+for key, value in paper_mapping.items():
+    print(key)
+    print(value)
+
+
+
+
 
 
 
