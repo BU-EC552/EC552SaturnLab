@@ -1,0 +1,1080 @@
+As the desire to construct ever
+more complex synthetic gene circuits grows, the robust performance
+of requisite parts becomes ever more important. Genetic circuits often
+exploit transcription factors to encode logic function. The expression of such regulatory proteins can place a significant
+metabolic burden upon the host cell due to the cost of translation
+and ribosome sequestration with up to 50% of cellular energetic resources
+allocated to translation. Minimizing the cost
+of genetic circuitry is a major challenge to the expansion of synthetic
+biology. The use of “ribo-regulation”
+has become a promising
+alternative to traditional transcription-factor-based systems for
+heterologous gene expression control. These systems include ribozymes, ribo-regulators, synthetic toehold switches, and riboswitches which function
+without any requirements for accessory proteins. The use of post-transcriptional
+regulation provides an additional point of control, allowing fine-tuning
+of expression rates. Current methods for tuning genetic circuits often
+achieve this by modification of the promoter and/or the ribosome binding
+site (RBS). These approaches often require iterative cloning
+and screening to select for the desired regulatory function. The use
+of small molecule inducible systems such as inducible promoters can
+be used to circumvent this need, but these systems often suffer from
+high basal expression. Riboswitches
+are naturally occurring RNA structures found in the
+5′ UTR of bacterial genes capable
+of binding a wide array of small molecules, including synthetic inducer ligands. RNA devices have been engineered and selected to respond to environmental
+culture conditions such as pH and a wide array of
+noncognate ligands using  and  selection methods. Riboswitches have been employed in directed evolution and metabolic engineering. Additionally, riboswitches have been shown to function across a
+range of bacterial species and even in eukaryotic
+organisms. Riboswitches consist of
+two functional domains, a ligand binding
+aptamer, and a signal actuator, termed the expression platform. In
+the case of translation activating riboswitches, ligand binding within the aptamer initiates
+a structural rearrangement of the expression platform by strand displacement
+of the RBS sequestering (anti-RBS) sequence, leading to RBS release
+and translation initiation (A). A number of studies have attempted to capitalize
+on this bipartite structure by inserting aptamer domains upstream
+from terminator stems to generate riboswitches with modified transcription
+termination functionality. Riboswitches provide
+a number of attractive advantages: (i) heterologous protein expression
+places a significant burden on the cellular metabolism; therefore, cis-regulation RNA-mediated control
+of expression reduces cellular burden, as protein production is not required for function. (ii) Additionally, post-transcriptional regulation at the
+RNA level removes dependence on accessory protein, allowing a rapid
+regulatory response. (iii) Attenuation of expression levels using
+a single clone, rather than relying on RBS modification, reduces the
+need for library development and screening. Taken together, the integration of riboswitches into the 5′UTR
+should allow the user to quickly obtain dynamic regulation of any
+given gene of interest. However, there are a
+number of additional challenges to the use
+of riboswitches. Translation initiation from an RBS is influenced
+by synonymous codon usage of the flanking 5′ coding sequence,
+and this context dependency has gained a lot attention in recent years, with a number of studies using insulator regions and mechanisms
+to address this problem. In addition to this
+genetic context-dependency, the function of expression systems is
+also known to be sensitive to contextual changes in environment such
+as temperature, population density, or metabolic state. To build systems which function as robustly
+as possible, it is important to understand how both these genetic
+and environmental changes can affect protein production and regulatory
+performance. There are also a number of specific challenges to riboswitch
+engineering, namely sensitivity of function to the surrounding sequence
+context. In addition, the potential for complex interplay
+between different riboswitch conformations means predictive molecular
+engineering is currently challenging. In some translational
+riboswitches such as the adenine binding  riboswitch
+from  and the related pyrimido-pyrimidine-2,4-diamine
+(PPDA) responsive orthogonal riboswitch (ORS), this is further complicated
+by overlap of functional regions within the riboswitch at the junction
+between the RBS sequestering hairpin and the basal stem of the aptamer. These overlapping regions are
+essential for the formation of the mutually exclusive OFF and ON structures
+(A) because
+the RBS sequestering sequence (anti-RBS) is directly involved in formation
+of the OFF structure. Previous studies have selected artificial
+expression platforms
+to generate functional riboswitches from an aptamer, using fluorescence-activated
+cell sorting (FACS) and Förster resonance energy transfer (FRET)
+methods. Genetic selection has been applied to improve
+riboswitch function through expression platform engineering. Guided by this work and the riboswitch design rules generated following
+statistical analysis of  folding experimental
+performance metrics, we sought to re-engineer
+the ORS to achieve high levels of gene expression under conditions
+of riboswitch activation and to minimize riboswitch expression in
+the absence of induction while considering the context dependencies
+which affect RBS riboswitch function. To achieve
+this, we set out to improve performance in a structured and systematic
+manner using a combination of genetic design variables and environmental
+factors using Design of Experiments (DoE). DoE was originally
+laid out as an essential principle of experimentation. By designing structured experiments, it becomes
+possible to assess both the effects of factors (genetic and environmental
+variables, in the case of biology) as well as the interactions between
+these factors, while efficiently mapping the entire multidimensional
+landscape of experimental space. DoE has been applied across a range
+of fields, including bioprocessing and metabolic engineering. The complex structure of many designed experiments has previously
+prohibited the use of DoE within biomolecular engineering for exploration
+of sequence-function landscapes. With the advent of cheap and accurate
+DNA synthesis, recent years have begun to see the use of DoE in synthetic
+biology but with only a few studies exploring sequence level optimization
+or characterization. Here, we describe the use
+of a high-throughput flow-cytometer-based
+selection method coupled with DoE for the selection and characterization
+of the post-transcriptional regulatory RNA devices. This methodology
+has been used in this study to enhance the function of the ORS. This
+riboswitch device was selected for development due to its simple structure,
+relatively modular structure, PPDA solubility, and orthogonality of
+the ligand from cellular metabolism. We
+demonstrate that these improved variants afford high levels of translational
+control across an array of settings and use DoE to explore the sensitivity
+of riboswitch function to environmental and genetic alterations (B). The most robust
+device was then selected for further testing in a wide selection of
+genetic contexts. Engineering of the PPDA responsive orthogonal
+riboswitch for enhanced
+function. (A) Illustrating the mechanism of the orthogonal riboswitch
+showing small molecule mediated regulation of protein expression.
+Protein production is activated in response to pyrimido[4,5-]pyrimidine-2,4-diamine (PPDA), which causes a change in
+the secondary structure of the eGFP 5′UTR, allowing translation
+to proceed. (B) An overview of the screening and optimization workflow
+employed in this study, highlighting the use of  FACS selection and design of experiments to improve riboswitch function.
+This functional enhancement enabled development of four stress responsive
+riboswitch devices. (C) Schematic overview of a synthetic riboswitch
+device under regulation of the IPTG inducible P promoter
+showing transcriptional and translational regulation of an N-terminally
+His tagged eGFP. Previously,
+we showed that through optimization of N-terminal synonymous
+codon usage we enhanced riboswitch function. However, although good riboswitch-dependent control was observed,
+the developed riboswitches exhibited low total expression levels.
+To further enhance the utility of riboswitches, we set out to achieve
+vertical extension of the riboswitch-dependent dose response curves
+by increasing the maximum level of protein production and allowing
+access to a greater proportion of the total gene expression landscape. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_002.xlsx http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf To improve riboswitch function, we aimed to further improve the
+performance by increasing the translation initiation rate (TIR) when
+the riboswitch is activated by ligand binding (A). In this study, the ORS was placed downstream
+of the isopropyl β--1-thiogalactopyranoside (IPTG)
+inducible P promoter and upstream of an N-terminally
+His-tagged enhanced green fluorescent protein (eGFP) (C). Expression performance
+was assessed by considering gene expression levels under the following
+conditions: full riboswitch and promoter induction (ON, 100 μM
+IPTG and 1000 μM PPDA), expression in the absence of riboswitch
+induction (OFF, IPTG 100 μM), and basal expression under uninduced
+conditions (UI). Riboswitch-dependent control and total gene expression
+control are determined from the respective ratios ON/OFF and ON/UI.
+To increase the TIR from the ORS, we modified the region containing
+the predicted native RBS (AGAGAA), −10 to −4 nucleotide
+relative to the start codon (A) contained with the
+expression platform region of the riboswitch. We first validated the
+location of the predicted RBS in the absence of the riboswitch (ΔRS)
+by mutating the native RBS to the same sequence as the 16S rRNA (TCCTCC)
+(, ), termed the nonfunctional RBS (NF_RBS). Assessment
+of protein expression from the NF_RBS showed that this alteration
+greatly affected expression, resulting in very low levels of reporter
+protein signal when induced with IPTG (RFU/OD = 208) compared to the
+WT_RBS (RFU/OD = 2436) (B and ). Following
+confirmation of the RBS within the ΔRS construct, we exchanged
+the −10 to −4 nucleotide sequence with the  consensus RBS sequence (AGGAGG) (con_RBS). The predicted RBS strengths of the WT_RBS and the con_RBS were 811.1
+au and 21546.3, respectively (Salis RBS calc. v 2.0). Measurement of the reporter protein levels from the con_RBS construct
+showed high levels of expression compared to WT_RBS and NF_RBS, with
+an increase of 5.5- and 64.5-fold, respectively (B). Following induction with
+IPTG expression from con_RBS reached 13425 RFU/OD with a dynamic rage
+(± IPTG) of 11.5-fold, demonstrating that we had successfully
+been able to achieve a gain of function with substitution of native
+RBS with the consensus RBS. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf Supporting Information and Methods http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_002.xlsx http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf In light of the successful increase
+in TIR, the con_RBS sequence
+was incorporated into an orthogonal riboswitch-containing construct
+(, , and ). Comparison of protein production
+from the ORS constructs containing the WT RBS (ORS-WT_RBS) and the
+consensus RBS (ORS-con_RBS) induced with IPTG (100 μM) and PPDA
+(1000 μM) showed that after 3 h the maximal (ON) expression
+levels were 7.5-fold higher for ORS-con_RBS. However, riboswitch-dependent
+(ON/OFF) control was further reduced from 4-fold to 2-fold (B). As a control,
+we designed an anti-RBS sequence (CCUCCC) with perfect complementary
+sequence to the consensus RBS (anti-con_RBS) (). This showed poor function with very
+low OFF and ON expression and no PPDA-dependent regulation of expression
+(B). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf Riboswitch function is determined by a fine balance between at
+least two competing RNA structures to afford ON and OFF switching
+function. Ligand binding causes a conformational change, resulting
+in a change in stability of the expression platform. The free energies
+involved in this structural rearrangement have been finely tuned by
+evolution, making rational design highly challenging. To address these difficulties, we employed a high-throughput
+FACS-based selection/counter selection methodology to identify riboswitches
+with optimal OFF and ON states. First, an anti-RBS clonal library
+with degenerate nucleotides at positions −36 to −31
+was generated by isothermal assembly using a synthetic ssDNA input
+library (4 possible variants) () (A). The
+library was screened with two rounds of FACS using selection and counter
+selection (±PPDA) to isolate clones with enhanced riboswitch-dependent
+control () (B, ). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf Following FACS selection, 180
+colonies were screened for function
+after induction with IPTG (100 μM) ± PPDA (200 μM)
+for 3 h (single replicate only, ). Of these, the 20 best performers were taken forward
+for sequencing and further expression testing. FACS screening of the
+anti-RBS library successfully yielded riboswitches with a wide range
+of function (C). A 223-fold range of ON performance was observed with relative
+expression values between 104 RFU/OD for HL-H3 to 23271 RFU/OD for
+LH-F9 (C, left -axis). In addition, a diverse range of riboswitch dependent
+fold change (ON/OFF) was observed (3 h induction, 30 °C) with
+clones displaying no riboswitch-dependent control (HL-H3) up to 16-fold
+(LH-D4) (C,
+right -axis). This riboswitch-dependent control
+is a significant improvement in both performance relative to the original
+riboswitch (ORS-WT_RBS), the riboswitch containing the consensus RBS
+(ORS-con_RBS), and the riboswitch with the consensus RBS perfect complementary
+anti-RBS sequence (anti-con_RBS) which displayed 4.4-fold, 2.0-fold,
+and 1.3-fold, respectively. Coupled with the increased expression
+level, this gain of function greatly improves the function of the
+ORS. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf The isolation of these riboswitches demonstrates the utility
+of
+the FACS sorting protocol for selecting a diverse range of functional
+riboswitches. Further comparison of riboswitch dependent fold change
+(ON/OFF) and total fold change (ON/UI) function for all functional
+FACS selected variants showed that the two best performers for ON/OFF
+and ON/UI were LH-G7 and LH-D4 (D4-ORS) (D). Sanger sequencing of the functional variants
+was performed, and structural prediction analysis of the D4-ORS was
+performed (). The
+anti-RBS sequences and expression performance of each variant can
+be found in . To rationalize,
+predict, and perform forward molecular engineering of riboswitches
+with enhanced dynamic range, it is important to understand the respective
+ON and OFF conformations. For example, if a given anti-RBS variant
+binds too tightly to an RBS, then the expression platform may remain
+in an OFF conformation even when the aptamer is ligand-bound. Similarly,
+a weakly bound RBS–anti-RBS hairpin may lead to an expression
+platform that remains in an ON even when the aptamer is not ligand-bound.
+However,  prediction of ligand-bound riboswitch
+conformations remains a significant challenge. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf To rationalize
+the performance of new anti-RBS–consensus
+RBS variants, they were subjected to  folding
+analysis to predict the structural stability
+of the OFF and ON states of the ORS expression platform. The minimum
+free energy of the OFF state (Δ OFF) was predicted
+using the full-length expression platform and the 5′ of the
+coding sequence (−45 nt to +60 nt). This sequence was then
+truncated  to remove the aptamer region
+of the riboswitch (−36 to +60 nt) as a proxy for the ON state
+sequence, in a manner similar to that used in Kent et al. (). By using
+this sequence, the structural predictions allow interrogation of the
+expression platform when the riboswitch is in the activated RBS-released
+state. The minimum free energy was then predicted using RNAfold (Δ ON) and the difference
+between the two minimum free energies was then calculated (ΔΔ (kcal/mol) (). These features make this an essential region in predicting riboswitch
+function; by using this  prediction, we
+hope to further understand the dynamic interplay between the OFF and
+ON state of the expression platform. The ΔΔ of each functional variant shows a correlation with riboswitch-dependent
+control ( = 0.56,  = 7.7 ×
+10) (). To further assess the performance of the ORS, D4-ORS,
+we explored
+the effect of (i) exchanging the flanking coding sequence, (ii) transcription
+levels, and (iii) environmental factors. Previously, we demonstrated
+the context sensitivity of the ORS (ORS-WT_RBS) upon downstream coding
+sequence through the modification of synonymous codon usage. This previous study revealed that riboswitch-dependent
+performance was dependent upon and could be rationalized on the basis
+of calculated structural/stability features of the riboswitch and
+that a fine balance was required in the relative stabilities of the
+respective ON and OFF conformations to achieve optimal riboswitch
+performance. Often when producing proteins it is desirable to modify
+environmental conditions or factors as well as genetic ones to achieve
+optimal expression and control, for example, lower incubation temperatures
+to improve folding of recombinant proteins. Typically, the performance
+of genetic elements or factors is evaluated under fixed environmental
+conditions. While this approach may yield constructs which function
+under these conditions, engineered strains and devices may fail to
+perform robustly under alternative environmental conditions. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf Testing all possible combinations of these
+factors would be challenging,
+but by applying a DoE (), we aimed
+to robustly test and optimize the behavior of the D4-ORS-con_RBS while
+simultaneously exploring the effect of multiple genetic and environmental
+factors. The selected factors were: transcription level (IPTG concentration)
+( = 3), incubation temperature (°C) ( = 3), predicted TIR ( = 2), predicted
+anti-RBS:RBS hairpin stability (ΔΔ kcal/mol)
+( = 3) based on minimum free energies calculated
+from the anti-RBS–consensus RBS variants (isolated using FACS),
+and N-terminal synonymous codon usage ( = 4) (A). Four of the previously identified selected N-terminal
+codon usage variants were tested with the D4-ORS. The selected codon
+usage variants were variant linker 30 (L30), linker (L35), linker
+36 (L36), and linker 32 (L32). For details
+on the DoE factor levels and data types, see . The use of the fractional factorial D-optimal DoE
+facilitated a 5.4-fold reduction (216 experiments to 40) in the required
+number of experiments. For details on the generated experimental design,
+see . Ribosome binding
+site engineering () and  analysis () of the best performing FACS variants
+highlights the importance of balancing TIR modification with the complementarity
+of the anti-RBS. To allow integration of this design consideration
+into the DoE, the final genetic factor explored was the ΔΔ of the RBS sequestering structure. By using this  metric, we were able to treat this design factor
+as a continuous data type, allowing reduction of the required number
+of experimental runs. Data for the structured experimental design of reporter protein
+production was collect after 24 h (). This data shows a large distribution in uninduced (UI), OFF and
+ON expression levels (B). Comparison of the expression data shows that the factors
+tested greatly affect the riboswitch-dependent fold change (ON/OFF)
+and total fold change (ON/UI) in expression, changes in ON/OFF ranging
+from 2.5- up to an impressive 78.1-fold, and ON/UI control between
+7.9- and 698-fold. Initial investigation of the optimal expression
+conditions show that plotting ON/OFF against ON/UI (C) shows that run #20 yields
+the best trade-off between these two responses, while #4 and #20 show
+similar ON/OFF performance. However, #4 shows a reduced total fold
+change (ON/UI = 512). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_002.xlsx To allow improved investigation and understanding
+of the multidimensional
+data set generated from the DoE, a standard least squares (SLS) regression
+model was fit to the multifactorial expression data set (). ANOVA was used to assess the importance
+of each factor in the model; significant effects and interactions
+were selected based on the Log worth statistic, and unimportant factors
+were removed from the model (). This refined model facilitated deeper investigation into
+the effects of multiple factors on the four response metrics (OFF,
+ON, ON/OFF, and ON/UI). The SLS regression highlights the first order
+effects and second order interactions, which are significant in explaining
+each of the four responses (). This modeling allows us to formalize several interesting
+observations about riboswitch expression dynamics. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf The generated
+explanatory model showed that across all four responses,
+the highly significant ( < 5 × 10) factors and interactions were the ON/OFF stability (ΔΔ) of the anti-RBS-RBS hairpin, the interaction between
+TIR and hairpin ΔΔ, TIR, and IPTG concentration
+(). Several other
+interactions were also significant ( < 0.01)
+(). To test the explanatory
+power of this statistical model, the prediction for each response
+was plotted against the actual performance (), showing that the explanatory model fits the data
+set well (OFF  = < 1 × 10,  = 0.87, root mean squared error
+(RSME) = 883.7; ON  = < 1 × 10 ,  = 0.86, RSME = 6140.3; ON/OFF  = < 1 × 10 ,  = 0.93, RSME = 8.0; ON/UI  = <
+1 × 10 ,  =
+0.85, RSME = 77.7). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_002.xlsx http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_002.xlsx http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf Once the explanatory power of the model
+had been shown, we set
+out to investigate the multidimensional, multiresponse data set using
+the model projections of each respective response. By setting the
+desired response optimization criteria (minimize OFF expression and
+maximize ON expression, ON/OFF, and ON/UI, ) interrogation of the standard least squares regression
+reveals factors with optimal OFF, ON, ON/OFF, and ON/UI performance.
+Details of the model coefficients for each factor used to build the
+refined model and the effect of these factors on the individual response
+variables can be found in . As expected, RBS strength has a significant impact upon
+both the OFF ( = 2.8 × 10) and ON ( = 1.5 × 10) expression levels with the strongest RBS (con_RBS) affording a
+large increase in ON (). Increasing IPTG concentration also has a significant positive
+effect on both OFF ( = 4.6 × 10) and ON ( = 4.6 × 10),
+leading to an increase in both responses with a larger effect upon
+ON expression than OFF (). Interestingly the model predicts that both RBS strength and hairpin
+ΔΔ have a significant positive effect
+upon riboswitch dependent control (RBS strength  = 7.6 × 10, hairpin ΔΔ = 2.0 × 10) (, blue boxes).
+The interaction between these two factors also has a significant effect
+on ON/OFF function ( = 5.2 × 10) and significantly increase total fold change (RBS strength  = 1.0 × 10, hairpin ΔΔ = 7.2 × 10). Together, these factor effects suggest that the improved riboswitch
+function is a byproduct of increasing ON expression while also reducing
+OFF and UI expression through proper formation of the anti-RBS hairpin
+OFF state. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_002.xlsx A number of other interacting factors impact OFF
+and ON expression
+levels. The concentration of IPTG used shows an additive effect on
+both OFF and ON expression when used with the stronger RBS (OFF  = 5.9 × 10, ON  = 4.8 × 10), meaning that when a stronger
+RBS is used, the effect of IPTG induction is enhanced, leading to
+higher expression both in the absence and presence of riboswitch activation.
+Increasing hairpin stability (ΔΔ) leads
+to a reduction in the impact of the IPTG effect on OFF expression
+( = 4.1 × 10), which means
+a more stable hairpin reduces the leaky expression from the unactivated
+riboswitch (). Intuitively,
+this observation seems to indicate that leaky expression from the
+riboswitches is caused by nonoptimal anti-RBS hairpin formation in
+the absence of the ligand (i.e., too weak/low ΔΔ), and that by increasing the ΔΔ of the hairpin, this leaky expression can therefore be reduced even
+at higher levels of transcription. Additionally, RBS strength and
+hairpin ΔΔ significantly interact, effecting
+both OFF ( = 5.6 × 10)
+and ON ( = 1.0 × 10) expression
+with the larger effect on OFF expression, suggesting that the importance
+of proper anti-RBS hairpin formation is greater when a strong RBS
+is used. In more practical terms, this means that any transcript which
+forms a ligand-bound ORS riboswitch structure produces greater levels
+of eGFP when translation is regulated by the strong consensus RBS. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf The set of experimental conditions that best satisfy all four response
+criteria is DoE run #20 (C, ). The plasmid construct used in this run consists of the D4-ORS
+riboswitch, N-terminal linker L36, induced with 200 μM IPTG
+at 30 °C. With these parameter settings, the model achieves an
+optimal balance between OFF, ON, ON/OFF, and ON/UI. However, the model
+suggests an interesting, albeit small, interaction between two factors.
+We see that the N-terminal linker L36 has a significant effect on
+this performance metric, but only when we consider it as part of an
+interaction with the incubation temperature ( =
+3.0 × 10). The effect of this predicted interaction
+was initially investigated  by modification
+of the experimental parameter settings to study the effect of this
+predicted interaction upon riboswitch function (). We see that when linker L36 (A) is used in the
+model, projections show an effect of temperature, with a higher incubation
+temperature having a negative effect on ON/OFF and ON/UI performance.
+While the predicted ON/OFF and ON/UI of the D4-ORS-L36 is largely
+unchanged when incubated at 30 °C, the real effect of this interaction
+occurs when temperature is increased to 37 °C. If we instead
+use the L35 linker with the D4-ORS, then the ON/OFF and ON/UI performance
+shows a reduced temperature dependency (B) with the ON/UI performance being better
+maintained, irrespective of the induction temperature. The expression landscape of D4-ORS-L35 in response to both
+IPTG
+and PPDA was mapped (D), and the total fold change is shown in E. This confirmed that D4-ORS-L35
+displayed high levels of IPTG and PPDA dependent regulation and displays
+AND logic behavior with expression requiring the addition of both
+IPTG and PPDA. An optimal ON/UI of 500-fold was observed with 1000
+μM PPDA and 200 μM IPTG. Further investigation of the
+expression response surface suggested that at 200 μM, IPTG maximal
+ON expression is achieved, but also that this IPTG concentration leads
+to an increase in the OFF expression, compared to those cells induced
+with 40 μM IPTG (D). Indeed, at an intermediate IPTG concentration (100 μM)
+(C), D4-ORS-L35
+gave consistent ON expression but reduced OFF expression, affording
+improved ON/OFF performance of 72-fold and total expression control
+of 544-fold (D). This highlights the need to balance transcriptional and post-transcriptional
+induction to properly achieve optimal riboswitch performance. To demonstrate the regulatory improvements achieved, the expression
+of the optimized constructs (D4-ORS-L35 and D4-ORS-L36) and the original
+ORS construct (ORS-WT_RBS-L30) (C and D) were compared. Fluorescence quantification
+after 24 h of induction confirmed that the optimized constructs showed
+drastically improved performance compared to the original ORS construct.
+The impact of changing the N-terminal linker was then validated by
+comparing riboswitch performance of the D4-ORS-L36 and D4-ORS-L35
+at 37 °C induced with 100 μM IPTG ± 1000 μM
+PPDA. These results confirmed that D4-ORS-L36 shows reduced performance
+at 37 °C when compared to D4-ORS-L35. To assess the expression
+profile of the D4-ORS construct at a single-cell
+level, we used flow cytometry to measure cellular eGFP fluorescence.
+This allowed us to assess the heterogeneity of eGFP expression 24
+h after induction with IPTG ± PPDA. Here, we compared the performance
+of the D4-ORS-L35 with ΔRS-conRBS-L35 (E and F). In the absence of any induction,
+we see two subpopulations in the ΔRS-conRBS-L35, one with low
+fluorescence (median = 332 RFU, 7.7% of events) and a second, broad
+population with higher fluorescence (median = 5661 RFU, 92.3% of events).
+If we compare this uninduced population with that of the D4-ORS-L35,
+this shows a single population of cells with low fluorescence (median
+= 265 RFU). Once induced with IPTG the ΔRS-conRBS-L35 shows
+strong induction (10 μM IPTG, median = 63 996, IPTG 100
+μM 143 785). Upon induction of D4-ORS-L35 with 8, 40,
+200, and 1000 μM PPDA and a fixed IPTG concentration of 100
+μM, we see titratable regulation of protein production with
+the median fluorescence measurements from expressing cells reaching
+1687 RFU, 4352 RFU, 16 326, and 55 543 RFU, respectively.
+We also observed a small, low fluorescent subpopulation following
+IPTG and PPDA addition, which represents between 7–10% of the
+total cellular population. Due to the complexity of interactions
+between genetic and environmental
+factors, selection of the best riboswitch design is not as simple
+as combining the best expression platform with the best N-terminal
+linker. By identifying the temperature–linker
+interaction, we selected the final device based on both performance
+and robustness. This effect would have been difficult to identify
+using a more traditional “one factor at a time” method,
+thus supporting our use of a Design of Experiments approach in the
+multifactorial, multiobjective selection and optimization of this
+RNA device. For reasons of apparent robustness, the D4-ORS-L35 construct
+was selected as the best candidate for further evaluation and characterization. To test the robustness of the D4-ORS-L35 with an alternative gene
+of interest, we exchanged the eGFP for the alternative reporter protein
+mKate2 and assayed riboswitch performance (). The D4-ORS riboswitch showed consistently improved performance
+compared to the original riboswitch with an increase in both ON and
+ON/OFF (A).
+However, in spite of very similar OFF and ON expression, the D4-ORS
+riboswitch with an alternative linker L32 performs marginally better
+when it comes to fold change (ON/OFF = 59) than D4-ORS-L35 (ON/OFF
+= 53) (A).
+Despite the inconsistent rank performance of the optimal N-terminal
+linkers when expressing the two different reporter genes, both D4-ORS-L35
+and D4-ORS-L32 show high levels of riboswitch-dependent control over
+the expression of mKate2, making both viable tools for post-transcriptional
+regulation of protein expression. This performance is vastly improved
+relative to the original ORS riboswitch that has an ON/OFF performance
+of just 12-fold and demonstrates that the D4-ORS robustly provides
+enhanced regulatory performance regardless of the gene being regulated. It may often be beneficial to integrate regulatory devices
+into
+the genome of the chassis to reduce genetic instability caused by
+plasmid maintenance, and to remove the need to maintain selective
+pressure through the use of antibiotics. We next wanted to investigate
+the function of the D4-ORS-L35 riboswitch when inserted into the genome
+(). The native WT-ORS performs poorly
+when integrated into the genome, with very low expression levels (UI
+= 10 RFU/OD, OFF = 19, ON = 49) and poor riboswitch-dependent control
+(ON/OFF = 3.4-fold) (B). However, by using the optimized D4-ORS-L35 we are able
+to regulate expression of the gene of interest from a single copy
+present on the genome (UI = 9, OFF = 26, ON = 598), affording riboswitch-dependent
+and total control overexpression of 23-fold and 70-fold respectively
+(B). By optimizing
+the function of these riboswitches, it is now possible to use riboswitch
+from a genomic locus, and obtain high levels of control and tight
+basal expression. This development greatly expands the utility of
+the PPDA responsive riboswitch. To establish whether the optimized
+riboswitch would provide enhanced
+function when the aptamer was replaced, we exchanged the ORS aptamer
+domain for the related 2-aminopurine (2-AP) responsive  aptamer domain from  (A). When the con_RBS
+is present, we observe ON expression far higher than previously reported, affording a 29-fold total fold change. However,
+as expected without the cognate anti-RBS, the OFF expression level
+is also very high, and poor riboswitch-dependent control is observed.
+The  aptamer was then assessed with the D4 expression
+platform and linker (L35, L36, and L32) combinations. These re-engineered  riboswitches show tight basal expression and high ON
+expression with ON/UI of 162-fold, 167-fold, and 193-fold, respectively.
+However, while the ON/UI shows good function, the ON/OFF performance
+of the D4-addA was reduced in comparison to the D4-ORS variants (7.6-,
+9.4-, and 10.2-fold for L35, L36, and L32 respectively, B). However, this is likely
+due to elevated OFF expression caused by cognate inducer adenine present
+in the cell at 97 μmol/mg DCW. The
+highest ON/OFF of 10.3-fold was observed in the D4-addA-L32. The D4-addA
+devices were also used to regulate the expression of mKate2 (C). The performance
+of these constructs was similar to that observed when regulating eGFP
+production, but in this case, the D4-addA-L35 showed the great fold
+change performance (ON/UI = 476, ON/OFF = 8.4). The engineered performance
+of the D4 expression platform may serve as a useful platform for the
+future development of post-transcriptionally regulated riboswitches
+through integration of other ligand binding domains. In addition to testing the D4- riboswitch
+on a plasmid, the riboswitch construct was also integrated into the
+genome of  (C). Similar trends to the D4-ORS were observed
+with the consensus RBS greatly increasing ON expression and the D4
+anti-RBS leading to restoration of tight UI and OFF expression. The
+D4- riboswitch showed riboswitch-dependent control
+(ON/OFF, 22-fold) very similar to that of the D4-ORS riboswitch. This
+is a drastic improvement compared to the native  riboswitch (ON/OFF = 1.4). Total fold change (ON/UI) was also greatly
+increased from 1.2-fold up to 138-fold. To further explore the
+context dependency of riboswitch performance
+and expand their utility as modular control elements for use in synthetic
+biology, we next looked to examine the dependency upon upstream sequence
+and promoter. To do so, we initially deleted the LacO sequence of
+the promoter (P) immediately downstream of the transcription
+start site (TSS) (), reducing the length
+of the transcript upstream of the basal aptamer stem by 21 nt (A). The effect of
+this reduction in transcript length upstream of the riboswitch was
+investigated by designing an alternative upstream linker, restoring
+the original length of this upstream region to that of the P system (49 nt). This nucleotide sequence was manually designed to
+reduce any predicted interaction with the OFF state riboswitch using
+RNAfold. D4-ORS riboswitch constructs
+with both the short and long upstream linkers were tested under the
+control of 3 constitutive promoters across a range of promoter strengths
+(BBa_J23114 = 0.1 a.u, BBa_J23118 = 0.56 a.u, BBa_J23100 = 1 a.u)
+using promoters from the Anderson collection (A). Expression analysis with these constructs confirmed that
+the D4-ORS
+riboswitch functions robustly under constitutive promoter regulation
+with riboswitch-dependent control of up to 25-fold observed. We also
+observed that the rank order of the Anderson promoters was not impacted
+by the insertion of the riboswitches (B). Comparison of the short linker vs the
+longer linker revealed that the longer upstream linker consistently
+performed better than those with the short linker both in terms of
+ON and ON/OFF performance (B). The ON performance of the long linker was 20, 46,
+and 66% higher than the short linker constructs for BBa_J23114, BBa_J23118,
+and BBa_J23100 promoters, respectively. The effect of modifying the
+length of the upstream sequence was further expanded by testing both
+the short and long linker variants when place under the control of
+the strong P promoter (C). Interestingly, the riboswitch-dependent
+control of both short and longer linker D4-ORS constructs showed no
+significant difference, and the discrepancy between linker length
+was reduced in comparison to that observed when transcription initiation
+was regulated by the weaker Anderson promoters. The importance
+of the upstream sequence explored here highlights
+this as another important factor to consider when incorporating these  post-transcriptional regulation devices into any genetic
+control element. Importantly, incorporation of the riboswitches showed
+that simply by incorporating 154 nt into the 5′ UTR of a selection
+of constitutive promoters, we obtained inducible expression control
+units with riboswitch-dependent control of up to 25-fold, demonstrating
+the use of the D4-ORS riboswitch to convert constitutive promoters
+into small molecule induced expression units across a range of different
+promoter strengths. Given that the longer linker gave better or equivalent
+ON/OFF performance for the constitutive promoters tested, this linker
+was selected for future testing of additional transcriptional and
+post-transcriptionally regulated devices. Exploration of the upstream
+linker region for these constitutive promoters allowed us to standardize
+this transcript region for future engineering. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_002.xlsx Following the
+successful integration of the D4-ORS-L35 riboswitch
+downstream from a series of constitutive promoters, we looked to integrate
+the D4-ORS-L35 into a variety of endogenous environmentally regulated,
+stress response promoters. A number of recent studies have developed
+stress responsive, transcriptionally regulated devices. While systems which utilize cellular stress to induce transcription
+provide a real time response to metabolic stress, the strength of
+this response cannot be dynamically regulated. By integrating post-transcriptional
+regulation downstream of such promoters, it should be possible to
+couple the stress response elements with small molecule induction
+and temporal control. Another common mechanism for regulating gene
+expression is through the use of bacterial starvation responses. Post-transcriptional
+regulation provides an interesting opportunity to advance the use
+of systems such as the phosphate starvation promoter, which has been
+used in the biological manufacture of therapeutic proteins. In this case, the only way to modify the strength
+of the starvation response upon gene expression is to engineer elements
+such as the RBS. By integrating such promoters with riboswitch device,
+we can modulate the magnitude of gene expression to optimize the production
+of the desired protein of interest. By replacing the original promoter
+(P) with a number of environmental and metabolic stress
+response promoters, namely hyperosmotic stress (P),
+phosphate starvation (P), redox stress (P), and carbon starvation (P) responsive promoters
+(, ), we constructed tools which are regulated by both
+the respective stress response and the riboswitch ligand concentration. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf In A, we
+see that the no-riboswitch control (ΔRS) P promoter
+is responsive to KHPO over the concentrations
+assessed (10 to 0.0001 mM), affording expression output over a 38.6-fold
+range. For the P-D4-ORS, we see that the expression
+is controlled in response to both varying KHPO and PPDA concentrations (A). The greatest ON is observed at 0.001 mM KHPO and 1000 μM PPDA, while in the absence of PPDA,
+we observe tight control of basal expression regardless of the initial
+phosphate concentration (gray, ). Riboswitch-dependent control of expression of up to 48-fold
+was observed under 1000 μM PPDA and 10 mM KHPO conditions. A maximal PPDA and KHPO dependent dynamic range of the P::D4-ORS-eGFP device
+was 646-fold, observed for 1000 μM PPDA and 0.001 mM KHPO with both PPDA and phosphate dependent regulation
+of expression (A). This is a significant increase in the dynamic range of this promoter
+compared to when no riboswitch is present. Despite the reduction in
+maximal ON expression, this enhanced dynamic range is achieved by
+drastically reducing the basal “leakiness” of the promoter
+under high phosphate conditions. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf Similar trends were observed for the P::D4-ORS-eGFP.
+This system was induced by both hyperosmotic stress and PPDA (B, ), and GFP fluorescence was measured
+after 3 h of hyperosmotic stress and PPDA induction. Tight control
+of basal expression, regardless of the NaCl concentration, is afforded
+by riboswitch integration (B). The maximal ON expression level was reached at
+1 M NaCl and 1000 μM PPDA with riboswitch performance of 7.3-fold
+and ON/UI of 36-fold (B, gray ). In comparison, the P ΔRS construct showed
+NaCl dependent induction of gene expression with only 4.9-fold control.
+The P is also active under stationary phase as well
+as being induced by osmotic stress. To investigate whether
+the expression of eGFP during stationary phase could be regulated
+by the riboswitch, we also measured eGFP expression after 24 h (). At this time point,
+we see a loss of osmotic stress dependent expression in the P::D4-ORS strain; in fact, expression is reduced at very
+high NaCl concentrations (0.8 and 1 M) in the P ΔRS
+construct, likely due to inhibition of cell growth. Despite loss of
+NaCl dependent modulation of protein production, riboswitch-dependent
+control of expression was maintained with PPDA dependent regulation
+up to 15-fold (ON/OFF) after 24 h, showing that the D4-ORS is able
+to regulate expression independently of both osmotic stress and stationary
+phase dependent effects. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf Another stress response transcription
+factor dependent promoter
+was coupled to the D4-ORS-L35 and assessed for its ability to respond
+to peroxide stress. Comparatively, the P::D4-ORS-eGFP
+device displayed HO dependent expression after
+3 h of expression when induced with a range of HO and PPDA concentrations. At 3 h, expression was altered in
+response to increasing both HO (% v/v) and
+PPDA concentration (). The ON/UI for the P reached 26.8-fold (0.03% HO, 1000 μM PPDA) (C). P and the soxRS have recently
+been used for sensing imbalance of NADP/H redox state, giving the P::D4-ORS-L35 device
+great potential in optimizing redox dependent pathways in biotechnology. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf The final stress responsive riboswitch device constructed utilized
+the carbon starvation promoter P. This strong stationary
+phase promoter is σ70 regulated and glucose repressible. Following
+cAMP accumulation, CRP positively regulates P activity,
+leading to transcription initiation. Following expression analysis
+in LB ± 5% glucose, we observed that the P::ΔRS
+is positively regulated in the absence of glucose, which corresponds
+to a 4.4-fold increase in eGFP production when cells are cultured
+in the absence of glucose. The same trend in observed upon integration
+of the D4-ORS; as expected, this device shows riboswitch-dependent
+control (D, ). Glucose dependent expression
+control in the D4-ORS device reached 7.2-fold (at 200 μM PPDA),
+and PPDA addition led to a 9.5-fold increase in protein synthesis.
+Combined, the effect of glucose starvation and PPDA induction yielded
+an ON/UI of 34.8-fold change in eGFP production (D) on induction with 1000 μM
+when induced by carbon starvation. In summary, riboswitch-dependent
+control of the output signal from
+bacterial stress response promoters proved successful, and  shows that each
+promoter was activated by the respective stimuli. By integrating D4-ORS
+into these endogenous promoters we have been able to decouple the
+signal processing of these cellular stress responses through post-transcriptional
+regulation. The introduction of a riboswitch into these promoter elements
+converts the simple input-output system into a two-input system, as
+both stress response promoter and riboswitch activation (stress +
+PPDA) is required to give an output (eGFP expression). In addition
+to production applications, these tools could be of
+use as sensors in developing understanding of cellular stress responses
+and metabolic and environmental stress. Coupling of stress response
+promoter with post-transcription, RNA regulated, small molecule inducible
+control of expression provides an interesting opportunity. This system
+allows cellular detection of a given stress stimuli, meaning that
+when this stress exceeds the limits deemed acceptable by the cell
+(selective pressure), transcription occurs. However, the riboswitch
+will adopt the OFF conformation until user addition of PPDA, allowing
+tunable, temporal control over the strength of the cellular stress
+response. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_002.xlsx http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf Following the end-point characterization of the P::D4-ORS device, we characterized the expression kinetics
+of the
+device in a mini-fermentation system (BioLector, M2P-Laboratories).
+Expression of eGFP for the P riboswitch device was
+measured over a 24-h period (E–H; ). Cells were supplemented with different amounts of KHPO4 to allow comparison of eGFP expression in phosphate replete
+and depleted conditions. When supplemented with 10 mM KHPO, P is not activated (E); however, at 1 mM KHPO and below, eGFP production is observed, indicating
+activation of P (F). Expression begins at ∼2 h, indicating the
+onset of the starvation response and plateaus after 4 h, which coincides
+with entry into the stationary growth phase (). When grown in 0.1 mM KHPO, this expression onset delay is reduced to ∼30 min (G), and at 0.01 mM
+KHPO, expression is observed upon the initial
+measurement, suggesting that the cells have entered a starved state
+directly following resuspension in media at this concentration of
+KHPO. At both of these lower KHPO levels, we see that eGFP production does not plateau
+throughout the 24-h measurement period. This is likely due to the
+severe phosphate limitation, as indicated by the poor growth of these
+cultures. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf At all phosphate concentrations, the basal level of
+expression
+is tightly repressed (E–H) in the absence of PPDA, and expression is increased
+in a PPDA-dependent manner, highlighting the utility of the D4-ORS
+to tightly control expression even when transcription has been induced.
+To assess the modification of eGFP production rate upon addition of
+PPDA, linear regression was carried out during the linear region of
+the RFU/OD data sets (2.5–3.5 h). The slope coefficients detailing
+the effect of PPDA on the eGFP production rate can be seen in . The fastest production
+rate is observed at 1 mM KHPO and 1000 μM
+PPDA. After 24 h, the maximal eGFP signal is observed in the 0.1 mM
+KHPO culture with 1000 μM PPDA (G). However, when
+cells are starved at a phosphate concentration below this (0.01 mM
+KHPO), we see a reduction in the maximal fluorescent
+signal and rate of expression. This ability to attenuate both the
+expression levels and rate of expression further expands the utility
+of both stress induced promoter and riboswitches for protein production
+applications. Exchanging the ribosome binding site of the
+ORS. (A) Overview of
+expression platform engineering, showing RBS exchange from the native
+RBS (WT_RBS = AGAGAA, red semi-circle) to the  six nucleotide consensus RBS (con_RBS = AGGAGG, green semi-circle),
+which was expected to improve protein production. Also shown is the
+ORS anti-con_RBS control sequence which contains the modified anti-RBS
+sequence. (B) End point measurement of eGFP production following modification
+of the RBS in constructs lacking the riboswitch aptamer region (left).
+We first tested the native  WT_RBS under transcriptional
+regulation from the P promoter in the presence (blue)
+and absence (gray) of IPTG (100 μM). Substitution of the native
+RBS with a predicted weak/nonfunctional RBS (NF_RBS = TCCTCC) yields
+greatly reduced protein expression, confirming correct identification
+of the RBS. Subsequently, the AGAGAA motif was exchanged with the
+six base consensus sequence (con_RBS = AGGAGG). The right hand side
+of this graph shows the performance of the ORS with the native and
+consensus RBS sequences and the ORS_con_RBS with a modified anti-RBS
+sequence. These constructs were tested in the presence (blue) and
+absence (gray) of IPTG (100 μM) plus induction of both transcription
+and translation with IPTG (100 μM) and PPDA (1000 μM)
+(orange). Anti-RBS library and FACS screening. (A) Design and construction
+of the anti-RBS library. (B) An overview of the FACS screening procedure.
+This method was used to screen variants of the anti-RBS library for
+riboswitch function. The library was grown under OFF (IPTG 100 μM,
+blue) and ON (IPTG 100 μM and PPDA 1000 μM, orange) induction
+conditions at 30 °C prior to sorting. The lowest 5% of the OFF
+population and the upper 5% of the ON population was sorted based
+on eGFP fluorescence intensity (green bow). The sorted populations
+were recovered and induced under the opposite induction condition,
+and the alternate sorting procedure was applied, giving two final
+sorting schemes (low > high, high > low). (C) OFF and ON expression
+levels (left -axis) and riboswitch dependent fold
+change (ON/OFF) (right -axis) from the 20 functional
+FACS selected riboswitches following 3 h of induction. (D) Plot showing
+the trade-off between two important performance metrics ON/OFF and
+total fold change (ON/UI). LH D4 and LH G7 show the best performance
+in terms of ON/OFF and ON/UI, respectively. All FACS screened constructs
+contain His-Linker 30. Error bars represent standard deviation. Data
+points represent the mean of at least biological duplicate measurements. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf DoE data. (A) An overview of genetic and environmental
+factors
+(hairpin ΔΔ, RBS strength, N-terminal
+synonymous codon variant, temperature and IPTG concentration) investigated
+using Design of Experiments. (B) Measured UI, OFF and ON performance
+of each riboswitch construct when tested under the factor settings
+dictated by the D-optimal design (). (C) ON/OFF (-axis) and ON/UI (-axis) performance of each tested DOE run. Run number 4
+shows the highest riboswitch dependent control. (D) End point eGFP
+expression testing of D4-ORS-L35 when induced with different concentration
+of IPTG (1–8, 0, 0.32, 1.6, 8, 40, 200, 400, and 1000 μM,
+respectively) and PPDA (A, 0, 0.32, 1.6, 8, 40, 200, 400, and 1000
+μM, respectively) after 24 h of induction at 37 °C. (E)
+Calculated total fold change (ON/UI) of the two inducer titration
+analysis. All error bars represent standard deviation, and data points
+represent the mean of three technical replicates (B) or biological
+replicates (D and E). DoE explanatory model
+showing the effect of the temperature–N-terminal
+interaction. Standard least squares modeling of the DoE dataset. Model
+projections showing the effect of hairpin ΔΔ, RBS strength, N-terminal His tag, incubation temperature, and IPTG
+concentration when using the D4-ORS-L36 (A) and D4-ORS-L35 (B). (A)
+D4-ORS-L36 ON/OFF and ON/UI show an interaction with incubation temperature,
+as indicated by the slope of the projections in the orange boxes.
+(B) D4-ORS-L35 ON/OFF and ON/UI shows very little interaction with
+incubation temperature, as indicated by the reduced slope of the projections
+in the green boxes. (C) Direct comparison of UI (grey), OFF (blue),
+and ON (orange) performance of the original ORS construct prior to
+RBS-anti-RBS modification and DOE optimization and the optimized D4-ORS-His-L30.
+(D) Comparison of the ON/OFF (green) and ON/UI (pink) of the original
+ORS riboswitch, D4-ORS-L35, and D4-ORS-L36. Expression data (C–D)
+was collected from biological triplicate induction assays carried
+out at 37 °C after 24 h following induction with 100 μM
+IPTG in the presence and absence of 1000 μM PPDA. (E) Histogram
+of eGFP fluorescence intensity from ΔRS_conRBS-L35 analyzed
+by flow cytometry, showing the population distribution of single-cells
+when induced with different level of IPTG (red = uninduced, orange
+= 10 μM IPTG, green = 100 μM IPTG). (F) Flow cytometry
+analysis of the D4-ORS-L35 device following various induction conditions
+(Red = uninduced, orange = 100 μM IPTG, magenta = 100 μM
+IPTG + 8 μM PPDA, blue = 100 μM IPTG + 40 μM PPDA,
+yellow = 100 μM IPTG + 200 μM PPDA, magenta = 100 μM
+IPTG + 1000 μM PPDA). Regulation
+of plasmid-based mKate2 expression and chromosomally
+integrated eGFP. (A) Measurement of end point expression (UI = gray,
+OFF = yellow, ON = red) shows robust riboswitch performance of D4-ORS-L35
+and comparison of each N-terminal variant when regulating mKate2 expression.
+(B) Following genomic integration of the D4-ORS-L35 device into the
+genome of  DH10 beta Top10 F′, the
+device showed strong ON expression and high fold-change performance
+values compared to the original ORS construct (100 μM IPTG and
+1000 μM PPDA) (ON/OFF = blue brackets, ON/UI = black brackets).
+(C) Genome integration of the D4-addA riboswitch show greatly improved
+ON, ON/OFF (blue brackets), and ON/UI (black brackets) performance
+compared to the original addA riboswitch (100 μM IPTG and 1000
+μM 2-aminopurine). Bars represent mean of three biological triplicates;
+error bars show standard deviation. ORS–addA mutation.
+(A) Predicted structure (RNAfold) of
+the D4-ORS riboswitch, showing the point mutations responsible for
+changing ligand specificity (green circles, labeled with mutation)
+from PPDA to 2-AP, thus restoring the aptamers region of the  riboswitch. The D4 anti-RBS (orange) and consensus
+RBS are indicated (green); numbering shown is relative to the start
+codon. (B) 2-AP mediated activation of the addA leads to an increase
+in protein expression. Blue bars show the level of protein synthesis
+when induced with IPTG only, whilst green bars show induction with
+IPTG and 2-AP. The optimized D4 expression platform shows robust performance
+when the aptamer region is exchanged with the native  aptamer. (C) Performance of the D4-addA devices when regulating
+the gene expression of for mKate2 (UI = gray, OFF = yellow, ON = red).
+Error bars represent the standard deviation of three biological replicates.
+Blue brackets indicate ON/OFF values, whilst black brackets represent
+ON/UI. Integrating
+constitutive promoters into riboswitches allows inducible
+control of gene expression. (A) Modification of the upstream linker
+sequence between the transcription start site and the basal stem of
+the ORS. Deletion of the LacO site from P yielded the
+constitutive P promoter with a reduced length transcript
+upstream of the riboswitch (short). An alternative (long) upstream
+linker was designed in silico to restore the transcript length to
+that of the original P construct. The P was then replaced with three different strength promoters from the
+Anderson library for further testing. The three Anderson promoter
+parts (BBa_J23100 (green), BBa_J23114 (red), and BBa_J23118 (orange))
+also contained an upstream insulator sequence. (B) End-point measurement of eGFP production from the Anderson
+promoter regulated devices showing OFF (blue) and ON (orange) performance.
+The black brackets indicate the level riboswitch dependent control.
+(C) PPDA titration of gene expression from P riboswitch
+constructs. The performance of the original ORS is shown in gray;
+the con_RBS ORS is shown in red, and the D4-ORS is shown in blue.
+Filled circles indicated the long linker, whilst empty circles indicate
+the short linker. (D) Riboswitch dependent control of each of the
+P constructs. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_002.xlsx Integration of orthogonal, post-transcriptional
+regulation into
+endogenous stress response pathways. Induction matrix heat maps showing
+the observed ON/UI for the P (A), P (B),
+P (C), and P (D) D4-ORS-L35 devices
+following different levels of transcriptional and post-transcriptional
+induction with PPDA and KHPO, NaCl, HO, or glucose starvation. ΔRS controls included
+for comparison. E–H show kinetic microfermentation characterization
+of eGFP production (RFU/OD) from the P::D4-ORS-L35
+devices when grown in EZ-rich media supplemented with varying levels
+of KHPO (E = 10 mM, F = 1 mM, G = 0.1 mM,
+H = 0.01 mM) over 24 h. Data represent the mean of three replicates.
+Raw data and standard deviations can be seen in . The findings presented
+here demonstrate the power of combining
+functional selection and multidimensional, multiobjective optimization
+for constructing RNA regulators with improved functionality. We show
+that through incorporation of both the consensus  RBS and an anti-RBS library that subsequent FACS enrichment and
+selection of riboswitches with optimal anti-RBS hairpins can be achieved.
+Following further functional optimization through DoE riboswitch,
+function of the ORS can be greatly improved (820% improvement in ON
+state expression) with PPDA induced riboswitch-dependent control (ON/OFF)
+up to 72-fold and overall transcriptional (IPTG) and post-transcriptional
+(PPDA) regulation across a 544-fold dynamic range (ON/UI) (D). Design of Experiments
+also allowed prediction of factors likely to affect riboswitch robustness
+using sparse sampling of a large experimental space to enhance understanding,
+probe complex interactions and environmental factors, and guide optimal
+construct selection. By improving the function of the PPDA responsive
+riboswitch, we built a device comparable with the widely used theophylline
+riboswitch, thus expanding the RNA device
+toolbox, which will be of great use to the synthetic biology community
+and reduce dependence upon protein- and transcription-factor-based
+regulation. Unsurprisingly, the SLS regression model predicts
+that the stability
+of the expression platform hairpin dictates riboswitch function. In
+future work, we hope that this framework will allow further prediction
+of switches with further enhanced function. Currently, this has proved
+challenging due to the complexities of  structural
+prediction. A recent review of RNA device design highlights a number
+of the challenges in this area. It is
+possible that incorporation of more advanced kinetic or three-dimensional
+structural predictions into the DoE framework could allow us to build
+a predictive model. Additionally, the SLS model built here assumes,
+for simplicity, only linear relationships between factors. While this
+has proven sufficient for construct selection and robustness testing,
+nonlinear modeling may facilitate future further improvement of riboswitch
+function. We demonstrate that the riboswitch developed here
+functions robustly
+in a wide array of contexts, including the regulation of an alternative
+gene of interest, when inserted on the genome, and downstream of a
+number of different constitutive promoters. In constructing the devices
+containing these constitutive transcriptional regulators, we also
+highlight the importance of the 5′ UTR, the linker region between
+the TSS and the riboswitch structure. The design of these devices
+was then used to inform the design of four endogenous  stress response promoter riboswitch regulators. The orthogonal riboswitch
+allows translation control of expression from stress responsive promoters
+only when PPDA is present. This additional layer of expression control
+allows exogenous control of expression following the induction of
+transcription by the respective environmental metabolic stress. This
+additional layer of riboswitch-dependent control allows for temporal
+control and activation of gene expression in response to environmental
+and stress stimuli. Decoupling of growth and production phases
+has been previously
+implemented to maximize volumetric production titers using both process
+control strategies such as autoinduction media or late stage fed-batch
+induction and autonomous genetic control. However, a challenge with using autonomous control elements such
+as promoters responsive to environmental or stress stimulus is their
+undesired activation during preculture conditions and prior to induction.
+Here, use of a riboswitch permits tight basal control of gene expression
+in the absence of riboswitch activation, and upon further activation,
+the expression output is attenuated over a large range. This may prove
+particularly useful in bioprocessing of toxic or difficult to express
+proteins, when it is often desirable to accumulate biomass prior to
+protein production while maintaining tight regulation of expression.
+This can be challenging in traditional expression systems due to high
+basal expression and population-level expression heterogeneity. By
+utilizing post-transcriptional control, these issues can be easily
+addressed. Additionally, by combining the endogenous sensing capabilities
+of the cell with riboswitch control, we addressed a major limitation
+to the use of riboswitches. Currently, the numbers of riboswitch–ligand
+pairs are somewhat limited, and those which respond to orthogonal
+small molecule inducers are limited yet further. By tapping into a
+number of endogenous sensory pathways, we expanded the stimuli, which
+can regulate protein expression, through post-transcriptional control.
+In the case of these systems, promoter activation machinery provides
+stimuli specific induction, and the riboswitch affords tunable control.
+In other words, once transcription has be activated by the respective
+stress stimuli, the magnitude of this activation can be regulated
+by riboswitch addition, allowing the expression rate to be balanced
+with respect to the cellular capacity to produce, process, or secrete
+the desired protein of interest. The
+combination of stress activated transcription and tunable control
+of protein production will hopefully prove of great use to the synthetic
+biology and bioprocessing communities. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf Supporting Information and Methods http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_002.xlsx All cloning, including library
+generation, was carried out using HiFi assembly (NEB #E5520S) and
+transformation into  DH5 alpha (NEB
+#C2987). Assembly DNA was synthesized either as dsDNA or ssDNA. Plasmid
+DNA was then isolated using silica column purification (Qiagen) and
+transformed into chemically competent  DH10β
+Top10 F′ (ThermoFisher Scientific). This strain was used for
+all subsequent expression analyses, unless stated otherwise. pKIKO
+vectors were cloned in  PIR2 strain (Invitrogen).
+For details on cloning, see . The sequence of the pTAC-ORS-L30-eGFP plasmid
+and key expression cassettes, consisting of the promoter-5′UTR-CDS-terminator
+region of the main devices used in this study, can be found in . Cultivation and Expression
+Conditions Single colonies
+were inoculated into LB medium and carbenicillin 100 μg mL (0.5% yeast extract, 0.5% NaCl, 1.0% bactotryptone)
+following calcium chloride mediated transformation of plasmid DNA
+into chemically competent cells prepared according to a modified procedure. Liquid cultures were incubated at 37 °C
+with shaking at 200 rpm for 16 h overnight. These seed cultures were
+diluted 100× in 10 mL of LB supplemented with 0.2% glucose and
+incubated as before for 2 h (OD 600–0.3). Cultures were then
+aliquoted (500 μL) into deep well plates (Amgen 1.4 mL 96 well
+plates) with the designated final inducer concentrations (100 μM
+IPTG) and pyrimido-[4,5-]-pyrimidine-2,4-diamine
+(PPDA) or 2-amino- purine (2-AP) at 1000 μM for standard OFF–ON
+expression. All constitutive promoter constructs were induced with
+PPDA only, i.e. no IPTG was required. Following incubation for 3 h,
+250 μL of culture was aspirated into a separate deep well block,
+and cells were harvested by centrifugation. Cell pellets were then
+washed with PBS (Sigma), diluted 1:4, and the cell density and fluorescence
+were recorded using a ClarioStar microplate reader (BMG). EZ-rich
+media (Teknova) was used for testing and kinetic characterization
+of the PphoA::D4-ORS-L35 device. EZ-rich is a modified Neidhardt media with the following composition: 40 mM MOPS,
+4 mM tricine, 0.01 mM iron sulfate, 9.5 mM ammonium chloride, 0.276
+mM potassium sulfate, 0.0005 mM calcium chloride, 0.525 mM magnesium
+chloride, 50 mM sodium chloride, 3 × 10 M
+ammonium molybdate, 4 × 10 M boric acid,
+3 × 10 M cobalt chloride, 10 M cupric sulfate, 8 × 10 M manganese chloride,
+10 zinc sulfate, 1.32 mM potassium phosphate,
+1.5 mM potassium hydroxide, 0.2 mM adenine, 0.2 mM cytosine, 0.2 mM
+uracil, 0.2 mM guanine, 0.8 mM -alanine, 5.2 mM -arginine HCL, 0.4 mM -asparagine, 0.4 mM -aspartic
+acid (potassium salt), 0.6 mM -glutamic acid (potassium
+salt), 0.6 mM -glutamine, 0.8 mM -glycine, 0.2
+mM -histidine HCL HO, 0.4 mM L-isolucine, 0.4
+mM -proline, 10 mM -serine, 0.4 mM -threonine,
+0.1 mM -tryptophan, 0.6 mM -valine, 0.8 mM -leucine, 0.4 mM -lysine, 0.2 mM -methionine,
+0.4 mM -phenylalinine, 0.1 mM -cysteine HCL, 0.2
+mM -tryosine, 0.05 mM thiamine, 0.01 mM calcium pantothenate,
+0.01 mM para-amino benzoic acid, 0.01 mM para-hydroxy benzoic acid,
+0.01 mM dihydroxyl benzoic acid, and 0.2% glucose (w/v). FACS Counter-Selection
+of Improved Riboswitch Variants Two separate sorting schemes
+were applied to isolate functional riboswitches
+from the anti-RBS library; sorting of cells with low fluorescence
+intensity under OFF induction, followed by sorting of highly fluorescent
+cells under ON induction (low > high). Conversely, the opposite
+scheme
+was also applied, where highly fluorescent cells were sorted under
+ON induction, followed by isolation of cells with low fluorescence
+when induced with OFF. Prior to FACS sorting, 500 μL of the
+cryopreserved library was inoculated into 50 mL of LB + carbenicillin
+100 μg mL and incubated for 16 h at 30 °C
+with shaking at 200 rpm. The culture was diluted 100× and incubated
+as before for 2.5 h (OD600 = 0.3). Cells were then induced with either
+100 μM IPTG or 100 μM IPTG + 200 μM PPDA and incubated
+for 20 h at 30 °C, and cells (2 mL) were then harvested by centrifugation
+and resuspended in PBS prior to FACS sorting. The bottom 5% of the
+IPTG induced culture (low OFF expression) and the top 5% of the IPTG
++ PPDA (high on expression) were sorted (10 000 events). Following
+sorting of these two populations, 15 mL of LB + 0.2% glucose was added
+to the sort tubes. Cells were then pelleted by centrifugation (2500 for 10 min), resuspended in 1 mL of LB + 0.2% glucose,
+and incubated overnight at 30 °C, 200 rpm. The induction and
+sorting process was repeated as before, but each population was induced
+under the alternative condition (IPTG only > IPTG + PPDA, IPTG
++ PPDA
+> IPTG only). Sorted cells were resuspended and concentrated as
+before
+and plated onto LB + carbenicillin 100 μg mL + 0.2% glucose plates. All FACS analysis was carried out using a
+Sony SH800. Data were analyzed using FlowJo Single Cell Analysis Software
+version 10. Single
+colonies (90
+from each FACS sort scheme) were inoculated into 500 μL of LB
++ carbenicillin 100 μg mL + 0.2% glucose
+and incubated at 37 °C shaking at 1000 rpm for 16 h. This culture
+was then diluted 100× in LB + carbenicillin 100 μg mL + 0.2% glucose in a 96 deep well block prior to incubation
+for 2 h at 37 °C shaking at 1000 rpm. The culture was then induced
+with 100 μM of IPTG. Half of the IPTG induced culture was then
+transferred to another plate and induced with 1000 μM of PPDA.
+Both plates were incubated for a further 3 h. The resulting culture
+was harvested by centrifugation at 2250 for 10 min
+at 4 °C. Cells were then resuspended in 1 mL of PBS and pelleted
+by centrifugation as before. Finally, cells were again resuspended
+and diluted 1:1 in PBS. A 200 μL aliquot was then transferred
+into a black, clear flat-bottomed microplate (Greiner), and the optical
+density (OD λ = 600 nm) and fluorescence (eGFP fluorescence
+was measured at λEx/λEm = 488/520 nm, while mKate2 fluorescence
+was measured at λEx/λEm = 588/633 nm) were recorded. Fluorescence
+was then normalized to optical density (RFU/OD). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf The Design of Experiment data
+structure was generated with JMP 12 pro using the custom design tool.
+D-optimality was used to select the chosen design from a number of
+randomly generated designs (random starts = 20 000) to investigate
+all main effects and two-factor interactions. The factors tested by
+the D-optimal Design of Experiments are listed in . This design was generated using JMP-12
+Pro Custom Design tool based on the D-optimality criteria which scores
+designs based on reducing the generalized variance around the selected
+design points, thus giving a more precise estimate of the model effects.
+The design is a modified fractional factorial design consisting of
+40 runs containing 4 center points. The choice of runs was determined
+by the JMP custom design algorithm. Modeling of the structured experimental
+data set will allow the prediction of all linear main effects and
+two-factor interactions. Unlike other fractional factorial DoE designs,
+the D-optimal custom design allows fractional reduction in the number
+of experiments required while also facilitating testing of multiple
+categorical factors (i.e., A or B or C) at more than two levels, making
+its use essential for DoE testing of the 4 N-terminal linker variants
+used in this study. An eight-run block was included to control for
+run order effects and to protect against user error. If human error
+prevented the use of any data points, this block would mean that only
+the runs in the respective block need be repeated. Confirmation that
+this repeated data did not significantly deviate from the rest of
+the data set is then confirmed when assessing the model effects during
+SLS regression. SLS model fitting did not assign the block effect
+as significant. The induction protocol was modified to align with
+the data structure shown in . Data were collected and processed using the expression conditions
+described previously. Protein expression was measured after 3 and
+24 h. The SLS model fitting and all subsequent experimental expression
+data (D–F)
+show the eGFP production after 24 h. Standard Least Squares
+Model Fitting http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00017/suppl_file/sb9b00017_si_001.pdf Modeling was carried
+out using the Fit Model function with JMP pro 12. The statistical
+model was built using the JMP 12 pro Standard Least Squares fit model
+algorithm using Residual Sum of Squares (RSS) reduction. Factor importance
+and factor effects were assessed using ANOVA. The underlying SLS model
+is represented in this study using the JMP 12 pro Prediction Profiler
+(A and B, ). Stress Response Promoter
+Testing: Phosphate Starvation Coupled
+Riboswitch Function Assay The PD4-ORS-L35-eGFP
+and P ΔRS-L35-eGFP constructs were transformed
+into  DH10β TOP10 F′. Single
+colonies were inoculated into LB containing 100 μg mL and incubated for 16 h at 37 °C with shaking at 200 rpm. Cells
+were then diluted 100× in EZ-rich media and grown to an optical
+density (λ = 600 nm) of 0.3 (∼2.5 h). The culture was
+centrifuged (2250, 5 min) and resuspended in an
+equal volume of EZ-rich media supplemented with either 10, 1.32, 1,
+0.1, 0.01, 0.001, or 0.0001 mM KHPO. The culture
+was then aliquoted (500 μL) into a 96-well deep-well block and
+induced with 0, 40, 200, and 1000 μM PPDA and incubated at 37
+°C with shaking at 1000 rpm for 24 h. The OD600 and fluorescence
+was measured at 24 h. Cells were washed in PBS, and readings were
+taken as described previously, carried out in biological triplicate. Expression kinetics of the P::D4-ORS-L35 was also
+assessed. Cells were treated as above, but following resuspension
+in KHPO supplemented media, the cell suspension
+was transferred (1 mL) into a 48 well, baffled deep-well plate (m2p,
+M2P-48-B) containing either 1000, 400, 200, 40, 8, and 1.6 μM
+PPDA (P::D4-ORS-L35 only) and incubated in the BioLector
+culture platform for 24 h at 37 °C with shaking at 1200 rpm.
+Optical density (λ = 620 nm) and fluorescence (λEx/λEm
+= 488/520 nm) was measured every 15 min. Carried out in biological
+triplicate. Hyperosmotic Shock Activation of P Assay The PD4-ORS-L35-eGFP and P ΔRS-L35-eGFP
+constructs were transformed into  DH10β
+TOP10 F′. Single colonies were inoculated into LB containing
+100 μg mL and incubated for 16 h at 37 °C
+with shaking at 200 rpm. Cells were then diluted 100× in LB-rich
+media and grown to an optical density (λ = 600 nm) of 0.3. The
+culture was centrifuged (2250 g, 5 min) and resuspended in an equal
+volume of LB media supplemented with 1, 0.8, 0.6, 0.4, 0.2, or 0.171
+M (standard LB) or 0.1 M NaCl. The culture was then aliquoted (500
+μL) into a 96-well deep-well block and induced with 0, 40, 200,
+and 1000 μM PPDA and incubated at 37 °C with shaking at
+1000 rpm for 24 h. The OD600 and fluorescence was measured at 3 and
+24 h. Cells were washed in PBS, and readings were taken as described
+previously. This experiment was carried out in biological triplicate. Hydrogen Peroxide Induction of P Assay The
+PD4-ORS-L35-eGFP and P ΔRS-L35-eGFP
+constructs were transformed into  DH10β
+TOP10 F′. Single colonies were inoculated into LB containing
+100 μg mL and incubated for 16 h at 37 °C
+with shaking at 200 rpm. Cells were then diluted 100× in LB-rich
+media and grown to an optical density (λ = 600 nm) of 0.3. The
+culture was then aliquoted (500 μL) into a 96-well deep-well
+block and induced with hydrogen peroxide (0, 0.3, 0.03, 0.003, and
+0.0003%) and PPDA (0, 40, 200, and 1000 μM) and incubated at
+37 °C with shaking at 1000 rpm for 24 h. The OD600 and fluorescence
+was measured at 3 and 24 h as previously described. The assay was
+carried out in biological triplicate. The PD4-ORS-L35-eGFP and P ΔRS-L35-eGFP constructs
+were transformed into  DH10β TOP10 F′.
+Single colonies were inoculated into LB containing 100 μg mL and incubated for 16 h at 37 °C with shaking
+at 200 rpm. Cells were then diluted 100× in LB-rich media and
+grown to an optical density (λ = 600 nm) of 0.3. The culture
+was centrifuged at 2250 for 5 min. The supernatant
+was removed, and cells were resuspended in LB media ±5% glucose
+and aliquoted (500 μL) into a 96-well deep-well block containing
+PPDA (0, 40, 200, and 1000 μM) and incubated at 37 °C with
+shaking at 1000 rpm for 24 h. The OD600 and fluorescence was measured
+at 3 and 24 h as previously described. Samples were measured in biological
+triplicate..

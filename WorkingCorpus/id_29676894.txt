@@ -1,0 +1,387 @@
+Timekeeping elements coordinate
+and synchronize most processes required to sustain life, from the
+physiology of individual cells to the daily rhythms of entire organisms. The design principles underlying the operation
+of biomolecular clocks have been investigated by dissecting natural
+systems, as well as by building  molecular oscillators
+in an effort to identify minimal requirements for periodic behaviors. Experiments and modeling have established that a necessary requirement for a system to exhibit
+oscillations is the presence of a negative loop. Conversely, any negative
+feedback loop potentially leads to oscillations provided that the
+loop includes destabilizing features, for instance delaying elements
+associated with a large feedback gain. Delay can be introduced by a variety of phenomena.
+In addition to transcription and translation steps, delay is increased
+by transport, mRNA splicing and stabilization, phosphorylation, and
+protein maturation. While an explicit delay term is useful to aggregate these phenomena
+in a single, black-box parameter, in other instances it is possible
+to model their individual kinetics as a chain of interconnected subsystems. In a linearized closed-loop system,
+a chain of slow subsystems has the same effects as an explicit delay
+in inducing oscillations. The overall
+delay of the negative feedback chain depends on all the time constants
+of the dynamic elements. Given a sufficient delay, the larger the
+feedback gain, the likelier is the onset of persistent oscillations. Despite the simplicity of these design principles, it is unclear
+how the individual time constants and the overall gain affect the
+emergence of oscillations. Are we equally likely to observe oscillations
+in a system with homogeneous  nonhomogeneous
+time scales? How large should the loop gain be in either case? These
+questions are particularly relevant in the context of genetic oscillators,
+where time constants are determined by mRNA and protein degradation,
+transport, and processing rates, which may widely vary among the oscillator
+components, and a large loop gain is energetically expensive, because
+it depends on the production rate of the components. In this
+paper, we address the following question in mathematical
+terms: Given a negative loop of first order elements, each associated
+with its own time constant, which is the choice of the time constants
+that requires the smallest gain to allow for persistent oscillations?
+We demonstrate that homogeneous time constants are the most favorable
+choice when a small loop gain is desired. In particular we prove that
+(1) the smallest negative feedback gain required to trigger oscillations
+is achieved when all time constant are equal; (2) the smallest gain
+is invariant under a homogeneous scaling of all time constants and
+the period of the oscillations is proportional to the scaling factor;
+(3) as a converse result, in a negative feedback loop, the best strategy
+to avoid oscillations is to have a single element of the chain that
+is much slower than all the others, and this fact explains why, in
+several pathways with negative feedback, the presence of a slow element
+ensures a robust nonoscillatory behavior. We apply our results
+to well-known genetic oscillators, the Goodwin
+oscillator and a two-node (inhibitor-activator) oscillator, and we
+derive exact (necessary and sufficient) conditions for the existence
+of parameters that ensure oscillations. Architecture of Candidate
+Negative Feedback Oscillators As candidate oscillator architectures,
+we consider negative feedback
+loops of the following form:representing
+the series connections of  ordered subsystems in
+which any element has a positive
+influence, quantified by parameters  > 0 (with  = 2, ..., ), on the next one, while  is a perturbing
+input
+that triggers oscillations. Each ordinary differential equation (ODE)
+in the model in  is
+suited to model phenomena such as production, conversion, processing,
+and degradation of molecular components (mRNA and proteins) interconnected
+in a regulatory chain. The model can
+also capture enzymatic processes that operate at low substrate concentration
+relative to the binding affinity of the enzyme and substrate; in this
+regime, Michaelian or Hill-type reaction rates become approximately
+linear (first-order rates). A negative feedback loop is generated  the inhibitory effect of the last element in the chain
+on the first one, quantified by parameter  > 0. The parameter τ represents
+the time constant of process  (which can be seen
+as the speed of the reaction of the species  due to the regulatory effect of ). A similar
+negative feedback structure can be found in many oscillatory systems. We now take the Laplace transform of these ODEs:
+we formally replace () with () and the derivative / with the complex variable , () → (). After Laplace-transformation, the model in  can be rewritten as a block-interconnection
+of elements:as shown in . http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00442/suppl_file/sb7b00442_si_001.pdf The time constants τ, which introduce an overall  in the loop; A sufficiently large feedback gain κ
+> 0. The quantityis called the  and
+has a fundamental role. It is the product of all the interaction strengths
+and thus represents the cumulative strength of the loop. It turns
+out that the characteristic polynomial depends on the product κ
+only, and not on the individual parameters ; hence, even if the individual rates  are changed, the system behavior
+remains the same as long as their product is unchanged (see the  for the detailed derivation).
+The onset of oscillations in this negative feedback loop is therefore
+associated with two fundamental ingredients: In the next section we ask ourselves
+whether there is any ideal
+relationship between the loop gain and the time constants to achieve
+or avoid oscillatory behavior. Loop of  first order systems: block
+diagram. Influence of Time Constants on the Oscillatory
+Regime We next investigate how the time constants τ influence the onset of persistent oscillations.
+We define
+τ = [τ τ ... τ], the vector of time constants, and consider
+the characteristic polynomial associated with the (linearized) system
+of ODEs:For κ = 0, the roots
+of (, τ) are λ = −1/τ, real and negative, hence the system response
+has an exponentially
+decreasing pattern. For large values of κ, (, τ) has complex
+roots, associated with oscillations. The oscillations are damped
+if the roots have a negative real part. To have persistent oscillations,
+the roots of (, τ) must reach and cross the imaginary axis in the
+complex plane. This can happen only if(as discussed
+at the end of this section;
+see also ref ()).
+Henceforth, we assume that the necessary condition  ≥ 3 is verified. For  ≥ 3,
+let us increase κ. Then,
+there exists a  κ* such that,
+for all κ > κ*, (, τ) has complex roots with positive
+real part (namely, the system becomes unstable). For κ = κ*, (, τ)
+has two purely imaginary roots ± ω*,
+while the other roots have negative real part. The limit value κ*
+is associated with the onset of an oscillation with frequency ω*/2π;
+we call ω* . Note that ω*
+≠ 0: (, τ) cannot have 0 as a root for κ > 0,
+since (0, τ) = κ + 1 ≠ 0. We can formally define the critical gain κ* as the smallest
+value of κ for which (, τ) has a pair of purely imaginary
+roots (corresponding to the stability limit). The value κ* depends
+on the time constants τ and we
+can write Which
+are the most favorable values of τ to promote oscillations? We address this question in terms
+of the , by seeking a value
+τ* = [τ τ ... τ] that minimizes the critical κ*(τ)
+enabling the onset of oscillations. : Find
+a value τ* that minimizes κ*(τ)
+in . http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00442/suppl_file/sb7b00442_si_001.pdf : The problem is solved by a value τ*
+withThis result is proved in the  (Theorem 1): our proofs
+are based on
+frequency analysis tools, linear algebraic tools and principles of
+convex optimization. Therefore, an essential factor to promote
+oscillations in a negative
+feedback loop is the homogeneity of the time constants of the subsystems
+involved in the loop. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00442/suppl_file/sb7b00442_si_001.pdf Further, we find that scaling the time
+constants influences exclusively
+the critical pulsation, without affecting the critical gain: when
+the time constants are scaled as τ → στ, for arbitrary
+σ > 0, the critical gain κ* is invariant, κ*(στ*)
+= κ*(τ*), while the critical pulsation scales proportionally
+to σ: ω* → σω* (. Corollary 1, ). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00442/suppl_file/sb7b00442_si_001.pdf Also, the critical gain κ* is a decreasing function of the
+number of elements in the loop (see the , Proposition 2, for details). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00442/suppl_file/sb7b00442_si_001.pdf Our result
+(the critical gain that allows for oscillations is minimized
+when all the time constants are equal) indirectly suggests how to
+prevent a system from oscillating. This aspect is relevant in the
+context of biological and biochemical feedback loops, in all the situations
+where it is important to preserve homeostasis and oscillatory behaviors
+must be avoided. Being κ* a decreasing function of , long feedback chains are more prone to instability, which can be
+of an oscillatory type. Hence, a natural question is which is the
+best strategy to avoid oscillations in the loop. Our result suggests
+that incongruous time constants lead to a robustly nonoscillatory
+behavior. Let us now consider the complementary question: assuming
+(without restriction) that the time constants are normalized aswhere  is
+the , which is the best distribution
+of time constants to prevent oscillatory behaviors? We find that,
+roughly speaking, it is better to have the delay concentrated in a
+single subsystem (see the , Proposition 3, for details). Then, a robust strategy to prevent
+oscillations is, for instance, including in the loop a single subsystem
+that is much slower than the others, so that their time constant is
+negligible with respect to the slow part. This result also explains
+the previous statement about the necessity of condition  ≥ 3 to have persistent oscillations. Indeed, setting τ = 0 is mathematically equivalent to neglecting
+the th process, since then 1/(1 + τ) = 1. an effective strategy to preserve stability and prevent oscillations A fundamental consequence
+of our results is the following: in a
+negative feedback loop, the presence of a single slow element is . Indeed, several negative feedback loops in nature are practically
+always stable, and this can be explained by noting that the involved
+time constants are very different. For example, biologically, degradation
+rates of mRNA and proteins may vary in a broad range and, as foreseen
+by our results, this variability could contribute to stabilizing negative
+loops, making it difficult to achieve oscillations. Yet, we point
+out that, when the kinetics of a molecular species are much slower
+or much faster than the rest of the system, they can be simply eliminated
+from the model  time scale separation methods; this type of drastic time scale variability
+may affect the capacity for oscillations when the system dimension
+collapses below 3. Our results allow us to
+derive analytical
+bounds in the parameter space for the oscillatory regions of general
+families of genetic oscillators. These bounds are also numerically
+verified in the following sections  random parameter
+sampling. The well-known Goodwin oscillator is
+associated with the following equations: http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00442/suppl_file/sb7b00442_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00442/suppl_file/sb7b00442_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00442/suppl_file/sb7b00442_si_001.pdf The model
+is characterized by the number  of stages, by the
+cooperativity (Hill) coefficient , by the apparent
+dissociation constant , and by the rate constants  and . Rates  and  can model
+protein translation and degradation,
+mRNA processing phenomena, or protein phosphorylation/dephosphorylation. All these parameters are positive. As shown
+in the  (Section
+2.1), the system admits a single positive equilibrium. The emergence
+of sustained oscillations depends on the choice of the parameters,
+which influences the values of both the variables at steady-state
+and of the entries of the Jacobian matrix. By applying our main result
+to the Goodwin oscillator model, we discover that there exists at
+least one choice of the parameter values that leads to oscillations
+(namely, for which the linearized system admits complex eigenvalues
+with nonnegative real part) if and only if(the full derivation
+is in the , Section
+2.3). The characteristic
+equation, equating the characteristic polynomial to zero, isHere,  is the steady state
+value of  derived by
+solving the equilibrium equationfrom
+which existence and uniqueness of the
+equilibrium are proven in the  (Section 3.1). If we could arbitrarily choose the rates  and , then we could achieve  steady-state . Hence, the gain in ,could take
+any value in the interval: 0 <
+κ() < . The value of the th time constant for
+this system is τ = 1/. Hence, our result tells us that the
+(minimum) critical gain is obtained by setting  =  = ... =  =  (which leads to
+equal time constants), henceThe condition in  is necessary and sufficient for  to admit imaginary solutions.
+As
+exemplified in , if the condition in  is satisfied, oscillations are possible if the rates  are large enough with respect to the
+rates ; this guarantees
+a large equilibrium value , hence κ() is larger than the critical gain. Note that, if the oscillator includes three stages
+( = 3), the condition in  becomes  and the minimum value of the Hill coefficient  to have oscillations is  = 8, consistently
+with the results in ref (). In  we numerically
+compute the oscillatory region in the – space when  =  and  = , for all . In each
+panel, the black line represents the condition in  converted to an equality, and delimits
+the region where oscillations can occur. As a further numerical experiment,
+we fixed  =  for all  and randomly generated different
+values of the parameters , taken from different distributions (normal and uniform distribution)
+with the same expected value  = 1 and variance ϵ. With this
+sampling method, the total delay is not necessarily constant for all
+samples: the degradation rates are randomly generated and are drawn
+from different distributions, which all have the same average, but
+which can be more or less spread depending on the value of the variance
+ϵ. The lower the variance, the more homogeneous are the degradation
+rates .  shows the fraction of oscillating
+samples (parameter choices for which characteristic polynomial has
+positive-real-part roots) as a function of ϵ. As predicted by
+our analytical results, decreasing the variance increases the likelihood
+of oscillations. Choosing homogeneous time constants favors oscillations,
+but also other design decisions are important: for instance, the overall
+loop gain needs to be high enough. Goodwin oscillator: equilibrium
+conditions for different ratios . The orange line represents the first
+expression in , while
+the blue lines represent the second expression in  for different values of the ratios /. Their intersections give, on the vertical axis,
+the equilibrium values of  for various choices of /. Oscillatory domain of the Goodwin oscillator
+with  = 1 in the (, ) plane, for various
+choices of homogeneous rates,  =  and  =  for all . The black
+line represents ; hence,  is satisfied in the whole
+region above. We compute
+the solutions of : red dots indicate an oscillatory behavior, blue dots indicate no
+oscillations, while gray dots indicate that no equilibrium can be
+found computationally due to numerical problems. The fraction of oscillating samples of the Goodwin oscillator is
+largest when randomly drawn degradation rates are homogeneous. We
+simulated the model with  = 1 and  = 5; in the top panels  = 8, while in the bottom
+panel  = 10. We took  =  and randomly generated rates  with expected value  = 1 and
+variance ϵ. (In each simulation, the randomly generated parameters
+are kept constant during all the integration steps of the ODEs.) We
+show the fraction of oscillating samples as a function of the variance
+ϵ when the rates  are taken from a normal distribution (top left, and bottom) and
+a uniform distribution (top right). In all panels, 1000 parameter
+samples are drawn per data point. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00442/suppl_file/sb7b00442_si_001.pdf Consider a two-node oscillator
+given by the feedback interconnection of an activated module and an
+inhibited module:The ODEs of variables  and  represent
+mRNA dynamics,
+and ,  represent protein translation. As earlier,  is
+a Hill coefficient, and  and  are apparent dissociation constants. Parameters
+α and α are maximal mRNA transcription
+rates, and β, β are mRNA degradation
+rates. Finally γ, γ and δ, δ are protein translation and degradation
+rates. This model can serve as a coarse-grained representation of
+a variety of molecular clocks. Many genetic oscillators result from
+the interconnected dynamics of inhibitor-activator elements, such as the p53-mdm-2 and the IκB-NF-κB oscillators;
+this architecture has also been demonstrated in artificial  transcriptional oscillators. Here we assume that the mRNA dynamics evolve
+on a time scale that is comparable to that of the proteins; this means
+that the order of the model cannot be reduced  time scale separation arguments. On the basis of our main result,
+we can prove that there exists at least one choice of parameters for
+which the system exhibits sustained oscillations (namely, the linearized
+system has complex eigenvalues with a nonnegative real part) if and
+only ifThe
+linearized system has characteristic equationwhere  and  are the steady-state values
+of  and . The loop gainranges in the
+interval 0 < κ(, ) < ; it is a decreasing function
+of , and an increasing function
+of . In view of our main result,
+the minimum critical gain guaranteeing oscillations is achieved when
+β = β = δ =
+δ = τ. The corresponding critical equation
+istherefore no unstable complex eigenvalues,
+hence no oscillations, can be found unless  >
+2
+(the full derivation is in the , Section 3.3). Numerical simulations illustrating and confirming
+this analytical result are in . We have also generated random instances of the oscillator
+to show how increasing the variance in the delay decreases the chances
+of oscillatory behavior (). We note that in this particular example, if the
+mRNA dynamics are much faster than the protein dynamics, the model
+can be reduced to include exclusively the protein kinetics; in that
+case, oscillations cannot be achieved for any choice of the parameters. Oscillatory
+regime of the two-node oscillator. We compute the solutions
+of , with α = α = α, β = β = β, γ = γ = 1,
+δ = δ = 1 and  =  = 1, and indicate with
+red dots an oscillatory behavior, with blue dots no oscillations.
+Parameter sets that give rise to oscillations cannot be found for  = 2, while they are easy to find for  > 2. The fraction of oscillating samples of the two-node
+oscillator
+is largest when randomly drawn degradation rates are homogeneous.
+We simulated the model with  = 3, γ = γ = 1,  =  = 1, α = α = α and randomly generated (β, δ) with expected value [(β, δ)] = (1, 1) and variance ϵ. (In each simulation,
+the randomly generated parameters are kept constant during all the
+integration steps of the ODEs.) We show the fraction of oscillating
+samples as a function of the variance ϵ when (β, δ) are taken
+from a normal distribution (left) and a uniform distribution (right).
+1000 parameter samples are drawn per data point. We have demonstrated that
+homogeneity of the time constants within a negative feedback loop
+can facilitate the emergence of oscillations, in that it minimizes
+the critical loop gain (minimum gain to achieve oscillations). We
+have also shown that scaling of the (uniform) time constants influences
+the critical frequency, but does not affect the critical gain. A converse
+result is that a candidate oscillator can be stabilized, , oscillations cannot occur, by increasing a single (arbitrarily
+chosen) time constant of the loop with respect to the others. The
+negative feedback architecture we consider is general, and it can
+be specialized to model many biomolecular oscillators. The gain of the biomolecular feedback
+loops we consider is proportional to the ratio of production and degradation
+rates of its components, and to the cooperativity coefficient of regulatory
+molecules (Hill coefficient ). Maintaining the lowest
+gain that can yield oscillations in the network is therefore tantamount
+to operating the circuit with minimum consumption of transcription
+and translation resources, minimum kinase activity, as well as with
+minimum copy number of regulators. This energy-efficient scenario
+can be achieved when the time constants in each process are similar
+(degradation, transport, and processing rates). This requirement may
+be easy to satisfy if these time constants are globally regulated
+for all components (for instance, mRNA and protein degradation). Short negative loops have
+a stabilizing effect (which
+makes the onset of sustained oscillations less likely, because a higher
+loop gain is needed); Long negative loops
+can favor the onset of sustained
+oscillations, and the most favorable case is that in which the time
+constants of the system in the loop are similar; If one or two time constants are significantly larger
+than the others, then the long loop actually behaves as a short one
+and the probability of having sustained oscillations is smaller (because
+a higher loop gain is needed for the onset of oscillations). It must be pointed out that, in our analysis, we have considered
+systems consisting of a : although this is a very common structure for biological oscillators, it is not the only one. For this particular structure, we have argued
+that However, if several feedback loops are concurrently
+present, our
+analysis does not apply, and the above statements are no longer true.
+In particular, our findings are valid in the absence of self-catalytic
+reactions (, of positive self-loops). In the
+presence of a positive self-loop, also a single negative loop involving
+two nodes only can be easily destabilized. For instance, consider
+the systemwhere , ,  and  are positive
+parameters.
+As shown by our results, this loop cannot be destabilized. However,
+this system can exhibit sustained oscillations if  can be negative (take for instance  = −): in this case our results no longer hold, because now  is self-catalytic. A (possibly
+short) negative loop can be destabilized
+by the concurrent presence of another loop that is positive. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00442/suppl_file/sb7b00442_si_001.pdf In practice, positive
+self-loops are not very common. Yet, a positive
+feedback loop can result from a chain of reactions. Indeed, different
+oscillator architectures are based on the coexistence of positive
+and negative loops (it is important to stress that the presence of
+a negative loop is necessary for the onset of oscillations). In particularAn example is the genetic network present in the
+bread mold , which has been shown
+in ref () to be a
+successful biological
+oscillator; we investigate this case study in the , where we show that the result proposed
+in ref () are fully
+consistent with our analysis. Negative-feedback oscillators
+are very common in nature and appear
+also very robust. For instance, the Hes1 and Hes7 oscillators in mammalian
+embryos consist of a negative autoregulation loop where Hes protein
+represses its mRNA production. These
+oscillators could be modeled taking  = 2 in ; however, in this case
+the ODE solution does not admit sustained oscillations even for very
+large values of . Addition of an explicit delay,
+discrete or distributed, to Hes autoregulatory models yields oscillatory
+solutions for physically acceptable values of (,) (Hes1 and Hes7 are dimers). Similar observations can be made for
+the p53-mdm-2 and the IκB-NF-κB oscillators. The explicit delay, which captures mRNA processing
+and transport steps, could be alternatively
+modeled as a chain of intermediate subsystems; while the number and
+kinetics of these steps are unknown, our results suggest that oscillations
+would be more likely to occur if they had similar time scales. Interestingly,
+the Hes1 oscillator requires nearly identical mRNA and protein half-lives
+(≈ 23 min) to operate. Our
+results are particularly relevant for the design of artificial
+negative feedback clocks. While the architecture of the Goodwin oscillator
+is attractive due to its simplicity, it has been difficult to build
+synthetic examples without including positive feedback, high Hill
+coefficients, or additional nonlinearities to destabilize the system. The mathematical models developed to capture the dynamics of these
+artificial oscillators often assume similar degradation rates for
+all the mRNA and protein species. However, recent experiments on the
+famous  circuit suggest that protein
+degradation rates in the original design might have been subject to
+temporal fluctuations caused by competition for shared proteolytic
+machinery, occurring due to the presence of protein degradation tags
+meant to reduce their half-life. Removal
+of the degradation tags resulted in more regular (although slower)
+oscillations at the population level. It is possible that in the absence
+of degradation tags dilution (due to cells dividing) becomes the dominant
+time constant, which should be uniform for all the repressor proteins.
+In light of our results, a more homogeneous protein half-life could
+explain the improved robustness of the oscillations. In conclusion,
+our work highlights that the variability of time
+constants within negative feedback oscillators could have under-appreciated
+effects on the dynamics; better estimation of these parameters could
+help explain the robustness of many natural oscillators. Conversely,
+we expect that the construction or improvement of artificial oscillators
+could be facilitated by ensuring that the modules being interconnected
+evolve with similar time scales. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.7b00442/suppl_file/sb7b00442_si_001.pdf The formal
+proofs of our results, which employ mathematical tools
+from dynamical systems and systems and control theory, as well as
+the detailed mathematical analysis of the proposed examples, are in
+the ..

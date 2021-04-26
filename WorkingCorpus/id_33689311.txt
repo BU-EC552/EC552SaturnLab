@@ -1,0 +1,409 @@
+Mersacidin is a ribosomally
+synthesized and post-translationally
+modified peptide (RiPP), first described in 1992 as a fermentation
+product of  species HIL Y-85,54728 (A). It has potent antimicrobial activity against a range of
+Gram-positive bacteria, including methicillin-resistant strains. Its antimicrobial properties come from a singular
+mode of action; , peptidoglycan biosynthesis
+is inhibited by binding of mersacidin to the bacterial cell wall precursor
+Lipid-II at a unique binding site. Mersacidin
+has a globular shape brought about by
+its lanthionine ring structures, which give a high stability to the
+peptide and offer interesting properties from an engineering point
+of view (A).
+Ring A, for example, could be added to linear peptides to improve
+their stability. Lanthionine rings can be engineered into linear peptides
+to increase their stability, but to preserve
+the original function, a minimal change in the peptides’ structure
+is desirable. Mersacidin’s uniquely small ring A spans no additional
+amino acids, making the application of this ring an attractive prospect
+in lanthipeptide engineering of this nature. The other ring structures,
+with their respective characteristics, might also prove to be useful
+additions to the lanthipeptide engineering toolbox: Ring B spans seven
+amino acids, while rings C and D are intertwined with ring D containing
+a decarboxylated cysteine. Like for many lanthipeptides, the production of mersacidin
+is partially
+dependent on autoinduction. The production
+of mersacidin-precursor MrsA from its gene cluster (B) is mediated by MrsR1, while
+MrsR2 and MrsK2 regulate the expression of the immunity genes . Mersacidin’s
+four methyl-lanthionine rings are installed by MrsM, which is responsible for both dehydration of threonine
+and serine residues and the subsequent cyclization of the dehydrated
+threonines with the respective cysteine residues. Decarboxylation
+of the final cysteine is done by MrsD, a LanD enzyme related to the flavoprotein EpiD, which removes a
+CO and two hydrogen atoms leading to a decrease in monoisotopic
+mass of 46.0055 Da. When fully modified, premersacidin
+is exported by the bifunctional transporter MrsT, which contains a
+proteolytic domain that has been proposed to be involved in leader
+processing. While this is typical for Class-II lanthipeptides, the conserved
+recognition site for cleavage by LanT in the mersacidin leader does
+not precisely align with that of the related peptides (). If the proteolytic domain of MrsT would
+cleave after the conserved glycine–alanine recognition site,
+part of the leader remains attached to the core peptide, and it has
+thus been suggested that the final activation of mersacidin is done
+by extracellular  proteases. Lanthipeptides are partially categorized by their modification
+system. A major interesting difference
+between different classes is that class I lanthipeptides, like nisin,
+have two enzymes for maturation, , a LanB for
+dehydration and a LanC for cyclization. In class II lanthipeptides,
+like mersacidin, these activities are combined in one enzyme called
+LanM. The respective specificities of these modification systems underlie
+separate possibilities regarding ring-structure formation. For a comparison
+of mersacidin maturation to that of other RiPPs, there are some excellent
+reviews available. To date, mersacidin and
+its derivatives have been exclusively produced
+by using its full gene cluster in  species through the purification of mature mersacidin from the producer
+supernatant. Although MrsA has been expressed in combination with
+MrsD in , to study the oxidative decarboxylation reaction, the coexpression
+of MrsM in this system has not been reported. Thus, no form of premersacidin
+has been purified to date. Consequently, the suggested mechanism for
+mersacidin leader processing has not yet been confirmed. Recently,
+much progress has been made in the field of lanthipeptide
+engineering, including the production of hybrid RiPPs, the incorporation
+of noncanonical amino acids, ring shuffling, and more. Concurrently, it has become evident that, while many RiPPs have
+therapeutic applications in theory, these applications are hampered
+by drawbacks such as  instability. Solutions for these drawbacks are being found
+in the development of novel lanthipeptide engineering tools. Thus, while mersacidin has good activity against clinically relevant
+strains, the lack of a concise heterologous expression system excludes
+it from the many advancements made in lanthipeptide expression in
+standardized systems like  BL21(DE3).
+Such a system would thus not only provide opportunities for leader
+processing studies but also increase the relevance of the mersacidin
+modification machinery in today’s field of lanthipeptide improvement
+by engineering. The performance of the heterologous expression of
+mersacidin in  rather than  has the extra advantage that  lacks
+the wide variety of extracellular proteases that  has.  species produce a range of proteases, which would likely cleave the leader peptide
+of the produced peptide, activating it during production or purification.
+In , novel peptides can be produced without
+the need for an immunity mechanism against these new-to-nature peptides,
+as the leader is not likely to be processed by the producer. Effectively,
+the produced peptide stays inactive until the leader is processed . Here, a modular plasmid system is presented
+for the complete biosynthesis
+of premersacidin in . This system employs
+a minimal gene cluster, achieving full premersacidin biosynthesis
+by expressing three of the ten genes, , from
+the mersacidin gene cluster. As a proof of principle, the system was
+employed to study mersacidin leader processing. The activation of
+mersacidin by  supernatant
+was examined. Additionally, the cleavage site of MrsT was studied
+through the digestion of premersacidin  with
+the MrsT proteolytic domain, MrsT150. In addition to the previously
+mentioned advantages of this system in mersacidin related lanthipeptide
+engineering, the modular nature of this heterologous expression system
+allows one to study the effects of modification by MrsM and MrsD alone
+or simultaneously. (A) Amino acid sequence of mersacidin with a
+schematic overview
+of its lanthionine rings and decarboxylation site. (B) The mersacidin
+gene cluster, containing  (regulation of immunity),  (immunity),  (precursor),  (regulation of mersacidin production),  (decarboxylation),  (dehydration and cyclization),
+and  (transport and leader protease). Alignment of several class-II lanthipeptide leaders to their GG-type
+class-II LanT cleavage site, combined
+with a conservation logo. If mersacidin
+is cleaved after this sequence by MrsT upon export, between positions
+−7 and −6, six residues of the leader remain attached
+to the core peptide, likely rendering the exported product inactive. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00601/suppl_file/sb0c00601_si_001.pdf The mersacidin biosynthetic
+genes  were
+amplified from the genomic DNA of  strain BH072, which contains the mersacidin gene cluster. The nucleotide
+sequence of all biosynthetic genes from this gene cluster is identical
+with that of  sp. HIL-Y85/54728 with the exception of . The  gene encodes a protein differing 3 amino acids from MrsM in the
+reported mersacidin producer strain (). The amplified biosynthetic genes were placed in compatible  plasmids. The resulting modular expression
+system () was
+employed to achieve heterologous expression
+of mersacidin in  BL21(DE3). The N-terminally
+His-tagged mersacidin precursor His-MrsA was expressed without modification
+enzymes, in combination with MrsM, or in combination with MrsM + MrsD.
+All samples were purified from the cell pellet through His-tag purification,
+followed by desalting with an open C18 column. The samples were freeze-dried
+and dissolved in Milli-Q, after which they were analyzed. Analysis by MALDI-TOF (, )
+showed that the expression of His-MrsA in the presence of MrsM
+gives a major product resembling fully dehydrated His-MrsA with a
+theoretical mass of 8018.94 Da. When coexpressed with MrsM and MrsD,
+the modified His-MrsA approaches the theoretical mass of mature His-premersacidin,
+7972.91 Da. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00601/suppl_file/sb0c00601_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00601/suppl_file/sb0c00601_si_001.pdf To confirm
+full modification of His-MrsA by MrsM + MrsD, , the production of His-premersacidin, it was subjected
+to an antimicrobial activity test. As mersacidin has been hypothesized
+to be activated by extracellular proteases, the isolated prepeptide
+was incubated with BH072 supernatant sampled from different growth
+times between 20 and 96 h. All digested samples were active against  on a bacterial lawn, indicating that
+His-premersacidin could be activated by BH072 supernatant from all
+tested growth times (). The BH072
+supernatant of all growth times without added His-premersacidin did
+not produce a halo in the antimicrobial activity tests, indicating
+the supernatant contained no compounds in concentrations high enough
+to inhibit cell growth. Furthermore, in MALDI-TOF analysis of the
+BH072 supernatant alone, mersacidin could not be detected (). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00601/suppl_file/sb0c00601_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00601/suppl_file/sb0c00601_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00601/suppl_file/sb0c00601_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00601/suppl_file/sb0c00601_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00601/suppl_file/sb0c00601_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00601/suppl_file/sb0c00601_si_001.pdf The acquired His-premersacidin
+was further analyzed by HPLC (),
+which showed that the major product
+was separated into two distinguishable peaks (). Separated by HPLC, only one of these peaks
+contained activatable premersacidin, which was identified through
+an antimicrobial activity test against  (). The peak with presumed premersacidin
+was purified by HPLC () and further
+analyzed by LC-MS (). The main
+products from this peak were found to approach the theoretical masses
+of 7972.91 Da (His-MrsA-5HO, -CO) and 7990.92
+Da (His-MrsA-4HO, -CO). This dehydration state
+is comparable to that of the main product before purification (C), suggesting that
+the product being divided into an activatable and nonactivatable peak
+is the result of one or more cyclizations not occurring. The lack
+of this peak in samples expressed without MrsD ( and ) points
+toward the C-terminal ring not being formed. Most importantly, free-cysteine
+assays of the activatable peak showed that all rings are formed, and
+it thus proves that the fully dehydrated product is fully mature premersacidin
+(). LC-MS analysis of His-MrsA
++ MrsM gave expected mass data but also showed signs of degradation,
+pointing toward a stability function of the C-terminal decarboxylation
+performed by MrsD. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00601/suppl_file/sb0c00601_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00601/suppl_file/sb0c00601_si_001.pdf In the initial protocol, the peak containing activatable premersacidin
+constituted approximately 15% of all the product. This value could
+be increased to 25–30% by optimizing the expression protocol
+for maximal antimicrobial activity (, ). The protocol was optimized
+for induction time and temperature and for the amino acid sequence
+of MrsM. During optimization, it was found that restoring the MrsM
+amino acid sequence to that published for mersacidin producer  sp. HIL-Y85/54728 did not affect
+modification efficiency. It was therefore decided to use the  gene from BH072 for further expression purposes. Optimal
+production of His-premersacidin was reached by inducing the complete
+system concurrently at 16 °C for 24 h. Using this optimized protocol,
+a per liter yield could be reached of 2 mg of unmodified His-MrsA,
+2.5 mg of His-MrsA + MrsM, and 7.5 mg of His-MrsA + MrsM + MrsD. Since
+the addition of MrsD requires an extra plasmid and antibiotic resistance
+marker, the 3-fold increase of production in the complete biosynthetic
+system is striking. This again points toward the notion that the C-terminal
+decarboxylation provides stability to the peptide. With the
+quantified production yields, a standardized antimicrobial
+activity test was performed. Each of the prepeptides was spotted against  with and without the addition of BH072 supernatant
+(). The only
+sample with antimicrobial activity was His-premersacidin incubated
+with BH072 supernatant. This indicates that, unsurprisingly, MrsD
+is crucial for mersacidin activity. A peak with a mass resembling
+that of mersacidin (1826 Da) was identified upon MALDI-TOF analysis
+of the activated His-premersacidin (A, ) http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00601/suppl_file/sb0c00601_si_001.pdf Finally, to assess the proteolytic activity of MrsT, its
+proteolytic
+domain was expressed in  with a C-terminal
+His-tag (MrsT150-His) after the example shown for LagD. Upon incubation with His-premersacidin, MrsT150-His
+cleaves at the theoretically predicted site, leaving six amino acids
+of the leader attached to the core peptide (B, ). As expected, the remaining six amino acids inhibit
+antimicrobial activity until subsequent cleavage with BH072 supernatant
+(), which demonstrates a two-step
+activation process to liberate active mersacidin. Plasmids for
+expression of mersacidin in varying levels of maturation
+in . http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00601/suppl_file/sb0c00601_si_001.pdf MALDI-TOF spectra for results from different expression plasmid
+combinations. These masses approximate their theoretical masses (), and the masses
+for His-MrsA + MrsM and His-MrsA + MrsM + MrsD were later determined
+with higher resolution through LC-MS (). HPLC spectra of His-MrsA + MrsM and His-MrsA + MrsM +
+MrsD. In
+the presence of MrsD, there is a clear extra peak, which contains
+His-premersacidin. As the product in both peaks is decarboxylated,
+the decarboxylation itself does not cause this shift but rather closes
+one or more lanthionine rings. Antimicrobial activity of mersacidin at varying levels
+of maturation
+with and without BH072 supernatant (SN) against . (1) His-MrsA + SN, (2) His-MrsA + MrsM + SN, (3) His-MrsA + MrsM
++ MrsD + SN, (4) SN, (5) His-MrsA, (6) His-MrsA + MrsM, and (7) His-MrsA
++ MrsM + MrsD. Only His-MrsA + MrsM + MrsD can be activated. Digestion patterns of His-premersacidin in combination
+with (A)
+BH072 supernatant, where the expected mass for active mersacidin is
+found upon digestion with BH072 supernatant, and (B) MrsT150-His,
+where masses are found complying with the theory that MrsT cleaves
+the mersacidin leader between positions −7 and −6 (). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00601/suppl_file/sb0c00601_si_001.pdf Theoretical Average
+Masses of Different
+Peptides Produced in This Study, Compared to Those Found in MALDI-TOF
+and LC-MS Analyses () http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00601/suppl_file/sb0c00601_si_001.pdf His-MrsA + MrsM + MrsD (His-premersacidin) http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00601/suppl_file/sb0c00601_si_001.pdf His-premersacidin + supernatant
+BH072 His-premersacidin + MrsT150-His MALDI-TOF His-premersacidin
+-6 to 20 -3HO, -CO MALDI-TOF
+His-premersacidin -6 to 20 -4HO, -CO MALDI-TOF His-premersacidin -6 to 20 -5HO,
+-CO MALDI-TOF His-premersacidin
+-48 to -6 Using the system described here, fully modified premersacidin was
+purified from the Gram-negative host  BL21(DE3). The modular plasmid system, employing a minimal gene
+cluster, allowed for the product to be purified from the producer
+cell pellet in its inactive prepeptide from. This is in contrast to
+previously described expression systems, where the complete mersacidin
+gene cluster was employed in  sp. to acquire
+mature mersacidin from the supernatant. Those systems,
+while having an advantage when expressing wild-type mersacidin, would
+experience multiple problems when employing it to produce new-to-nature
+peptides. The transporter MrsT might not export certain substrates
+deviating too far from the natural product, which would obstruct purification
+from the supernatant. Additionally, the production of peptides with
+an antimicrobial mode of action deviating from that of mersacidin
+might kill the producer cell upon activation by  extracellular proteases. Or, when a produced peptide is susceptible
+to degradation, it would be digested in the supernatant by extracellular
+proteases before it can be purified. All the previously described
+drawbacks are circumvented in the system presented here. An additional
+advantage of production in  is that it
+is a well-established expression host for which many lanthipeptide
+engineering methods have been described. This combination makes the system developed here a useful tool in
+mersacidin related lanthipeptide engineering. The plasmid system can
+for example be used to produce RiPP hybrids, incorporate nonproteinogenic amino acids, or stabilize linear peptides. In the antimicrobial activity tests against , it was shown that  supernatant
+can activate premersacidin. As natural producer strain, HIL Y-85,54728
+is reported to start mersacidin production after 48 h; the fact that supernatant from a 20 h BH072 culture can
+activate mersacidin points toward a general protease present in the
+supernatant rather than a dedicated one. Additionally, MrsT was found
+to cleave at the predicted site between positions −7 and −6. This partial leader cleavage does not lead to
+activation, and so, an extra processing step is required for activation
+after export. All these results point strongly toward the conclusion
+that mersacidin is activated by one or more extracellular  proteases.  species are
+known for their wide range of extracellular proteases with a generally
+broad substrate specificity. Some proteases
+from , AprE, Bpr, and WprA, were
+shown to activate presubtilin by cleaving the leader peptide after
+it was exported out of the cell. However,
+as the first residue of the mersacidin core is part of an unusual
+ring structure, the number of extracellular proteases able to perform
+the final leader processing step may be limited. Hence, it is possible
+that, due to differences between homologous  proteases, the mersacidin maturing protease is specific to . Although the identification of
+any proteases involved here is not required for this expression system,
+their identification would allow for interesting insights into the
+binding pocket properties of proteases capable of cleaving at this
+unique position. The mechanism of leader processing confirmed here
+is not unique, but the function of partial
+processing during export is unclear, especially because in this study
+the preprocessing was found to be unnecessary for mersacidin activation
+by extracellular proteases and to not increase the rate at which mersacidin
+is activated after it is transported out of the cell. However, the
+proteolytic domain is likely to be crucial for leader recognition and thus export. Conceivably, direct activation
+upon export might cause mersacidin to adhere to its producer, decreasing
+its effectiveness, which additionally could unbalance the autoinduction mechanism. Furthermore, the remaining six residues
+of the leader might increase solubility and facilitate mersacidin
+diffusion until its maturation by extracellular proteases. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00601/suppl_file/sb0c00601_si_001.pdf While
+there already was strong evidence that MrsD is crucial for
+mersacidin activity, the observed lack of activity
+of supernatant-digested His-MrsA + MrsM can be regarded conclusive
+in this regard. In the HPLC-spectra of His-premersacidin, both the
+small activatable peak and the large peak are decarboxylated. The
+masses found in both peaks are similar regardless of activity. This
+indicates that the shift from the large to the small peak is caused
+by a specific ring closing that is crucial for activity. As the HPLC
+spectrum of His-MrsA + MrsM does not contain the small activatable
+peak, decarboxylation appears to be important for this ring closure.
+These results essentially point toward the C-terminal decarboxylation
+drastically improving closing of the final ring. This would explain
+the lower stability of His-MrsA + MrsM compared to the fully modified
+premersacidin as well as the lower production of fully modified product
+when MrsD expression is delayed compared to MrsM (). In conclusion, the system for heterologous
+expression of mersacidin
+in  presented here is functional and
+has already been applied to elucidate mersacidin leader processing.
+This system can be used to produce mersacidin, mersacidin derivatives,
+or completely new molecules in , employing
+current developments in RiPP engineering. Bacterial
+Strains and Growth Conditions was grown at 37 °C in LB broth (Formedium)
+at 225 rpm.  TOP 10 and BL21(DE3) were
+grown at 37 °C on LB agar (Formedium) plates after transformation
+or in LB broth at 225 rpm for plasmid isolation or expression unless
+stated otherwise.  cultures were supplemented
+with chloramphenicol (when using pACYC, 15 or 10 μg/mL for expression
+cultures) or ampicillin (when using pBAD, 100 μg/mL). The indicator
+strain  was grown under identical
+conditions, except in activity test plates, where it was grown in
+0.5% agar. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00601/suppl_file/sb0c00601_si_001.pdf All molecular
+cloning was done in
+accordance with previously described methodology, supplemented with the protocols of respective reagent manufacturers.
+Oligonucleotides for insert and vector amplification and adaptation
+were ordered from Biolegio (Nijmegen, The Netherlands) (). PCRs were performed using Phusion
+polymerase (Thermofisher) in reaction conditions recommended by the
+manufacturer, after which the reactions were cleaned up using a NucleoSpin
+Gel and PCR Clean-up kit (Macherey-Nagel). Subsequent restrictions
+of the PCR products were done using FastDigest restriction enzymes
+(Thermo Scientific), after which the DNA was cleaned up as previously
+mentioned. Ligation of the respective fragments was done with T4 DNA
+ligase (Thermo Scientific), after which CaCl chemically
+competent  TOP10 was transformed with
+the resulting ligation mixture. Plasmid DNA was isolated from transformants
+using a NucleoSpin Plasmid EasyPure kit (Macherey-Nagel), after which
+correct transformants were selected after DNA sequencing by Macrogen
+Europe (Amsterdam, The Netherlands). For expression purposes, CaCl chemically competent  BL21(DE3)
+was transformed with sequenced plasmid DNA from TOP10. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00601/suppl_file/sb0c00601_si_001.pdf In all
+cases, the original genetic sequence of MrsA, MrsM, MrsT, and MrsD
+was amplified either directly or indirectly from the  BH072 genomic DNA using primers to
+introduce overhangs for restriction and ligation (). In all cases, the vector was amplified through
+PCR, in most cases introducing restriction sites. To construct
+pACYC-MrsT150-His, the nucleotide sequence encoding
+the N-terminal 150 amino acids of MrsT was placed downstream of T7(1)
+of pACYCDuet-1 using PstI + NcoI for the backbone and PstI + NcoI
+compatible Eco31I for the inset. The C-terminal His-tag remained from
+the substrate of which the pACYC backbone was amplified. His-MrsA
+was cloned into pACYC, and MrsA + MrsM was placed in pACYCDuet-1 behind
+T7(1) and T7(2), respectively, using suitable Eco31I overhangs. MrsD
+was cloned into pBAD using PstI + NcoI for the backbone and PstI +
+Eco31I (NcoI) for the inset. An additional plasmid was created in
+which the amino acid sequence of MrsM was adjusted to that published
+for the native producer. The plasmid pACYC His-MrsA
++ MrsM2 was created using pACYC His-MrsA + MrsM as a template for
+three PCRs introducing the required mutations and compatible Eco31I
+restriction sites, which were ligated using golden gate assembly. Expressions of His-MrsA,
+His-MrsA + MrsM,
+and His-MrsA + MrsD were optimized to the following protocol. For
+each, an overnight culture was made from several colonies off a plate
+of freshly transformed BL21(DE3). The overnight culture was diluted
+50 times in fresh medium prewarmed to 37 °C and incubated for
+2.5 h at 37 °C and 225 rpm. The culture was then placed at 16
+°C and 225 rpm without precooling and directly induced with either
+1 mM IPTG (His-MrsA, His-MrsA + MrsM) or 1 mM IPTG + 0.2% Arabinose
+(His-MrsA + MrsM + MrsD). After induction, the cultures were incubated
+for 24 h, after which the cells were harvested. Optimization
+of Mersacidin Expression http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00601/suppl_file/sb0c00601_si_001.pdf Using HPLC spectra
+to identify the relative size of the peak containing the activatable
+premersacidin, in combination with antimicrobial activity tests, the
+expression protocol was optimized. The effect of expression at 16,
+18, 28, or 37 °C was studied as well as the effect of inducing
+MrsM and MrsD either concurrently or with a 2 h delay to each other.
+Additional optimization experiments considered the difference between
+expression for 16 or 24 h and using the originally published amino
+acid sequence of MrsM from HIL Y-85,54728 (). The expression of MrsT150-His
+was done
+identically to that of mersacidin, until induction. The expression
+culture was induced with 1 mM IPTG and grown for 4.5 h at 37 °C
+and 225 rpm, after which the cells were harvested. Peptide Purification
+and Analysis The pellet
+was washed once in
+binding buffer (20 mM HNaPO (Merck), 0.5 M
+NaCl (VWR), 20 mM imidazole (Merck), pH 7.4) and then sonicated in
+1/100th culture volume binding buffer until visually lysed. The lysate
+was centrifuged at 10 000 for 60 min and
+filtered through a syringe filter (0.45 μM). The purification
+was performed on an open column of 1 mL of Ni-NTA slurry (Qiagen)
+per 1 L of expression culture volume. Binding and a first wash were
+done with binding buffer; a second wash was done with wash buffer
+(20 mM HNaPO, 0.5 M NaCl, 20 mM imidazole,
+pH 7.4), followed by elution using 1.8 mL of elution buffer (20 mM
+HNaPO, 0.5 M NaCl, 20 mM imidazole, pH 7.4)
+per 1 mL of Ni-NTA slurry. The His-tag elution
+was supplemented
+with 0.5% trifluoroacetic acid (TFA) (Sigma-Aldrich) until pH 4 and
+brought onto an open column containing 1.5 mL of 55–105 μm
+C18 resin (Waters), equilibrated to 0% acetonitrile (ACN) (VWR) +
+0.1% TFA. After binding, a first wash was done with 0% ACN + 0.1%
+TFA and a second wash with 20% ACN + 0.1% TFA. Finally, the sample
+was eluted in 7.5 mL of 50% ACN + 0.1% TFA and subsequently freeze-dried. Freeze-dried samples eluted
+in Milli-Q water were analyzed by MALDI-TOF or LC-MS as previously
+described. Samples to be analyzed by
+MALDI-TOF that were cleaved in salt containing buffer were desalted
+by adding 2 μL of Milli-Q to a dried, spotted sample on the
+MALDI-TOF plate, which was subsequently resorbed quickly with tissue
+paper. After this wash step, the matrix was added as described. 75 μL of fresh overnight  culture was added per 100 mL of hand
+warm 0.5% LB agar. Of this mixture, 12 mL was added to each 90 mm
+diameter Petri dish or 25 mL, to each 140 mm diameter Petri dish.
+All samples contained  30 μg of prepeptide,
+of which at most 6 μg was active core peptide, and were set
+to a 10 μL final volume. For all activity tests, a positive
+control of 9 μL of 25 ng/μL nisin was spotted. All activity
+tests were performed in triplicate with tested material taken from
+at least three different expression batches. In the digests
+of His-MrsA variants () with BH072 supernatant, samples contained either 3 μL
+of BH072 supernatant or 3 μL of Milli-Q for the negative control.
+The samples were incubated at 37 °C for 1 h, after which 9 μL
+was spotted. For the activity test with MrsT150-His, a His-premersacidin
+sample containing 1.5 μL of MrsT150-His His-tag elution was
+incubated for 3 h at 37 °C in duplicate. After incubation, 2
+μL of BH072 supernatant was added to one of the duplicates and
+to a sample containing undigested His-premersacidin. All three samples
+were incubated for another 30 min at 37 °C, after which 9 μL
+was spotted. Supernatant for Activity Tests and Mersacidin
+Production in
+BH072 BH072 was
+grown for 96 h, taking samples of the supernatant at 20, 48, 72, and
+96 h. The samples were centrifuged, after which the supernatant was
+filtered (0.2 μM) and stored for activity tests and MALDI-TOF
+analysis. Cleavage of Premersacidin with MrsT150-His The activatable
+peak was purified by HPLC from an amount of  1
+mg of freeze-dried His-MrsA + MrsM + MrsD from C18 purification. The
+HPLC purified sample was freeze-dried and dissolved in 48 μL
+of Milli-Q. Of this solution, 2.5 μL was added to 6 μL
+of Milli-Q and 1.5 μL of MrsT150-His His-tag elution. The mixture
+was placed at 37 °C for 3 h, after which the sample was analyzed
+by MALDI-TOF..

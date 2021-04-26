@@ -1,0 +1,737 @@
+One main
+aim of synthetic biology
+is to design microorganisms with novel capabilities that could be
+interesting for a huge variety of applications, such as green chemistry, bioremediation, and microbial therapies. As an integrative discipline, synthetic biology
+aims to bring an engineering perspective to the design of new living
+forms. Following this rationale, designer
+organisms should be based on a genomic backbone (i.e., chassis), ideally
+depleted of most of the functions irrelevant to its programmed purpose,
+with additional modules that can be plugged into this chassis to add
+novel functionalities. While several interesting modules have been
+developed, most synthetic biology projects so far have revolved around a small
+set of chassis strains, primarily  and . However, the adoption
+of these organisms as chassis strains was mainly related to their
+strong adaptation for laboratory requirements (e.g., fast growth,
+efficient recombination) rather than their fulfilment of a set of
+desirable features. For instance, from an engineering point of view,  could represent a reasonable starting structure
+into which different modules can be introduced to develop a designer
+strain for gastrointestinal therapies. In contrast,
+for other environments or purposes,  might
+not be the best-suited candidate to use for engineering a designer
+microorganism. Indeed, it is becoming widely accepted that to move
+synthetic biology from the laboratory to the field, novel chassis
+strains should be generated; however, the development of such strains
+is tightly linked to the establishment of advanced genome editing
+tools for these less well-studied bacteria. Mycoplasma strains share several distinctive features, including
+the lack of a cell wall, streamlined genomes, limited biosynthetic
+capabilities, and a variant genetic code in which the UGA codon codes
+for tryptophan rather than being read as a stop codon. All of these features might be of interest for
+different synthetic biology concerns, such as orthogonality, biosafety,
+and limited horizontal gene transfer. In other words, the naturally
+reduced genomes of Mycoplasmas fit perfectly with the chassis concept
+of synthetic biology. Notably, the human pathogen  arises as candidate for synthetic biology projects
+because it is one of the most deeply characterized bacteria, as a
+consequence of being a model organism for systems biology for over
+a decade. Thus, by removing the few and well-characterized pathogenicity determinants
+found in its genome, could become a suitable chassis for plugging in gene platforms to
+provide the desired functions. Specifically, the natural tropism of  toward the human respiratory tract might facilitate
+the development of a designer strain capable to deliver therapeutic
+molecules into the lung. However, the transition from using  as a model organism for systems biology to
+creating a chassis strain for synthetic biology has been hindered
+so far by the historical paucity of genome editing tools for this
+bacterium. There are few reports describing the achievement
+of targeted gene
+deletions within the Mycoplasma genus. Initially restricted to , and later expanded with
+limited success to other strains, all of these
+reports rely on the transformation of a nonreplicative plasmid carrying
+a selectable marker surrounded by regions homologous to the sequences
+that flank the target gene. In this framework, the appearance of a
+mutant cell relies on the ability of the Mycoplasma recombination
+machinery to perform the deletion, making direct editing of Mycoplasma
+genomes an inefficient and unreliable process. In the case of the  reference strain M129, only one positively
+edited clone was obtained, reflecting its poor recombination capability. This has been linked to the lack of a functional
+copy of the RecU Holliday junction resolvase. Alternatively, it has been proposed that its recombination machinery
+is tightly controlled by the expression of a sigma factor encoded
+by the  gene, whose overexpression is rather
+toxic, as inferred from data available for its orthologue MG428 in
+the closely related bacterium . The poor performance of the recombination
+machinery in most Mycoplasma
+species has forced researchers to develop alternative strategies such
+as Haystack mutagenesis. This technique
+allows the isolation of clones carrying transposon insertions at the
+locus of interest, through a comprehensive and iterative PCR screening
+of an ordered collection of pooled random transposon insertion mutants.
+Despite being a tedious and time-consuming protocol, it has become
+the standard method to obtain mutants in most Mycoplasma species.
+However, it cannot be considered a true genome-editing tool, as it
+only allows the selection of clones in which a particular gene has
+been disrupted but not deleted or edited. On the other extreme of
+technical innovation, we find the chemical synthesis of whole mycoplasma
+genomes and subsequent transplantation
+into a recipient cell. Though strictly
+this is a genome-writing rather than a genome-editing technique, the
+possibilities it opens up are fascinating. However, the cost of synthesizing
+a whole genome is prohibitive for most academic laboratories. Alternatively,
+a more affordable strategy is to clone naturally existing Mycoplasma
+genomes as yeast circular centromeric plasmids. These genomes can later be comprehensively modified using
+the state-of-the-art editing tools available for yeast before their reintroduction into a recipient Mycoplasma cell (i.e.,
+genome transplantation). This complete
+cycle of cloning, in-yeast modification, and genome transplantation,
+has led to the generation of a fully attenuated  subsp.  strain unable to cause lung lesions
+in a goat animal model. Unfortunately,
+all genome transplantation experiments so far have used  as the recipient cell, and only genomes from species
+closely related to this strain in terms of phylogeny can be employed
+as donors. Therefore, genome transplantation continues to be a bottleneck
+for many synthetic biology projects and does not seem to be broadly
+applicable to other species, even within the Mycoplasma genus. In this work, we developed a reliable
+genome editing system for . Rather than
+trying to enhance the  recombination
+machinery, we developed an oligo
+recombineering system based on the GP35 recombinase, a protein originally
+found in the genome of the  associated
+phage SPP1. A recent survey on bacterial recombinases pinpointed GP35
+as the most efficient protein to perform recombineering in , a species phylogenetically
+related to the Mycoplasma genus. We conducted a similar survey revealing
+that, for , GP35 also outperforms other
+putative recombinases in terms of recombineering efficiency. Using
+GP35-based oligo recombineering, point mutations (i.e., 1-bp deletions)
+could be obtained with efficiencies as high as 2% of the total amount
+of cells, whereas larger modifications (i.e., 1800-bp deletions) had
+efficiencies of ∼10. These editing efficiencies
+were further boosted by using CRISPR/Cas9 technology to counterselect
+nonedited cells. This allowed edited clones to be recovered with little
+to no screening of survivor cells. We believe this technology is a
+great step toward the use of  as a synthetic
+biology chassis strain. Establishment of a Recombineering
+System for To overcome the
+lack of genome-editing tools available
+for , we aimed to develop an oligo recombineering
+system functional for this strain. This
+technology relies on two consecutive events. The first step is the
+homology-driven positioning of oligonucleotides at the lagging strand
+of the replication fork, a process that in bacteria can be boosted
+by phage-derived ssDNA recombinases. Subsequently,
+the arranged oligonucleotide is incorporated into the newly synthesized
+chromosomal copy as an Okazaki fragment, thereby mediating the introduction
+of the intended modifications in the genome. The apparent simplicity
+of this process, together with the universal conservation of the replication
+mechanism, might lead one to assume that oligo recombineering is a
+broadly portable technology capable of editing genomes independently
+of the host recombination machinery. However, phage-derived recombinases
+do not maintain their efficient performance across different bacterial
+genera, suggesting some sort of dependence on host machinery. Indeed, it seems that the recombineering frequency
+obtained depends on the phylogenetic distance between the native host
+of the phage and the bacteria being engineered. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_001.pdf Prompted by these observations, we decided to survey
+the mycoplasma pan-genome as well as their associated phages for the
+presence of proteins orthologous to Recβ and RecT. These two
+proteins from the lambda and Rac phages, respectively, are the best-characterized
+and most frequently employed phage-derived ssDNA recombinases in oligo
+recombineering protocols. We found three
+RecT-like proteins coded by the genomes of , , and  (), which we renamed RecT, RecT, and RecT, respectively.
+Our search for Mycoplasma Recβ orthologues did not produce any
+relevant candidate. To further complement the screening, we wanted
+to include a recombinase with a proven capacity to perform recombineering.
+This led us to choose GP35, a protein recently reported to be the
+most efficient phage-derived recombinase for performing genome editing
+in , a species phylogenetically related to the Mycoplasma genus. The ability of the different proteins to introduce changes to the  genome by catalyzing oligo recombineering
+was experimentally monitored with a recombineering sensor termed MutCm+1.
+This sensor is based on a chloramphenicol acetyltransferase gene (), whose protein product confers resistance to chloramphenicol
+(). Nevertheless, the  coding
+sequence in the sensor is frame-shifted by the addition of a single
+nucleotide at position 310, rendering a protein product unable to
+confer resistance to the antibiotic. To correct the MutCm+1 sensor,
+we designed two different oligonucleotides termed CmONsense and CmONantisense,
+following the rules reported in a screening of optimized design criteria
+for recombineering oligonucleotides. Both
+oligonucleotides have the exact same sequence present in the region
+surrounding the frame-shift included in the sensor, except for the
+extra nucleotide. However, whereas CmONsense has the same orientation
+as the frame-shifted  gene, the CmONantisense
+oligonucleotide is antisense to the sequence of the  gene. In principle, either of the oligonucleotides could mediate
+the deletion of the frame-shifted nucleotide and the consequent activation
+of the  gene. However, as oligonucleotides are
+incorporated as Okazaki fragments into the newly synthesized chromosome,
+those targeting the lagging strand produce a substantially higher
+editing rate than those binding the leading strand of the replication
+fork. Thus, determining the location
+of the MutCm+1 sensor within the  genome
+was essential for our screen, as synthesis of a DNA strand as either
+leading or lagging depends on its chromosomal location with respect
+to the origin of replication. To this end, the MutCm+1 sensor was
+cloned into a transposon vector and transformed into  WT cells to generate a strain termed M129MutCm+1. After clone isolation,
+we used an arbitrary PCR (A-PCR) protocol to locate the transposon insertion at genome position 60107 (MPN049
+locus) of the minus strand. Thus, the CmONsense oligonucleotide would
+be the one targeting the lagging strand at this location and should
+yield a higher number of edited cells (A). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_002.xlsx Four different strains, all containing
+the MutCm+1 sensor and the
+different recombinases found in our orthologue search (i.e., GP35,
+RecT-sm, RecT-sc, and RecT-sp), were subjected to a mock transformation,
+or to transformations with the editing oligos CmONsense and CmONantisense.
+In addition, a control strain not expressing any recombinase was included
+in this screening (B). Two hours post-transformation, serial dilutions of cells
+were seeded on either nonselective plates to calculate the total amount
+of cells or on -supplemented plates to determine
+the amount of edited cells for each condition. These values allowed
+us to calculate the editing rate (edited cells/total cells) for each
+recombinase and condition (). For all strains assessed, mock transformations yielded a low proportion
+of cells that were -resistant (B). The small amount of cells
+observed in all the cases (i.e., ∼2 × 10)
+might represent spontaneous mutants resistant to  or might arise as a consequence of poor  selective
+pressure when highly concentrated dilutions are spotted. In any case,
+this frequency of -resistant cells should be considered
+as a background signal of our screening, as its occurrence is not
+mediated by a recombineering phenomenon. The amount of -resistant cells increased in
+all the strains when transformed with the CmONantisense oligonucleotide
+(B). However,
+the amount of edited cells barely overcame the background signal of
+the screening (i.e., ∼9 × 10 vs ∼2
+× 10), except for the strain expressing the GP35
+recombinase, for which we detected an increase of almost 2 orders
+of magnitude in the amount of -resistant cells
+as compared to the background signal (1.6 × 10 vs
+∼2 × 10, respectively). Moreover, the difference
+between the GP35-expressing strain and all others was further increased
+when transformed with CmONsense oligonucleotide (B). In this scenario, the amount
+of edited (-resistant) cells was 1.6 × 10 for the strain expressing GP35, but only slightly higher
+than background signal (i.e., ∼2 × 10 vs ∼2
+× 10) for all other strains. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_001.pdf Altogether, these
+results suggest that none of the RecT-like recombinases
+are functional in , even though the
+expression levels of at least RecT-sm and RecT-sc were similar to
+the those in the strain expressing the GP35 recombinase (). Surprisingly, RecT-sm and RecT-sc
+are annotated as a RecT family protein and a putative RecT protein,
+respectively. Although it cannot be ruled out that these proteins
+might behave as actual recombinases in their native organisms, it
+seems that they could be carrying out alternative functions, despite
+showing a moderate sequence similarity with RecT proteins. In contrast,
+we found that GP35 is a functional protein that performs oligonucleotide
+recombineering in  with an editing efficiency
+reaching 9.8 × 10. Screening of different ssDNA recombinases to
+perform oligo recombineering
+in . (A) Scheme depicting the chromosome
+of M129MutCm+1 strain, showing the bidirectional replication fork
+that starts at the origin of replication (ori) and enlarges until
+reaching the terminus of replication (ter). The plus and minus strands
+follow the indicated color code; newly synthesized DNA is either continuous
+(solid line) or discontinuous (dashed line). The MutCm+1 recombineering
+sensor located at the minus strand of the  locus
+is indicated by a green arrow, as well as the CmONsense or CmONantisense
+editing oligonucleotides reflected with a color code if their sequence
+is the same as present on the plus or the minus strand of the chromosome.
+(B) Bar plot showing in logarithmic scale the colony-forming units
+(CFU) obtained for  M129 cells carrying
+the recombineering sensor (M129MutCm+1 strain) or the recombineering
+sensor plus a second transposon coding for the different recombinases
+(M129MutCm+1GP35, M129MutCm+1RecT, M129MutCm+1RecT, or M129MutCm+1RecT). Cells were subjected
+to a mock transformation (yellow bars) or transformation with the
+editing oligos CmONantisense (blue bars) or CmONsense (green bars)
+and then seeded onto nonselective (gray bars) or -selective plates (yellow, blue, and green bars). Total cells (gray
+bars) are calculated as the mean of CFU counted on nonselective plates
+for the three transformations for each strain. The editing rate (edited
+cells/total cells) obtained with the CmONsense oligonucleotide for
+each strain is shown above the bars. Those differences in terms of
+editing rate that were found to be statistically significant ( < 0.05) after conducting a paired  test are indicated with an asterisk (*). Error bars represent the
+mean of the standard deviation (SEM) of three different biological
+replicas. Optimization of GP35-Mediated
+Oligo Recombineering in Our
+screening identified GP35 as
+the first reported recombinase capable of mediating oligonucleotide
+recombineering . Yet, the editing
+efficiencies obtained were still far from those reported for other
+recombinase-microorganism pairs. For instance, in  expressing Recβ protein, oligo recombineering mediates 1 bp
+gene editing with efficiencies as high as 2 × 10, whereas the same type of modification
+is obtained at frequencies of 1.8 × 10 for  expressing Rec2 protein or at 2.5 × 10 for  expressing EF2132 protein. Consequently, we attempted to increase the efficiency by changing
+some parameters of our recombineering protocol. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_001.pdf As a starting
+point, we reasoned that if GP35 protein catalyzes the incorporation
+of the oligonucleotide at the replication fork, a permissive window
+of time should be considered to perform its task. For a slow-dividing
+microorganism such as , with a doubling
+time of approximately 8 h, the 2 h interval between transformation
+and plate seeding employed in the initial screening might be insufficient
+to ensure that the replication fork has passed at least once across
+the desired locus in all the cells of the population. To test this
+hypothesis, the GP35-expressing strain carrying the MutCm+1 sensor
+(M129MutCm+1GP35) was transformed with the CmONsense oligonucleotide,
+but this time the cells were grown under nonselective conditions for
+either 2, 24, or 48 h before plate seeding ( and A). In line with our hypothesis,
+when cells that received the oligonucleotide
+were grown for 24 h before plating, the editing efficiency increased
+to 1.3 × 10. Indeed, during the time window
+between 2 and 24 h post-transformation, the total number of cells
+rose almost six times (5.3 × 10 vs 3.1 × 10, respectively), whereas the numbers of edited cells increased
+∼43 times (9.2 × 10 vs 4 × 10, respectively). This result further suggests that the GP35-oligo
+editing mechanism is linked to the replication machinery. A similar
+editing efficiency was observed when comparing 24- and 48-h post transformation
+time points (1.3 × 10 vs 8.9 × 10, respectively). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_002.xlsx To further increase the transformation
+efficiency, we fixed 24
+h as the optimal time frame before plating and examined the contribution
+of the amount of recombination substrate (, and B). Increasing the oligonucleotide amount from 1 to 5 μL enhanced
+the editing rate almost 7 times (9.4 × 10 vs 6.3 × 10, respectively), whereas using
+10 μL did not significantly improve this rate (giving 6.8 ×
+10). Thus, we concluded that using 5 μL
+of the editing oligonucleotide is sufficient to saturate the recombineering
+process. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_002.xlsx Finally, we explored whether multiple electroporation
+pulses could
+improve editing efficiency. A similar strategy was reported to increase
+the number of plasmid-transformed cells by 2–5 times in . Thus,
+M129MutCm+1GP35 cells were transformed with 5 μL of CmONsense
+oligonucleotide, subjected to a variable number of pulses (i.e., 1,
+3, 6 or 10), and seeded on plates 24 h post-transformation ( and C). We observed a general trend of compromised
+viability with increasing number of pulses: of the cells that survived
+a single pulse, only ∼30% remained viable after 6 or 10 pulses.
+However, the number of edited cells increased with the number of pulses,
+at least until the viability of the total population started to be
+severely compromised. Altogether, this screening identified 6 electroporation
+pulses as the trade-off point between an increased number of edited
+cells and total cell viability, resulting in an editing rate 2.3 times
+higher than that obtained with one pulse (2.7 × 10 vs 1.2 × 10, respectively). In sum,
+after a limited screening of a series of parameters that
+could affect the recombineering process, we increased the editing
+rate 165 times (from 1.6 × 10 to 2.7 ×
+10). Indeed, after optimization, the frequency
+of incorporation of a 1-bp deletion in  outperformed that reported for other bacteria such as () or () by 1 order of magnitude. Optimization of GP35-oligo recombineering protocol for . (A–C) Bar plots showing in logarithmic
+scale the CFU obtained for the M129MutCm+1GP35 strain after transformation
+with the CmONsense oligonucleotide and seeding on either nonselective
+plates (gray bars) or -selective plates (green
+bars). The editing rate (edited cells/total cells) is shown above
+each group of bars. Those differences in terms of editing rate that
+were found to be statistically significant ( <
+0.05) after conducting a paired  test are indicated
+with an asterisk (*). Error bars represent the SEM of three different
+biological replicas. (A) Transformed cells were allowed to recover
+for different time intervals prior to seeding, as indicated on the -axis. (B) M129MutCm+1GP35 cells were transformed with
+different amounts of oligo, as indicated on the -axis, and seeded on plates at 24 h after transformation. (C) M129MutCm+1GP35
+cells were transformed with 5 μL of the CmONsense oligo and
+subjected to 1, 3, 6, or 10 electroporation pulses, as indicated on
+the -axis. Cells were allowed to recover for 24
+h before seeding. Cell viability for each condition is expressed as
+a percentage of that observed after one electroporation pulse, as
+shown below each bar. The Scale of
+Genetic Modifications Affects Recombineering Efficiency http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_002.xlsx The
+future adoption of  as a suitable
+synthetic biology chassis strain would unarguably require more than
+point mutations to its genome. Therefore, we determined which efficiencies
+could be obtained when using GP35-mediated oligo recombineering to
+carry out gene edits larger than 1 bp. To this end, we created three
+new reporters in which a 50-bp, 750-bp, or 1800-bp frame-shifting
+sequence was placed in the  coding sequence. Next,  WT cells were subjected to a first transformation
+with transposon vectors carrying the above-mentioned sensors, and
+a second transformation with the GP35-coding transposon. The resulting
+clonal strains termed M129MutCm+50GP35, M129MutCm+750GP35, and M129MutCm+1800GP35
+were found to harbor the sensors in the positive strand of the MPN493,
+MPN582, and MPN034 loci, respectively. In line with these locations,
+the CmONsense oligonucleotide was used as a recombineering substrate
+for both M129MutCm+50GP35 and M129MutCm+750GP35 strains, whereas the
+CmONantisense oligonucleotide was used for the M129MutCm+1800 strain
+(). The three reporter strains
+were then subjected to 6 electroporation pulses with 5 μL of
+their corresponding oligos, and seeded on plates 24 h post-transformation.
+( and A). For all three reporter strains, there was a clear anticorrelation
+between recombineering efficiency and length of the attempted deletion
+(A). Specifically,
+the editing rate obtained for a 50-bp deletion was 8.1 × 10, which is only 3-fold lower than that observed for
+a 1-bp deletion (2.7 × 10). In contrast,
+deletions of 750 bp and 1800 bp occurred at much lower frequencies,
+with editing rates of 3.4 × 10 and 9.5 ×
+10, respectively. Collectively, these results
+showed that GP35-mediated oligo recombineering can perform targeted
+chromosomal deletions of various sizes, though the efficiency is affected
+by the length of the deletion. Indeed, when the editing rates obtained
+for each reporter strain are plotted against the deletion size, the
+results adjust quite well to a decreasing power trend (B). These results are in line
+with those previously reported for recombineering-mediated chromosomal
+deletions in . Of note, the different recombineering sensors were incorporated
+at chromosomal locations quite distant from each other (i.e., MPN049,
+MPN493, MPN582, and MPN034), suggesting that the whole chromosome
+is capable of being edited by GP35-mediated oligo recombineering. Efficiency of GP35-oligo recombineering for
+large chromosomal modifications.
+(A) Bar plot showing in logarithmic scale the CFU obtained for different
+recombineering sensor strains (-axis) after transformation
+with their respective editing oligos following the conditions established
+in the optimization screening and seeding on nonselective medium (gray
+bars) or on -selective medium (green bars). All
+strains expressed GP35 recombinase and different recombineering sensors
+whose activation required the deletion of 50 bp, 750 bp, or 1800 bp,
+depending on the strain. The editing rate (edited cells/total cells)
+obtained for each strain is shown on top of each group of bars. Those
+differences in terms of editing rate that were found to be statistically
+significant ( < 0.05) after conducting a paired  test are indicated with an asterisk (*). Error bars represent
+the SEM of three different biological replicas. (B) Plot comparing
+the size of the attempted chromosomal deletion and the editing rate
+obtained for that modification. Each green rectangle represents the
+mean editing rate of three independent biological replicas performed
+with M129MutCm+1GP35, M129MutCm+50GP35, M129MutCm+750GP35, or M129MutCm+1800GP35
+strains. Error bars represent the SEM of three different biological
+replicas. Dotted line represents the decreasing power trend observed
+between deletion size and efficiency. The equation describing this
+trend as well as the coefficient of determination () is shown inside the square. Adaptation of CRISPR/Cas9 Technology to  as a Tool to Counterselect Nonedited Cells The main limitation
+of oligo recombineering lies in its inability to select for those
+cells carrying the intended modification, as the limited oligonucleotide
+length precludes the inclusion of a selection marker into the chromosome
+of edited cells to facilitate their identification. To solve this,
+spCas9, a -derived protein
+forming part of the widely known CRISPR/Cas system, has been recently repurposed as counterselection tool for
+recombineering protocols given its ability
+to specifically cleave a target DNA sequence in an easily reprogrammable
+manner. This ability relies on short guide RNAs (sgRNAs) that guide
+the endonuclease Cas9 to their complementary strand on the target
+DNA, and also on the presence of a 5′-NGG-3′ consensus
+sequence immediately downstream of the target site, which is called
+the protospacer adjacent motif (PAM). Cas9 chromosomal cleavage is highly lethal in bacteria, presumably
+due to the lack of NHEJ systems in most of the genera. This toxicity has been exploited to counterselect
+nonedited cells in oligo recombineering protocols developed for different
+strains. For this reason,
+the transposon vector employed to introduce the GP35 recombinase into
+the three reporter strains also contained a Cas9-based counterselection
+platform. Specifically, this platform was composed of: (i) an inducible
+system responding to anhydrotetracycline (aTc), based on the tet repressor
+(TetR) and a promoter termed Pxyl/tetO2mod, (ii) a copy of the enhanced-Cas9 (eCas9) coding sequence, and (iii) a sgRNA termed eNT2 that targets the
+nontemplate strand of the gene coding for the Venus fluorescent protein. Note that the sequence recognized by eNT2 sgRNA
+is present in the three different recombineering sensors, as part
+of the frame-shifting sequences. Thus, in principle only edited cells—that
+is, those that have incorporated a recombineering oligo and consequently
+deleted the  frame-shifting sequence—would
+survive once eCas9 expression is induced. Nevertheless, nonedited
+“escapee” cells carrying mutations that somehow affect
+Cas9 activity or expression would also survive and still carry the
+sequence recognized by eNT2 sgRNA in their chromosomes (also termed
+Cas9 evaders). An outline of the recombineering and Cas9-mediated
+counter-selection strategy can be found in . http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_002.xlsx http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_002.xlsx http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_002.xlsx Thus, the three different
+reporter strains expressing GP35 recombinase
+and the enhanced and inducible Cas9 (eiCas9) system were transformed
+with either CmONsense or CmONantisense oligos and, after 24 h, seeded
+on -selective or nonselective plates supplemented
+with different aTc concentrations (). This screening of inducer concentrations allowed us to determine
+two important parameters for the counter-selection protocol: the optimal
+inducer concentration and the Cas9 evader rate. The optimal inducer
+concentration is defined as the aTc dose at which the viability of
+the total cells is affected without having an impact on the survival
+of edited cells. For instance, in the case of M129MutCm+50GP35 strain,
+this optimal inducer concentration was found at 0.66 ng/mL, a condition
+that led to a 50-fold reduction in the viability of total cells (1.2
+× 10 vs 2.3 × 10) without affecting
+the edited population (1.5 × 10 vs 2.2 × 10). However, in the cases of the M129MutCm+750GP35 and M129MutCm+1800GP35
+strains, the optimal Cas9 induction was found to take place at 1.25
+ng/mL aTc (, ). Note that these three sensor strains differ in
+the chromosomal location of the eiCas9 gene cassette, and this probably
+accounts for the variable optimal inducer concentrations found. On
+the other hand, the Cas9 evader rate is defined as the proportion
+of cells that survive to eiCas9-mediated counterselection, regardless
+of the inducer concentration. Thus, the ratio between survivor cells
+at the highest aTc concentration and total cells when no induction
+is applied allowed us to calculate the evader rate for each strain
+(). Strikingly, this parameter
+also showed variations depending on the strain. This suggests that
+the tightness in the regulation of the eiCas9 inducible system is
+also affected by the chromosomal location of the cassette, resulting
+in higher evader rates for those locations favoring leaky transcription
+of eiCas9 gene. In any case, is it clear that the evader rate will
+influence the outcome of the recombineering–counterselection
+protocol. Specifically, if the proportion of evaders is higher than
+the proportion of edited cells, the selection of the latter would
+require numerous clones to be screened. In contrast, if the rate of
+evaders is lower than the rate of editing, virtually all cells surviving
+eiCas9 expression should carry the intended modification. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_002.xlsx http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_002.xlsx http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_001.pdf Taking
+advantage of all the data generated in the screening of
+eiCas9 inducer concentrations ( and ), we compared the editing
+rates obtained for each strain in the absence of eiCas9-mediated counterselection
+or under optimal eiCas9 induction conditions (). For the M129MutCm+50GP35 strain, optimal
+induction of eiCas9 expression boosted the editing rate from the initial
+value 1.3 × 10 to 9.9 × 10 . This implies that virtually all cells surviving eiCas9 induction
+are edited cells. To further confirm this, we randomly picked 20 colonies
+from nonselective plates supplemented with the optimal aTc dose for
+this strain, and inoculated them into a 96-well plate containing either
+nonselective or -selective medium. Of note, 19
+out the 20 clones analyzed were found to be chloramphenicol resistant
+(). This efficient selection of
+edited cells relies on the fact that, for this strain, the initial
+editing rate is higher than the frequency of evaders (1.3 × 10 and 3.1 × 10, respectively).
+In contrast, the initial editing rates obtained for M129MutCm+750GP35
+and M129MutCm+1800GP35 strains (i.e., 4.9 × 10 and 1.1 × 10, respectively) were lower
+than the Cas9 evader rate (3.9 × 10 and 8.3
+× 10, respectively) ( and ). In other
+words, in these two strains the number of cells that do not respond
+to eiCas9 induction is higher than the amount cells that were positively
+edited by oligo recombineering. As a consequence, optimal eiCas9 induction
+boosted the editing rates to 1.2 × 10 in
+the M129MutCm+750GP35 strain, and 6.4 × 10 in the M129MutCm+1800GP35 strain, both values being lower than the
+editing rate observed in M129MutCm+50GP35 strain after eiCas9-mediated
+counterselection (9.9 × 10 ) (). Nevertheless, these values
+should enable the isolation of positively edited cells by analyzing
+a reasonable number of clones. In the case of the M129MutCm+750GP35
+strain, the analysis of 20 colonies randomly picked from nonselective
+plates supplemented with 1.25 ng/mL aTc allowed the identification
+of two positively edited clones, as inferred from their ability to
+grow on -selective medium. This ratio of edited
+clones (2/20) is substantially lower that the one obtained for 50
+bp deletions (19/20), and therefore the identification of clones carrying
+deletions of 750 bp would inarguably require a PCR screening. Thus,
+as a proof of concept, the same 20 clones assessed in the antibiotic
+selection screening were analyzed by PCR, confirming the deletion
+of 750 bp in the same clones that were found to be resistant to chloramphenicol
+(). Likewise, the same screenings
+conducted in 20 clones of M129MutCm+1800GP35 strain led to the identification
+of one positively edited clone that carried a targeted 1.8 kb deletion
+(). Altogether, these results indicate that GP35 recombineering coupled
+to eiCas9-mediated counterselection enables cells that have undergone
+a 50-bp chromosome editing to be isolated with virtually no screening,
+and allows simple and affordable screening experiments for deletions
+as large as 1.8 kb. Paradoxically, small scale modifications such
+as point mutations might be the hardest to obtain with this technology,
+as PAM sequences required to be recognized by Cas9 might not be always
+present in the vicinity of the nucleotide to be modified. However,
+Cas-9 mediated counterselection is not an absolute requirement to
+select for small scale modifications. Indeed, GP35 oligo recombineering
+generates clones carrying point mutations with a frequency high enough
+(i.e., 2.7 × 10) to allow their identification
+through a screening based on allele-specific PCR protocols. Outline of the recombineering and Cas9-mediated
+counterselection
+strategy. Top: scheme depicting a bacterial population along the different
+steps of the protocol. The initial population is composed of unedited
+cells (gray bacteria) carrying a Cas9 system that is either functional
+(indicated by orange chromosomes) or nonfunctional (Cas9 evaders,
+indicated by red chromosomes). Upon oligo transformation, some cells
+become edited (green cells), and subsequent Cas9 induction (represented
+by orange or red outer shades) results in the selective killing of
+unedited cells (gray bacteria with broken chromosomes) and the survival
+of edited cells and Cas9 evaders. Bottom: scheme depicting the molecular
+mechanisms of this selection. In counterselected cells the functional
+Cas9 protein (orange molecule) forms a complex with eNT2 sgRNA (purple
+molecule) that specifically cuts the frameshifting sequence (black
+box) found in the MutCm sensor. The same complex is formed in edited
+cells, but the oligo-mediated deletion of the frameshifting sequence
+precludes Cas9-mediated cleavage of the chromosome. In Cas9 evaders,
+a nonfunctional (NF) copy of Cas9 is expressed (red molecule), resulting
+in the survival of cells still carrying the frameshifting sequence
+on their chromosomes. Improvement of editing
+rates mediated by Cas9-based counterselection.
+Bar plot showing in logarithmic scale the CFU values obtained for
+the indicated recombineering sensor strains after transformation with
+their corresponding editing oligos and seeding on nonselective medium
+(gray bars) or selective medium (green bars), nonsupplemented with
+aTc (−) or supplemented with the optimal aTc dose for each
+strain (+) as indicated on the -axis. The editing
+rate (edited cells/total cells) obtained for each strain and experimental
+condition is shown on top of each group of bars. Those differences
+in terms of editing rate that were found to be statistically significant
+( < 0.05) after conducting a paired  test are indicated with an asterisk (*). Error bars represent the
+SEM of three different biological replicas. Research in the Mycoplasma
+field has traditionally been hampered
+by the lack of reliable genome editing tools. The cloning of natural
+Mycoplasma genomes as yeast centromeric plasmids was a major breakthrough
+that seemed to overcome the scarcity of tools for this genus. Indeed, complete genomes of several Mycoplasma species have been
+cloned and modified in yeast with a variety of genome-editing techniques
+such as TREC, TREC-IN, and CreasPy-cloning that take
+advantage of the proficient recombination machinery found in . Perhaps the best example to illustrate the
+potential of this approach is the recent report of massive genome
+engineering in  using the TREC technique
+that involved the multistep targeted deletion of up to 10% of the
+original genome. Once the in-yeast edited genome was transplanted
+into a Mycoplasma acceptor cell, a fully attenuated  strain was generated. Given that this
+strain shows a host preference in principle restricted to ruminants,
+it might become a standard for synthetic biology projects focused
+on the veterinary field. However, synthetic biology projects focused
+on human health still miss a member of the Mycoplasma genus as a suitable
+chassis strain. That strain could be , as it is a bacterium that naturally infects the human respiratory
+tract and is extensively characterized. Still, the few pathogenicity
+determinants encoded in its genome should be removed before it can
+be used therapeutically. Strikingly, the genome of  has also
+been cloned as a yeast centromeric plasmid and successfully edited
+using the CreasPy-cloning technique. In
+spite of this, the reintroduction of this in-yeast engineered  genome into a Mycoplasma acceptor cell (i.e.,
+genome transplantation) has never been reported. Therefore, although
+the  genome can be edited in yeast,
+the generation of  edited cells remains
+unsolved. The same applies for , whose
+genome has been cloned and edited in yeast but never transplanted
+to generate  mutant cells. This is not surprising, as it was recently reported that
+the phylogenetic distance between the donor genome and the recipient
+cell constrains the efficiency of genome transplantation, requiring
+around 90% of identity of the core proteome between donor and acceptor
+organisms to obtain a successful outcome. As the only available acceptor cell for genome transplantation to
+date is , in-yeast engineering of Mycoplasma
+genomes and subsequent transplantation is a feasible approach for
+only a few species. Thus, there is a need for strategies enabling
+direct editing of Mycoplasma genomes without requiring the use of
+yeast as the engineering platform. In this work, we report the
+development of a recombineering technology
+coupled to CRISPR/Cas9-based counterselection for . Our work may represent the foundation for the adoption of this
+bacterium as a synthetic biology chassis strain by providing a technology
+that should enable the removal of the few and well-characterized pathogenicity
+determinants found in the  genome. Remarkably,
+gene editing with the GP35-CRISPR/Cas9 system leaves no marks behind,
+so that iterative rounds can be performed without requiring selection
+marker recycling. Once the undesired elements of the naturally
+streamlined genome
+of  have been erased, it is likely that
+novel functions can be plugged into this genomic backbone. However,
+while oligo recombineering can easily mediate gene deletions, the
+small size of oligonucleotides precludes the use of this technology
+to mediate targeted insertion of gene cassettes. To solve this, we
+envision that  sites are small enough (i.e., 34
+bp) to be included into oligonucleotide molecules, which would enable
+GP35-mediated generation of targeted landing platforms that can later
+be loaded with the gene cassettes of interest. Notably, the functionality
+of Cre/ technology has been already demonstrated
+in , a
+species closely related with . Finally, it should be noted that GP35 is a ssDNA recombinase from
+a phage that uses  as a host. Despite
+this phylogenetic distance, GP35 performs quite efficiently in , so it would not be surprising if its efficacy
+is maintained across the whole Mycoplasma genus. Bacterial Strains
+and Culture Conditions http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_002.xlsx All the  strains generated in this work are described
+in  and derive from the wild-type
+strain M129-B7 (ATTC 29342, subtype 1, broth passage no. 35). All
+strains were grown in Hayflick modified medium at 37 °C under 5% CO in tissue culture
+flasks (Corning). Hayflick broth was supplemented with tetracycline
+(2 μg mL), puromycin (3 μg mL), or chloramphenicol (20 μg mL) for selection of cells as needed or with anhydrotetracycline at
+the indicated concentrations for inducing Cas9 expression. When growth
+on the plate was required, Hayflick broth was supplemented with 0.8%
+bacto agar (Difco). All strains generated in this work are available
+upon request. For cloning purposes, the  NEB 5-alpha High Efficiency strain (New England Biolabs) was grown
+at 37 °C in LB broth or on LB agar plates supplemented with ampicillin
+(100 μg mL) http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_002.xlsx http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_002.xlsx http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_002.xlsx http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_002.xlsx http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_002.xlsx http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_002.xlsx All of the plasmids generated
+in this work were assembled following the Gibson method unless otherwise indicated. When required, IDT
+Incorporation performed gene synthesis. Oligonucleotides were synthesized
+by Sigma-Aldrich. Gene amplifications were carried out with Phusion
+DNA polymerase (Thermo Fisher Scientific) A detailed list of plasmids
+and the sequences of the different modules included in them is available
+in . Note that  does not require a Shine–Dalgarno region at the 5′
+end of the mRNA to efficiently translate the transcripts, so the promoter
+sequences indicated in  contain
+the region placed immediately upstream of each of the coding sequences
+controlled by them. Thus, researchers working with other Mycoplasma
+species may need to define their own regulatory regions or use a recently
+reported regulatory region that seems to be functional in all Mycoplasma
+species. All plasmids generated in this
+work are available upon request. All oligonucleotides employed for
+plasmid assembly as well as details for vector construction are available
+in . The correct assembly of all
+plasmids was verified by Sanger sequencing (GATC biotech). The sequences
+of the editing oligonucleotides employed as substrates for recombineering
+are available in . The sequences
+of the oligonucleotides employed for the arbitrary PCR protocol and
+for the screening of edited clones are available in  and , respectively. BLAST Search of Orthologues, CLUSTALW Multiple Sequence Alignment,
+and Accession Numbers of Recombinases Mycoplasma orthologues
+of -derived proteins RecT (P33228) and Recβ
+(P03698) were sought using BLASTp (protein–protein BLAST).
+Parameters of the search were restricted to Mycoplasmas and walled
+relatives (taxid: 31969), Mycoplasma phage phiMFV1 (taxid: 280702),
+Mycoplasma phage MAV1 (taxid: 75590), and Mycoplasma phage P1 (taxid:
+35238). RecT-associated positive hits of this search, here renamed
+as RecTsm (WP_004028097.1), RecTsp (WP_127093247.1), and RecTsc (CAK99285.1),
+were later aligned using CLUSTALW software taking the native -derived RecT protein as a reference. A search for
+Recβ-like orthologues did not produce any positive hits. As
+our search did not produce any candidate with a proven capacity to
+perform recombineering, GP35 protein (CAA66543.1) was included in
+the screening of recombinases. Transformations
+were performed as described previously with few modifications. Briefly,  cultures
+were grown to late-exponential phase in 75 cm tissue culture
+flasks. The adherent layer of  cells
+was washed three times with chilled electroporation buffer, scraped off, and resuspended in 500 μL
+of this buffer at a concentration of approximately 10 cells mL. Next, this cell suspension was passed
+10 times through a 25-gauge (G25) syringe needle, and 50 μL
+aliquots were mixed with the desired DNA molecules for transformation.
+For transposon vector transformations, 2 μg of DNA was added
+to the mix, whereas for oligo transformations, the volumes employed
+were 1, 5, or 10 μL of a 100 μM stock, corresponding to
+0.1, 0.5, or 1 nmol, respectively. The mixture of DNA and cells was
+adjusted to a final volume of 80 μL and transferred into 0.1
+cm electrocuvettes, letting it sit for 15 min on ice before being
+electroporated in a BIO-RAD Gene Pulser Xcell apparatus. The settings
+employed were 1250 V/25 μF/100 Ω. After the pulse, cells
+were incubated on ice for 15 min and subsequently harvested by adding
+420 μL of Hayflick into the cuvette. In the case of transposon
+vector transformations, cells were allowed to recover at 37 °C
+for 2 h before inoculating one-fifth of the transformation volume
+into a 25 cm flask filled with 5 mL of Hayflick supplemented
+with the appropriate antibiotic. In those cases in which individual
+clones of the transformation were required, after the 2 h of recovering
+time, serial dilutions were seeded on plates, and an individual clone
+was picked and expanded. In the case of oligo transformations where
+several pulses were performed, cells were allowed to recover 3 min
+on ice between the pulses. Later, the total volume of the transformation
+was directly inoculated into T75 flasks containing 25 mL of Hayflick
+medium. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_002.xlsx http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_002.xlsx cells carrying one of the different recombineering sensors generated
+in this work, a second transposon harboring one of the recombinases
+screened, and in some cases also the eiCas9 system were transformed
+with an editing oligo. The sequences of the editing oligos can be
+found in . At the indicated post-transformation
+time, transformed cells were scraped from the flask in 500 μL
+of Hayflick medium. Subsequently, 10-fold serial dilutions were performed
+(from −1 to −8). Dilutions were made in a total volume
+of 100 μL, and 10 μL of each dilution was spotted onto
+Hayflick 0.8% bacto agar plates supplemented with chloramphenicol
+and/or anhydrotetracycline where required. Thus, the detection limit
+of these experiments was 500 CFU. When the number of cells obtained
+for a given condition was below this detection limit, the maximum
+possible number of cells (i.e., 499 CFU) was considered for statistical
+analyses. The editing rate is defined as the number of cells resistant
+to chloramphenicol divided by the total number of cells obtained for
+each condition. Paired  test analysis of the editing
+rates obtained in the three biological replicates conducted for each
+condition was performed using GraphPad QuickCalcs software. An asterisk
+(*) was included in the figures when the difference in the editing
+rate for two given conditions was found to be statistically significant
+( < 0.05). The actual value of all p-values can
+be found in the . http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_002.xlsx Plasmids employed in this work
+to assess the functionality of different proteins were free of protein
+tags to avoid the possibility that their inclusion could affect the
+activity. Therefore, to confirm the expression of the different recombinases,
+a set of dedicated plasmids containing FLAG tags was constructed (). The strains carrying these tagged
+constructs were grown on 25 cm flasks until reaching confluence.
+The adherent layer of cells was washed twice with PBS and scraped
+off in 500 μL of this buffer. Cell solution was centrifuged
+(12 000, 5 min), and the resulting pellet
+was lysed in 150 of lysis buffer (SDS 4%, Hepes 100 mM). Subsequently,
+mycoplasma cell lysates were quantified using the Pierce BCA Protein
+Assay Kit, and 10 μg of cell extracts was subjected to electrophoresis
+on NuPAGE 4–12% Bis-Tris precast polyacrylamide gels (Invitrogen).
+Next, proteins were transferred onto nitrocellulose membranes using
+an iBlot dry blotting system (Invitrogen). Novex Sharp Prestained
+Proteins Standards allowed cutting the membrane into two pieces to
+process individually. Both membrane pieces were blocked with 5% skim
+milk (Sigma) in Tris-buffered saline (TBS) solution, containing 0.1%
+Tween 20 (TBST). The upper membrane piece (containing proteins above
+20 kDa) was probed with monoclonal anti-FLAG M2 (Sigma) as primary
+antibody (1:5000) and antimouse IgG (1:10 000) conjugated to
+horseradish peroxidase (Sigma) as secondary antibody. The lower membrane
+piece (containing proteins below 20 kDa) was probed with anti-RL7
+polyclonal serum (kind gift of Dr. Herrmann, Heidelberg University)
+as primary antibody (1:1000) and antirabbit IgG (1:10 000)
+coupled to horseradish peroxidase (Sigma) as secondary antibody. Blots
+were developed with the Supersignal West Femto Chemiluminescent Substrate
+Detection Kit (ThermoScientific), and signals were detected in a LAS-3000
+Imaging System (Fujifilm). Transposon Insertion Localization by A-PCR Cultures
+of the clones of interest were grown in 25 cm flasks until
+reaching confluence. The adherent layer of cells was washed three
+times with PBS and scraped off in 300 μL of this buffer. This
+cell solution was treated with MasterPure DNA Purification Kit (Epicenter)
+following the manufacturer’s instructions to isolate genomic
+DNA. https://github.com/jdelgadoblanco/pentanucleotides.git https://github.com/jdelgadoblanco/pentanucleotides.git http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_002.xlsx The A-PCR protocol followed is a variant of the one previously
+described to adapt it to  genome composition. Specifically, we modified the 3′ end
+of the arbitrary oligo to mimic the most frequent pentanucleotide
+sequence in the  genome that ends in
+a “GC clump”. The script for finding the most frequent
+pentanucleotides for a given genome and sort them by the number of
+hits is available at: . The sequences of the four primers employed for A-PCR in this study
+are detailed in . 96 well plates were prepared
+as follows: all the perimeter wells were filled with 200 μL
+of Hayflick medium as color reference. Then, the “inoculation
+wells” were filled with 200 μL of Hayflick medium, the
+“non-selective wells” with 150 μL of Hayflick
+medium, and the “-selective wells”
+with 150 μL of Hayflick medium supplemented with  at 1.25× concentration. Colonies were picked from the plates
+of interest and transferred into the inoculation wells by pipetting
+up and down several times. Subsequently, separate aliquots of 50 μL
+were transferred from the inoculation well to both the “non-selective
+well” and the “-selective well”.
+Plates were incubated at 37 °C under 5% CO for 7
+days before taking pictures of them with ImageScannerIII (Epson). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00022/suppl_file/sb0c00022_si_002.xlsx For the PCR screening of edited clones, a fast genomic DNA extraction
+of Mycoplasma cells was performed. Briefly, cells grown in the multiwell
+plates were scraped off and 100 μL of the resulting cell suspensions
+were transferred to Eppendorf tubes and boiled for 10 min. Next, the
+inactivated cell suspension was mixed with 20 μL of StrataClean
+resin (Agilent). This mixture was incubated for 10 min at RT with
+gentle mixing every 2 min before being centrifuged (10 000, 1 min). Finally, 3 μL of the resulting supernatants
+was used as a template for the PCR with the screening oligos detailed
+in ..

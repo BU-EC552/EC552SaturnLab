@@ -1,0 +1,500 @@
+Transcription factors
+are master regulators of cellular fate and
+function that orchestrate a coordinated response to a variety physiological
+stimuli. Exogenous modulation of transcription factor activity therefore
+holds much therapeutic potential, and is a critical tool for deciphering
+complex cellular networks. The absolute requirement of assembly for
+function means that protein–protein interaction (PPI) inhibition
+is the optimal strategy for intervention, but transcription factors
+are considered to be one of the most chemically intractable targets
+in drug discovery. More generally, the
+challenge of identifying PPI inhibitors means that the majority of
+tools employed for studying these complexes are nucleic acid-based
+(, siRNA, or CRISPR) and function to eliminate
+the targeted protein from the cell. Despite their widespread use,
+these methods have several drawbacks for studying PPIs; removal of
+a protein from a system eliminates all of its known and unknown interactions
+and functions. Thus, an observed phenotype may not necessarily be
+attributed to a given PPI. In cases where validated PPI inhibitors
+are available, the need for chemical synthesis and intracellular delivery
+of such compounds places limitations on their adaptation and use.
+We sought an alternative approach by introducing the components necessary
+to synthesize a PPI inhibitor onto the genome of a human cell line.
+Under this scenario, the intracellular production of a non-native
+molecule is selectively induced by one or more disease specific signals  expression of the machinery needed for its production.
+This approach would have the advantage that it eliminates the need
+for chemical synthesis and intracellular delivery of the therapeutic
+agent. To demonstrate the viability of the proposed approach, we turned
+to our recently reported cyclic peptide inhibitor of hypoxia inducible
+factor 1 (HIF-1) heterodimerization. HIF-1 is a heterodimeric transcription factor that drives the cellular
+response to hypoxia, by altering the transcription
+of over 300 genes, enabling cell survival
+and growth in a low oxygen microenvironment. HIF-1 is composed of
+an oxygen-regulated α-subunit (HIF-1α) and a constitutively
+expressed β-subunit (HIF-1β). HIF-1α is marked for
+degradation by prolyl hydroxylases that use oxygen as a substrate. Reduced oxygen levels lead to the stabilization and nuclear translocation
+of HIF-1α, where it binds HIF-1β to form the active HIF-1
+transcription factor. HIF-1α mounts an immediate response to
+reductions of intracellular oxygen, while
+two closely related isoforms, HIF-2α (also known as EPAS1) and
+HIF-3α, are thought to regulate the response to prolonged hypoxia. The intricate interplay between HIF-α isoforms
+in cancer is complex and yet to be fully deciphered, but the role
+of HIF-1 activity in angiogenesis, tumor growth and metastasis is
+well established. Tumours grow rapidly, outstripping
+the capacity of the local vasculature, which results in a hypoxic
+microenvironment; HIF-1α is overexpressed in many cancers, and oncogene activation and loss of tumor suppressor
+function is shown to be associated with HIF-1. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00219/suppl_file/sb6b00219_si_001.pdf We recently reported an inhibitor of the HIF-1α/HIF-1β
+PPI; this molecule (-CLLFVY, named P1) was identified from a genetically encoded library
+of 3.2 million cyclic hexapeptides generated using split-intein circular
+ligation of peptides and proteins (SICLOPPS). P1 selectively binds to the PASB domain of HIF-1α with a  of 124 nM, disrupts the HIF-1α/HIF-1β
+PPI  and in cells, and inhibits HIF-1 signaling
+in hypoxic cells. P1 is isoform-specific
+and does not bind to, or affect the function of the closely related
+HIF-2 isoform  or in cells. SICLOPPS generates cyclic peptides  PCC6803 ()
+DnaE split inteins; the SICLOPPS protein
+is composed of rearranged N-terminal and C-terminal split inteins
+flanking a peptide extein sequence in the form of I-extein-I. The N- and C-terminal split inteins combine to form an active
+intein that splices to cyclize the extein (). By altering the sequence of the SICLOPPS extein at the
+DNA level, a variety of cyclic peptides and proteins, including randomized
+cyclic peptide libraries, may be produced by this approach. Given our goal of incorporating the machinery
+required for the
+generation of a molecular PPI modulator into cells, and the significance
+of HIF-1 in tumor survival and growth, we set out probe the possibility
+of engineering the conditional production of P1 ( the corresponding SICLOPPS inteins) onto the chromosome of human
+HEK-293 cells, and to assess the effect of genetically encoded P1
+on HIF-1-mediated hypoxia response in these cells. Expression
+and Processing of SICLOPPS Constructs in HEK-293
+Cells http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00219/suppl_file/sb6b00219_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00219/suppl_file/sb6b00219_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00219/suppl_file/sb6b00219_si_001.pdf We began by constructing a cell line capable of conditional
+P1 production and assessing the ability of the SICLOPPS construct
+to correctly function in human cells. To achieve inducible expression
+of the SICLOPPS construct encoding our HIF-1 inhibitor, we used a
+cassette containing a CMV promoter, followed by two copies of the
+tetracycline operator (tetO), enabling regulation of transcription
+with doxycycline (dox), followed by the gene for SICLOPPS (A). Engineered  DnaE () inteins that
+splice significantly faster than the  inteins
+typically used in SICLOPPS were utilized for the production
+of P1, with CLLFVY as the extein to be cyclized. We used flippase-flippase
+recognition target (Flp-FRT) recombination to stably integrate this cassette onto the chromosome of human HEK-293
+cells (T-REx-293) to give T-REx-P1 cells. We first sought to demonstrate
+the production of functional P1 from the chromosome of human cells.
+Intein production was probed by immunoblotting with an antibody against
+the chitin-binding domain (CBD) present on the C-terminus of the N-terminal
+intein; we only observed the CBD band in the integrated cells, and
+only when cultured with dox (). The change in transcription of the chromosomal SICLOPPS construct
+in response to dox was quantified by RT-qPCR as ∼37-fold in
+both normoxia and hypoxia (B), which was also reflected at the protein level (C). A time course
+measuring intein protein production over 24 h in hypoxic cells illustrated
+the steady buildup of SICLOPPS inteins (D). The splicing efficiency of the SICLOPPS
+protein encoding P1 was measured by immunoblot analysis for the CBD.
+We only observed a single band at ∼18 kDa corresponding to
+the spliced N-intein, suggesting full splicing of the SICLOPPS protein
+(). We next sought to directly
+detect the presence of P1 in T-REx-P1 cells. A synthetic sample of
+P1 was prepared as a standard, and a peak with identical retention
+time as this sample was observed in the lysate of T-REx-P1 cells treated
+with dox (E).
+Mass spectrometric analysis of this fraction from the cell lysate
+revealed peaks corresponding to the mass of P1 (F) and the same as observed for the synthetic
+standard (). This data demonstrates
+that the  SICLOPPS inteins incorporated into the
+chromosome of human HEK-293 cells are selectively produced in the
+presence of dox, splicing post translation to give detectable levels
+of P1 in the engineered human cell line. Production of a functional
+cyclic peptide HIF-1 inhibitor from
+the chromosome of human HEK-293 cells. (A) The chromosomally integrated
+cassette enables the conditional expression of the SICLOPPS gene,
+which encodes the  inteins with CLLFVY as the
+extein. Splicing of these inteins gives P1. (B) RT-qPCR of intein
+expression in T-REx-P1 cells incubated in normoxia or hypoxia (24
+h). (C) Immunoblot of T-REx-293 and T-REx-P1 cells treated as in B.
+(D) Immunoblot of T-REx-HRE cells incubated with dox in hypoxia for
+0–24 h. (E) P1 produced in T-REx-P1 cells has the identical
+HPLC retention time as the synthetic standard. (F) The mass spectrum
+(ESI+) of fraction shown in F from T-REx-P1 cell lysate shows the
+presence of P1. (G) Firefly luciferase activity in T-REx-P1 and T-REx-Scram
+cells transfected with TK-HRE-luciferase and incubated for under normoxia
+or hypoxia (16 h). Data are means ( = 3) ±
+SEM, ** < 0.01. Genetically Encoded P1 Inhibits HIF-1 Activity http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00219/suppl_file/sb6b00219_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00219/suppl_file/sb6b00219_si_001.pdf With
+the engineered cell line in hands and having demonstrated the conditional
+production of P1, the functionality of the genetically encoded cyclic
+peptide HIF-1 inhibitor was next probed. T-REx-P1 cells were transfected
+with a HIF-dependent luciferase reporter plasmid, where activation
+of HIF results in increased luciferase expression. As expected, there was no change in the luciferase signal
+with dox in normoxia, while an ∼8-fold increase in luciferase
+activity was observed in hypoxic T-REx-P1 cells without dox (G). Induction of
+P1 production with dox in these cells resulted in a 50% decrease in
+luciferase activity (G), suggesting that chromosomally encoded P1 inhibits HIF-1
+function. To demonstrate that our observations are due to P1 and not
+the SICLOPPS inteins, we generated a negative control cell line (T-REx-Scramble)
+that chromosomally encoded CFVLYL (a scrambled
+variant of P1) as the extein of  SICLOPPS inteins.
+Splicing and conditional production of this scrambled peptide was
+demonstrated by immunoblotting (). The above luciferase assay was repeated in this cell line, and
+a ∼7-fold increase in luciferase activity was observed upon
+induction of hypoxia without dox. There was, however, no change in
+luciferase activity when these cells were incubated with dox in hypoxia
+(G), indicating
+that the scrambled peptide, or the SICLOPPS inteins do not affect
+HIF-1 dimerization. To validate that the effect from P1 was on HIF-1
+rather than on luciferase, we used a control SV40-luciferase plasmid,
+and did not see any significant change in luciferase signal upon induction
+of P1 in T-REx-P1 cells with dox (). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00219/suppl_file/sb6b00219_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00219/suppl_file/sb6b00219_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00219/suppl_file/sb6b00219_si_001.pdf The effect of chromosomally produced P1 on HIF-1 activity
+was further assessed  its target genes vascular
+endothelial growth factor (VEGF) and carbonic anhydrase IX (CAIX).
+Chromosomally produced P1 reduced VEGF transcription by ∼30%
+() and CAIX transcription by
+∼45% (), with no effect
+of the scrambled peptide observed on either gene (). Together, the above data demonstrates that chromosomally
+encoded P1 is functional, and able to inhibit HIF-1 signaling in hypoxia
+as expected from our previous studies with the synthetic, tat-tagged
+variant of the compound. Engineering Physiological Control of Peptide
+Expression http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00219/suppl_file/sb6b00219_si_001.pdf We next sought to engineer an additional layer
+of control into the
+above system by limiting the dox-dependent production of P1 to hypoxic
+cells. The motivation for constructing this dual-control system was
+our long-term goal of generating an  model
+that contains such a circuit on its chromosome. Such a system would
+not only allow expression of the HIF-1 inhibitors in hypoxic tissues
+(as an HRE-only promoter would), but also allow temporal control over
+initiation of P1 production  addition of dox.
+Thus, the effect of HIF-1 inhibition at various stages of the tumor
+development may be assessed. A hybrid promoter was designed and constructed;
+three copies of the HRE from the inducible nitric synthase promoter were placed upstream of two copies of TetO,
+resulting in a dual physiological and chemically controlled conditional
+promoter that would only function in hypoxia and with dox (A). This cassette
+was incorporated onto the chromosome of HEK-293 cells by Flp-FRT recombination
+(as above) to give T-REx-HRE cells. Analysis of SICLOPPS cassette
+transcription by RT-qPCR showed ∼9-fold upregulated transcription
+in hypoxic cells that were incubated with dox (B). Immunoblot analysis showed the presence
+of SICLOPPS protein only in cells cultured in hypoxia and with dox
+(C), further
+illustrating that the dual conditional promoter was functioning as
+designed. The quantity of SICLOPPS protein was next compared with
+T-REx-P1 cells. Interestingly, we observed higher levels of inteins
+in the CMV-promoted cell line than the HRE-promoted cells incubated
+in hypoxia and with dox (). Analysis
+of these bands by densitometry indicated that there was ∼7-fold
+more SICLOPPS intein in T-REx-P1 cells than in T-REx-HRE cells after
+24 h. There are two reasons for this difference; first, the transgene
+expression rate from the HRE promoter is known to be lower than that
+from a CMV promoter, and second, the spliced product
+of the promoted protein (P1) is an inhibitor of HIF-1 dimerization.
+Therefore, as P1 builds up, it will also inhibit the transcription
+factor promoting its own production. To further assess the effect
+of this feedback loop on P1 production, a time course analysis of
+intein production was conducted. We observed the steady buildup of
+SICLOPPS mRNA (D) and protein (E) in hypoxic T-REx-HRE cells over 24 h, with a noticeable increase
+in both after 8 h in hypoxia. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00219/suppl_file/sb6b00219_si_001.pdf The effect of P1 on the interaction of HIF-1α and HIF-1β
+in hypoxic T-REx-HRE cells was next directly probed using an  proximity ligation assay (PLA). A
+PLA signal was observed in hypoxic T-REx-HRE cells incubated without
+dox (F, left-hand
+panel), corresponding to the hypoxia-induced stabilization of HIF-1α
+and subsequent dimerization of HIF-1α and HIF-1β. The
+PLA signal was not observed in these cells when incubated with dox
+(F, right-hand
+panel), nor in normoxic cells with or without dox (). This data demonstrates the disruption of HIF-1
+dimerization by genetically encoded P1 in cells. The downstream
+effect of disrupting HIF-1 dimerization with chromosomally
+encoded P1 was elucidated  analysis of the transcription
+of HIF-1 target genes VEGF and CAIX. The expression of both genes
+was measured by RT-qPCR in cells incubated in hypoxia for 24 h with
+or without dox. Induction of P1 with dox resulted in a ∼40%
+reduction in VEGF mRNA (G) and a ∼50% reduction in CAIX mRNA in hypoxic T-REx-HRE
+cells (H).
+It should be noted that although lower amounts of the SICLOPPS protein
+are produced in the T-REx-HRE cells than in T-REx-P1 cells, the extent
+of the effect of P1 on these HIF-1 reporter genes was similar in both
+cell lines, indicating that P1 concentration is not a limiting factor
+in the observed inhibition of HIF-1 signaling. Conditional production of P1 in human cells.
+(A) The hybrid HRE/TetO
+promoter requires dual input signals of HIF-1 and dox in an AND process
+for expression of the SICLOPPS construct. Intein splicing produces
+P1, which inhibits HIF-1 dimerization. (B) RT-qPCR analysis of intein
+expression in T-REx-HRE cells incubated for 24 h in normoxia or hypoxia,
+with or without 1 μg/mL dox. (C) Immunoblot of T-REx-HRE cells
+treated as in panel B. (D) RT-qPCR analysis of SICLOPPS mRNA levels
+in T-REx-HRE cells incubated in hypoxia for 0–24 h and treated
+with 1 μg/mL dox. (E) Immunoblot for production of SICLOPPS
+protein over time. T-REx-HRE cells treated as in panel D. (F) PLA
+of T-REx-HRE cells treated with vehicle (left panel) or dox (right
+panel) and incubated in hypoxia for 24 h. (G and H) RT-qPCR analysis
+of (G) VEGF and (H) CAIX expression in T-REx-HRE cells incubated in
+hypoxia for 24 h with or without 1 μg/mL dox. Data are means
+( = 3) ± SEM, ** < 0.01,
+**** < 0.0001. Endogenous P1 Expression Alters Transcriptional Response to
+Hypoxia http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00219/suppl_file/sb6b00219_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00219/suppl_file/sb6b00219_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00219/suppl_file/sb6b00219_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00219/suppl_file/sb6b00219_si_001.pdf We broadened our analysis of the effect of P1 on
+HIF-1 signaling by using a focused microarray assessing expression
+of 43 hypoxia-associated genes () in T-REx-HRE cells cultured in normoxia, hypoxia, and hypoxia with
+dox. The data showed altered expression of these genes in T-REx-HRE
+cells that were incubated in hypoxia with dox (A), illustrating the reprogramming of hypoxia
+response by P1 in these cells. We have previously demonstrated ( and in cells) that CLLFVY
+is a specific inhibitor of HIF-1 dimerization that does not affect
+the interaction of HIF-2α and HIF-1β. We therefore aimed to illustrate the potential of using
+genetically encoded P1 to separate the effect of HIF-1 inhibition
+on hypoxia signaling from that of the closely related transcription
+factor HIF-2. Our control experiments showed that treatment of T-REx-HRE
+cells with dox had no effect on HIF-2α mRNA levels (), and that siRNA knockdown of HIF-2α
+did not significantly affect the expression of HIF-1α mRNA or
+protein () or SICLOPPS
+protein (). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00219/suppl_file/sb6b00219_si_001.pdf The isoform-specificity of a number of HIF-target genes was
+next
+assessed using the above approach. While there was no effect on HIF-1α
+mRNA from either HIF-1 or HIF-2 (B), HIF-3α expression seemed to be
+primarily under the control of HIF-2 (C). We next assessed the role of HIF isoforms
+on genes involved in angiogenesis (ANGPLT4 and VEGF) and erythropoiesis
+(EPO). Following dox treatment, expression of EPO was decreased to
+normoxic levels, whereas HIF-2α siRNA treatment caused no significant
+change, indicating EPO is a HIF-1 specific target (D). In contrast, although inhibition
+of HIF-1 significantly reduced the expression of ANGPLT4 (E) and VEGF (), a combination of both dox and HIF-2α
+siRNA treatments was required to reduce gene expression to normoxic
+levels. This data suggests that expression of ANGPLT4 and VEGF is
+transactivated by both HIF-1 and HIF-2. Together, the inhibitory effect
+of P1 expression on genes involved in the promotion of angiogenesis
+and erythropoiesis supports previous assertions for the potential
+of targeting HIF-1 dimerization as a therapeutic strategy to prevent
+tumor vascularisation. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00219/suppl_file/sb6b00219_si_001.pdf Inhibition of HIF-1
+dimerization and HIF-2α siRNA treatment
+also differentially impacted upstream effectors of oxygen-dependent
+regulation of HIF-1. Induction of P1 expression resulted in a decrease
+in PHD2 and PHD3 mRNA whereas HIF-2α siRNA had no significant
+effect (F and G). These observations are in line with the theory
+that HIF-1 mediates the acute response to hypoxia whereas HIF-2 is
+the prominent driver of adaptation to prolonged periods of hypoxic
+conditions. Another gene primarily controlled
+by HIF-1 was CAIX, with no significant effect from HIF-2α siRNA
+alone (). This data was in agreement
+with reports of CAIX as a HIF-1 specific target. Interestingly, although the stress response gene DDIT4
+was upregulated in hypoxia, and inhibition of HIF-1 and HIF-2 significantly
+reduced this induction, neither treatment was sufficient to reduce
+DDIT4 expression to normoxic levels (H). DDIT4 is also induced in response to
+endoplasmic reticulum stress and DNA damage related to the regulation
+of reactive oxygen species, which may be a result
+of hypoxic exposure, particularly when HIF response pathways are disrupted. Another gene of note was NOTCH-1, whose expression
+was halved in hypoxic cells treated with dox, but doubled in hypoxic
+cells treated with HIF-2α siRNA (I), illustrating the opposing regulatory
+roles of HIF-1 and HIF-2 on this gene. The above data not only demonstrates
+reprogramming of hypoxia response in our engineered human cell line,
+but also illustrates the potential utility of using genetically encoded
+P1, a HIF-1 specific inhibitor, to decipher the role of HIF isoforms
+in hypoxia signaling in a variety of cell lines. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00219/suppl_file/sb6b00219_si_001.pdf Expression of genetically
+encoded P1 alters the transcriptional
+profile of hypoxic HEK-293 cells. (A) Heat map of relative gene expression
+in T-REx-HRE cells transfected incubated in normoxia, or 24 h in hypoxia
+with or without 1 μg/mL dox. Details of genes are given in . (B–I) RT-qPCR analysis of T-REx-HRE
+cells incubated in normoxia, or 24 h in hypoxia with or without HIF-2α
+siRNA, and with 1 μg/mL dox with or without HIF-2α siRNA.
+Fold change in gene expression is shown relative to normoxic expression
+(dotted line). Data are means ( = 3) ± SEM,
+** < 0.01, *** < 0.001,
+**** < 0.0001. Inhibition
+of HIF-1 Dimerization Confers Synthetic Lethality
+to Glycolysis Inhibitor http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00219/suppl_file/sb6b00219_si_001.pdf The effect on cell viability from
+the disruption of hypoxia-response signaling  inhibition
+of the HIF-1α/HIF-1β PPI by P1 was next probed. The viability
+of T-REx-HRE cells cultured in normoxia or hypoxia, with or without
+dox was assessed over 72 h using 3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyltetrazolium
+bromide (MTT). No difference was observed in the viability of cells
+cultured with dox  those that were not (A and ), indicating that inhibition of the
+HIF-1α/HIF-1β PPI in hypoxic HEK-293 cells does not affect
+viability. Nonetheless, previous studies have shown that knockdown
+of HIF-1α by siRNA sensitizes cells to the glycolysis inhibitor
+2-deoxyglucose (2DG), leading to cytotoxicity. We questioned whether inhibition of HIF-1α/HIF-1β
+PPI with P1 would render HEK-293 cells susceptible to 2DG. This was
+initially assessed using MTT assays as above. We observed a 37% reduction
+in viability after 72 h in hypoxic T-REx-HRE cells incubated with
+dox (B). This
+observation was further probed with a triplex assay that uses protease
+biomarkers to assess viability, cytotoxicity and apoptosis. We observed a 45% decrease in the ratio of viable
+to cytotoxic T-REx-HRE cells after 72 h (C), in line with our observations from the
+MTT assay. Interestingly, no significant increase in caspase-3/7 activity
+was observed in these cells (D), suggesting that the observed synthetic lethality
+of 2DG combined with P1 is not driven by apoptosis. Assessing the effect of HIF-1 inhibition on T-REx-HRE cell viability.
+(A) Cells were incubated in hypoxia for up to 72 h with or without
+1 μg/mL dox. Cell viability was assessed with an MTT assay.
+(B) Cells were treated as in panel A with or without the addition
+of 3 mg/mL 2DG to the culture media. (C) Cells were treated as in
+panel B and incubated in hypoxia for 72 h. The ratio of cell viability
+to cytotoxicity was determined using a triplex reporter assay. (D)
+Cells were treated as in panel C and apoptotic cell death was assessed  a caspase 3/7 activity assay. Data are means ( = 3) ± SEM, * < 0.05, ** < 0.01, *** < 0.001, **** < 0.0001. The conditional production of P1, an inhibitor
+of the HIF-1α/HIF-1β
+PPI, has been encoded onto the chromosome of a human cell line, and
+demonstrated to be a viable approach for the inhibition of HIF-1 signaling.
+Two versions of this sentinel circuit are reported, one that initiates
+P1 production in response to a chemical trigger (doxycycline), and
+a second that requires an environmental signal (hypoxia) in addition
+to doxycycline. In addition, the synthetic lethality of HIF-1 dimerization
+inhibition (by P1) and inhibition of glycolysis (with 2DG) is demonstrated.
+There is a growing body of evidence that inhibition of HIF-1, or redirection
+of cellular pathways away from HIF-1 controlled mechanisms, may improve
+the anticancer effects of current chemotherapeutic agents. Using the T-REx-HRE cell line reported here, a variety of chemotherapeutic
+agents may be screened for synthetic lethality, or increased potency
+when combined with HIF-1 inhibition. This
+system has the potential to address several key questions
+about HIF-1 and its necessity for the survival and growth of tumors.
+Since its discovery, a large body of evidence has suggested that the
+HIF-1 transcription factor plays a significant and critical role in
+cancers, enabling survival and adaptation in the hypoxic tumor microenvironment.
+However, recent studies have indicated that HIF-1α also functions
+in the cell as a monomer. Approaches that enable disruption
+of the HIF-1 transcription factor, without reducing the cellular level
+of HIF-1α have the potential to help decipher the role of HIF-1
+in cancer. The sentinel circuit reported above may, for example, be
+incorporated onto the genome of a variety of cancer cell lines that
+are used in xenograft models. P1 production may be initiated at various
+points during the tumor lifecycle, either globally or only within
+the hypoxic regions of the tumor, illustrating the significance (or
+not) of HIF-1 as a target for cancer therapy. Another possibility
+is the generation of  models that contain
+the sentinel P1-encoding circuit on their chromosome, enabling the
+effect of long-term HIF-1 inhibition on tumor formation and maintenance
+to be studied; the dual control promoter limits P1 production to hypoxic
+cells and allows temporal control over P1 production, enabling the
+study of HIF-1 inhibition at various stages of the tumor lifecycle. The concept of encoding the conditional production of a non-native
+small molecule from the genome of engineered human cells has applications
+beyond the HIF-1α/HIF-1β inhibitor described here. There
+are a multitude of natural products used as therapeutics that may
+be hard-coded onto cells  their biosynthetic machinery,
+and produced as required. The use of sentinel circuits to induce apoptosis
+in cells in response to specific DNA sequences, or encoding an environment-coupled kill-switch in bacteria attests to the possibilities. Other recent examples
+include the introduction of new biological components into cells for
+therapeutic purposes. As the field of synthetic biology advances, such examples will grow
+in number and complexity. All
+cell culture reagents were purchased
+from Life Technologies unless otherwise stated. All cells were cultured
+at 37 °C in a humidified 5% CO atmosphere. T-REx-293
+cells were maintained in DMEM containing 10% fetal bovine serum (FBS),
+100 μg/mL zeocin and 15 μg/mL blasticidin and integrated
+T-REx cell lines were cultured in DMEM containing 10% FBS, 100 μg/mL
+hygromycin B and 15 μg/mL blasticidin. Unless otherwise stated,
+T-REx cells were dosed with 1 μg/mL doxycycline (dox) to induce
+expression of integrated constructs. Hypoxia treatment was achieved
+in a Don Whitley Scientific H35 Hypoxystation with a humidified atmosphere
+containing 1% O and 5% CO. Transfection of
+plasmids was carried out using FuGENE HD (Promega) according to the
+manufacturer’s instructions and experiments were carried out
+24 h after transfection. Transfection and Selection of Stable Clones Stable
+mammalian expression cell lines were generated by Flp recombinase-mediated
+integration. Flp-In T-REx-293 (T-REx-293) cells and plasmid vectors
+pcDNA5/FRT/TO and pOG44 (kind gift of Dr. Noel Wortham) are available
+commercially from Life Technologies. pOG44 and pcDNA5/FRT vectors
+were transfected, at a ratio of 9:1, into T-REx-293 cells with Fugene
+HD for the generation of stable cell lines. Polycolonal selection
+was carried out with 200 μg/mL hygromycin in high dilution culture.
+Integration was confirmed by western immunoblotting. Total RNA was extracted from cells
+using ReliaPrep RNA Cell Miniprep System (Promega) and quantified
+using a Nanodrop ND-1000 spectrophotometer. Complementary cDNA was
+synthesized in a 20 μL reaction using 1 μg of total RNA
+with GoScript Reverse Transcriptase (Promega) according to the manufacturer’s
+instructions. Quantitative real-time PCR (RT-qPCR) was performed using
+Universal Taqman PCR master mix (Applied Biosystems) and the TaqMan
+gene expression assays of interest (Applied Biosystems) on a CFX-connect
+96 Real-Time PCR system (Bio-Rad). Expression assays used in this
+study were: 18S (Hs99999901_s1), ActB (Hs99999903_m1), VEGF (Hs00900055_m1),
+CAIX (Hs00154208_m1), HIF-1α (Hs00153153_m1) and EPAS1 (Hs01026149_m1).
+Expression values were expressed as ΔΔC normalized
+to expression of 18S and β-Actin and normoxic gene expression.
+Hypoxia focused microarray was conducted using TaqMan Array Human
+Hypoxia plates (Applied Biosystems). Expression values were expressed
+as ΔΔC normalized to expression of 18S and
+normoxic gene expression. For visualization
+of expression
+of CBD tagged inteins, cells were lysed in intein extraction buffer
+(20 mM Tris.HCl, 1 mM TCEP, 0.5 mM NaCl, pH 7.8) on ice for 15 min.
+For visualization of HIF-1α protein, cells were lysed by incubation
+on ice with radioimmunoprecipitation assay buffer (50 mM Tris (pH
+7.4), 150 μM NaCl, 1 mM EDTA, 1% v/v Triton X-100), and 1×
+protease inhibitor cocktail (Sigma) for 20 min. Cell lysates
+were sonicated in an ice water bath then centrifuged at 10 000
+rpm for 20 min at 4 °C, and the protein concentration in the
+supernatant quantified by Bradford assay. Proteins were separated
+on an SDS-PAGE gels (15% for CBD, 10% for HIF-1α), transferred
+to PVDF membranes (Invitrogen) and subjected to immunoblot analysis.
+Mouse monoclonal anti-CBD (E8034S, 1:250, New England Biolabs) anti-HIF-1α
+(610958, 1:250 BD Biosciences) were diluted in PBS containing 5% nonfat
+powdered milk and 0.1% Tween-20 and incubated with the membrane overnight
+at 4 °C overnight. Horseradish peroxidase conjugated antimouse
+antibody was used as the secondary antibody, and monoclonal anti-βactin-peroxidase
+antibody (A3854, 1:100 000, Sigma) served as a loading control.
+Bound immunocomplexes were detected using ECL prime Western blot detection
+reagent (RON2232, GE Healthcare) and analyzed using a ChemiDoc Imaging
+System (Bio-Rad) and Image Lab 4.0 software (Bio-Rad). Detection of
+Peptide in Cell Lysates by HPLC and MS T-REx-P1 cells were
+scraped in ice cold PBS and the cell pellet froze
+in N (l). The pellet was thawed and lysed in PMSF lysis
+buffer (5 mM EDTA, 2 mM EGTA, 0.4 mM PMSF in PBS) containing protease
+inhibitor cocktail (Sigma) by three freeze thaw cycles. TFA (10 μL)
+was added to precipitate proteins and the lysate centrifuged (8000
+rpm, 30 min, 4 °C). The supernatant was passed through a 10 kDa
+cut off filter and the flow through collected and analyzed by reverse
+phase HPLC on a Waters HPLC system equipped with a Waters Atlantis
+T3, Amide capped C18 5 μm, 6 × 100 mm column. Samples were
+manually injected into a Waters flex inject system into the HPLC system
+containing a Waters 1525 binary pump. One-minute fractions were collected
+in the 5 min window around the elution time of the synthetic peptide
+and analyzed by LC–MS. T-REx-P1, T-REx-Scramble,
+or T-REx-HRE cells were transiently transfected with a HIF dependent
+firefly luciferase reporter construct (pGL2-TK-HRE) or a HIF independent
+firefly luciferase reporter construct (pGL3-SV40) as a control. Transfected
+cells were incubated in the presence or absence of 1 μg/mL dox.
+After 24 h, cells were recovered and plated at 25 000 cells/well
+in 96 well plates and incubated for 5 h before either hypoxic or aerobic
+incubation for 16 h. Firefly luciferase activity was determined using
+Bright-Glo Reagent (Promega) according to the manufacture’s
+instructions. Luciferase signal was normalized using the corresponding
+no-transfection controls for each plate. Duolink Proximity Ligation
+Assay Duolink proximity
+ligation assay (PLA) was conducted using the  PLA Kit (O-Link Bioscience, Uppsala, Sweden) according to the manufacturer’s
+instructions. The antibodies used were rabbit monoclonal anti-HIF-1α
+(NB100–449, Novus Biologicals) and mouse monoclonal anti-HIF-1β
+(H00000405- B01P, Abnova). Cells were treated with 1 μg/mL dox
+in normoxia or hypoxia for 24 after which they were fixed with 2%
+formaldehyde in PBS for 10 min and permeabilized with 0.5% Triton
+(diluted in PBS) for 10 min. After preincubation with the Duolink
+Blocking Reagent for 1 h, samples were incubated overnight with the
+primary antibodies to HIF-1α (1:500) and HIF-1β (1:500).
+Duolink PLA probes and reagents were added as recommended by the manufacture’s
+instructions. Cells were imaged with a fluorescent microscope (Zeiss
+Axio Vert.A1). T-REx-HRE
+cells were seeded
+at 20 000 cells/well on 6-well plates and incubated for 24
+h such that cell density reached 50–70% confluence just prior
+to transfection with siRNA. Cells were transfected with siRNA using
+Lipofectamine RNAiMAX transfection reagent (Life Technologies) according
+to the manufacturer’s instructions for “forward transfection”.
+Briefly, cell culture media was removed from cells and replaced with
+serum-free OptiMEM cell culture medium (Life Technologies). siRNA
+and Lipofectamine were separately, diluted in a volume of OptiMEM
+equivalent to 10% of the final volume of cells, and incubated at RT
+for 5 min. The diluted oligonucleotides and transfection reagent were
+then combined, mixed gently, and incubated at RT for 10 min. The siRNA-Lipofectamine
+complexes were added dropwise to cells which were then incubated at
+37 °C for 24 h. The final concentration of siRNA was 5 nM and
+the final amount of Lipofectamine was 0.2% v/v for all experiments.
+Cells were either transfected with EPAS1 (HIF-2α) siRNA (Silencer
+Select predesigned annealed human oligonucleotide duplex, s4700, Life
+Technologies), scrambled siRNA (Silencer Select negative control number
+2, Life Technologies) or vehicle alone. Following transfection, cells
+were incubated in hypoxic or aerobic conditions for 24 h in the presence
+or absence of 1 μg/mL for 24 h, then harvested for total RNA
+extraction. T-REx-HRE
+cells were seeded in
+triplicate at 5000 cells per well on 96 well plates 24 h prior to
+dosing with 1 μg/mL dox in 100 uL fresh DMEM, DMEM without glucose
+or DMEM containing 3 mg/mL 2-deoxy-glucose. MTT-based cell proliferation
+assays were performed on untreated cells on the day of treatment or
+treated cells 24, 48, or 72 h after treatment, as follows: MTT (Sigma)
+was prepared in sterile PBS added to cells at a final concentration
+of 1 mM (10% v/v). Cells were then incubated at 37 °C for 4 h
+until intracellular punctate purple precipitated were clearly visible
+under the microscope. 75 μL of the culture medium was the removed
+from each well and 100 μL DMSO added. The cells were incubated
+for 10 min in the dark, with agitation to dissolve the insoluble formazan
+particles. Absorbance was measured at 570 nm on a microplate reader
+(Tecan Infinite M200 Pro). ApoToxGlo assays (Promega) were performed
+on cells 48 or 72 h after treatment with 1 μg/mL dox according
+to the manufacturer’s instructions. Data analysis was performed with
+Prism 6 (Graphpad Software). Statistical significance was evaluated
+with an unpaired test for comparison between two
+means and analysis of variance followed by Bonferroni method for multiple
+comparisons. A value of  < 0.05 was considered
+to denote statistical significance..

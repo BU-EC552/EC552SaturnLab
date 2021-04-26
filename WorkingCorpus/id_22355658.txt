@@ -1,0 +1,235 @@
+Synthetic biology is more ambitious than conventional genetic engineering, and aims to
+            design and reconstruct biological systems or even entire bacterial genomes. An essential
+            technique in synthetic biology is the physical assemble of multiple small DNA fragments
+            into large constructs with a defined order and orientation.
+            Traditional methods rely on restriction enzyme digestion followed by ligation, and while
+            this approach works well for the insertion of a single DNA sequence into a vector, as
+            well as being time-consuming, it is often hard to find enough distinct restriction sites
+            for the cloning of multiple DNA fragments. Two techniques,
+            BioBrick™ developed at MIT and BglBrick developed at UC
+                Berkeley, standardized the process of DNA assembly by using standard
+            restriction sites. Biological parts were flanked by four restriction sites (two on each
+            side) and the assembly products of the first round can subsequently be used in the next
+            round, thus permitting the assembly of multiple parts. The BioBrick method is limited by a number of ‘forbidden
+            sites'. This has resulted in the development of a series of ligation-independent
+            cloning (LIC) strategies that offered sequence-independent assembly. These include SLIC
+            (sequence and ligase independent cloning), In-Fusion™ (Clontech)
+                technologies, the ‘Gibson' isothermal assembly
+                method and CPEC (circular polymerase extension cloning). These methods are dependent on overlapping homologous sequences at
+            the ends of the DNA fragments. SLIC, In-Fusion™ and the Gibson
+            isothermal assembly method use a mechanism called ‘chew back and
+                anneal', while CPEC relies on annealing of
+            complimentary DNA regions and a single high-fidelity PCR cycle. Using
+            the isothermal assembly method, Gibson and his colleagues successfully assembled three
+            5-kb DNA molecules using fragments of only 40 bp overlaps. This method was also
+            used to assemble a 900-kb molecule . The Gibson method
+            was also effective in gene synthesis, and an entire 16.3-kilobase mouse mitochondrial
+            genome was synthesized through three rounds of assembly from 600 overlapping
+                60-mers. Several competing approaches using type IIs restriction enzymes have also been developed,
+            such as Golden Gate cloning and Pairwise Selection Assembly
+                (PSA). Since type IIs restriction enzymes cut outside of their
+            recognition sequence, through proper design of the cleavage sites this approach is
+                scarless. Using Golden Gate cloning, Weber  assembled a 33-kb DNA molecule from 44 individual parts in three steps.
+            Blake  used PSA to reconstruct a completely synthetic 91-kb
+            molecule in six rounds of assembly. In general, assembly of DNA fragments occurs on
+            three scales – ‘parts to genes', ‘genes to pathway' and
+            ‘pathways to genomes' – and each assembly strategy
+            described above has its own advantages and disadvantages at different scales. We have developed an alternative strategy for the assembly of multiple DNA segments in
+            one reaction based on φBT1 integrase-mediated recombination , termed
+            site-specific recombination-based tandem assembly (SSRTA). We previously established a
+            site-specific recombination system based on  phage φBT1
+            integrase-mediated integration , and identified 16 pairs
+            of non-compatible  and  recombination sites. The
+            φBT1 integration system is highly efficient and accurate because no recombination
+            can occur between  sites with different central di-nucleotides. The SSRTA method is sequence-independent, and excellent for the combinatorial
+            assembly of multiple biological parts in a defined order, even with those with high GC
+            contents (70%). The utility of SSRTA was demonstrated in the assembly of an entire
+            epothilone biosynthetic gene cluster (62.4 kb) from ten individual parts. The recombination efficiencies of φBT1 integrase-catalyzed reactions between
+                     and  sites  were over 90% in our previous
+                    studies and could therefore be used for establishing a
+                robust DNA assembly approach. This system contains 16 pairs of mutated recombination
+                sites, the purified φBT1 integrase and a simple buffer (see Materials and
+                Methods). Once the target DNA modules have been flanked by a pair of non-compatible
+                     sites, multiple fragments can be assembled in one reaction
+                simultaneously at 30°C  (). Because
+                site-specific recombination occurs by precise breakage-joining events and do not
+                involve any DNA synthesis or loss, this method is highly accurate, and no errors are
+                introduced after assembly. We selected the epothilone biosynthetic gene cluster to test this SSRTA method.
+                Epothilone polyketides are promising anti-cancer drugs with remarkable
+                microtubule-stabilizing activity. The total length of the gene cluster is nearly
+                56 kb, and consists of six open reading frames ( to )
+                and ten modules, including one loading module (LM), one non-ribosomal peptide
+                synthetase (NRPS) module and eight polyketide synthase (PKS) modules. Modules 3 to 6
+                form a whole ORF defined as , while modules 7 and 8 form  (see Supplemental Fig. S1). EpoK, a cytochrome P450 involved in
+                epoxidation of epothilones C and D to A and B, was not included in
+                this work. The purified genomic DNA of the epothilone-producing myxobacterial strain
+                     So0157-2 was used as the template for PCR
+                amplification of the modules. Due to the high GC content (69.5%) of
+                the epothilone biosynthetic gene cluster, we adopted an ‘entry clone'
+                strategy to place individual modules into a series of vectors containing the
+                appropriate pairs of recombination sites beforehand, instead of engineering the
+                recombination sites into the 5′-terminus of PCR primers. We constructed a series of ‘entry vectors' with the apramycin resistance
+                gene () flanked by a pair of recombination sites. We also put two
+                    I recognition sites close to the recombination sites. After the
+                vectors were digested with I, the target DNA modules were inserted into
+                the ‘entry vectors' through TA cloning ().
+                The whole epothilone biosynthetic gene cluster was divided into small parts to
+                facilitate amplification by high-fidelity PCR (PrimerSTAR™ HS DNA polymerase,
+                Takara) (Supplemental Fig. S1). Through PCR amplification and sub-cloning, we
+                constructed nine independent ‘entry clones' which contained all the
+                essential genes for epothilones production. The ribosomal binding site sequences
+                were fused in the 5′-termus of each open reading frame (ORF) by PCR
+                amplification (Supplemental Fig. S1). After linearization by restriction enzymes,
+                these ‘entry clones' were ready for tandem assembly  It
+                should be noted that the genes in each entry clone can be replaced by any other
+                desired module. The details of the construction process are described in Materials
+                and Methods, Supplemental Fig. S1 and Tables S1 and S2. Plasmid pZLE10 was designed
+                to propagate the circular assembly products in , and then to
+                integrate into the  genome for epothilone production (). The construction process was divided into two steps: first we combined 
+                DNA sequences from five individual clones and removed the scar sequences inside the
+                ORF. Then we assembled all the epothlione biosynthetic genes from seven individual
+                clones in one reaction. First we tested the ability to combine  from four
+                ‘entry clones' (). The plasmids
+                    pTA0006-M3-, pTA0613-M4, pTA1303-M5, pTA0315-M6 and pZLE10 were
+                linearized (Supplemental Fig. S2) and incubated with φBT1 integrase overnight
+                (or over 8 hrs) at 30°C. As shown in , multiple
+                assembly products were obtained (the correct, complete assembly product was a
+                29.8-kb plasmid). The  reaction products were transformed into  strain DH10B by electroporation. After selection with apramycin and
+                neomycin, resistant clones were isolated and the plasmid DNA was extracted. PCR
+                analysis of the linker regions between modules and restriction enzyme digestion
+                indicated that the five segments had assembled correctly (, Supplemental Fig. S3 and S4). We next explored the possibility of
+                combining seven segments in a one-step reaction to generate pZLE10- (, Supplemental Fig. S2 and S4). As shown in , we obtained the assembled plasmid (62.4 kb)
+                successfully. Thus, this tandem assembly system can be used to assemble at least
+                seven DNA segments into a circular molecule . DNA assembly provides a means for extensively changing the genetics of entire
+                biological pathways and cells. This may be useful for creating organisms capable of
+                more than overproduce individual proteins – a common goal of cut-and-paste
+                cloning techniques. Several successful approaches have been described that achieve
+                this aim, such as BioBrick standard assembly, the
+                ‘Gibson' isothermal assembly method and the Golden
+                Gate assembly method. In this manuscript we have demonstrated the
+                utility of the SSRTA method by reconstructing the epothilone biosynthetic gene
+                cluster. Seven independent DNA fragments were assembled into a circular plasmid
+                (62.4 kb) through a one-step  incubation. An ideal assembly
+                method should have no forbidden sites, would be suitable for combinatorial assembly
+                of different parts from standard modules, and importantly, would allow assembly of
+                the parts in a defined order. The SSRTA method described here is
+                based on site-specific recombination between a series of non-compatible 
+                and  sites and so concerns about forbidden sites are not relevant. It is
+                notable that the epothilone biosynthetic gene cluster contains ten direct repeat
+                sequences larger than 100 bp, including a 554-bp direct repeat. Many
+                antibiotic biosynthetic gene clusters contains such direct repeats. Homology-based assembly methods may not be appropriate in these
+                cases, but SSRAT has proved successful. Furthermore, each ‘entry vector'
+                could be used to build libraries of biological parts. These parts could be
+                reconstructed in a defined order through combinatorial assembly (Supplemental Fig.
+                S5). PCR products could also be directly used in this SSRTA method. Details of the
+                pairs of non-compatible recombination sites and the sequences of PCR primers are
+                described in Supplemental Fig. S6. The shortcoming of the SSRTA method is that it
+                introduces scar sequences (, 42 bp) between modules after
+                assembly, although scar sequences between genes may not be problematic. Synthetic biology holds promise in the development of cheaper drugs and
+                ‘green' biofuels, efficient environmental remediation and targeted
+                therapies for diseases. This SSRTA method provides an
+                alternative way to rebuild genetic pathways and networks based on a phage-encoded
+                large serine recombinase. Since nearly ten of these recombinases have been
+                biochemically characterized, this method could be widely
+                adopted in other systems. This would also allow applications that combine multiple
+                SSRTAs. System design and construction of the ‘entry
+                    vectors' A major feature of this SSRTA system is the use pairs of non-compatible
+                    recombination sites. Non-compatible sites cannot recombine with each other, and
+                    the stringent control that this offers is the main strength of the system (). To assemble the full-length epothilone biosynthetic
+                    gene cluster (see supplemental Fig. S1) from six independent clones, seven pairs
+                    of / sites are needed. We chose pairs 0, 3, 6, 7, 12, 13
+                    and 15, the sequences of which are given in our previous report. These recombination sites were used to construct seven ‘entry
+                    vectors', named pTA0006, pTA0613, pTA1307, pTA0712, pTA1203, pTA0315 and
+                    pTA1303 (). pTA0006 was generated using primers PT1
+                    (containing ) and PTF (containing
+                    ) to amplify the apramycin-resistance gene
+                        (), and the PCR product was inserted into pMD19-T by TA
+                    cloning. Similarly, primers PTB6 (containing ) and PTP13
+                    (containing ) were used to construct pTA0613; primers
+                    PTB13 (containing ) and PTP7 (containing
+                            ) were used to construct pTA1307; primers PTB7
+                    (containing ) and PTP12 (containing
+                        ) were used to construct pTA0712; primers PTB12
+                    (containing ) and PTP3 (containing
+                        ) were used to construct pTA1203; primers PTB3
+                    (containing ) and PTP15 (containing
+                        ) were used to construct pTA0315; and primers PTB13
+                    (containing ) and PTP3 (containing
+                        ) were used to construct pTA1303 (Supplemental Table
+                    S1 and S2). The apramycin-resistance gene was cloned into the ‘entry
+                    vectors' in the same orientation in each case, as shown in . Construction of the ‘entry clones' and destination
+                    vector The complete epothilone biosynthetic gene cluster was divided into 17 parts for
+                    PCR amplification (Supplemental Fig. S1). To clone , a 4289-bp DNA
+                    fragment was amplified using primers 00a and 00b, and then inserted into pTA0006
+                    by TA cloning to generate pTA0006-M0; for , a 4256-bp DNA fragment
+                    was amplified using primers 01a and 01b, and then inserted into pTA0613 to
+                    generate pTA0613-M1; for , a 5525-bp DNA fragment was amplified using
+                    primers 02a and 02b, and then inserted into pTA1307 to generate pTA1307-M2; for
+                    module 3, a 4766-bp DNA fragment was amplified using primers 03a and 03b, and
+                    then inserted into pTA0006 to generate pTA0006-M3. Module 4 was divided into two
+                    parts, M4a (primers 04a/ZE05, 3252 bp) and M4b (primers ZE06/04b,
+                    3220 bp); these were amplified and cloned into pTA0613 separately, and
+                    then combined into one plasmid to generate pTA0613-M4 by enzyme digestion and
+                    ligation. Modules 5, 6, 7 and 8 were each divided into two parts. M5a (primers
+                    05a/ZE07, 3607 bp) and M5b (primers ZE08/05b, 2767 bp) were PCR
+                    amplified and cloned into pTA1303 separately, and then combined into one plasmid
+                    to generate pTA1303-M5. M6a (primers 06a/ZE09, 2490 bp) and M6b (primers
+                    ZE10/06b, 2611 bp) were PCR amplified and cloned into pTA0315 separately,
+                    and then combined into one plasmid to generate pTA0315-M6. M7a (primers
+                    07a/ZE11, 3506 bp) and M7b (primers ZE12/07b, 2683 bp) were PCR
+                    amplified and cloned into pTA1203 separately. M8a (primers 08a/ZE13,
+                    2649 bp) and M8b (primers ZE14/08b, 3188 bp) were PCR amplified
+                    and cloned into pTA1203 separately. Plasmids containing genes from modules 7 and
+                    8 were combined together by ligation after enzyme digestion to generate
+                        pTA1203-. Module 9 was divided into three parts, M9a (primers
+                    09a/ZE15, 3088 bp), M9b (primers ZE16/ZE19, 2229 bp) and M9c
+                    (primers ZE20/09b, 2443 bp); they were PCR amplified and cloned into
+                    pTA0315 separately, and then combined into one plasmid to generate pTA0315-M9.
+                    The correct orientation of all inserts in the ‘entry clones' was
+                    confirmed. To facilitate selection in the tandem assembly process, a PCR
+                    fragment (primers Oxj128R/Oxj129, 1338 bp) containing the 
+                    gene (conferring resistance to kanamycin and neomycin) was inserted into
+                    pTA0006-M3 through I digestion and ligation (see ). The destination vector pZLE10 used for integration and expression of the
+                    assembled gene cluster in  was constructed as follows. A PCR
+                    fragment (primers ZE03/ZE04, 1956 bp) containing the 
+                    promoter, the terminator from pIJ6021, the chloramphenicol
+                    resisitance gene, and the  and 
+                    sites were inserted into the pMD-19T vector (Takara) to generate an intermediate
+                    plasmid. This was digested with I and II to release a
+                    1962-bp fragment. Plasmid T-Bxbatt1-Bxbatt2 (B. Zhang, L. Zhang, R. Dai, M. Yu,
+                    G. Zhao, and X. Ding, manuscript in preparation) was digested with I
+                    and II to release a 4441-bp fragment containing apramycin and
+                    ampicillin resistance genes and the replication origin of pUC19 and p15A. These
+                    two fragments were ligated to generate pZLE12. pZLE12 was then digested with
+                        I to release a 3713-bp fragment and plasmid pSET152 was digested
+                    with I and I to release a 3402-bp fragment; these two
+                    fragments were ligated to generate pZLE10 (see Supplemental Table S2). Tandem assembly of epoD and the complete epothilone biosynthetic gene
+                    cluster E.
+                        coli The enzymes used to linearize the ‘entry clones' for 
+                    assembly procedures are described in Supplemental Fig. S2. DNA segments under
+                    10 kb were isolated by 0.8% agarose gel electrophoresis in 1×TAE
+                    buffer, and purified using an agarose gel DNA extraction kit (Generay); segments
+                    larger than 10 kb were purified by phenol-chloroform extraction and
+                    ethanol precipitation. For pZLE10- assembly, the five DNA segments
+                    containing modules 3, 4, 5 and 6 and pZLE10 were incubated with φBT1
+                    integrase overnight (or over 8 hrs) at 30°C. The buffer contained
+                    10 mM Tris-HCl, 100 mM KCl, 50 mM NaCl, 2 mM EDTA
+                    and 1 mM DTT. Heterologous expression, purification and preservation of
+                    φBT1 integrase were described in our previous work. The
+                    tandemly assembled products were purified by phenol-chloroform extraction and
+                    ethanol precipitation, and analysis by pulsed-field gel electrophoresis (PFGE)
+                    performed on 1% agrose gels (Biolab) in 0.5×TBE buffer, with the following
+                    parameters: switch time, 1–6 seconds; run time, 11 hours; angle,
+                    120°; and voltage gradient, 6 V/cm. Recombination events were
+                    detected by PCR analysis. The assembled products were transformed into  strain DH10B by electroporation (25 μF capacitance,
+                    1.8 kV/mm, and 200 ohm resistance). Transformants were selected
+                    with apramycin and neomycin. The plasmid from surviving clones were identified
+                    by PCR using primers ES53/54, then isolated and purified. The plasmid was
+                    identified by further PCR reactions of the linker regions between modules and by
+                    restriction digestion (, and Supplemental Fig.
+                    S3). Correct clones were propagated for the next round of assembly. For assembly
+                    of the total epothilone biosynthetic gene cluster, the seven DNA segments
+                    containing , , , , ,
+                        F and pZLE10 were incubated with φBT1 integrase, and the
+                    subsequent steps were as described above. L.Z., G.-P.Z. and X.-M.D. designed research; L.Z. performed research; L.Z. and
+                X.-M.D. analyzed data; and L.Z., G.-P. Z. and X.-M.D. wrote the paper..

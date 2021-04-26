@@ -1,0 +1,592 @@
+Ribosomally
+synthesized and
+posttranslationally modified peptides (RiPPs) are ubiquitous natural
+products found in all branches of life. The resulting compounds are
+chemically diverse, and their biological activities are equally varied.
+For example, some RiPPs are cofactors, while others are secreted antibiotics,
+cytotoxins, or quorum sensing molecules, among many other activities. Despite the many types of possible posttranslational
+modifications (PTMs) in RiPPs, RiPP pathways share some nearly universal
+features. First, the natural products are encoded
+on a precursor peptide, which is ribosomally translated. Within the
+precursor peptide, a core peptide represents the sequence of the active
+natural product. Recognition sequences (RSs) often flank the core
+peptide, where they direct enzymes that modify the core, and are often
+found on a leader peptide, which serves several different purposes. Ultimately, the leader peptide and the RSs are
+proteolytically cleaved, leaving the core that results in the mature
+natural product (Figures  and ). It has long been known that RiPP biosynthetic machinery can
+tolerate
+mutations in the core sequence, enabling the engineering of novel
+“unnatural natural products.” This factor, coupled with the great variety of PTMs, makes the RiPPs
+good candidates for synthetic biology. The ultimate goal is to be
+able to gain control of PTMs so that they are portable; leading to
+the ability to design highly derived peptide materials in organisms
+and . The field is still a long way from
+achieving this goal. We have selected a highly plastic RiPP
+platform, in which nature
+already models aspects of this exchange. These are cyanobactin pathways,
+often found in symbiotic bacteria within marine animals. For example,
+there are about 50 known natural products produced by the  cyanobactin pathway. Within
+this pathway, the enzymes are essentially identical, and yet, the
+sequences represented in the natural products are highly diverse. The resulting compounds are found in great abundance in the animals,
+and work on their coevolution with animals clearly shows that the
+selection for these diverse products is at the level of the whole
+animal. Thus, identical enzymes modify
+many different hypervariable precursor peptides with diverse sequences,
+with selection operating at the level of the final product. Previously,
+we showed that only the core peptides are hypervariable, while the
+remainder of the precursor peptides remains identical, providing a
+mechanism by which this diversity can be achieved. It
+should be emphasized that the hypervariable regions are truly variable
+and do not just have a point mutation here or there. Sequences with
+0% identity across the 6- to 8-amino acid lengths of the products
+can be accepted and processed by the pathway. Here, we have named
+this phenomenon, where pathways are identical in their native contexts
+but the substrates and products evolve, “substrate evolution”.
+This name does not imply that the substrates are better (faster) substrates
+for the enzymes, but instead captures the process observed in nature. In addition to , the related  pathway is found in symbionts of animals, where it is responsible
+for synthesizing an additional 12 known cyanobactin compounds. Beyond the native compounds produced by  and , we have reported an additional
+20 unnatural derivatives that we synthesized in  using recombinant technology. In both  and , the core
+peptide sequences are hypervariable, while all other elements of the
+pathway remain identical. Interestingly, when comparing  and  across multiple samples, there
+is a position where crossovers
+occur.  and  are identical
+in their 5′ and 3′ regions, but there is a swap in the
+middle section of the pathways that encodes different functionality.
+For example,  products are heterocyclic at Ser
+and Thr, while  products are prenylated in these
+positions. The swap between  and  involves an exchange of genes that encode
+these different modifying enzymes. The natural swap in function, along
+with the natural ability to encompass potentially millions of derivatives,
+makes the cyanobactin pathways ideal for understanding how to achieve
+the synthetic biology goal of creating a designer posttranslational
+toolkit. Cyanobactins are initially encoded on a precursor peptide,
+represented
+by PatE. In many cyanobactins, PatE and its homologues are modified
+by a heterocyclase such as PatD to produce thiazoline and oxazoline
+rings from Cys and Ser/Thr residues. Subsequently,
+a PatA-like protease cleaves the N-terminal sequence of PatE, and
+a PatG-like protease removes the C-terminus and performs a macrocyclization
+reaction to yield an N–C circular product. Further tailoring, such as prenylation by LynF-like enzymes and
+oxidation by PatG oxidase domain-like enzyme, is also possible (Figures  and ). A recent study
+revealed C-terminal methylation of linear products as a further modification
+in this compound series. Therefore, when
+a cyanobactin pathway accepts a new substrate, it efficiently passes
+through not only one, but through all of the enzymatic steps in the
+pathway. Previously, we showed that the macrocyclization of
+cyanobactins
+is accomplished using a series of “recognition sequences”
+(RSs), here named RSII and RSIII. When these
+sequences are present, two proteases recognize them and collaboratively
+excise and macrocyclize extremely sequence diverse substrates  and . We also previously
+proposed that a third recognition sequence (RSI) element directs the
+heterocyclization events. Here, we show
+that this RSI is indeed the primary element responsible for recruiting
+heterocyclases, which then modify extremely diverse core peptide sequences.
+More importantly, we show that these RSs act independently of surrounding
+context, and therefore provide rules for their portability and application
+in creating new compounds. This result has implications in applying
+RiPP machinery for advances in synthetic biology. Typical cyanobactin precursor
+peptide is shown containing leader
+sequence (green), core peptide sequence (blue), and recognition sequences
+RS (red) that flank the core. The core sequence eventually matures
+into the final natural product after proteolytic removal of the rest
+of the precursor. In a subset of pathways, additional PTMs occur on
+the core sequence. There are three classes of RS for the PTM enzymes:
+RSI that directs heterocyclases as defined in this study, and RSII
+and RSIII that direct the N-terminal and C-terminal protease/macrocyclase,
+respectively. The structure of the natural products prenylagaramide
+(left) and trunkamide (right) is shown with the heterocycle modification
+in trunkamide circled in blue. Expression
+and Purification of Diverse Cyanobactin Enzymes and
+Substrates Supporting Information Figure S2 Cyanobactin gene clusters have been grouped into
+four distinct genotypes that produce distinct and varied natural products
+with different PTMs. Here, we further examined the
+previously described  and  pathways, which fall into cyanobactin Genotype I and produce the
+patellamide and trunkamide cyanobactins. We focused on TruA/PatA N-terminal
+proteases, which are 95% identical and PatD/TruD heterocyclases, which
+are 88% identical. To explore biosynthetic pathways that had not been
+previously analyzed, we expressed precursor peptides from the following
+pathways: the  pathway (produces the aestuaramides), which also occupies Genotype I but only exhibits
+on average 60% protein sequence identity with  pathways; the  pathway (produces the prenylagaramides), which is in Genotype II and is highly divergent
+from other pathways; and the  pathway, which is in Genotype IV and the chemotype of
+which was unknown at the time we initiated this study. In addition to / enzymes, we expressed protease  and heterocyclase , both from the  pathway that produces the cyanothecamides. ThcA was expected to
+perform N-terminal proteolysis, and ThcD was expected to transform
+Cys and/or Ser/Thr residues into thiazoline and oxazoline, respectively.
+Multiple precursor peptides are present in each pathway, and only
+1 or 2 from each set of precursors were selected for study, as designated
+by the different numbers. A series of engineered precursor peptides
+was also made that were a hybrid of two or more pathways (described
+later), further adding to the substrate diversity of this study. A
+detailed list of all substrates used in this study is given in Table . Proteins were expressed in  as His-tagged constructs and purified using standard methods (). Biochemical
+Analysis of  Pathway Enzymes The  pathway was characterized to add to the
+repertoire of the previously studied  and  pathways. ThcE4 () was chosen as the precursor
+peptide substrate. Putative heterocyclase ThcD and putative N-terminal
+protease ThcA were used in enzymatic assays. Using optimized reaction
+conditions, ThcD was incubated with ThcE4 () and the
+reaction was analyzed by MS methods. High-resolution FT-ICR ESI MS/MS
+(FTMS) has previously been used to localize the position of heterocyclization. The method identifies sites of
+dehydration via the 18 Da mass difference, and further, it is possible
+to determine the type of dehydration (whether reverse-Michael or cyclodehydration)
+by fragmentation pattern. The ThcD/ThcE4
+reaction was digested with chymotrypsin to yield easily detectable
+fragments. MS/MS analysis showed that all heterocycles were thiazolines
+derived from Cys and clearly localized them to SDSLYGGES, where  stands for thiazoline ring modification
+(Figures A and ). Detailed analysis of MS spectra is given in . ThcA was incubated both with the ThcE4 precursor peptide
+and with
+the product of the ThcD reaction, which is presumably its native substrate.
+In both cases, ThcA was active, as observed by SDS-PAGE (Figure B inset). In addition, ESI-MS analysis showed that
+the precursor peptide was cleaved at the RSII encoded by AVLAS (Figure B). This RSII is homologous to the previously described
+PatA RSII sequence of GL(V)E(D)AS. Since
+the C-terminal core sequence boundary could be easily assigned based
+on the C-terminal conserved Cys residue, determination of this RSII helped assign the boundary of the ThcE4
+core sequence. Figure  shows a schematic representation
+of both of these PTMs of heterocyclization and N-terminal proteolysis
+of ThcE4. Biochemical characterization
+of  pathway enzymes.
+(A) ThcE4/ThcD: FTMS spectra of chymotryptic digests ASSCDCSLY and
+GGCESCSYEGDEAE of ThcE4 modified by ThcD. Each [M+2H] mass peak corresponds to the peptide sequence given in a gray box,
+and a heterocycle PTM is indicated by a  (in
+red) within the sequence. (B) ThcE4/ThcA: Deconvoluted ESI-MS spectrum
+of the ThcE4/ThcA reaction. The [M-H] mass peak
+7098.0 Da is unmodified ThcE4 (His-tag removed) and 4915.0 Da corresponds
+to the leader after ThcA proteolysis at the AVLAS RSII site. The inset
+shows SDS-PAGE visualization of the same reaction, where the left
+lane is ThcE4 only and the right lane is ThcE4 in presence of ThcA.
+The smaller band in the right lane indicates the ThcA cleaved product.
+A schematic representation of results is shown where (X) represents the 38-residue leader sequence before RSI, RSII (red)
+and core (blue) sequences. Efficient Heterocyclase Activity Is Driven by RSI Supporting Information Figure S4 Supporting Information Figure S5 Before
+exploring the portability of RS elements, we first needed to identify
+the heterocyclase RS. It was previously speculated that a LAELSEEAL-like
+sequence that is conserved in pathways carrying heterocycles is a
+recognition element for this modification. By contrast, when a pathway lacks heterocycles, the corresponding
+LAELSEEAL-like sequence is absent. A similar
+element is also seen in non-cyanobactin RiPP families such as bottromycins and YM-216391 (). To test this hypothesis,
+a series of substrates was either synthesized or heterologously expressed
+that contained intact leader sequence, various fragments thereof,
+or mutations in the putative RSI (Table , ). These substrates
+were used in tandem with heterocyclases ThcD, TruD, and PatD. While
+TruD/PatD share high identity, the newly characterized ThcD is about
+60% identical to both enzymes. The native substrates of each enzyme
+are very different from each other, although in all cases the putative
+RSI element is well conserved. Reactions were analyzed by a combination
+of techniques as detailed in . Briefly,
+precursor peptide modification was followed by SDS-PAGE and ESI-MS.
+The synthesized peptides – could
+be analyzed by HPLC, followed by ESI-MS and/or MALDI-MS. In certain
+cases, FTMS was used to further confirm the identity of products.
+Substrates – had core sequences
+from  and  precursors. Supporting Information Figure S6 Supporting
+Information Figures S7–S9 and Table S2 Supporting Information Figure S10 Supporting Information Figure
+S12 Full-length precursor peptides  (TruLy1, chimera of
+TruE1 leader up to its first core cassette fused to LynE core) and  (TruLy2, chimera of TruE2 leader up to its first core cassette
+fused to LynE core) containing all RSs were reactive with ThcD, TruD
+and PatD (). In comparison, a short substrate () containing only
+a core peptide sequence was not reactive with any enzyme (data not
+shown). Short substrates containing RSIII ( and ) were slowly reactive, with reactions reaching only a little
+more than 50% completion with ThcD after 24 h, although reactions
+with TruD were comparatively faster (). Reaction progress
+was judged from comparison of HPLC traces of the substrate and product
+peaks relative to each other. By contrast, synthetic substrate , which included RSI, was highly reactive (), with reactions complete
+within 15 min with ThcD (Figures  and ). These results showed
+that although RSI was not absolutely essential for enzymatic reaction,
+the inclusion of RSI led to a reaction that was >150 times faster
+with respect to the time taken for reaction completion. Note that
+modification of  was even faster than full-length precursors –, which showed roughly 70% reaction
+completion after 3 h (), but the comparison should be treated with caution for
+reasons including differences in solubilities and the presence of
+multiple heterocyclizable residues in the precursor. We proposed
+that the slow reactivity of  and  might
+be caused by poor enzyme recognition due to the absence
+of RSI. Obtaining good kinetic data is challenging with this series
+because of the limits of substrate solubility. Therefore, to test
+this hypothesis, we used competition experiments (see ) in which the fastest substrate  underwent
+reaction with ThcD in competition with substrate , which
+contains RSI, and -, which lack RSI (Figure A). All substrates were maintained at the same concentrations
+in these reactions, and it was seen that despite the efficiency of  the full-length substrate  inhibited modification
+of , such that no product was seen after the 15-min
+time point. In contrast, the RSI-lacking substrates – did not inhibit this reaction (Figures C and ). These data indicated that RSI was likely responsible
+for efficient binding of core peptide to the enzyme. Supporting Information
+Figure S14-A Supporting Information
+Figure S14-B Supporting Information Figure S15 Supporting Information Figure S16 To confirm that RSI was solely responsible for this effect
+and
+not other elements embedded in the substrate or leader peptide, a
+series of full-length precursors (–) was constructed. RSI motifs were aligned using WebLogo (), and it was seen that three Glu and three Leu
+residues were the most conserved. Since the microcin B17 leader peptide
+is known to adopt a helical conformation, a model of the RSI residues using a helical wheel arrangement was
+drawn, and it was seen that the conserved Glu and Leu residues were
+on opposite faces of the helix (). Hence, the Glu residues were simultaneously
+converted into Ala residues in triple mutant . The (3[Glu→Ala])
+mutant  could still be heterocyclized () although with reduced efficiency
+since only up to double dehydration was observed in comparison to
+wild-type TruLy2 () that showed triple dehydration.
+Since the TruLy2 mutants were harder to purify, the Leu to Ala mutations
+were made in a different precursor that carried the same leader peptide
+as TruLy2 but carried  core instead (substrate ). In contrast to , the (3[Leu→Ala])
+mutant  was no longer an efficient substrate (). These results
+indicate that a Leu-rich hydrophobic patch may serve a critical function. Supporting Information
+Figure S17 Peptide  is a derivative of a natural precursor
+peptide PagE6 from the non-heterocyclizing  family
+that lacks the RSI element intrinsically. To make it a potential substrate
+for heterocyclases, we introduced a Cys residue in the requisite position
+(with  RSII and RSIII). In addition, peptide  was made, in which RSI was inserted into the backbone of
+peptide  (Table ). Our results
+showed that , which lacked RSI, was not a substrate
+for heterocyclases, although it carried a heterocyclizable residue
+(only a minor product peak was seen that equaled <10% of product
+even after 18-h reactions), while , which carried RSI
+insertion, was fully competent for reaction and essentially equal
+to other full-length precursors (). This demonstrates the portability of RSI to import
+heterocyclization in a completely non-native core peptide sequence. In addition, competition experiments similar to those described
+earlier were performed using ThcD and competent substrate  versus –. Only substrate  with intact RSI competed with , while the
+RSI mutants – did not (Figures  and ). This further reiterated that RSI is responsible for efficient
+heterocyclization. Supporting Information Figure S11 (A) Summary of reactivities
+of substrates – with ThcD, TruD,
+and PatD. Full-length precursors – and substrate  that
+lacks most of the leader, but contains RSI, were reactive with all
+tested enzymes. By contrast,  that lacked any RS was
+unreactive and – that lacked both
+leader and RSI was a very slow substrate. (B) Using the same assay
+conditions containing 2 μM ThcD and 200 μM substrate  or , a time-course was followed. Substrate  was completely modified to give product (1264.16 [M+2H]) within 15 min of reaction (ESI-MS on left), whereas  was very slow, and the reaction was far from complete even
+after 21 h (HPLC trace on right). Similar results were obtained with
+substrate , and an expanded reaction time-course is
+given in . Supporting Information Figures S13 and
+S18 Competition reactions:
+(A) Substrates  and  (containing RSI), – (lacking
+RSI) and – (RSI mutants) were
+made to compete with ThcD (2 μM) reaction on substrate , which has RSI but lacks the leader before it. Only  and  inhibited modification of , while – and – did not. All substrates were maintained at concentrations
+of 50 μM (in reactions with , ,
+and –) or 200 μM (in reactions
+with –) under the same assay conditions.
+(B) MALDI-MS of competition with  and , which completely inhibit modification of . The mass
+of 2566 corresponds to [M+Na] of . (C) On
+the left is ESI-MS of competition with , which does
+not inhibit modification of  (product mass 1264.11 [M+2H]), and substrate  is unmodified (1121.58 [M+H]). On the right is MALDI-MS of competition with  that does not affect modification of . The mass peak
+of 2548.38 corresponds to [M+Na] of  product,
+while only a minor peak of unmodified  was observed
+(2566.35 [M+Na]). Similar results were obtained from competition
+with , , and , which is
+shown in  along with necessary controls. Sequences of All
+Peptide Substrates
+Used in This Study Substrates  and – are native precursor
+peptides from
+different pathways. Substrates – and – were expressed as His-tagged
+constructs. Substrates – were
+mutated (green highlights) to probe RS requirements. The shorter substrates – were synthesized chemically on resin.
+Succeeding lines within a single substrate have been used to represent
+multiple cores. Where required, dashes have been used to align sequences
+into the specific regions of RSI (yellow), RSII–RSIII (red)
+and core (blue). Substrates , , and  were used for heterologous production of cyanobactins in . Leader Peptide Coevolves with Cyanobactin
+Modification Enzymes To find out the extent of conservation
+of non-RS elements of the
+leader sequence, we constructed phylogenetic trees of cyanobactin
+precursor peptides. We speculated that such an analysis might help
+us to identify important non-RS elements, if any, which could make
+portability of PTMs a physiologically and synthetically relevant process.
+Previously, the hypervariability of core peptides made the tree-building
+process difficult. This led us to construct trees composed solely
+of the leader peptide in the absence of the hypervariable cores, both
+with and without RSI (Figures  and ). Surprisingly, in
+both cases, the tree topology was identical and split precursor peptides
+into two groups. Group I peptides contain RSI, and Group II peptides
+lack RSI. As expected, Group II peptides are derived from pathways
+that also lack heterocyclases. Note that presence or absence of RSI
+did not define this branch point since trees made either way were
+identical. Supporting Information Figure S20 Furthermore, within Group I, the
+tree topology is similar to that
+made using cyanobactin heterocyclase sequences (). These observations suggested that the heterocyclases and leader
+sequences are coevolving, and because of this relationship, we speculated
+that heterocyclases might prefer their cognate (or native) leader
+sequences. In that event, not only RSI, but also the remainder of
+the leader peptide may be needed to enable portability of heterocyclization
+PTM. To understand this, we took a different approach, where instead
+of carrying out exhaustive mutations of the leader sequence, we took
+advantage of the diversity of cyanobactin biochemical components we
+already had in our hands, as described below. Supporting Information
+Figure S19 Phylogenetic tree of cyanobactin precursor peptide leader sequences.
+Group I pathways carry RSI, heterocycle PTM and the corresponding
+heterocyclase enzyme, whereas Group II pathways lack the same. Only
+a subset of peptides is shown here, with the ones used in this study
+highlighted in yellow. See  for a complete tree with all known cyanobactin precursors. Noncognate Leaders Do Not
+Hinder Heterocyclase Reactivity To test the requirement of
+cognate leader peptide sequence, ThcD,
+TruD, and PatD were assayed with a series of both native and non-native
+substrates from Groups I and II (Figure ).
+Group I included the native substrates of these three enzymes, ThcE4
+(), TruE2 (), and PatE (), in addition to LynE () from a different Group I
+pathway, and TruLy 1 and 2 () and (),
+which contain  leaders and hybrid - cores and were designed in our lab as robust
+substrates for TruD. Group II included PagE6 () from
+the  pathway, which is divergent from all of the
+other pathways used in this study. Since the PagE6 core lacked heterocyclizable
+residues, a Pag/Tru chimera (), which carries a Pro
+to Cys mutation and RSI, was used. To our surprise, instead of exhibiting selectivity
+for cognate
+leaders as would be expected from the phylogenetic analysis, all heterocyclases
+were active on all substrates as long as RSI was present (Figure ). Detailed product characterization is given in
+Figures S21–24 and Tables S3–S7 (see ). As has been reported earlier, TruD
+was chemoselective for Cys and PatD differed in that it could modify
+Ser/Thr residues as well. ThcD as characterized
+in this study resembles TruD in chemoselectivity. Differences in precursor
+peptide sequences, and even hybrids of different types of precursors,
+did not alter chemoselectivity or regioselectivity of the resulting
+products. Supporting Information
+Figure S25 Precise kinetic measurements of heterocyclization
+reactions are
+complex due to the solubility issues alluded to above and distributive
+processing by the enzymes, such that the substrate is released from
+the enzyme after each residue is heterocyclized. Despite these factors,
+we performed a semiquantitative analysis, wherein the amount of enzyme
+was varied and reaction completion after an 18-h time-point was monitored
+based on the SDS-PAGE band-shift (). Substrates  (LynE),  (TruLy1), and  (TruE2) were analyzed in this way
+because of the clear visibility of their band-shifts due to heterocyclization.
+TruD and ThcD were essentially identical in apparent reactivity, whereas
+our PatD enzyme preparation was relatively less efficient, such that
+a higher amount of enzyme was required to allow reaction completion
+at the same time-point. Supporting Information Figure S26 Supporting Information Figure S27 Additionally, experiments were performed
+in which reactions of  with TruD and ThcD were competed
+with substrates  (TruLy1),  (TruLy2 RSI
+mutant), and  (PagE6), using the same methods that
+were employed earlier
+to define RSI. As determined by SDS-PAGE analysis () and confirmed by MS (), only  carrying intact RSI could compete with .
+Taken together, these results showed that the native leader peptide
+was not necessary for reactivity and that leader sequences with <50%
+sequence identity are recognized by all three heterocyclases as long
+as RSI is present. Native leader peptide is not required
+for cross-selectivity of
+cyanobactin PTM enzymes. Substrates were grouped based on the type
+of leader, where Group I are from heterocyclase containing pathways
+and Group II are from those without. Heterocyclases ThcD/TruD/PatD
+and proteases PatA/ThcA are reactive with both native and non-native
+substrates  as long as RSI or RSII is present.
+TruA reactivity was analyzed  only on substrates  and . (X) represents leader peptide
+where n is the number of residues before RSI. Dashes have been used
+to align sequences to the color-coded RS and core regions. Regioselectivity
+of each individual enzyme is shown by specific symbols at the modified
+residues. Nonfilled symbols represent partially characterized PTMs
+(). Importance of RSII and Insignificance of
+the Native Leader Peptide
+for N-terminal Proteolysis Supporting Information Figure S2 Supporting Information Table S8 We wished to see if the above
+observation with RSI could also be extended to RSII. Beyond PatD-like
+heterocyclase proteins, the reactivity of PatA and PatG is essential
+in cyanobactin maturation. PatA and relatives
+act on full-length heterocyclized precursor peptides. Here, we examined
+the cross-reactivity of RSII elements with PatA-like proteases. Despite
+the comparatively lower sequence identity of PatA and ThcA (), both could
+recognize GVDAS-like RSIIs (Figures  and , ) in native and non-native
+substrates. The reactivity of TruA was examined  (see below). It processed both substrate , which carried
+native leader, and substrate , which carried a Group
+II non-native leader. In short, the proteases require RSII for activity,
+which exhibits the same portability as observed for the heterocyclase
+RSI. Finally, PatG and relatives act after N-terminal proteolysis
+on short substrates carrying the AYDGE-like RSIII. The RSIII-protease
+interaction has already been extensively studied. Therefore, with this study and resting on
+previous work, the selectivity requirements for the major PTM enzymes
+in the cyanobactin family have been explored. Next, we aimed at testing
+the portability of all RSs in the context of the complete cyanobactin
+pathway . Portability of RSs to Produce
+Cyanobactins Supporting Information Figure S29 Supporting
+Information Figure S29 The above results with
+heterocyclases and proteases implied
+that conserved elements within precursor peptides are virtually interchangeable.
+Therefore, it should be possible to swap PTMs by importing enzymes
+and their RSs into preexisting precursor peptides. To test this hypothesis
+in the context of a whole pathway , we formed
+hybrid precursor peptides comprising sections of ,  and  precursors (). These were
+coexpressed with our previously described  production
+vector in  (). The resulting
+cyanobactin products were extracted from the  cell pellet and analyzed by ESI-MS (see ). Robust expression of patellins from the parent  pathway served as internal controls for cyanobactin expression. Unfortunately,  and  core
+sequences did not lead to detectable products. This could be for any
+number of reasons, including toxicity to ,
+degradation , etc. Two of the designed precursors
+did lead to cyanobactin products. The first precursor contained the
+TruE2 leader peptide (TruLy2; ), while the second contained
+the same TruE2 RSs as , but fused to the PagE6 leader
+instead (Pag/TruLy; ). A TruLy2 mutant () was also made, carrying a (3[Glu→Ala]) mutated RSI sequence.
+Our results showed that, irrespective of leader, the  pathway processed both  and  (Figure ) to produce the macrocyclized product TFPVPTVC.
+In comparison, the mutant  failed to produce compounds,
+as would be expected from the earlier established  result that the substrate  could not compete with
+full-length precursors. In the context of the whole  pathway in , where  precursors
+were present as internal controls (producing patellins), the mutant  was not expected to be a substrate. Both nonprenylated and
+prenylated forms of the compound TFPVPTVC were observed, indicating
+that the TruF group of prenyltransferase PTM enzymes were also active. Production
+of cyanobactins from engineered peptides in . Hybrids of TruE2 and LynE with core peptides TFPVPTVC
+and ACMPCYP were made. The latter was not detected, but expression
+of the cyclic TFPVPTVC product was robust. Expression was maintained
+even when PagE6 leader (purple) replaced the native TruE2 leader.
+Product formation was abolished when the RSI-mutated precursor was
+used. Here, we experimentally
+define RSI, which
+we previously proposed to exist based upon extensive sequence analysis.
+In the presence of an RSI, peptides are efficiently heterocyclized,
+while in its absence heterocyclization is extremely inefficient or
+completely abolished. In native cyanobactin precursors lacking RSI,
+introduction of the element from other pathways enables access to
+the RS and efficient heterocyclization. Mutations to RSI lead to a
+greatly diminished enzyme activity when the acidic side of this helical
+sequence was modified, while activity was abolished on the hydrophobic
+side of the helix. These results indicate that potentially the hydrophobic
+helical face is crucial for the interaction with the enzyme. Taken
+together, we show that RSI is necessary for the efficient reaction
+required . It was recently proposed
+that the sequence identified as RSI here is not responsible for recognition
+but instead is required just in order to access interior Cys residues. This interpretation does not provide a good
+evolutionary rationale to maintain RSI because the native substrates
+of TruD lack interior Cys residues within single cassettes. The results
+here clearly disprove that idea, showing definitively that RSI is
+required for efficient synthesis under native conditions. While a
+slow reaction occurs , this is likely not
+relevant to the natural reaction. These add to the previously
+known RSII and RSIII in cyanobactin
+biosynthesis. Although these were previously known, here we add to
+the understanding of RSII function, showing that different sequences
+can be interchanged. Here, we also show how RSI, RSII, and RSIII function
+in the context of whole pathways. Previously, precise elements involved
+in recognition have been determined for individual enzymes and precursor
+peptides largely through mutagenesis studies in the lanthipeptides
+and several microcins. Additional advances include the  use of leader peptides and core peptides, rather
+than the normal fusion products found in nature. This has been especially
+advantageous, with the covalent fusion of leader peptides with enzymes,
+providing robust catalysis of, for example, lanthionine bond formation. On the other hand, the lack of importance of
+the leader has also been demonstrated with the Balh heterocyclases . Here, we hoped
+to learn how switching leader peptides would enable
+us to recruit PTM enzymes. Instead, and to our surprise, we found
+that quite different leader sequences were still fully functional
+with noncognate enzymes, and that those leader sequences could be
+swapped with no impact on activity. The only critical sequences are
+the three short RS elements, which are necessary to obtain products.
+The finding that RS elements recruit PTMs has implications for RiPP
+engineering. Such elements are inherently interchangeable and will
+thus afford a simple method for mixing different types of PTMs in
+a rational manner. Importantly, these noncognate enzymes enabled
+us to change the
+pattern of PTMs, leading to the introduction of unnatural modifications . By combining these enzymatic elements at will,
+novel compounds can be synthesized. Here, we demonstrate the synthesis
+of some of these compounds  by combining
+PatA and PatD-like enzymes with various substrates. We provide the
+first example of how this might be applied  using a swap where a wholly unnatural precursor peptide still is
+functionally modified in the context of the  pathway,
+validating the ability to functionally swap cassettes. On the basis
+of this technological advance, work is underway in the lab to synthesize
+libraries of derivatives, which will be reported in due course. The
+underlying technology, however, should be applicable to other types
+of RiPP pathways for which recognition elements have been defined. We used the observation of natural “substrate evolution”
+and real-time pathway crossovers to inspire the creation of portable
+synthetic biology tools. Although very precise substrate evolution
+has still been described only in cyanobactins found within coral reef
+animals, it is likely that this will be found in many other RiPPs
+as well, as shown by initial evidence in some other pathway types. Not all RiPPs exhibit this feature, as others
+that have been studied exhibit fairly narrow substrate selectivity,
+where more than a small number of mutations are not accepted in the
+final products. The accumulation of natural RiPP pathways in which
+substrate evolution is occurring will thus be very valuable in achieving
+the long-term goal of precisely controlling posttranslational modifications
+and small peptide design. The ThcA, ThcE4, ThcD, TruLy2, and
+Pag/Tru genes were obtained from GenScript and cloned into the pET28
+vector between NdeI and XhoI sites for protein expression and/or into
+our previously described pRSF-lac vector between NdeI and KpnI sites for compound expression in . The mutants 3[Glu→Ala], 3[Leu→Ala] and
+the RSI deletion mutants of TruLy2 and Pag/Tru constructs were made
+by site-directed PCR mutagenesis. Protein Expression, Purification,
+and Synthesis Precursor
+peptides ThcE4, LynE, PagE6, TruLy2 and Pag/Tru along with their mutants
+were made by overexpression (3 h at 37 °C with 1 mM IPTG induction)
+to drive the protein into inclusion bodies, in R2D-BL21 cells in 2xYT
+medium. Purification was performed by Ni-NTA affinity chromatography
+under denaturing conditions. ThcD and ThcA were expressed under similar
+conditions as the precursor peptides except that milder expression
+conditions were used (18–21 h at 18 °C with 0.1 mM IPTG
+induction), and the proteins were purified using native conditions.
+All proteins were dialyzed, aliquoted, flash-frozen, and stored at
+−80 °C till used. Enzymes were additionally stored in
+10% (v/v) glycerol. The precursor peptides TruE2, PatE, TruLy1, and
+the enzymes TruD, PatD, and PatA were made as described previously. The synthetic substrates – were
+made at the University of Utah Peptide Synthesis Core Facility. For characterization of  pathway enzymes, ThcE4 (30 μM) was incubated with
+0.4 μM of ThcD in optimized additive mixtures containing 50
+mM Tris buffer pH 7.5 along with 7.5 mM DTT, 4 mM MgCl, and 1 mM ATP in a final reaction volume of 50 or 100 μL.
+The N-terminal cleavage assay was carried out by incubating 40 μM
+of ThcE4 with 6 μM of ThcA in optimized additive mixtures containing
+50 mM Tris buffer pH 7.5 along with 4 mM DTT and 10 mM CaCl in a final reaction volume of 50 or 100 μL. In certain cases,
+cleavage assays were performed after heterocyclization by adding protease
+to the ThcD/ThcA reaction mixture while maintaining the same final
+concentration as detailed above. Assays performed in absence of enzyme
+and/or absence of ATP were used as negative controls. The reactions
+were incubated at 34 °C for 18 h in a MJ Research Minicycler.
+Each reaction was done at least in triplicate and was quenched by
+immediately freezing at −80 °C until used for SDS-PAGE
+and MS analysis. Precursor Peptide Assay Conditions and Product
+Characterization Reactions were carried out under conditions
+similar to ThcE4 assays
+as given above, with 25–50 μM peptide and 0.5–2
+μM heterocyclase or 5 μM protease, for 18 h at 34 °C,
+unless otherwise specified. Products were analyzed in two steps. First,
+preliminary results were obtained by visualization of modification
+on SDS-PAGE. Second, reactions were analyzed by ESI-MS, which indicated
+the number of dehydrations (in case of heterocyclization) or a smaller
+molecular weight mass (in case of proteolysis). In most cases, identity
+of the product was further confirmed by high-resolution FTMS and MS/MS
+fragmentation pattern. See  for detailed interpretation of MS data. Synthetic Substrate Assay
+Conditions and Product Characterization Reaction conditions
+were identical to those for precursor peptide
+assays, except that up to 200 μM substrate was used with 2 μM
+heterocyclase, for 18 h at 34 °C, unless otherwise specified.
+Reactions were quenched with 1 M guanidine hydrochloride, centrifuged,
+and the supernatant was analyzed by RP-HPLC on a LaChrom Elite System
+(Hitachi). A 214MS C4 5 μ column (Grace-Vydac) was used and
+run on a linear gradient from 99% of buffer A (HO/0.1%
+TFA) to 100% ACN over 45 min with a flow rate of 1 mL min. Because of the presence of Tyr residues in – a 276 nm UV absorbance maximum was clearly observed for
+the starting substrate. Thiazoline modification introduces an additional
+254 nm shoulder, such that product formation
+can be easily detected. Further confirmation was provided ESI-MS and/or
+FTMS. Note that for substrate , it was difficult to
+attain HPLC separation of substrate and product peaks. Hence, reactions
+were followed by ESI-MS and/or MALDI-MS. Samples to be analyzed by
+MALDI were desalted and concentrated using C18 Zip-Tips (Millipore).
+See  for detailed
+interpretation of MS data. Competition Reaction Assay
+Conditions and Product Characterization Identical reaction
+conditions were maintained for each competition
+reaction series. For competition of  with precursor
+peptides , , and –, 50 μM of each substrate was used, since attaining
+higher concentrations of precursor peptide was difficult, and the
+reactions were followed by MALDI-MS. For competition of  with synthetic peptides –, 200
+μM of each substrate was used, and the reactions were followed
+by ESI-MS. For competition of precursor peptides  with
+other precursor peptides , , and , 25 μM of each substrate was used, and reactions
+were followed by SDS-PAGE and ESI-MS at increasing time points. All
+enzymes were used at a concentration of 1 μM, unless otherwise
+specified. Comparison
+of modified peptide
+with unmodified peptide on SDS-PAGE was used to visualize PTM modification,
+since heterocyclized peptides showed greater mobility and cleaved
+peptides resulted in a smaller band in most cases. 18% gels were used
+to analyzed 15 μL of each reaction by standard SDS-PAGE conditions.
+In all cases, MS methods confirmed results seen on SDS-PAGE gels. ESI-MS and FT-ICR analyses
+were performed at the University of Utah Mass Spectrometry and Proteomics
+Core facility. ESI was done using a Micromass Quattro-II (Waters),
+and analysis of spectra was carried out using predicted masses obtained
+from Monoisotopic Mass calculator. FT was performed following cleavage
+of heterocyclized peptide by chymotrypsin or PatA protease, using
+a LTQ FT Ultra Hybrid Mass Spectrometer (Thermo Scientific) and analyzed
+both manually using predicted masses from Monoisotopic calculator
+and using Mascot from Matrix Science. MALDI-TOF samples were mixed
+with 1-cyano-4-hydroxycinnamic acid (10 mg mL in
+50:50 water: methanol with 0.1% trifluoroacetic acid) and analyzed
+using a Micromass MALDI micro MX (Waters) using an automated targeting
+protocol. Construction of Phylogenetic Trees Supporting Information Figure S19 Alignments were
+done based on ClustalW2 output results. The precursor peptide sequences
+shown in  along with the known/predicted N-terminal protease recognition sequences
+RSII were obtained from previously published studies and our present analysis of the  pathway. MEGA5.1
+was used to construct the Maximum Likelihood phylogenetic tree using
+the JTT model. Expression of Hybrid Precursor Peptides in This was based on our previously described  pathway-based expression system. A two-plasmid
+system was coexpressed in , one plasmid carrying
+the precursors for expression of patellins 2 and 3, and the other
+carrying the engineered hybrid precursor. The hybrids created for
+this study were obtained from GenScript before subcloning into our
+previously described pRSF-lac expression vector. Single colonies were
+picked to make seed cultures, and at least five seed cultures were
+pooled the next day and inoculated into optimized 2xYT medium supplemented
+with antibiotics. Cultures were grown for 5 days, after which the
+cells were harvested. Their acetone extract were isolated, dried,
+redissolved in methanol, and analyzed by LC/ESI-MS using an Agilent
+Eclipse C column (4.6 mm × 150 mm, 5 μm) on
+a Waters Micromass ZQ mass spectrometer. Robust expression of patellins
+2 and 3 served as internal controls..

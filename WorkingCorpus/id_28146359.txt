@@ -1,0 +1,784 @@
+Microbial fermentation of renewable
+resources into green fuels and chemicals is playing a major part in
+the development of the biobased economy. The production costs of these
+environmentally friendly processes have to be reduced before they
+become competitive with traditional fossil fuel-based industries.
+To this end, microbes other than the widely used model organisms,
+such as  and , are being evaluated for
+their prospective abilities to act as production hosts. Thermophilic
+organisms are of particular interest due to their multiple advantages
+over mesophilic organisms when being used as production hosts. For example, their ability to grow and ferment at thermophilic temperatures
+reduces the cooling costs, and increase substrate
+and product solubility, it reduces the
+contamination risk with mesophiles, and there are examples
+of using thermophiles for nonsterilized fermentations which would
+reduce sterilization costs, additionally, the fermentation
+process runs at the optimum temperature for enzymatic lignocellulose
+degradation, allowing for efficient simultaneous saccharification
+and fermentation. However, the use of nonmodel
+thermophiles as production hosts is generally hampered by the lack
+of well-developed genome editing tools compared to those available
+for currently used mesophilic model organisms. Previous work has established basic genome editing tools for the
+facultative thermophilic strain  ET 138 (referred to as ET 138 herein), allowing for the introduction
+of scar-free markerless gene deletions using homologous recombination. grows
+between 37 and 65 °C and efficiently utilizes both C and C sugars. Its main product is -lactate, and in order to use ET 138 as a versatile platform
+host for the production of other chemicals and fuels, its  gene was deleted. No counterselection tool was used
+in this process, resulting in a very laborious screening process to
+obtain clean mutants. Subsequently, a -based counterselection was developed that relies on
+the toxicity of high concentrations of 5-bromo-4-chloro-3-indolyl-β--galactopyranoside (X-gal). Using this
+system, the sporulation gene  and the pyruvate
+dehydrogenase complex subunit gene  were consecutively
+deleted in the  mutant. The resulting triple
+mutant strain was sporulation-deficient, which is desired in industrial
+fermentations for safety reasons, and did not produce -lactate
+and acetate. Since the  mutant was also acetate
+auxotrophic, the double mutant ET 138 Δ Δ was selected as a basic platform strain
+for future studies. Although the -based counterselection system significantly decreased
+the time needed for mutant selection, the developed process is still
+time-consuming, with the fastest possible route to gene deletion taking
+approximately 2 to 3 weeks from transformation to generation of a
+scar-free markerless knockout. Moreover,
+the counterselection step is not stringent enough for removal of genes
+that are essential for the fitness and the metabolism of the strain.
+For the successfully engineered genes, only 12.5–33% of the
+colonies had the mutant genotype, whereas for other genes, only wild-type
+revertants and false positives were obtained, generating mostly (66–88%)
+or in some cases only wild-type revertants or false positives. The large number of wild-type revertants due
+to the absence or inefficiency of counterselection is a general issue
+in several nonmodel organisms. This creates the need
+for laborious PCR-based screening and strongly decreases throughput
+of the engineering process, limiting the study of these organisms
+and their development into industrial production hosts. One
+of the fastest and most efficient methods currently available
+for genome editing is a system based on the  Cas9 (spCas9) RNA-guided DNA endonuclease
+of the type II CRISPR–Cas defense system. Jinek et al. showed that a short single guide RNA (sgRNA)
+molecule can direct the spCas9 endonuclease to a desired complementary
+target, called protospacer. In the presence
+of the short 5′-NGG-3′ DNA motif immediately downstream
+of the 3′-end of the protospacer, called protospacer adjacent
+motif (PAM), spCas9 introduces a lethal chromosomal double stranded
+DNA break (DSDB). The system was applied
+for genome editing of human and mouse cells, paving
+the road for genome editing of a wide range of eukaryotic cells. In these eukaryotes, the non-homologous end joining (NHEJ) system
+repairs spCas9-induced DSDBs in an error-prone manner, creating insertion/deletion
+(indel) mutations. These mutations usually render the gene inactive through frameshifting
+and simultaneously prevent further spCas9 recognition and subsequent
+cleavage due to the alteration of the target site. Although the NHEJ
+system is generally not present or not active for most prokaryotes, the ET 138 genome contains the genes for the
+basic prokaryotic NHEJ-like system, consisting of DNA ligase LigD
+and DNA-end-binding protein Ku. However, the functionality
+of the NHEJ-like system in ET 138 is unknown. The combination
+of spCas9 activity with editing templates, such
+as recombineering oligonucleotides or plasmid-borne sequences for
+homologous recombination, has been recently exploited for prokaryotic
+genome editing. spCas9 was employed to introduce DSDBs in prokaryotic
+genomes. These breaks modestly induced the recombination of a provided
+rescuing/editing template into the targeted chromosome, resulting
+in genetically modified cells. The edited cells avoided subsequent spCas9 targeting events, but
+in many studies, the number of surviving/edited colonies was low,
+with a high percentage of mixed (both wild type and mutant) or escape
+mutant genotypes. The number of surviving colonies as well as the percentage
+of successfully edited cells was higher in studies that allowed homologous
+recombination of the editing templates to take place prior to spCas9
+targeting. In this way, spCas9 was employed for stringent counterselection
+of unedited genomes. For this approach, either homologous recombination
+was faster than spCas9 targeting or  expression was induced after homologous recombination. Moreover, the vast majority of studies required either a multiple-plasmid
+system or very tightly controlled promoters. Currently, only one plasmid, one selection marker, and no inducible
+promoters are available for ET 138, limiting the options for such
+systems. Many of the well-known and widely applied genome editing
+tools, including CRISPR–Cas9 editing, are not amenable to thermophiles.
+The enzymatic machineries of these tools have not proven to be stable
+at temperatures higher than 37 °C. Whereas the native CRISPR–Cas
+type I system of a thermophilic archaeon has been employed for genome
+editing and chromosome-based genetic
+manipulations have been reported for a few naturally competent thermophiles, no reports are available on using Cas9-based
+editing in thermophilic organisms. In this study, we show that
+spCas9 is inactive in ET 138 at temperatures
+from 42 °C and above and we tightly control its activity by altering
+the cultivation temperature rather than by using an inducible promoter.
+We create a clean gene deletion, a gene disruption, and a gene insertion
+by employing a plasmid-borne homologous recombination template for
+introduction of the desired modifications to the genome at 45 °C,
+and the nonedited cells are subsequently eliminated by spCas9 counterselection
+at 37 °C. To the best of our knowledge, this is the first time
+that a temperature-controlled recombination/counterselection tool
+has been employed for genome editing purposes, and it is the first
+time that a Cas9-based editing tool has been used for engineering
+the genome and the metabolism of a moderate thermophile. Expression Validation of spCas9 at
+Different Temperatures Thermoanaerobacterium
+saccharolyticum http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00339/suppl_file/sb6b00339_si_001.pdf In a parallel study, we demonstrated
+that the  sgRNA loading to spCas9 requires
+temperatures below 42 °C, which is the limiting step toward the  formation of the active sgRNA–spCas9 complex
+(to be published). This result motivated us to evaluate the  activity of spCas9 in ET 138 at different temperatures.
+We designed and constructed the modular pWUR_Cas9nt construct, which
+encompasses the  gene of  (referred to as  herein) and an sgRNA-expressing module for which the spacer is predicted
+not to target any site of the  genome (i.e., nt, for nontargeting). The backbone of pWUR_Cas9nt
+is the pNW33n vector, which was the only available vector for  (A). The first basic requirement for
+the design of the pWUR_Cas9nt was the development of promoters that
+will drive the expression of the two components of the system: the  effector and its sgRNA
+guide module. For many nonmodel organisms, the number of available
+promoters and plasmids is very limited. ET 138 is no exception; only
+two promoters have been evaluated for expression in : the heterologous P from  and the native
+P. The
+latter is undesired, as integration of pNW33n-based HR plasmids into
+the ET 138 genome is possible and we
+want to prevent crossover events between the pWUR_Cas9nt construct
+and the  genome over the
+promoter region. Additionally, an inducible system would be desirable.
+For these purposes, we tested the  promoter (P) from . In the
+genome of its native host, this promoter is induced by xylose and
+repressed by glucose. To test expression in ET 138, we constructed
+the pWUR_lacZ vector; we used pNW33n as the cloning and expression
+vector, and we introduced P in front
+of the -derived  gene, previously shown to be functional in ET 138. Low expression was observed after overnight
+culture in LB2 liquid medium without an added carbon source, and strong
+expression was observed with both xylose and glucose (). It is probable that the catabolite
+repression mechanism of ET 138 does not recognize the  (catabolite repression element) sequence present on P, resulting in lack of transcriptional repression
+by glucose in  ET 138. Although
+P is not tightly controllable in , we still selected it to drive the expression
+of  from pWUR_Cas9nt, maintaining the possibility
+to explore the effects of different  expression levels. During all further experiments
+in this study, xylose and glucose were both added to the media at
+all of the culturing temperatures to ensure constant induction of  expression at all times
+from P. Additionally, we placed the
+sgRNA module under the control of the  phosphotransacetylase () promoter P without its RBS. It is generally
+stressed that the transcriptional start site (TSS) of the promoter
+driving sgRNA expression must be characterized. However, the TSS of
+P that we use for the same purpose
+in our study is not characterized, and since we remove only the predicted
+RBS, we expect that a few nucleotides are still added to the 5′-end
+of the sgRNA molecules. Even so, we hypothesized that this extended
+sgRNA module will be efficiently loaded to spCas9 and that it will
+not influence the Cas9 targeting efficiency and specificity, since
+it is located at the PAM distal end. By verifying our hypothesis,
+we would facilitate the application of our system to other nonmodel
+organisms with promoters that do not have their TSS determined. We evaluated spCas9 expression and toxicity levels in ET 138 by transforming
+a single batch of competent cells with the nontargeting pWUR_Cas9nt
+vector and with the empty pNW33n control vector. The transformed cells
+were plated on LB2 plates supplemented with chloramphenicol. We incubated
+the plates overnight only at 55 °C, as previous incubation attempts
+at 37 and 42 °C were not successful (data not shown). One colony
+per transformation was used for sequential transfers in LB2 broth, transferring the cultures from 55 to 37 °C, with two
+intermediate steps at 45 and 42 °C. We isolated total RNA from
+each pWUR_Cas9nt culture after 18 h of incubation at 55, 42, and 37
+°C and performed semiquantitative reverse transcription (rt)-PCR
+using specific primers for the  gene. Transcription of  was observed for all tested temperatures (B). The growth of the -expressing cultures was similar to that of the pNW33n control
+cultures at all temperatures (B), indicating that the expression of  is not toxic for ET 138 cells at any
+of the tested temperatures. Schematic overview of the basic pWUR_Cas9nt
+construct. (A) The
+non-codon-optimized  gene was employed for the construction of the pWUR_Cas9nt vector,
+since  and  GC content and codon usage are highly
+similar. In the pNW33n-based basic construct, s was placed under the control of P. A Rho-independent terminator from () was introduced after the stop codon
+of the gene. The  module is followed by an
+sgRNA-expressing module that encompasses a spacer which does not target
+the genome of ET 138. The sgRNA module was placed under the transcriptional
+control of P from  (without its RBS), which was followed by
+a second Rho-independent terminator from . The spCas9 and sgRNA modules were synthesized
+as one fragment, which was subsequently cloned into pNW33n through
+the BspHI and HindIII restriction sites. (B) To prevent double restriction
+sites and create a modular system, five silent point mutations (C192A,
+T387C, T1011A, C3126A, G354A) were introduced to the gene (depicted
+as *). The depicted restriction sites are unique in the construct
+and introduced to facilitate the exchange of genetic parts. The spacer
+was easily exchanged to targeting spacers via BsmBI restriction digestion
+or Gibson assembly. The basic construct did not contain any HR templates,
+but in cases where these were added, they were always inserted immediately
+upstream of the spCas9 module and downstream of the origin of replication.
+(C) Total RNA was isolated from ET 138 wild-type cells transformed
+with pWUR_Cas9nt or pNW33n and grown at 55, 45, and 37 °C. Six
+cDNA libraries were produced with rt-PCR and used as templates for
+PCR with cas9sp-specific primers that amplify a 255 bp region. The
+PCR results are depicted as follows: lane 1 corresponds to the marker
+(1kb+ DNA ladder, ThermoFisher), lanes 2–4 correspond to ET
+138 wild-type cultures transformed with pWUR_Cas9nt and grown at 55,
+42, or 37 °C, respectively, lanes 5–7 correspond to ET
+138 wild-type cultures transformed with pNW33n and grown at 55, 42,
+or 37 °C, respectively, lanes 7, 8, 9, 11, 12 correspond to different
+negative controls, and lane 10 corresponds to the positive control,
+for which pWUR_Cas9nt was used as the PCR template. (A) Sequential transfer scheme of wild-type ET 138 cultures
+to
+evaluate spCas9 expression and targeting efficiency at different temperatures.
+ET 138 cells were transformed with the pWUR_Cas9sp1, pWUR_Cas9sp2,
+pWUR_Cas9sp3, pWUR_Cas9nt, and pNW33n vectors and plated on LB2 agar
+plates with chloramphenicol (day 1). After overnight (ON) incubation
+at 55 °C, single colonies were restreaked on LB2 agar plates
+with chloramphenicol and incubated ON at 55 and 45 °C (day 2).
+Colonies from the 45 °C plates were transferred to LB2 agar plates
+with chloramphenicol for ON incubation at 37 °C (day 3). The
+plates from days 2 and 3 were then used for inoculation of liquid
+medium (day 4); 1 colony per 55, 45, and 37 °C plate was transferred
+to LB2 medium with xylose, glucose, and chloramphenicol for ON incubation
+at 55, 45, and 37 °C, respectively, while one extra colony per
+45 °C plate was transferred to the same medium for ON incubation
+at 42 °C. (B) Results of the targeting experiment showing OD measurements from cultures of wild-type ET 138 transformed
+with the three different  targeting  constructs, the nontargeting  construct, and pNW33n.
+The growth of the cells with the  targeting constructs
+is greatly affected at 37 °C, which is not observed for cells
+containing the nontargeting constructs. Validation of spCas9 Activity at Different
+Temperatures As the  genome encompasses genes for the basic prokaryotic NHEJ-like system, our first approach to construct a spCas9-based genome editing tool
+focused on determining the  temperature limits
+of spCas9 and the capacity of the ET 138 NHEJ-like mechanism to repair
+spCas9-induced DSDBs. We chose to target  as
+a first proof of principle. The  gene encodes
+the orotidine 5′-phosphate decarboxylase and is part of the
+operon for pyrimidine biosynthesis. Removal of the gene causes uracil
+auxotrophy and resistance to the toxic uracil analogue 5-fluorootic
+acid (5-FOA). It is a frequently used selection and counterselection
+system in many organisms including thermophiles, and to this
+end, we initially made a clean  deletion mutant
+ET 138 Δ Δ Δ by adding the fused 1 kb up- and downstream  flanks to pNW33n and applying 5-FOA pressure to select
+for double crossover mutants. A total of nine rounds of subculturing
+on selective media containing uracil and 5-FOA were required before
+pure knockouts were obtained with a knockout efficiency of around
+50% (data not shown), making the process rather time consuming. Whereas
+integration of pNW33-based HR plasmids in ET 138 strains occurs, likely due to the rolling circle-based replication
+of pNW33n, subsequent excision of the plasmid
+and identification of clean mutant strains is difficult. The speed and ease of this process could be
+significantly increased by using a strong counterselection system,
+such as spCas9. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00339/suppl_file/sb6b00339_si_001.pdf We continued our study by constructing three
+vectors based on the pWUR_Cas9nt sequence, designated pWUR_Cas9sp1,
+pWUR_Cas9sp2, and pWUR_Cas9sp3, each containing a different -targeting spacer (sp1–3). We transformed a single
+batch of wild-type ET 138 competent cells with the three targeting
+vectors, the nontargeting control pWUR_Cas9nt, and the empty vector
+control pNW33n. After initial outgrowth at 55 °C on LB2 plates
+without sugar, one confirmed transformant for each construct was subjected
+to a sequential plating and culturing process in which the temperature
+was stepwise decreased from 55 to 37 °C to induce spCas9 expression
+(A). Normal
+growth was observed for all cultures at 55, 45, and 42 °C, as
+well as for the control cultures at 37 °C. No growth was observed
+for any of the cultures with targeting sgRNA
+modules at 37 °C (B). We repeated the transformation and culturing process using
+the double mutant  ET138
+Δ Δ strain. This strain is sporulation-deficient, it cannot
+produce -lactate, and it was constructed as the basic platform
+strain for further metabolic engineering work. We obtained similar
+results as those for the wild-type  ET138 strain (), and we continued
+our study using the double mutant strain. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00339/suppl_file/sb6b00339_si_001.pdf In line with the  assay data, the aforementioned
+results indicate that the designed spCas9 system is active at 37 °C
+but inactive and does not introduce lethal DSDBs to the ET 138 genome
+at temperatures from 42 °C and above. It also indicates that
+the NHEJ system in ET 138 is inactive at 37 °C or not active
+enough to counteract the spCas9 activity. In addition, the sequencing
+results of the pWUR_Cas9sp2 construct revealed the deletion of seven
+nucleotides near the 3′ end of P (). However, the results of
+the targeting experiment support our hypothesis that the uncharacterized
+nature of P, and possibly the extra
+nucleotides at the 5′ end of the sgRNA module, does not hinder
+the targeting efficiency of spCas9. Moreover, the truncated P of the pWUR_Cas9sp2 construct clearly
+expresses enough sgRNA molecules, and the observed seven-nucleotide
+long deletion has no impact to the targeting efficiency of the corresponding
+spCas9/sgRNA complex. The latter two observations reveal that our
+system tolerates a certain level of flexibility in the 5′-extension
+of the sgRNA molecule. Efficient Gene Deletion Using a HR-CRISPR–Cas9
+Counterselection
+System http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00339/suppl_file/sb6b00339_si_001.pdf Taking into account the results described so far,
+we decided to develop a Cas9-based editing system for ET 138 that
+exploits its efficient homologous recombination mechanism and the temperature-induced spCas9 activity
+at 37 °C. The new experimental setup consists of a single plasmid
+that combines the recombination template and the spCas9- and sgRNA-expressing
+modules. Providing the cells with the appropriate plasmid-borne editing
+template at 55 °C and then inducing the expression of active
+spCas9 at 37 °C through a sequential culturing process is expected
+to form a powerful homologous recombination and counterselection system.
+To generate a  deletion mutant, pWUR_Cas9sp1
+was selected as the targeting vector for further
+experiments, which was always compared to the nontargeting control,
+pWUR_Cas9nt. To both vectors, we added a fusion of the two  flanks (each 1 kb), creating the pWUR_Cas9nt_hr and
+pWUR_Cas9sp1_hr vectors (i.e., hr, for homologous recombination) (A). After transforming
+the four constructs (two with flanks and two without flanks) into
+ET 138 Δ Δ at
+55 °C, one verified transformant per construct was inoculated
+into TVMY selection medium containing xylose and glucose and supplemented
+with uracil (TVMY) to complement the auxotrophy in the
+case of successful  deletion. After growth at
+55 °C for 24 h, cells were sequentially transferred every 24
+h to fresh media while gradually decreasing the culturing temperature
+from 55 to 37 °C, with an intermediate transfer at 45 °C.
+After three more transfers at 37 °C to allow for efficient spCas9
+counterselection, cells were transferred back to 55 °C with an
+intermediate transfer at 45 °C, allowing for gradual adjustment
+of their metabolism. As expected, PCR on genomic DNA from the pWUR_Cas9nt
+and pWURCas9_sp1 cultures showed no  knockout
+bands at any culturing temperature due to the lack of a homologous
+recombination template in the constructs. In line with the initial  tests, pWURCas9_sp1 cultures at 37 °C showed
+almost no growth, whereas the pWUR_Cas9nt cultures at all temperatures
+showed the expected growth for ET 138. PCR on genomic DNA from the
+liquid cultures containing the vectors with  flanks
+showed the absence of knockout bands for the pWUR_Cas9nt_hr cultures
+from the first culturing step at 37 °C onward, but very strong  knockout bands for the pWUR_Cas9sp1_hr cultures for
+the same culturing steps mentioned above (A). The striking difference in the density
+of the knockout bands between the targeting pWUR_Cas9sp1_hr and the
+nontargeting pWUR_Cas9nt_hr cultures indicates successful spCas9 activity
+and  targeting by the pWUR_Cas9sp1_hr construct.
+It furthermore indicates that the counterselection activity of spCas9
+is already efficient from the first culturing step at 37 °C.
+Growth of the pWUR_Cas9nt_hr cultures was similar to the control at
+all temperatures, whereas the pWUR_Cas9sp1_hr cultures showed poor
+growth in the first two culturing steps at 37 °C, but the growth
+was reconstituted to control levels from the third culturing step
+at 37 °C onward (). After
+an upshift in the temperature, colony PCR of the 55 °C colonies
+showed that 5 out of 10 tested pWUR_Cas9sp1_hr colonies were pure  deletion mutants, i.e., an editing efficiency of 50%
+for our system (data not shown). The correct mutations were also verified
+by sequencing. None of the 10 tested pWUR_Cas9nt_hr colonies (nontargeting
+control) were  deletion mutants, demonstrating
+functional spCas9 targeting. To improve the efficiency and
+speed of the system, we repeated
+the process for the pWUR_Cas9sp1_hr-containing strain and reduced
+the number of culturing steps at 37 °C from 4 to 1 while keeping
+the culturing time of each step in a window between 8 and 16 h. Moreover,
+we used three different media in order to observe possible medium-dependent
+variations in the efficiency of the system: TVMY selection medium
+supplemented with xylose, glucose, and uracil (TVMY);
+TVMY selection medium supplemented with xylose and glucose but not
+with uracil (TVMY); and LB2 medium supplemented with
+xylose and glucose (LB2). After the final culturing step
+at 55 °C, cells were plated on selective agar of the corresponding
+medium, supplemented with uracil. Colony PCR on 10 randomly selected
+colonies for each medium and construct showed that 9 out of 10 colonies
+were pure  deletion mutants colonies from the
+culturing process on TVMY medium (B). From the process with TVMY medium, 4 of the examined colonies were pure  deletion mutants, proving the efficiency of the counterselection
+tool even in the presence of an auxotrophy barrier (B). The process with LB2 medium was repeated twice, with two different pWUR_Cas9sp1_hr
+containing ET 138 clones. Surprisingly, all colonies evaluated from
+the LB2 medium process (40 in total) contained the wild-type  gene (data not shown). At this moment, it is unclear
+as to what causes this difference between the LB2 medium
+and the two types of TVMY media, and this will be addressed in future
+research. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00339/suppl_file/sb6b00339_si_001.pdf To retain spCas9 activity, antibiotics were added
+in all steps.
+To allow for subsequent metabolic engineering steps, however, plasmid
+curing is required. After transferring a sequence-verified  deletion mutant twice in TVMY medium without antibiotics,
+cells were plated on TVMY plates without antibiotics. Colony PCR with
+plasmid-specific primers showed that all eight tested colonies had
+lost the plasmid. Finally, we verified the 5-FOA sensitivity and the
+uracil auxotrophy of two ET 138 Δ Δ Δ cultures that originated
+from two of the tested colonies ET 138 (). Schematic representation of the different homologous
+recombination
+and spCas9-mediated mutations described in this study. The first single
+crossover event (SCO) can occur by insertion of the editing plasmid
+into the chromosome either through the upstream homologous region
+(UHR), as depicted here, or through the downstream homologous region
+(DHR). (A) Gene deletion. A scar-less, markerless  gene deletion was established after insertion of the editing vector
+into the chromosome via homologous recombination with the plasmid-borne
+editing template (2 × 1 kb flanks, immediately flanking the  gene and thus removing it from start to stop codon),
+after which a second SCO event results in either wild-type revertants
+or edited cells. The spCas9 targeting of the wild-type cells acts
+as counterselection for the  mutants. (B) Gene
+knockout via insertion of stop codons and a restriction site. The
+followed process was similar to the gene deletion described above.
+The  restriction gene was inactivated by inserting
+stop codons and a restriction site between codons 212 and 221 that
+were contained in a 2 kb HR fragment that expands 289 bp upstream
+and 1.65 kb downstream from the start codon of the  gene on the genome of the ET 138. Between the two stop codons, an
+EcoRV restriction site was added, generating a frame shift and facilitating
+the screening process. The spacer was designed to target the original
+sequence without stop codons and restriction site. (C) Gene knock-in.
+The followed process was similar to the gene deletion and gene knockout
+processes described above. The  gene was reinserted
+into mutant strain ET 138 Δ Δ. This was achieved by adding the original  gene sequence between 2 × 1 kb HR flanks. The spacer was designed
+to target the area between the  stop codon and
+the beginning of the adjacent rho-independent transcriptional terminator.
+On the HR flanks, the region between the  stop
+codon and its rho-independent transcriptional terminator was inverted,
+avoiding the spCas9 targeting of edited cells. (A) Agarose gel electrophoresis showing the results from PCR on
+the genomic DNA of a ET 138 Δ Δ culture transformed with pWUR_Cas9sp1_hr and sequentially
+transferred to different temperatures (following the depicted temperature
+sequence) for detection of  deletion mutants
+in the culture mixture. The  deletion mutant
+band appears from the first 37 °C culturing step (lane 3) onward.
+The last 2 lanes are the negative (wild-type) and positive (Δ) controls, which correspond to 2.9 and 2.1 kb DNA fragments,
+respectively. (B) Agarose gel electrophoresis showing the resulting
+products from colony PCR on colonies transformed with pWUR_Cas9sp1_hr
+for the detection of deletion mutants. Nine out of the 10 tested colonies
+(S.C.#1 to S.C.#10) that resulted from the 3-day long editing process
+in TVMY (TVMY supplemented with xylose, glucose, and
+uracil) medium were deletion mutants. Four out of the 10 tested colonies
+(S.C.#11 to S.C.#20) that resulted from the 3-day long editing process
+in TVMY (TVMY supplemented with xylose and glucose) medium
+were deletion mutants. The last 2 lanes are the negative (wild-type)
+and positive (Δ) controls, respectively. Expanding the Toolbox: Knocking Out the Type
+I RM System To increase the potential of ET 138 as a platform
+organism for the
+production of green chemicals, we aimed to improve its transformation
+efficiency. ET 138 has a type I restriction-modification (R-M) system.
+Methylation analysis of the PacBio genome sequencing data showed the
+existence of the single motif “Cm6AGNNNNNNTGT/ACm6ANNNNNNCTG”
+with N6-methyladenine (m6A) modifications (unpublished data). Our
+attempts to transform different pNW33n-based constructs containing
+one or multiple copies of this motif were unsuccessful or gave 3-orders
+of magnitude lower transformation efficiencies compared to those with
+constructs of the same size that do not contain the aforementioned
+motif. We decided to knock out the  restriction
+gene of the  ET138 type I
+R-M system, expecting to overcome the transformation obstacle and
+further expand its genetic accessibility. For knocking out the  gene, we followed a different approach compared to
+the  deletion process to evaluate the efficiency
+of the Cas9-based counterselection editing method in the introduction
+of limited-sized modifications to the genome. Between the origin of
+replication () and the  gene of the pWUR_Cas9nt vector, we introduced
+a 1920 bp HR fragment that resulted from the fusion of two separate
+fragments: one that is composed of the 924 bp upstream of codon 212
+of the  gene (including the two first nucleotides
+of the codon) and one that is composed of the 986 bp downstream of
+codon 221 of the  gene. In this HR fragment,
+we replaced the 25 nt part between codons 212 and 221 of the  gene, including the last nucleotide of codon 212, with
+an 8 nt sequence composed of two stop codons and an EcoRV restriction
+site, generating a frame shift and facilitating the screening process
+(B). Since
+the  gene is 2952 nucleotides (984 codons) long,
+only one-fifth of it will be translated due the introduction of the
+stop codons. We also introduced a spacer in the sgRNA module for spCas9
+targeting of the unmodified genomes, completing the construction of
+the pWUR_Cas9spR_hr editing vector. ET138 Δ Δ cells
+were transformed
+with the new vector and sequentially cultured as before, gradually
+decreasing the temperature from 55 to 37 °C, with an intermediate
+transfer at 45 °C, and then increasing it back to 55 °C.
+The duration of each culturing step was within a window of 8 to 16
+h. Moreover, we used two types of selection media, LB2 and TVMY. Five transformants per medium were subjected
+to colony PCR, after which the PCR fragments were digested with EcoRV.
+All colonies from the LB2-culturing process were successfully modified
+(A), giving
+100% editing efficiency, whereas only two of the colonies from the
+TVMY process were modified, giving 40% editing efficiency (B). This is in contrast
+with the result from the  deletion process, where
+there were no modified colonies resulting from the LB2-culturing process.
+This suggests that the selection of culturing medium influences the
+efficiency of our editing system in a variable and gene-specific manner.
+Plasmid curing was performed as before, and the correct mutations
+were verified by sequencing. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00339/suppl_file/sb6b00339_si_001.pdf We confirmed the lack of a functional
+R-M system in the newly developed
+ET 138 Δ Δ Δ strain by successfully transforming the plasmid-cured
+cells with vector pG2K (). In previous attempts, we did not succeed in
+transforming this vector into other (+) ET 138
+strains as it contains the aforementioned methylation motif in its
+antibiotic resistance marker gene, the kanamycin nucleotidyltransferase
+() gene derived from . In
+this way, we added a new antibiotic resistance marker to the toolbox
+of ET 138, and we confirmed that the ET 138 Δ Δ Δ strain
+can be utilized for the expansion of the genetic parts toolbox. (A) Agarose gel electrophoresis showing the
+resulting products
+from colony PCR on ET 138 colonies transformed with pWUR_Cas9spR_hr
+for the detection of  knockout mutants from the
+3-day long editing process in LB2 medium. The 2.75 kb
+PCR fragments resulting after using genome-specific primers (lanes
+1, 3, 5, 7, 9) were digested with the EcoRV restriction enzyme. Each
+digestion mixture was loaded next to its corresponding undigested
+PCR fragment (lanes 2, 4, 6, 8, 10). All colonies evaluated were shown
+to be knockout mutant cells as the restriction digestion gave the
+expected bands of 1.1, 1.05, and 0.6 kb. (B) Agarose gel electrophoresis
+showing the resulting products from colony PCR on ET 138 colonies
+transformed with pWUR_Cas9spR_hr for the detection of  knockout mutants from the 3-day long editing process in TVMY medium. The 2.75 kb PCR fragments resulting after using
+genome-specific primers (lanes 1, 3, 5, 7, 9) were digested with the
+EcoRV restriction enzyme. Each digestion mixture was loaded next to
+its corresponding undigested PCR fragment (lanes 2, 4, 6, 8, 10).
+For the two colonies composed of knockout mutant cells (lanes 1–2
+and 3–4), the restriction digestion gives the expected bands
+of 1.1, 1.05, and 0.6 kb. For the three nonedited colonies composed
+of wild-type cells (lanes 5–6, 7–8, 9–10), the
+restriction digestion gives the expected bands of 2.15 and 0.6 kb. Metabolic Engineering Using spCas9: Knock-In of the  Gene Next, we evaluated the applicability
+of our Cas9-based system in markerless gene chromosomal integrations
+by knocking the 942 bp long genomic fragment between the start and
+stop codons of the lactate dehydrogenase () gene
+into the genome of ET 138 Δ Δ Δ. The reconstitution of
+lactate production in the resulting ET 138 Δ Δ strain would allow for efficient growth
+under anaerobic conditions, while retaining the advantages of a sporulation-
+and R-M-deficient strain. Two versions were constructed of a
+pWUR_Cas9-based vector that target the ET 138 Δ Δ Δ genome
+at the same position between the  stop codon
+and the beginning of the adjacent rho-independent transcriptional
+terminator. HR was facilitated with 1 kb flanks (pWUR_Cas9spKI_hr1)
+or 0.75 kb flanks (pWUR_Cas9spKI_hr2). For both versions, the region
+between the  stop codon and its rho-independent
+transcriptional terminator was inverted, avoiding spCas9 targeting
+(C). Wild-type  sequence was inserted in the region between the start
+and stop codons to allow it to be knocked in. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00339/suppl_file/sb6b00339_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00339/suppl_file/sb6b00339_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00339/suppl_file/sb6b00339_si_001.pdf ET138 Δ Δ Δ was transformed with the two pWUR_Cas9spKI_hr
+versions, and the transformants were sequentially cultured as described
+before, gradually decreasing the temperature from 55 to 37 °C,
+with or without an intermediate transfer step at 45 °C, and then
+increasing it back to 55 °C. Each culturing step was within a
+window of 8 to 16 h. Again, we used two types of selection media,
+LB2 and TVMY. The colony PCR results of
+the TVMY culturing processes showed that none of the tested colonies
+had the knock-in genotype. The colony PCR results of the LB2 culturing
+processes with the pWUR_Cas9spKI_hr1 transformant showed that with
+the additional culturing step at 45 °C, 4 out of the 20 tested
+colonies had the knock-in genotype (20% editing efficiency), 15 colonies
+had a mixed knock-in/wild-type genotype, and only 1 colony had the
+wild-type genotype (A). When the culturing step at 45 °C was omitted, only
+1 out of the 20 tested colonies had the knock-in genotype, 11 colonies
+had the mixed genotype, and 8 colonies had the wild-type genotype
+(B). The colony
+PCR results of the LB2 culturing processes with the pWUR_Cas9spKI_hr2
+transformant showed that with the additional culturing step at 45
+°C, 1 out of the 20 tested colonies had the knock-in genotype
+(5% editing efficiency), 7 colonies had the mixed knock-in and wild-type
+genotype, and only 1 colony had the wild-type genotype (). When the culturing step at 45 °C
+was omitted, none of the 20 tested colonies had the knock-in genotype,
+only 6 colonies had the mixed genotype, and the remaining 14 colonies
+had the wild-type genotype ().
+This was the first time that we observed colonies with a mixed genotype
+using our editing approach. The appearance of such colonies could
+be explained by relatively inefficient Cas9 targeting when the enzyme
+is loaded with a suboptimal sgRNA module, as has been described for , although the
+molecular basis for this phenomenon remains elusive. Alternative sgRNAs
+may lead to a more stringent counterselection, thereby improving the
+editing efficiency. Additionally, the difference in recombination
+efficiency at specific chromosomal sites might influence the editing
+efficiency of the tool. In a recent study
+that combined dsDNA recombineering with Cas9 counterselection, the
+efficiency of the employed system for insertions was lower than the
+efficiency for deletions, whereas longer homologous regions led to
+higher editing efficiencies. Our results
+confirm the influence of the HR template length and the importance
+of the culturing period before the induction of counterselection.
+The editing efficiency of the tool was higher when we employed the
+editing construct with the 1 kb HR flanks compared to the editing
+construct with the 0.75 kb HR flanks (20 vs 5% efficiency, respectively; ). Furthermore, we observed that a culturing
+period with an additional intermediate step at 45 °C allows for
+efficient homologous recombination and double crossover events to
+occur, leading to the appearance of the mutants for which Cas9 will
+select. This is in line with observations in () and supports
+our findings that the efficiency of using spCas9 as a counterselection
+tool is higher compared to that using spCas9 as a tool for the induction
+of the cellular HR mechanism after introduction of targeted DSDBs.
+In addition, it may be that the stress of decreasing the temperature
+increases the efficiency of the homologous recombination mechanism. Next, we attempted to cure the
+constructed  ET138 Δ Δ strain
+from the pWUR_Cas9spKI_hr1 plasmid using the sequential transferring
+approach in LB2 medium without antibiotic at 55 °C. However,
+after the usual two transfers, none of the tested colonies had lost
+the plasmid. We repeated the same sequential transferring process
+but increased the culturing temperature to 65 °C, as the pNW33n
+replicon might be less stable at elevated temperatures. After two transfers at 65 °C, 1 out of
+8 tested colonies was confirmed to be plasmid-free by PCR and antibiotic
+sensitivity, and the correct mutations were verified by sequencing.
+Plasmid curing might be simplified in the future by adding an sgRNA
+expressing module with a spacer against the editing plasmid to the
+system. The module will have to either be under
+the control of a tightly inducible promoter or cloned into a second
+expression vector and transformed into the edited cells in a second
+transformation round. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00339/suppl_file/sb6b00339_si_001.pdf Finally, evaluation of lactate production
+in the resulting  ET138 Δ Δ strain under aerobic,
+microaerobic, and anaerobic conditions
+showed a complete restoration of lactate production to wild-type levels
+(). Agarose
+gel electrophoresis showing the resulting products from
+colony PCR from the 3-day long  knock-in culturing
+processes in LB2 medium, using ET 138 Δ Δ Δ cells
+transformed with the pWUR_Cas9spKI_hr1 vector. For the colony PCR,
+genome-specific primers BG8145 and BG8146 were used with the expected
+size of the PCR fragment for the knock-in mutations being 3.2 kb (equal
+to the size of the PCR fragment for the wild-type cells). The expected
+size of the PCR fragment for the knockout (nonedited) mutants was
+2.3 kb. (A) When the 45 °C culturing step was performed, the
+process resulted in 4 out of the 20 tested colonies having the knock-in
+genotype (20% editing efficiency), 15 colonies with mixed knock-in
+and wild-type genotype, and only 1 colony with wild-type genotype.
+(B) When the 45 °C culturing step was omitted, the process resulted
+in only 1 out of the 20 tested colonies having the knock-in genotype,
+11 colonies with mixed genotype, and 8 colonies with the wild-type
+genotype. In
+this study, spCas9-based genome editing was applied for the
+first time to a moderate thermophile, establishing a gene deletion,
+a gene knockout, and a gene insertion. A major advantage of this system
+is the requirement of only one plasmid without inducible or highly
+characterized promoters to drive spCas9 and sgRNA expression. Additionally,
+the speed and efficiency of the genome editing process of ET 138 has
+been substantially improved compared to that of the previous -based counterselection system. For the three cases
+presented in this study, it took on average 1 week from transformation
+to clean deletion, knock out, or knock in (including the plasmid curing
+step), with an editing efficiency of 90% for the gene deletion, 100%
+for the gene knock out, and 20% for the gene insertion. Over
+the course of our study, we showed that spCas9 is not active  from 42 °C and above. This observation allowed
+us to develop an editing system where mutants are constructed via
+homologous recombination events at higher temperatures (≥42
+°C) before Cas9-induced counterselection takes place at 37 °C.
+The crucial factors for obtaining high editing efficiencies are giving
+sufficient time for HR at elevated temperatures before starting the
+spCas9-based counterselection, and the length of the HR flanks. Moreover,
+we hypothesize that testing different sgRNA modules may improve the
+editing efficiency of the tool. During our study, we observed gene-dependent
+differences in the number of obtained mutants when repeating the same
+process using different media. There is no obvious link between the
+editing of a specific gene and the medium used for the editing process,
+and this will be the subject of further studies. The results
+of the editing approach that we developed make our
+system potentially applicable for many interesting model or nonmodel
+organisms with an active HR mechanism and a growth temperature range
+covering 37 to ≥42 °C. It is anticipated that the approaches
+reported here will expand the range of organisms for which the powerful
+Cas9 counterselection tool can be used, thereby greatly increasing
+engineering throughput for these organisms and allowing for both their
+fundamental study and biotechnological exploitation. Bacterial Strains and Growth Conditions http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00339/suppl_file/sb6b00339_si_001.pdf Strains used
+in this study are listed in . All  strains were routinely cultured at 55
+°C unless stated otherwise. TVMY medium and LB2 medium were used
+as described previously. TVMY is TVMY supplemented with 0.5 g/L xylose, 0.5 g/L glucose, and 50
+mg/L uracil. TVMY is TVMY supplemented with 0.5 g/L xylose
+and 0.5 g/L glucose. LB2 is LB2 supplemented with 0.5
+g/L xylose and 0.5 g/L glucose. Substrates were added separately as
+50% autoclaved solutions after autoclaving the medium. Uracil was
+added as a 50 mg/mL filter sterilized solution in 1 M NaOH after autoclaving
+the medium and addition of the substrates.  strains were grown in LB medium at 37 °C. For plates, 30 g
+of agar (Difco) per liter of medium was used for  in all experiments; 15 g of agar (Difco) per
+liter of LB was used for . If
+required, chloramphenicol was added at concentrations of 25 μg/mL
+for  DH5α, 15 μg/mL
+for  TG90, and 7 μg/mL
+for . Genomic DNA Isolation,
+Transformations, Colony PCR, Sequencing,
+and Phenotypic Verification Genomic DNA from  strains was isolated using the MasterPure
+Gram positive DNA purification kit (Epicenter). Heat shock transformation
+of  strains was performed according
+to the supplier’s protocol. Transformation of  strains was performed as described previously. Plasmids for transforming  were extracted from  via maxiprep isolation (Genomed Jetstar 2.0). For transformation
+of  strains, 1 μg DNA
+was used unless it is stated otherwise in the plasmid construction
+sections. Potential  ET138 Δ Δ Δ colonies were randomly selected and subjected to colony
+PCR using the InstaGene Matrix (Bio-Rad), Taq DNA polymerase (NEB),
+and genome-specific primers BG6420 and BG6421. Potential  ET138 Δ Δ Δ and  ET138 Δ Δ knock-in colonies were randomly selected and subjected
+to colony PCR using the Phire Plant direct PCR kit (ThermoFisher Scientific)
+and genome-specific primers BG7881, BG7882 and BG8142, BG8143, respectively.
+Purification of PCR products was performed using the Zymoclean gel
+DNA recovery kit, after running them on 0.8% agarose gels. The DNA
+fragments were subsequently sent for sequencing to GATC Biotech. The
+DNA fragments from the potential  ET138 Δ Δ Δ colonies were subjected to EcoRV (NEB) restriction
+digestion. To evaluate the 5-FOA sensitivity and uracil auxotrophy
+of  ET138 Δ Δ Δ sequence confirmed strains, cells were plated on TVMY medium with
+30 g/L agar and the following additions: (a) 2 g/L 5-FOA and 50 mg/L
+uracil, (b) 2 g/L 5-FOA and no uracil, or (c) no 5-FOA and no uracil.
+To evaluate lactate production from  ET138 Δ Δ knock-in cultures, sequence verified cells were grown overnight
+in TVMY medium containing 10 g/L glucose and subsequently transferred
+to the same medium and grown for 24 h, after which -lactate
+specific measurements were performed using MegaZyme K-LATE kit. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00339/suppl_file/sb6b00339_si_001.pdf Plasmids and primers used in this
+study are shown in . Q5
+polymerase (NEB) was used for all PCR reactions for cloning purposes.
+NEB T4 ligase was used for assembling the pWUR_lacZ, pWUR_Cas9nt,
+pWUR_Cas9nt_hr, pWUR_Cas9sp1, pWUR_Cas9sp1_hr, pWUR_Cas9sp2, and pWUR_Cas9sp3
+vectors. The NEBuilder HiFi DNA assembly master mix was used for assembling
+the pWUR_Cas9spR_hr, pWUR_Cas9spKI_hr1, and pWUR_Cas9spKI_hr2 constructs.
+All restriction enzymes were obtained from NEB. Purification of PCR
+products was performed after running them on a 0.8% agarose gel using
+the Zymoclean gel DNA recovery kit. To test the P promoter, a DNA fragment composed of P and the  gene was synthesized
+by GeneArt and inserted into pNW33n using digestion with BspHI and
+KpnI and subsequent ligation and cloning into  DH5α, creating plasmid pWUR_lacZ. The P sequence was used exactly as originally described, using the sequence until the start codon of
+the corresponding gene in the original host. For the construction
+of the basic, modular pWUR_Cas9nt construct,
+a synthetic gene string was synthesized by GeneArt containing the
+elements depicted in B except the P promoter. P was amplified from pWUR_lacZ using primers
+BG6538 and BG6541. Primer BG6541 replaces the final 6 bp of P with an XbaI site, changing the final
+−1 to −6 sequence from GTAAGA to TCTAGA and keeping
+the total length the same as that in the original promoter. Primer
+BG6538 adds a BspHI site to the start of P. The entire synthesized spCas9 module without a promoter for
+spCas9 was amplified using primers BG6542 and BG6543, keeping the
+XbaI and HindIII sites already present in the module. Subsequently,
+vector pNW33n was digested with BspHI and HindIII, the P PCR product was digested with XbaI and BspHI,
+and the spCas9 module PCR product was digested with XbaI and HindIII.
+The three elements were ligated in a three-point ligation and cloned
+into  TG90. The plasmid was
+extracted, and the correct sequence was verified by sequencing, creating
+plasmid pWUR_Cas9nt (B). For transformation of this construct to  strains, 0.1 μg of DNA was used
+rather than the standard 1 μg in order to more precisely determine
+the transformation efficiencies together with the targeting constructs
+described in the next section. The resulting CFUs were around 3000
+and 200 per μg of DNA for the Δ Δ and wild-type strains, respectively. Control transformations
+with empty vector pNW33n yielded CFUs of 10 000 and 1800, respectively. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00339/suppl_file/sb6b00339_si_001.pdf To insert the three different targeting spacers into pWUR_Cas9nt
+(which contains a nontargeting spacer), three sets of oligos were
+annealed to create the three spacers, after which the annealed spacers
+were inserted into the construct as follows. Oligo sets were BG6017
+and BG6021 for spacer 1, BG6018 and BG6022 for spacer 2, BG6019 and
+BG6023 for spacer 3. Each set was annealed by adding 5 μL of
+10 mM oligo sets together with 10 μL of NEB buffer 2.1 and 74
+μL of MQ water. Mixtures were heated to 94 °C for 5 min
+and gradually cooled to 37 °C at 0.03 °C/s using a PCR machine.
+Annealed oligos and plasmid pWUR_Cas9nt were digested with BspEI and
+BsmBI (NEB). First, BspEI digestion was performed at 37 °C for
+15 min, after which BsmBI was added and the mixture was further incubated
+at 55 °C for 15 min. After gel purification of the digested products,
+ligation was performed using NEB T4 ligase, and mixtures were transformed
+into  TG90. All constructs were
+verified by sequencing, and all were correct except spacer 2, which
+was missing 7 nt from P that drives
+spacer expression (). Constructs
+were named pWUR_Cas9sp1 to pWUR_Cas9sp3 according to their corresponding
+spacer. For transformation of this construct into  strains, 0.1 μg of DNA was used rather
+than the standard 1 μg in order to more precisely determine
+the transformation efficiencies. The resulting CFUs were 700–3300
+and 9–300 per μg of DNA for the Δ Δ and wild-type strains, respectively.
+Control transformations with empty vector pNW33n yielded CFUs of 10 000
+and 1800, respectively. To insert the  flanks
+into the pWUR_Cas9nt
+and pWUR_Cas9sp1constructs, the already fused  flanks were amplified from a previous plasmid in which the flanks
+were added as follows: flanks were cloned from genomic DNA of ET 138
+using primers BG 5798, BG5799 (upstream, 958 bp) and BG580, BG5801
+(downstream, 979 bp), introducing SalI and XbaI restriction sites.
+The flanks were fused in an overlap extension PCR using primers BG5798
+and BG5801, making use of the complementary overhangs in primers BG5799
+and BG5800. Subsequently, the flanks and pNW33n were digested with
+SalI and XbaI, ligated, and transformed into  DH5α. To amplify the flanks for insertion into spCas9-editing
+plasmids, primers BG6850 and BG6849 were used, which both introduce
+a BspHI site. The pWUR_Cas9nt and pWUR_Cas9sp1 plasmids and the amplified  flanks were digested with BspHI, followed by alkaline
+phosphatase treatment of the vectors (Thermo Scientific), ligated,
+and transformed into  TG90.
+Since only one restriction site was used, the flanks could have been
+inserted in both orientations. For both constructs, multiple colonies
+were verified by sequencing, and for all constructs, the same flank
+orientation was selected and used for future experiments, namely,
+the downstream flank on the P side.
+The resulting plasmids were named pWUR_Cas9nt_hr and pWUR_Cas9sp1_hr.
+Transformation of these constructs into  Δ Δ using
+0.1 μg of DNA like that for the nonflanked versions did not
+yield any colonies, most likely because there is a RM recognition
+site present in the flanking regions (data not shown). Transformations
+performed using 5–8 μg of DNA resulted in CFUs of around
+10 per μg of DNA (compared to around 700–3300 for the
+nonflanked versions and 10 000 for control transformations
+with empty vector pNW33n). A four-fragment NEBuilder HiFi DNA
+assembly was designed and executed
+for the construction of the -modifying plasmid
+pWUR_Cas9spR_hr. The backbone of the vector was PCR amplified from
+pWUR_Cas9sp1 using primers BG7836 and BG7837. The HR fragment upstream
+of the targeted site in the  gene was PCR amplified
+from the  ET 138 genome using
+primers BG7838 and BG7839. The HR fragment downstream of the targeted
+site in the  gene was PCR amplified from the  ET 138 genome using primers BG7840 and
+BG7841. The  and
+sgRNA containing fragment was PCR amplified from the pWUR_Cas9sp1
+vector using primers BG7842 and BG7843. Two 4-fragment NEBuilder
+HiFi DNA assemblies were designed and
+executed for the construction of the -restoration
+plasmids pWUR_Cas9spKI_hr1 and pWUR_Cas9spKI_hr2. The backbone of
+both vectors was PCR amplified from the pWUR_Cas9sp1 vector using
+primers BG8134 and BG7837. The HR fragment upstream of and including
+the  gene was PCR amplified from the  ET 138 genome using primers BG8135 and
+BG8137 for the pWUR_Cas9spKI_hr1 vector and primers BG8135 and BG8136
+for the pWUR_Cas9spKI_hr2 vector. The HR fragment downstream of the  gene was PCR amplified from the  ET 138 genome using primers BG8138 and BG8139 for the pWUR_Cas9spKI_hr1
+vector and primers BG8138 and BG8140 for the pWUR_Cas9spKI_hr2 vector.
+The  and sgRNA
+containing fragment of both vectors was PCR amplified from the pWUR_Cas9sp1
+vector using primers BG8141 and BG7842. RNA isolation was performed
+by the phenol extraction based on van Hijum et al. Overnight 10 mL cultures were centrifuged at 4 °C
+and 4816 for 15 min and immediately used for RNA
+isolation. After removal of the medium, cells were resuspended in
+0.5 mL of ice-cold TE buffer (pH 8.0) and kept on ice. All samples
+were divided into two 2 mL screw-capped tubes containing 0.5 g of
+zirconium beads, 30 μL of 10% SDS, 30 μL of 3 M sodium
+acetate (pH 5.2), and 500 μL of Roti-Phenol (pH 4.5–5.0,
+Carl Roth GmbH). Cells were disrupted using a FastPrep-24 apparatus
+(MP Biomedicals) at 5500 rpm for 45 s and centrifuged at 4 °C
+and 10 000 rpm for 5 min. 400 μL of the water phase from
+each tube was transferred to a new tube, to which 400 μL of
+chloroform–isoamyl alcohol (Carl Roth GmbH) was added, after
+which samples were centrifuged at 4 °C and 18 400 for 3 min. 300 μL of the aqueous phase was transferred
+to a new tube and mixed with 300 μL of the lysis buffer from
+the high pure RNA isolation kit (Roche). Subsequently, the rest of
+the procedure from this kit was performed according to the manufacturer’s
+protocol, except for the DNase incubation step, which was performed
+for 45 min. Integrity and concentration of the isolated RNA were checked
+on a NanoDrop 1000. rt-PCR was performed using SuperScript III
+reverse transcriptase kit (Invitrogen) according to the manufacturer’s
+protocol. For synthesis of the first-strand cDNA, 2 μg of RNA
+and 200 ng of random primers were used. After cDNA synthesis, the
+products were used as a template for PCR using spCas9-specific forward
+and reverse primers BG6237 and BG6232, resulting in a 255 bp product.
+Products were visualized on a 2% agarose gel that had been run for
+20 min..
