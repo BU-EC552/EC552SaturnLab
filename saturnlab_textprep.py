@@ -1,11 +1,16 @@
 # this is a python script that holds functions for parsing and managing text in NLP uses
 from Bio import Entrez
+from nltk.tokenize import RegexpTokenizer
+from nltk.corpus import stopwords
+from nltk.stem.wordnet import WordNetLemmatizer
+from gensim.models import Phrases
+from gensim.corpora import Dictionary
+import numpy as np
 
 def bow_corpus(original_corpus):
     docs = list(original_corpus)
     # Tokenize the documents.
     # Split the documents into tokens.
-    from nltk.tokenize import RegexpTokenizer
     tokenizer = RegexpTokenizer(r'\w+')
     for idx in range(len(docs)):
         docs[idx] = docs[idx].lower()  # Convert to lowercase.
@@ -16,16 +21,13 @@ def bow_corpus(original_corpus):
     # Remove words that are only one character.
     docs = [[token for token in doc if len(token) > 2] for doc in docs]
     # Remove stopwords 
-    from nltk.corpus import stopwords
     stop_words = stopwords.words('english') + ['fig', 'supplementary']
     docs = [[token for token in doc if token not in stop_words] for doc in docs]
     # Lemmatize the documents.
-    from nltk.stem.wordnet import WordNetLemmatizer
     lemmatizer = WordNetLemmatizer()
     docs = [[lemmatizer.lemmatize(token) for token in doc] for doc in docs]
     
     # Compute bigrams.
-    from gensim.models import Phrases
     # Add bigrams and trigrams to docs (only ones that appear 20 times or more).
     bigram = Phrases(docs, min_count=20)
     for idx in range(len(docs)):
@@ -34,11 +36,10 @@ def bow_corpus(original_corpus):
                 # Token is a bigram, add to document.
                 docs[idx].append(token)
 
-    from gensim.corpora import Dictionary
+    
     # Remove rare and common tokens.
     # Create a dictionary representation of the documents.
     dictionary = Dictionary(docs)
-
     # Filter out words that occur less than 20 documents, or more than 50% of the documents.
     dictionary.filter_extremes(no_below=2, no_above=0.5)
     # Bag-of-words representation of the documents.
@@ -46,10 +47,6 @@ def bow_corpus(original_corpus):
     return corpus, dictionary
 
 def bow_string(doc):
-    from nltk.tokenize import RegexpTokenizer
-    from nltk.corpus import stopwords
-    from gensim.corpora import Dictionary
-    import numpy as np
     doc = doc.lower()
     # tokenize string
     tokenizer = RegexpTokenizer(r'\w+')
@@ -81,8 +78,6 @@ def search(query):
 def parts_prep(corpus):
     docs = list(corpus)
     # Tokenize the documents.
-    from nltk.tokenize import RegexpTokenizer
-    from nltk.corpus import stopwords
     stop_words = stopwords.words('english') + ['fig', 'supplementary']
     # Split the documents into tokens.
     tokenizer = RegexpTokenizer(r'\w+')
@@ -96,7 +91,6 @@ def parts_prep(corpus):
     # Remove stop words
     docs = [[token for token in doc if token not in stop_words] for doc in docs]
     # Lemmatize the documents.
-    from nltk.stem.wordnet import WordNetLemmatizer
     lemmatizer = WordNetLemmatizer()
     docs = [[lemmatizer.lemmatize(token) for token in doc] for doc in docs]
     filtered_corpus = [" ".join(doc) for doc in docs]
