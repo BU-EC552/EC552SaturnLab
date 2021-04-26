@@ -78,8 +78,8 @@ def search(query):
     return results
 
 # prepare corpus for parts filtering and selection
-def parts_prep(practice_corpus):
-    docs = list(practice_corpus)
+def parts_prep(corpus):
+    docs = list(corpus)
     # Tokenize the documents.
     from nltk.tokenize import RegexpTokenizer
     from nltk.corpus import stopwords
@@ -101,3 +101,4 @@ def parts_prep(practice_corpus):
     docs = [[lemmatizer.lemmatize(token) for token in doc] for doc in docs]
     filtered_corpus = [" ".join(doc) for doc in docs]
     return filtered_corpus
+
