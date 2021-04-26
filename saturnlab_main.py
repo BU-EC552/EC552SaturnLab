@@ -144,7 +144,7 @@ def saturnlab_extract(input_text):
         # print(json.dumps(response_concept, indent=2))
 
 
-    return stub, entity_responses, concept_responses
+    return papers_ranking, stub, entity_responses, concept_responses
 
 
 
