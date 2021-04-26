@@ -50,6 +50,7 @@ kwds = {}
 original_corpus = {}
 print("Creating dataset from text data...")
 # code to convert ini_dict to flattened dictionary
+print(text_data.keys())
 for i, paper in enumerate(text_data['pmc-articleset']['article']):
     try:
         pmid = paper['front']['article-meta']['article-id'][0]["#text"]
@@ -75,10 +76,11 @@ paper_mapping = {}
 for i, text in enumerate(bag_of_words_corpus):
     paper_mapping[list(original_corpus.keys())[i]] = lda[text]
 
-for key, value in paper_mapping.items():
-    print(key)
-    print(value)
-
+# for key, value in paper_mapping.items():
+#     print(key)
+#     print(value)
+for keys, values in paper_mapping.items():
+    
 
 
 
