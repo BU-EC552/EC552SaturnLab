@@ -45,80 +45,6 @@ class PicButton(QAbstractButton):
     def sizeHint(self):
         return QSize(200, 200)
 
-def bow_corpus(original_corpus):
-    docs = list(original_corpus)
-    # Tokenize the documents.
-    
-    # Split the documents into tokens.
-    tokenizer = RegexpTokenizer(r'\w+')
-    for idx in range(len(docs)):
-        docs[idx] = docs[idx].lower()  # Convert to lowercase.
-        docs[idx] = tokenizer.tokenize(docs[idx])  # Split into words.
-
-    # Remove numbers, but not words that contain numbers.
-    docs = [[token for token in doc if not token.isnumeric()] for doc in docs]
-
-    # Remove words that are only one character.
-    docs = [[token for token in doc if len(token) > 2] for doc in docs]
-
-    # Lemmatize the documents.
-
-    lemmatizer = WordNetLemmatizer()
-    docs = [[lemmatizer.lemmatize(token) for token in doc] for doc in docs]
-    
-    # Compute bigrams.
-    from gensim.models import Phrases
-
-    # Add bigrams and trigrams to docs (only ones that appear 20 times or more).
-    bigram = Phrases(docs, min_count=20)
-    for idx in range(len(docs)):
-        for token in bigram[docs[idx]]:
-            if '_' in token:
-                # Token is a bigram, add to document.
-                docs[idx].append(token)
-
-    # Remove rare and common tokens.
-    # Create a dictionary representation of the documents.
-    dictionary = Dictionary(docs)
-
-    # Filter out words that occur less than 20 documents, or more than 50% of the documents.
-    dictionary.filter_extremes(no_below=2, no_above=0.5)
-    print(docs[0])
-    # Bag-of-words representation of the documents.
-    corpus = [dictionary.doc2bow(doc) for doc in docs]
-    return corpus, dictionary
-
-def bow_string(doc):
-    from nltk.tokenize import RegexpTokenizer
-    from nltk.corpus import stopwords
-    from gensim.corpora import Dictionary
-    import numpy as np
-    doc = doc.lower()
-    # tokenize string
-    tokenizer = RegexpTokenizer(r'\w+')
-    doc = doc.lower()  # Convert to lowercase.
-    doc = tokenizer.tokenize(doc)  # Split into words.
-    # remove stopwords
-    stop_words = stopwords.words('english')
-    user_terms = [token for token in doc if token not in stop_words]
-    # convert terms into word-order agnostic 2D list
-    print(user_terms)
-    user_array = np.array(user_terms)
-    user_corpus = [np.roll(user_array, i) for i in range(len(user_terms))]
-    user_corpus = [list(arr) for arr in user_corpus]
-    print(user_corpus)
-    # create dictionary and bag-of-words
-    dictionary = Dictionary(user_corpus)
-    text_corpus = [dictionary.doc2bow(doc) for doc in user_corpus]
-    return text_corpus
-
-    # Pass user string input as search term to LDA model
-def user_search(input_text):
-    lda = LdaModel.load('Models/Model0/model1.gensim')
-    user_terms_corpus = bow_string(input_text)
-    return lda.print_topics(num_words=5)
-
-
 # Thread communication signals
 class WorkerSignals(QObject):
     '''
@@ -139,7 +65,7 @@ class WorkerSignals(QObject):
 
     # signal recieving any object type from the executed function
     # in our case this will be a JSON object
-    result = pyqtSignal(object)
+    result = pyqtSignal(object,object)
 
 # Search Thread
 class Worker(QRunnable):
@@ -166,10 +92,11 @@ class Worker(QRunnable):
         print("Thread start") 
         # integrate results with pubmed (query using user input from search box)
         query = self.args[0]
-        query_result = user_search(query)
-        
+        #query_result = user_search(query)
+        query_result0 = query + "test0"
+        query_result1 = query + "test1"
         time.sleep(5)
-        self.signals.result.emit(query_result)
+        self.signals.result.emit(query_result0, query_result1)
 
         print("Thread complete")
 
@@ -236,10 +163,11 @@ class mainWindow(QMainWindow):
         self.textbox = QLineEdit(self)
         self.textbox.resize(tb_w,tb_h)
         # install event filter
-        self.textbox.enterEvent = self.mouseEnterSearch
-        self.textbox.leaveEvent = self.mouseLeaveSearch
+        #self.textbox.enterEvent = self.mouseEnterSearch
+        #self.textbox.leaveEvent = self.mouseLeaveSearch
+        #self.textbox.setStyleSheet("border-radius: 5px")
         self.textbox.setStyleSheet(":hover {border: 2px solid #006080}")
-        #self.textbox.setStyleSheet("{border-image: url(:/testSearch-trimmy.png)}")
+  
         self.grid.addWidget(self.textbox, 0,0)
 
         # create search button next to the search bar
@@ -261,9 +189,17 @@ class mainWindow(QMainWindow):
         
 
         # make list view below search bar
-        # the search results and the loading animation are going to populate a stacked layour
-        #self.sr_stack = QStackedLayout()
-        #self.grid.addWidget(self.sr_stack)
+        # the search results and the loading animation are going to populate a stacked layout
+        self.resultWidget = QWidget()
+        self.sr_stack = QStackedLayout()
+        self.resultWidget.setLayout(self.sr_stack)
+        self.grid.addWidget(self.resultWidget,1,0)
+        
+        # create lower half screen with two windows
+        self.lowerHalfWidget = QWidget()
+        self.twoBox = QHBoxLayout()
+        self.lowerHalfWidget.setLayout(self.twoBox)
+        
         # search results constraints
         sr_dis = 120
         sr_w = 100
@@ -271,22 +207,23 @@ class mainWindow(QMainWindow):
         self.searchResults = QListWidget(self)
         #self.searchResults.move(tb_x, tb_y + tb_h + sr_dis)
         self.searchResults.insertItem(0, "Best Paper Ever")
-        self.grid.addWidget(self.searchResults, 2,0)
+        self.twoBox.addWidget(self.searchResults)
         self.searchResults.resize(sr_w,sr_h)
 
         # make a large label to the write of the list view
         self.paperView = QLabel("Display Paper", self)
-        self.paperView.resize = (sr_w * 2, sr_h * 2);
-        self.grid.addWidget(self.paperView, 2,2)
+        #self.paperView.resize = (sr_w * 2, sr_h * 2)
+        self.twoBox.addWidget(self.paperView)
 
         # make a label to display the loading animation
-        self.animateLabel = QLabel(None, self);
-        self.grid.addWidget(self.animateLabel, 2,1)
-
+        self.animateLabel = QLabel(None,self)
         # loading animation
         self.movie = QMovie("LoadingAnimation.gif")
         self.animateLabel.setMovie(self.movie)
 
+        self.sr_stack.addWidget(self.animateLabel)
+        self.sr_stack.addWidget(self.lowerHalfWidget)
+        self.sr_stack.setCurrentIndex(0)
 
         self.show()
 
@@ -314,14 +251,21 @@ class mainWindow(QMainWindow):
 
     # Don't need slots for local main functions that are called
     # populate list view
-    def display_results(self, results):
-        QMessageBox.question(self, 'Search Results', "From Thread: " + str(results), QMessageBox.Ok, QMessageBox.Ok)
+    def display_results(self, r1, r2):
+        # stop animation and change view 
+        self.stop_loading()
+        self.sr_stack.setCurrentIndex(1)
+        print(r1)
+        print(r2)
         # loop and print json dictionary
+
 
 
     @pyqtSlot()
     def search_click(self):
         # start thread search (send query to worker thread)
+        self.sr_stack.setCurrentIndex(0)
+        self.start_loading()
         query = self.textbox.text()
         worker = Worker(query)
         # connect signals in worker to display_result function in main
@@ -344,8 +288,9 @@ class mainWindow(QMainWindow):
         # change index of stacked layout
         self.stack.setCurrentIndex(1)
 
-        # change index of nested stacked layout
-        
+        # set nested stack to movie stack index
+        self.sr_stack.setCurrentIndex(0)
+
         # start animation
         self.start_loading()
 
