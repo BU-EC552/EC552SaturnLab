@@ -1,0 +1,593 @@
+As the model
+organism for eukaryotic
+green algae and plants,  has been widely studied over recent decades, as summarized in ref (). Its fully sequenced haploid genome offers great benefits in establishing
+techniques for nuclear transformation and
+electroporation, as well as genome editing
+techniques such as the CRISPR/Cas9 system. Special
+strains that are even easier to transform are also available, for
+example, the CW15 strain with a reduced cell wall. Nevertheless, transformation, and specific gene targeting
+techniques in particular, still need to be further optimized in order
+to obtain an efficient platform for creating mutants that can be applied
+to other algae and plant species. The recent confirmation of
+the transformation of  using ribonucleoproteins of Cas9 and coupled
+single-guide RNA (sgRNA) opened the way for the production of gene
+knockout mutants and, in some cases, the knock-in of foreign DNA delivered
+in specific sequences (compare ). The latter was recently confirmed as
+enabling unspecific knock-ins  nonhomologous end-joining
+(NHEJ), which displayed the disadvantage of sequence changes often
+observed during DNA integration (C,E) which, together with low transformation
+efficiency, makes identification of specific genotypes problematic
+and requiring extensive sequencing procedures. Therefore, specific
+knock-ins caused by HR (F–I), with a high probability of complete and sequence-specific
+DNA integration, display great potential in altering gene structures
+and therefore altering protein sequences, to implement protein tagging
+systems, for example, or to replace genes
+with copies containing single point mutations. Significantly, such
+specific knock-ins created through the HR pathway (F), that is, replacing a target
+sequence using homologous flanking regions, only appear naturally
+at very low frequencies in ; instead, random DNA integration is dominant and mediated by NHEJ. Inducing DNA double-strand breaks (DSB) using
+the Cas9 nuclease at specific sequences and providing homologous repair
+templates were shown to increase the probability of specific knock-ins
+in various species. HR activity is often suppressed
+by the NHEJ pathway in eukaryotes and
+is only present in certain stages of the eukaryotic cell cycle, that is, in the late DNA synthesis phase (S
+phase) and early mitotic phase (M phase). In addition, HR activity
+is well-known from the recombination of parental DNA in meiosis. Various attempts to improve HR efficiency in microalgae as well
+as in other species have been reported in recent years, including,
+for example, by interfering with the NHEJ-specific DNA-Ligase IV, inducing DSBs, or taking advantage of synchronized cells in order
+to access HR specific stages of the cell cycle for transformation,
+for example, using a zinc-finger nuclease. However, the level of HR efficiency so far obtained is still lower
+than that required to make these procedures part of the daily routine
+of the genetic modification of . Therefore, a more profound synchronization of cells in a culture
+during the eukaryotic cell cycle stages at the same time display a
+promising advantage to optimize genome editing in  by exploiting the differentially present DNA integration mechanisms
+during the cell cycle and though could serve as a model system for
+similar strategies in other algae species. It was our hypothesis that
+a relaxed chromatin structure, present during the interphase in all
+synchronized cells of  before entering
+the mitotic prophase with associated chromatin condensation, could enhance DNA integration. Moreover, such
+chromatin state is expected to offer a more accessible target for
+the Cas9 nuclease in order to introduce a DSB for repair by NHEJ or
+HR. The latter mechanism, which could be displayed at a specific cell
+cycle stage, could lead to a specific knock-in of a transformed DNA
+molecule containing homologous flanking regions to a defined target
+site (F). Cell synchronization depends on light and temperature (12 h of
+light at 28 °C and 12 h of darkness at 18 °C) and was shown
+to be obtained during short-term cultivation, leading to one cell division per night (M phase) and cell growth
+during the day (interphase) in . Moreover, depending on specific growth conditions,  can even undergo multiple cell divisions consisting of S and M phases including chromatin decondensation. Further, cells enter the interphase again starting
+with the G1 phase that can last for several hours and includes an extended decondensed chromatin structure.
+Between S and M phase, eukaryotes generally exhibit a second growth
+phase G2, that is either not present or difficult to detect in () In order to reach
+optimal cell synchronization, long-term cultivation in such conditions was therefore chosen to investigate the possibility
+of maximizing genome editing (GE) efficiency by accessing each stage
+of the cell cycle for transformation and so define specific properties
+for DNA integration depending on NHEJ which is dominant in the G1
+phase in eukaryotes and/or HR, that is
+present in S and early M phase. Determining the transformation efficiency
+(obtained clones/used ng DNA for transformation/transformed cells)
+at certain stages of the cell cycle, using either nonhomologous or
+homologous transformation constructs, should therefore provide information
+about the ongoing DNA repair mechanisms (NHEJ/HR), while target sequence
+analysis could confirm the occurrence of specific knock-ins. For the prompt detection of transformation events, the gene (,,) was
+chosen as the target. The associated protein is involved in the assembly
+of the light-harvesting system in the thylakoid membranes. When absent
+due to a knockout, mutants display a pale green phenotype that is
+easily detected by the naked eye on plates during growth after transformation.
+This approach made it possible for the knockout frequency to be quickly
+determined by counting the pale green colonies as compared to the
+native green ones, created by random mutations. Interestingly, the
+knockout frequency of  was very
+low in earlier experiments (0.5–1%) compared to knockouts of
+other target genes, for example, the chlorophyllide-a oxygenase (, ∼20%, data not shown), which also leads to a
+pale phenotype, though less pronounced. Nevertheless, analyzing the
+low knockout frequency of the  gene offers
+the advantage of showing the full effect of an optimized GE frequency,
+avoiding saturation. To enable specific recombination events by HR
+at the  locus, a construct with 2 kb flanking
+regions surrounding the sgRNA guided target sequence was created.
+Large flanking regions were previously shown to enhance HR events
+in () and in other microalgae, increasing
+the probability of such events. Schematic overview of single guide RNA (sgRNA), guided
+Cas9 introduced
+DNA double-strand breaks (DSB), and possible DNA repair pathways in
+eukaryotes. Repair mechanisms include nonhomologous end joining (NHEJ)
+and homologous recombination (HR), the possible outcomes of which
+depend on the provision of DNA repair and the respective active repair
+mechanism. In the uppermost part, the selected exemplary nuclear (gDNA)
+target sequence (t) and 5′ and 3′ flanking regions (5F,
+3F) are depicted. Using sgRNA-guided Cas9, a DSB can be introduced
+in the target region, but the process is not entirely predictable.
+As long as a nonhomologous repair template confers antibiotic resistance
+( cassette), an active NHEJ pathway can lead
+to several results: (A) target sequence repair with error-prone sequence
+modifications, (B) insertion of random (r) sequences, (C) insertion
+of DNA clockwise, and anticlockwise in (D), and (E) insertion of truncated
+repair DNA. As a consequence, there are likely to be remnants of the
+chosen target sequence. In contrast, the provision of homologous repair
+DNA containing the flanking regions can lead to different results
+in an active HR pathway: the most desirable outcome is shown in (F),
+that is, the sequence-specific replacement of the target sequence
+with . Other options are multiple insertions
+of  (G), inverted insertions (H) and deletions
+(I). CW15 Cell Synchronization under
+Long-Term Cultivation As reported by ref (), cell synchronization
+of  can be achieved by applying a temperature
+of 28 °C during the light phase (resulting in cell growth) and
+18 °C in the dark phase (leading to an exact doubling of cell
+numbers). We observed the growth behavior of CW15 in similar light-dark
+and warm-cool cycles, as carried out by ref (), in a multicultivator
+system that measured the optical density over several days (not shown).
+Interestingly, under these growth conditions (12 h light at 28 °C
+and 12 h darkness at 18 °C), we observed a change in growth behavior
+during prolonged cultivation, leading to a higher daily cell number
+than expected, if two daughter cells were being generated by each
+mother cell. In order to further characterize such growth behavior,
+a batch culture of CW15 was maintained under these conditions and
+after 3 to 4 days of growth, cells were used to inoculate a new culture,
+in order to achieve a long-term adaptation (2 weeks of preculturing
+with ongoing cultivation). Following a subsequent inoculation, the
+cell number was determined continuously using a cell counter (A, B). As expected, a pretty constant
+cell number was measured during
+the light phases (A), but a significant cell number increase was observed during
+each dark phase. In addition to the previous report in which the cultivation was short-term, we saw higher
+cell division rates after long-term cultivation with approximately
+2 cell divisions during each dark phase, as previously described by to be possible in . On the third day after inoculation in particular (B), the expected
+synchronization
+of the culture could be observed. After 3 h of light, cell division
+stopped and the cell number remained constant for about 6 h before
+cell division resumed. In the following 4.5 h, the cell number doubled,
+from 3.57 × 10 cells/mL to 6.97 × 10 cells/mL (a factor of 1.95), implying synchronized cell division
+was underway in the culture. A second cell division occurred during
+this dark phase, resulting in 12.4 × 10 cells/mL
+the next day (a factor of 1.78). On the basis of general knowledge
+of the eukaryotic cell cycle, we could assume that the two major phases
+(interphase and M phase, B) were underway in the vast majority of the CW15 cells
+at different points of time during this cultivation procedure. Due
+to the occurrence of two subsequent cell divisions in the dark phase,
+a second interphase (though shorter) occurred, as described by ref (). This shorter interphase
+was not examined further and so is not displayed in the M phase in B. Growth curves
+of synchronized  CW15
+cultures. The number of cells of  CW15
+grown at 28 °C during the light phase (12 h, 200 μmol photons
+m s) and at 18 °C (12
+h) during the dark phase (as indicated by bars) was determined using
+a cell counter after 2 weeks of preculturing under the same conditions.
+Each data point represents an average of three technical replicates
+that were each counted twice. (A) Overview of cell number during growth
+for 4 days. (B) Enlarged view of the curve after 3 days of growth.
+Assumed cell cycle phases are shown as bars. A one-sided  test was performed, and the statistical confidence level is shown
+in relation to the previous data point as two asterisks for  < 0.01, three asterisks for  <
+0.001, while a hash represents insignificant values of  > 0.05. Determination
+of Transformation Efficiency in Synchronized  CW15 Cultures Using CW15 synchronized
+cultures made it possible to investigate the effect on transformation
+efficiency and the occurrence of different DNA repair mechanisms (NHEJ/HR)
+by using a nonhomologous (pHyg3, ) or homologous linearized transformation
+construct (HCP, containing homologous flanking regions of , ) at different time points during cultivation. Random DNA
+integration by NHEJ was therefore expected to lead to hygromycin-resistant,
+normal green colonies, whereas HR-mediated recombination events at  should generate pale green clones. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00390/suppl_file/sb0c00390_si_001.pdf First, we defined an optimized transformation protocol
+aimed at
+minimizing false positive clones and simplifying the procedure based
+on. The final optimized protocol is described
+in detail in the  section (see also ) and includes the reduction of materials,
+working time and a more stringent selection using a higher hygromycin
+concentration. Once optimized conditions on synchronized CW15 had
+been established, the analysis of transformations at different time
+points on the third day of cultivation with respective constructs
+(A) displayed
+a strong enhancement of the transformation efficiency (TE). Compared to the TE of unsynchronized cells, the TE using synchronized
+cells and pHyg3 remained rather low during the first hours of illumination
+(around 10 clones/ng DNA/cells), but was drastically
+enhanced to a maximum at +4 h of illumination (+1800%). In the following
+hours, TE decreased to a pronounced minimum at +8 h, but increased
+again at the end of illumination period to around 5 × 10 clones/ng DNA/cells. TE using HCP displayed a similar
+pattern, but interestingly reached a maximum at +6 h (∼10 clones/ng DNA/cells), although less pronounced compared
+to that for pHyg3. No pale colonies could be found after all those
+transformations, confirming the aforementioned inefficiency of the
+HR pathway in . Nevertheless, the different
+maxima of TE using pHyg3 and HCP point to the recognition by the cell
+of homologous foreign DNA, which cannot be used for HR-mediated recombination
+in this physiological state, probably due to missing DNA DSBs in the
+target sequence  and/or an inactive HR pathway
+caused by a lack of necessary proteins. By combining the TE
+values of synchronized CW15 cells with the
+cell number on day 3 after inoculation (B), it was possible to associate the defined
+cell cycle stages based on TE tendency. As with the G1 phase, NHEJ
+is the dominant DNA repair pathway, reflected in the maximal TE using
+pHyg3 at +4 h of illumination. The following minimum of TE at +8 h
+can be explained by cells entering the S phase, in which DNA integration
+must be avoided in order to protect the karyome from the random rearrangement
+of the newly synthesized DNA. Nevertheless, the possibility that HR
+could be active at this stage was further investigated. Before entering
+the M phase, eukaryotic cells undergo a shorter G2 phase, although
+not described by the literature for , which we associated with around
++9 h after illumination. Cells then re-enter the M phase at around
++10 h of light and begin to divide. HR activity was therefore expected
+to be present during the last hours of illumination in order to enable
+sequence-specific DNA repair to take place before cell division. These
+results strongly suggest the need for the Cas9 nuclease to introduce
+DNA DSBs enabling recombination events. Overview of used transformation
+constructs and the target locus
+of  depicted as true-to-scale schematic representations
+of different elements. (Top) The standard transformation vector pHyg3
+for  contains the antibiotic resistance
+cassette, consisting of the promoter (p) of the β-Tubulin gene,
+the hygromycin resistance gene  and the 3′
+UTR (3) of the RubisCO small subunit 2 gene. (Middle) The knock-in
+construct HCP (homologous recombination for ) targeting the  locus was created by cloning
+the  cassette of pHyg3 in between two homologous
+flanking regions (5′ and 3′ flanking, surrounding a
+first target sequence T1) into the bluescript vector KS-. (Bottom)
+The  locus included the 5′ UTR (5),
+coding exons depicted in black and the 3′ UTR (3). Both target
+sequences used for creating sgRNA (T1, T2) are shown, as well as the
+primer binding sites and the sizes of the expected amplification products. Analysis of
+transformation efficiency of unsynchronized and synchronized
+cell cultures of  CW15. (A) TE was measured
+at different time points (h, hours after illumination start) after
+3 days of cultivation under synchronizing conditions. Each data point
+shows mean ± SD,  = 3. Transformations by linearized
+construct pHyg3 (nonhomologous) are depicted in black, and those by
+linearized construct HCP (homologue to ) are
+shown in yellow. A one-sided  test was performed
+and the statistical confidence level is shown in relation to the previous
+related data point as one asterisk for  < 0.05,
+two asterisks for  < 0.01, three asterisks for  < 0.001, while a hash represents insignificant values
+of  > 0.05. (B) TE data is displayed in comparison
+with the corresponding cell number (shown as log, gray
+circles) on the third day of growth under synchronizing conditions
+(compare B).
+Below, the illumination cycle is depicted as bars, as well as the
+assumed cell cycle phases. Genome Editing of Synchronized
+CW15 Using the Cas9 Nuclease http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00390/suppl_file/sb0c00390_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00390/suppl_file/sb0c00390_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00390/suppl_file/sb0c00390_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00390/suppl_file/sb0c00390_si_001.pdf The Cas9 nuclease was expressed
+in  and purified using Ni-affinity chromatography.
+The presence of recombinant
+enzyme was evaluated by SDS-PAGE in the eluted fractions (), which showed a high degree of purity.
+Another critical feature for a high activity was the removal of bacterial
+nucleic acids, achieved by EDTA incubation and subsequent washing
+to remove the chelating agent. The concentrated Cas9 preparation () was further evaluated by immunodecoration
+analysis using an α-His tag antibody (). An  assay proved the capability
+of restricting the defined target DNA sequence of  () in the presence of the respective
+sgRNA (T1, T2). Since both target sequences are close to the end of
+the DNA molecule (), little change in size occurred, but it nevertheless proved
+to be a functional Cas9 nuclease. Interestingly, while testing
+different target sequences as sgRNA for  in
+transformations (not shown), we saw that not all events led to the
+creation of a pale phenotype, suggesting the inefficiency of  related sequences in genome editing. The defined
+target sequence 1 (T1,) was therefore maintained
+and an additional target sequence (T2, ) was chosen. Both sgRNAs led to the creation
+of pale mutants and so were used together for genome editing experiments.
+Although T2 is also present in HCP (), a restriction of the homologous template
+was not thought to interfere with putative HR activity, since about
+half of the homologous flanking region would still be present and
+because there was no incubation of Cas9 ribonucleoproteins together
+with HCP at activating temperatures prior to transformation. When transforming synchronized CW15 at different time points using
+Cas9, pale green mutants were obtained in all cases at higher percentages
+than for unsynchronized cultures (A,C–E), underlining once again the
+advantage of synchronization. Interestingly, TE increased only at
++4 h when using HCP together with Cas9 ribonucleoproteins (HCP-GE)
+compared to the use of HCP alone, underscoring the dominance of the
+NHEJ pathway in leading to random mutants. In all other cases, TE
+decreased or was unchanged when additionally using Cas9, pointing
+to more specific DNA repair, that is, HR. The maximal efficiencies for creating
+pale mutants (around 5%)
+occurred at +8 h and +12 h of illumination, which were associated
+with the S phase and the G2/M phase respectively, since HR activity
+has a higher efficiency for functional knockouts and was assumed to
+be present at these time points. This hypothesis was further supported
+by the rather low percentage of pale mutants at time point +4 h, which
+was attributed to the G1 phase with high NHEJ activity. Since TE at
++8 h (S phase) was very low (B), time point +12 h was chosen for further optimization
+experiments to test different amounts of the components used (B) due to quite a
+high TE and a high percentage of pale mutants accompanied by the expected
+HR activity. Interestingly, the provision of more plasmid DNA
+(150 to 400 ng
+HCP) decreased the TE but resulted in a similar percentage of pale
+mutants, confirming the recognition of the homologous template and,
+moreover, that the introduction of the DSB was the limiting step.
+This conclusion was further confirmed when using double the amount
+of sgRNA (5.4 μg to 10.8 μg) because the TE increased
+again (+100%) and the percentage of pale mutants was more than doubled
+(factor 2.1). A further increase of sgRNA (21.6 μg) and Cas9
+(6 μg) resulted in the highest percentage of pale mutants observed
+(14.3% and 13.8%), with an average of 14%. A further increase of sgRNA
+to 40 μg decreased the yield of pale green clones, which confirms
+the optimal ratio previously determined. Overall, the efficiency of
+creating pale mutants could be increased by about 1300% by switching
+from unsynchronized cells (1.1% of pale green clones) to synchronized
+cells at +12 h (14%). In principle, this could be optimized even further
+by using different combinations of components. Transformation efficiency
+of unsynchronized and synchronized cell
+cultures of  CW15: Effect of ribonucleoprotein
+Cas9 on the transformation efficiency. (A) TE were determined for
+unsynchronized (unsync.) and synchronized cell cultures of  CW15, using the linearized  homologous HCP construct only (black bars) or together with ribonucleoproteins
+(yellow bars, HCP-GE containing Cas9, sgRNAs T1 and T2) at different
+time points after the start of illumination. Data is shown as mean
+± SD,  = 3. Below, the determined percentage
+of the total pale green colonies obtained for HCP-GE (P, of green
+colonies G) is given: maximal values are surrounded by black boxes.
+A one-sided  test was performed, and the statistical
+confidence level is shown in relation to the data of unsynchronized
+cells (unsync.) as one asterisk for  < 0.05,
+two asterisks for  < 0.01, three asterisks for  < 0.001, with a hash representing insignificant values
+of  > 0.05. This was calculated in the same way
+as (B). Assumed cell cycle phases are also shown below. (B) Transformation
+efficiencies of further variations of HCP-GE trials at time point
++12 h are shown as mean ± SD,  = 3. The amounts
+used of HCP, sgRNAs T1, T2, and Cas9, as well as the percentage of
+pale colonies and the numbers for PCR analysis, are given below. The
+determined optimal ratio of components is marked by a black box. Representative
+pictures of transformation results, , pale mutants
+(marked black and red)  normal green mutants are
+shown as a general example in (C), of transformation using HCP at
++4 h (D, compare A), as well as of transformation D at +12 h (E, compare
+B). Determination of HR-Mediated
+Knock-Ins in Pale Mutants A major advantage of knock-ins
+caused by HR is the easy detection
+of functional knockout mutants by means of PCR screening. Indeed,
+large insertions can be easily detected and a functional knockout
+is the highly probable consequence. Since NHEJ-mediated gene disruption
+in most cases results in only a few base changes, sequencing of the corresponding target sequence products
+is required and the function of the knockout has to be determined
+by other means, for example, by the analysis of the protein content.
+In order to analyze pale mutants obtained from different time points
+(+1 h and +12 h of illumination, A), PCR was performed using primers for  that bind to the exterior of the flanking regions
+() in order
+to avoid false positive PCR artifacts. Interestingly, the native PCR amplicon could not be detected in
+most clones from synchronized cultures, indicating a relatively high
+knock-in frequency (either unspecific, by NHEJ, or specific, by HR)
+of larger DNA molecules (for example, plasmid) into the  target itself. Clones derived from transformation at +1 h were devoid
+of the expected HR-mediated recombination product (target sequence
+replacement) of about 5.8 kb, as had been expected due to the inactive
+HR pathway. On the other hand, two out of four clones from transformation
+at +12 h did show the 5.8 kb recombination product, so supporting
+the presence of HR in the assumed G2/M phase. The total occurrence
+of HR-mediated recombination events could be even higher at this time
+point or at others, since there are different outcomes (F–I) from recombination-like
+events, for example, multiple insertions and deletions. Interestingly, the sought-after knock-ins of
+HCP into  could not be identified at any time
+point other than +12 h (tested for +1, +2, +4, +6, +8, and +10 h with
+about 40 pale clones in total, data not shown). Pale clones derived from the transformations shown
+in B (as indicated
+for
+PCR analysis) were analyzed with optimized primers. In all 10 pale
+clones from transformation E (B), the native sequence of  could
+not be amplified, indicating larger DNA insertions in all of them.
+The first four clones displayed the expected HR-mediated knock-in
+product of about 5.8 kb. When several clones carrying the same mutation
+had been identified, four of them were chosen for further analysis,
+as shown in C (clone number and respective transformation number as indicated,
+compare with B). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00390/suppl_file/sb0c00390_si_001.pdf All clones displayed the recombinant PCR product expected
+after
+HR-mediated knock-in of HCP into , and were
+amplified in triplets and a doublet for further analysis. After gel
+extraction and purification of the respective fragments, Nested-PCR
+was performed (D), which showed the abundance of the inserted  gene, as well as the T2 sequence of  used
+as a control. In E, the results of all tested clones are displayed, showing the maximal
+yield of specific knock-ins into  from transformations
+D and E (compare with B), on average 35%. To further verify the specific knock-ins
+and provide smaller molecules for easy cloning and subsequent sequencing,
+PCR was again performed, as described above, using gDNA from clones
+1(F) and 4(F) and partially digested thereafter with XhoI and SpeI
+(see ). This revealed the expected
+products of about 3.5 kb and 2.3 kb (XhoI), the latter digested further
+to 1.1 kb and 1.2 kb (SpeI) respectively. Final sequencing confirmed
+the HR-mediated sequence-specific knock-in in those clones, which
+is shown schematically in E. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00390/suppl_file/sb0c00390_si_001.pdf Target sequence analysis
+of selected pale mutants of  CW15 from
+different transformation approaches. (A) PCR analysis
+carried out by the flanking region surrounding primers (C5_fw/C3_rv)
+for locus . Four pale mutants for each construct
+(pHyg3, HCP) at two different time points (+1 h, + 12 h) were analyzed
+together with the wild type; the amplicons expected after HR-mediated
+knock-in of about 5.8 kb are surrounded by black boxes. (B) Similar
+PCR analysis were carried out with optimized primers (C5_fw2, C3_rv2)
+for 10 pale clones from transformation E (see B). As positive controls for each cell line,
+additional PCRs were performed using primers Cao_fw and Cao_rv and
+are shown in the lower part of the A–B panels. (C) Selected
+pale mutants from transformations C, F at +12 h (see B) were used for the amplification
+of sufficient amounts of recombinant knock-in fragments of  for purification and further analysis, as shown in
+(D), that is, Nested-PCRs were performed using the purified fragments
+as template and primers Aph7_fw/Aph7_rv for detection of the inserted  gene, in addition to primers CP_fw2/Cp_rv for detection
+of the target sequence T2 of  as a control.
+(E) Summary of results of additional PCR analysis performed on pale
+clones from corresponding transformations of  CW15 at +12 h after the start of illumination (see also B), showing the numbers
+of analyzed pale clones, the larger DNA insertions in  detected, the desired HR-mediated knock-ins (flanking-based target
+sequence replacement) and its occurrence rate. (F) Schematic representation
+of knock-ins of the  cassette into  detected, based on HR-mediated recombination, which was confirmed
+by sequencing the corresponding XhoI and SpeI restricted amplicons
+(cloned into bluescript vector KS-) from clones 1F and 4F (see ). The disrupted genomic sequence of  is depicted at the top, showing the occurrence of
+the gene disruption that leads to the pale phenotype. For the numbering,
+compare with B, except for transformation F, which is not shown in detail. Overall, the demonstrated
+synchronization of  CW15 cultures is a
+powerful option for enhancing the efficiency
+of nuclear transformation, also confirmed in mammalian cells and, in particular for precise genome editing  HR, as demonstrated, for example, in different yeast
+species. Furthermore, this type of cell
+synchronization makes future in-depth research possible into the cell
+cycle of  and could be very useful for
+further research into DNA damage responses during the cell cycle. The phases of the latter could be more precisely
+defined by using antibodies for cell cycle relevant proteins, for
+example, cyclins or by determining cyclin-dependent protein kinase
+activity. We demonstrated that access
+to certain cell cycle stages makes possible the genetic manipulation
+of the nuclear genome in different ways, depending on the desired
+outcome. When simple random DNA integration is sufficient, usage of
+the dominance of NHEJ at +4 h after illumination is the best option,
+since it enables the highest transformation efficiency, as also described
+by ref () for the
+eukaryotic parasite . With
+regard to genome editing strategies, avoiding NHEJ as much
+as possible and favoring HR-mediated DNA integration offers multiple
+benefits, including the reduction of unspecific DNA integration and enhanced gene targeting. A time point in the cell cycle of  was identified (+12 h of illumination, B, ) offering a higher
+HR/NHEJ ratio and used to create mutants with an HR-based knock-in.
+Further research is required to evaluate the additional possibility
+of inactivating the NHEJ pathway in , which
+could reduce or even eliminate unspecific DNA integration accompanied by specific knock-ins
+using cell synchronization. Furthermore, the greatest efficiency of
+gene targeting in producing knockouts could be observed at this time
+point (+12 h), which confirms the advantage of HR-based gene disruption
+in leading to a higher probability of functional knockouts of genes.
+Such knockout mutants also offer the benefit of being easily identified
+by PCR, due to the high frequency of knock-in events using larger
+DNA molecules. Additional PCR analysis of targeted loci also enables the identification of the desired
+knock-in events (target sequence replacement by HR) that were shown
+to happen at acceptable rates. The actual efficiency of HR as identified
+in this work might be even higher, given the different outcomes of
+HR, as described by for the fungus . Specific knock-ins make advanced
+genome editing possible, for example,
+eliminating native genes and replacing them with altered sequences
+for specific purposes, such as point mutated or extended gene copies leading to
+tagged proteins. Thus, 5% of colonies
+growing on selective medium will display a desired mutant knock-in
+sequence even in the absence of a visible phenotype. Since  displays a rather inefficient target for genome editing
+and was mainly chosen as the optimal phenotype of a knockout, our
+improved strategy should increase the efficiency of genome editing
+for more easy accessible targets and so provide high frequencies of
+the creation of knockouts and specific knock-ins. Finally, valuable
+information concerning the nuclear HR pathway in  could be obtained, that is, its identification in special phases
+(G2/M) of the cell cycle, which is consistent with other eukaryotes. Further optimization of
+HR usage could be achieved by identifying
+the optimal length of the homologous regions and the additional determination of optimal Cas9, sgRNA, and plasmid
+amounts as well as other types of DNA
+nucleases like Cas12a. Moreover, the
+strategy presented should be applicable to other algae species, when
+conditions of synchronization have been identified and nuclear transformation
+is possible, especially if the genetic handling
+of species is problematic, enabling more efficient nuclear transformation
+and genome editing strategies, necessary for basic research and biotechnological
+applications. Chemicals, Reagents, and
+Enzymes If not otherwise stated,
+all the chemicals and reagents used were provided by Sigma-Aldrich
+and AppliChem and all the enzymes used were supplied by New England
+Biolabs, Promega and Thermo Fisher Scientific. The phytozome database () was used for . relevant data. Database
+entry for  is Cre05.g241450. Strains, Cell
+Culture, and Transformation The  strain CW15 was used in all the experiments
+described and was cultivated
+in 20 mL flasks containing TAP-medium, supplemented with 100 μg/mL of ampicillin. Normal growth conditions
+were set to 25 °C with 200 μmol photons m s of white light for 16 and 8 h of darkness.
+Synchronizing growth conditions were adjusted to ref () with 200 photons m s of white light for 12 h at
+28 °C, followed by 12 h of darkness at 18 °C. Cell number
+was determined using a Countess II FL cell counter (Life Technologies)
+and the results were divided by a calibration factor of 2. For optimized transformation of . CW15
+based on ref (), the
+respective number of cells (unsynchronized:
+5 × 10; synchronized: 10) were harvested
+at 8000 for 7 min and resuspended in 50 μL
+of TOS-Medium (80% v/v TAP, 40 mM Sucrose). The suspension was mixed
+with different amounts of linearized plasmid DNA (pHyg3: NdeI; HCP:
+XbaI; for unsynchronized cells: 250 ng; for synchronized cells: in
+general 150 ng, 60 ng for time point +4 HCP-GE (see A) and 400 ng for time points
++8 h as well as +12 h (see A,B). For genome editing experiments, a further 3 μg
+Cas9 (deviating amounts see B) and 5.4 μg sgRNA, each consisting of 50% sgRNA
+for  target1 and target2 (deviating amounts
+see B), were
+added and the mixture incubated on ice for 5 min. Transformation was
+carried out in 0.4 cm spaced cuvettes by electroporation using a Gene
+Pulser II (Bio-Rad) set to 200 Ω, 50 μF and 0.6 kV. Recovery
+was achieved in 1.5 mL TOS-Medium containing reaction tubes kept in
+darkness overnight on a mixing rotator. After subsequent centrifugation
+at 8000 for 7 min, cells were resuspended in 1 mL
+30% starch containing TAP-Medium, supplemented with 60 μg/mL
+hygromycin and 100 μg/mL ampicillin. This solution was distributed
+on two 60 μg/mL hygromycin and 100 μg/mL ampicillin containing
+1.5% Agar-TAP-plates to obtain selection. strain Top10 (Thermo Fisher Scientific) and BL21 (Stratagene) were
+transformed with constructs using the standard heat shock method and
+selection was achieved by using 100 μg/mL ampicillin on 1.3%
+Agar-LB-plates (1% tryptone, 0.5% yeast extract and 0.5% NaCl). Subsequent
+cultivation was carried out at 37 °C for 16 h in LB-medium. Plasmid isolation from  was carried out using the GeneJet Miniprep
+Kit (Thermo Scientific). Contrary to the supplier’s instructions,
+the elution buffer was prewarmed to 55 °C and elution was repeated
+once using the eluate. Isolation of genomic DNA from  CW15 was carried out after ref (). Harvested cells (12 000 for 30 s) of 1–2 weeks old cultures grown in plastic
+multiwells of 2–3 mL TAP-Medium each were resuspended in 700
+μL 2× CTAB buffer, supplemented with 100 μg Proteinase
+K and 50 μg RnaseA. After incubation for 2–5 h at 60
+°C, genomic DNA was extracted using 1 unit of chloroform/isoamyl
+alcohol (24:1) after centrifugation at 12 000 for 5 min. This step was repeated with 1 unit of phenol (10 mM Tris-HCl
+buffered at pH 8)/chloroform/isoamyl alcohol (25:25:1) and 1 unit
+of chloroform. Precipitation was achieved using 0.3 M sodium acetate
+pH 5 and the addition of 1 unit of isopropanol at −20 °C
+for 1 h. After centrifugation at 12 000 for
+15 min, the supernatant was removed and the sediment was washed twice
+with 70% ethanol at 12 000 for 5 min. Sediments
+were dried at 42 °C for 1 h and resuspended in 20–50 μL
+10 mM Tris-HCL pH 8. Isolation of  transcribed
+sgRNA was carried
+out in the same way as described for genomic DNA, starting by increasing
+the final volume after the reaction to 1 mL with DEPC-HO and continuing with phenol (Tris-HCl buffered pH 5)/chloroform/isoamyl
+alcohol (25:25:1) extraction. Concentration of nucleic acids
+was determined using a Nanodrop
+One (Thermo Scientific). In the case of plasmid DNA for transformation
+of , concentration was precisely
+determined on 1% agarose gels compared to the marker GeneRuler 1kb
+Plus (Thermo Scientific) using the ImageJ software (). Amplification,  Transcription, Restriction,
+and Cloning Taq polymerase was expressed in  Bl21 and isolated according to the literature. As a general buffer, 10 mM Tris-HCl pH 8.3, 50 mM KCl and
+4 mM MgCl were chosen, while special amplifications based
+on GC rich templates like those present in  (5′ Flanking region, see ) were performed using 75 mM Tris-HCl pH
+8.3, 20 mM (NH)SO and 4 mM MgCl. Reactions also contained 10 pmol of each primer, 0.53 mM
+dNTPs (each) and 0.26 M Betain. Annealing temperatures 2–5
+degrees below the supplier’s reported melting temperature of
+primers were chosen, with elongation to 1 min/kb at 72 °C. All
+amplifications for cloning were achieved by using Hybrid Polymerase
+(EURX) in accordance with the supplier’s instructions. In addition,
+target sequence analysis of  using flanking
+regions surrounding primers (see ) was carried out using the same buffer,
+containing (NH)SO as that for
+Taq amplifications of GC rich templates. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00390/suppl_file/sb0c00390_si_001.pdf Amplification of template
+DNA for  transcription of sgRNA was obtained
+using Taq polymerase with the NH buffer, as mentioned
+above, using primers (see ) sg_CP_fw1
+and T7_CP_fw1 (for target T1, see ) as well as sg_CP_fw2 and T7_CP_fw2 (for
+target T2, designed using , see ). As
+a first step, target sequence (5′) elongated primers binding
+the Cas9 required RNA sequence (sg_CP_fw1, sg_CP_fw2) on plasmid pDGE277 were used. After dilution of the PCR products
+obtained to about 0.1–1 ng/μL, a second amplification
+was performed with primers binding the target sequence and containing
+a 5′ addition of the T7 polymerase motif (T7_CP_fw1, T7_CP_fw2).
+After determining the concentration of the PCR products obtained,
+1 μg of template DNA was used for  transcription,
+using the Hi Scribe T7 Quick High Yield RNA Synthesis Kit (New England
+Biolabs) at 37 °C overnight, with subsequent purification of
+sgRNA as mentioned above. Recombinant Cas9 activity was tested at
+37 °C for 1 h using 100 ng of PCR product created with Primers
+Cp_fw and Cp_rv (see ), 400 ng sgRNA for  target 1 and 2
+(see ), and
+750 ng of recombinant Cas9 (see chapter below) in cleavage buffer
+(20 mM Tris-HCl pH 7.5, 20 mM KCl, 5 mM MgCl). Plasmid
+DNA was restricted using the enzymes XhoI, SpeI, NdeI,
+XbaI, NheI, and EcoRV at 37 °C for 3–16 h, with subsequent
+heat inactivation at 65 °C for 10 min. Isolation of PCR products
+for cloning was achieved using the GeneJET Gel Extraction Kit (Thermo
+Scientific) and initially cloned into Blueskript KS- (Snapgene) for
+sequencing (Eurofins), subsequent restriction and ligation using T4
+Ligase into final constructs. Expression and Purification
+of Recombinant Cas9 strain
+BL21 was transformed with the Cas9 nuclease
+(160 kDa) encoding plasmid pET- NLS-Cas9-6xHis (Addgene). After expression,
+the recombinant Cas9 contained a nuclear localization signal and a
+C-terminal his-tag for purification using nickel affinity chromatography.
+After overnight cultivation of a 5 mL culture containing 25 μg/mL
+chloramphenicol and 100 μg/mL ampicillin, 1 L LB-Medium containing
+the same antibiotics was inoculated and the culture grown to an OD of 0.5. Expression of recombinant Cas9 was induced with
+0.5 mM isopropyl β--1-thiogalactopyranoside, and cultivation
+continued overnight at 20 °C. Cells were harvested at 5000 for 10 min and purified in accordance with ref () using Nickel NTA affinity
+chromatography. In order to remove nucleic acids from  from the protein solution, the latter was supplemented with 10 mM
+EDTA and incubated for 1 h. Subsequent concentration using centricons
+(10 kDa cutoff) was carried out twice to a small volume and again
+diluted in order to remove nucleic acids and EDTA, achieving a final
+volume of 750 μL. Thereafter, the protein solution was analyzed
+on SDS-page and immunoblotting was carried
+out. Protein concentration was determined using a Nanodrop One with
+an extinction coefficient at 280 of 120.450 M cm. Construction of Knock-In Construct HCP http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00390/suppl_file/sb0c00390_si_001.pdf All the elements
+necessary for creating HCP (5′ flanking (5F): chromosome_5:3459480–3461402,  cassette, 3′ flanking (3F): chromosome_5:3461425–3463347;
+see ) were
+amplified as described above using 5F_fw/rv (5F), pBT_fw/rbsc2_rv
+( cassette) and 3F_fw/rv (sequences see ), cloned into bluescript vector KS-
+and sequenced. The 5′ flanking region (5F) was amplified using
+a reverse primer (5F_rv) that also carried nucleotides for an in-frame
+stop codon after sequence-specific knock-in into . The  cassette from the transformation vector
+pHyg3, conferring resistance to hygromycin,
+consisted of the promoter from the β-tubulin gene, the  gene itself and the 3′ UTR of the RubisCO small
+subunit 2 gene. Further sequence extension of used primers provided
+restriction motifs for RI and XbaI (5F) as well
+as NheI and XbaI ( cassette and 3F). All elements
+were cloned again into bluescript KS- in the order shown (), leading to the
+HCP construct..

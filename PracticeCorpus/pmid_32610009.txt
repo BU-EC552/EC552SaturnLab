@@ -1,0 +1,686 @@
+During embryo development an
+initially symmetric multicellular structure undergoes spatiotemporally
+controlled morphogenic changes to self-organize into complex tissue
+architectures. At early stages, cells not only have the intrinsic
+capacity to self-assemble into multicellular structures, but different
+types of cells also self-sort into distinct patterns, which is the
+prerequisite for the proper formation of subsequent embryo architectures. Even  dissociated cells self-assemble into
+multicellular structures due to cell–cell adhesion and mixtures
+of cells derived from different tissues possess the remarkable ability
+to self-sort themselves into precise structures that resemble the
+tissues of origin. In these multicellular
+structures cells are able to organize by distinguishing “self”
+from “non-self” based on differences in homophilic and
+heterophilic cell–cell adhesions. In addition
+to the cellular arrangement, interactions between cells also fundamentally
+govern cell biology by communicating both biochemical and biophysical
+signals. This is the reason why the misregulation
+of cell–cell adhesions is associated with diseases such as
+cancer, inflammation, and autoimmune diseases. Furthermore,
+recent advances in organoid formation from different progenitor cell
+types and the self-assembly of embryo
+mimetic structures from embryonic and extraembryonic stem cells all demonstrate the enormous potential of multicellular architectures
+in regenerative medicine and synthetic biology. Fundamentally, controlling when and where cell–cell adhesions
+of different types form is a major driving force in controlling the
+organization in multicellular structures and consequently their function. Therefore, the approaches to control different
+types of cell–cell interactions independently with high spatiotemporal
+control are powerful becaue they comprise the assembly and self-sorting
+of cells into desired multicellular architectures from the bottom-up
+and understanding principles that govern multicellular architectures. Key prerequisites to achieve the desired
+self-assembly and self-sorting
+in multicellular structures include the independent control over different
+cell–cell adhesions within a mixture of different cell types.
+Up to now, both genetic and chemical approaches that alter the cell surface have been developed to regulate
+cell–cell adhesions for bottom-up tissue engineering and to
+further understand of the role of cell–cell adhesions in cell
+biology. It is possible to regulate the adhesiveness between different
+cell types by adjusting the expression of different native cell–cell
+adhesion receptors, such as cadherins, and cells expressing different types of cadherins, aggregate separately
+when shaken in suspension, that is, sort out/self-sort. However, it is not possible to locally alter cell interactions or
+reverse them at a desired point in time using this approach and even
+less so for multiple cell types. On the other hand, chemical reactive
+groups, formerly also used for self-assembly and self-sorting in colloidal
+systems, have been introduced onto the cell surfaces such as clickable
+groups, single stranded DNA, and supramolecular
+interaction partners. All these synthetic
+cell–cell interactions provide some spatiotemporal regulation, but suffer from dilution in the long term as
+the cells divide and poor reversibility and do not allow us to control
+multiple cell types in the same mixture. Consequently, these limitations
+neither enable self-sorting in multicellular mixtures, nor specifically
+manipulate different cell types in multicellular mixtures. This
+study shows how we can regulate the adhesion of two different
+types of cells independently using blue or red light. For this purpose,
+we developed blue and red light switchable cell–cell interactions
+using photoswitchable proteins as artificial adhesion molecules enabling
+the assembly of desired multicellular structures by simply turning
+on the right color of light. We show how these cell–cell interactions
+can be used to independently and reversibly trigger both the self-assembly
+of each cell type and the self-sorting in a multicellular mixture.
+This study was inspired by a concept established with mixtures of
+two types of colloidal polystyrene particles, which could self-sort
+into distinct groups (also known as narcissistic or asocial self-sorting
+in the colloidal self-assembly community) using different colors of
+light. In this study, we extend the concept
+of asocial self-sorting established for nonliving colloidal particles
+to cells for the assembly of multicellular tissue-like structures
+in the context of bottom-up tissue engineering. In this respect, this
+study is a demonstration of how well-established concepts of self-assembly
+and self-sorting for colloidal particles can be extended to multicellular
+systems and the parallels between self-sorting in colloidal mixtures
+and sorting-out in multicellular mixtures. Design
+of Photoswitchable Homophilic Cell–Cell Adhesions http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00150/suppl_file/sb0c00150_si_001.pdf In the first step, we focused on engineering two different cell
+types that can be triggered with blue or red light independently to
+form homophilic cell–cell interactions. Our aim was to control
+each cell type using different colors of light as an external trigger
+to later address them separately in multicellular mixtures that self-sort.
+For this purpose, we expressed different photoswitchable proteins
+that homodimerize after exposure to light illumination as new adhesion
+receptors on the surfaces of cells. As photoswitchable cell adhesion
+receptors, we chose two different proteins that respond to different
+wavelengths: the blue light (450 nm) responsive protein LOV domain
+VVD from () and the red light (660 nm) responsive protein Cph1 phytochrome-like
+protein from . Both of these proteins homodimerize upon light
+illumination and reversibly dissociate from each other in the dark
+as well as under far-red light (720 nm) for Cph1. Using these two
+molecularly orthogonal and independently addressable homophilic cell–cell
+interactions, we aimed to control the self-assembly and the self-sorting
+of each cell type individually (A,C, Supporting Information, ). We assumed that cells expressing VVD on their surfaces
+would only interact with each other under blue light, but not under
+red light, and cells expressing Cph1 on their surfaces would only
+interact under red light, but not under blue light. Furthermore, we
+expected that under coillumination with blue and red light each cell
+type would sort itself out to form distinct clusters, analogous to
+the self-sorting behavior observed when two cell types expressing
+two different types of cadherins are mixed. The photoswitchable proteins
+used in this study form head-to-tail homodimers (i.e., the N-terminal
+of one protein binds to the C-terminal of the other protein) as shown
+by crystalography and can mediate homophilic cell–cell
+interactions between neighboring cells that express the protein. Unlike
+other examples of artificial cell–cell adhesions, which form
+heterophilic cell–cell adhesion (interaction between cells
+of different types), here presented cell–cell adhesions
+are homophilic. In this respect, the photoswitchable cell–cell
+interactions mirror the homophilic interaction mode of cadherin mediated
+cell–cell adhesions, but are different in terms of cell signaling
+as they do not have an intracellular tail to link to the cell cytoskeleton
+like cadherins. In addition, general advantages of photoregulation
+are the high spatiotemporal control, tunable dynamics, and high orthogonality
+without interference from other cellular processes, as previously
+demonstrated in numerous optogenetic studies. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00150/suppl_file/sb0c00150_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00150/suppl_file/sb0c00150_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00150/suppl_file/sb0c00150_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00150/suppl_file/sb0c00150_si_001.pdf To generate photoswitchable cell–cell interactions,
+we first
+expressed the proteins VVD or Cph1 on the surfaces of cells. In our
+strategy, the photoswitchable proteins were cloned into the pDisplay
+plasmid with an N-terminal murine Ig κ-chain leader sequence,
+which directs the protein to the secretory pathway, and a C-terminal
+platelet derived growth factor receptor (PDGFR) transmembrane domain,
+which anchors the protein to the plasma membrane, displaying it on
+the extracellular side. Additionally, VVD variants and Cph1 were fused
+at their C-termini to the fluorescent tags mCherry and GFP (green
+fluorescent protein), respectively (). Two variants of the VVD protein were used, VVD and VVD High, a
+mutant of VVD, which is a stronger homodimerizer and reverses slower
+in the dark. These constructs were transfected
+into the breast cancer cell line MDA-MB-231, which was chosen because
+it does not express Type I cadherins and therefore does not form strong
+native cell–cell adhesions. Stable
+monoclonal cell lines, expressing the photoswitchable proteins on
+their surfaces (VVD-MDA, VVDHigh-MDA, and Cph1-MDA) were isolated
+by fluorescence-activated cell sorting (FACS), and single clones with
+a high fluorescent signal were selected for future experiments (). The expression of the photoswitchable
+protein on the cell surface was confirmed by antibody staining of
+live cells without permeablization using flow cytometry and fluorescent
+microscopy (). Moreover,
+quantitative flow cytometry showed that 1 × 10 photoswitchable
+proteins per cell were expressed on the cell surface and the different
+photoswitchable proteins were expressed at similar levels (). Blue
+and red light controlled cell–cell adhesions. (A) Cells
+expressing VVD or VVDHigh on their surfaces do not interact in the
+dark. Upon blue light illumination, the photoswitchable proteins on
+neighboring cells homodimerize and result in cell–cell adhesions.
+(B) VVD-MDA and VVDHigh-MDA cells grew as single cells in the dark
+and in large clusters under blue light 4 h after seeding in 2D culture
+at 8600 cells/cm. Green: actin phalloidin stain, blue:
+nuclear DAPI stain. (C) Cells expressing Cph1 on their surface do
+not interact with each other in the dark. Under red light, Cph1 proteins
+on neighboring cells homodimerize and lead to cell–cell adhesions.
+(D) Cph1-MDA cells grew as single cells under far-red and in large
+clusters under red light 4 h after seeding in 2D culture at 8600 cells/cm. Red, actin phalloidin stain; blue, nuclear DAPI stain. All
+scale bars are 200 μm. The nonmodified MDA-MB-231 cells used
+as negative control do not cluster independent of illumination. Blue and Red Light-Responsive
+Cell–Cell Interactions http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00150/suppl_file/sb0c00150_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00150/suppl_file/sb0c00150_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00150/suppl_file/sb0c00150_si_001.pdf In a first step, we investigated
+whether cells expressing the photoswitchable
+proteins VVD, VVDHigh, and Cph1 were able to form cell–cell
+interactions upon photoactivation under blue and red light, respectively.
+For this purpose, the cells were seeded in 2D culture on glass substrates
+at subconfluent densities (8600 cells/cm) and were incubated
+for 4 h in the dark (or far-red for Cph1-MDA) or under activating
+illumination (blue light for VVD- and VVDHigh-MDA, red light for Cph1-MDA).
+During this time, cell–cell interactions could form as the
+cells settled down and adhered to the glass surface. Subsequently,
+the cell nuclei and the actin cytoskeleton were stained to visualize
+the cell–cell interactions using the fluorescence microscopy.
+In the dark, VVD- and VVDHigh-MDA cells were evenly distributed over
+the substrate with few contacts between cells, and their morphology
+resembled the nontransfected MDA-MB-231 cells. In contrast, under
+blue light these cells grew in clusters and resembled cells, which
+form strong cell–cell adhesions (B, ). Similarly, Cph1-MDA distributed as single cells under far-red
+light, but formed large groups under red light illumination (D, ). Quantification of the light triggered clustering
+of VVD and Cph1 expressing cell lines in 2D further supported these
+observations (). In
+a control experiment with the parent MDA-MB-231 cell line, no light-dependent
+cell clustering was observed (B,D). The results showed that VVD and Cph1 are suitable
+as adhesion receptors to form homophilic cell–cell interactions.
+Unlike approaches that rely on the chemical modification of cell surfaces
+to control cell–cell interactions, the genetically encoded
+optogenetic adhesion molecules guarantee stable expression on the
+cell surface as the cells were expanded and did not require constant
+cell surface modification. Independent Photoactivation of VVD and Cph1
+Mediated Cell–Cell
+Adhesions http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00150/suppl_file/sb0c00150_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00150/suppl_file/sb0c00150_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00150/suppl_file/sb0c00150_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00150/suppl_file/sb0c00150_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00150/suppl_file/sb0c00150_si_001.pdf In multicellular architectures, it is highly desirable
+to control different cell types independently. To demonstrate that
+the two different cell types that respond to blue and red light can
+be triggered without interference, we quantified the aggregation of
+cells expressing different photoswitchable proteins under different
+illumination conditions in suspension cultures. In suspension, cells
+expressing different photoswitchable proteins on their surfaces (5
+× 10 cells/mL) were incubated on a 3D orbital shaker
+at 30 rpm for 30 min in the dark, or either under far-red, blue, or
+red light illumination (). Appropriate
+shaking was important to increase the likelihood of cells coming into
+proximity, allowing the formation of cell–cell interactions
+and preventing sedimentation; however, too high shear forces can also
+disrupt the clusters. Microscopy images
+of the suspension cultures showed that the blue light responsive VVD-
+and VVDHigh-MDA cells remained mostly as single cells in the dark
+as well as under red and far-red light illumination, but formed large
+aggregates under blue light (A and , tile scan
+image of the entire sample over 2.5 cm). On the other
+hand, red light responsive Cph1-MDA cells remained scattered in the
+dark as well as under far-red and blue light illumination, but assembled
+into aggregates under red light (A). To support this qualitative observation
+of orthogonal response to blue and red light for VVD and Cph1 expressing
+cells, the aggregation was quantified by identifying clusters of cells
+(objects with an area >5000 μm, i.e., containing
+at least 20 cells) in the sample. This analysis showed that VVD- and
+VVDHigh-MDA as well as Cph1-MDA cells formed similarly large clusters
+with an average projected area of ca. 23000 μm upon
+photoactivation (B, , cluster size distribution).
+Yet, for all three cell lines the aggregation in the dark or under
+illumination that does not activate the photoswitchable proteins was
+comparable to the background levels observed for the parent MDA-MB-231
+cell (B, ). Moreover, we also demonstrated that for
+VVD- and VVDHigh-MDA cells coillumination with far-red light, which
+deactivates Cph1-MDA cells, does not interfere with the blue light
+triggered clustering. It should also be noted that the blue and red
+light used had no toxic effect on the cells as confirmed by a cell
+viability assay (). Overall,
+this analysis showed that VVD/VVDHigh-MDA and Cph1-MDA cells formed
+cell–cell interactions only upon blue and red light illumination,
+respectively, and therefore can be triggered independently from each
+other without interference. Independent control over cell–cell interactions
+with blue
+and red light. (A) Bright field images of cells expressing different
+photoswitchable proteins at their surface (5 × 10 cells/mL) incubated for 30 min on a 3D orbital shaker at 30 rpm
+in suspension under different illumination conditions. VVD-MDA and
+VVDHigh-MDA cells aggregated only under blue light and Cph1-MDA cells
+only under red light but not in the dark or illumination with the
+other color of light. Scale bars are 200 μm. (B) Quantification
+of the cell aggregation in suspension cultures. For each sample an
+area of 2.5 cm (64 fields of view) was imaged using a
+tile scan and stitched together. All objects >5000 μm (containing at least 20 cells) were identified as clusters.
+The
+quantification showed that cells aggregation was light specific and
+illumination with other wavelengths of light did not lead to significant
+clustering beyond the dark control. The background clustering of MDA-MB-231
+cells (negative control) was lower than for the transfected cell types.
+Each experiment was performed in biological triplicate with two technical
+replicates each. Error bars are the standard error of the mean cluster
+area,  ≤ 0.05 presented as an asterisk (*)
+and  < 0.01 presented as a double asterisk (**). Dynamics and Reversibility of Light Responsive
+Cell–Cell
+Interactions The reversibility and dynamics of cell–cell
+adhesions are important characteristics for their biological function,
+allowing cells to reorganize during morphogenesis and even allowing
+cells to break free of multicellular structures. Tools that allow for such dynamic and reversible regulation of cell–cell
+interactions are therefore extremely valuable when it comes to investigating
+the importance of spatiotemporal regulation of cell–cell interactions. For the here presented cell–cell
+interactions, we investigated the assembly and disassembly kinetics
+as well as the repeated switchability of multicellular structures
+formed from blue and red light responsive cells. When cell–cell
+interactions were photoactivated VVD-MDA, VVDHigh-MDA, and Cph1-MDA
+cells required different lengths of time to form aggregates in suspension
+cultures (A).
+Under blue light, VVDHigh-MDA cells formed aggregates of maximal size
+within the first 30 min. The size of these aggregates then decreased
+to a certain extent over the next few hours, presumably due to compacting
+of the clusters. In contrast, VVD-MDA cells required 2.5 h under blue
+light to assemble into aggregates of a maximum size. Interestingly,
+while VVDHigh-MDA cells assembled faster than VVD-MDA cells, the VVD-MDA
+cells assembled into larger aggregates than VVDHigh-MDA cells. Cph1-MDA
+cells formed much larger multicellular assemblies under red light
+over the course of 3 h compared with cells expressing VVD proteins
+under blue light (ca. 2.5 fold). In fact, Cph1-MDA cells formed even
+larger clusters than MCF7 cells, which like MDA-MB-231 are a breast
+cancer cell line but with high E-cadherin expression. On the other
+side, cells expressing VVD proteins clustered less than MCF7 cells.
+Moreover, the cell clustering under light was faster for all photoswitchable
+proteins and already significant after 30 min, while the E-cadherin
+based clustering of MCF7 cells was slower and took over 1 h. These
+differences in assembly dynamics and final aggregate size could be
+explained by factors including the differences in intrinsic properties
+of the photoswitchable proteins, such as the thermodynamic and mechanical
+stability of the dimerization and the protein–protein interaction
+dynamics. An important feature of native cell–cell adhesions is their
+reversibility. Likewise, the cell–cell interactions mediated
+by the photoswitchable proteins were expected to be reversible due
+to the reversibility of the homodimerization of VVD in the dark and
+Cph1 under far-red light (B). To confirm this, the different cell types (VVD-MDA,
+VVDHigh-MDA, and Cph1-MDA) were first aggregated under illumination
+that activated cell–cell adhesions for 30 min and subsequently
+placed in the dark for VVD- and VVDHigh-MDA, or under far-red light
+for Cph1-MDA cells. The aggregation analysis for all cell types showed
+that within 10 min of stopping the photoactivation most of the aggregates
+significantly disassembled and within 30 min the aggregation was comparable
+to cells that were not photoactivated (kept in the dark for VVD- and
+VVDHigh-MDA and under far-red light for Cph1-MDA for the entire duration
+of the experiment). Interestingly, the reversion kinetics for the
+different cell types were similar despite the different reversion
+kinetics of the photoswitchable proteins at the molecular level (VVD
+in dark  = 2 h, VVD-High in dark  = 4.7 h, Chp1 under far-red light  = ca. milliseconds). The differences in
+reversion time at the molecular level and the cell–cell interactions
+show that it is not the reversion at the molecular level but other
+steps such as the separation of two cells from each other, the number
+of multivalent interactions, and the disassembly of the multicellular
+clusters that are the rate-determining steps. It should be noted that
+we have observed similar differences in the reversion kinetics at
+the molecular and the cell–cell adhesion level using other
+heterophilic light responsive protein–protein interactions. The reversibility of the blue and red light-triggered cell–cell
+adhesions allowed us to switch them on and off repeatedly. To check
+repeated switchability, suspensions of different cell types were alternated
+over three cycles between 30 min light activation and 30 min reversion.
+Bright field images acquired after each step showed that VVD- and
+VVDHigh-MDA cells associated into multicellular clusters every time
+they were incubated under blue light and dissociated from each other
+every time they were placed in the dark (A,B). Similarly, Cph1-MDA cells associated
+and dissociated over multiple cycles when they were alternated between
+red and far-red light (C). The quantitative analysis of the aggregation showed that
+for all three cell types reversion was complete each time the interactions
+were turned off following photoactivation. Further, in VVD-MDA cells
+the amount of aggregation decreased in the second and third blue light
+activation cycle compared to the first light activation, which indicates
+partial fatigue (D). In contrast, VVDHigh-MDA and Cph1-MDA cells aggregated equally
+well after each illumination cycle and showed no fatigue, that is,
+no change in aggregation over multiple cycles (D,E). Overall, both the blue and red light
+switchable cell–cell interactions were reversible and could
+be switched on and off repeatedly, which captures important properties
+of cell–cell interactions. Light induced cell clustering
+and reversion kinetics. (A) Clustering
+of VVD-, VVDHigh-, and Cph1-MDA cells (5 × 10 cells/mL
+in suspension, 3D orbital shaker at 30 rpm) under photoactivation
+over time. MCF7 cells, which have high E-cadherin expression, were
+used as a positive control for cell clustering. (B) Reversibility
+of the light mediated cell–cell interactions in the dark for
+VVD- and VVDHigh-MDA cells, and far-red light for Cph1-MDA cells after
+30 min prephotoactivation with appropriate light. The cluster area
+at each time point was normalized to the cluster area after 30 min
+photoactivation and 30 min in the dark. Error bars are the standard
+error of the mean. Each experiment was performed in biological duplicate
+with two technical replicates each. Reversibility of the photoswitchable cell–cell
+interactions.
+Bright field images of (A) VVD-MDA, (B) VVDHigh-MDA, and (C) Cph1-MDA
+cells in a suspension (5 × 10 cells/mL) altered between
+activating (30 min) and deactivating (30 min) conditions over multiple
+cycles. Scale bars are 300 μm. (D) Average cluster size for
+VVD-MDA (triangles) and VVDHigh-MDA (circles) over multiple blue light
+(blue points) /dark (black points) cycles. Blue and gray shaded backgrounds
+indicate 30 min periods where the blue light illumination was turned
+on and off, respectively. (E) Average cluster size for Cph1-MDA cells
+under altered illumination. Red and violet shaded backgrounds indicate
+30 min periods under red (red square) and far-red (violet square)
+light, respectively. Cells were kept in the dark (VVD- and VVDHigh-MDA)
+or under far-red light (Cph1-MDA) as negative controls for the entire
+experiment. Both blue and red light dependent cell–cell interactions
+switched on and off over multiple cycles. For each sample an area
+of 2.5 cm (64 fields of view) was imaged using a tile
+scan and stitched together. Each experiment was performed in biological
+triplicates with two technical replicates each. Error bars are the
+standard error of the mean. Light Specific Self-Sorting in Multicellular Mixtures http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00150/suppl_file/sb0c00150_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00150/suppl_file/sb0c00150_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00150/suppl_file/sb0c00150_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00150/suppl_file/sb0c00150_si_001.pdf Finally,
+we explored whether we could control self-sorting in multicellular
+mixtures and address different cell types within the mixture independently
+after exposure to blue and red light. For this purpose, we mixed equal
+numbers of VVD-MDA (labeled with a red fluorescent dye) and Cph1-MDA
+(labeled with a green fluorescent dye) cells and observed their assembly
+either under blue or red light or coillumination with both colors
+of light after 30 min incubation. In the dark, the two cell types
+were well dispersed (A) and their self-assembly was inducible for one cell type
+at a time using two different wavelengths of light. Under blue light,
+VVD-MDA cells assembled into clusters, which were observable as large
+red fluorescent aggregates, and Cph1-MDA cells labeled in green remained
+dispersed (B). Conversely, under red light, only Cph1-MDA cells self-assembled
+into large aggregates, observed as large green fluorescent objects,
+whereas VVD-MDA cells remained more scattered (C). Most remarkably, the simultaneous illumination
+with blue and red light, resulted in the self-sorting of VVD-MDA and
+Cph1-MDA cells into distinct green and red fluorescent cell clusters
+with almost no intermixing of the two cell types within the same cluster
+(D, ). The sorting out of the two cell types
+was also confirmed by 3D confocal microscopy cross sections of the
+clusters (). Further,
+colocalization analysis of green and red labeled cells showed that
+the two cell types separated into individual clusters (). The qualitative observations of light
+specific cell-sorting were further supported by quantitative aggregation
+analysis in mixed VVD-MDA and Cph1-MDA cultures based on bright field
+microscopy images as described above (E). In the 1:1 mixed VVD-MDA and Cph1-MDA
+cultures, the aggregation increased both upon blue or red light illumination
+when compared to experiments in the dark. Moreover, the amount of
+aggregation doubled under coillumination with blue and red light compared
+to illumination with just one color of light, as both cell types were
+photoactivated. It should be noted that the labeling with the fluorescent
+dyes had no effect on the cell aggregation under light activation
+(). Blue and red light controlled
+self-assembly and self-sorting. Confocal
+images of VVD-MDA (red fluorescence channel) and Cph1-MDA (green fluorescence
+channel) mixed in a 1:1 ratio (A) in the dark, (B) under blue light,
+(C) under red light, and (D) under coillumination with blue and red
+light. Scale bars are 200 μm. (E) Average cluster size analysis
+of VVD-MDA and Cph1-MDA cells mixed in a 1:1 ratio under different
+illumination. For each sample an area of 2.5 cm (64 fields
+of view) was imaged using a tile scan and stitched together. Each
+experiment was performed in biological triplicate with two technical
+replicates each. Error bars are the standard error of the mean,  < 0.01 presented as a double asterisk (**). Overall, these findings show that within
+a mixture of two different
+cell types, the assembly of multicellular structures can be triggered
+independently using blue and red light for VVD-MDA and Cph1-MDA cells,
+respectively. Further, the high specificity of the homodimerizations
+of VVD and Cph1 provide molecularly orthogonal cell–cell interactions
+and make it possible to achieve self-sorting within a multicellular
+mixture. Previously, DNA and supramolecular interactions first used
+in colloidal assembly were implemented onto cells to
+assemble multicellular structures. The parallels between colloidal
+and cellular self-assembly are also witnessed by  bead aggregation assays with cadherin coated beads. Transferring the recently reported sorting out behavior
+(known as narcissistic or asocial self-sorting in the colloidal self-assembly
+community) achieved with mixtures of VVDHigh and Cph1 coated polystyrene
+beads to cells shows that not just concepts
+in colloidal self-assembly but self-sorting also apply to multicellular
+structures. The comparable self-assembly and self-sorting observed
+in synthetic colloidal systems and in multicellular mixtures shows
+that these photoswitchable proteins provide a transferable framework
+to produce higher order architectures and achieve self-sorting of
+micrometer sized objects. The possibility of triggering different
+cell–cell interactions
+within a multicellular assembly using different colors of light offers
+many opportunities in the bottom-up assembly of diverse cell types
+into tissue-like structures and understanding the principles behind
+self-organization during development. The remarkable and innate ability
+of cells to self-assemble and sort themselves out into tissue-like
+architectures reveal the high potential of bottom-up tissue engineering
+and make controlling cell–cell adhesions a very powerful tool
+to program synthetic tissues. In this study, we have demonstrated how we can control the assembly
+and self-sorting of one cell type independently in the presence of
+another cell type relying on orthogonal triggers (i.e., blue and red
+light) and orthogonal molecular interactions (VVD and Cph1). These
+photoswitchable proteins can be integrated into different types of
+cells with diverse genetic backgrounds as they are genetically encodable.
+The reversibility of the photoswitchable cell–cell adhesions
+makes it possible to bring certain cells in contact for a desired
+time and later remove the interactions. On the other hand, depending
+on the cell type secondary interactions between cells, endogenous
+cell adhesion molecules and extracellular matrix molecules could lead
+to the further stabilization of multicellular structures even if illumination
+is stopped. In this study, we have only temporally controlled cell–cell
+adhesions using different illumination but photoregulation in general
+also allows for spatial control through local illumination and tuning
+of interactions by altering illumination intensity and frequency.
+These features of the photoswitchable cell–cell adhesion open
+the door for building more complex and programmable tissues from cellular
+building blocks. The photoswitchable cell–cell interactions
+further provide
+a unique chance of investigating the cell biology related to cell–cell
+interactions. Just like the native cadherin of cell–cell adhesions,
+the VVD and Cph1 mediated cell–cell adhesions also generate
+artificial adhesions between the same types of cells. Initial cell
+clustering analysis showed that especially Cph1-MDA cells could form
+equally large multicellular aggregates as MCF7 cells, which express
+high levels of E-cadherin. This finding suggests that the opto-adhesion
+molecules are comparable to native adhesion molecules but an exact
+comparison in terms of adhesion strength and dynamics as well as their
+compatibility requires further investigation. Moreover, the photoswitchable
+cell–cell adhesions like native cell–cell adhesions
+are switchable and dynamic, and can potentially be tuned and spatiotemporally
+controlled as it is often the case during many biological processes.
+Differently from the cadherin-based cell–cell interaction these
+photoswitchable cell–cell interactions do not link to the actin
+cytoskeleton and the associated signaling pathways. This fact provides
+a unique tool to dissect biochemical from biophysical signals transduced
+by cell–cell adhesions. More generally, these findings suggest
+that it is possible to assemble multicellular structures from cells
+and control parts of them with blue and red light switchable cell–cell
+interaction pairs. Analogous to the sorting out of cells that express
+different cadherins types, cells expressing blue and red light-switchable
+surface proteins were able to replicate the same self-sorting behavior.
+Future studies that take advantage of the spatiotemporal control that
+photoregulation provides will allow the assembly of new multicellular
+structures and the study of related questions in cell biology. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00150/suppl_file/sb0c00150_si_001.pdf The VVD and the Cph1 gene
+were synthesized in the pET-21b(+) plasmid between the NdeI-XhoI and
+NdeI-I cutting sites, respectively, by Genscript.
+The VVDHigh was derived from VVD by point mutations using Agilent
+kit (Site-Directed Mutagenesis kit, Catalog #200523). In a first step,
+mCherry and GFP were cloned into the pDisplay mammalian expression
+vector (Invitrogen V66020) between the Ig κ-chain leader sequence
+and the platelet derived growth factor receptor (PDGFR) domain using
+Gibson cloning with the primers listed in  to yield mCherry-pDisplay and GFP-pDisplay, respectively.
+In a second step, the photoswitchable proteins VVD- and VVDHigh were
+cloned into mCherry-pDisplay and Cph1 into GFP-pDisplay between the
+Ig κ-chain leader sequence and the fluorescent proteins. The
+pDisplay plasmid (Invitrogen) fuses the photoswitchable protein and
+the fluorescent protein at the N-terminal to the murine Ig κ-chain
+leader sequence, which directs the protein to the secretory pathway
+and at the C-terminal to the platelet-derived growth factor receptor
+(PDGFR) transmembrane domain, which anchors the proteins on the extracellular
+part of the plasma membrane. Moreover, the pDisplay plasmid contains
+a myc-epitope on the extracellular part to detect the expression of
+surface proteins. All cells were cultured
+in DMEM (Dulbecco’s
+Modified Eagle Medium)/F12 (1:1) (Gibco) supplemented with 10% FBS
+(fetal bovine serum, Gibco) and 1% penicillin/streptomycin at 37 °C
+and 5% CO. MDA-MB-231 cells were transfected using lipofectamin
+3000 (ThermoFisher, L300001) following the manufacturer’s protocol
+for a 6-well plate. After 24 h, the cell culture medium was supplemented
+with 1800 μg/mL G418 (Geneticin, Roche), and cells were maintained
+with G418 for all further experiments. After culturing the cells for
+2 weeks with G418 selection, the transfected cells were sorted at
+the core facility of the Institute of Molecular Biology (IMB) in Mainz
+using BD FACS Aria III Cell sorter into a 96-well plate with one cell
+per well. After expanding monoclonal cultures, their fluorescence
+was measured again by flow cytometry (Attune NXT Acoustic Focusing
+Cytometer, Invitrogen). The clones with the highest fluorescent signal
+among all sorted cells were selected for future experiments. Flow Cytometry
+Analysis for the Detection of Surface Protein
+Expression Cells were washed with phosphate buffer saline
+(PBS). Afterward the cells were detached with accutase (Gibco, Catalog
+#A1110501) and subsequently washed twice with ice-cold PBS. Subsequently,
+1 × 10 cells were resuspended in 100 μL of
+10 μg/mL of the primary antibody rabbit anti-c-myc (Invitrogen,
+catalog #700648) in PBS and incubated at 4 °C while being gently
+mixed for 45 min. Then, the cells were washed three times by adding
+900 μL of cold PBS to the cells and thereafter harvested by
+centrifugation (400, 4 °C for 5 min). VVD-MDA
+and VVDHigh-MDA cells were resuspended in 100 μL of 10 μg/mL
+Alexa 488 goat antirabbit IgG (Invitrogen, catalog #A27034) and Cph1-MDA
+cells were resuspended in 100 μL of 10 μg/mL of Alexa
+594 goat antirabbit IgG (Invitrogen, catalog #A-11037) and incubated
+at 4 °C while being gently mixed for 30 min. The cells were washed
+three times with 900 μL of cold PBS and finally resuspended
+in 500 μL of cold PBS. The cells were analyzed using flow cytometry
+(Invitrogen, Attune NxT Flow Cytometer) and each analysis contained
+at least 10 000 gated events. Rabbit-IgG (Invitrogen, catalog
+#11-4614-80) was used as a primary antibody isotype control to assess
+the background signal. Quantification of Protein Expression on the
+Cell Surfaces Cells were cultured overnight, 5 × 10 cells per
+t25-flask with 5 mL of medium. The next day, all cells (VVD-, VVDHigh-,
+Cph1- MDA, and MDA-MB-231) were washed with PBS, detached with accutase
+and then washed with ice-cold PBS twice. A million cells from each
+cell type were incubated with 10 μg/mL rabbit anti-c-myc (Invitrogen,
+catalog #700648) in 100 μL of PBS at 4 °C for 45 min while
+gently mixing. Then, the cells were washed three times with 900 μL
+of cold PBS and harvested after each step by centrifugation (400, 4 °C for 5 min). The cells were resuspended in 100
+μL of 10 μg/mL Alexa 488 goat antirabbit IgG (Invitrogen,
+catalog #A27034) and incubated at 4 °C for 45 min while being
+gently mixed. The cells were washed three times with 900 μL
+of cold PBS and finally resuspended in 200 μL of cold PBS. The
+cells were analyzed using flow cytometry (Invitrogen, Attune NxT Flow
+Cytometer). The Quantum Alexa Fluor 488 MESF kit (Bang Laboratories,
+Inc., 488A) was used for quantification following the manufacture’s
+protocol. The median of fluorescence peak from each cell type was
+measured and converted into MESF (molecules of equivalent soluble
+fluorochrome) based on the calibration curve generated using the QuickCal
+v.2.4 software from Bang Laboratories. The MESF of same cell type
+(negative control) that was not incubated with antibodies and MESF
+for MDA-MB-231 cells incubated with antibodies was subtracted for
+final calculation of specific MESF of each cells type. Immunostaining
+for the Detection of Surface Protein Expression VVD-MDA,
+VVDHigh-MDA, and Cph1-MDA cells were seeded on μ-Slide
+4 Well Glass Bottom (ibidi, catalog #80427) at 2 × 10 cell/well and cultured overnight. The cells were washed three times
+with PBS and blocked with 1% BSA (bovine serum albumin) in HBSS (Hank’s
+Balanced Salt Solution, Gibco, Catalog #14025050) for 20 min. Afterward,
+the cells were stained with the primary antibody rabbit anti-c-myc
+(Invitrogen, catalog #700648) diluted in HBSS 1:500 and incubated
+for overnight at 4 °C. Cells were washed three times with cold
+HBSS, fixed with 2% PFA (paraformaldehyde) in HBSS at room temperature
+for 10 min and subsequently blocked with 1% BSA for 10 min. The cells
+were stained with a fluorescently labeled secondary goat antirabbit
+antibody (Alexa488 labeled for VVD-MDA and VVDHigh-MDA and Alexa594
+labeled for Cph1-MDA cells), diluted 1:1000 in HBSS then incubated
+overnight at 4 °C. The cells were washed four times with HBSS
+and the nuclei were stained with Hoechst 33342 (Invitrogen, catalog
+#H3570), diluted to 1:1000, and incubated for 10 min at room temperature.
+Confocal images were acquired with a 153.6 μm pinhole in the
+Hoechst 33342, Alexa488, and Alexa594 channels on a laser scanning
+confocal microscope (Leica SP8) equipped with 405, 488, and 552 nm
+laser lines and a 20×/0.95 air objective to detect the nuclei,
+the transfected protein using the c-myc epitope, and the protein expression
+in the fluorescent protein channel (mCherry-tag for VVD and VVDHigh
+and GFP-tag for Cph1). Light-Responsive Cell–Cell Interactions
+in 2D http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00150/suppl_file/sb0c00150_si_001.pdf All cells were washed with PBS and detached with accutase
+for 10
+min at room temperature. Thereafter, for 2D culture experiments cells
+were seeded at a cell density of approximately 8600 cells/cm on 24 mm × 24 mm cover glass slides. The LED light module V10
+with TS-110 Controller (CLF Plant Climatics GmbH) was used in this
+experiment, and dark samples were wrapped in aluminum foil (). VVD- and VVDHigh-MDA cells were
+cultured in the presence of 0.5 μM FAD (flavin adenine dinucleotide)
+and cultured either in the dark or under blue light (463 nm, 20.4
+μW/cm) for 4 h at 37 °C and 5% CO. Cph1-MDA cells were cultured in the presence of 5 μM of PCB
+(phycocynobilin) and cultured either under far-red light (734 nm,
+25.2 μW/cm) or under red light (620 nm, 23.2 μW/cm) for 4 h at 37 °C and 5% CO. Moreover, in
+clustering experiments MDA-MB-231 and MCF7 cells were used as a negative
+and positive controls, respectively, and were handled as the transfected
+cells. All cells were fixed with 2% PFA in PBS for 15 min at
+room temperature, permeabilized with 0.1% Triton-X-100 in PBS for
+5 min and the actin cytoskeleton was stained with Phalloidin-iFlour
+488 reagent (Abcam, ab176753) for VVD- and VVDHigh-MDA cells, and
+Phalloidin-iFlour 594 reagent (Abcam, ab176757) for Cph1-MDA cells
+according to manufacture protocol. Subsequently, the cells were mounted
+with mowiol containing 1 μg/mL DAPI (4′,6-diamidine-2′-phenylindole
+dihydrochloride) for nuclear staining. Fluorescence images were acquired
+in the TRITC, FITC, and DAPI channels in a tile scan of an area of
+1 cm on an inverted fluorescence microscope (Leica DMi8)
+through a 5× air objective. For the cell clustering analysis
+2D cultures the number of cells
+was quantified based on the DAPI staining and the number of cells
+growing in clusters was quantified based on the actin staining using
+CellProfiler 2.2.0 and MATLAB. In the
+actin channel, objects with an area >300 μm were
+classified as cells, objects with an area of 300–3000 μm as single cells, and objects with an area >10000 μm as clusters of cells, as described previously. Light-Dependent Aggregation in Suspension
+Cultures http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00150/suppl_file/sb0c00150_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00150/suppl_file/sb0c00150_si_001.pdf All cell types were detached using accutase, resuspended
+at 5 ×
+10 cell/mL in DMEM/F-12 without phenol red + glutamine containing 25 mM of HEPES (4-(2-hydroxyethyl)-1-piperazineethanesulfonic
+acid), and 1 mL aliquots were added into 1.5 mL LoBind microfuge tubes
+(Eppendorf). In addition, the medium was supplemented with 0.5 μM
+FAD for VVD- and VVDHigh-MDA cells and 5 μM of PCB for Cph1-MDA
+cells. Afterward, cells were illuminated with red (620 nm, 1440 μW/cm), far-red light (734 nm, 1120 μW/cm), blue
+light (463 nm, 544 μW/cm) () and in the dark (wrapped in aluminum foil) for 30 min on
+the 3D orbital shaker at 30 rpm at room temperature. LED grow light
+panels (Albrillo) were used in this experiment, with one and two neutral-density
+filter for blue and red light, respectively. The neutral-density filter
+was used to minimize the scattered light of the light panel. Each
+neutral-density filter reduced 50% of the light intensity. The whole
+1 mL suspension of cells was fixed with 500 μL of 4% PFA in
+PBS after incubation under light or in the dark and was transferred
+to a 12-well plate. Bright field images were acquired for a total
+area of 2.5 cm (8 × 8 tile scan images; imaged area,
+2.5 cm) using an inverted fluorescence microscope (Leica
+DMi8) with a 5× air objective. Images were analyzed with Fiji
+1.52d. The bright field of 8 × 8 tile scan images were individually
+background corrected for uneven illumination and for dirt/dust on
+the lenses by using a pseudo flat field correction with a blurring
+stack of five and merged into a single image. The area of individual
+cell clusters was determined using a particle analysis tool and clusters
+were defined as objects >5000 μm, which corresponds
+to a projection area of at least 20 cells (the area for a single cell
+is equal to 200–250 μm). For automated image
+analysis a macro script was written, which can be found in the . The area of individual
+cell clusters and the mean cluster area were calculated using OriginPro2019.
+Each experiment was performed in biological triplicate with two technical
+replicates ( = 3 × 2). The data are presented
+as the mean cluster area ± SE for clusters detected in all experiments.
+The Mann–Whitney test was performed to analyze the statistical
+difference.  > 0.1 ns,  ≤
+0.05 presented as an asterisk (*),  < 0.01 presented
+as a double asterisk (**) and  < 0.001 presented
+as a triple asterisk (***). Dynamics and Reversibility of Blue and Red
+Light-Triggered Cell–Cell
+Interactions The assembly and disassembly kinetics as well
+as the repeated on/off switching of cell–cell interactions
+were evaluated in suspension cultures as described above with variations
+in the illumination protocols. For the assembly kinetics, the cells
+were placed under illumination (blue light for VVD-MDA and VVDHigh-MDA,
+red light for Cph1-MDA) for up to 4 h before fixing the cells. To
+access the reversion kinetics, cells were first activated for 30 min
+under illumination and subsequently placed in the dark for VVD-MDA
+and VVDHigh-MDA, and far-red light for Cph1-MDA cells. For the repeated
+on/off switching VVD-MDA and VVDHigh-MDA cells were alternated between
+30 min blue light and 30 min in the dark, and Cph1-MDA cells were
+alternated between 30 min red light and 30 min far-red light. After
+each point in time two samples were fixed with PFA and analyzed as
+described above. Self-Sorting in Mixed Cell Populations VVD-MDA and
+Cph1-MDA in suspension were stained with CellMask Deep Red Plasma
+Membrane (Invitrogen, C10046) and CellTracker Green CMFDA Dye (Invitrogen,
+C2925), respectively, using a 1:1000 dilution of each dye and incubating
+them at 37 °C for 30 min, while mixing the cells every 10 min.
+The cells were covered with aluminum foil to protect them from light.
+The cells were then centrifuged at 400 for 5 min,
+the medium was discarded, and cell pellets were resuspended in DMEM/F12
+medium supplemented with 25 mM HEPES, 0.5 μM FAD, and 5 μM
+PCB. The stained VVD-MDA and Cph1-MDA were mixed in a 1:1 ratio in
+total 1 × 10 cell/mL density in a total volume of
+1 mL in 1.5 mL Lobind tubes, and the cell mixtures were illuminated
+with blue light, red light, blue and red light, or kept in the dark
+for 30 min on the 3D orbital shaker at 15 rpm at room temperature.
+The cells were fixed with 500 μL of 4% PFA and fluorescent images
+were acquired on a confocal microscope. The same experiment was repeated
+with unstained cells, and after fixation bright field images were
+acquired for aggregation analysis. To exclude the effect of staining
+on the cell clustering, the cell clustering experiments were performed
+with stained and unstained VVD-MDA and Cph1-MDA cells under blue and
+red light, respectively. The confocal
+images of the
+self-sorting were analyzed by using imagJ and the plugin EzColocalization. The images in the red and green fluorescent
+channels were loaded into the EzClocalization and the colocalization
+of the two fluorescent signals was analyzed using the TOS (threshold
+overlap score, linearly rescaled) and PCC (Pearson’s correlation
+coefficient) with 10% FT (top percentage of pixels threshold). Both
+for TOS and PCC, values of −1 represent complete anticolocalization,
+values of 0 represent no colocalization, and values of 1 represent
+complete colocalization. VVD-MDA and Cph1-MDA cells were prepared
+as for light-dependent aggregation studies at 5 × 10 cells in a total volume of 1 mL media in 1.5 mL Lobind tubes and
+incubated under illumination or in the dark for 30 min. Subsequently,
+100 μL of medium containing cells was transferred to a 96-well
+plate. The viability of the cells was measured using the CellTiter-Glo2.0
+Assay (Promega) according to manufacturer’s instructions. All the experiments were performed
+with 2 techniques in 3 biological replications. The statistical analyses
+were determined using a nonparametric test by the two-independent
+samples Mann–Whitney test. All the data are shown as mean ±
+SE. In box plots each box is defined as the 25th and 75th percentile
+of the data, the line in the box represents the median, the dots the
+mean, and whiskers the 10th and 90th percentiles. The significant
+level was set at  < 0.01. The groups with “ns”
+have no significant differences. OriginPro software version 2019 (OriginLAb,
+Corporation, Northampton, MA, USA) was used for all analyses..

@@ -1,0 +1,699 @@
+Nitrogen
+fixation, that is,
+the reduction of N to NH, is a prokaryotic
+process catalyzed by a family of enzymes called nitrogenases, the
+most ecologically relevant and abundant one being the Mo-nitrogenase. The Mo-nitrogenase is a two-component metalloenzyme
+consisting of a molybdenum–iron (MoFe) protein that catalyzes
+N reduction and an iron (Fe) protein that acts as specific
+electron donor to the MoFe protein. The
+Fe protein is a homodimer of the  gene product
+carrying a single [FeS] cluster between its
+subunits, whereas the MoFe protein is a heterotetramer of the  and  gene products carrying two
+pairs of a [FeS] cluster and a [FeSMoC-homocitrate], designated as the P-cluster and FeMo-co,
+respectively. In addition to the nitrogenase
+structural genes, a number of accessory nitrogen fixation () gene products are required for the maturation of the
+structural components to their catalytically active forms. These include
+proteins that interact in complex biosynthetic pathways for the assembly
+of nitrogenase metal clusters and their insertion into target apo-proteins. Engineering N-fixation activity
+could be achieved by
+transferring the appropriate bacterial  genes
+to the plant. However, the biochemical and genetic
+complexity of nitrogenase assembly and regulation poses a major challenge.
+Although the , , , and  gene products have been
+shown to carry out all essential biochemical reactions in FeMo-co
+biosynthesis , the exact number of  genes required for the
+genetic transfer of nitrogen fixation among bacterial species depends
+on the nature of both the nitrogenase source and the engineered host. To add more complexity, Nif protein stoichiometry has been shown
+to be dynamic and strongly regulated. The plant cell offers several possibilities for  gene expression due to its three genomes and multiple compartments.
+As Nif proteins are bacterial proteins, it can be envisioned that
+plant cell compartments of prokaryotic origin (plastids and mitochondria)
+would be superior for accumulation of active Nif proteins, each of
+the organelles offering its pros and cons. Plastids are favorable because of the highly efficient homologous
+DNA recombination and the support for prokaryotic-type transcription
+and translation machineries, allowing multiple genes to be expressed
+from operons. However, the extreme sensitivity
+of nitrogenase to O, which destroys its metal clusters,
+poses a serious obstacle, particularly in chloroplasts where O is generated during photosynthesis. This problem has been
+highlighted in a recent work, in which the Fe protein from transplastomic  leaf extracts showed some  activity only when plants had been previously incubated at subambient
+O levels. Therefore, mitochondria
+could offer an advantage due to the respiratory high O consumption. Mitochondria also harbors a [Fe–S] cluster assembly
+machinery highly similar to the NifUS system, in addition to the plentiful ATP and reducing power that is generated
+by respiration. A minimum of 16 molecules
+of ATP is required to reduce one molecule of N. ATP is
+required for electron transfer from the NifH [FeS] cluster to the P-cluster of the NifDK component during N reduction, and possibly also for P-cluster maturation and
+FeMo-co synthesis. While plastid proteins can be
+expressed either via transformation of the plastid genome, or imported
+post-translationally following nuclear expression, transformation
+of the mitochondrial genome is more difficult. Recently, it has been shown that mitochondria of
+aerobically grown
+recombinant  cells expressing  and  accumulate active Fe protein. Yeast cells are convenient hosts to test eukaryotic
+expression of Nif proteins as they can be grown at varied O levels, to reduce the negative effects from O on Nif
+protein maturation. They are also easy to transform and maintain,
+enabling larger and more complex libraries to be constructed and analyzed.
+Its mitochondrial bacterial-like [Fe–S] cluster assembly machinery
+is also the best understood among eukaryotes. Finally, yeast cultures can easily and economically be scaled up,
+which is required to generate sufficient biomass for protein purification
+and subsequent activity assays to prove Nif protein functionality.
+In this regard,  will serve as an important
+eukaryotic model system when learning to engineer (more important)
+eukaryotic organisms, such as plants. The entire prokaryotic  gene cluster cannot
+be directly transferred to yeast due to differences in the molecular
+biology of gene expression. Thus, refactoring the  cluster and generation of  gene expression
+parts is critical. Refactoring is an engineering
+approach to clean up genetic systems. There are
+many examples of characterized yeast promoter and terminator collections. However, how much the promoter or terminator contributes to final
+gene expression strength, or whether there are emergent interactions
+with particular combinations of parts, have not been explored. Furthermore,
+models of gene expression in yeast, and eukaryotes in general, lag
+behind those used to construct powerful design tools in prokaryotes. Large genetic systems in yeast have been constructed
+by repeating both the promoter and terminator across transcription
+units. One approach to reducing part
+reuse is placing the 2A viral self-cleaving peptide between open reading
+frames, enabling multicistronic expression in yeast. However, a monocistronic gene expression approach, where
+expression of each gene is independent from the others, is best suited
+to combinatorial design, assembly, and optimization. Thus, more yeast
+gene expression parts are needed to build stable constructs of varying
+expression strength. Composability and
+design of Saccharomyces cerevisiae gene expression To this end, a set of over 1200 transcription
+units composed of
+varying promoters and terminators were individually characterized
+for GFP expression in yeast (Eric M. Young, Johannes A. Roubos, D.
+Benjamin Gordon, and Christopher A. Voigt.  2017,
+in preparation). From this set, part combinations can be selected
+to achieve varying expression levels, while preventing part reuse.
+This selection can be done manually or algorithmically with Double
+Dutch, to aim for a suitable stoichiometric
+ratio of  protein production but vary across the
+dynamic range of monocistronic gene expression strength in yeast. In this study, we aimed to simultaneously optimize protein expression
+and mitochondria targeting for a 9-gene  cluster
+() from the model diazotroph  in the yeast . was chosen as source
+of  sequences due to its strictly aerobic life
+style, in which nitrogenase is protected from O damage
+mainly by maintaining high respiratory rates. To refactor the 9  genes, each gene was codon optimized for
+expression in  With expression ratio
+intuition derived from native expression of the cluster in , and little  knowledge of appropriate absolute expression levels
+or mitochondrial tags, combinatorial design and assembly was chosen
+in order to optimize the cluster in yeast. Gene products were targeted to the yeast mitochondria using three
+different mitochondria leading sequences. These two variables were
+simultaneously optimized in the combinatorial design. In total, 96
+strains of  were generated with  genes integrated into the yeast genome. Expression
+and mitochondria targeting of properly processed Nif proteins was
+confirmed at the protein level and NifDK tetramer formation, an essential
+step of nitrogenase assembly, was experimentally proven. However,
+the purified NifDK protein was inactive, and did not appear competent
+for activation by FeMo-co insertion. To our knowledge, this is the
+first attempt undertaken in a eukaryotic cell to express sufficient  genes necessary for a functional nitrogenase. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_002.xlsx Ninety-six
+strains of  were constructed with genomic
+integration
+of yeast-optimized coding sequences for mitochondria-targeted versions
+of the  genes. As stoichiometric
+levels of Nif proteins are essential for maturation and functionality, 29 different promoters were combined with 18 distinct terminators
+to adjust the expression level of each  gene.
+Similarly, combinations of three distinct mitochondria targeting signals
+were used to ascertain efficient Nif protein targeting and leader
+sequence processing upon mitochondria import (Supporting Information ). In this study, DNA sequences
+encoding a duplicated mitochondria targeting signal for the  Mn-superoxide dismutase (here referred to as SOD2), as well as the leader sequences
+for subunit 9 of the  F-ATPase (SU9) or the  INDH1 (INDH) were fused
+to the 5′ end of  genes. SOD2 and SU9 have
+been already shown to successfully deliver Nif proteins to yeast mitochondrial
+matrix. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_002.xlsx http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_003.xlsx Two different combinatorial
+libraries of nitrogen fixation clusters were constructed. The purpose
+of the first was to determine the appropriate mitochondrial tags for , , , , and . The purpose of the second
+was to vary expression, testing previous assumptions of gene expression
+ratios. To achieve the desired expression for each set, promoter and
+terminator combinations previously characterized by GFP expression
+were used. The sequences for each part are listed in  and the expression strength of each combination is
+listed in . The mitochondrial
+tag combinatorial library consisted of 24 clusters
+(strains DSN1–24), hereafter referred to as the “designed
+set”. The designed set varied mitochondrial tags within four
+subsets of expression strength. Within each subset, the mitochondrial
+tags are varied in six combinations (, ,  tagged with SU9 or INDH combined
+with  and  tagged with SU9,
+SOD2, or INDH, all others tagged with SU9). Based on previous work
+with the  cluster, all genes were targeted to be expressed at a constant ratio.
+Relative to , the expression of  was targeted to be a factor of 10 higher,  and  6 times higher,  and  2 times higher, and all others equal to . Expression
+was set “very high”, “high”, “medium”,
+and “low” for each subset. The expression strength of
+each selected promoter and terminator combination with GFP is depicted
+in a. The expression combinatorial library
+consisted of 72 clusters (strains
+DOE1–72), hereafter referred to as the “factorial set.”
+The factorial set fixed mitochondrial tags (, ,  tagged with INDH,  and  tagged with SOD2, all others tagged with
+SU9) and assigned each gene one of two expression levels according
+to a factorial design output by the software package JMP. High and
+low expressing combinations of promoters and terminators were chosen.
+The expression strength of these combinations, tested with GFP, is
+depicted in b. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_003.xlsx Measured strengths
+of transcription units. The geometric mean and
+standard deviation of biological replicates is plotted in arbitrary
+units for each promoter-terminator combination. (a) The four expression
+levels for each of the nine genes in the designed set. (b) The two
+expression levels for each of the nine genes in the factorial set.
+The targeted ratios, and how close each promoter-terminator pair approximates
+that ratio with GFP is shown in . http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_004.xlsx A hierarchical assembly strategy based
+on TypeIIS cloning was used to construct all clusters. A simplified version of this strategy is depicted in a, with a more detailed version
+described in the  section and . Clusters were built up
+from a set of tagged genes, an antibiotic resistance gene for selection,
+and transcriptional parts. The parts were combined into transcription
+units via TypeIIS assembly. The transcription unit destination vectors
+defined gene order and allowed assembly into three subclusters, SEN,
+DSelK, and HMBU. These subclusters contained homologous sequences
+to one another and to the  genome, and
+could therefore be assembled into full clusters by homologous recombination
+during transformation. All assembly steps for the designed set are
+depicted by the assembly tree in b, while the assembly tree for the factorial
+set is shown in c. An example of final  gene organization is
+shown from DSN14 (d). Each assembly step is also tabulated in . http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_005.xlsx Following gene assembly, a subset of clusters was selected
+for
+genomic DNA isolation and verification of cluster assembly by polymerase
+chain reaction (PCR). A further subset was confirmed by Sanger sequencing
+of the PCR products (). All clusters
+tested were correct, with the exception of two clusters within the
+designed set that were determined to have a newly discovered bacterial
+transposon inserted into  during the cloning
+process. This transposon was observed to only affect those transcription
+units which contained  expressed with P4 and
+T7, therefore the two clusters containing this transcription unit
+(DSN1 and DSN4) were omitted from further analysis yielding a final
+number of 94 yeast clones. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_001.pdf Hierarchal assembly. (a) Assembly strategy for transcription
+units,
+subclusters and full clusters inserted by homologous recombination
+in the genome of . The standard KanMX
+selection cassette, abbreviated as “Sel,” was used to
+select for G418 resistance as a result of successful integration.
+(b and c) Assembly tree of the designed (b) and factorial (c) set,
+where each line represents an assembly step (see  section and  for further details). Note the variants of the tags on each gene
+in the designed set (b), while the tags are unchanged for each gene
+in the factorial set (c). (d) Scheme of  gene
+organization in DSN14. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_005.xlsx To
+confirm protein expression,
+total protein extracts were prepared from aerobically grown yeast
+cultures and analyzed by immunoblot using antibodies specifically
+targeting each Nif protein. Levels of Nif proteins in each strain
+were given a score of 0 if the protein was undetected, 1 if detected,
+and 2 if detected and the band was more pronounced, qualitatively
+indicating more protein being present (). Using expression and protein migration data from these 94 strains,
+efficiency of mitochondria targeting signals and promoters for each
+Nif protein could be assessed (). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_006.xlsx http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_007.xlsx The three mitochondrial targeting signals tested
+here successfully
+expressed Nif proteins. One striking exception was INDH, which when
+fused to  did not produce detectable NifH protein
+levels in any of the eight clones tested, independent of the promoter
+being used. In contrast, with the use of SU9 or SOD2 tags NifH accumulated
+in most constructs (a–c and ). Although
+sufficient separation of NifE and NifN was not possible by SDS-PAGE,
+as NifE and NifN in each clone were expressed with the same mitochondria
+targeting signal, the NifEN immunoblot result could be included in
+the mitochondria signal analysis. However, as different promoters
+were used for  and , they
+were excluded from the promoter analysis (Supporting Information  and ). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_007.xlsx Evaluation of promoter sequences that successfully produced
+detectable
+Nif proteins lead to the following general conclusions (d–j and ). Promoter 1 (from actin gene) rendered
+good expression levels, as demonstrated by results obtained using
+NifD, NifH, and NifS antibodies. In other cases, expression of proteins
+using the same promoter sequence gave strikingly different results
+depending on the gene. One example is promoter 24 (from the glyceraldehyde-3-phosphate
+dehydrogenase gene) that resulted in NifU protein in all 35 strains
+used, but only in half of the six clones where it was used for NifB
+expression. Another example is promoter 17 (from telomerase inhibitor
+gene) that generated detectable expression of NifH in nearly 90% (31/35)
+of the strains, but only NifB protein in half (3/6) of the strains
+and no NifS protein (0/4). These four strains lacking NifS expression
+had SU9 as the mitochondria tag, suggesting that promoter 17 might
+fail when combined with this N-terminal sequence. However, in the
+case of NifB, the three positive clones expressing detectable protein
+all contained SU9, indicating that the combination of promoter and
+leading sequence (P17+SU9) per se was likely not the reason for nondetectable
+NifS. In addition, SU9 sequence fused to  showed
+accumulation of NifS protein in five out of six strains when controlled
+by promoter 6 (from elongation factor 2 gene), further demonstrating
+that promoter 17 + SU9 was not the sole reason for the failure of
+these strains to accumulate NifS. Analysis of promoters/terminators and mitochondria targeting
+signals.
+Efficiency of each mitochondria targeting signal (a–c) and
+promoter (d–j) in generating detectable Nif proteins. As no
+NifH protein was detected when tagged with INDH (a–c), INDH-NifH
+was excluded in the promoter analysis (d–j). Solid bars indicate
+% positive clones as detected by Western blotting using antibodies
+targeting Nif proteins (a–j, left axis). Striped bars indicate
+observed fluorescence when GFP was expressed by corresponding transcription
+unit, with the geometric mean and standard deviation of biological
+replicates plotted in arbitrary units for each promoter–terminator
+combination (d–j, right axis, see also ). Data in (d–j) is ordered according
+to GFP fluorescence levels. bdl, below detection limit. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_008.xlsx http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_001.pdf To analyze the effect of gene tag
+and expression level on detection of the protein in the immunoblot,
+least-squares regression was performed using the statsmodels Python
+library. Bands corresponding to Nif proteins in individual immunoblots
+were scored by no detection (0), detection (1), and strong detection
+(2). Clusters were then scored by summing the immunoblot scores for
+each protein. Thus, a cluster could have a maximum score of 18 (9
+genes, each with a maximum score of 2) and a minimum score of 0. Regression
+analysis of cluster score against all factors within the cluster was
+performed. The models used for regression, the associated  values, and coefficients for selected fit
+equations are listed in . The python
+script used to perform all regression analysis is provided in the . http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_008.xlsx In general, transcription
+unit strength and mitochondrial tags were not predictive of detection
+by immunoblotting at the cluster level ( = 0.59 for the designed set and  =
+0.50 for the factorial set). This implies that other factors, such
+as misassembly, mutation, and antibody sensitivity determine how many
+genes in a cluster were detected. Since protein level rather than
+transcription was assessed, we cannot eliminate the possibility of
+instability of the mRNA transcripts or the nascent proteins, as there
+appears to be one or more truncation products of Nif proteins (discussed
+below). The fit equation for the designed set () shows that the SU9 tag, the expression strength,
+and the interaction terms between the SU9 tag and the expression strength
+all have the largest positive coefficients, indicating that those
+factors are positively correlated with detection by immunoblotting. Ordinary least-squares regressions were also performed at the individual
+gene, not cluster level. Variability in the quality of fit was observed.
+NifS detection was uncorrelated to its expression strength ( ∼ 0.16 in the factorial set and ∼0.08
+in the designed set), while NifM, NifB, and NifU also showed poor
+fits ( values between 0.3 and 0.6 in
+both sets). However, NifD detection better correlated with its expression
+strength ( = 0.77 in the factorial set
+and 0.71 in the designed set). NifH detection was uncorrelated with
+expression in the factorial set ( =
+0.14), but better correlated in the designed set, where the mitochondrial
+tag was varied ( = 0.65). The INDH tag
+was used for NifH in the designed set, which did not produce detectable
+protein. For NifH in the designed set, NifH detection was negatively
+correlated with the INDH tag (coefficient = −0.69), and positively
+correlated with both SOD2 and SU9 tags (coefficients of 0.81 and 0.56,
+respectively). The cluster with detectable expression of all nine
+Nif proteins by Western blotting was the designed set cluster DSN14
+( and ). This cluster also showed strong immunoblot
+detection of seven of the nine genes, giving a cluster score of 16
+of a possible 18. This cluster contains all genes tagged with SU9
+and with expression set at the high level (d). This is in agreement with the conclusions
+of the regression analysis. Nif protein expression in 20 selected yeast
+clones. Immunoblot
+analysis of 20 transformed yeast clones, showing expression and migration
+of NifDK, NifH, NifU, NifS, NifB, NifM, and NifEN proteins, as well
+as tubulin (loading control). Theoretical masses of corresponding  Nif proteins are indicated. Wild-type (WT)
+yeast clone is included as control of Nif antibodies specificity.
+Red squares highlight migration at the location of corresponding  proteins. On the basis of the initial
+immunoblot-based screening, the 20 most promising strains were selected
+for further analysis. These strains were grown again and independently
+analyzed to verify protein expression levels (). To ensure that Nif proteins were properly
+translated and processed, their migration on SDS-PAGE gels were compared
+to the migration of corresponding protein from  total protein extracts, or purified  Nif proteins. Difference in migration
+could indicate faulty translation start, improper processing of mitochondria
+targeting sequences or Nif protein instability/protein degradation.
+In this regard, a prominent and faster-migrating polypeptide around
+50 kDa was recognized by the NifDK antibodies in many yeast strains,
+in addition to the expected NifDK double band. This could indicate
+that NifD and/or NifK are prone to degradation when expressed in a
+eukaryotic host. As NifD and NifK forms a tetramer consisting of two
+NifD and NifK subunits, insertion of this aberrant variant into NifDK
+could prevent NifDK functionality. Another possibility is that this
+variant appears when NifDK is not properly assembled, and that the
+putative degradation product is indicative of failing NifDK maturation. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_001.pdf To understand the origin of the faster migrating polypeptide, purified  NifDK protein was separated by SDS-PAGE and
+immunoblotted using antibodies raised specifically against NifD or
+NifK (). The result showed slower
+NifD migration, although the theoretical size of NifD is several kDa
+below that of NifK (55.3 and 59.4 kDa, respectively). In this regard,
+the presence of the 50 kDa band in the yeast protein extracts coincided
+with the upper and slower migrating NifD (or NifD together with NifK),
+compared to clones that only showed NifK expression, confirming an
+NifD origin of the 50 kDa band (). This was further supported using NifD and NifK specific immunoblots
+of yeast protein extracts (),
+in which the NifD antibodies detected a band around 50 kDa. Interestingly,
+expression of mitochondrial targeted N-terminally His-tagged NifD
+(SU9-His-NifD) with NifK (SU9-NifK) from plasmids using galactose
+induced promoters showed that full-length NifD was recognized by the
+His-tag antibody, while the 50 kDa form was not, strongly suggesting
+that the 50 kDa variant is originating from N-terminal processing
+of NifD (). A similar faster
+migrating NifD isoform is observed in  cells upon deletion of the  gene (unpublished
+data), indicating that indeed this NifD form is produced upon incomplete
+NifDK assembly. Targeting and Processing of Mitochondrial
+Signals As
+most Nif proteins form homodimers or complexes with other Nif proteins,
+correct N- and C-termini can be critical for Nif functionality. Our
+analysis showed that SU9 mostly rendered polypeptides of correct size,
+while, for example, SOD2 often resulted in two distinct bands, where
+the slower migrating form likely corresponded to non (or partly)-processed
+SOD2 fusion proteins (e.g., compare migration of NifH in DSN14 and
+DSN17 (SU9-NifH) with DSN16, DOE7, and DOE11 (SOD2-NifH) in ). In other cases,
+SOD2 generated two polypeptides that migrated slower than the expected  protein, and as seen using SU9 signal (e.g.,
+compare DSN17 (SU9-NifM) with DOE3 (SOD2-NifM) in ). While INDH failed to generate
+detectable protein for most NifH and NifM clones c, it was efficient in generating
+NifB of apparently correct size (). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_001.pdf Targeting of Nif proteins using
+the three leader sequences was confirmed by isolating enriched mitochondrial
+fractions from selected strains (). As expected, mitochondria targeting was achieved using all three
+mitochondria targeting signals (SU9, SOD2, and INDH). Importantly,
+the lower NifD isoform was enriched in mitochondria isolations, indicating
+its appearance was not due to faulty translation initiation, but that
+processing/degradation appears to take place in the organelle itself.
+In line with results from the  mutant
+mentioned above, this finding could indicate that excessive NifD processing
+is initiated by inefficient or absent NifDK tetramer formation. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_001.pdf Maturation of NifDK tetramer
+depends on the action of the  gene products.
+To test NifDK complex formation, protein extract prepared under anoxic
+conditions were obtained from yeast strain DSN14. DSN14 was selected
+due to good expression and accurate mitochondrial targeting and processing
+of NifU, NifS, NifH, NifM, NifD, and NifK ( and ). Two individual strategies were used to test NifDK assembly. First,
+proteins were separated on anoxic native gels, where eventual NifDK
+complexes would migrate intact. Immunoblot analysis showed that polypeptides
+cross-reacting with NifDK, as well as the NifD and NifK specific antibodies,
+comigrated (a). As NifDK is known to migrate differently depending on the clusters
+present (e.g., FeMo-co present at holo-NifDK increases its
+migration compared to the P-cluster containing, but FeMo-co-less,
+apo-NifDK), the purified  holo- and
+apo-NifDK proteins were included as comparisons. Yeast NifD and NifK
+migrated closely, but not identical to any of the two  NifDK forms, indicating that some conformational or biochemical
+discrepancies exist between the proteins expressed in the two hosts
+and suggesting that some of the critical components of NifDK could
+be missing in the yeast expressed protein. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_001.pdf As a second and independent approach to verify NifD and NifK
+direct
+interaction, an inducible yeast expression vector was created where
+His-tagged NifD and nontagged NifK, both with SU9 leader sequences,
+were expressed using the galactose inducible galactokinase 1 and 10
+(GAL1 and GAL10) promoters. Anaerobic Co affinity chromatography
+of protein extracts from DSN14 cells, or wild-type yeast cells complemented
+with galactose inducible expression of NifUSHM, transformed with the His-NifD/NifK expression vector and
+grown with galactose as the carbon source, showed that NifK copurified
+with His-NifD and further suggested that NifDK complex is indeed formed
+(b and ). In addition, the faster migrating
+N-terminally processed isoform of NifD (lacking His-tag) was copurified
+with full-length His-NifD, suggesting that tetramers of NifDK, and
+not only eventual NifDK dimers, are formed. Mitochondria targeting
+of Nif proteins in DSN14. Immunoblot analysis
+of total extracts (TE) and mitochondria isolations (Mito) from wild-type
+yeast (WT) and DSN14, where Nif proteins are expressed and targeted
+to mitochondria using SU9 leader sequences. Analysis using antibodies
+recognizing cytoplasmic (tubulin) and mitochondria (HSP60) control
+proteins is included. s.e. and l.e., short and long exposure. NifDK tetramer formation. (a) Ponceau and immunoblot
+analysis of
+yeast DSN14 protein extract, as well as purified  holo- and apo-NifDK proteins (red and blue squares, respectively),
+separated on anoxic native gels. Polypeptides cross-reacting with
+NifD, NifK, and NifDK antibodies are highlighted with black arrows.
+(b) Co-purification of NifK with His-tagged NifD. NifK (green arrows)
+comigrates with His-tagged NifD (yellow arrows), indication complex
+formation of NifK and His-NifD polypeptides. In addition, the faster
+migrating species, presumably N-terminally processed form of NifD
+(red arrows) is copurifying with His-tagged NifD, suggesting that
+NifDK tetramer is formed. (c) Ponceau and immunoblot analysis of yeast
+DSN14 protein extract, as well as purified  holo- and apo-NifDK proteins (red and blue squares, respectively),
+separated on anoxic native gels in the absence or presence of NafY.
+Co-migration of NafY protein with apo-NifDK is indicated by green
+arrow, as compared to unbound NafY (brown arrow). Faster migrating,
+presumably FeMo-co bound NafY, is indicated by gray arrow. A population
+of NafY protein comigrating with yeast NifDK is indicated by yellow
+arrow. s.e., short exposure. NafY protein is shown to
+bind both the iron–molybdenum cofactor (FeMo-co) and to FeMo-co-less
+apo-NifDK. Interaction between NafY and
+apo-NifDK can be assessed using anoxic gel electrophoresis, where
+NifDK-bound NafY shows retarded migration with respect to free NafY. NafY incubated with pure  apo-NifDK comigrated with apo-NifDK as expected (c), whereas binding to holo-NifDK
+was significantly weaker. The majority of NafY, when incubated with
+holo-NifDK, showed faster migration compared to NafY alone. This is
+likely to result from binding of NafY to holo-NifDK-derived FeMo-co, as FeMo--bound NafY has been shown to migrate
+faster on anoxic native gels. While most
+of NafY incubated with anaerobic DSN14 cell-free extract migrated
+as in the control sample, a small population of NafY polypeptides
+showed retarded migration at the site of yeast NifDK. This result
+suggests some affinity of NafY for yeast NifDK, supporting that NifDK
+in DSN14 is partly matured. However, no difference in yeast NifDK
+migration was observed upon incubation with purified FeMo-co, and
+no NifDK activity (assessed by acetylene reduction)
+was measured following FeMo-co insertion (data not shown), indicating
+that the yeast expressed protein was not readily activated by FeMo-co.
+Therefore, to what extent the formed NifDK tetramer is matured in  and what factor(s) are missing remains to
+be investigated. We generated and analyzed
+94 strains of  with nine  genes () integrated
+into the yeast
+genome. Gene products were targeted to the yeast mitochondria using
+three different mitochondria leading sequences, and their expression
+was regulated using 29 distinct promoter and 18 terminator sequences
+aiming for a suitable stoichiometric ratio of Nif protein production.
+Successful expression, targeting and mitochondrial signal trimming
+was confirmed in aerobically grown yeast cultures by immunoblotting
+with Nif targeting antibodies. This work elucidated SU9 as a promising
+mitochondrial tag to use in future  cluster assemblies,
+and that efficient Nif protein expression in eukaryotic cell is possible. Accurate NifDK protein assembly is of absolute necessity for future
+attempts to generate eukaryotic organisms (e.g., plants) able to fix
+atmospheric dinitrogen, and to test the possibilities of eukaryotic
+hosts to perform this activity is required. We therefore determined
+efficiency of Nif protein production and maturation in yeast protein
+extracts, with a special emphasis on NifDK. Apo-NifDK is defined as
+a P-cluster containing, but FeMo-co-less, NifDK protein consisting
+of two NifD and NifK subunits, respectively. Formation of apo-NifDK
+depends on the activity of NifSUHM in addition to NifDK, where NifS
+and NifU are involved in synthesis and delivery of [Fe–S] clusters
+to NifDK (and NifH), and NifH is necessary for the maturation of the
+P-cluster in apo-NifDK. NifM is important
+for maturation of active NifH, although its mechanism is not
+completely clarified. Our results show that NifS, NifU, NifH,
+NifM, NifE, NifN, and NifB
+proteins could be efficiently expressed and accumulated at mitochondria.
+We could also detect formation of NifDK protein, indicating that the
+two subunits are capable of forming a complex upon import into yeast
+mitochondria. When coexpressed with NifHUSM, yeast NifDK showed some
+affinity toward NafY, indicative of the presence of P-clusters (or
+P-cluster precursor). However, formed apo-NifDK was not readily activated
+by FeMo-co , suggesting that coexpression
+of additional  genes might be necessary for efficient
+NifDK formation to take place in the eukaryotic cell. Proper  gene expression dynamics could also be an important
+factor for NifDK formation.  cells entering
+nitrogen-fixing conditions show a peak of  and  expression preceding  expression,
+probably to ensure the supply of Fe–S clusters to newly formed
+nitrogenase components. It is possible
+that engineering nitrogenase in nondiazotrophs would require the incorporation
+of promoters adding temporal control to  gene
+expression. Further work will be needed
+to elucidate the biochemical properties of this protein and to understand
+the level of NifDK maturation achieved. This study highlights
+the strength of yeast as platform to rapidly
+design, test, and evaluate expression and functionality of heterologous
+Nif proteins targeted to mitochondria, compared to using plants. This
+platform will be important in further attempts to express even more
+complex combinations of Nif proteins, which will likely be needed
+to generate a functional nitrogenase in a eukaryotic organism. Strains,
+Media, and Molecular Biology for Generation of Yeast
+Strains CEN.PK113–7D
+(MATa URA3 TRP1 LEU2 HIS3 MAL2–8c SUC2) was the host strain
+for all constructs and grown at 30 °C in YPD media with 200 μg/mL
+G418 added when appropriate. Yeast transformations were carried out
+according to the lithium acetate method. Chemically competent  DH5α (New England
+Biolabs) was used as a cloning strain and grown at 37 °C in LB
+media with appropriate antibiotics (100 μg/mL carbenicillin,
+25 μg/mL chloramphenicol, or 25 μg/mL kanamycin) and inducer
+(100 μL of 40 mg/mL X-gal) was spread and dried on plates for
+blue/white screening when appropriate. All Sanger sequencing
+reactions were performed by Quintara Biosciences. Plasmid isolations
+were performed with Qiagen Qiaprep kits where purity and yield were
+desired or Zymo Zyppy kits when speed was desired. Genomic DNA was
+isolated using the Promega Wizard Genomic DNA Preparation Kit. Gel
+electrophoresis was carried out using an Agilent bioanalyzer according
+to manufacturer instructions. BsaI was purchased from New England
+Biolabs. BbsI was purchased
+from Thermo Fisher Scientific. High concentration T4 DNA ligase was
+purchased from Promega. Assembly reactions were performed as previously
+described. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_002.xlsx All PCR primers were
+ordered from IDT (). All PCRs used Q5 2X Master Mix from New England Biolabs.
+PCRs were performed on BioRad 1000 series thermocyclers. Synthetic
+double stranded DNA, when required, was ordered as a gBlock from IDT. Cluster Genes and Localization Tags http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_002.xlsx Yeast-optimized
+versions of , , , , , , , and  (GenScript) were selected to form a minimal nitrogen fixation cluster
+in . An N-terminal His tag was placed
+in NifD. These genes were directed to the mitochondrial matrix by
+using three different N-terminal peptide tags: SOD2, SU9, and INDH. While the peptide sequence was maintained, the
+DNA sequence of the mitochondrial tags was varied to minimize risk
+of recombination in yeast. Furthermore, the mitochondrial tag for
+only a subset of the genes was varied. The tags for  and  were SOD2, SU9, and INDH. The tags for , , and  were
+SU9 and INDH. All other genes used SU9 only. Gene and tag sequences
+are listed in . Composability and design of Saccharomyces cerevisiae
+gene expression http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_002.xlsx Promoters and terminators
+were selected from a set of characterized yeast gene expression parts
+(Eric M. Young, Johannes A. Roubos, D. Benjamin Gordon, and Christopher
+A. Voigt.  2017, in preparation). Promoter and terminator
+sequences are listed in . Yeast
+promoter and terminator sequences were cleaned of any BsaI or BbsI
+sites by point mutation, and then placed into level 0 TypeIIS assembly
+vectors for versatile cloning into any transcription unit. To
+characterize expression strength, promoters and terminators were cloned
+into respective characterization vectors. The promoter characterization
+vector, pEMY01AB-PRO, contains homologous sequences to the yeast genome
+upstream of the promoter cloning site, and a fragment of a yeast codon-optimized
+GFP downstream. The terminator characterization vector, pEMY01C-TER,
+contains an overlapping fragment of GFP upstream of the terminator
+cloning site, and homology to the  TEF1 promoter used to drive expression of the G418 resistance gene.
+Using these characterization vectors, any promoter could be combined
+with any terminator due to the homology occurring in the shared GFP
+protein. A combination can be integrated into the yeast genome and
+selected by G418 resistance. Using homologous recombination
+and automated liquid handling (LabCyte
+Echo), thousands of unique transcription units could be created from
+these characterization vectors. To measure GFP expression strength,
+yeast strains with unique integrated promoter–terminator pairs
+were cultured for 24 h in an Infors Multitron shaker at 30 °C
+with 500 μL of SC+G418 media in a deep-well microtiter plate.
+Yeast cultures were then diluted 1:10 in sterile water and GFP expression
+was quantified by flow cytometry using a MACSQuant VYB cytometer.
+Flow cytometry data was analyzed by taking the geometric mean and
+standard deviation of 20 000 events for each promoter–terminator
+combination (). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_001.pdf Hierarchical assembly allows for the
+combination of any gene with any transcriptional part, yet requires
+part standardization to eliminate restriction sites used in the assembly
+process. Yeast promoters and terminators were previously standardized
+and are maintained in Level 0 vectors with carbenicillin resistance
+and BsaI sites for Level 1 transcription unit assembly (). Promoters have the scars GTGC and
+AATG. Terminators have the scars TAAA and CCTC. Upon BsaI digestion,
+these scars form sticky ends that are then ligated together with the
+desired open reading frame. However, the yeast-optimized  genes were not in Level 0 vectors, many did not have the necessary
+mitochondrial tags, and most needed to be modified to eliminate BsaI
+and BbsI sites. First, a  gene was amplified from
+the parent vector with PCR using primers that added flanking BbsI
+sites. If a base was to be edited, an upstream fragment and a downstream
+fragment were amplified, with the modified bases forming a TypeIIS
+scar sequence and flanked by BbsI sites. Mitochondrial tags were ordered
+as gBlocks from IDT, also with flanking BbsI sites. This allowed,
+in one assembly reaction, removal of all TypeIIS sites, addition of
+mitochondrial tags, and placement in a Level 0 vector for further
+assembly (). Each Level
+0 vector was picked using blue/white screening and later confirmed
+by Sanger sequencing of the inserted gene. All  genes assembled appropriately into Level 0 vectors, with the exception
+of , which was toxic to  in the Level 0 vector, even when a low-copy p15a replicon was used.  was therefore ordered as a gBlock from IDT with flanking
+BsaI sites to be used in Level 1 assembly. Level 0 vectors containing  inhibited the growth of , but
+were stable. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_004.xlsx Level 1 transcription units were assembled by digesting
+Level 0
+vectors with BsaI and ligating them into a chloramphenicol-resistant
+Level 1 destination vector ().
+Level 1 destination vectors are designed to determine gene order within
+the cluster, and are designed to have yeast terminator-like elements
+as a spacer between transcription units (see ). All desired Level 1 transcription units could be constructed,
+although  was constructed using a p15a replicon
+rather than ColE1. All Level 1 transcription units are described in . Each Level 1 assembly was picked using
+red/white screening and later confirmed by Sanger sequencing. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_004.xlsx Level 2 subclusters were assembled by digesting Level 1 vectors
+with BbsI and ligating into a kanamycin-resistant Level 2 destination
+vector (). The left subcluster
+contains , , and . The center subcluster contains , the KanMX yeast selection marker, and . The
+right subcluster contains , , , and . All Level 2 subclusters
+are described in . These subclusters
+were constructed with the aid of the Labcyte Echo acoustic liquid
+handling device. Each Level 2 subcluster was picked using blue/white
+screening and later confirmed by BsaI digestion and gel electrophoresis.
+A subset was later confirmed by Sanger sequencing. Two subclusters
+containing  failed at this stage because the
+observed fragment size was larger than expected on the gel. This was
+later determined to be due to transposon insertion. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_004.xlsx Subclusters
+were cut with BsaI to generate linear fragments for
+yeast transformation. By adding homology fragments with identity to
+the yeast chromosome XV, subclusters recombined and integrated into
+this chromosome. This is depicted in . Subclusters were combined with the aid of the Labcyte Echo acoustic
+liquid handling device. Genome integrations were selected by growth
+in the presence of G418. A subset of clusters were selected for genomic
+DNA isolation and verification of insertion by PCR. A further subset
+was confirmed by Sanger sequencing of the PCR products. All Level
+1 vectors are diagrammed in  and
+all yeast-integrated clusters are described in . http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00371/suppl_file/sb6b00371_si_002.xlsx As
+an additional safeguard
+against read-through, terminator-like elements were placed in between
+each transcription unit in this work. By combining known efficiency,
+spacing, and polyadenylation elements in forward and reverse orientation,
+a double terminator-like spacer sequence was generated using a python
+script (). Varying elements and
+adding random bases between elements diversified the spacer sequence
+to limit recombination. Spacer sequences are listed in . Generation of Plasmids
+for Galactose-Induced Expression DH5α was used for storage and amplification
+of yeast expression vectors, and grown at 37 °C in Luria–Bertani
+medium supplemented with appropriate antibiotics. Yeast optimized
+coding sequences for SU9-His-NifD (containing an N-terminal 8xHis-tag)
+and SU9-NifK were cloned into pESC-LEU (Agilent Technologies), generating
+pRHB887 (GAL1p::mlsSU9-his8-nifD and GAL10p::mlsSU9-nifK). Plasmid
+pRHB887 was transformed into  W303–1a
+(MATa leu2–3, 112 trp1–1 can1–100 ura3–1
+ade2–1 his3–11,15) strain GF11 (GAL1p::mlsSOD2-his7-nifH and GAL10p::mlsSOD2-flag-nifM in pESC-His,
+and GAL1p::mlsSu9-nifU and GAL10p::mlsSu9-nifS in pESC-URA), generating
+SB01Y. To make the vector compatible with transformation into prototrophic  CEN.PK113–7D clone DSN14, the hygromycin
+marker hphMX4 was amplified from pMJ696 (identical to pAG32) by PCR to replace the LEU2 auxotrophic marker
+of pRHB887, generating pN2SB16. pN2SB16 was transformed into DSN14,
+generating SB05Y. Growth of Yeast Clones and Preparation of
+Nif Total and Mitochondria
+Enriched Protein Extracts CEN.PK113–7D
+(and derivative strains constructed herein) and  CEN.PK2–1C (MATa ura3–52 trp1–289 leu2–3,112
+his3Δ1 MAL2–8c SUC2) (used to prepare wild-type protein
+extracts) were grown in flasks at 28 °C and 200 rpm in synthetic
+drop-out (SD) medium (1.9 g/L yeast nitrogen base, 5 g/L ammonium
+sulfate, 20 g/L glucose, and Kaiser drop-out mixture (SC -His -Leu -Trp -Ura, FORMEDIUM) supplemented with 40
+mg/L tryptophan, 40 mg/L histidine, 20 mg/L uracil, 60 mg/L leucine,
+and 20 mg/L adenine). Total yeast protein extracts for screening of
+Nif protein expression levels were performed using mild alkali treatment. Similar loading on SDS-PAGE gels was obtained
+by preparing samples according to optical density, and was confirmed
+using Ponceau staining of nitrocellulose membranes and immunoblotting
+with tubulin antibodies. Mitochondria-enriched isolations were prepared
+following Diekert et al., and purity
+verified using tubulin (cytoplasmic) and HSP60 (mitochondria) targeting
+antibodies. Cultures for NifDK purification were grown following
+a previously reported procedure, in a
+4-L fermenter (BIOSTAT) containing rich medium (1% yeast extract,
+0.75% bactopeptone, 0.5% bactotryptone, 0.5% ammonium sulfate, 2.5%
+galactose), supplemented with 25 mg/L ammonium iron(III) citrate,
+1.25 mM magnesium sulfate, 1.5 mM calcium chloride, and trace element
+solution. pH was maintained around 5
+using 0.8 M ammonium hydroxide. Plasmid for the inducible expression
+of NifK and His-tagged NifD in transformed DSN14 (SB05Y) was maintained
+by supplementing the inoculum growth media with 300 μg/L hygromycin.
+Plasmids for the inducible expression of Nif proteins in SB01Y was
+maintained by growing the inoculum in SD medium using their auxotrophic
+requirements. Antibodies and Immunoblotting
+Quantification Antibodies
+used for immunoblotting and quantification in this study were as follows:
+polyclonal antibodies detecting NifDK, NifEN, NifH, NifM, NifU, NifS,
+NifB, and NafY were raised against purified preparations of the corresponding  proteins. Quantification of NifD and NifK
+polypeptides using NifDK antibodies was accomplished due the apparent
+difference in migration. NifEN was quantified collectively, as the
+NifEN polypeptides could not be sufficiently separated by SDS-PAGE.
+For immunoblotting scoring, both mature Nif protein with processed
+mitochondria leader sequence and nonprocessed protein was included. NifD and NifK specific antibodies were a kind gift from Dr. Yuichi
+Fujita, Nagoya University. Monoclonal antibodies against tubulin (3H3087,
+sc-69971, Santa Cruz), His-tag (H-3, sc-8036, Santa Cruz), and HSP60
+(LK2, NBP2–34671H, Novus Biologicals) are commercially available. Preparation of Anaerobic Yeast Cell-Free Extracts cells were resuspended in anaerobic lysis
+buffer (100 mM Tris-HCl pH 8.0, 400 mM NaCl, 20% glycerol) supplemented
+with 2 mM dithionite (DTH), 1 mM phenylmethylsulfonyl fluoride (PMSF),
+2.5 μM pepstatin A, 1 μg/mL leupeptin, 2 μg/mL aprotinin,
+2.5 μM E-64, and 1.5 μM phosphoramidon disodium salt.
+The cells were lysed in an Emulsiflex-C5 homogenizer (Avestin Inc.)
+at 25 000 lb per square inch. Cell-free extracts were obtained
+after removing debris by centrifugation at 50 000 for 1 h at 4 °C under anaerobic conditions, followed by 0.2
+μM filtration (Nalgene Rapid-Flow, Thermo Scientific). Anoxic
+Native Gels and NafY Binding Separation of NifDK
+by discontinuous anaerobic native PAGE was performed inside a glovebox
+(MBraun). All buffers were previously made anaerobic by sparging with
+N. Anaerobic yeast cell-free extracts were mixed with
+2× loading buffer (50 mM Tris-HCl, pH 7.9, 30% glycerol) and
+separated using a water-cooled SE 600 RUBY vertical unit (GE Healthcare)
+in 4.5 L running buffer (25 mM Tris-HCl, pH 8.3, 192 mM glycine) supplemented
+with 2 mM DTH. For NafY binding, 6 μg of NafY was added to 400
+μg of anoxic yeast protein extract (100 mM Tris-HCl, pH 8.0,
+20% glycerol, supplemented with 2 mM DTH, 1 mM PMSF, 1 μg/mL
+leupeptin, and 5 μg/mL DNase I), or 30 μg pure  NifDK, at a final volume of 75 μL and
+incubated at room temperature for 60 min. For FeMo-co insertion, 5
+μL of pure FeMo-co (at 294 μM, based on iron concentration)
+was added to 185 μL of yeast extract in a final volume of 400
+μL and incubated at 30 °C for 60 min. Before electrophoresis,
+2× loading buffer was added to all samples. Gels of 18 cm (7%
+resolving gel, pH 8.6 and 4% stacking gel, pH 7.0) were made anaerobic
+at constant current, 12.5 mA per gel for 2 h. Protein samples (20
+μL) were separated at constant current, 25 mA per gel, for 6
+h at 4 °C. Following gel electrophoresis, proteins were transferred
+to nitrocellulose membranes and analyzed by immunoblotting following
+standard methods. NifDK activity of
+protein purified from  cells was analyzed
+by acetylene reduction
+assay following incubation of pure FeMo-co, and after addition of excess of purified  NifH protein and ATP-regenerating mixture (1.23 mM ATP, 18 mM phosphocreatine,
+2.2 mM MgCl, 3 mM DTH and 40 mg of creatine phosphokinase). Positive control reactions were carried out
+with pure preparations of  NifH and
+NifDK (apo and holo forms) proteins. His-tagged NifD was purified by
+Co affinity chromatography under anaerobic conditions
+(<0.1 ppm of O) using an AKTA Prime FPLC system (GE
+Healthcare) inside a glovebox (MBraun). All buffers were previously
+made anaerobic by sparging with N. Anaerobic cell-free
+extract from 50 to 100 g of cell paste was loaded at 2 mL/min onto
+a column filled with 5 mL of IMAC resin (GE Healthcare) equilibrated
+with buffer A (25 mM Tris-HCl pH 7.4, 400 mM NaCl, 20% glycerol) and
+washed with three successive washes of Buffer B supplemented with
+0, 10, and 30 mM imidazole, respectively. Bound protein was eluted
+with buffer A containing 250 mM imidazole. The eluted fractions were
+concentrated using a 100 kDa cutoff pore (Amicon Ultra-15, Millipore)
+and then desalted in PD10 columns equilibrated with buffer A. Purified
+NifDK was frozen and stored in liquid N..

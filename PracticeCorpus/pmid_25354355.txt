@@ -1,0 +1,158 @@
+Genetically
+encoded biosensors
+composed exclusively of RNA may lead to a novel class of sensors that
+enable real-time monitoring of biomolecules in living cells. Additionally,
+RNA-based biosensors may be an ideal platform for sensing intracellular
+genetic information, such as mRNAs (mRNA) or noncoding RNAs (ncRNAs)
+that are specific to tissues or diseases, because the sensing mechanism
+can be engineered by simple base-pairing. To that end, the Spinach
+aptamer selected to bind 3,5-difluoro-4-hydroxylbenzylidene imidazolinone
+(DFHBI) and activate fluorescence by mimicking the GFP fluorophore has inspired a number of promising biosensors
+by coupling the Spinach folding with another aptamer that binds a
+molecule of interest. Here, we report an  RNA circuit capable
+of signal amplification in which an input RNA strand catalytically
+activates multiple Spinach aptamers via nonenzymatic RNA strand displacement
+reactions. As depicted in Figure a, the circuit
+consists of three RNA strands: an internally blocked Spinach aptamer
+(), a fuel strand (), and a catalytic
+input strand (). First,  hybridizes with
+the inhibitory strand within , which allows the aptamer
+to bind DFHBI and become fluorescent while concomitantly exposing
+a short toehold sequence. Second, the fuel strand ()
+which is present in excess displaces  by a toehold mediated
+branch migration to produce the final product  and
+recycles  for further catalysis. The compact  circuit exclusively composed of RNA (except for
+DFHBI) described here may serve as a model for catalytic signal amplification
+of functional RNA devices (e.g., aptamers, ribozymes, regulatory RNAs)
+for applications  and . RNA signal amplification circuit design. (a) Schematic illustration
+of the RNA signal amplifier mechanism. The circuit consists of three
+RNA strands: an internally blocked Spinach aptamer (), a fuel strand (), and a catalytic input strand ().  hybridizes with  using
+the toehold (red) to form  allowing the Spinach
+aptamer domain (blue) to fold and activate fluorescence after binding
+DFHBI. Subsequently,  hybridizes with  via the newly exposed toehold (green) to displace  which can engage in further catalysis. (b) Fluorescence of  and  (500 nM) in the presence of DFHBI
+(3 μM). Fluorescence of  was restored in the
+presence of  (1500 nM). The average raw fluorescence
+values from triplicate experiments were obtained and normalized by
+the corresponding fluorescence of  (500 nM). (c) Sequences
+of the circuit components described in this work. Supporting Information Figure S1 To implement the RNA circuit depicted
+in Figure a, the internally blocked Spinach
+aptamer () was first designed by extending the 5′
+end of the Spinach
+aptamer with a sequence that is complementary to a part of the Spinach
+aptamer critical for ligand binding (Figure c, ). As expected,  transcribed  exhibited diminished fluorescence in the presence of 3 μM
+DFHBI relative to the unmodified Spinach aptamer  (approximately
+4% of the unmodified Spinach) (Figure b).
+Importantly, the fluorescence of  recovered to about
+90% of that of  in the presence of 3-fold molar excess
+of a DNA strand complementary to the internal blocking sequence and
+its neighboring bases (), demonstrating that  can be activated by sequestering the blocking sequence
+by hybridization (Figure b). Supporting Information Figure
+S2 Supporting Information Figure S3 Next, we
+designed three catalytic input strands (, , and ) and two fuel strands
+(, ) with different sizes (Figure c). Reactions containing  (500
+nM) and  (1000 nM) with or without  (50
+nM) were set up and the fluorescence was monitored over time at 30
+°C (Figure a, b). The fluorescence intensity
+was normalized to that of the unmodified Spinach aptamer  (500 nM), which corresponds to the sum of the concentrations of  and . The linearity of the Spinach
+fluorescence was confirmed for the  concentrations
+between 0 to 500 nM (). Both  and  displayed
+comparable rates of uncatalyzed formation of  likely
+due to transient access of the toehold. However,  in the presence of  exhibited the strongest activation
+of  (Figure a), and therefore,
+it was chosen for further analysis. Fluorescence activation was monitored
+in the presence of  (500 nM),  (1000 nM), and varying concentrations of . The
+reaction rate increased in a dose-dependent manner on the  concentration. The catalytic nature of the circuit was evident,
+as demonstrated by the production of 126 nM activated aptamer ( + ) by catalysis in the presence of
+25 nM  in 185 min (Figure c). This corresponds to, on average, activation of 5.0 molecules
+of  by one molecule of . In the
+absence of the fuel strand, no increase in fluorescence was observed
+after the rapid initial formation of the  complex
+(). Recently, a number of promising metabolite and protein sensors
+based on the Spinach aptamer have been designed by strategically fusing
+an aptamer that binds to the molecule of interest to the Spinach aptamer. Stoichiometric activation of the Spinach aptamer by a short oligonucleotide
+was also demonstrated. Catalytic activation
+of a fluorescent RNA aptamer such as Spinach is an attractive strategy
+because it can significantly improve the sensitivity of the Spinach-based
+sensing systems. To this end, Bhadra and Ellington recently described
+a related  RNA circuit that combines catalytic
+hairpin assembly (CHA) with a fluorescent Spinach aptamer output. The strategy was based on the DNA CHA circuits
+they previously reported. In that work,
+they designed a core signal amplification circuit in which hybridization
+of two DNA hairpins (H1 and H2) was catalytically triggered by an
+input. Subsequently, the researchers designed various output modules
+that can be activated by the amplified H1–H2 duplex. In the
+recent work, Bhadra and Ellington implemented this strategy using
+RNA and designed an output module that activates Spinach fluorescence. Although their core amplification circuit exhibited
+impressive performance with a low uncatalyzed reaction rate as evaluated
+by a FRET-based output reporter, their Spinach aptamer output suffered
+low signal-to-noise ratio, and catalytic turnover was not explicitly
+demonstrated. Conceptually, the CHA architecture is attractive for
+its modular design, as elegantly demonstrated by the DNA implementation . With RNA, however,
+it remains to be seen if the benefits of the proposed modularity outweigh
+the added complexity of the circuits (more components, more reaction
+steps), especially for  applications where
+control of multiple RNA species (stoichiometry, stability) can be
+challenging. Also of interest, the Pierce group described “small
+conditional
+RNAs (scRNAs)” where a series of RNA-based oligonucleotides
+(some bases were chemically modified) were designed to conditionally
+produce a Dicer substrate that can induce RNA interference (RNAi)
+in response to a trigger RNA. One implementation
+in their recent report resembles CHA in which the product serves as
+a Dicer substrate. Supporting Information
+Figure S4 One limitation of our current circuit is
+that the sequence of the
+catalytic strand is constrained by the Spinach sequence. Both the
+Pierce and the Ellington groups have demonstrated strategies to translate
+an arbitrary input sequence or a molecular input to trigger the catalytic
+reaction, which can also be adapted to the circuit
+described here. For example, the catalytic strand can be extended
+on its 5′ terminus to include a sensor sequence that also blocks
+the toehold domain so that the catalytic strand can be conditionally
+activated by a target molecule (). Our work described above and the recent related
+efforts by other
+groups strongly suggest that the robustness demonstrated
+by the nonenzymatic DNA signal amplification circuits is, in principle, achievable with RNA. However, additional
+efforts to improve the performance and robustness of the RNA circuits
+are needed to ultimately implement them as genetically encoded signal
+amplification circuits in living cells. Characterization
+of the catalytic RNA signal amplification circuits.
+(a) Activation of  (500 nM) fluorescence in the presence
+of  (1000 nM) with or without a catalytic strand
+(,,; 50
+nM) over time. (b) Activation of  (500 nM) fluorescence
+in the presence of  (1000 nM) with or without a
+catalytic strand (,,; 50 nM) over time. (c) Activation of  (500 nM)
+fluorescence in the presence of  (1000 nM) with
+or without different concentrations of  over time.
+(a–c) The reactions were performed as described in the , and the average fluorescence values from
+triplicate experiments were plotted. The triplicate measurements were
+typically within 3% of the plotted average values, which were smaller
+than the data symbols shown. and  were prepared by  transcription using T7
+High Yield RNA Synthesis Kit (New England Biolabs) according to the
+manufacturer’s instruction. The DNA templates for  transcription reactions were obtained by PCR using
+a plasmid in which the Spinach aptamer sequence was cloned and sequence
+verified. The transcripts were treated with 0.1 U/μL of TURBO
+DNase (Ambion) at 37 °C for 30 min to digest the template DNA,
+and purified using RNA Clean and Concentrator-5 kit (Zymo Research).
+No further purification was performed as the RNA purity was observed
+to be suitable by denaturing polyacrylamide gel electrophoresis (PAGE).  and the RNA catalyst and fuel strands were chemically
+synthesized by IDT. The RNA circuit reactions were
+carried out in 10 μL volumes in black 384-well plates (Greiner
+Bio-One) in a buffer (25 mM Tris-HCl at pH 8.3, 37.5 mM KCl and 1.5
+mM MgCl) containing 3 μM DFHBI (Lucerna Technologies).
+RNA stock solutions were individually preannealed by heating to 95
+°C for 3 min and rapidly cooling on ice for 30 s. Each set of
+reactions included wells with 500 nM  (+DFHBI) and
+wells with just DFHBI as controls. The fluorescence was monitored
+using Safire microplate reader (TECAN)
+set to 460 nm excitation and 510 nm emission with 20 nm bandwidth
+at 30 °C. The raw fluorescence values of the samples were subtracted
+by those of the DFHBI wells, and then normalized by the corresponding
+fluorescence of the 500 nM  wells to calculate the
+concentrations of the activated  species ( and ). RNA and DNA Sequences Used in This Study : 5′GGAGGACGCAACUGAAUGAAAUGGUGAAGGACGGGUCCAGCUGCUUCGGCAGCUUGUUGAGUAGAGUGUGAGCUCCGUAACUAGUUGCGUCCUC
+3′ : 5′ GGACGACCCGUCCUUCACCACAUGACAAACAAGAGGACGCAACUGAAUGAAAUGGUGAAGGACGGGUCCAGCUGCUUCGGCAGCUUGUUGAGUAGAGUGUGAGCUCCGUAACUAGUUGCGUCCUC
+3′ : 5′ GUCAUGUGGUGAAGGAC
+3′ : 5′ GUCAUGUGGUGAAGGA
+3′ : 5′ UCAUGUGGUGAAGGA 3′ : 5′ UGGUGAAGGACGGGUC 3′ : 5′ UGGUGAAGGACGGGU 3′ : 5′ GTCATGTGGTGAAGGACGGGTCGTCC
+3′.

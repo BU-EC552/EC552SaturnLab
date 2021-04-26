@@ -1,0 +1,335 @@
+Regulatory processes in biology
+often require switch-like behaviors that are resistant to noise. Although
+it has become clear that feedback loops are critical for mediating
+precise switching between mutually exclusive ON and OFF states in
+regulatory networks (e.g., calcium signaling, p53
+regulation, galactose regulation, cell cycle, and budding yeast polarization), their relationship to noise propagation is less
+clear. For example, some have demonstrated that positive feedback
+loops amplify noise and negative feedback loops attenuate noise, while others have suggested that positive feedback loops can also
+attenuate noise and that there is no strong correlation between the
+sign of feedback loops and their noise propagation properties. In a particularly insightful study of the latter, Brandman et al.
+proposed that two interlinked positive feedback loops with dual time
+scales (one slow and one fast) could effectively reduce noise in signal
+output and at the same time respond promptly to an activating signal. Since the sign of feedback does not by itself explain the
+noise
+propagation features of biological circuits, is there an intrinsic
+quantity that does? To address this question, we previously conducted
+a mathematical analysis and discovered that a critical quantity, termed
+the signed activation time (SAT), succinctly captures a system’s
+ability to maintain a robust ON state under large disturbances. The SAT is defined as the difference between
+a switch’s deactivation and activation times multiplied by
+input noise frequency. We showed that systems with a small SAT are
+easily susceptible to noise in the ON state (intuitively, this is
+because input fluctuations can turn the switch off more quickly than
+they can turn the switch back on), whereas systems with a large SAT
+buffer noise at the ON state (Figure ). This
+means that noise attenuation can be achieved even in a single positive
+loop system, as long as the dynamics satisfy a high SAT. While the focus of the previous study was on the ON state,
+many
+biological systems require a robust switch that not only prevents
+spurious deactivation at the ON state, but also spurious activation
+at the OFF state. Given that a high SAT buffers noise at the ON state,
+it stands to reason that a high SAT amplifies noise at the OFF state.
+A trade-off therefore emerges: how does a biological circuit prevent
+spurious activation at the OFF state and, at the same time, deactivation
+at the ON state? Here a common property of biological switches, bistability,
+sheds light. In the hysteresis region of a bistable switch, the ON
+and OFF states are both immune to changes in input concentration,
+thereby displaying superior noise buffering at both states. If we ask what the SAT is in this hysteresis region, we quickly
+realize that there are in fact two SATs, since the ON state does not
+deactivate and the OFF state does not activate. That is, coming from
+a high input concentration, the SAT at the ON state is infinity, and
+coming from a low input concentration, the SAT at the OFF state is
+negative infinity. The SAT, therefore, is not a single constant describing
+a circuit but is associated with the state of the circuit. Since we
+are interested in the noise tolerance of the OFF and ON states, we
+may introduce two SATs, which we call input-associated SATs (iSATs),
+each of which corresponds to the significantly different mean input
+concentration at the OFF and the ON states. With these new quantities,
+we hypothesize that systems exhibiting
+superior resistance to input noise at both ON and OFF states are those
+exhibiting high iSATs at the ON state and low iSATs at the OFF state.
+In this paper, we first extend our mathematical analysis of SATs to
+noise propagation in the OFF state of switches, demonstrating that
+a low SAT indeed leads to a stable OFF state. We then explore 33 three-node
+circuits to find networks that can achieve high iSAT at the ON state
+and low iSAT at the OFF state. Though there is a general trade-off,
+we identify five networks that readily satisfy this condition. Interestingly,
+we find that all five networks share the mutual activation motif,
+suggesting the advantage of positive feedback in buffering noise.
+More generally, we believe that analyzing a network’s iSAT
+values can provide a concise description of how a circuit may respond
+to input noise. To further understand noise management, we also analyze
+the relation of sensitivity (or susceptibility), noise amplification
+rate, and iSATs. SAT and noise
+attenuation property at the ON state. (a) The single
+positive feedback module. (b) The definition
+of SAT. ω is the noise frequency in the input. (c) Comparing
+outputs of systems with large SAT and small SAT when giving inputs
+without (left) and with noise (right). Low SAT Leads to a Stable
+OFF State One commonly used
+quantity to measure noise is the standard noise amplification rate
+(NAR) defined as the ratio of the coefficient of variation between
+the output and the input:where  is the output,  is the
+input, ⟨·⟩ represents the mean,
+and std(·) denotes the standard deviation. Direct application
+of NAR to the OFF state, however, leads to loss of one critical piece
+of information for switches: the relative size of the mean output
+to the distance between ON and OFF states. To illustrate this notion,
+in Figure a we present two systems with similar
+NAR. Yet system I is superior because the output stays closer to the
+OFF state, as the distance between the ON and the OFF in system I
+is larger. This example suggests the need for a measurement that not
+only takes into account variations in the output but also considers
+its deviation from the OFF state. We therefore first introduce a more
+appropriate measurement of noise in this context, defined as the deviation
+from the OFF state, normalized by the distance between the steady
+state ON and OFF values:Here,  and  are the steady state values
+of output corresponding to static inputs at ON and OFF, respectively.
+Using this new measurement, system I in Figure a has a smaller NAR than system II, indicating a more
+desirable noise property at the OFF state. Consequently, systems with
+a low NAR are capable of attenuating local fluctuations
+at the OFF state as well as staying away from the ON state. The NAR
+defined in eq  will still be used to measure
+noise amplification at the ON state and will be denoted by NAR thereafter. Naturally, we ask what the relation between
+SAT and NAR is and how SAT affects the noise property
+at the OFF state. Intuitively, a system that responds slowly to a
+pulse signal and falls back quickly after removal of the signal would
+tend to stay close to the OFF state. It is therefore natural to speculate
+that a strongly negative SAT ( < ) leads a low NAR. This conjecture is immediately confirmed by numerical simulations
+in a single positive feedback module: smaller SAT corresponds to better
+noise attenuation at the OFF state (Figure b and the first panel in Figure c). To further
+explore the generality of this result, we simulated a double positive
+feedback module, a polymyxin B resistance
+model in enteric bacteria, and a yeast
+cell polarization system (, Section A). In all simulations,
+selected parameters were randomly varied following a log uniform distribution
+in the 20-fold range of the base parameters in the original models
+(Tables S1–4, , Section A). All simulations consistently demonstrate a positive
+correlation between the NAR and SAT (Figure c). We also investigated the effect of using different
+frequencies and distributions in the input noise. The overall positive
+relation between SAT and NAR remains true (, Section B.7). SAT and noise attenuation property at the OFF state. (a) Systems
+I and II have similar NAR, but system I stays closer to the OFF state
+than system II. (b) Comparison of outputs of systems with large SAT
+and small SAT when given inputs without (left) and with (right) noise.
+(c) NAR and SAT have a positive relationship in the
+single positive feedback module, the double positive feedback module,
+the polymyxin B resistance model in enteric bacteria, and the yeast
+cell polarization system. Attenuating
+Noise at Both ON and OFF With the “design
+principles” for the OFF state in the previous section and those
+concluded in ref () for the ON state, a natural question arises: Can one find a system
+that attenuates noise at both ON and OFF states? At the first thought,
+it seems impossible. A system with large SAT  noise at the OFF state but  noise at
+the ON state; however, a system with small SAT  noise at the OFF state but  noise at the
+ON state (Figure c and Figure b). The dilemma resolves when a system can have different
+SATs at the ON and OFF states, which can be captured by the introduction
+of the input-associated SATs (iSATs): Here,  is defined
+as the response time to a signal changing from  to , and  is defined as the response time
+to a signal changing from  to  (Figure a green
+bars, and , Section
+A). As a result, the SAT in ref () is a special case of when  = 0 and  = 1. Considering that the mean, variance, and frequency of the inputs
+at the ON and the OFF states are usually significantly different,
+the iSAT of a system should be allowed to vary between the ON and
+OFF states. Figure a shows a case where the
+input varies in [0, 1] at the ON state (gray lines in Figure a left panel) and [0, 0.2] at the OFF state (gray
+lines in Figure a right panel). At the ON
+state the new iSAT remains the same as SAT, whereas at the OFF state
+it is now defined to be associated with the response time to pulses
+ranging from 0 to 0.2 and 0.2 to 0. In this particular case, the iSAT
+is positive at the ON state and negative at the OFF state. For convenience,
+we hereafter denote the iSAT at the ON state as iSAT and
+the iSAT at the OFF state as iSAT. Compared with the
+original definition of SAT in ref (), iSAT exhibits a stronger relationship with
+sensitivity of the system (introduced in the following section), given
+the same noise attenuation level (Figure S4b, ). Now if we examine the relation
+between iSAT and the noise amplification
+rate for the single positive feedback module, it is not hard to find
+a system with a good noise attenuation property at both ON and OFF
+states. One such case illustrated in Figure c has an iSAT = 28.8 and iSAT = −10.1. To search for general systems that attenuate noises at both
+ON
+and OFF states, we systematically explore all three-node circuits,
+composed of an input node (I), an output node (O), and an intermediate
+node (A) (Figure a). The output and intermediate
+nodes can have incoming arrows, outgoing arrows, or no arrow, but
+the input node is not allowed to have incoming arrows, that is, the
+input is not subject to regulations from the output or the intermediate
+node. Each arrow can be either positive (activation) or negative (repression).
+Among all 81 possible configurations of the networks captured by this
+formulation, 33 of them are capable of producing the desired switching
+behaviors, that is, the output is high with a high input and low with
+a low input (Figure S2, , Section A.5). Each network structure
+can give rise to a range of noise properties
+when varying the values of parameters. To identify networks that attenuate
+noise at both the ON and OFF states, around 6 × 10 random parameter sets were generated for each network, and the corresponding
+iSATs associated to the ON signal and the OFF signal were calculated,
+respectively. Here we define the “good iSAT region”
+as the top left corner in the iSAT–iSAT plane (above the red dotted lines in Figure a as defined in the , Section A.5). Networks in this region can give rise to large (positive)
+iSAT and small (negative) iSAT and are
+expected to attenuate noise at both states. We identify five systems
+(Figure b) that have parameter sets falling
+in this region (Figure a). Interestingly,
+all five networks contain the mutual activation motif. This is likely
+due to the fact that the positive feedback slows down the temporal
+dynamics to provide a longer averaging time beneficial to noise buffering. Next, we confirm that these five mutual activation systems show
+an advantage in noise management. The NAR and NAR can be computed by giving a noisy signal to the networks
+defined by the 6 × 10 random parameters. The density
+plot is shown in Figure b. The same group
+of five networks is found to have better noise property at both states. To quantitatively compare the noise properties among different
+networks, we define the “low noise region” as the bottom
+left corner in the NAR–NAR plane
+(under the green dotted lines in Figure b
+as defined in the , Section A.5). Points in this region have low noise level at both
+ON and the OFF states. In all 33 systems, on average 0.4% of the points
+fall in the “low noise region”, while for systems corresponding
+to the “good iSAT region”, this average percentage increases
+to 77%. Moreover, all points in the “low noise region”
+are contributed by the five mutual activation systems. Compared to the simplest two-node
+linear network (network 27) that
+directly transmits an input signal to the output node, networks with
+extra regulation from the intermediate node (e.g., networks 19, 20,
+and 23) generally show a wider range of iSATs and hence have a better
+chance at noise attenuation. Among them, the ones with the mutual
+activation motif (e.g., network 19) are capable of reaching the “good
+iSAT region”, which leads to the best noise attenuation at
+both ON and OFF states (Figure ). Still,
+a trade-off between the NAR and NAR exists
+for a majority of the networks: Data lie on the diagonal
+region of the NAR–NAR plane, showing
+a negative correlation of the noise amplification rates between the
+ON and OFF states (Figure b). This implies
+that when a system is capable of attenuating noise at the ON state,
+it often comes at the cost of large noise amplification at the OFF
+state, and vice versa. To further investigate the five mutual activation systems’
+noise properties, we sampled a set of random parameters six times
+larger than those in Figure . We evaluate
+a system’s iSAT property by how close it is to the ideal case
+(the star symbol in Figure a). The “good
+iSAT region” is further divided into 4 groups (groups 2–5).
+Systems with a larger group number are closer to the ideal case and
+are defined to have better iSAT property (larger iSAT and smaller iSAT). Group 1 consists of all other points
+falling outside the “good iSAT region”. Figure  shows that for mutual activation systems, the better
+their iSAT property is, the better chance they have to achieve good
+noise attenuation (Figure b). In particular,
+independent of the specific mutual activation system chosen, the majority
+of the points lying in the second quadrant of the iSAT–iSAT plane (Figure a)
+have values of NAR in the “low noise region” for both
+ON and OFF states. Finally, we studied the single positive feedback system using
+different
+types of equations, specifically, mass-action kinetics versus Michaelis–Menten
+kinetics, to explore the relationship between SATs and NARs. We find
+consistent results among different representations of the same regulatory
+system (). In addition,
+we plot the relationship in the 33 three-node networks. It is interesting
+to observe that while the relationship between SATs and NARs shows
+a clear trend, there seems to be more outliers in the OFF state (). It is not surprising
+that NARs are likely to depend on other factors, as seen in our analytical
+studies of iSAT and NAR (e.g., eqs 19
+and 22 in , Sections
+B.4 and B.5). Relation
+of iSAT and NAR in the single positive feedback module.
+(a) Left: iSAT is positive ( < ) with respect
+to the stochastic input varying between 0 and 1 (the light gray curve
+in the background). Right: iSAT is negative ( > ) with respect to the stochastic input varying
+between 0 and 0.2
+(the light gray curve). (b) In the single positive feedback module,
+iSAT has a negative relation with NAR, and
+iSAT has a positive relation with NAR.
+The triangles point to desirable parameter sets that give rise to
+high iSAT and low iSAT. (c) A single positive
+feedback module with small NAR and NAR at
+the same time. Left: a noisy input signal ranging uniformly from 0
+to 0.1 at the OFF state and 0 to 0.5 at the ON state. Right: the output
+corresponding to the positive feedback system with  = 7,  = 1,  = 0.001,  = 0.01, and
+τ = 0.003. Three-node networks. (a) All possible three-node networks.
+Red
+arrows denote positive regulations, and blue ones represent inhibitions.
+I, the input; A the intermediate node; O, the output. (b) Five network
+structures that result in large iSAT and small iSAT. Temporal and noise properties
+for all 33 networks. (a) The density
+plot of iSAT vs iSAT. The top left corner
+above the red dotted line is the “good iSAT region”.
+Only networks 1, 10, 19, 28, and 31 have points in that region. (b)
+The density plot of NAR vs NAR. The bottom
+left corner under the green dotted line is the ″low noise region″.
+Only networks 1, 10, 19, 28, and 31 have points in that region. iSATs and noise properties for four sample networks. (a)
+From left
+to right: linear cascade, mutual activation, interlinked positive
+and negative feedback loop, and mutual inhibition. (b) iSAT vs iSAT. (c) NAR vs NAR.
+Panels b and c share the same 5000 randomly chosen data sets. (d)
+Typical output from each network. Dashed blue line: concentration
+of the output over time with a noise-free input. Solid red line: concentration
+of the output over time with a noisy input. iSAT as an indicator of noise properties in the five mutual
+activation
+systems. (a) The randomly selected parameters used for the simulation
+are grouped into five groups (regardless of the choice of the five
+systems) according to their distance to the upper left corner (the
+spot indicated by the star). (b) The systems with parameters corresponding
+to better iSAT property (smaller iSAT and larger iSAT) consistently show larger proportion falling in the “low
+noise region”. Sensitivity, iSAT, and Noise Amplification
+Rate at the ON State Although it is important to control
+noise amplification at both
+ON and OFF states, a useful system must be able to respond to the
+input signal with sufficient sensitivity. One way to estimate how
+sensitively a system responds to an input at the ON state is by evaluating
+the sensitivity (or susceptibility) of the output in response to an
+infinitesimally small perturbation in the input: () = d(ln )/d(ln ), in which  is evaluated at the ON state in the
+input and  is the output. Naturally, the noise amplification
+rate and the level of sensitivity of a system in the ON state exhibits
+a positive correlation. But how do the
+noise amplification rate, iSAT, and the sensitivity relate to each
+other? We study these relationships by first analyzing the single
+positive feedback module at the ON tate. The analytical estimate of
+the simple system suggests an interesting role of iSAT in connecting NAR and the sensitivity, denoted  (, Section B.3): First, we notice
+a positive relationship between  and
+NAR in eq .
+One challenge for noise management in a switching system is simultaneously
+attaining low NAR and high , as sensitivity to signal change seems inevitably linked to sensitivity
+to noises in the signal. Interestingly, our analysis reveals that
+by increasing iSAT, a low noise amplification rate and
+large sensitivity can be achieved simultaneously. Direct simulations
+of the single positive feedback module as well as the other three
+more complex systems, including the double positive feedback module,
+the polymyxin B resistance model in enteric bacteria, and the yeast
+cell polarization system, support and confirm this analytical relationship
+(Figure a). Next, eq  indicates that the NAR and iSAT are negatively correlated with a fixed , which is further confirmed through direct
+simulations of the four systems (Figure b).
+The result is consistent with the previous findings in ref () based on SATs (Figure
+S4a, ). As expected,
+from eq , we observe a positive correlation
+between the noise amplification rate and sensitivity, as demonstrated
+in previous studies. Finally, these results
+are further validated by a two-sample  test between
+the high iSAT group (highest
+quartile) and the low iSAT group (lowest three quartiles).
+The mean ratio of NAR and sensitivity in the high iSAT group is significantly larger than that of the low iSAT group, for all four models studied. This demonstrates that
+when iSAT is small, the ratio of sensitivity and NAR are small, and when iSAT is large, the ratio
+of sensitivity and NAR are large. Interestingly,
+at the OFF state, only a weak positive relation
+between NAR and sensitivity can be observed for the
+single positive feedback module according to our analysis (, Section B.6). However,
+the trend is not observed in more complex systems, and our numerical
+simulations do not show a consistent monotonic correlation of the
+two quantities. By scrutinizing the expression of NAR, one intuitive explanation is that increasing the sensitivity increases
+both the denominator and the numerator. Thus, a monotonic relation
+between  and NAR should
+not be expected. Finally, we would like to comment that the input noise used
+here
+is monochromatic. When varying the input noise frequency () or replacing the uniformly
+distributed noise by the white noise (), the relations among NAR, iSAT, and sensitivity
+are conserved in the single positive feedback module. When the input
+noise is a superimposition of noises with different frequencies, one
+may use Fourier Transform to decompose the input into noises with
+frequency ω and amplitude . It is likely that the one
+with the smallest frequency has more weight in the overall SAT, as
+also indicated by the two-time-scale asymptotic expansion of the solutions
+to the single positive feedback system, which has shown that fast
+varying noises are filtered out in such case. Direct simulations for iSAT, NAR and sensitivity.
+(a) Noise amplification rate versus sensitivity. (b) Noise amplification
+rate versus signed activation time. In each panel, results from four
+systems are shown (from left to right): single positive feedback module,
+double positive feedback module, polymyxin B resistance model in enteric
+bacteria, and yeast cell polarization system. All simulations were performed in Mathematica
+8.0. Data analysis and visualization
+were generated by Matlab
+2010b and R 2.15.2. Please see  for more details for the models, simulations, and mathematical analysis..

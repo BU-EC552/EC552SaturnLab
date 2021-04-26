@@ -1,0 +1,402 @@
+Biomolecular
+computing systems have the potential for
+a range of key technological
+and medical applications, including valuable compound production and biosensors for disease and pathogens, all
+the way to bioremediation. Over the past decade, characterization
+and standardization of various biological parts and components through
+experiments and computational analysis have been crucial in moving
+the field forward. Expanding experimental characterization to large-scale analysis, using synthetic circuits as benchmarks for reverse
+engineering, and integrating domain specific
+languages are prime examples of cross
+fertilization of engineering principles to synthetic biology. Overall,
+the area has seen remarkable growth and progress. Genetic circuit
+engineering has transitioned from two-node circuits to complex architectures which respond to input stimuli
+by generating cellular memory through recombinase-based mechanisms and multilayered transcriptional and post-transcriptional
+regulation. Toward advanced computing
+applications, multioutput systems are
+just as important as multi-input circuits, yet the former is an underexplored
+and largely unsolved problem for computations performed in single
+human cells. Notably, it is not currently feasible to utilize cell-to-cell
+communication in mammalian systems to achieve intercellular multilayered
+circuits. Here, as a means of enabling
+the control of multiple outputs with a few inputs, we introduce a
+biological intracellular multilayered circuit that emulates an electrical
+decoder. Specifically, we introduce a novel genetic architecture that
+converts two chemical inputs into four unique outputs. The circuit
+achieves the combinational effect of a system composed of four parallel
+Boolean logic AND-gates (Figure a). It consists
+of a five node system that utilizes a network of transcription factors
+and synthetic microRNAs to receive the inputs, process, and transduce
+the information into four responses (Figure b). The decoder operation is based on two general layers, a “regulating
+layer” and a “regulated layer”, offering a flexible
+platform for achieving combinational logic in mammalian cells. We provide experimental results that show proper
+operation of the
+decoder in human cells and serve as a proof-of-principle toward future
+biological and medical applications. Importantly, the modular outputs
+of the current implementation can be easily replaced with any gene
+product (e.g., custom transcription activator-like effectors), thereby allowing for a multiplexed interface
+with a diverse array of cellular functions. (a) Boolean
+logic illustration of a biological decoder with chemical
+inputs and fluorescence proteins as the outputs of the genetic circuit.
+(b) Node and edge schematic of the decoder circuit within a cell.
+The system consists of five distinct nodes combined into two distinct
+layers which interact through activation and inhibition edges. Nodes
+A and B comprise the “regulating” nodes, while nodes
+C, D, and E comprise the “regulated” nodes. Decoder
+Architecture and Implementation Each node of
+the circuit is composed of well-studied biological parts (Figure a,  Biological Parts). We use two promoters, two transcription factors
+(TFs), a synthetic microRNA, and the corresponding three operator
+sites. The promoters are a human polybiquitin C (UbC) and the Cytomegalovirus
+(CMV) immediate-early. The transcription factors are the reverse tetracycline-controlled
+transactivator (rtTA; an activator) and the LacI-KRAB fusion protein
+(an inhibitor). We use a synthetic microRNA based on miR30, the miR-FF4. The operator sites are the TET response element (TRE), the lac operator
+(LacO), and finally, three tandem targets of perfect complementarity
+to miR-FF4. Combinations of these parts were used to build distinct
+computation layers: the “regulating” layer (nodes A
+and B) and the “regulated” layer (nodes C, D, and E),
+shown in Figure a. We used the small molecules
+doxycycline (DOX) and Isopropyl β--1-thiogalactopyranoside
+(IPTG) as the inducers that control the “regulating”
+layer, which in turn programs the “regulated” nodes
+to produce the four outputs (including the nonproduct case). Node A of the system architecture is a genetic construct
+consisting
+of the CMV promoter followed by the downstream LacI-KRAB fusion gene.
+This node constitutively produces the LacI-KRAB protein and becomes
+inactivated with the addition of the input IPTG. Node B is a genetic
+construct consisting of the CMV promoter followed by the transactivation
+protein, rtTA. As with node A, node B constitutively produces its
+gene product, the rtTA protein, and becomes an active node only when
+the input DOX is added. Nodes A and B are the first layer of the decoder
+circuit and serve by creating a link between the input molecules and
+the regulated layer. The second, or regulated, layer of the decoder
+contains three nodes. Node C of this layer consists of the TRE followed
+by the downstream gene of yellow fluorescence protein (tagYFP), a
+protein degradation pest domain, and
+last, three targets of perfect complementarity to miR-FF4. Node D
+consists of the UbC promoter, two repeats of the lac operator sites,
+the cyan fluorescence protein (tagCFP), and three targets of perfect
+complementarity to miR-FF4. Node E contains the TRE promoter, two
+repeats of the lac operator sites, the far-red fluorescence protein
+mKate2, a pest domain, and last miR-FF4,
+which provides an internal feedback mechanism. Inputs are the
+chemical signals received by the system and outputs
+are the fluorescent proteins produced. The input/output function of
+the circuit is a decoder that converts two cellular inputs into four
+unique outputs. Specifically, the four states are no signal without
+any input (IPTG:0, DOX:0), producing tagYFP with DOX input (IPTG:0,
+DOX:1), producing tagCFP with IPTG input (IPTG:1, DOX:0), and producing
+mKate2 when the circuit receives both IPTG and DOX inputs (IPTG:1,
+DOX:1) (Figure b and c). The first state
+of the biological decoder is the absence of both
+IPTG and DOX inputs (Figure b and c, “00”).
+In the absence of IPTG, node A is active and constitutively produces
+the inhibitor LacI-KRAB, which allows this node to inhibit nodes D
+and E. The edge between these nodes prevents the production of the
+tagCFP and mKate2 outputs by the LacI-KRAB binding the lac operator
+in nodes D and E, therefore inhibiting transcription. Additionally,
+since the DOX input is absent, node B remains inactive because the
+rtTA protein requires DOX to operate as an active inducer, resulting
+in nodes C and E remaining inactive. This restricts the production
+of tagYFP and mKate2. Therefore, in the “00” state,
+the downstream effect of node A being ON and node B being OFF is the
+nonproduct case of the decoder state. The second state of the
+biological decoder is the absence of IPTG
+and the presence of DOX inputs (Figure b and
+c, “01”). In this instance, when the DOX input is added
+to the system, node B becomes activated because rtTA undergoes a conformational
+change to its active state, which can subsequently bind and can activate
+the TRE in nodes C and E. However, node A is still active because
+of the absence of the IPTG input, and represses nodes D and E with
+LacI-KRAB. Even though the promoter on node E is activated by rtTA
+the (fine-tuned) presence of LacI-KRAB is sufficient to inhibit the
+production of mKate2. Therefore, in the “01” state,
+the downstream effect of node A being ON and node B being ON results
+in tagYFP being produced as the sole output. The third state
+of the biological decoder is the presence of IPTG
+and the absence of DOX inputs (Figure b and
+c, “10”). In this case, the IPTG input serves to inactivate
+node A by causing a conformational change in the LacI-KRAB protein
+to an inactive state. With node A inactivated, the edge between node
+A and nodes D and E is turned OFF. Furthermore, node B is inactive
+because the absence of the DOX input, which prevents the rtTA protein
+from activating the TRE of nodes C and E. Therefore, in the “10”
+state, the downstream effect of node A being OFF and node B being
+OFF results in tagCFP being produced as the sole output. The
+fourth state of the biological decoder is the presence of IPTG
+and the presence of DOX inputs (Figure a and
+b, “11”). The connections that occurred in states “01”
+and “10” are utilized within this final state of the
+decoder to achieve the last independent output. Similar to state “01”,
+node B is activated through the addition of the DOX input by causing
+the rtTA to transition to its active activation state. Also, as in
+state “10”, node A is inactivated through the addition
+of the IPTG input, which transitions the LacI-KRAB to its inactive
+repressor state. These changes in the regulating layer allow nodes
+D and E to be free of the repressor LacI-KRAB and nodes C and E to
+be activated by rtTA. Therefore, all nodes of the regulated layer
+are active. Here, we incorporate a feedback mechanism controlled by
+node E. When node E is active, along with the output mKate2, the microRNA
+miR-FF4 is cotranscribed, which inhibits the mRNAs produced by nodes
+C and D. This post-transcriptional inhibitory mechanism allows mKate2
+to be produced independently from the other two outputs. The result
+of node A being OFF and node B being ON results in mKate2 being produced
+as the sole output of the “11” state. In summary, the
+decoder yields orthogonal outputs by responding to input signals,
+by means of processing the chemical information with a 2-node regulating
+layer, transducing the signal into a 3-node regulated layer, and finally
+producing a measurable response. (a) Illustration
+showing the system nodes, the DNA architecture
+of each node, and the outputs of each node of the decoder. There are
+two layers of the decoder architecture: a “regulating”
+layer and a “regulated” layer. The “regulating”
+layer consists of two nodes: node A and node B. Both node A and B
+constitutively produce gene products which are the transcription factors
+rtTA and LacI-KRAB. Node A responds to the input IPTG by becoming
+inactivated. Node B responds to the input DOX by becoming activated.
+The “regulated” nodes consist of three nodes: node C,
+D, and E. Each node consists of combinations of promoters, transcription
+factors, operator sites, fluorescence proteins, synthetic microRNAs,
+and degradation tags. (b) Node and edge diagram for each state of
+the decoder, showing active edges for each individual state. In the
+“00” state (IPTG:0, DOX:0), node A is active and node
+B is inactive. Node A inhibits nodes D and E, while node B cannot
+activate nodes C and E. This results in the nonproduct case of the
+decoder. In the “01” state (IPTG:0, DOX:0), node A is
+active and node B is active. Node A inhibits nodes D and E, while
+node B activates nodes C and E. This results in the production of
+tagYFP as the decoder output. In the “10” state (IPTG:1,
+DOX:0), node A is inactive and node B is inactive. Node A is prevented
+from inhibiting nodes C and E, while node B cannot activate nodes
+C and E. This results in the production of tagCFP as the decoder output.
+In the “11” state (IPTG:1, DOX:1), node A is inactive
+and node B is active. Node A is prevented from inhibiting nodes C
+and E, while node B activates nodes C and E. This results in mRNA
+output of all three nodes (C, D, and E). However, a feedback mechanism
+is incorporated into node E which prevents the translation of the
+outputs from nodes C and D. This results in mKate2 as the decoder
+output. (c) Biological interactions of nodal components within the
+decoder architecture for each Boolean state. The four decoder cases
+are shown to illustrate the interactions the inputs have with the
+effector proteins, the interactions the effector proteins have with
+the DNA components, and the interactions between the feedback mechanism
+and its accompanying targets. The synthetic circuit was
+tested in human embryonic kidney cells (Tet-On 3G), which contain
+a stable integration of the rtTA protein under a constitutive promoter.
+To validate the circuit, approximately 200 000 cells were plated
+per well, transfected after 24 h, induced immediately after transfection
+with the appropriate “input” chemical molecule(s), and
+grown an additional 48 h, concluding with characterization by flow
+cytometry. The IPTG and DOX concentrations used to induce the decoder
+were 10 mM and 2.5 μg/mL, respectively. To emulate the four
+states, each perspective well was induced with or without the IPTG
+and DOX inputs immediately after transfection. For the experiment
+in Figure , 50 ng of each node (Figure a) were transfected into the kidney cells. Flow
+cytometry was performed to probe the population behavior and fluorescence
+microscopy was used to qualitatively confirm the results. Supporting Information Figure 1 Supporting Information Figure 2 For
+analysis of the transfected cells using flow cytometry, single cells
+were isolated (), followed by calculating the mean fluorescence intensity (MFI)
+of the gated cells and subtracting the mean background signal. As
+illustrated in Figure a, the circuit exhibits
+the desired input/output behavior: “01” to tagYFP, “10”
+to tagCFP, “11” to mKate2, and finally, no signal for
+“00”. The normalized microscopy images for each perturbation
+are shown in Figure b and are in agreement
+with the MFI cytometry data. Each row of images contains a bright
+field image, the tagYFP, tagCFP, and the mKate2 field, and finally
+the overlap of all signals. Notably, the microscopy images show a
+virtually digital behavior. Even when we apply a wide fluorescence
+intensity range for the normalization of each channel (), the observable
+by microscopy leakage is minimal. In accordance with the flow cytometry
+data of Figure a, the most significant leakage
+appears for tagCFP in the “00” case, mKate2 in the “01”
+case, and tagYFP in the “11” case; however, these states
+are significantly lower than the ON states. We hypothesize that the circuit
+leakage originates mainly from
+the multiplasmid transient transfection conditions. The complete decoder
+consists of four separate plasmids and 1 stably integrated gene. With
+the circuit residing in multiple vectors, because of the transient
+transfections, there is high likelihood that cells uptake a subset
+of the total circuit resulting in leakage or other incorrect input/output
+behavior. However, even with leakage, the fold MFI change is approximately
+3-fold between all leakage OFF states and ON states (Figure c). Supporting Information
+Figure 3 Numerous genetic circuits of different
+complexity have been created
+over the years. Importantly, there is a vast variety in the conditions
+associated with transient transfections (reagents, cells, mass of
+DNA). Typically the circuits are optimized for specific conditions
+and the mean fluorescence intensity is the standard metric in quantifying
+their output. In our case, 50 ng of each vector resulted in optimal
+separation of the ON/OFF states as judged by the MFI. Other concentrations
+and ratios between the decoder vectors resulted in inferior performance.
+Importantly, the MFI fold differences become progressively worse for
+low vector concentrations (). The reason is that the MFI neglects a crucial circuit
+characteristic, namely the number of cells that yield output above
+background fluorescence. This number becomes particularly important
+in transient transfections of several plasmids and at low mass concentrations
+where only a few aberrant cells can bias significantly the mean fluorescence
+intensity. Supporting Information Figure 4 Supporting Information Figure 5a Supporting Information Figure 5b To probe this issue, we performed a simple experiment
+utilizing
+one of the plasmids of the decoder circuit. The architecture of this
+plasmids is the same as “node C” in Figure . The node consists of the TRE followed by the downstream
+gene of yellow fluorescence protein (tagYFP), a protein degradation
+pest domain, and last, three targets of perfect complementarity to
+miR-FF4. In this example, when the plasmid is transfected alone, there
+are only two states. An “OFF” state when the small molecule
+doxycycline is absent and an “ON” state when the molecule
+is added to the transfected cells. In analyzing cells positively transfected
+for tagYFP, we set a gate based on untransfected cells (). By taking the
+mean tagYFP fluorescence of cells within this transfected gate, we
+observe a 3-fold increase in tagYFP fluorescence in the “OFF”
+state compared to the “ON” state (), which is clearly an artifact.
+In analyzing this quantitative artifact, it is useful to look at the
+frequency of cells above the tagYFP transfected gate (). We observe
+that the “OFF” state has a frequency of cells within
+the gate of 0.21% while the “ON” state has as frequency
+of cells within the gate of 29.2% of all live single cells. Analyzing
+the frequency of cells above this gate, we indeed see that a few aberrant
+cells significantly bias the mean fluorescence intensity. Supporting Information Figure 6 In
+order to address this issue, we used the integrated mean fluorescence
+intensity (iMFI) to analyze our data. We note that the integrated mean and median
+fluorescence intensity are practically the same for our data (). The iMFI takes
+into consideration both the frequency (f) and the mean fluorescence
+intensity (MFI) of the cells within a selected gate. The frequency
+of the cells within the gate is the number of cells within the gate
+divided by the parent population (the total number of cells), expressed
+as a percentile. The iMFI is the product of f and MFI. The iMFI therefore
+approximates the area of a histogram, giving a quantitation of the
+pictorial descriptor, when the total amount of single live cells remains
+constant between circuit states. For the simple example used previously
+(), the integrated
+mean fluorescence intensity shows a true fold change between the “ON”
+and “OFF” state of the genetic architecture, and in
+agreement with qualitative microscopy. Supporting Information Figure 4 For our decoder experiments,
+the flow cytometer voltage for the
+tagYFP, tagCPP, and mKate2 was adjusted to set the negative (untransfected)
+population at under 10 arbitrary units. To calculate the
+iMFI we set a gate that collects events over the background fluorescence
+threshold (). In Figure d, the black events correspond
+to the cells that are below the threshold while the rest are above
+(yellow, cyan, and red events). Additionally, in each graph the frequency
+of cells above the threshold is shown. As illustrated in Figure d, the normalized iMFI is similar to the MFI, showing
+approximately 5-fold difference between the ON and OFF states. Supporting Information Figure 3 Supporting Information
+Figure 3 Supporting Information Figure 7 Supporting Information Figure 7 Importantly, if we compare the MFI and iMFI, we observe that the
+iMFI is more robust to the transfection conditions (). The MFI of the very low
+concentration transfection (, condition 1) shows high leakage on most OFF states.
+Specifically, the leakage for mKate OFF states in the “00”
+and “01” cases is in the same range with the ON state.
+However, if we examine the individual histograms and scatter plots,
+shown in , we notice that the level of leakage is not significant and stems
+primarily from few, possibly false-positive, events thereby confirming
+our hypothesis. In contrast, at these low concentrations, the iMFI
+points to the true leaking states, tagCFP for “00”,
+mKate2 for “01”, and tagYFP for “11” (). To summarize,
+we believe that the iMFI can be an important metric in the analysis
+of genetic circuits, in particular for multivector and low mass transient
+transfections, where false positive and negative events are common. (a) Histograms of kidney
+cells transfected with the decoder circuit
+(50 ng per node) for the four states of the decoder. Each row shows
+histograms for each color of each state, while each column shows each
+state. The ON states (“01”for tagYFP, “10”
+for tagCFP, and “11” mKate2) for each state of the decoder
+show significant increase from all OFF states. Additionally, in each
+histogram in the upper right-hand corner is the number of cells above
+the 10au threshold. (b) Fluorescence microscopy of the
+four outputs. There are five columns: a bright field showing the live
+cells, a tagYFP, tagCFP, and mKate2 field, and last an overlap of
+the three fluorescence fields. Each row is a different state of the
+decoder. Each field is normalized to the same intensity, so that images
+from the same column can be compared with each other. (c) The normalized
+background subtracted mean fluorescence intensity of single cells.
+The MFI corresponds to the data shown in panel a. Each state of the
+decoder shows the correct ON signal in the appropriate case, with
+leakage significantly lower in all OFF states. (d) Flow cytometry
+scatter plots showing the four states of the system. Each column shows
+a different fluorescent output on the -axis and
+each row shows a different state of the circuit. In each scatter plot,
+in the upper right-hand corner is the frequency of cells that fall
+above the background fluorescence gate (10 au). The black
+dots on the scatter plots are single cells that fall below the background
+fluorescence threshold, while the colored dots are single cells that
+fall above this threshold. The bar graph on the side of the FACs scatter
+plots shows the integrated mean fluorescence intensity (iMFI) for
+each state of the decoder. This correlates with the MFI quantity,
+showing a 4–5 fold change between all ON and OFF states. Here, we present a novel genetic architecture
+that can convert information from two chemical molecules into four
+observable responses in the form of fluorescent proteins. The circuit
+utilizes several modules in a two-layer architecture. The logic of
+the decoder can be extended to implement more than 2 inputs with relatively
+simple modifications. We show a clear separation between ON and OFF
+states with approximately 3-fold mean fluorescence difference. Additionally,
+we adopt the integrated mean fluorescence intensity for the characterization
+of the circuit and show that this metric is more robust to transfection
+conditions when compared to the mean fluorescent intensity. Supporting Information Figure 8 Supporting Information Figure 9 General-purpose decoder architectures can allow us to implement combinational
+control in cells with several practical applications. As a direct
+application, the output fluorescence proteins can be replaced with
+active proteins in order to create an interface with endogenous cellular
+pathways (). For example, the outputs can be used to apply transcriptional
+control through TALEs fused with transactivation or repression domains. In a more specific example, a decoder can interface
+with the cell-cycle by producing outputs that interact with crucial
+junction proteins of the cell cycle (e.g., retinoblastoma for G1 arrest,
+HIV-VPR for G2 arrest, hBax for apoptosis). Toward computing objectives,
+we envision that the decoder circuit can be used as a modular unit
+of higher-order circuits, such as a multiplexer (). As a future objective
+for decoder architectures, eliminating leakage
+in OFF states would be a highly desirable characteristic. In the current
+version, the negative feedback employed does not completely inhibit
+the target and does result to leakage in the “OFF” states.
+We expect that future architectures will adopt a collection of tools
+such as recombinases, in order to limit the use of
+inherently leaky transcriptional/post-transcriptional regulation mechanisms. Mammalian Cell Culture and Transient Transfections A Tet-On 3G cell line (Clonetech, catalog number: 630931) constitutively
+producing the protein rtTA was used for all experiments performed.
+The cell line was sustained in an environment at 37 °C, and atmosphere
+of 5% CO. The cell line was grown in high glucose Dulbecco’s
+modified Eagle’s medium (DMEM, Invitrogen, catalog number:
+11965-092) that was supplemented with 50 mL of 10% Fetal Bovine Serum
+(FBS, Atlanta Biologicals, catalog number: S11550), 2.5 mL of 10 000
+units/mL penicillin antibiotic and 2.5 mL of 10 000 μg/mL
+streptomycin antibiotic (penicillin–streptomycin liquid, Invitrogen,
+catalog number: 151140-122) and 5.5 mL of 100X MEM nonessential amino
+acids (Invitrogen, catalog number: 11140-050). All transient transfections
+had 200 000 cells in 1 mL of complete supplemented DMEM media
+added to each well of a Cellstar 12 well cell culture multiwall plate
+(Greiner Bio-One, catalog number: 665180) and were allowed to grow
+for 24 h. For jetPRIME transfections, up to 1 μg of total plasmid
+DNA was added to 75 μL of jetPRIME Buffer and 2.4 μL of
+jetPRIME transfection reagent (Polyplus, catalog number: 114-07).
+All transfection solutions prepared were vortexed gently and allowed
+to incubate at room temperature for 10 min. After incubation, each
+solution was added to the cells and was mixed by gently shaking. When
+appropriate to the circuit architecture, Doxycycline (Sigma-Aldrich,
+product number: D9891) and IPTG (Sigma-Aldrich, product number: I6758)
+were added to the cells immediately after transfection. Quantitative
+and qualitative analysis of all experiments was performed 48 h after
+transfections were completed. Microscopy was performed 48
+h after transfections occurred. The cells grown on a Cellstar 12 well
+cell culture multiwall plate were image analyzed with a Olympus IX81
+microscope equipped with Sutter filter wheels, a Solent brand environmental
+chamber held at 37 °C, and a Prior Scientific mechanized stage.
+Microscopy images were collected with an Orca ERII camera, which was
+cooled to −60 °C and utilized in the high precision (14
+bit) mode. This mode was used with a 20X Plan-APOCHROMAT NA 0.8, PH2
+objective. The Chroma filter settings were as follows: ET436/20x (excitation)
+and ET480/40m (emission) for tagCFP, ET500/20x (excitation) and ET535/30m
+(emission) for tagYFP, and ET560/40x (excitation) and ET630/74m (emission)
+for mKate2. Experimental data collection and processing of the images
+was performed in Slidebook 5.0 software package. All images obtained
+experimentally were collected at the same exposure time per field
+of interest, underwent identical processing, and when compared with
+various cases of the circuit, normalized to the same fluorescent intensities. Cells were prepared as follows: 48 h
+after transfection complete media was removed from cells plated on
+the Cellstar 12 well cell culture multiwall plate. Once media was
+removed, cells were trypsinized with 0.15 mL 0.25% trypsin–EDTA
+at 37 °C for 3 min. The trypsin–EDTA was then neutralized
+with 0.85 mL of supplemented DMEM which also resuspended the cells.
+The cell suspension was centrifuged at 1000 rpm for 5 min, the supernatant
+was decanted, and the cell pellet was resuspended in 0.5 mL PBS buffer.
+The cell suspension was then analyzed on a BD LSRII flow analyzer.
+TagCFP was measured with a 445 nm laser and a 515/20 band-pass filter
+at a voltage of 240 V. TagYFP was measured with a 488 nm laser, a
+535 emission filter, and a 545/35 band-pass filter at a voltage of
+300 V. MKate2 was measured with a 561 nm laser, 610 emission filter,
+and 610/20 band-pass filter at a voltage of 320 V. Over 150 000
+events were collected per well..

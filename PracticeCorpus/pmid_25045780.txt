@@ -1,0 +1,628 @@
+One of the aims of synthetic
+biology is the rational design of microorganisms for biotechnological
+applications. An important aspect for
+the design of these tailored microorganisms is the molecular composition
+of their cell surface, which determines their interaction with the
+environment. Incorporation of affinity ligands on the surface of the
+engineered cell could help to program its adhesion properties toward
+a target surface or cell of interest. Natural bacteria encode in their
+genomes diverse types of adhesive proteins, termed adhesins, which
+play a fundamental role in multiple processes (e.g., biofilm formation,
+host-colonization, cell invasion) by recognizing molecular structures
+found in abiotic and biotic surfaces of other bacteria, plant, and
+animal cells. However, the variety and redundancy
+of natural adhesins, together with the widespread distribution of
+their receptors among different cell types and surfaces, preclude
+their use as functional units conferring predictable adhesion capabilities. is a common host for biotechnological
+applications due to its amenability for genetic manipulation and heterologous
+protein expression. Although some  isolates have acquired pathogenicity traits, most strains of this
+Gram-negative bacterium are nonpathogenic commensals of the gastrointestinal
+(GI) tract of vertebrates. Interestingly,  has shown potential for  biomedical applications against infections agents and cancer. Specific  strains have been used in humans as probiotics competing
+with pathogenic bacteria causing infections in the mucosal surfaces
+of the GI and urinary tracts. In addition, commensal
+and probiotic  strains administered systemically
+have been shown to colonize solid tumors grafted subcutaneously in
+mice. Hence, engineering the adhesion properties
+of these nonpathogenic  strains may improve
+their colonization efficiency and specificity for target mucosal surfaces
+and tumors . In this work we report
+synthetic adhesins (SAs) that allow the
+rational design of robust and specific adhesion capacities to . SAs have a modular structural organization resembling
+that of natural  adhesins, which are commonly
+composed of an anchor β-barrel module that is embedded in the
+bacterial outer membrane (OM) and an adhesion module bearing an immunoglobulin
+(Ig)-like fold that is exposed to the extracellular milieu. The designed SAs combine a highly stable β-barrel domain derived
+from intimin, an adhesin found in enterohemorrhagic and enteropathogenic  strains (EHEC and EPEC, respectively), with Ig domains of high affinity, solubility, and stability based
+on the variable domain of eavy hain-only ntiodies (HCAbs), known as VHHs ( of CAbs) or nanobodies. VHHs
+of defined specificity can be selected against antigens of interest
+from large VHH repertories cloned and expressed in  and its bacteriophages. We show that
+SAs integrated in the chromosome of  can be
+constitutively expressed, being nontoxic and stably maintained
+throughout multiple bacterial generations  and  in the absence of inducer and selection
+pressure. Expression of SAs in an engineered  chassis devoid of a set of natural adhesins directed the specific
+adhesion of bacteria to abiotic surfaces and mammalian cells expressing
+on their surface the target molecule recognized by the SA. Importantly,  experiments showed that low doses of the engineered
+bacteria colonize solid tumors expressing the target molecule with
+higher efficiency than the wild type  strain,
+having also lower retention in normal organs. Structure
+of Synthetic Adhesins and Targeted Adhesion of  to Antigenic Surfaces Although Ig-fragments
+have been displayed on the surface of  with
+various expression systems, such as lipoprotein
+fusions and β-domains of autotransporters, adhesion of  to target
+surfaces has not been observed with those systems. Lipoprotein fusions
+severely disturb the integrity of the OM causing significant leakiness
+and toxicity, whereas autotransporters
+are prone to proteolysis as part of their secretion mechanism. Recently, we reported that libraries of VHH
+can be displayed on the surface of  cells
+fused to an N-terminal fragment of intimin from EHEC (residues 1–659;
+named Neae), allowing the isolation of high affinity clones binding
+an antigen of interest. The Neae polypeptide
+(ca. 69 kDa) comprises the native intimin signal peptide (SP), LysM
+domain for peptidoglycan binding, a 12-stranded β-barrel domain
+for OM insertion, and a surface-exposed Ig-like domain (named D0)
+lacking adhesion capacity (Figure a). VHH domains (ca. 13 kDa) are fused to the C-end of Neae generating
+protein fusions termed NVHH with a total mass of ca. 84 kDa and tagged
+with E- and myc-tag epitopes (Figure a). To investigate whether NVHH fusions
+could modify the adhesion properties
+of , we first examined the specific adhesion
+of bacteria to abiotic surfaces coated with the antigen recognized
+by the VHH. To this end, NVHH fusions binding GFP (NVgfp) and human
+fibrinogen (NVfib) were expressed in  K-12
+strain EcM1 (MG1655ΔA-H; ). This strain has a deletion of the  operon encoding type 1 fimbriae, a natural adhesin
+found in most  strains and involved in recognition
+of mannosylated glycoproteins found on epithelial cell surfaces. Cultures of EcM1 bacteria bearing plasmids encoding
+NVgfp, NVfib, and Neae (), were induced with IPTG, and the display of the NVHH protein fusions
+on the surface of  was confirmed by flow cytometry
+with anti-myc monoclonal antibody (mAb) (Figure b). Induced bacteria were incubated on GFP- and fibrinogen (Fib)-coated
+plastic surfaces, washed with PBS, and stained with crystal violet
+to reveal the presence of bound bacteria. This experiment demonstrated
+the specific binding to those surfaces coated with the antigen recognized
+by the corresponding NVHH fusion (Figure c).
+Specific adhesion of  bacteria was confirmed
+by light microscopy (Figure d). These results
+indicated that NVHH fusions could act as SAs driving the adhesion
+of  bacteria to a target surface. Synthetic
+adhesins and targeting of  cells
+to antigens immobilized on a plastic surface. (a) Scheme of the primary
+structure of SAs (left) showing the N-terminal domain of intimin (Neae)
+as anchoring module, comprising the signal peptide (SP), LysM, β-barrel,
+and D0 Ig-like domains, fused to a variable Ig domain from heavy-chain-only
+antibodies (VHH) as adhesion module. The E-tag and myc-tag epitopes
+flanking the VHH domain are also indicated. Model of a SA fusion protein
+(right) in the bacterial outer membrane (OM) with the VHH exposed
+to the extracellular milieu. (b) Flow cytometry analysis of IPTG-induced  EcM1 bearing pNeae (control), pNVgfp, or pNVfib
+plasmids. Histograms show the fluorescence intensity of bacteria stained
+with anti-myc mAb and secondary anti-mouse IgG-Alexa 488. (c) Induced  EcM1 expressing the Neae polypeptide control (pNeae)
+or SAs against GFP (pNVgfp) or human fibrinogen (pNVfib) were incubated
+with plastic surfaces coated with GFP or human fibrinogen (Fib), as
+indicated. Bacterial adhesion was assessed by crystal violet staining.
+(d) Adhesion of  bacteria to target antigen-coated
+plastic surface (as in panel c) observed under the light microscope. Constitutive,
+Stable, and Nontoxic Expression of SAs from the
+Chromosome of To further investigate  targeting mediated by SAs, we developed constitutive
+gene expression cassettes that can be integrated as a single copy
+in the chromosome of . This strategy would
+allow constant expression of the SA in the absence of exogenous inducers
+and antibiotics for plasmid maintenance. For site-specific integration
+in the chromosome of , we adapted a marker-less
+gene deletion strategy that enables sequential manipulation of multiple
+gene loci leaving no antibiotic resistance genes or any other vector
+sequences in the chromosome. This technology
+is based on the insertion of a suicide plasmid bearing homology regions
+(HRs) of the targeted gene and the subsequent generation of double-strand
+breaks by expression of I-SceI restriction endonuclease , which are repaired, resulting in the specific modification
+of the targeted gene (). For this we constructed a suicide vector with I-SceI sites, named
+pGE (), and generated
+derivatives for integration of SAs having VHHs binding GFP (pGE-SAgfp) or binding TirM (pGE-SAtir). TirM is the extracellular domain (residues 252–360)
+of the translocated intimin receptor of EHEC. These constructs incorporated a constitutive promoter, P, driving the expression of the SA,
+and HRs flanking the  gene of  K-12 strain MG1655. The  gene encodes Antigen
+43, an adhesin conserved in most  strains
+that is involved in biofilm formation and bacterial self-aggregation. Using these vectors the  gene of  EcM1 was replaced by the gene cassettes
+expressing SAgfp or SAtir (Figure a), generating
+strains EcM1SAgfp and EcM1SAtir (). We also generated with suicide plasmid pGE the control strain EcM1Δ,
+an isogenic EcM1 strain not expressing SAs and having a deletion of  identical to that generated by the insertion of SAs.
+Finally, these strains were tagged with a bioluminescent reporter,
+the  operon from () under the control of a constitutive
+promoter (P), which was inserted in the  operon with suicide vector pGE- (). This operon
+encodes the meningitis-associated and temperature-regulated Mat fimbriae,
+also termed  common pilus, which are produced
+by most  pathogroups, being involved in early
+stage biofilm development and host cell recognition. The final bioluminescent strains were named EcM1Δ, EcM1SAgfp, and EcM1SAtir (). Flow cytometry analysis of EcM1SAgfp
+and EcM1SAtir with anti-myc mAb (Figure b) indicated that both SAs were highly and homogeneously
+expressed
+on the surface of bacteria, SAgfp being expressed at higher levels
+than SAtir. EcM1SAgfp and EcM1SAtir strains showed identical growth curves as EcM1Δ in LB media at 37 °C with agitation
+(Figure c), and nearly identical colony forming
+units (CFU) per unit of optical density at 600 nm (OD) were determined by plating (∼1.0 × 10 CFU/OD), demonstrating that bacterial growth and viability was
+not affected by the constitutive expression of the SAs. In addition,
+EcM1SAgfp and EcM1SAtir strains
+were grown at 37 °C for 5 days with a daily dilution (1:2000)
+in fresh LB medium lacking antibiotics. Whole-cell protein extracts
+were prepared from each culture harvested every day and analyzed by
+Western blot with anti-myc mAb (to detect the SA) and anti-GroEL mAb,
+as loading control, demonstrating that the expression of the SAs was
+stably maintained throughout the length of the experiment (ca. 55
+bacterial generations) without the need of any inducer or antibiotic
+pressure (Figure d). Similarly, the  operon was stably expressed in both strains along the
+experiment (). Constitutive, stable, and nontoxic expression of synthetic
+adhesins
+from the chromosome of . (a) Scheme of a SA
+gene fusion integrated in the  gene of  chromosome under the control of the constitutive
+promoter P. (b) Flow cytometry analysis of  EcM1Δ,
+EcM1SAgfp, or EcM1SAtir bacteria.
+Histograms show the fluorescence intensity of bacteria stained with
+anti-myc mAb and secondary anti-mouse IgG-Alexa 488. (c) Growth curves
+of bacterial cultures of the same strains shown in panel b. (d) Western
+blot analysis of the expression of SAs in EcM1SAgfp and EcM1SAtir strains grown in LB cultures
+for the indicated time. SAs were immunodetected with anti-myc tag
+mAb. Cytoplasmic GroEL chaperone was used as loading control (lower
+panel) and was detected with anti-GroEL mAb. Adhesion of Engineered  to Antigens
+Expressed on the Surface of Mammalian Cells We investigated
+whether EcM1SAgfp and EcM1SAtir bacteria adhered specifically to  cultured
+mammalian cells expressing on their surface the cognate antigens recognized
+by the SAs. As an experimental model, we stably transfected HeLa cells
+with plasmids pDisplay-GFP-tm and pDisplay-TirM-tm (), which expressed GFP and TirM antigens,
+respectively, on the extracellular side of the plasma membrane by
+means of an N-terminal signal peptide and a C-terminal transmembrane
+(tm) anchor domain from the platelet derived growth factor receptor
+(PDGFR) (). In
+addition, the protein fusion containing TirM incorporates, before
+the tm domain, the monomeric green fluorescent protein mWasabi. The primary sequence of mWasabi differs from that of GFP and is
+not recognized by the VHH cloned in SAgfp. Thus, expression of GFP-tm and TirM-tm fusion proteins on the surface
+of HeLa cells can be monitored by their green fluorescence emission.
+Upon stable transfection, fluorescence-positive HeLa cells were enriched
+by fluorescence-activated cell sorting (FACS) and expanded . The expanded cell populations, named HeLa-GFP-tm
+and HeLa-TirM-tm, contained cells with different expression levels
+of these antigens on their surface, including some cells with undetectable
+levels of the antigens, especially in HeLa-TirM-tm (). We performed  adhesion assays of HeLa-GFP-tm and HeLa-TirM-tm cultures infected
+with EcM1SAgfp or EcM1SAtir
+bacteria (MOI 300:1). After 1 h infection, unbound bacteria were removed
+with PBS, and the samples were stained with anti- polyclonal antibodies and DAPI (to stain DNA). Inspection of the
+samples by light and fluorescence microscopy (Figure ) revealed very high numbers of EcM1SAgfp
+and EcM1SAtir bacteria (red fluorescence) specifically
+adhered to HeLa cells expressing GFP or TirM, respectively (green
+fluorescence). Target HeLa cells were largely covered by bound bacteria
+expressing the corresponding SA, as can be also visualized by three-dimensional
+reconstruction of confocal images (). In contrast, EcM1SAgfp and EcM1SAtir bacteria were not bound to HeLa cells expressing
+the nonspecific antigen (i.e., TirM for EcM1SAgfp;
+GFP for EcM1SAtir) (Figure a and b). Importantly, bacteria adhered to cells with different expression
+levels of the target antigen on their surface, but not to antigen-negative
+cells that can be found in both HeLa-GFP-tm and HeLa-TirM-tm cultures
+(labeled with asterisks in Figure c). Similar
+results were observed with lower MOI and infection times (see below).
+We also tested whether the bioluminescent reporter could provide a
+sensitive readout of the bacterial adhesion process. To this end,
+HeLa, HeLa-GFP-tm, and HeLa-TirM-tm cells were grown in a multiwell
+tissue culture plate and infected as above with EcM1SAgfp, EcM1SAtir, or EcM1Δ. After 1 h infection, the plate was washed
+with PBS and monitored for light emission. Bioluminescence signals
+were observed only in those wells in which bacteria expressing SAs
+infected HeLa cells expressing the cognate target antigen (). To gain further insight into the adhesion process mediated
+by the
+SAs, we performed time-lapse live microscopy recording the adhesion
+of EcM1SAgfp bacteria to HeLa-GFP-tm cells, selecting
+a field in the microscope that allow comparison of the behavior of
+bacteria encountering antigen-positive and antigen-negative cells.
+For this experiment infection of HeLa-GFP-tm culture was performed
+with a lower MOI (100:1) to reduce bacteria in the medium that could
+hinder the visualization of cells. The result from this experiment
+() showed that antigen-positive
+HeLa-GFP-tm cells (green) were covered with bacteria within 5 min,
+whereas almost no bacteria were attached to antigen-negative cells.
+Interestingly, a significant number of bacteria attached in just 2
+min to antigen-positive cells. In fact, adhesion of an individual
+bacterium occurs in a very short time period (<30 s) after an apparent
+random collision of a swimming bacterium with the surface of a mammalian
+cell. After this initial contact with the target cell, bacteria can
+be observed moving and tumbling in close proximity to the surface
+of the mammalian cell, eventually establishing a permanent adhesion
+phenotype and stopping its active motility. In contrast, bacteria
+that contact with an antigen-negative cell move and tumble close to
+the cell surface but then swim in a different direction away from
+the cell (see ). This
+behavior suggests that a productive adhesion of the SAs to the target
+surface is somehow transduced by the bacterium to stop flagella. Interestingly,
+an arrest of flagellum rotation has been described in the adhesion
+of  to surfaces during its
+life cycle. In , intracellular levels of c-di-GMP second messenger have been proposed
+to regulate changes in flagellar rotation during the transition between
+motile and surface-attached multicellular communities. Taken together, our experiments demonstrated
+that the engineered  strains with constitutive
+expression of SAs were able to adhere fast, in high numbers, and in
+a highly specific manner to mammalian cells expressing on their surface
+the target antigen recognized by the SA. In addition, the mechanisms
+underlying the behavior of engineered  with
+SAs to a target surface might be related to those found in natural
+adhesion processes that trigger arrest of flagellar rotation. Adhesion of  expressing synthetic adhesins
+to target mammalian cells. (a) Light and fluorescence microscopy images
+of HeLa-GFP-tm cells grown in culture and infected with EcM1SAgfp or EcM1SAtir bacteria (MOI
+300:1), as indicated. Expression of GFP-tm fusion on the surface of
+these cells is detected by the green fluorescence emission. (b) Light
+and fluorescence microscopy images of HeLa-TirM-tm cells grown in
+culture and infected with EcM1SAgfp or EcM1SAtir bacteria (MOI 300:1), as indicated. Expression
+of TirM-tm fusion on the surface of these cells is detected by the
+green fluorescence emission of its mWasabi domain. Bacteria were stained
+with anti- polyclonal serum and anti-IgG-rabbit-Alexa-594
+(red). (c) Confocal microscopy images of HeLa-GFP-tm cells infected
+with EcM1SAgfp (top panels) and HeLa-TirM-tm cells
+infected with EcM1SAtir (bottom panels). Infection
+and staining was carried out as in panels a and b. In addition, cell
+nuclei and bacterial chromosomes were stained with DAPI (blue). The
+selected images contain antigen-negative cells (labeled with asterisks)
+to show the absence of bound bacteria to them. Colonization
+of Tumors  by Engineered  with Synthetic Adhesins To test the functionality
+of the SAs , we evaluated whether the engineered
+bacteria exhibited an improved colonization of solid tumors expressing
+the target antigen on the surface of tumor cells. It is well established
+from animal models and clinical trials that intravenous administration
+of facultative anaerobic bacteria such as  and  strains results in the preferential
+bacterial colonization of solid tumors. This natural ability of anaerobic bacteria for tumor colonization
+has encouraged research aimed to engineer the expression of therapeutic
+proteins within the tumor (e.g., cytotoxins, pro-drug converting enzymes)
+as well as gene reporters for  tumor diagnosis
+(e.g., bioluminescence, magnetic resonance imaging). Clinical trials using systemic administration of  for human cancer therapy revealed that the highest bacterial dose
+that was tolerated was still insufficient for the effective colonization
+of solid tumors found in those patients. Therefore, it would be of interest to engineer bacteria with improved
+tumor colonization capabilities (i.e., requiring lower doses of administered
+bacteria and showing an increased ratio of bacteria in tumors versus
+healthy organs). It has been previously
+shown that systemic administration of a single bacterial dose of 5
+× 10 CFU of wild type  K-12
+(strain MG1655) to tumor-bearing mice elicited colonization of >90%
+of the tumors. Three to 5 days after its
+intravenous injection,  K-12 bacteria were
+recovered in high numbers from the tumor mass (∼10 CFU/g), whereas organs such as liver or spleen had low bacterial
+numbers (<10 CFU/g). Following a similar approach,
+we established an  tumor xenograft model based
+on HeLa-GFP-tm cells. Athymic Nude mice that received subcutaneously
+∼10 HeLa-GFP-tm cells developed solid tumors of
+∼200–400 mm in about 10–15 days.
+These animals were divided in two experimental groups ( = 6) and received intravenously in their lateral tail vein a single
+dose of 1 × 10 CFU of EcM1SAtir
+or EcM1SAgfp. Four days after the intravenous
+injection, live imaging of the animals showed bioluminescence signals
+in the tumors from both groups, and bacteria were found in high numbers
+(∼10–10 CFU/g) in all tumors
+from each group (6/6) (), whereas livers and spleens did not contain bacteria (detection
+limit ∼5 × 10 CFU/g) or had low bacterial
+numbers (<10 CFU/g) (). The level of expression of the SAs and bioluminescence
+signals were identical in the inoculated bacteria and in tumor-recovered
+bacteria, showing the stability of the expression of SAs  ().
+Histological cross sections of colonized HeLa-GFP-tm tumors stained
+with anti- antibodies revealed that bacteria
+from both strains localized preferentially at inner regions of the
+tumors (), especially
+at the border with outer regions where tumor cells preferentially
+proliferate. A similar pattern of bacterial distribution was reported
+for tumors colonized with wild type  MG1655. Hence, the above data indicated that the
+engineered  strains stably expressed the SAs  and maintained the capacity to colonize solid tumors of HeLa-GFP-tm
+cells regardless of the specificity of the SA when a high bacterial
+dose was administered (1 × 10 CFU). To determine
+whether SAs could favor tumor colonization with lower bacterial doses,
+first we showed that a bacterial dose of 1 × 10 CFU
+was suboptimal for the colonization of HeLa-GFP-tm tumors by wild
+type  MG1655 as only one-third of the tumors
+(3/9) were colonized 4 days after its systemic administration (Figure a). This dose represents 2% of the dose reported
+for optimal tumor colonization with wild type  MG1655. Nevertheless, those tumors that
+were colonized had bacterial titers (∼10 CFU/g)
+similar to those found with high bacterial doses, suggesting that
+once  succeeded at an early stage of tumor
+colonization, bacteria can proliferate, reaching a final titer that
+is independent of the inoculated dose. In contrast, livers and spleens
+of these animals had undetectable levels of bacteria (Figure b). Therefore, a suboptimal
+dose of 1 × 10 CFU was
+chosen to compare the tumor colonization capacity of the engineered  strains. As above, EcM1SAtir
+or EcM1SAgfp bacteria were administered intravenously
+to two groups of Nude mice ( = 9) bearing subcutaneous
+HeLa-GFP-tm tumors (≥200 mm). Four days after inoculation,
+most animals (8/9) of the group inoculated with EcM1SAgfp had their tumors colonized with high bacterial titers (≥10 CFU/gr), whereas less than one-third of the animals (2/9)
+in the group inoculated with EcM1SAtir had colonized
+tumors (Figure a). This differential colonization
+was also detected by bioluminescence  imaging
+of the animals (Figure a). As a control for
+specificity, a dose of 1 × 10 CFU of EcM1SAgfp strain was also administered systemically to a
+group ( = 9) of Nude mice bearing tumors derived
+from untransfected HeLa cells. Four days after inoculation, HeLa tumors
+were colonized with low efficiency (2/9) by EcM1SAgfp strain, identical to that found with EcM1SAtir strain in HeLa-GFP-tm tumors (Figure a). In addition, livers and spleens of animals with colonized tumors
+had undetectable levels of bacteria (Figure b). Taken together, these results demonstrated that engineered  with SAs were able to colonize solid tumors expressing
+a target cell surface antigen with high efficiency and specificity
+using low bacterial doses that are suboptimal for wild type  or engineered bacteria with a SA of a different
+specificity. Several factors have been proposed to be involved
+in the colonization
+of solid tumors by  and other facultative
+and anaerobic bacteria (e.g., , , ). The initial
+bacterial entry seems to be due to the highly permeable and abnormal
+vasculature of the tumor. Infecting bacteria
+also induce pro-inflammatory signals (e.g., tumor necrosis factor
+α; TNFα) that increase blood flooding into the tumor mass
+assisting bacterial entry. At this stage,
+bacterial adhesion to tumor cells mediated by SAs may facilitate successful
+tumor colonization. At later stages, bacterial replication is favored
+in the intratumoral microenvironment, rich in certain nutrients (e.g.,
+amino acids, ribose) and having a low oxygen concentration that impairs
+clearance of bacteria by the immune system. In the colonized tumors, we found similar bacterial
+titers and intratumoral distribution irrespective of the specificity
+of the SA or antigen expressed by the tumor, indicating that SAs appear
+to have less influence in the replication and intratumoral distribution
+of bacteria at a later stage of the colonization. colonization of tumors with low
+doses
+of  expressing synthetic adhesins. (a) Bacterial
+colonization of HeLa-GFP-tm or HeLa tumors, as indicated on top, by
+the following  strains: wild type K-12 (MG1655),
+EcM1SAtir (SAtir), and EcM1SAgfp (SAgfp). Each bacterial strain was intravenously administered
+(1 × 10 CFU/mouse) to tumor-bearing mice (experimental
+groups  = 9) and 4-days postadministration the number
+of CFU in each tumor was determined. Each circle in the graph represents
+the CFU determined per gram of tumor (Log CFU/g) for
+each animal in the different experimental groups. The ratio of colonized
+tumors in each group is shown at the bottom along with the statistical
+analyses between groups connected with lines. Two-tailed  values of Fisher’s exact test are indicated with one asterisk
+(*) when  < 0.05 or two asterisks (**) when  = 0.015. On the right, bioluminescence live imaging of
+HeLa-GFP-tm tumor-bearing mouse infected with 1 × 10 CFU of EcM1SAtir (left image) or EcM1SAgfp (right image). Images are overlays of photographic
+white-light and bioluminescence signals from a representative tumor-bearing
+mouse infected with the strains, as indicated on top. The intensities
+of the bioluminescence signals are represented in pseudocolor according
+to the scale bar. (b) Graphs showing bacterial titers in livers (left)
+and spleens (right) from those animals with a HeLa-GFP-tm tumor colonized
+in panel a by wild-type K-12 (MG1655), EcM1SAtir
+(SAtir), or EcM1SAgfp (SAgfp) strains. Each circle
+in the graph represents the CFU determined per gram of tissue (log CFU/g). Lower Retention
+of Engineered  in Liver
+and Spleen Next, we investigated whether the engineered bacteria
+with SAs and lacking natural adhesins, in addition to the improved
+colonization of target tumors shown previously, could have a lower
+retention in normal organs compared to wild type . For this purpose, we analyzed bacterial titers in livers and spleens
+of two groups ( = 9) of Nude mice without implanted
+tumors in which a high dose (1 × 10 CFU) of wild
+type  MG1655 or engineered EcM1SAgfp was inoculated. Three mice from each group were euthanized
+at 4, 24, and 48 h after inoculation, and the bacterial titers in
+liver and spleen were determined (Figure ).
+This experiment revealed that, at all the time points analyzed, the
+titers of the engineered  strain in these
+organs were lower than those in the case of the wild type  strain, especially in liver where the titers of
+engineered bacteria were ∼10–30 times lower than the
+wild type strain (Figure ). In the spleen,
+the engineered bacteria had titers ∼2–4-fold lower than
+the wild type strain. Therefore, these data indicate that the engineered
+bacteria exhibit a lower retention in healthy organs than the wild
+type  strain. This phenotype might be due
+to the deletion of natural adhesins in the engineered strain (i.e.,
+type 1 fimbriae, Antigen 43, and MAT fimbriae) that have the potential
+to bind receptors widely expressed in the surface of multiple host
+cells and tissues. Hence, expression of SAs into
+an  chassis lacking of a set of natural adhesins
+generates bacteria with selective adhesion to target tissues and lower
+adhesion to non-target organs. Low retention of the engineered  strain
+in healthy organs. Bacterial titers (log CFU/g) recovered
+from livers (left) and spleens (right) of tumor-less Nude mice at
+4, 24, and 48 h after intravenous administration of 1 × 10 CFU of wild type  K-12 (MG1655) or
+EcM1SAgfp, as indicated. Each bar represents the
+average CFU/g with standard deviation determined from three mice from
+each group at the indicated time postinoculation. We have engineered a stable and specific
+adhesion of  bacteria with SAs based on the
+β-domain from intimin and the Ig-domain
+from VHHs. Constitutive expression of
+SAs from the chromosome did not affect growth and viability of the
+engineered  strain, being stably maintained
+through multiple generations without selection pressure. The modular
+architecture of the SAs makes possible the simple modification of
+their specificity by an exchange of the VHH sequence, which can be
+selected from repertoires employing phage and cell display technologies. This could allow the generation of SAs against virtually any antigen
+of interest, enabling the design of  targeting
+any chosen surface or cell. In addition, intimin β-domain and
+VHHs are resistant to proteases and denaturant agents (e.g., SDS,
+urea, temperature). Altogether, these properties
+make SAs extremely robust, inducing the stable attachment of a great
+number of  bacteria to the targeted surface
+or cell. Furthermore, we have demonstrated the functionality of SAs  showing that the engineered  strain colonizes more efficiently solid tumors expressing a target
+antigen. The higher efficiency introduced by the SAs allowed a significant
+reduction (ca. 2 orders of magnitude) of the bacterial dose needed
+for optimal tumor colonization , an important
+issue in order to increase the biosafety of bacterial therapies. Tumors cells often deregulate the expression
+and/or post-translational modification of cell surface proteins (e.g.,
+growth factor receptors, mucins), which has been used as targets for
+developing therapeutic antibodies against tumor cells. Hence, SAs against these validated targets could improve bacterial
+colonization of specific tumors. Engineered  expressing SAs may be of interest for other biomedical and industrial
+applications. For instance, SAs could help in the localized delivery
+of antigens to specific immune cells for more effective vaccines based
+on bacterial vectors. SAs could also
+be targeted to antigens expressed by viral and bacterial pathogens,
+which could facilitate the therapeutic intervention of engineered
+bacteria against pathogens. In addition, targeting
+of other bacteria could generate defined bacterial consortia for industrial
+bioprocesses, whereas adhesion to abiotic
+surfaces could improve the development of biosensors. Given the conservation of the cellular machineries used
+for folding and insertion of β-barrel OM proteins, it is likely that the reported SAs of  could
+be functional in other Gram-negative bacterial species, including
+alternative nonpathogenic bacteria used in synthetic biology such
+as . In conclusion, SAs could be applied in multiple synthetic biology
+projects, and future work should expand their use in  and other bacteria for specialized applications. Bacterial Strains
+and Growth Conditions The  strains
+used in the experiments described in this
+work are listed in . Bacteria were grown in Luria–Bertani (LB) liquid medium
+and agar plates (1.5% w/v), at 37 °C, unless otherwise indicated.
+When needed for plasmid or strain selection, antibiotics were added
+to the media at the following concentrations: chloramphenicol (Cm)
+at 30 μg/mL, ampicillin (Ap) at 100 μg/mL, and kanamycin
+(Km) at 50 μg/mL.  DH10B-T1 strain was used as host for cloning and propagation of plasmids
+with a pBR origin of replication (e.g., pAK-Not, pNV-derivatives).
+For cloning and propagation of suicide pGE-plasmid derivatives, containing
+the conditional pi-dependent R6K origin of replication, the  strains BW25141
+or CC118-λpir were used. For inducible expression of the SAs
+from plasmid vectors with  promoter (i.e., pNVfib,
+pNVgfp), EcM1 bacteria bearing the corresponding plasmid were grown
+in LB-Cm at 30 °C, and 0.05 mM isopropyl-thio-β--galactoside (IPTG) was added at an optical density 600 nm (OD0) of 0.5. The cultures were further grown for 2 h at 30
+°C with agitation (160 rpm). Bacteria with constitutive expression
+of the synthetic adhesins and the  operon from
+the chromosome were always grown statically at 37 °C in LB, except
+for analysis of their growth curve in which cultures were grown at
+37 °C with agitation (160 rpm). Bioluminescence of bacterial
+colonies grown on LB plates were monitored in a Chemi-doc XRS+ (Bio-Rad). Plasmids, DNA Constructs, and Oligonucleotides The
+plasmids constructed and used in this study are summarized in . Oligonucleotides were
+synthesized by Sigma Genosys and are listed in . PCRs were performed with Taq DNA polymerase
+for standard amplifications in screenings and with proof-reading DNA
+polymerases, Vent DNA polymerase (New England Biolabs) and High-expand
+fidelity (Roche) for cloning purposes. All plasmid constructs were
+fully sequenced (Secugen). Details of plasmid constructions are described
+as . Genome Modification and Strain Construction Site-specific deletions and insertions in the chromosome of  were done with the marker-less strategy of genome
+edition based on expression of I-SceI endonuclease. Briefly,
+the  strain to be modified was initially transformed
+with plasmid pACBSR (Cm), expressing I-SceI and λ Red proteins under the control of
+P promoter (inducible with -arabinose), and
+subsequently electroporated with the corresponding pGE-based suicide
+vector (Km). Cointegrants were selected on LB-Cm-Km plates
+incubated at 37 °C. Individual colonies were isolated and grown
+for 6 h in LB-Cm liquid medium containing -arabinose 0.4%
+(w/v) with agitation (160 rpm). After this period, a ∼1 μL
+sample of these cultures was streaked on LB-Cm plates using an inoculating
+loop and incubated overnight. Individual colonies were replicated
+in LB-Cm and LB-Cm-Km plates to screen for Km-sensitive colonies that
+have performed resolution of the cointegrant vector after I-SceI induction.
+Individual Km-sensitive colonies were screened by PCR with specific
+oligonucleotides to identify those with the desired modification in
+their chromosome (i.e., deletion, insertion, substitution). Plasmid
+pACBSR was cured from the final strain by growth in liquid LB and
+streaking on LB plates. Individual colonies were replicated in LB
+and LB-Cm plates to screen for Cm-sensitive colonies. Construction
+details of individual  strains are described
+as . Cell Culture and Plasmid Transfection The
+human epithelial tumor cell line HeLa (ATCC, CCL-2) was grown
+as a monolayer in Dulbecco’s modified Eagle’s medium
+(DMEM), supplemented with 10% fetal bovine serum (FBS) and 2 mM glutamine
+(complete DMEM), at 37 °C with 5% CO. For transfection,
+HeLa cells were seeded in 24-well tissue culture plates (BD Falcon)
+(∼10 cells/well), grown for 20 h at 37 °C
+with 5% CO, and transfected with 0.6 μg/well of
+plasmids pDisplay-GFP-tm or pDisplay-TirM-tm following the calcium
+phosphate method. After 22 h incubation
+at 37 °C with 5% CO, the medium was removed, and
+wells were washed three times with phosphate-buffered saline (PBS)
+and filled with complete DMEM medium containing G418 (0.5 mg/mL, Invitrogen,
+Life Technologies). After 24 h incubation, cells were passed to a
+T75 flask (BD Falcon) with the same medium and further grown. G418-resistant
+HeLa cells expressing GFP or mWasabi fusion proteins were selected
+from these cultures by fluorescence activated cell sorting (FACS)
+using an Epics-Altra Cell Sorter (Beckman Coulter). HeLa-GFP-tm and
+HeLa-TirM-tm positive cells populations were expanded on complete
+DMEM medium. Bacteria
+(equivalent to a final
+OD of 1.0) were harvested from cultures by centrifugation
+(4000 × , 3 min), washed with PBS, and resuspended
+in 1 mL of PBS containing 10% (v/v) goat serum (Sigma). An aliquot
+sample of 200 μL was incubated for 1 h on ice with anti-myc
+mAb clone 9B11 (1:200; Cell Signaling Technology). Next, bacteria
+were washed in PBS, resuspended in 500 μL of PBS containing
+10% (v/v) goat serum, and stained for 40 min in the dark with Alexa
+488-conjugated anti-mouse IgGs (1:500; Molecular Probes, Life Technologies).
+Bacteria were finally washed and resuspended in a final volume of
+1 mL of PBS and analyzed in a flow cytometer (Gallios, Beckman Coulter). Protein Extract Preparation, SDS-PAGE, and Western Blots Whole-cell protein extracts were prepared in urea-SDS sample buffer
+as described previously. SDS-polyacrylamide
+gel electrophoresis (PAGE) and immunoblotting conditions to polyvinylidene
+difluoride membrane (PVDF, Immobilon-P; Millipore) have been reported. For immunodetection, the PVDF membranes were incubated with anti-myc
+mAb clone 9B11 (1:2000; Cell Signaling Technology) to detect myc-tagged
+SAs and anti-mouse IgG-peroxidase (POD) conjugate (1:5000; Sigma)
+as secondary antibody. GroEL was detected with anti-GroEL mAb-POD
+conjugate (1:5000; Sigma). Membranes were developed by chemiluminescence
+using a mixture in 100 mM Tris-HCl (pH 8.0) containing 1.25 mM luminol
+(Sigma), 0.22 mM cumaric acid (Sigma), and 0.0075% (v/v) HO (Sigma) and exposed to an X-ray film (Curix, Agfa). Adhesion Assays to Antigens Immobilized on a Plastic Surface Purified GFP (Upstate, Millipore) or human fibrinogen (Enzyme Research
+Laboratories) as indicated was diluted in PBS to 10 μg/mL, and
+100 μL was adsorbed onto ELISA plates (Maxisorb, Nunc) overnight
+at 4 °C. Antigen-coated plates were washed with PBS and blocked
+for 1 h at room temperature with PBS containing 3% (w/v) skimmed milk.
+Next, a bacterial suspension (100 μL) of the indicated strain
+was added at an OD of 3.0 in PBS and incubated for an
+additional 1 h. The plates were then washed with PBS three times,
+and the presence of bound bacteria was visualized by light microscopy
+and macroscopically detected by staining with crystal violet solution
+(Sigma). Adhesion Assays to  Cultured HeLa Cells
+and Immunofluorescence Microscopy Bacteria of the indicated  strain were harvested by centrifugation (4000 × , 3 min) from static liquid LB cultures grown overnight
+at 37 °C. An OD of 1.0 from these cultures grown
+statically was determined to contain ∼3 × 10 CFU/mL by plating in LB agar. Bacteria were washed in PBS and resuspended
+at 3 × 10 CFU/mL in PBS or DMEM. For an infection
+at MOI 300:1, a 1 mL sample of this bacterial suspension was added
+to a single well of a 24-well tissue culture plate having the indicated
+HeLa cell line (∼10 cells/well). HeLa cells were
+grown on sterile coverslips (13 mm diameter, VWR international) placed
+at the bottom of the well. After 1 h infection at 37 °C, the
+wells were aspirated and washed five times with 1 mL of PBS at room
+temperature. The coverslips were fixed for 20 min at room temperature
+with 0.5 mL of a paraformaldehyde 4% (w/v) solution in PBS and washed
+three times with 1 mL of PBS. Coverslips were blocked and stained
+for 1 h at room temperature in a wet chamber with 50 μL of PBS/10%
+goat serum solution having a rabbit polyclonal serum anti- O and K antigenic serotypes (1:1000; Biodesign).
+The coverslips were washed by immersion 15 times in a large volume
+of PBS (100 mL), placed again the wet chamber, and incubated for 40
+min at room temperature with 50 μL of PBS/10% goat serum solution
+having a goat anti-rabbit IgG-Alexa 594 conjugated secondary antibody
+(1:500; Molecular Probes, Life Technologies) and DAPI (1:500; Sigma).
+Next, the coverslips were washed with PBS as above, the excess of
+liquid was removed by touching a kimwipe with the edge of the coverslip,
+and the coverslips were mounted with 2 μL of Prolong (Invitrogen)
+on glass slides. The samples were examined by epifluorescence microscopy
+(Zeiss Axio imager microscope) or by confocal microscopy (Leica TCS
+SP5 multispectral confocal system). For time-lapse live cell video
+microscospy, HeLa-GFP-tm cells, grown on 24-well tissue culture plates,
+were infected with 1 × 10 CFU of EcM1SAgfp in a final volume ∼0.3 mL/well (MOI 100:1) and monitored
+using an Olympus IX71 microscope equipped with an Olympus cellR motorized TIRF system. Infection of Tumor-Bearing
+Mice and Recovery of Bacteria from
+Tissues All animals experiments were done in accordance with
+protocols approved by the CNB Ethics Committee for Animal Experimentation
+(ref 11034) and by the Hospital Universitario Puerta de Hierro Animal
+Care and Use Committee, in compliance with Spanish and European Union
+legislation. Five-week-old athymic female Hsd:Athymic Nude- were obtained from Harlan
+(Harlan Ibérica). Tumor-bearing mice were generated by subcutaneous
+injection of ∼1 × 10 HeLa-GFP-tm or HeLa cells,
+as indicated, in 100 μL of PBS containing 20% (v/v) Matrigel
+(BD Biosciences), into the abdominal right flank of 6-week-old Nude
+mice. Tumor volumes were estimated with calipers according to the
+formula: width × length × 0.52. When tumors
+reached a volume between 200 and 400 mm, the mice were
+randomly divided into experimental groups. Bacteria were grown and
+harvested as described above for the  adhesion
+assays and resuspended in sterile PBS at 1 × 10 CFU/mL.
+For each independent experiment the number of CFU in this bacterial
+suspension was determined, showing an experimental error below 10%.
+This bacterial stock was directly used for systemic inoculation of
+mice receiving a dose of 1 × 10 CFU by injection
+of 100 μL into the lateral tail vein using a 0.5 mL syringe
+with a 29G needle (Becton Dickinson). Alternatively, for mice receiving
+a dose of 1 × 10 CFU, the original bacterial stock
+was diluted in PBS to 1 × 10 CFU/mL, and 100 μL
+was injected per mouse as above. These bacterial doses did not cause
+any apparent disease symptoms in the animals, which showed normal
+phenotype throughout the entire experiment (i.e., mobility, weight,
+feeding behavior). For determination of bacterial CFU per gram (CFU/g)
+of tumors, livers, and spleens, animals were euthanized, and tumors
+and organs were excised, placed individually into (preweighed) sterile
+tubes containing 5 mL of PBS, and weighed. Samples were then transferred
+to sterile sampling bags (VWR), and Triton X-100 (Sigma) was added
+to a final concentration of 0.2% (v/v). Samples were homogenized by
+soft mechanical squeezing. Next, a 100-μL sample of the homogenates
+was serially diluted in LB, plated in LB agar, and incubated overnight
+at 37 °C to determine CFU. Bacterial titers were expressed as
+CFU/g of tissue. For statistical analysis a minimal bacterial titer
+of 50 CFU/g, corresponding to the detection limit of the assay, was
+considered in those cases in which no bacteria were detected by plating. Bacterial light emission from
+LB plates or from tissue culture plates was captured using a ChemiDoc
+XRS system (Bio-Rad). For live imaging of bioluminescent bacteria
+in tumor-bearing mice, animals were anesthetized with 4% Isoflurane
+(Forene, Abbott) and maintained under 1% Isoflurane in a thermostated
+chamber with a high-resolution charge-coupled-device (CCD) cooled
+digital camera ORCA-2BT (Hamamatsu Photonics). Imaging analysis was
+done with the Hokawo software (Hamamatsu Photonics). Statistical analyses comparing the ratio
+of colonized tumors between experimental groups were conducted with
+Fisher’s exact test to determine two-tailed  values using Prism 5.0 (GraphPad software Inc.). Data were considered
+significantly different when  < 0.05. For  histological
+analyses, resected tumors were fixed with 4% (w/v) paraformladehyde
+in PBS for 16 h at 4 °C and embedded in paraffin. Serial 6 μm
+sections were cut at the tumor center with a microtome (Leica RM2155)
+and placed onto glass slides. The samples were deparaffinized with
+xylene and ethanol solutions, rehydrated in PBS, and incubated with
+1 M citrate buffer (pH 6.0) and PBS-Tween (PBS, 0.1% Tween 20) to
+unmask antigens. Tissue sections were blocked with 10% goat serum
+in PBS-Tween and incubated with anti- polyclonal
+serum (1:100) 1 h at room temperature in the same buffer. Next, samples
+were washed with PBS-Tween and incubated with goat anti-rabbit IgG-Alexa
+594 conjugated secondary antibody (1:500) in PBS-Tween with 10% goat
+serum for 1 h at room temperature. Samples were mounted in Vectashield
+media (Vector Laboratories), and images were obtained with a fluorescence
+microscope (Leica DMI6000B fluorescence system with Orca R digital camera from Hamamatsu)..

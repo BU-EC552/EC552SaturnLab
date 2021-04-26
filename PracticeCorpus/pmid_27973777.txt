@@ -1,0 +1,747 @@
+Metabolic pathways
+and genetic circuits are commonly introduced
+into microbes such as  or  to produce chemicals or to implement novel
+functions. Such experiments typically require the fine-tuning
+of gene expression to balance and optimize protein levels of metabolic
+enzymes or regulators. In prokaryotes, protein production can be controlled
+relatively easily using synthetic ribosomal binding sites. However, to fine-tune gene expression and protein
+levels in unicellular eukaryotes, transcription is the most targeted
+step and, to this end, various engineering tools have been developed. Most promoter engineering efforts in eukaryotes were
+focused on yeasts, since they are the most commonly used eukaryotic
+expression systems for complex multigene pathways. has most commonly been used for metabolic engineering endeavors,
+but recently also alternative yeasts such as  have been increasingly used. Yeast promoter libraries
+were designed either by random sequence modifications or by rational approaches with a focus on -regulatory modules (CRMs). CRM is a general term referring to regulatory
+DNA sequences, also named enhancers in higher eukaryotes, while in
+yeasts rather the terms upstream activating/repressing sequences (UAS/URS)
+are used. CRMs interact with particular transcription
+factors conferring specific activation/repression regulatory mechanisms. CRMs alone are however nonfunctional, requiring a core (minimal)
+promoter sequence to recruit general transcription factors and RNA
+polymerase II for transcription initiation. Similarly, the core promoter alone results
+in basal to no expression at all, and requires a CRM for strong expression
+and specific regulation. Engineering the core promoter and 5′
+untranslated region (UTR) has mainly an impact on transcription strength,
+translation initiation and most probably mRNA stability. In contrast,
+engineering CRMs affects transcription strength but also impacts regulation
+(, constitutive or inducible). For instance,
+studies on the methanol inducible  () promoter () in (,,) showed that deletions or insertions of CRMs
+(more specifically in predicted transcription factor binding sites,
+TFBSs) resulted in promoter activity variations and also in regulatory
+differences. One example for altered regulation were derepressed  variants. The wild type  is tightly repressed on glucose, remaining repressed even
+when glucose is depleted and strictly requires methanol for induction.
+Depressed variants however start expression once glucose is depleted
+not requiring methanol induction. In contrast to such mutations
+in CRMs, modifications of the core
+promoter sequence impacted only promoter strength, leaving induction/repression
+profiles unchanged. Additionally, studies
+on CRMs are typically limited to one promoter, , its conclusions cannot be easily transferred to other promoters,
+even in the same organism. For instance, information gained from deletion
+studies of (,,) cannot be transferred to other
+methanol inducible promoters in  due
+to the low sequence similarly between these coregulated promoters. In contrast, core promoter function is conserved
+even between related species. Hence, we hypothesized
+that  designed synthetic
+core promoters could be used as interchangeable parts between related
+organisms. Such universal “tuning knobs” could be used
+for regulating the strength of gene expression without interfering
+with specific regulation in a given organism for different promoters,
+or in different species. Since the designed promoters are artificial,
+they have lower probability of recombining with natural sequences
+in the genome which favors strain stability and also facilitates the
+expression cassette assembly. To design such promoters, we used a
+genome scale data set available for . is the most commonly used yeast
+for basic research on transcription regulation and synthetic promoter
+design. Recently,
+comprehensive studies have also addressed the sequence/function relationship
+of natural core promoters and 5′UTRs. Two
+genome-scale studies were performed in this yeast by measuring the
+expression of 859 natural promoters under different conditions and using this data set to deduce core promoter
+properties affecting expression. Also,
+nucleosome affinity in the core promoter was shown to be an effective
+modification target for designing core promoters. For the interspecies comparisons we selected  and . http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_001.pdf is, after , the most commonly used
+expression system for single proteins. The exceptionally strong and tightly methanol
+regulated , has
+motivated several research studies on transcriptional regulation mechanisms
+(reviewed by and summarized in  alongside  studies). Recently, it has been reported that at least 15 promoters of genes
+involved in methanol utilization (MUT) are coregulated with , some of which show higher
+expression. Hence,  offers one of the largest sets of promoters that are coregulated
+and easily applicable strategies for regulating their strengths would
+be desirable. In the present study, we designed generic synthetic
+core promoters
+for protein production fine-tuning in yeasts. Acknowledging the fact
+that manifold structural features contribute to the promoter strength,
+we have incorporated in our design several factors, which were derived
+from a  core promoter data set
+(, TATA box position and nucleosome affinity). Using this design approach, we have created a library of 112 synthetic
+core promoters and 5′UTRs that were validated with the  CRM (). Additionally,
+we tested the best performing synthetic core promoters with alternative
+CRMs of  and  promoters, demonstrating their applicability in different contexts. Computational
+Design of Synthetic Core Promoters http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_001.pdf Several
+factors were simultaneously incorporated in the synthetic core promoter
+design: (i) nucleotide occurrence along the sequence of 140 strong
+natural  core promoters (as reported
+by), (ii) the presence and position of
+the TATA box, (iii) the position and number other motifs (other than
+TATA box, as defined by) and (iv) nucleosome
+occupancy profiles. Using this approach, we have
+created a library of synthetic core promoters and 5′UTRs for
+generic yeast cells. The method adopted in this study is represented
+schematically in  and described in detail in . The input sequences were taken
+from a library of  natural core
+promoter sequences. We
+used the genome wide  core promoter
+sequences data published by Lubliner , in which 729 native  promoters were segmented into four groups (low, medium, high and
+very high maximal expression). Subsequently, different structural
+features were examined such as nucleotide frequency, nucleosome occupancy
+and presence/number of short motifs (up to four nucleotides). Lubliner () showed that some of
+these features are highly predictive of maximal promoter activity,
+namely the high A and T content and TATA-box like elements around
+the TSS. Also, it was demonstrated that there is a correlation between
+promoter strength and low nucleosome affinity. Computation of the nucleotide probability
+distribution along the sequence, calculated with a 20 bp windows size
+and 10 bp windows step; Computation of the TATA box position
+distribution along the sequence; Computation of the position and
+frequency distribution of motifs along the sequence. Only the subset
+of motifs with highest effect (positive or negative) on the promoter
+strength were considered (defined by Lubliner ()); Computation of the average nucleosome
+occupancy along the promoter sequence (using the software package
+described in ref ()). We reasoned that this data set (input sequences)
+could also be
+used in a reverse way to generate a model and create synthetic core
+promoters . We started from the subset of
+140 strong core promoters and the respective 5′UTRs. First,
+we have selected sequences of 150 bp (50 bp downstream and 100 bp
+upstream of the transcriptional start site (TSS)) for analysis. Then,
+to extract important sequence features, we have applied the following
+computational procedure ( A): http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_001.pdf Using this information, we have designed
+4 groups (named P, T,
+M, and A) of 28 sequences each for experimental screening (,  B and ). They differ in the presence
+or absence of a TATA box and/or selected motifs (group P: without
+TATA box nor motifs; group T: with TATA box and without motifs;
+group M: with motifs and without TATA box; group A: with TATA box
+and motifs). In this way, the synthetic core promoters were termed
+according to their group and to the respective measured activity, , the 4 groups with 28 sequences each were termed “P#”,
+“T#”, “M#”, “A#”, where
+the letters stand for P: (nucleotide) probability, T: TATA box, M:
+motifs and A: all, respectively. They were ordered in increasing expression
+strength. The general properties of the designed sequences are available
+in . The sequences were computed in a 4-step procedure as follows: Step 1: Generation of 400 random sequences using information on
+nucleotide probability distribution only ( B). TATA boxes or any of the selected motifs
+were searched and replaced by a newly generated synthetic sequence.
+This procedure was repeated until no motif or TATA-box were found
+in the generated sequences. Start codons upstream of the protein codon
+region were also removed to avoid frame shift mutations or different
+N-termini of the reporter protein. Lastly, due to the known relevance
+of the nucleotides adjacent to the start codon, this region was replaced by the  Kozak sequence (CGAAACG) in the generated
+sequences. These 400 sequences were partitioned in four groups of
+100 sequences each. Step 2: Addition of a TATA box to groups
+T and A. The TATA box
+positioning followed a Gaussian distribution model with mean and standard
+deviation computed on the natural strong core promoter sequences.
+One TATA box was inserted per core promoter sequence ( C). Step 3: Addition
+of motifs to groups M and A. The frequency and
+position of each motif in each sequence also followed a Gaussian distribution
+model inferred from the natural sequences, meaning that some motifs
+might be present more than once while others might be absent in a
+given sequence ( C). Step 4: Design space reduction. Twenty-eight synthetic
+sequences
+out of the 100 sequences of each group were selected for experimental
+screening based on the nucleosome occupancy. The 28 synthetic sequences with higher similarity to natural promoters
+concerning the predicted nucleosome average occupancy were selected
+for screening. Before fusing these final 112 synthetic core
+promoters to the  ( promoter CRM), we aimed to validate
+the core promoter structure
+of this promoter. Design strategy for synthetic core promoters. Three steps were
+followed: (A) Computation of (i) nucleotide probability distribution,
+(ii) TATA box position, (iii) position and frequency distribution
+of motifs and (iv) average nucleosome occupancy along the sequence
+of 140  natural strong core promoters aligned by the transcription start site. (B)
+Generation of 400 random sequences using information on nucleotide
+probability distribution. (C) Partitioning of sequences in four groups
+(dubbed P, T, M and A), to which TATA boxes and motifs were added,
+according to the group they belonged to (group P: without TATA box
+nor motifs; group T: with TATA box and without motifs; group M: with
+motifs and without TATA box; group A: with TATA box and motifs). Subsequently,
+the nucleosome occupancy profile of each of the generated sequences
+was compared to the average profile for the natural strong promoters.
+The generated sequences with higher similarity to the average natural
+nucleosome occupancy were selected to be tested . Establishing
+the  screening
+system (A) and testing the 112 synthetic core promoters
+(B–F). Promoter activity was measured by fluorescence intensity
+of the reporter protein after cultivation in 96-well deep-well plates
+and under methanol induction for 48h. (A) Promoter activity mean and
+respective standard deviation of control constructs: (i) wild type  (green), (ii)  fused to  core promoter, (iii)  without core promoter, (iv)  core promoter without CRM and (v) seven completely
+random sequences fused to . (B) Overview of the groups of synthetic core promoters tested.
+Box plot of the minimum, first quartile, average, third quartile and
+maximum promoter activities for each of the four groups of synthetic
+core promoters (Groups P, M, T and A). (C–F) Landscape of mean
+promoter activity, and respective standard deviation, for each of
+the four groups of synthetic core promoters (Group P, T, M and A,
+respectively). The individual synthetic core promoter activity is
+presented in increasing activity order. The legend of panel C applies
+as well to panels D−F. Mean values and standard deviations
+shown in this figure were calculated from at least three independent
+cultivations in separate deep-well plates. Assessing Core Promoter-CRM Structure in
+the  System http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_001.pdf The natural
+(wild type)  fused to an eGFP (enhanced green fluorescent protein) reporter
+gene was used as positive control in this study. eGFP has widely been
+used as reporter for promoter characterization studies in . All reporter protein fluorescence
+measurements of promoter variants were performed with a 96-well
+plate reader and are given relative to the wild type level normalized
+to 100% (shown in green the bar plots in  A and C–F). The plate reader based
+fluorescence measurements were also validated by flow cytometry measurements
+yielding excellent reproducibility ( = 0.96, see ). A negative control variant was generated by deleting the  (−769
+to −172 bp from start codon) to probe for its function. In
+a second negative control, the core promoter was deleted (−171
+to −1 bp from start codon). In both control variants there
+was no detectable fluorescence thus the expression was completely
+disrupted ( A). This confirms that the core promoter sequence with high affinity
+to RNA polymerase II was completely removed in the variant without
+core promoter. Likewise, the variant in which the CRM was removed
+showed no fluorescence, confirming that all the relevant regulatory
+protein binding sites were removed resulting in complete functionality
+loss. To ascertain the principle of modularity in this system,
+we characterized
+a variant in which the  core promoter was replaced
+by another strong core promoter, of the  gene. The promoter activity level was identical to the natural , showing that different
+core promoters can be used interchangeably ( A). Given the complete loss of functionality
+when the core promoter
+or CRM are removed, as well as the modularity verified in this system,
+the determined core promoter-CRM boundary was maintained in all subsequent
+core promoter replacements. Namely, the core promoter boundary was
+set to 10 bp upstream of the TATA box. Establishing a Baseline
+Expression Level Seven control
+variants were generated in which the  core promoter was replaced by completely random sequences ( A R1–R7).
+The resulting expression levels measure the basal expression of the  given that there
+is enough spacing between the CRM and the protein coding sequence
+for RNA polymerase II to bind. We performed this experiment to test
+basic background transcription in our system. The average relative
+promoter activity of the seven control variants was 5.9% of the wild
+type promoter fluorescence ( A). We have used this value as threshold to evaluate
+whether the synthetic core promoters are significantly different from
+random sequences. In this way, synthetic core promoters with an expression
+value significantly lower than 5.9% were considered nonfunctional.
+For this purpose, we have adopted the one-way analysis of variance
+(ANOVA) statistical test. Synthetic Core Promoters under the Control
+of the The aforementioned 112 synthetic
+constructs were assessed by replacing the native  core promoter by each of the 112 synthetic sequences
+and measuring eGFP reporter gene fluorescence. The overall promoter
+activity landscape is shown for each group (P, T, M and A) in  C–F, respectively.
+Seventy-eight percent of sequences showed a statistically significant
+(-value of 0.05) higher activity than baseline expression
+and are thus considered as functional. Within the functional subset,
+reporter protein fluorescence levels ranged between 6.5% to 70.6%
+with mean 17.0% and standard deviation 11.5%. Additionally, it was
+observed that the mean activity levels in groups T and A, 18.7% and
+19.3%, respectively, are roughly 2-fold higher than groups P and M,
+9.2% and 9.1%, respectively. Furthermore, 16 out of the 25 nonfunctional
+core promoters do not have a TATA box. This is a strong indication
+that the TATA box is a key sequence element in the  system ( B). Regarding the presence of motifs
+(group M and A), our data suggest that their presence does not significantly
+affect the expression level, given that the mean activity level is
+similar in groups with or without motifs (group P and T, respectively).
+However, we might speculate that the presence of motifs in association
+with other factors may explain the higher expression levels observed
+for promoters A28 and A27, given that both have motifs ( F). Focusing the analysis
+on the ten promoters with highest activity
+(orange in  C–F) it is striking that the presence of a TATA box is a
+common feature, whereas the presence of motifs is not. The only exception
+might be the M28 promoter, which belongs to a TATA less group. M28
+has, however, a TATA box like sequence in position −115 from
+the start codon. Analysis of the Top-Ten Synthetic Core Promoter
+Sequences The top ten synthetic core promoter sequences obtained
+in the screening
+with the  (T22, T23, T24, T25, T26, T27, T28, M28, A27 and A28) were scrutinized
+in detail. They were examined by (i) BLAST analysis against the  genome to search for similarities to naturally
+occurring sequences, (ii) multiple sequence alignment to assess the
+presence of common motifs and (iii) nucleosome occupancy analysis
+to evaluate its importance and common patterns. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_001.pdf To search for
+fragments of natural sequences, a standard nucleotide BLAST searching
+procedure against the whole  CBS
+7435 genome was adopted and no significant matches were found. The
+detailed results are provided as . The highest -value (0.083) was
+obtained for A28, T27, T26 and M28 sequences BLAST. The A28 and M28
+matches were in protein coding regions and in an inter gene sequence
+in the case of T26, thus making it unlikely to be characteristic regulatory
+sequences. In the case of T27, the match was in a possible promoter
+region in the  genome (10 bp upstream
+of nucleolar protein coding sequence). The match position in the synthetic
+core promoter sequence was however further upstream, close to the  (−147
+to −130 bp). To perform the multiple sequence alignments
+we used the EMBL-EBI
+Clustal Omega tool. The resulting alignment
+( A) shows
+the conserved positions in seven or more sequences (shaded in blue
+in  A). Some
+of the marked positions are isolated, possibly caused by the higher
+adenine and thymine content, characteristic of strong core promoter
+sequences. In addition, three different
+common motifs (with more than one consecutive position conserved)
+were identified. The first one is located close to the TATA box region
+(position 40 in  A). However, two sequences had the respective TATA boxes positioned
+downstream from this region (T28 and T23), around position 70. This
+may influence the subsequent AT rich motif (position 74). The last
+conserved region is a thymine rich sequence (position 146), followed
+by an adenine rich sequence (not marked), which may be related to
+the TSS as suggested by Lubliner () Lastly, we calculated the nucleosome occupancy for the 10
+best
+synthetic core promoters ( B) using the model developed by Kaplan () C shows the sum of nucleosome affinity for
+all the synthetic promoters. The data in  B unveil relatively low nucleosome occupancy
+in several synthetic core promoters (, T28, A27
+and T26) but without a clear pattern. There are however a few exceptions
+(T27 and T25) with relatively high nucleosome occupancy. To ascertain
+a possible correlation between promoter expression and nucleosome
+affinity, we calculated nucleosome affinity for all the synthetic
+promoters and compared it with the respective expression levels. It
+revealed no statistically significant correlation, with a correlation
+coefficient of 0.07 ( C). This somewhat unexpected result might be explained
+by the diversity of synthetic sequences (discussed later). The
+average position of the TATA box in the ten best promoters
+is position −120 ( B) with variations of 20 base pair around the mean.
+There are some promoters with lower activity with TATA boxes considerably
+downstream of this interval. Yet it is not possible to draw a direct
+causal relationship between TATA box position and promoter strength
+since many other features differ between them. Analysis of the top ten synthetic core promoter sequences
+obtained
+from screenings with the . (A) Multiple sequence alignment, using Clustal Omega, (top 10 synthetic promoters used as input, ranked
+in increasing order of promoter activity). The positions conserved
+in seven or more of sequences are marked with a blue shade. The  core promoter sequence is shown as an example of a
+strong natural core promoter to highlight the synthetic core promoter
+sequence diversity. The synthetic core promoters and  core promoter alignment was performed separately to highlight sequence
+features of the synthetic core promoters. (B) Nucleosome occupancy
+profile heatmap of the top ten synthetic core promoters when fused
+to . The
+nucleosome occupancy was calculated with Kaplan  prediction package. The core promoter
+is limited to 150 bp form the protein start codon. The TATA box location
+is marked in blue. (C) 112 synthetic core promoter activity mean and
+standard as a function of the respective cumulative nucleosome affinity
+scores calculated using the Xi  software package. Second Round Screening:
+Top-Ten Synthetic Core Promoters in
+Different Yeasts and CRMs In the previous section, we validated
+the designed method and its capacity to create completely novel core
+promoters, demonstrating its functionality with the . Yet, we aimed to use synthetic
+core promoters as general tools for fine-tuning expression. Thus,
+they should be functional when fused to CRMs of any promoters. Hence,
+the top ten synthetic core promoters obtained from fusion with the  ( and summarized in  B) were fused to
+six different CRMs ( A), three from  (,  and :  C to E, respectively), and the other three
+from  (,  and :  F
+to H, respectively). These additional CRMs were chosen so that we
+could benchmark the synthetic core promoters in different conditions, , under the control of inducible (,  and ) and constitutive (, ) CRMs. In all constructs,
+the synthetic core promoter was delimited to 10 bp upstream of the
+TATA box. Therefore, the core promoters have a different length depending
+on the location of the TATA box and on the CRM length. A key result of these
+experiments is that the top-ten synthetic
+promoters show significantly higher expression when fused to CRMs
+of inducible promoters, irrespectively of the yeast and inducible
+mechanism, , the tested CRMs are inducible by
+methanol (, , and  in ) and galactose ( in ). The minimum relative
+promoter activity was 38% for  and , 27% and 53% in  and , respectively. With all these CRMs, the strongest synthetic
+core promoter gave a higher relative expression than the , namely 82%, 122% and 176%
+for ,  and , respectively, compared
+to 70% for the . Notably,  and  gave even a higher expression value than the respective natural
+wild type core promoters, 122% and 176%, respectively. It should be
+stressed that these synthetic core promoters seem to be independent
+of the regulatory mechanism, since they are functional under the control
+of CRMs that respond to different stimuli (methanol and galactose)
+and in different yeasts. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_001.pdf Fusions of the core promoters to CRMs
+of constitutive promoters
+show a limited functionality with the maximum relative promoter activity
+around 20% in ,  and . All these CRMs have a TATA box in their natural sequence. In yeast
+there are mainly two types of promoters, TATA-positive and TATA-less
+promoters. Most of the available promoter
+studies were developed for the former group of promoters, thus we lack detailed understanding of critical
+sequence elements for transcription initiation in the TATA-less promoters.
+Hence, we have hypothesized that, although these promoters have a
+TATA box in their sequence, the transcription initiation might be
+TATA box independent. This would explain the apparent failure of the
+constitutive CRMs since the presence of a TATA box and adjacent nucleotides
+in the synthetic core promoters favor a TATA box dependent transcription
+initiation mechanism. To test this hypothesis, we have disrupted the
+TATA box in the natural promoter sequence by mutating it. We have
+replaced three nucleotides of this motif by cytosine in the  (control), ,  and .
+The resulting activity data showed that the expression is disrupted
+after the TATA box mutation in all promoters (18%, 20%, 8% and 2%
+of the wild type promoters for , ,  and , ). Expression is therefore depending on the TATA box
+element in all cases. This finding does not confirm our hypothesis
+and suggests that other so far unknown elements seem to be essential
+for strong transcription from constitutive TATA box dependent yeast
+promoters. Testing modularity of
+the synthetic core promoters by fusing them
+to CRMs of different promoters in  and . (A) Relative size and CRM-core
+promoter fusion location of the different CRMs (, , , , ,  and , respectively)
+tested. (B–H) Mean promoter activity (normalized reporter protein
+fluorescence), and respective standard deviation, of fusions of the
+ten synthetic core promoters with highest activity (with , ) to different CRMs (blue arrows in panel
+A). CRMs of the following promoters were tested in two different yeasts:
+The , ,  and  were tested in  (B–E), while ,  and  were tested in  (F–H).
+Fluorescence measurements under optimal induction conditions are shown
+for the respective promoters: ,  and  were induced with methanol,  was induced with Galactose.
+Constitutive  and  promoters ,  and  were cultivated
+on glucose containing media. All values represent single measurements
+of at least three independent cultivations in separate 96-well deep-well
+plates. In each case, the corresponding wild type promoter activity
+is represented in green. The order of the synthetic core promoters
+is kept the same (increasing promoter activity when fused to ), to facilitate
+interpretation. The data of the core promoter fusions to  is also shown dispersed
+in  and summarized
+here in panel B. Correlation between the Activities of Synthetic
+Core Promoters
+Fused to Different CRMs http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_001.pdf We have evaluated context dependency
+and modularity of the top ten synthetic promoters by correlating the
+activity data of each synthetic core promoter under the control of
+different CRMs in different yeasts. This resulted in the correlation
+matrix depicted in  A (heatmap showing all possible combinations of CRMs and
+yeasts, ). It was
+observed that the highest correlation coefficients are obtained within
+the subset of inducible CRMs in ,
+,  and  (,  B), with correlation
+coefficients ranging between 0.40 and 0.63. Also relatively high correlation
+coefficients (around 0.5) were found when comparing the  CRM and the constitutive
+CRMs in  (,  C). On
+the other hand, relatively low correlations are observed when comparing
+CRMs of  against CRMs of  (,  D). The apparent low correlation
+observed between the synthetic promoters controlled by the  and  might be explained
+by the much lower expression levels in these particular experiments.
+Finally, it should be noted that even when correlation is high, the
+relative expression levels of the same synthetic core promoter under
+the control of two different CRMs varies significantly, which means
+that although functional and correlated, the synthetic core promoters
+are not completely independent of the CRM to which they are fused. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_001.pdf Correlation
+analysis of the top ten synthetic core promoter activities
+fused to seven different CRMs. (A) Heatmap of the correlation coefficients
+of the top-ten synthetic core promoter activities fused to different
+CRMs. All the possible combinations of CRMs are shown. The correlation
+coefficients were calculated based on the average of single measurements
+of at least three independent cultivations in separate 96-well deep-well
+plates. The samples were taken 48 h after induction (, ,  cases) or inoculation (, ,  and  CRMs cases). , ,  and  were tested in , while the remaining
+CRMs were tested in . Panels B–D
+show representative data on the correlation coefficients: (B) Synthetic
+core promoter activities when fused to  as a function of its respective activities
+when fused to . (C) Synthetic core promoter activities when fused to  as a function
+of its respective activities when fused to . (D) Synthetic core promoter
+activities when fused to  as a function of its respective activities when fused to . The correlation
+diagrams between other promoters are shown in . Functionality of Synthetic Core Promoters In this study
+we have followed a  design approach to generate
+synthetic core promoter sequences for yeast cells. The design was
+based on natural  core promoters
+resulting in synthetic core promoters that were at first experimentally
+tested in . We have chosen this approach,
+because we were primarily interested in developing regulatory elements
+for , where generally applicable
+promoter engineering strategies are scarce. In contrast to , where large
+sets of experimental data on core promoters from large scale high
+throughput studies are available, no such studies have been performed
+in the widely used protein production host . Hence we used the data set from  due to the reported conservation of core promoters and previous studies which demonstrated functionality of  core promoters in . This design method delivered
+77.6% of functional core promoter sequences with the  (). These sequences are markedly
+different from naturally occurring sequences (no clear matches to
+natural promoters were found by BLAST search), between each other
+and substantially more diverse than variants typically obtained by
+local random mutations of a natural core promoter. This lack of resemblance to natural sequences
+is an important feature of this set of promoters. It may increase
+the genetic stability in the genomic context, as these sequences have
+low probability of recombining with any natural sequence in the genome.
+This feature will be valuable for future  and  pathway assembly, when
+assembling a multigene pathway using a different promoters for each
+enzyme, with the objective of fine-tuning the production of each one
+while employing a single inductor. In a recent study, 11 artificial
+core promoter sequences were assessed
+in . Of these, only two were generated  by consensus
+sequence analysis of natural core promoters of , ,  and . The other nine sequences
+were generated by replacements of short stretches in the natural  core promoter. For the
+two consensus derived sequences, the activity levels were within the
+range of the basal activity level obtained from randomized sequences
+in this study ( A), suggesting that the previous design considerations had a nonsignificant
+effect over using random sequences. The replacement method was more
+successful, with activity levels as high as 117% of the natural . However, with the replacement
+method the resulting sequences share a high degree of similarity with
+the natural sequence, thus questioning the ability of the method to
+generate truly synthetic sequences. As discussed by Dehli , a diversity inherent component design approach as
+the one adopted here, is advantageous for synthetic biology problems,
+as it facilitates orthogonality, modularity and standardization of
+new components. We have obtained
+an average activity level of 17% with a dispersion
+of 11.5% and a maximum activity of 70% of the wild type . Overall, this reflects the ability
+of the design method to span a wide spectrum of highly diverse synthetic
+sequences. However, the relatively low average activity might be in
+part explained by the way the experimental input data from  was obtained. Lubliner  deduced core promoter functionality
+from reporter protein fluorescence measurements of the entire promoter
+(including the CRM), whereas we fused all core promoters to the same
+CRM. Hence expression strength of the  measurements may also be influenced by the CRM and not solely the
+core promoter. Additionally, the phylogenetic distance between  and  may have complicated our efforts. It has been shown that core promoters
+in distant related yeasts maintain their functionality but with lower
+expression. To further support this statement,
+it should be underlined that the highest relative expression levels
+(176%) were obtained for  in . Another characteristic
+that could compromise the synthetic core
+promoters’ strength is the boundary between the core promoter
+and the CRM. Here we maintained the same boundary condition in all
+experiments (−10 bp from the TATA box), however, it might have
+some influence in promoters’ strength and might be targeted
+for optimization in future studies. No Motifs Except the TATA
+Box Clearly Affect Expression B shows an
+expression box plot for the four groups of sequences. The comparison
+between groups P and M and groups T and A show that the introduction
+of motifs does not affect the mean expression level, but might have
+an effect in specific cases (, A28 and A27).
+Indeed, the effect of motifs in core promoter strength is not consensual
+in the literature. Recently, Seizl () suggested that the GAAAA 5-mer is a conserved
+yeast promoter element, functioning as a TATA binding protein binding
+site in promoters lacking a consensus TATA box element. However, Lubliner () studied knockout mutations
+of 122 GAAAA 5-mers that showed little to no effect on protein expression.
+Other studies have concluded that, with the possible exception of
+the TATA box (when present), motifs are not determinant for  core promoter functionality. The comparison of groups P and M with groups T and A reveals
+that the presence of a TATA box motif is a key effector of high expression
+levels, which corroborates the data presented in previous studies. Indeed, within the top ten promoters only one sequence (M28) does
+not have a TATA box. This apparent exception is however discarded
+after a careful sequence analysis revealing that M28 has a TATA box
+like sequence, namely TATTTAATA at position −115. Several previous
+studies have shown that mutations in the TATA box region greatly affect
+promoter strength. In another study, Mogno () analyzed libraries of
+TATA-positive and TATA-less promoters in  showing that the TATA box mainly affects the transcription rate
+by enhancing it. It was also shown that the location, orientation
+and flanking bases critically affect TATA box function and core promoter
+activity. However, given the size of
+our data set (56 synthetic core promoters with TATA box), we cannot
+draw solid conclusion regarding these aspects. The Role of Nucleosome
+Occupancy Nucleosome occupancy
+has been reported as having a fundamental role in transcription initiation. Variations in nucleosome occupancy alone may cause large differences
+in promoter strength. Raveh-Sadka () showed that AT rich sequences are associated
+with low nucleosome affinity and high promoter activity. Curran () have redesigned nucleosome
+architecture in natural  promoters
+with a 1.5- to 6-fold expression increase of a reporter protein (β-GAL).
+They have hypothesized that nucleosome occupancy is an important causative
+factor limiting the strength of native promoters and is likely an
+evolutionary mechanism for controlling transcriptional strength. In our study, we observe no statistically meaningful
+correlation between promoter strength and nucleosome occupancy ( C). This suggests
+that other factors might have an even higher effect than nucleosome
+occupancy, which was the main design factor studied by Curran () Similar results were
+obtained by Lam , who have shown that the interplay of nucleosomes and motifs is important
+to explain promoter activity variations in . Experimental data for  nucleosome
+occupancy are still not available and might help to explain our observations
+in the future. Effects of Core Promoter and 5′UTR Our design
+approach of synthetic sequences implicitly included the 5′UTR,
+as this region is interwoven with the core promoter (the beginning
+of the 5′UTR, downstream of the transcription start site, was
+found to be important for transcription initiation). Therefore, the variation in reporter fluorescence measurements
+from our library of synthetic core promoters may be influenced by
+transcriptional or translational effects. The mRNA levels may be affected
+by the rate of transcription initiation as well as by the transcript
+stability. In our setting, translation initiation at the start codon
+was designed to be identical between all synthetic sequences, as we
+have used the same Kozak sequence in every design. Namely, the Kozak
+sequences of the  5′UTR was chosen, as
+the respective protein is translated at exceptionally high levels. Hence, the Kozak sequence in our synthetic core
+promoters should provide a best case scenario and translation initiation
+should not be limiting. Ribosome scanning for the start codon may
+be influenced by different secondary structures of the 5′UTRs.
+However, as the 5′UTRs of the top ten synthetic core promoters
+are AT-rich (and hence do not favor the formation of strong secondary
+structures) little influence is expected in our setting. We
+also tested fusions of the synthetic core promoters/5′UTRs
+to the CRMs of different promoters (). The transition/spacing of the synthetic
+core promoter to the CRMs may influence expression whereas the function
+of the 5′UTR is expected to be independent of the upstream
+CRM it is fused to as the 5′UTR of fusions of the same synthetic
+core promoter to different CRMs is identical. If there was a strong
+effect from the 5′UTR, it should influence reporter protein
+fluorescence independently of the fusions to the CRM. A strongly positive/negative
+effect of the 5′UTR of a synthetic promoter would increase/limit
+expression in every context. However, the measurements shown
+in  demonstrate,
+that the core promoter fusions
+showed in part varying responses when fused to different CRMs. Most
+notably, synthetic core promoters fused to CRMs of constitutive promoters
+showed considerably lower reporter fluorescence levels than when fused
+to inducible promoters. It appears that the nature of the CRM/core
+promoter transitions, influencing transcription, show a considerably
+stronger effect, than 5′UTR function. Gaining deeper
+mechanistic insights on transcriptional/translation
+effects requires further studies. Reverse transcription quantitative
+real-time PCR (RT-qPCR) experiments would therefore be ideal to discriminate
+between transcriptional/translational effects. RT-qPCR using specific
+primers for the eGFP reporter gene would allow to compare transcript
+levels with the eGFP reporter protein fluorescence. Such experiments
+appeared too extensive for the initial library
+of 112 synthetic core promoters, as for each promoter/strain RNA needs
+to be isolated separately (in case of biological replicates, the number
+would further multiply). However, RT-qPCRs may be performed to mechanistically
+characterize a subset of particularly interesting constructs (, core promoters showing exceptionally high reporter
+protein fluorescence or surprising results depending on the design
+group [for example promoters A27 and A28 in  F]). We validated the functionality and
+general applicability of the best 10 core promoters by fusing them
+to CRMs from different promoters demonstrating that they are not strictly
+context dependent (, only functional if fused
+to the  CRM, see ,  and section below). Nonetheless, RT-qPCR experiments
+would be paramount to gain mechanistic
+insights and may be run as concluding experiment in a similar setting
+to quantify expression differences. Independently of the underlying
+mechanisms governing reporter fluorescence
+output, the applicability of the synthetic core promoters generated
+in this study for modular expression fine-tuning was validated by
+fusions to the CRMs of different promoters. Modularity of Synthetic
+Core Promoters http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_001.pdf To assess modularity,
+we have inserted the top ten synthetic core promoters in  and in  under the control of
+seven different CRMs, four of which are inducible (, ,  and ) and three constitutive (,  and ) ( and ). The fusions
+of synthetic core promoters to the different inducible CRMs controlled
+expression strength under different conditions, while leaving the
+regulatory mode unaffected: Fusions of the synthetic core promoters
+to the repressible  and  CRMs remained tightly repressed whereas fusions to the derepressed  promoter showed an expected increase in reporter protein
+fluorescence (). The expression levels of the constitutive promoters are consistently
+lower than the inducible promoters (). Although the compatibility between CRMs
+and core promoters has previously been proven even between different
+organisms, it appears, according to our data, it is
+not universal. For instance, in  the CRM of the  gene is compatible with  and  core promoters, thus being
+able to initiate transcription. This is however not reciprocal, , the  and  CRMs cannot initiate transcription when coupled with the  core promoter. We have
+hypothesized that the tested constitutive promoters have a TATA box
+independent transcription initiation, hence being incompatible with
+this set of TATA box containing synthetic core promoters. We tested
+this hypothesis by mutating the TATA box in the respective natural
+promoter sequences. The results show that the expression is disrupted,
+indicating that the transcription initiation of all constitutive promoters
+in this study is TATA box dependent. Hence, the lower expression of
+synthetic promoters fused to constitutive CRMs must rather be attributed
+to unknown regulatory mechanisms specific for constitutive promoters. Within the group of inducible promoters, expression levels are
+high, irrespective of the yeast and CRM specific regulatory mechanism.
+Although the different CRMs in different yeasts respond to different
+stimuli (namely, methanol and galactose) it had no effect on its functionality.
+Some CRMs outperform the activity levels of the wild type promoter,
+namely  and  in  and , respectively.  showed the highest relative activity
+level (176% of the wild type ). This may reflect the fact that our design was based on  core promoters. The correlation
+analysis of synthetic core promoters’ expression
+levels under the control of different CRMs () shows that the correlations are higher
+when comparing CRMs in the same organism. This is the case of  against  in  and  against  in . Correlations are in general
+very low ( lower than 0.2) when comparing
+CRMs of different organisms. For instance, in the case of  and  in  and , respectively. These data
+suggest that comparable expression strength irrespective of the context, , modularity is maintained only within the same organism,
+although the core promoters are also functional in other organisms.
+Zeevi  described the conservation of orthologous
+ribosomal promoter activity within closely related genus of yeasts. For instance, , showed high correlation with  while  diverged considerably.
+Likewise, we can anticipate that the low correlation observed in our
+study is due to the phylogenetic distance between  and  genus. All in all, our work demonstrated the feasibility
+of a multi factor
+rational synthetic core promoter design and its applicability as general
+engineering tool for gene expression fine-tuning. Due to their sequence
+diversity and independence of natural sequences, similarly designed
+synthetic core promoters may become valuable tools for synthetic biology
+and metabolic engineering applications in other eukaryotic organisms. The  CBS7435
+(, NRLLY-11430) wild type strain and the  FY 1679–01B strain (isogenic to  S288c with an uracil auxotrophy) were
+used as host organisms to screen the synthetic promoter activity,
+while  TOP10 F′ was used to perform
+the cloning work. Vectors and Cloning: Controls and Synthetic
+Core Promoters Fused
+to the http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_001.pdf Ten different controls were created using the genomic wild
+type  sequence as
+template: deletion of the entire upstream regulatory region (CRM)
+upstream of the core promoter, deletion of the core promoter, replacement
+of the natural  core promoter with the core promoter
+of the  gene and seven
+completely random sequences. For the first control (deletion of CRM)
+primers C-WO-CRM1 and eGFP-pAOX1–3prime were used. For the
+remaining controls, pAOX1_Syn_dHI_SwaI-forward
+was used as forward primer, while as reverse primers were C-WO-Core1,
+C–W–HHF2+10 and R1 to R7, respectively. The primers
+sequences are provided in . http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_002.zip http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_001.pdf The synthetic core promoters were ordered as long
+primers (Ultramer DNA Plate Oligo by Integrated DNA Technologies (Leuven,
+Belgium) in 96-well microtiter plates), attached by PCR to the  and cloned into
+the / shuttle vector pPpT4_SB-truncatedAOX1-eGFP, reported by Vogl () The plasmid genbank
+file and respective map are available in the  and . The synthetic promoters were amplified using forward primer pAOX1_Syn_dHI_SwaI-forward and the reverse primers listed in . The
+final PCR product was gel purified and cloned by assembly cloning
+into the SwaI and NheI digested vector backbone. All constructs were
+verified by Sanger sequencing. Controls and Entry Vectors
+to Assess Synthetic Core Promoters
+with Different CRMs in  and http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_002.zip http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_001.pdf The best synthetic core promoters
+were tested when fused to the CRMs of six additional promoters ( and , named , , , ,  and , respectively). Three CRMs were tested in  (,  and ), while the remaining three
+were tested in  (,  and ). At first, the positive controls
+were created. To do so, the genomic wild type sequences of the  promoters were amplified using the following
+three primers groups: CAT-core and CAT-CRM-forw, DAS-core and DAS-CRM-forw
+and GAP-core and GAP-CRM-forw (), resulting in promoter fragments of 500, 552, and 486 bp,
+respectively. In each of the three PCR reactions, the respective wild
+type whole promoter sequence was used as template. It was then cloned
+into the / shuttle vector used in the previous screening, where the  truncated sequence had been removed (digestion with
+SwaI and NheI). For the  whole
+promoter plasmids (used as positive controls), the promoter sequences
+were amplified from  genomic DNA
+and cloned into a reporter vector (named Sc_eGFP_RFP_ARS) comprised
+by pUC origin of replication for , the
+ARS/CEN sequence for low-copy replication in , URA3–3′ and URA3–5′ integration sequences,
+a stuffer sequence flanked by eGFP and RFP and the two transcriptional
+terminators  and  as well
+as a Kanamycin resistance cassette, consisting of  and  promoters for expression in yeast and , respectively, the KanMX6 resistance gene and
+terminator TIF51A (plasmids kindly provided by Pitzer, J., unpublished
+results). The plasmid genbank file is available in the  and the respective map
+is shown in . http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_002.zip http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_001.pdf For each CRM, an entry vector was created to facilitate cloning of
+the synthetic core promoter fusions. Such entry vectors had a CRM
+sequence (without core promoter), a placeholder fragment and the eGFP
+coding sequence. The primers used to amplify the CRMs sequences for  were the following three groups: CAT-CRM-rev
+and CAT-CRM-forw, DAS-CRM-rev and DAS-CRM-forw and GAP-CRM-rev and
+GAP-CRM-forw ().
+While for  CRMs sequences amplification
+the reverse primer used were: ADH-CRM-rev, GAL-CRM-rev and GPD-CRM-rev
+(). The forward primer
+was, in these three cases, seqTomato19–41rev. The backbones
+used were Sc_eGFP_RFP_ARS for  and
+pPpT4-bidi-sTomato-eGFP (Vogl, T., unpublished results) for  (both genbank files are available in  and respective maps in ). The  vector was digested with AscI while the  vector was linearized with AscI and SwaI.
+The digestion was gel purified and an assembly cloning was performed
+for each of the PCR results, yielding a six entry vectors (one for
+each CRM) and three plasmids containing a wild type promoter of interest
+each (, , : to be tested in ), which were verified by Sanger sequencing. Cloning a Subset of Synthetic
+Core Promoters with Different
+CRMs in  and Each of the ten best synthetic core promoters identified
+with the  (T22, T23, T24, T25, T26, T27, T28, M28, A27 and A28) was amplified
+by PCR six times to include the different CRMs overhangs, to be used
+for assembly cloning. The reverse primers used for each of the 10
+best core promoters were T22-GFP-rev, T23-GFP-rev, T24-GFP-rev, T25-GFP-rev,
+T26-GFP-rev, T27-GFP-rev, T28-GFP-rev, M28-GFP-rev, A27-GFP-rev and
+A28-GFP-rev. Different forward primers were used depending on the
+CRM to be fused. For instance, to amplify the 10 synthetic promoters
+to be cloned in the  plasmid, the following forward primers were used: T22-CAT-rev,
+T23-CAT-rev, T24-CAT-rev, T25-CAT-rev, T26-CAT-rev, T27-CAT-rev, T28-CAT-rev,
+M28-CAT-rev, A27-CAT-rev and A28-CAT-rev. The three different entry
+vectors for  containing the ,  and  were digested by AscI and NheI
+to remove the placeholder fragment. The digestion products were gel
+purified. The linearized plasmids were used for assembly cloning with
+each of the respective 10 PCR core promoter fragments. A similar
+approach was performed to screen the top 10 synthetic promoters in . The synthetic core promoters used the
+same reverse primers, while the forward primers vary according to
+the CRM sequence, as explained above. The entry vectors containing
+the ,  and  were digested
+by AscI and NheI to remove the placeholder fragment. They were gel
+purified. The linearized plasmids were used for assembly cloning with
+each of the respective 10 PCR core promoter fragments. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_001.pdf All the
+primers used to clone the ten synthetic promoters with
+highest activity with different CRMs in  and  and the respective entry
+vectors are listed in . Transformation of  and Cultivations http://pubs.acs.org/doi/suppl/10.1021/acssynbio.6b00178/suppl_file/sb6b00178_si_001.pdf The aforementioned plasmids were digested with SwaI for linearization.  was transformed with low amounts of linearized
+plasmid (approximately 1 μg of DNA) using the condensed protocol
+reported by Lin-Cereghino () This low amount of expression cassette was used to reduce
+multi copy integration and variability between transformants. Then, from the resulting transformants, 28 were
+screened using a previously reported high throughput method. Briefly, cells were grown for 60h on 250 μL BMD1 and subsequently
+induced with methanol (250 μL BMM2 [1% methanol] at 60h and
+50 μL BMM10 [5% methanol] at 72h). The transformants were screened
+for uniformity and three representative transformants from the linear
+range of the landscape were selected for rescreening, using the same
+protocol. Lastly, one transformant per construct was used for comparison
+of the variants under the same growth conditions. Fluorescence measurements
+were performed using a 96-well microtiter plate reader (Synergy MX,
+Biotek, Winooski, VT, USA) as described previously. Biological
+replicates from at least 3-fold cultivations of the same transformant
+were used to calculate the mean and standard deviations values, which
+are shown in –. These values represent the eGFP
+fluorescence values normalized per OD600, where the background measurements
+of diluted medium were subtracted. eGFP fluorescence (excitation at
+488 nm and emission at 507 nm) and absorption at 600 nm (OD600, optical
+density 600) were measured in micro titer plates, 48 h after the first
+induction for the methanol inducible promoters (derived of , ), while the fluorescence values
+of the constitutive  variants were taken 48h after the inoculation. A subset of
+strains was also measured by flow cytometry using a BD LSRFortessa
+cell analyzer (results shown in ). Cells were grown identically to plate reader measurements
+in deep well plates in biological 8-fold replicates and diluted 1:20
+in PBS buffer and 30.000 events measured for each replicate (doublets
+were consistently <5% in all samples). Transformation of  and Cultivations was transformed with circular
+plasmids (0.5 μg of DNA) using chemically competent cells. Then, from the resulting transformants, 28 were
+screened using a similar protocol to the one used for . Briefly, cells were grown for 24h on 250 μL YPD. The  variants were
+additionally screened using YPGal medium instead of YPD. The transformants
+were screened for uniformity and three representative transformants
+from the linear range of the landscape were selected for rescreening,
+using the previous protocol. Lastly, one transformant per construct
+was used for comparison of the variants under the same growth conditions.
+Measurements were made in an identical way as to the  protocol..

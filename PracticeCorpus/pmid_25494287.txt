@@ -1,0 +1,440 @@
+Genetic reprogramming
+is the
+conversion of one cell type to another via the activation of gene
+networks that control a particular cell phenotype. Conventional methods of genetic reprogramming involve the
+overexpression of master regulatory transcription factors that control
+the gene networks corresponding to the desired cell phenotypes. This
+strategy has been used to induce somatic cells to pluripotency and to directly convert one somatic cell type
+to another, such as the conversion of fibroblasts to myoblasts, cardiomyocytes, neurons, or hepatocytes. These new cell types can then
+be used for patient-specific disease modeling, drug screening, or
+regenerative medicine. One significant
+challenge to genetic reprogramming is achieving sufficiently robust
+activation of gene networks to induce the new cell phenotype. For
+example, the generation of induced pluripotent stem cells (iPSCs)
+often produces many incompletely reprogrammed cells, with residual
+epigenetic memory of the starting cell type. The rate of reprogramming is slow, often taking several weeks or
+months. The overall efficiencies of genetic reprogramming
+are low and can be highly variable depending on the methods, cell
+types, and reprogramming factors used. The efficiency of reprogramming
+is known to correspond to the magnitude and duration of expression
+of the exogenous transcription factors. Although these
+issues are most well-characterized for iPSCs, these challenges are
+general across all types of reprogramming. We hypothesized that genetic reprogramming may be improved by enhancing
+the transactivation potential of reprogramming factors through protein
+engineering. The engineering of transcription factors to control
+mammalian cell
+processes has a wide variety of applications in biotechnology, including
+synthetic biology and gene and cell therapy. The most common methods for engineering synthetic
+transcription factors have been based on the programmable DNA-binding
+domains of zinc finger proteins, Transcription
+activator-like effectors (TALEs), and most recently the CRISPR/Cas9 system. These transcription factor platforms consist of the DNA-binding
+domain fused to potent transcriptional activation domains, most commonly
+the tetramer of the minimal transactivation domain of the VP16 protein
+from herpes simplex virus, referred to
+as VP64. In some cases, the activation domain of
+the human NF-κB RelA transcription factor p65 is used, particularly for therapeutic applications in which
+it is desirable to avoid nonhuman protein components, although it
+is generally not as potent as VP64. These
+modular transcription factors have been useful for targeted activation
+of specific genes for genetic screens, gene therapy, and creating gene circuits and synthetic gene regulation systems. Although these applications are well-suited for the targeted activation
+of a single gene, genetic reprogramming requires the coordinated regulation
+of many nodes of natural gene networks as is typically performed by
+naturally occurring reprogramming factors. Thus, we sought to combine principles from each of these approaches
+by attaching potent transcriptional activation domains to a natural
+reprogramming factor to increase the efficiency and/or rate of cell
+fate conversion. Fusion to the VP16 activation domain or its
+oligomers to enhance
+the activity of natural transcription factors has been useful for
+a variety of applications. In the most well-known example, VP16 was
+fused to the tetracycline-dependent repressor to create the widely
+used tetracycline-regulated gene expression system. VP64 has also been used to direct chromatin remodeling. HIF-1α is a transcription factor that
+responds to hypoxia to coordinate a network of genes involved in angiogenesis
+and wound healing. To remove its oxygen-dependence for gene therapy
+applications, the oxygen-sensing domain was removed and the truncated
+protein was fused to the VP16 transactivation domain. Several variants of this chimeric transcription factor
+potently induced angiogenesis in multiple animal models and one variant was later used in gene therapy
+clinical trials to treat ischemia. In
+the context of genetic reprogramming, VP16 has been fused to transcription
+factors to enhance the efficiency of reprogramming mouse and human
+fibroblasts to iPSCs and also to convert
+liver to pancreas in a  model. In addition to the viral VP16 domain, the transfer
+of transactivation domains between mammalian transcription factors
+has also increased their potency for some reprogramming applications. Collectively, these successes suggest that there is considerable
+opportunity to enhance natural transcription factors through protein
+engineering to guide the coordination of gene networks. In this
+study, we evaluated the effects of fusing potent activation
+domains to the transcription factor MyoD, the master regulator of
+the skeletal myoblast lineage. In certain
+nonmyogenic lineages, MyoD overexpression causes upregulation of the
+myogenic gene network and conversion to a myoblast phenotype including
+cell fusion into multinucleated myotubes. Myogenic
+reprogramming induced by MyoD overexpression has been widely explored
+as a means for cell-based gene therapy for skeletal muscle disorders
+such as muscular dystrophy. Compared to wild-type MyoD, the enhanced MyoD variants induced greater
+levels of specific myogenic markers, greater levels of cell fusion,
+and greater overall reprogramming of global gene expression in both
+primary human dermal fibroblasts and adipose-derived stem cells. Collectively,
+these results support the paradigm of enhancing natural transcription
+factors through protein engineering and specifically provide a potential
+mechanism for autologous cell therapies for musculoskeletal disorders. To construct enhanced MyoD variants, potent
+activation domains
+were genetically fused to the N-terminus of wild-type (WT) mouse MyoD
+(MyoD) to construct MyoD, MyoD, and MyoD. VP16, VP64, and p65 are modular transcriptional
+activation domains (Figure ). The mouse MyoD
+cDNA was used to distinguish exogenous MyoD expression from endogenous
+human MyoD expression. VP16 is the activation domain from a natural
+transcription factor originally isolated from the herpes simplex virus
+and is widely used in transcription factor engineering. VP64 is a tetramer of the minimal VP16 domain
+required for transcriptional activation. p65 is the activation domain
+of the human NF-κB RelA transcription factor. Since overexpression of MyoD causes cells to exit the cell
+cycle and terminally differentiate, an inducible tetracycline-regulated
+(Tet-On) lentiviral delivery vector was used to
+control the timing and magnitude of expression of the engineered transcription
+factors. We tested the reprogramming capacity
+of our engineered MyoD variants
+in two human cell types: primary adipose-derived stem cells (ADSCs)
+and primary dermal fibroblasts. ADSCs are adult stem cells isolated
+from adipose tissue. Human dermal fibroblasts
+are a terminally differentiated cell type that can be obtained from
+a minimally invasive skin biopsy. Both of these cell types are attractive
+starting material for disease modeling, drug screening, and patient-specific
+cellular therapies, as they are relatively easy to obtain and can
+be expanded in culture. Both the ADSCs and fibroblasts were transduced
+with lentivirus containing each tetracycline-inducible MyoD expression
+cassette, selected with puromycin to obtain a pure cell population,
+and subsequently treated with doxycycline for 10 days to induce transgene
+expression. Supporting Information Figure 1 After 10 days of induction, the engineered variants
+upregulated
+myogenic markers in ADSCs and fibroblasts to a greater degree than MyoD (Figure A, B). The three engineered
+variants behaved similarly in ADSCs, whereas MyoD was
+significantly more robust in the dermal fibroblasts, perhaps because
+of greater plasticity of the multipotent ADSCs. Notably, MyoD was expressed at much higher levels than the engineered transcription
+factors at both the mRNA (Figure A, B) and
+protein levels (Figure C–E). To assess
+the dose-dependence of MyoD and its engineered variants on myogenic
+gene induction, we measured marker expression at various doses of
+MyoD by manipulating the concentration of doxycycline (Figure ). As expected, MyoD and MyoD both upregulate the myogenic gene network in a dose-dependent
+manner, but interestingly, MyoD is more potent than MyoD despite its lower expression level. To ensure that the
+enhanced transcription factor activity was not specific to mouse MyoD,
+we constructed human MyoD. Of the eight myogenesis-associated
+genes analyzed, there were no significant differences in gene expression
+induced by human versus mouse MyoD (). Supporting Information
+Figure 2 Myogenic differentiation is characterized by a
+phenotypic change
+from mononuclear cells to fusion into multinucleated muscle fibers.
+Through immunofluorescence staining we observed that the engineered
+MyoD variants promote increased cell fusion and elevated levels of
+myosin heavy chain expression  when compared
+with MyoD after 10 days of expression (Figure ). Similar to the effects on gene expression (Figure ), the multipotent ADSCs responded more robustly
+to the reprogramming factors than the dermal fibroblasts. Similar
+effects were also observed when overexpressing human MyoD or MyoD (). Supporting Information Figure 3 To measure cell fusion, we developed a modified version of
+a previously
+reported quantitative assay that is based on a conditional luciferase
+expression scheme. In this system, two
+lentiviral vectors were constructed: one vector that constitutively
+expresses Cre recombinase (LV-Cre) and a second vector encoding a
+luciferase expression cassette containing a 1 kb stuffer sequence
+flanked by loxP sites (LV-Floxed Luc). The stuffer sequence interrupts
+the luciferase coding sequence after the start codon such that luciferase
+expression is reconstituted only in response to Cre-mediated recombination
+(Figure A). One cell population was transduced
+with LV-Cre and the other cell population with LV-Floxed Luc (Figure B). When the cells from the two populations fuse
+to form a multinucleated myotube, Cre recombinase expressed from one
+nucleus enters neighboring nuclei harboring the lentivirally integrated
+Floxed Luc cassette and removes the stuffer sequence, thereby creating
+a functional luciferase gene (Figure C). To
+conduct this assay, cells were first transduced with the tet-responsive
+vector carrying the MyoD variant of interest and selected in puromycin
+to obtain a pure population. This cell population was divided and
+transduced with either LV-Cre or LV-Floxed Luc. The cells were remixed,
+plated, and induced with doxycycline. After 10 days of induction,
+cells were assayed for the relative levels of luciferase activity
+(Figure B). Further corroborating the immunofluorescence
+staining, the engineered MyoD variants induce enhanced cell fusion
+compared to MyoD in both cell types (Figure D-E). Once again, the effects were similar for each
+variant in the ADSCs, whereas MyoD had the greatest
+effect in the dermal fibroblasts. Additionally, human MyoD showed
+similar enhancements with the addition of VP64 (). Next we evaluated the relative effects of MyoD
+and MyoD on gene expression across the transcriptome.
+We performed
+RNA-seq analysis on human dermal fibroblasts in which MyoD or MyoD was induced for 10 days. Genome-wide
+gene expression levels were compared to untreated control cells. Of
+the 30 053 transcripts included in the analysis, 4763 were
+significantly altered by MyoD overexpression (false discovery
+rate (FDR) < 10). Of these, 3135 (∼66%)
+were also significantly changed by MyoD (FDR < 10), although MyoD overexpression led
+to changes in an additional 3559 genes that were not significantly
+affected by MyoD (FDR < 10), further
+demonstrating the enhanced activity of the engineered transcription
+factor in global reprogramming of cellular gene networks (Figure A). The majority of differentially expressed genes
+were upregulated, consistent with the role of MyoD as a transcriptional
+activator (Figure B). The downregulated genes
+are likely secondary effects of global reprogramming and transdifferentiation
+from the fibroblastic lineage. Of the genes that were differentially
+expressed in both MyoD- and MyoD-treated
+samples compared to untreated controls, we observed that MyoD generally induced a greater effect as indicated by a best fit
+line with a slope greater than one (Figure B). MyoD had about a 2-fold greater effect than MyoD (Figure C). The RNA-seq analysis
+also showed that specific myogenic markers were induced to a greater
+extent by MyoD compared to MyoD (Figure D), confirming the qRT-PCR results (Figure ). To characterize the roles
+of each of group of differentially expressed
+genes, we performed functional annotation clustering using the Database
+for Annotation, Visualization, and Integrated Discovery tool (DAVID). We found that the top four gene clusters differentially expressed
+by both MyoD and MyoD were involved in
+key processes important for myogenesis including cell cycle regulation,
+extracellular matrix proteins, contractile proteins, and cytoskeletal
+proteins (). The top functional clusters found differentially expressed only
+in MyoD-treated cells were genes involved in translation,
+vascularization, cell adhesion, and extracellular matrix production
+(). The top
+functional clusters found differentially expressed only in MyoD treated cells were nucleotide binding proteins, pleckstrin proteins,
+and metabolic proteins involved in degradation processes (). Additional studies
+are necessary to elucidate the differential regulation of these gene
+groups. Proteins containing pleckstrin homology domains associate
+with transmembrane proteins such as G proteins and phosphatidylinositol.
+These proteins recruit factors to the cellular membrane and facilitate
+signal transduction pathways. Therefore,
+this cluster of proteins may be involved with cell signaling pathways
+important for cell fusion and differentiation. Ubiquitination of the VP16 monomer of VP64 is necessary
+for transcriptional activation and also
+serves as a mechanism to prime transcription factors and promote transcriptional
+elongation. This is consistent with our
+observations that MyoD stimulates expression of gene
+clusters associated with proteolysis and is expressed at lower levels
+compared to MyoD. Supporting Information
+Figures 4 and 5 Our results demonstrate that MyoD orchestrates myogenic
+differentiation  more effectively than the
+wild-type protein. Time course experiments suggest that the elevated
+levels of myogenic gene expression induced by MyoD
+promotes a faster rate of myogenic reprogramming compared to cells
+treated with MyoD (). This is an important finding for drug screening, disease modeling, muscle tissue engineering, and regenerative
+medicine as genetic reprogramming with MyoD may provide new avenues for generating sources of
+myogenic cells. This study complements previous work in engineering
+Oct4 and MyoD variants with potent transcriptional activation domains
+to enhance cell reprogramming efficiencies. Therefore, the addition of potent activation
+domains to wild-type transcription factors is a generalizable approach
+for increasing transcriptional activity. Supporting Information Figures 4 and 5 Currently, most reprogramming
+protocols require extended transcription
+factor expression. The most effective method for extended transgene
+expression is lentiviral transduction, but there are concerns regarding
+the stable integration of expression factor cassettes in the cellular
+genome. For this reason, reprogramming cells with nonintegrating transient
+expression methods such as plasmid DNA transfection, mRNA transfection, or the delivery
+of cell-permeable proteins are being
+widely explored. However, the resulting reprogramming efficiencies
+are much lower and these methods are technically challenging requiring
+repeated dosing over extended time periods. As our results demonstrate
+upregulation of the myogenic gene network in only 10 days to levels
+requiring 30 days of MyoD expression (), the use of engineered
+transcription factors in conjunction with transient delivery methods
+such as DNA and RNA transfection may prove advantageous. Therefore,
+synthetic transcription factors that induce fast and efficient remodeling
+of gene networks may enable widespread applications of genetic reprogramming
+in many areas of biotechnology. MyoD lentiviral delivery system. MyoD, MyoD, MyoD, and MyoD were cloned into
+a Tet-ON lentiviral vector. This vector constitutively expresses the
+reverse tetracycline transactivator (rtTA2-M2) and the
+puromycin resistance gene (Puro) from the human phosphoglycerate
+kinase (hPGK) promoter. The rtTA2-M2 and Puro are coexpressed from the same mRNA via an internal ribosomal entry
+site (IRES). The MyoD-T2A-dsRed Express2 expression cassette is downstream
+of the tetracycline response element (TRE) promoter. The rtTA2-M2 binds to the TRE and activates expression of the downstream
+genes in the presence of doxycycline. The T2A ribosomal skipping peptide
+results in the expression of two separate proteins from a single mRNA.
+The peptide sequence of each transcriptional activation domain is
+shown. The minimal activation domain of VP16 is shown in red. PKKKRKV
+is the SV40 nuclear localization signal and p65 contains the native
+nuclear localization signals KRKR and LGALL (underlined). VP64 also
+contains an HA epitope tag (YPYDVPDYA) that was not utilized in this
+study (underlined). All fusion proteins contain a flexible serine/glycine
+linker GGSGGGS (bold) between the activation domain and MyoD. Upregulation of myogenic
+markers in ADSCs and dermal fibroblasts.
+Cells were transduced with lentivirus that expresses each MyoD variant
+or a mock control consisting of the lentiviral vector without a transgene.
+After 10 days of expression induced by 3 μg/mL doxycycline,
+ADSCs (A) and dermal fibroblasts (B) were assessed for the relative
+expression levels of a variety of myogenic genes by qRT-PCR. Expression
+levels were normalized to MyoD and the β-actin
+house-keeping gene.  = 3 independent experiments.
+All -values are compared to MyoD (* < 0.05). In both the ADSCs (D) and fibroblasts (E),
+expression of each MyoD fusion was determined by Western blot, which
+demonstrated efficient translational skipping by the T2A peptide.
+Expected protein sizes are provided in part C. Dose-dependence of myogenic gene expression on levels of MyoD and MyoD. ADSCs and dermal fibroblasts were transduced
+with lentivirus that expresses either MyoD or MyoD, selected with puromycin, and then treated with the indicated
+dose of doxycycline. After 10 days of induction, ADSCs (A) and fibroblasts
+(B) were assessed for MyoD and myogenin expression by qRT-PCR. Expression
+levels were normalized to untransduced fibroblasts and the β-actin
+house-keeping gene.  = 3 independent experiments.
+The transduced ADSCs (C) and fibroblasts (D) were also assayed for
+MyoD and myogenin protein expression by Western blot. Cell differentiation and fusion induced by MyoD-mediated
+cell reprogramming.
+Following 10 days of transgene expression, cell fusion and expression
+of skeletal myosin heavy chain (MHC, green) was assessed by immunofluorescence
+staining in ADSCs (A and B) and dermal fibroblasts (C and D). Nuclei
+are shown in blue (DAPI) and dsRed2-Express indicates the relative
+levels of MyoD transgene expression. Quantitative analysis
+of cell fusion induced by MyoD-mediated cell
+reprogramming. (A) Two lentiviral vectors were constructed that contain
+a constitutive Cre recombinase expression cassette (LV-Cre) or a luciferase
+cassette that is dependent on Cre recombinase activity for expression
+(LV-Floxed Luc). (B) Cells transduced with each dox-inducible MyoD
+variant were separately transduced with either LV-Floxed Luc or LV-Cre.
+These two cell populations were mixed at a ratio of 1:10 LV-Cre/LV-Floxed
+Luc. (C) As the two cell populations fuse to form a multinucleated
+myotubes, Cre recombinase expressed from one nucleus enters neighboring
+nuclei harboring the Floxed Luc cassette. Cre removes the stuffer
+sequence and induces expression of a functional luciferase gene. (D)
+ADSCs and (E) dermal fibroblasts were induced to express the MyoD
+variant and were assayed for relative luciferase activity on Day 10.  = 3 or 4 independent experiments. All p values are compared
+to WT MyoD (* < 0.05). Genome-wide gene expression following reprogramming of
+dermal fibroblasts
+by MyoD or MyoD. RNA-seq was performed
+on untreated control fibroblasts and fibroblasts expressing either MyoD or MyoD for 10 days ( = 2). Fold changes in expression of each gene were calculated relative
+to the untreated control samples. The genes shown are those different
+than control with a false discovery rate (FDR) < 10. (A and B) Many genes were differentially regulated by both MyoD and MyoD compared to control (purple),
+while other genes were exclusively regulated by only MyoD (red) or only MyoD (yellow). Of the genes that
+were differentially expressed in samples treated with MyoD or MyoD, MyoD generally induced
+a greater overall effect as indicated by a best-fit line with a slope
+greater than one. (C) For the transcripts differentially expressed
+by both MyoD and MyoD compared to control
+(purple data points in B), the effect of MyoD was generally
+greater. (D) The RNA-seq analysis also confirms the qRT-PCR results
+(Figure B). Specific myogenic genes assayed
+by qRT-PCR are indicated in red and show greater activation by MyoD than MyoD (line indicates  = ). This analysis also confirmed lower levels
+of MyoD transgene in the MyoD samples compared to MyoD. HEK293T cells were obtained from the American
+Tissue Collection Center (ATCC, Manassas, VA) through the Duke University
+Cell Culture Facility and were maintained in DMEM supplemented with
+10% FBS and 1% penicillin streptomycin. Primary human dermal fibroblasts
+(Catalog ID: GM03348) were obtained from Coriell Institute (Camden,
+New Jersey) and were maintained in DMEM supplemented with 10% FBS
+and 1% penicillin streptomycin. Primary human adipose derived stem
+cells (ADSCs) were isolated as described previously and were cultured in growth media of DMEM/F12 supplemented
+with 10% FBS, 1% penicillin streptomycin, 5 ng/mL human epidermal
+growth factor, 1 ng/mL human basic fibroblast growth factor, and 0.25
+ng/mL human transforming growth factor-β. All cells were cultured
+at 37 °C with 5% CO. Viral Production and Transduction All lentiviral vectors
+used in this study are second generation. A lentivirus production
+protocol was adapted from methods previously described. Briefly, 3.5 million HEK293T cells were plated
+per 10 cm dish. The following day, cells were transfected with 20
+μg of transfer vector, 6 μg of pMD2G, and 10 μg
+psPAX2 using a calcium phosphate transfection. The media was changed
+12–14 h post-transfection. The viral supernatant was collected
+24 and 48 h after this media change, pooled, and passed through a
+0.45 μm filter. For transduction, the cell medium was replaced
+with viral supernatant supplemented with 4 μg/mL Polybrene.
+The viral supernatant was changed 24–48 h later. MyoD-Directed
+Genetic Reprogramming The transcriptional
+activation domains VP16, VP64, and p65 were genetically fused to the
+N-terminus of either the mouse or human wild-type (WT) MyoD via a
+short flexible serine glycine linker. The VP16 sequence was isolated
+from Addgene plasmid 11351. VP64 is a fusion of four copies of the
+minimal VP16 domain. p65 was isolated from Addgene plasmid 21966.
+Amino acid sequences of all the activation domains are in Figure . The MyoD variants were subcloned into a Tet-ON
+lentiviral vector. In this vector, each MyoD variant
+is coexpressed with dsRed-Express2, via a T2A ribosomal skipping peptide. All the Tet inducible lentiviral vectors are
+available on Addgene (Addgene plasmids 60623–60629). Human dermal fibroblasts and human ADSCs were transduced with the
+Tet-ON LV carrying each MyoD variant. Cells were selected in 1 μg/mL
+puromycin to obtain a pure population of transduced cells. Cells were
+expanded in standard growth medium supplemented with puromycin. Selected
+cells were grown to confluence and MyoD transgene expression was induced
+by supplementing the medium with 3 μg/mL, doxycycline unless
+indicated otherwise. Cells were given fresh media supplemented with
+doxycycline every 2 days. All differentiation studies for the fibroblasts
+were conducted in standard growth medium (DMEM supplemented with 10%
+FBS and 1% penicillin streptomycin). For the ADSCs, cells were seeded
+in plates coated with 1:10 poly--lysine and all differentiation
+studies were conducted in standard growth media without the growth
+factors (DMEM/F12 supplemented with 10% FBS and 1% penicillin streptomycin).
+Control ADSC samples were grown in standard growth media because withdrawing
+the growth factors without inducing differentiation causes cell death. Quantitative Reverse Transcription PCR Supporting Information
+Figure 6 RNA was isolated
+using the RNeasy Plus RNA isolation kit (Qiagen). cDNA synthesis was
+performed using the SuperScript VILO cDNA Synthesis Kit (Invitrogen).
+Real-time PCR using SsoFast EvaGreen Supermix (Bio-Rad) was performed
+with the CFX96 Real-Time PCR Detection System (Bio-Rad). Oligonucleotide
+primers and PCR conditions are reported in . Primer specificity was confirmed by agarose
+gel electrophoresis and melting curve analysis. Reaction efficiencies
+over the appropriate dynamic range were calculated to ensure linearity
+of the standard curve (). The results are expressed as fold-increase mRNA
+expression normalized to β-actin expression using the ΔΔCt
+method. Reported values are the mean and SEM from two or three independent
+experiments performed on different days ( = 2 or
+3) where technical replicates were averaged within each experiment. Cells were lysed in RIPA buffer (Sigma)
+supplemented with protease inhibitor cocktail (Sigma). Protein concentration
+was measured using BCA protein assay reagent (Thermo Scientific) and
+BioTek Synergy 2 Multi-Mode Microplate Reader. Lysates were mixed
+with loading buffer and boiled for 5 min; equal amounts of protein
+were run in NuPage 10% Bis-Tris Gel polyacrylamide gels (Bio-Rad)
+and transferred to nitrocellulose membranes. Nonspecific antibody
+binding was blocked with TBST (50 mM Tris, 150 mM NaCl and 0.1% Tween-20)
+with 5% nonfat milk for 1 h at room temperature. The membranes were
+incubated with the following primary antibodies: anti-MyoD (1:250
+dilution, Santa Cruz, Sc-32758) in 5% BSA in TBST overnight at 4 °C;
+anti-Myogenin (1:250 dilution, Santa Cruz, Sc-12732) in 5% BSA in
+TBST, overnight at 4 °C; anti-GAPDH (1:5,000 dilution, Cell Signaling,
+clone 14C10) in 5% milk in TBST 30 min at room temperature. The membranes
+were washed with TBST for 15 min and incubated for 30 min with anti-rabbit
+HRP-conjugated antibody (1:5000 dilution, Sigma, A6154) or anti-mouse
+HRP-conjugated antibody (1:5000 dilution, Santa Cruz, SC-2005) in
+5% milk in TBST and subsequently washed with TBST for 15 min. Membranes
+were visualized using the ImmunStar WesternC Chemiluminescence Kit
+(Bio-Rad) and images were captured using a ChemiDoc XRS+ System and
+processed using ImageLab software (Bio-Rad). Cells transduced with Tet-On
+LV expressing each MyoD variant were plated on autoclaved glass coverslips
+(1 mm, Thermo Scientific). Fibroblasts were plated directly on coverslips
+while the ADSCs were seeded on coverslips coated with 1:10 poly--lysine. Following 0, 10, 20, or 30 days of transgene expression,
+cells were fixed in 4% PFA and prepared for immunofluorescence staining.
+Samples were permeabilized in blocking buffer (PBS supplemented with
+5% BSA, 0.2% Triton X-100, and 2% goat serum) for 1 h at room temperature.
+Samples were incubated with MF20 supernatant primary antibody (1:200
+dilution, Hybridoma Bank) in blocking buffer overnight at 4 °C,
+and rinsed for 15 min in PBS. Samples were incubated with anti-mouse
+fluorescein-conjugated antibody (1:200, Invitrogen A10683) for 1 h
+at room temperature. Cells were incubated with DAPI diluted 1:5000
+in PBS for 5 min and washed with PBS for 15 min. Coverslips were mounted
+with ProLong Gold Antifade Reagent (Invitrogen) and imaged using a
+Leica SP5 inverted confocal microscope. To conduct the fusion
+assay, either the fibroblasts or ADSCs were transduced with the respective
+Tet-ON MyoD lentivirus and selected using puromycin. Each pure cell
+population was subsequently divided and transduced with either LV-Cre
+(Addgene plasmid 30205) or LV-Floxed
+Luc (Addgene plasmid 60622). Following transduction, these cell populations
+were mixed and plated in a ratio of one part LV-Cre transduced cells
+to ten parts LV-Floxed Luc cells in 24 well plates. Once grown to
+confluence, the cells were induced to express the MyoD variant with
+3 μg/mL doxycycline. Medium containing fresh doxycycline was
+replenished every 2 days. Cells were harvested after 10 days of MyoD
+expression and assayed for luciferase expression. Cells were pelleted
+and washed with PBS. Pellets were resuspended in 100 μL of lysis
+buffer (100 mM KHPO + 0.2% Triton-X, pH 7.8)
+and incubated at room temperature for 10 min. The cell debris was
+pelleted and 30 μL of the supernatant from each sample was transferred
+to an opaque 96-well plate. Each sample was mixed with 30 μL
+of Bright-Glo reagent (Bright-Glo Luciferase Assay System, Promega).
+Luminescence was measured by a BioTek Synergy 2 Multi-Mode Microplate
+Reader with 1-s scan time. Each MyoD variant had a matched set of
+samples that only received the LV-Floxed Luc vector to serve as control.
+All luciferase data is presented as a fold increase over background
+from the matched Luc only samples. Reported values are the mean and
+SEM from three or four independent experiments performed on different
+days ( = 3 or 4) where technical replicates were
+averaged within each experiment. RNA-seq
+libraries were constructed as previously
+described. Briefly, first-strand cDNA
+was synthesized from oligo(dT) Dynabead-captured mRNA using SuperScript
+VILO cDNA Synthesis Kit (Invitrogen). Second-strand cDNA was synthesized
+using DNA polymerase I (New England Biolabs). cDNA was purified using
+Agencourt AMPure XP beads (Beckman Coulter). Nextera transposase (Illumina;
+5 min at 55 °C) was used to simultaneously fragment and insert
+sequencing primers into the double-stranded cDNA. Transposition reactions
+were halted using QG buffer (Qiagen) and fragmented cDNA was purified
+on AMPure XP beads. Indexed sequencing libraries were generated by
+six cycles of PCR. Libraries were sequenced using 50-bp paired-end
+reads on one lane of an Illumina HiSeq 2000 instrument at the Duke
+Genome Sequencing and Analysis Core Resource. Reads were aligned to
+human RefSeq transcripts using Bowtie. The significance of differential expression of MyoD
+and MyoD treated samples compared to untreated control
+samples, including correction for multiple hypothesis testing, was
+calculated using DESeq. Sequencing data
+has been deposited to the Gene Expression Omnibus, Accession code:
+GSE62448. At least two independent experiments
+were compiled as means and standard errors of the mean. Effects
+were evaluated with multivariate ANOVA and Dunnett’s post hoc
+test using JMP 10 Pro..

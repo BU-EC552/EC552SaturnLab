@@ -1,0 +1,1230 @@
+Synthetic biology includes a
+concerted effort to formalize an engineering discipline suitable for
+the design and implementation of novel biological systems. Analogies to well-established fields such as mechanical or electrical
+engineering are often drawn, but it has also been noted that biology presents a number of particular
+challenges for engineering applications: the biological environment
+is noisy, our understanding of cellular dynamics is imperfect, and
+our tools for creating and manipulating biological systems are limited
+and still under active development. Engineering in a cell is currently,
+and perhaps in some ways fundamentally, more difficult than engineering
+in steel or silicon. One advantage offered by the advanced state
+of development in other
+branches of engineering is the ability to tune the way individual
+components respond to their inputs. Let us introduce the generic idea
+of a process: a system that accepts an input (mechanical force, electrical
+current, or biomolecular concentration) and responds dynamically by
+changing its output (bending, current flow, or concentration of another
+biomolecule) at some predictable rate. We will refer to the relationship
+between the input to a process and the rate at which the process changes
+its output as a response curve: a mapping from input levels to output
+rates of change. Mechanical and electrical engineering projects have
+an extensive ability to tune these response curves: a girder can flex
+at a desired rate or resonate at a desired frequency; a circuit element
+can slew its current or voltage output rapidly or gradually. This
+tunability allows engineers the powerful abilities to design individual
+components with desired behaviors and to integrate multiple components
+by ensuring that inputs and outputs match across different processes. Synthetic biology will require these same tuning capabilities,
+for the same reasons: if we are to build complex systems in biology,
+we must be able to tune both the internal dynamics of individual systems
+and to match the output/input levels of connected systems. A growing
+library of experimental work has demonstrated the ability to tune
+biological response curves, and here we will review a number of approaches
+that have been implemented  in a variety of
+biological contexts. After an introduction to the mathematical description
+of response curves, we will group our discussion into sections on
+transcriptional, post-transcriptional, and post-translational levels
+of regulation. It is a positive sign for the future progress of synthetic
+biology that there are now so many publications on this topic, but
+it also means that we cannot claim that this review is exhaustive. Response
+Curves: Models and Mechanisms We begin by establishing a
+mathematical notation to be used throughout
+the remainder of the review. Because tuning can take many forms, we
+want our description to be as broadly applicable as possible. We confine
+ourselves to population-averaged quantities, without addressing the
+range of single-cell distributions that can generate a given population-level
+response. Average rates of response in a biochemical system can often
+be represented by curves that rise steadily from a minimum rate to
+asymptotically approach some maximum rate as the input is increased
+(for activating inputs), or fall steadily from a maximum to a minimum
+rate (for repressing inputs) (see Figure A).
+Nonlinear, monotonically increasing curves of this general type can
+describe Michaelis-Menten kinetics for enzyme-catalyzed reactions,
+the rate of transcription from a promoter as a function of an activating
+or repressing transcription factor protein, and a variety of other
+examples. The frequent appearance of these saturating response curves
+in biology arises because many  biochemical
+reactions are rate-limited by the concentration of some conserved
+macromolecule (such as DNA or an enzyme). The specific shapes of these
+curves are governed by the details of individual systems, and parameter
+changes lead to a range of alterations (see Figures B–G). We will focus on biological processes whose
+response curves can
+be described (or well approximated) by a single first order differential
+equation of the formwhere  and  are the input and output of the process, respectively,
+and () defines the response curve.
+Strictly speaking, such equations arise only from elementary chemical
+reactions or from multistep reaction systems where a strong separation
+of time-scales yields a single rate-limiting step. In many situations,
+however, it is possible to approximate more complex systems with simplified
+first-order systems, often informed by empirical observations of the
+system in question; this approach finds common use, and we will adopt
+it here. The Hill function provides a
+semiempirical approach
+capable of capturing the class of response curves of interest. The
+function describes the average fraction of binding sites (of some
+biomacromolecule, say) occupied by an input ligand, as a function
+of unbound ligand concentration, :with the parameters  and  described below. It has a sigmoidal shape,
+ranging between
+0 and 1 as  increases; the approach to 1 represents
+saturation, where binding sites are nearly fully occupied at all times. The  parameter (the Hill constant) is related
+to the dissociation constant between the ligand and the macromolecule:
+it is equal to the ligand concentration for which half of all the
+possible binding sites become occupied. It therefore also serves as
+a rough indicator of the level of ligand concentrations needed to
+induce saturation ( ≫ ). In some cases, if a macromolecule is already bound by a ligand,
+the binding affinity of subsequent ligands to that macromolecule becomes
+enhanced or reduced; this is known as cooperative binding, quantified
+in the Hill function by  (the Hill coefficient).  = 1 indicates a noncooperative reaction;  > 1 indicates cooperativity, where affinity increases in the
+presence
+of previously bound ligands; and 0 <  < 1
+indicates negative cooperativity, where affinity is reduced. The larger
+the value of , the steeper the slope of the Hill
+function. Synthetic biologists often take advantage of time-scale
+separations
+or leverage longer time-scales of interest to model multistep processes
+as single-step events using an empirically parametrized Hill function.
+The modeling of gene expression that is transcriptionally or translationally
+activated or repressed by an input signal (see Figure ) commonly follows this practice, since the shape of the Hill
+function has been shown to agree well with experimental evidence. In such cases, the rate of change of protein
+concentration may be described by combining basal (unregulated) gene
+production with a Hill function term used to describe the up- or down-regulation
+of gene expression by a regulatory species. For activation, the expression
+rate increases by an additional amount proportional to θ (where  is the concentration of the regulatory species), such
+that the rate of new protein production may be described bywhere  is
+the concentration of the protein being expressed, ′ is the basal rate of production,  is the
+maximum additional production rate arising from up-regulation, and
+the bracketed term is an increasing sigmoidal Hill function. Repression,
+on the other hand, may be modeled by replacing the regulated production
+term with (1 – θ) such thatHere, ′
++  is the basal (unregulated) expression rate, ′ accounts for the fact that complete repression
+may not be possible, and the bracketed term is a decreasing sigmoidal
+Hill function. This type of description greatly
+abstracts the realities of biological
+processes: in addition to combining multistep processes such as gene
+expression into a single step, it neglects fluctuations, assuming
+instead that a population-averaged view will be sufficient for at
+least any initial design work. In cases where these realities cannot
+be neglected, these simplifications will need to be reconsidered. Rates of change tend to be difficult to measure experimentally.
+Consequently, reports of steady-state input-output (or “dose-response”)
+functions are seen in literature far more often than the rate response
+curves we describe above. Fortunately, it is possible to interconvert
+the two if the ancillary processes contributing to steady state are
+well-known. Consider a biochemical process described by eq , where the output  represents
+the concentration of a protein whose production rate is given by the
+response curve (). The total intracellular
+protein concentration, , depends both
+on the protein’s rate of production and its rate of removal;
+in the simplest case, this can be represented by a linear degradation
+term in the rate equation for :where  is a
+first-order rate constant. Setting eq  to zero,
+we can easily extract the steady-state relationship for total intracellular  as a function of constant-valued :  = ()/ (the ss subscript denotes
+steady-state). This is simply the original process’s rate function
+scaled by , implying that both the production
+rate and steady-state response curves share the same characteristic
+shape governed by the same biological parameters. More generally,
+the degradation rate can be nonlinear, but it remains possible to
+extract the () rate response curve. There are several motivations for tuning response curves in synthetic
+biology design work. When creating an analog control system, the nature of the response curve is critical in determining the
+feedback properties of the controller. More generally, the intersections
+and slopes of response curves determine the locations and stability
+properties of steady states, and controlling steady-state positions
+is required for virtually any multicomponent engineered system; this
+includes digital logic systems, where steady states determine the
+values and degree of separation of the digital ON and OFF states. Basic ways in which to transform the shape of sigmoidal response
+curves. Dark curves are reference curves; light curves are altered
+curves. Also shown is a Hill function representation for each of the
+curves; parameters responsible for each of the transformations are
+bolded. Note that these transformations are not linearly independent.
+In order to affect only the leakage level in panel E, ′ and  must be tuned in opposite directions
+such that their sum remains constant. Experimental methods for achieving
+these transformations are discussed in the main text. Simplified view of the biochemical mechanisms behind regulated
+transcription and their relation to tuning the rate response curve
+for gene expression. The input and output signals are the molecular
+concentrations of a transcription factor protein (TF) and an expressed
+protein, respectively. RNAP = RNA polymerase, O = operator site (TF
+binding sequence), TATA = RNAP binding sequence (TATA box in eukaryotes
+and archaea, −10 and −35 consensus sequences in bacteria),
+RBS = ribosome binding site. (Top) Transcriptional activation where
+the promoter-bound TFs promote the recruitment of RNAPs, increasing
+the probability per unit time that a RNAP will bind. Tuning parameters
+are in reference to eq . (Bottom) Transcriptional
+repression  steric inhibition, wherein one or
+more TFs physically block RNAP binding to the promoter or impede its
+progress along the template DNA strand (the latter case is illustrated
+here). Tuning parameters are in reference to eq . In general, mechanisms for both activation and repression vary and can involve more complex actions including
+altering DNA secondary structure and recruiting additional coregulator
+proteins; in eukaryotes, RNAP binding is mediated by a suite of accessory
+proteins. Let us examine how each of the transformation
+types depicted in Figure  relates in principle
+to the Hill function description and to underlying biomolecular interactions.
+To make the discussion more concrete, we will continue to use transcriptionally
+regulated gene expression (Figure ) as a running
+example; any tuning mechanisms mentioned in this context will be further
+expanded upon in the next section. Recall that for this particular
+process, the input and output signals are molecular concentrations
+of the transcription factor (TF) protein and the expressed protein,
+respectively. In Figure B, the response curves are scaled vertically, amounting to multiplication
+of the function () (, equal scaling of ′ and  in our Hill function representation). Most directly, this is done
+by creating multiple replicates of the entire process. For the gene
+expression example, this is analogous to changing the promoter-gene
+copy number. Alternatively, altering translational efficiency by modifying
+the RBS strength or through codon optimization would also vertically
+scale the response curve. Figure C
+shows the response curve shifting vertically, corresponding to a change
+in ′ alone. This could be achieved by introducing
+or tuning a constitutive source of  output (, one that is not regulated by the input signal ). In the gene expression example, such an output source
+would amount to gene transcription from a constitutive promoter, supplementing
+transcription from the -regulated promoter. Figure D
+shows a transformation type that we have termed vertical extension,
+where the curve is scaled vertically but with the low end level fixed.
+Such a transformation would result from changing  alone. If gene expression were up-regulated by an activating TF,
+presumably one whose binding helped to recruit RNA polymerase (RNAP),
+then this could be achieved by tuning the activation potency of each
+bound TF protein, , changing the probability
+per unit time that an RNAP will bind per bound TF. For down-regulated
+expression, we are not aware of any single-step method of transforming
+the response curve in this manner without also affecting the final
+leakage level; such tuning would likely require combining other transformations.
+For example, in the special case where ′
+= 0, vertical extension becomes identical to vertical scaling, and
+a supplementary vertical shift could be used to adjust the baseline
+level to a nonzero value. We refer to the low-end
+level of the response
+curves as the output leakage level. It represents the portion of the
+process that is always activated in the up-regulating case, and the
+portion that cannot be repressed in the down-regulating case. Tuning
+this level without affecting the high-end saturation level (Figure E) is equivalent to tuning both ′ and , while keeping their sum ′ +  constant. For down-regulated
+gene expression, this would amount to varying the repression strength
+of each bound TF protein. In the up-regulated case, we are not aware
+of a direct method to produce such tuning; achieving the effect would
+likely require combining other transformations. Horizontal scaling, illustrated
+in Figure F, results from tuning of the Hill
+constant  (increasing  scales
+the curve to the right), which is related to the effective binding
+affinity of the input signal to the process. For transcriptionally
+regulated gene expression, this corresponds to tuning the binding
+affinity of the TF to the promoter. Changes
+in curve steepness are shown in Figure G and
+result from tuning the Hill coefficient  (increasing  leading to increasing steepness).
+Having a steep or switch-like steady-state response curve is often
+referred to as having ultrasensitivity in a biochemical process. Biochemically, changing steepness requires adjusting the effective
+binding cooperativity. For transcriptionally regulated gene expression,
+this implies the cooperative binding of multiple TFs to the same promoter
+(or another biochemical process that mimics this effect). Often times, published experimental results
+report only values at the extremes of a biological response curve
+(uninduced and fully saturated induction) or in some instances just
+the ratios of the saturated levels in the form of “fold increases”.
+In such cases, the precise nature of the tuning can be ambiguous.
+Where possible, we speculate on plausible tuning effects for the full
+response curve; however, if this is not possible, we simply refer
+to the observed tuning as a change in the response curve’s “dynamic
+range”, which in reality can be achieved in many ways, particularly
+through vertical scaling, vertical extension, leakage tuning, or combinations
+thereof. Note that all of the above descriptions assume that
+the output is not subject to biological limitations beyond those imposed
+by the input signal itself, but if this is not the case, it could
+change the nature of the apparent tuning. As an example, the output
+of an activated process could hit an absolute maximum rate for the
+cell, perhaps because of limitations in the availability of a substrate
+(, nucleotides or amino acids) or a facilitating
+enzyme shared among other processes (, polymerases
+or ribosomes). In this case, changes that would normally result in
+vertical shifting could manifest instead as leakage, as the high end
+of the curve ran into the upper limit of attainable rates while the
+low end continued to shift up and down. We assume in what follows
+that such global saturation is not at work in the systems discussed,
+but the possibility should be recognized. We now survey some specific examples of response
+curve tuning from
+the experimental literature, grouped by the biological levels at which
+they operate: at the transcriptional level, through post-transcriptional
+effects, or at the post-translational level. All input and output
+values will refer to molecular concentrations and rates of concentration
+change, respectively, unless otherwise noted. Note that while the
+curves in Figure  provide a useful framework
+for discussing types of tuning, experimental results are of course
+rarely so clean. Beyond the inevitable experimental noise, it is often
+the case that secondary biochemical effects lead to secondary tuning
+effects. The stability of DNA, the wide array
+of molecular biology techniques available for its manipulation, and
+the generally modular structure of an operon have combined to make
+transcriptional regulation a natural first target in the development
+of synthetic biology. Methods for controlling and tuning gene expression  transcription act predominantly through mutations to
+operons and transcription factors (TFs); most often, process inputs
+in this section will be TF concentrations. Consider an operon consisting
+of a gene under the control of a TF-regulated promoter. The expression
+response curve for the gene could be  upward by introducing additional copies of the gene under the control
+of a constitutive (unregulated) promoter, as this would contribute
+a flat baseline expression rate. On the other hand, increasing the
+copy number of the full operon would act as a multiplier for the rate
+at which mRNA is produced and therefore translated, leading to  of the original expression response curve.
+This can be accomplished by inserting multiple repeats of an operon
+into the genome or by carrying the operon
+on plasmids, where copy number is variable. Plasmid copy number is
+typically controlled by changing the plasmid’s origin of replication,
+although Chen () showed that the copy number of widely used 2-μm-based plasmids
+inserted into yeast can be increased by decreasing the output and
+stability of a selective marker gene produced by that plasmid. A library
+of plasmids combining these two effects exhibited up to a 3-fold increase
+of a constitutively expressed reporter gene from the same plasmid,
+indicating an increase in copy number. A recent study by Block () has demonstrated that
+the proximity of the output protein operon or the TF expressing operon
+to the origin of replication of a bacterial chromosome can  or affect the  level, respectively,
+of the corresponding expression response curve; see Figure A. In a related study, Bikard () shuffled the order of genes in a polycistronic
+operon encoding tryptophan production to increase the  between saturated expression levels as high as 11-fold
+over the native arrangement. These efforts demonstrate that tuning
+is possible solely by controlling genetic context. Examples of experimental
+tuning curves for transcriptional regulation.
+(A) Vertical scaling (left) and leakage tuning (right) on log-scale
+plots, both achieved by varying the position of a promoter relative
+to a bacterial genome’s origin of replication. The gray and green curves represent operons nearest and
+furthest from the origin of replication, respectively. Image used
+by permission of Oxford University Press. (B) Tuning of steepness
+and leakage, by varying the position of operator sites relative to
+the TATA box. Copyright 2007 National
+Academy of Sciences of the United States of America. Regulating
+gene expression by
+controlling the promoter region of an operon dominated early work
+in genetic control and remains a primary technique today. Promoters
+are modular genetic units that often function across entire kingdoms,
+and the wide range of well-known native and synthetically designed
+promoters across a variety of species offers choices for expression
+ranges; the Registry of Standard Biological Parts () provides a convenient catalog of available and pretested options.
+Promoters are increasingly being characterized under similar genetic
+conditions for comparisons of strength. While earlier
+studies developed our understanding of the nucleotide architecture
+of promoters and the correlated mechanisms by which promoters function
+(reviewed in refs () and ()), many recent
+investigations have focused on the tunable nature of this relationship.
+Particular targets for tuning have been the binding strengths of communal
+proteins that make up the general transcriptional machinery (, RNAP and sigma factors), which we focus on first,
+and the binding strengths and activities of TFs, which we cover in
+the subsequent section on operator site modification. The binding
+sites for the RNAPs, the TATA box for eukaryotes, and
+the −10 and −35 hexameric upstream regions in prokaryotes,
+are a set of consensus sequences that vary across the kingdoms in
+which they are found. An example of the sequence dependence of the
+binding strength was demonstrated by Eandwar , who showed that mutations of the binding
+region of the T7 promoter, targeted by the T7 RNAP (originally from
+T7 bacteriophage but used widely as a heterologous RNAP in bacteria
+and eukaryotes), reduced the binding affinity 2- to 3-fold. In principle,
+this would  outward the T7 RNAP vs
+expression response curve and  downward
+any TF vs expression response curve. The precision with which this
+is possible has been aided by more recent efforts to create libraries
+of TATA box and hexameric sequence mutations. Since the discovery of the consensus sequences,
+mutations in the
+surrounding regions have also been known to influence the output of
+gene expression, with  of the expression response curve over as much as 3–4 orders
+of magnitude. Upstream sequence
+(UP-element) interactions with the C-terminal
+domains of the RNAP have also become a target for controlling gene
+expression. A recent study by Rhodius () determined the upstream
+contributions to promoter strength using a library of 60 mutated promoters.
+This library included mutations distal to the −35 hexamer,
+as far as −65 bp upstream. Different mutations of the UP-elements
+led to , achieving 2-fold increases and
+4-fold decreases in gene expression. These findings were then modeled
+along with mutations in the core promoter regions to include all the
+DNA elements that contribute to promoter strength. In a study of over
+2,800 constructs in yeast, Gertz () assembled a library of enhancers with random
+combinations of operator sites upstream from a promoter, offering
+a finely tuned range of basal expression. Modifying the sequence,
+number, or position of operator sites within a promoter are common
+tuning techniques in synthetic biology. Since sequence modification
+will likely affect TF-promoter binding affinity,  of the TF vs expression response curve can be expected.
+Adding multiple copies of an operator site will permit multiple TFs
+to bind to a single promoter and may therefore increase maximal activation
+or repression levels, leading to upward  or less , respectively. It should also result
+in outward , since the number of potential
+TF binding locations is greater, thereby requiring a higher TF concentration
+to reach binding saturation. Furthermore, if TF binding to adjacent
+operator sites is cooperative, then response curve  would also be affected. Finally, we would expect operator site location
+to affect the ability of a TF to recruit or hinder the binding of
+RNAPs, therefore leading to changes in  or , respectively. In practice, however, tuning
+results are rarely so straightforward. Moving operator site position,
+for example, could lead to significant changes in the secondary structure
+of the DNA, TF binding notwithstanding, and therefore lead to additional  effects. Murphy () (and an early study by Heins () that did not report
+full response curves) used operator site modification in , varying the number of operator sites binding
+the TF repressor TetR, and their proximity to the TATA box, to obtain
+a variety of expression response curves with differences in , , and most prominently,  levels (ranging from approximately 0.2% to 35% of
+the unrepressed output). A sampling of these observed curves is shown
+in Figure B. The experimental response was
+measured as a function of the chemical inducer anhydrotetracycline
+(aTc), which acts to reduce the binding of constitutively expressed
+TetR to the operator site(s), and the curves thus show activation
+as a function of increasing aTc; if measurements were taken while
+varying the concentration of TetR directly, we would expect a decreasing
+response curve representing repression. With regards to TF effectiveness,
+many operator sites show optimal
+proximities from the RNAP binding sites. For repressors, the mechanism by which the TF prevents the binding
+of the polymerase to the DNA likely determines the influence of operator
+position. A recent study by Garcia () has suggested that the mechanism of repression
+by the Lac repressor is different for operator positions centered
+at −60 vs +11, resulting in differences in . Libraries of operator site and TF mutants are also increasing
+in
+number. These typically target the binding affinities of the operator-TF
+pairs and are similar in their goals and methods to promoter libraries. Milk () combined a library of mutations in the Lac repressor at
+three residues known to interact with the operator, with a library
+of symmetric mutations in the Lac operator at bases 5 to 7, to produce
+a range of repression options spanning a 35-fold difference in . Maity () found that single-nucleotide changes to  O, the primary operator of the  TF repressor LacI, led to changes of up to 6- and 12-fold in repressed
+and nonrepressed expression levels, respectively, indicating a  at work. While the tuning approaches discussed
+thus far focus on regulating transcription initiation (RNAP binding),
+progress has also been made concerning the regulation of promoter
+escape: the ability of the transcriptional complex to dissociate itself
+from the promoter and allow elongation of the full transcript, the
+failure of which leads to abortive transcripts. The 20-nucleotide
+sequence directly downstream of the transcription start site can have
+a dramatic influence on the efficiency of promoter escape. Kammerer () showed that the bacteriophage
+T5 N25 promoter and its derivative, the N25 antipromoter, exhibit
+very different rates of promoter escape (roughly 1.7 and 0.6 min, respectively) and ratios of abortive to productive
+transcripts (40 and 300, respectively), despite differing only in
+the initial portion of their transcribed sequences (+3 to +20). Chander () demonstrated finer tuning
+using individual mutations to the 20-nucleotide sequence. These changes
+should in principle introduce a  of the
+expression response curve. Using a library of 43 variants and
+a highly abortive promoter, Hsu () demonstrated a 25-fold range of promoter escape
+efficiency , resulting in an mRNA increase
+ranging from 5% to 150% above the native level, and  of the rate of gene expression. Manipulation of promoter
+escape efficiency has since been demonstrated  in , suggesting
+a key gene expression tuning approach for operons where promoter escape
+is rate limiting. Modular Transcription Factor Domains Typical eukaryotic
+TFs have a modular structure comprising two to three domains: a DNA binding domain (DBD), a -activating or -silencing domain (TAD, TSD),
+and an optional signal-sensing domain (SSD) that affects TF activity
+primarily by modulating the DBD binding affinity for its cognate DNA
+operator sequence in a signal-dependent manner. Modularity is conferred
+by the fact that these domains typically function independently, allowing
+for the creation of chimeric TFs through domain mixing with tuning implications that vary with the domains involved (see
+below). Signal-sensor domains (SSDs)
+that respond to exogenous stimuli (, small molecules,
+light, ) permit externally inducible control
+over effective TF-promoter binding affinity. In principle, this leads
+to  of the expression response curve
+that corresponds to TF concentration as the process input (and not
+the exogenous signal). To date, a wide variety of eukaryotic TFs have
+been created by co-opting inducible DNA binding proteins from bacteria
+(see ref () for many
+examples) and inserting their cognate operator sites into minimal
+promoters. -Activator
+and -Silencer
+Domains For an activating TF, functionality can also be adjusted
+by varying the type and/or number of -activator
+domains (TADs). Since TADs recruit transcriptional machinery through
+direct binding interactions with coactivator proteins, varying these
+domains changes the activation potential of each individual TF, thereby
+in principle achieving  (adjusting
+the high-end saturation limit of the activation response curve). Although
+the potent  VP16 TAD is most commonly used, graded regulation has been demonstrated by
+fusing tandem repeats of VP16-derived minimal domains (, the quad-repeating VP64 TAD) and other TADs such as human NF-κB-derived
+p65 and human-derived E2F4. If cognate operator sites are
+cloned downstream of a constitutive promoter, a DBD alone can function
+as a transcriptional repressor through steric RNAP hindrance, although
+the repression potential can often be increased by fusing a -silencer domain (TSD) such as yeast-derived Ume6 or
+human -derived KRAB. TSDs typically recruit corepressor and subsequently histone proteins
+that alter DNA accessibility. In principle, the use and variation
+of TSDs would vary the  level in the expression
+response curve. While
+importing heterologous
+TFs into a system of interest has been a productive strategy, there
+are limits to both how many such TFs are currently available and the
+degree of orthogonality achievable between them. These limitations
+have inspired the creation of synthetic TFs, constructed by fusing
+together TADs with protein domains engineered to bind particular DNA
+sequences with high specificity. These synthetic TFs have introduced
+the ability to activate gene expression in eukaryotes without the
+need for either native or heterologous promoter-TF pairs. Transcription
+activator-like effectors (TALEs), first discovered in the  genus, have recently become an important focus
+of the synthetic TF field. TALEs comprise tandem repeats of small
+33–35 amino acid domains, each of which recognizes and binds
+a single nucleotide. Covalent linkage of these domains into engineered
+arrays allows for the highly specific recognition and targeting of
+longer, user-specified nucleotide sequences. In a recent study targeting regions in a DNase I hypersensitive
+site in human HEK293T cells, Maeder () created TALEs with varying numbers of domain
+repeats, allowing them to incrementally tune the  of expression between 5.3- to 114-fold. In addition, fusion to two
+distinct TADs, p65 and VP64, were compared. The VP64 construct yielded
+consistently higher expression, which we speculate is a result of  the response curve. In another
+study, Perez-Pinera () engineered several TALEs (using the VP64 TAD)
+to target various upstream regions within four endogenous gene promoters
+(distributed within 600 bp of the transcription start site) in human
+HEK293T cells. They observed modest transcriptional activation when
+using individual TALEs, but considerable synergistic activation effects
+for three of the four genes when expressing certain combinations of
+TALEs, with increases in mRNA abundance spanning a striking 4 orders
+of magnitude. By systematically varying these combinations, output
+gene expression levels were tunable over a 500-fold range (here TALEs
+were constitutively expressed from a common promoter, and therefore
+full TALE vs expression response curves were not reported since TALE
+concentrations were not titrated). Similar in concept to TALEs,
+eukaryotic zinc fingers (ZFs) are
+small (∼30 amino acid) modular domains that bind to 3 bp DNA
+regions with engineerable sequence specificity and can be linked into
+multifinger arrays that recognize longer sequences. In recent work, Khalil () used the OPEN platform to construct an artificial library of specific and orthogonal ZF
+array-promoter pairs, in particular, three-finger arrays that bind
+to cognate 9-bp operators. They then fused the arrays to a minimal
+VP16 TAD to create a library of synthetic TFs (ZF-TFs) that activated
+expression with  ranging from 1.3- to 6-fold
+and then showed that key TF properties could be rationally and independently
+adjusted to further tune transcriptional output. First, they multimerized
+ZF-binding operator sites in order to recruit greater numbers of ZF-TFs.
+For promoters harboring one, two, and eight tandem operators, corresponding
+increases in maximal expression were observed (indicating a possible
+increase in , although full response
+curves were not presented); interestingly, a less-obvious decrease
+in  was also seen. They then performed structure-guided
+mutation of the ZF array backbone (, outside
+the DNA recognition helices) to decrease its DNA-binding affinity,
+presumably implying outward  of the
+expression response curve. Decreased expression levels were indeed
+seen as the number of mutated residues increased from one to four.
+Finally, they tested configurations in which two different ZF-TFs
+could dimerize  the addition of modular PDZ protein–protein
+interaction domains from metazoan cells. In this case, expression
+from a single promoter containing the two corresponding operator sites
+was shown to be synergistic in nature when both ZF-TF types were present,
+with increased  due to the interaction. In a recent study, Lohmueller () fused various leucine zipper (LZ) homodimerization
+domains to ZF-TFs and found that these added domains improved activation
+and repression up to 2.5- and 7.5-fold, respectively, using a human
+c-Jun LZ (dimerization  = 448 μM)
+and up to 10-fold and 8-fold, respectively, using a stronger homodimerizing
+yeast GCN4 LZ ( = 8 nM). This corresponds
+to  tuning in the activating case and  tuning in the repressive case. RNAPs that are orthogonal
+to native promoters offer an alternative to activating TFs. Orthogonality
+permits varied concentrations within a cell without compromising native
+cell function and therefore varied rates of transcription exclusively
+from cognate (RNAP-specific) promoters. Temme () developed a set of four orthogonal
+variants of the heterologous T7 RNAP along with cognate polymerase-specific
+promoters for use in . Similar to swapping
+TF-promoter pairs, these T7 RNAP variants could be interchanged to
+alter the expression response curve, albeit coarsely and unsystematically
+(published results show varying output levels at saturating T7 RNAP
+concentrations, corresponding to varying  or , but omit full response curves); some
+finer tuning, however, was achieved  mutagenesis
+to a 5-bp strength-determining region of the promoter. Nuclear
+Localization and Export Sequences In eukaryotic
+cells, genetic material and transcriptional machinery is contained
+in the nucleus, segregated from translational and metabolic machinery
+in the cytoplasm. The bidirectional translocation of TFs through the
+nuclear envelope ( nuclear pore complexes) facilitates
+another layer of transcriptional regulation, as transfer rates vary
+among different proteins and in some cases for the same protein depending
+on its state of post-translational modification (, phosphorylation state). While macromolecules smaller than ∼40
+kDa can passively diffuse through these pores, most proteins with
+intranuclear function undergo active but selective transport mediated
+by nuclear import and export receptors that recognize and bind to
+certain short amino acid nuclear localization sequences (NLSs) and
+nuclear export sequences (NESs), respectively. Sequence variation generates different binding affinities, which
+correlate to protein import and export rates and therefore nuclear
+concentration. By fusing different NLSs
+and (in some cases) NESs to the termini of proteins, researchers have
+shown the ability to adjust the ratio of  steady-state
+nuclear to cytoplasmic accumulation over a wide range in different
+eukaryotic cells including yeast. Furthermore, variants
+of so-called classical NLSs have been generated with quantified binding
+affinities to Importin (the import receptor protein) ranging over
+several orders of magnitude. Within our Hill function
+representation of gene expression, increasing the ratio of nuclear
+to cytoplasmic TF by some factor would be equivalent to decreasing
+the Hill constant, , by the same factor (where the
+input  remains representative of total nuclear-plus-cytoplasmic
+TF concentration), thereby  the expression
+response curve. Nuclesome-Disfavoring Sequences Recently, the use of
+nuclesome-disfavoring sequences has emerged as a promising tuning
+technique in eukaryotes. TF-promoter binding is regulated by nucleosomes,
+segments of DNA wrapped around histone proteins that are the fundamental
+repeating unit of chromatin structure, that restrict access to potential
+operator sites. In a recent study, Raveh-Sadka () tuned transcription activation in yeast
+by targeting local nucleosome organization, accomplished by the insertion
+of poly(dA:dT) tracts (homopolymeric stretches of deoxyadenosine nucleotides,
+highly prevalent in natural eukaryotic promoters and known to disfavor
+nucleosome formation) into a specific promoter. Rational fine-tuning
+was demonstrated by systematically varying the length, composition
+(, purity), and relative distance from the activating
+TF operator site of the inserted poly(dA:dT) tract. Manipulating these
+tracts affects TF access to its cognate operator site, which in principle
+results in modulation of the average TF to DNA binding affinity and,
+therefore,  of the expression response
+curve. There are two standout benefits of this technique: First, it
+offers much finer control over gene expression than possible even
+with singular point mutations to the TF operator site. Second, it
+works around the problem of limited orthogonal TFs; for example, poly(dA:dT)
+tracts can generate a multiplicity of responses from different promoters
+using the same common TF. Expression control at the translational
+level represents a promising alternative to the control of transcription
+initiation. mRNA transcripts are often targeted by RNA-based regulators
+on the basis of Watson-Crick base pairing. This has enabled researchers
+to design and tune novel regulators using model-based techniques,
+permitting a systematic engineering approach not yet available for
+the protein effectors used in transcriptional control. In this section,
+we present methods to tune constitutive translation rates (modifying
+ribosome binding sites (RBSs), codons, and mRNA degradation rates)
+and translation rates that are inducible by noncoding RNA or other
+small molecule effectors (riboregulators, aptamers, and RNA interference
+(RNAi)). For a general review of natural RNA-based regulatory devices,
+see ref (); the engineering
+and current diversity of synthetic devices are reviewed in refs () and (), respectively. Ribosome
+Binding Site Modifications Modifying the RBS
+on an mRNA transcript alters the efficiency of translation initiation,
+thereby in principle  the overall expression
+response curve. Currently, the RBS is one of the most attractive options
+for tuning because its strength can be, in large part, forward-engineered
+using model-based design. Citing the previous work of others as their
+foundation, Salis () developed a predictive method for designing synthetic RBSs for any
+gene of interest based on statistical thermodynamic modeling. Experimental
+validation of over 100 predictions in  showed
+the method’s predictive accuracy to be within a factor of 2.3
+over an impressive 5 orders of magnitude of translational efficiency. In addition to modifying the RBS,
+the ribosome itself can be modified such that it becomes orthogonal
+to wild-type translation, recognizing instead synthetic RBSs. By modifying internal segments of the orthogonal ribosome’s
+rRNA,  of translation can be achieved. Through a combination of computational design
+and experimental measurement, Chubiz and Rao demonstrated that orthogonal ribosomes could display apparent  by varying the sequence of the 16S rRNA.
+They further demonstrated tuning of dose-responses to inducers of
+either rRNA or cognate orthogonal ribosome mRNA, achieving  and  tuning. While AUG
+is the most commonly
+used start codon in most species, translation can also be initiated
+from alternative start codons that differ in efficacy and differ between
+species. In , for example, varying start codon
+usage can  an expression response curve,
+both up and down relative to the standard AUG start codon. Similar possibilities exist in eukaryotes wherein
+start condons seem to be especially sensitive to genetic context.
+For example, the presence and length of flanking polyU or polyA sequences
+can induce translation initiation from yeast non-AUG codons such as
+UUG, ACU, and ACG that otherwise exhibit almost no translational activity. Context sensitivity is also a property of prokaryote
+start codons, where  can arise from flanking
+polyA/U sequences, nearby stem-loops, and variations in the proximity
+and strength of the RBS. In synonymous codon optimization,
+the triplet RNA sequences coding for amino acids are replaced with
+alternative triplets coding for the same residue. Organisms display
+kinetic preference for certain codons sequences, and codon replacements
+can significantly affect the efficiency of translation elongation,
+thereby altering translation rates and total gene expression levels. Welch () devised a partial least-squares based model
+to correlate synonymous codon choices for a particular gene with its
+observed expression level in . (Interestingly,
+the codon choices that maximized expression were not necessarily those
+most commonly found in native  transcripts.)
+Combining this model with a genetic algorithm allowed for the generation
+of synthetic transcript sequences that produced precalculated expression
+levels. In principle, codon optimization allows for  of a gene expression response curve, under the assumption
+that codon mutations do not interact with other control elements. A riboregulator is an RNA sequence that
+responds to the Watson-Crick (sense-antisense) base pairing of a signaling
+nucleic acid molecule, commonly for the purpose of regulating translation.
+Isaacs () introduced
+a short DNA sequence complementary to and directly upstream from the
+RBS, such that the 5′ UTR of resulting mRNA transcripts, referred
+to as -repressed mRNA (crRNA), folded naturally
+to form a stem-loop structure that sequestered the RBS and inhibited
+translation initiation with extremely low  levels
+(down to 2% in ). Activation was then achieved
+by independently transcribing noncoding RNA, referred to as -activating RNA (taRNA), designed to target and hybridize
+to the crRNA, unfold the stem-loop structure, and expose the RBS.
+Tweaking sequence complementarities provided limited coarse-tuning
+of the taRNA vs expression rate response curve: alterations to the
+stem of the crRNA stem-loop structure resulted in modest variations
+in  levels, while taRNA truncation and alterations
+to the taRNA-crRNA hybridization sequence influenced activation levels,
+possibly at least in part a result of  of the response curve, since variations to taRNA-crRNA binding affinity
+were observed. Practically speaking, the easiest way to obtain
+differing responses using riboregulators is to simply choose from
+a set of precharacterized heterogeneous riboregulators; if these riboregulators
+are functionally orthogonal, they can be used simultaneously and effectively
+within the same cell. Isaacs () produced two orthogonal crRNA-trRNA riboregulator pairs
+for  that exhibited 8- and 19-fold repression-to-activation , and this set was later expanded by Callura () to include two additional
+orthogonal pairs with ∼70- and ∼200-fold dynamic ranges.
+Recently, Mutalik () used a model-guided design approach, involving hybridization free
+energy calculations and data clustering algorithms, to forward engineer
+new families of five and six mutually orthogonal -repressed riboregulators for  with consistent
+and predictable  levels. In the process, riboregulators
+with leakage levels ranging from 10% to 95% of the nonrepressed expression
+level were isolated. A post-transcriptional
+aptamer is a sequence
+of nucleotides designed, typically through an  selection process, to bind strongly and specifically to a ligand
+of interest. Such sequences are playing
+an increasingly prominent role in post-transcriptional control devices:
+by serving as allosteric sites built into mRNA transcripts, they enable
+coupling between exogenous ligand concentrations and translation rates. Aptamers are normally sourced synthetically:
+given a particular ligand of interest, the space of possible nucleotide
+sequences is methodically searched  a directed-evolution
+procedure known as SELEX (Systematic Evolution of Ligands by EXponential
+enrichment). By coupling aptamer technology to -acting
+RNA molecules, Bayer and Smolke were
+able to engineer several ligand-controlled riboregulator systems,
+called antiswitches due to the fact that a ligand-induced conformational
+change exposes an antisense sequence (otherwise sequestered by a proximate
+complementary sequence) that binds a target mRNA transcript and blocks
+its translation. Tuning was demonstrated in  by varying the conformational equilibrium of the -acting RNA itself: lengthening the sequestering sequence or introducing
+mismatches between it and the antisense domain increased or decreased,
+respectively, the amount of effector ligand required to repress target
+mRNA repression. This resulted in  and
+changes to the  of the ligand vs expression
+response curve; the latter reflecting changes to the fraction of the -acting RNA molecules with their antisense domains
+exposed in the absence of ligands. Carothers () created a set of tunable RNA-based
+devices capable of delivering
+a wide range of gene expression outputs. One set of RNA structures
+took the form of ribozymes: RNA structures able to catalyze reactions.
+These ribozymes catalyzed 5′ UTR cleavage in target mRNA, leading
+to increased mRNA half-life and thus to greater gene expression. A
+second set of RNA structures, classified as aptazymes, exhibited similar
+UTR-cleavage activity but were also augmented with aptamer sequences
+allowing for ligand-sensitive cleavage rates. A sophisticated modeling
+approach was used to guide the design process, combining a biochemical
+kinetic model with RNA folding simulations. Twenty-eight distinct
+RNA systems were constructed and characterized experimentally, with
+widely varying gene expression levels suggesting ligand vs expression
+response curves with various . Importantly,
+the model was successful at predicting the observed experimental results,
+and analysis of the model offered direct guidance in the design process
+by identifying important steps in the biochemical kinetics and predicting
+sequence mutations likely to affect those steps. This highlights the
+strong potential for tuning ribozyme/aptazyme devices through systematic,
+model-guided design. In antisense
+RNA-mediated
+transcriptional attenuation, the binding of an antisense RNA to an
+“attenuator sequence” in the 5′ UTR of a nascent
+mRNA transcript causes it to fold into a configuration that exposes
+an intrinsic transcriptional terminator hairpin, resulting in premature
+transcription termination. Lucks () designed three such
+antisense RNA sequences to function orthogonally in . In a method mirroring the repetition of operator sites in a promoter,
+series insertion of an additional identical attenuator sequence into
+the 5′ UTR of the target transcript  and
+reduced the  level of the antisense vs expression
+response curve in a manner agreeing remarkably well with the multiplication
+of single attenuator Hill functions (when normalized to 1); see Figure A. This suggests that attenuators in series function
+independently, as in the case for engineered tandem ribozyme devices. http://www.nature.com/msb/index.html Examples of experimental tuning curves for post-transcriptional
+regulation. (A) Dose-response curves for IPTG-inducible pT181 transcriptional
+attenuators. Curves are shown for wild-type (left) and mutant (right)
+attenuators designed to function orthogonally. Repression curves for
+a single repeat of the attenuator (circles) and for two attenuators
+in tandem (squares) are shown; addition of the second attenuator leads
+to a decrease in leakage and an increase in steepness. Image from
+ref (). Copyright
+2011 National Academy of Sciences of the United States of America.
+(B) Tuning of horizontal scaling and leakage of shRNA switches  modulation of the 3′ length (left) and 5′
+length (right) of the region of complementarity between the competing
+strand and the shRNA stem sequence of a hairpin transcript. On each
+plot, results are shown for multiple sequence lengths. Image from
+ref (). Reprinted
+by permission from : , Beisel, , , 224, copyright
+2008. The previously mentioned post-transcriptional
+strategies affect translation efficiency per mRNA transcript. An alternative
+approach to tuning translational rates involves controlling the transcript
+concentrations themselves; this would lead to  of the gene expression response. To this end, researchers have developed
+targeted methods for manipulating the rate of mRNA degradation. Early work examined factors involved in controlling mRNA stability,
+most notably the effect of hairpin secondary structures in the 5′
+UTR of the transcript (reviewed in ref ()). By introducing rationally designed hairpins
+into  mRNA, Carrier and Keasling were able to influence half-lives over an order-of-magnitude
+range. More recently, Babiskin and Smolke developed an RNA device in  enabling
+aptamer-mediated transcript cleavage. This was done by inserting into
+the 3′ UTR of the transcript of interest a hairpin-shaped formation
+amenable to cleavage by the ribonuclease Rnt1p and containing an aptamer
+sequence that leads to inhibited cleavage activity when ligand-bound;
+in the absence of ligand, Rnt1p cleavage proceeds normally and the
+transcript, with its polyA tail removed, is quickly degraded. Babiskin and Smolke employed three
+different strategies to tune the monotonically increasing ligand vs
+gene expression response curve. Changes to a key region of the hairpin
+sequence controlling cleavage efficiency yielded various combinations
+of  and  tuning,
+typically with only slight . Changes
+to another key region of the hairpin controlling ribonuclease binding
+affinity and containing the aptamer sequence resulted in more notable , as was expected; in addition, changes
+in  and  levels
+were again observed, likely resulting from nucleotide modifications
+to the hairpin stem that were required for variable aptamer integration.
+Finally, positioning multiple hairpin copies (up to three) within
+the 3′ UTR resulted in outward  and reduced  levels due to the increase in potential
+cleavage targets for Rnt1p. In particular, the expression response
+curve’s Hill constant, , increased nearly
+additively with hairpin copy number, while the leakage level decrease
+was approximately multiplicative (47%, 20%, and 10% for one to three
+copies). RNA interference
+is the process whereby
+small double stranded RNAs (dsRNAs) down-regulate protein expression  either steric hindrance of the ribosome or induced endonuclease
+cleavage of the target mRNA. Both of these processes are mediated
+by the RNA-induced silencing complex (RISC), which comprises a number
+of interacting proteins, and the single strand from the dsRNA complementary
+to the target site. The development of RNA interference as a
+therapeutic tool to silence gene expression has spurred the search
+for novel and improved pharmaceutical properties for medicinal purposes
+(reviewed by Rettig and Behlke). The
+potential to introduce synthetic small interfering RNAs (siRNAs) into
+cells and tissues has led to a wide-ranging examination of siRNA properties,
+particularly their stability under hostile conditions (such as in
+blood) and their silencing strength. The search has largely involved
+screening based on sequence and target sites and on chemical modifications. Efforts have typically
+focused on identifying the strongest and most robustly silencing siRNAs,
+but for tuning purposes the range of characteristics across an entire
+library is of interest: choosing siRNAs with varying binding affinities
+potentially allows one to achieve  of
+an siRNA vs gene expression response curve, while choosing those with
+varying silencing strengths has the potential to influence . Thus far, a strong focus on finding the strongest silencers has
+meant that other library candidates have rarely been characterized;
+collecting data on the full range of silencing strengths obtained
+from a library would provide valuable tuning information for future
+applications. One potential method of delivering siRNAs to human
+cells is through
+the bloodstream, in which case their serum stability is critical.
+Hong () demonstrated
+that a large proportion of native siRNAs are serum stable and that
+RNA duplexes in serum are cleaved preferentially at two sequence-dependent
+dinucleotide sites, which can be avoided during design in order to
+improve stability. For siRNAs containing these dinucleotide sites,
+even single modifications to the sugar backbone within the sites were
+sufficient to significantly increase stability. Varying siRNA serum
+stability led to  of the silencing
+response to a given dose of siRNA. A study by Patel () compared the potency
+across sets of standard siRNA constructs used
+to target various sites on single genes essential for cell growth.
+Although the general trend was that longer, chemically modified siRNAs
+yielded more effective silencing, the specific target sequence also
+played a substantial role, leading the authors to suggest that the
+length, chemical modification state, and target site sequence should
+all be considered as factors in an siRNA’s level of silencing.
+Carrying out short-term growth assays showed  over an order of magnitude of siRNA concentrations. Using
+an  method for controlling siRNA
+concentration, Beisel () described the use of small hairpin RNA (shRNA)-based switches
+that respond to chemical induction through an aptameric distal loop
+embedded in the hairpin sequence. The hairpin exists in equilibrium
+between two conformations, one that is efficiently processed by the
+RNAi machinery and another that is not. In the latter, the aptamer
+is exposed and binding of a ligand stabilizes this conformation, effectively
+preventing the hairpin from forming its active siRNA state. Thus,
+higher intracellular ligand concentrations reduce silencing of the
+shRNA’s target protein. Aptamers responsive to hypoxanthine,
+tetracycline, and theophylline ligands were successfully tested in
+human HEK293T cells. Guided by a semiempirical thermodynamic model,
+the lengths of the complementary RNA regions in the aptamer-stabilized
+shRNA conformations were varied, yielding systematic changes to the
+expression response curve, primarily in  and ; see Figure B. In a follow-up study, Beisel () inserted RNA aptamers into the basal stems
+of shRNAs, rather than the distal loops. In this system, the shRNA
+sequence itself was inserted into the 3′ UTR of a fluorescent
+reporter, allowing for direct monitoring of shRNA levels. Interestingly,
+the physical size of a mismatched basal bulge was found to correlate
+directly with the degree of repression of the shRNA against its target,
+suggesting that it provides a steric cue for processing of the hairpin.
+This allowed for  tuning through modulation of
+the basal bulge size, though the choice of size was limited by the
+requirement of efficient aptamer-ligand binding.  was achieved by adding more copies of the shRNA in tandem onto the
+3′ UTR of the reporter gene; up to four copies were added,
+separated by spacer sequences. Each added copy reduced both uninduced
+and fully induced expression levels, consistent with a vertical scaling
+effect. Different spacer sequence lengths were also tested, separating
+two copies of the shRNA in the 3′ UTR. Increasing the spacer
+length was found to decrease  without appreciably
+affecting the maximal activity level in this case. Pfleger () describe a method for tuning the relative
+expression of multiple genes within an operon using tunable intergenic
+regions (TIGRs): intergene nucleotide sequences containing control
+elements that include mRNA secondary structures, RNase cleavage sites,
+and RBS sequestering sequences. TIGRs are designed for placement between
+two genes in a polycistronic operon so that upon transcription, the
+RNase cleavage site is cut and two distinct transcripts emerge, each
+containing a residual portion of the TIGR sequence (at the 3′
+and 5′ ends, respectively) that modulates transcript stability
+and translational efficiency. Moreover, large secondary structures
+in the TIGR can lead to premature transcription termination, heavily
+affecting the transcriptional efficiency of the second gene in the
+operon. By assembling and screening large libraries of TIGRs, Pfleger () demonstrated that TIGRs
+could vary the relative expression levels of two bicistronic genes
+over a 100-fold range (offering in principle  of an expression response curve). Furthermore, they simultaneously
+tuned the expression of three genes within an operon encoding a heterologous
+mevalonate biosynthetic pathway in  in order
+to optimize its output flux. Another recent development is
+the use of protein-based systems to implement control at the post-transcriptional
+level. Stapleton () described such a system, built around the regulatory protein L7Ae,
+that enabled tunable translational repression. Provided that the recognition
+sequence for L7Ae (or a variant thereof) is present upstream of the
+coding region of interest, the L7Ae protein will sterically block
+translation of the downstream sequences. The repression is entirely
+translational and does not affect the expression of other cistrons
+translated from internal ribosome entry sites (IRESs), nor is it expected
+to appreciably modulate the degradation rate of the transcript.  tunability was achieved  an
+informed trial-and-error process: the wild-type L7Ae binding sequence
+was mutated with the intent of reducing the repressive strength of
+the interaction to varying degrees compared to the wild-type interaction.
+The authors achieved considerable ,
+but the range of experimental results did not make it possible to
+determine if they also obtained ; basal
+expression remained largely unchanged across all trials. One apparent
+advantage of protein-based translational control over RNAi-based strategies
+is that the protein-based systems may require relatively less ancillary
+machinery thereby reducing the risk of saturating dynamics, whereas
+in the case of RNAi, it has been observed that multiple targets or
+multiple shRNAs in the same cellular system occasionally saturate
+the RNA-induced silencing complex responsible for transcript regulation. Biological devices
+that respond by
+producing new proteins are forced to operate on long time-scales (minutes
+to hours or even days) by the delays inherent in the processes of
+transcription and translation. Post-translational systems, involving
+protein-protein interactions, can respond much more quickly (fractions
+of a second to minutes) to changing inputs. Unfortunately, this increased
+speed currently comes at the cost of significantly increased difficulty
+in tuning protein function. Transcriptional initiation and much of post-transcriptional processing
+are highly modular and accessible through well-established molecular
+biology protocols, allowing designers to freely substitute promoters,
+coding regions, and untranslated regions while keeping basic functionality
+largely unchanged. Proteins, by contrast, function through chemical
+interactions that are strongly dependent on their physical structure,
+and the complexity of this structure-function relationship makes rational
+protein design challenging. These issues mean that there are as yet
+fewer examples of tuning available in the post-translational space
+than in the previous two levels of regulation. Dose-Responsive Enzymatic
+Catalysis Consider a process
+describing an enzyme-catalyzed biochemical reaction, where the process
+input is the amount of available substrate, and the output response
+is the reaction rate. Such a response curve is often described by
+well-known Michaelis-Menten kinetics wherein the reaction rate varies
+from zero to some saturating value  =  (for effective
+enzyme concentration ) as the substrate concentration
+increases (see Figure A). In our Hill-function
+notation, such a process has ′ = 0,  = , and  = 1. (We offer this function as an example of an enzyme-catalyzed
+response curve, but please note that the assumptions underlying the
+Michaelis-Menten equation will not apply to all post-translational
+systems. Signaling cascades in particular will tend to violate the
+assumption that the catalyzing enzyme is present in much lower concentrations
+than a target substrate.) Many naturally occurring enzymes change
+their catalytic activity as a function of the binding of some intra-
+or extracellular ligand. This results in a change in the effective
+value of , thereby  the Michaelis-Menten response curve (see the relationship
+between Figures A and B). (In this special
+case with ′ = 0, this also represents .) Therefore, this can be seen as a form
+of response curve tuning, where the tuning strength is dependent on
+ligand concentration. Designers needing
+to control processes
+whose enzyme catalysts do not natively respond to any ligand may benefit
+from reengineering of the enzyme itself. Protein switches are enzymes
+engineered to have inducible ON and OFF states in terms of their catalytic
+activity: the binding of a ligand flips individual proteins between
+their active and inactive conformations. This permits the tuning situation
+described above, where effective  is
+tuned through ligand concentration. In many such systems, the ligand
+vs  dose-response curve is also easily
+tunable. Additional coverage of protein switches may be found in several
+recent reviews. Most strategies for generating protein switches involve fusing
+or inserting modular domains into the protein of interest such that
+they disrupt or facilitate, either sterically or conformationally,
+the activity of the target protein. Examples of inputs for this type
+of regulation are small molecules, light, ions, and redox conditions. One important approach is to construct an autoinhibitory
+pair of domains that dimerize and inhibit protein activity when no
+competitive ligand is present. In the presence of the ligand, the
+dimerization is disrupted, allowing the protein to become active (Figure C); we describe two such switches, below. Dueber () controlled
+the activity of the actin polymerizing protein N-WASP by fusion of
+both an SH3 protein domain and an SH3-binding peptide, such that in
+the absence of competing (nonfused) SH3-binding peptides, N-WASP was
+autoinhibited and rendered inactive. The dose-response between free
+SH3-binding peptides and active N-WASP was showed to be tunable by
+controlling modular components such as the number of SH3 domains and
+SH3-binding peptides fused to each N-WASP, as well as their binding
+affinities. The primary result of doing so was  modulation, as shown in Figure A; however,
+steepness was difficult to manipulate independent of secondary changes
+to , , and . The autoinhibitory paradigm
+was also expanded to include PDZ and GBD interaction domains, which
+were subsequently assembled together to regulate N-WASP under the
+control of a three-input AND gate operating on fast time-scales. Lu () reported
+results on a peptide system in which an autoinhibitory PDZ domain
+was fused to a binding domain for SH3 peptides. In the absence of
+SH3, the PDZ formed a loop structure, while binding of SH3 to its
+domain prevented this autoinhibition, placing the peptide into a loop-free
+conformation. The conformation of the system was determined through
+fluorescence measurements, with the looped state defined as inactive
+and the loop-free state defined as active. Decoy sites, able to bind
+SH3 without affecting the activation state of the system, were then
+added to the peptide and shown to have an extensive ability to tune
+the relationship between the peptide’s activation state and
+the level of SH3 present. Use of a single autoinhibitory PDZ pair
+resulted in a noncooperative dose-response to free SH3, while varying
+the numbers and binding affinities of the decoy domains led to a variety
+of dose-responses to SH3, implementing  and  tuning (Figure B). Tuning of enzymatic
+reactions. (A) Michaelis-Menten kinetics for
+an enzyme-catalyzed reaction: the rate of the reaction → varies with the input concentration of
+the substrate, , and with the enzymatic catalyst’s
+effective concentration and catalytic efficiency:  = . (B) The relationship between  and
+the input ligand can be characterized (and itself tuned): each marked
+point, i–iv, on the  vs ligand
+concentration curve yields a different response curve shown in panel
+A. (C) A protein switch, in which the protein of interest (POI) contains
+autoinhibitory domains that bind and inactivate the enzyme’s
+catalytic activity, reducing the enzyme’s effective concentration.
+The presence of a competitively binding ligand can relieve the inhibition
+and restore catalytic activity. http://www.nature.com/nbt/index.html Examples
+of experimental tuning curves for post-translational regulation.
+(A) Steepness tuning by varying the number and binding affinity of
+an autoinhibitory domain in protein switches. Reprinted by permission from : , Dueber , , 660–662, copyright 2007. (B) Steepness
+tuning and horizontal scaling by varying the binding affinity of a
+decoy domain in a peptide system. Structure rescue is another promising
+strategy for tuning enzymatic activity. Allosteric control is engineered
+into an enzyme by structurally weakening the enzyme through mutation
+to the point that its enzymatic activity is abolished, then identifying
+a small molecule able to bind to the mutant protein and restore its
+original structure. Average enzymatic activity therefore becomes tunable
+through the concentration of the small molecule, providing inducible  of the Michaelis-Menten curve  control over . Deckert () successfully restored β-glycosidase
+activity in a W33G mutant by rescue with indole, adopting the approach
+that the small molecule inducer should be exactly complementary to
+the residue(s) missing in the mutant protein, to achieve structure
+rescue. They focused on buried and tightly packed tryptophan residues
+that, when mutated to glycine and supplemented with indole, yielded
+a protein structure highly similar to the original. The best mutant
+was able to fully restore original activity levels in the presence
+of sufficient indole and thus was exogenously tunable from effectively
+zero activity to its wild-type level. We have focused mainly
+on rates of production of biochemical species, but of course one can
+also treat degradation as its own process with a response curve (typically
+Michaelis-Menten) to be tuned. To this end, a number of techniques
+have been developed. One method involves tagging proteins with a short
+amino acid recognition sequence to induce degradation by an alternative
+set of proteolytic machinery. The ssrA tag, for example, induces degradation
+catalyzed by the ClpXP protease system, and control of some combination of the tag sequence variation, the
+ClpXP protease level, and the level of SspB (an optional adaptor protein)
+has been shown to effectively tune both  () and the Michaelis constant  (). Tunable degradation has also been achieved by adding modular
+domains to proteins that promote proteolytic degradation in the presence
+(or absence) of a bound ligand. Most such ligands are small molecules,
+including Shield ligands, hydrophobic libraries
+for Halo-tags, auxin, and trimethoprim (TMP). Proteins, DNA, and RNA have all been used
+to construct “scaffolds” that co-localize multiple interacting
+molecules by assembling them into a single physical complex, enhancing
+interaction rates. In simple cases, this would serve to tune the effective  of a biochemical reaction, providing  for the reaction process. Dueber () built synthetic protein
+scaffolds bearing modular SH3, PDZ, and GBD interaction domains that
+spatially recruit three metabolic enzymes tagged with cognate peptide
+ligands in order to enhance the production of mevalonate and glucaric
+acid. Varying the number of interaction domains fused to the scaffold
+allowed for optimization of the stoichiometry between the recruited
+enzymes, resulting in a 77-fold improvement in mevalonate production,
+as well as a 3-fold improvement in glucaric acid production (despite
+already high yields). Note that in this study, the relationship between
+the scaffold concentration and total product production was nonmonotonic,
+rising to a peak at intermediate scaffold concentrations. Although
+the variation of the interaction domain stoichiometry resulted in
+prominent changes to peak height and location, these response curves
+are not captured by the sigmoidal response curves we have focused
+on in this review. DNA and RNA molecules can also be used as
+scaffolds. For example,
+enzymes can be fused to zinc fingers or other programmable DNA-binding
+domains and RNA aptamers can be designed to bind
+enzymatic partners. Our final sections address topics that diverge from
+the issue of
+tuning production rates but do bear on the broader problem of systematically
+creating biological devices: the use of network structure effects
+to tune net steady-state response curves and the creation of consistent,
+modular systems. Extending or restructuring
+the internal
+signaling network of a process can introduce complex and significant
+transient dynamics that cannot be accurately described by eq . For example, relatively simple feedforward or feedback
+connections can give rise to delayed responses, oscillation, or temporal
+adaptation; this implies time-dependent
+rate response curves. Although important in many design scenarios,
+such behavior is beyond the scope of this review. In this section,
+we address only rate response curves for which this behavior is insignificant,
+focusing our attention on how network extension has been used to tune
+a process’s steady-state response curve. In principle,
+network extension is a strategy limited only by the availability of
+orthogonal parts that can be tuned into similar ranges of responsiveness;
+in terms of a steady-state response, the size of a process’s
+internal network structure is irrelevant. Here, however, we review
+a few examples where network extension is mainly confined to the addition
+of a single component or network node. Linear Cascades: Sensitivity
+Tuners A simple example
+of network extension is provided in the work of a University of Cambridge
+team, who constructed and characterized a set of 15 transcription-based
+“sensitivity tuners” in  for
+the 2009 iGEM competition. Each tuner
+is essentially a phage-derived activating TF-promoter pair designed
+to be inserted, in series, between the input and output signals of
+a linear transcriptional cascade in order to modify the shape of its
+rate response curve. Each tuner was characterized in an otherwise
+consistent construct described by  →  → , where → denotes promoter
+up-regulation, and , , and  represent chemical inducer, phage activator, and reporter
+protein levels, respectively (see Figure A).
+Describing the rate response curve as in eq , they found that, across the set of 15 tuners,  varied by an order of magnitude, ′ was
+fairly consistent,  depended to a large extent on
+the tuner’s activator type (and less on the promoter choice),
+and  shifted between values of around 2.25 to 4
+(experimental resolution was too small to characterize  with much confidence), leading to , , and , respectively. Another early study by Hooshangi , investigating synthetic transcriptional
+cascades comprising one, two, and three repression stages in  (see Figure B), demonstrated
+that as cascade length increases the overall steady-state response
+curve  (increasing ). http://www.nature.com/msb/index.html Schematics
+describing the general biochemical network designs reviewed
+in the Network Extension section. (A) A two-promoter construct containing
+an interchangeable sensitivity tuner, which comprises the gene for
+a transcriptional activator protein and its cognate promoter. Our
+schematic has been drawn based on the description provided in ref (). (B) From ref (). Transcriptional cascade
+comprising one, two, and three repression stages. Hooshangi , , , 3581–3586. Copyright 2005 National Academy of
+Sciences, U.S.A. (C) From ref (). An internal feedback loop is engineered into the yeast
+mating MAPK pathway  the downstream expression
+of a pathway modulator protein that binds to the Ste5 scaffold protein
+through a leucine zipper interaction. Feedback polarity is determined
+by the choice of either a positive or negative modulator, which up-
+or down-regulates the MAPK cascade, respectively; feedback gain is
+tuned by varying promoter strength or varying the leucine zipper domains
+to affect binding affinity. From Bashor, , , 2008, , 1539. Adapted with
+permission from AAAS. (D) From ref (). Two coupled positive feedback loops are engineered
+into a two-component signaling system  downstream
+expression of both the transmembrane receptor and intracellular TF
+proteins. Adapted by permission from : , Palani , , 7, copyright 2011. (E) From ref (). Two parallel pathways
+constitutively repress the expression of an output protein. One pathway
+uses a TF repressor to repress transcription, while the other pathway
+represses translation using an shRNA to induce RNAi-mediated mRNA
+degradation. In the bottom schematic, a single input signal down-regulates
+TF and shRNA production thereby up-regulating expression of the output
+protein. Adapted from , Deans  A tunable genetic switch based on RNAi and repressor
+proteins for regulating gene expression in mammalian cells, 363–372.
+Copyright 2007, with permission from Elsevier. Feedback Loops: Engineered Scaffold Interactions Bashor () engineered feedback
+into the yeast mating MAP kinase pathway, a post-translational signal
+transduction cascade mediated by the Ste5 scaffold protein, which
+co-localizes signaling molecules by assembling them into a single
+physical complex, thereby promoting correct pathway connectivity.
+An internal feedback loop was generated by expressing a pathway modulator
+protein as a downstream product of the signaling pathway and recruiting
+it back to the upstream pathway  an artificial
+binding site on Ste5 created by fusing cognate leucine zipper interaction
+(heterodimerization) modules to the scaffold and modulator proteins
+(see Figure C). The system was then
+tuned by adjusting the polarity and strength of the feedback signal:
+the former by using either a positive or negative modulator protein
+and the latter by changing the strength of either the leucine zipper
+interaction (using zipper pairs with varying ) or the promoter controlling modulator expression (both to
+the same effect). Positive feedback was shown to  (upward) and  (from ∼0.12 to 2.42) the overall network’s steady-state response
+curve while negative feedback resulted in  (downward). Furthermore, by having the feedback positive modulator
+displace a constitutively expressed negative modulator, response curve  was further increased to ∼2.84. Through the addition of
+a pair of coupled positive feedback loops, Palani and Sarkar were able to engineer bistability into a two-component
+signaling system (a transmembrane receptor that signals an intracellular
+TF  phosphorylation). The switching between stable
+fixed points allowed for steady-state response curves with very high ; in some cases, apparent Hill coefficients of  > 20 were achieved. In this network, shown in Figure D, extracellular ligand binding to the transmembrane
+receptor activates the intracellular TF; the activated TF then activates
+receptor expression (the first positive feedback loop) as well as
+its own expression (the second positive feedback loop). Experimental
+implementation in  used the transmembrane
+receptor CRE1 from  to bind the cytokinin
+ligand isopentenyl adenine (IP), and the yeast TF SKN7 as the intracellular
+TF. A variety of responses curves to IP induction were obtained by
+varying the number of SKN7 operator site repeats in the corresponding
+promoters, thus effectively varying the positive feedback strength.
+Across five variants of the network,  tuning
+with Hill coefficients ranging from ∼2 to
+20 was observed accompanied by changes in . Parallel Pathways: Reducing Leakage In cases where
+tighter repression of gene expression is desired, synthetic biologists
+have had success employing multiple repression mechanisms in parallel.
+This has typically involved supplementing TF repression with a post-transcriptional
+mechanism such as RNAi-mediated mRNA degradation. Deans , for example, used short-hairpin
+RNAs (shRNAs) to induce RNAi mediated degradation and controlled both
+shRNA and TF repressor production using the same input signal, as
+shown in Figure E. Since both the TF and the
+shRNA are constitutively produced in the absence of the input signal,
+the presence of the shRNA pathway reduces steady-state expression . Rinauldo () and Xie () employed similar techniques using small-interfering RNA (siRNA)
+and microRNA (miRNA), respectively. Sophisticated tuning of
+one component in a biological system is of little use if the component’s
+behavior is easily disrupted when its cellular context is changed.
+It is an ongoing challenge in synthetic biology to create systems
+that are  (able to display the same behavior
+repeatedly, and in the face of global background variations such as
+differing cell strains) and  (maintaining
+their behavior when linked with other engineered systems). A variety of phenomena wherein one transcriptional process
+suppresses a second transcriptional process are collected under the
+label of transcriptional interference. This includes physically proximate promoters competing directly
+for RNAP access, RNAPs initiating transcription from one promoter
+colliding with other RNAPs or blocking them from transcribing from
+a downstream promoter, and post-transcriptional interactions such
+as RNAP inactivation or RNA interference leading one transcriptional
+process to reduce the effective transcriptional or translational rates
+of another. Insulated Promoter-Gene Cassettes Miller () created a set of promoter-reporter
+cassettes in which they placed a transcriptional termination sequence
+from  upstream of the promoter regions. This
+made use of the established ability of such termination sequences
+to reduce transcription initiated from promoters other than the target. Using one or two copies of the termination
+sequence, they reduced such external transcription by 94% and 97%
+respectively. In Davis , transcriptional interference was minimized by providing
+insulated cassettes: promoters flanked by controlled sequences both
+upstream and downstream of the transcriptional initiation site (−105
+to +55), thereby providing the promoter a consistent functional neighborhood.
+Inserting a 24-nucleotide sequence known to activate transcription
+in some promoters showed a wide range of resulting changes in activity
+in promoters lacking the flanking insulating sequences, but the promoter
+outputs were very consistent when the insulating sequences were included. Promoter Position Relative to ORI As discussed in the
+transcriptional regulation section, Block () studied the effect of promoter location relative
+to the genomic origin of replication (ORI) on gene expression levels,
+finding that promoters closer to the ORI expressed at higher levels.
+This suggests a mechanism for tuning response curves, but also provides
+a cautionary note in terms of consistency: if a promoter-gene pair
+is inserted into the genome at random, its behavior may vary significantly
+with distance from the ORI. Consistent performance will require control
+of that positioning, though Block () found that expression levels were robust to
+two other forms of alteration: the orientation of the genes and the
+distance between genes and their TFs. Similar considerations also
+apply to promoters on plasmid vectors: promoter position relative
+to the plasmid ORI will also cause variation in effective copy number
+of the promoter and thus alter gene expression levels. Transcription-replication
+interference was observed by Mirkin and Mirkin who found that promoters could, if oriented such that they
+transcribed genes in the opposite direction to that in which DNA replication
+proceeded, cause significant interference with plasmid replication.
+Such interference would lower the plasmid copy number and reduce gene
+expression levels. An alternative method
+of ensuring transcriptional
+consistency focuses on removing unwanted elements from the mRNA transcript
+itself, after transcription but before translation. Qi () made use of the bacterial
+clustered regularly interspaced short palindromic repeat (CRISPR)
+system to protect the expression of target genes from upstream effects.
+Screening a randomly generated library of 30-nucleotide 5′
+UTRs upstream of the RBS and gene coding sequence of a fluorescent
+reporter gene, they measured gene expression of the reporter in , and observed a wide range of expression levels
+across the library, suggesting variable levels of transcriptional
+interference induced by the UTRs. Inserting a CRISPR cleavage site
+targeted by the Csy4 protein reduced the observed relative standard
+deviations of reporter expression by nearly 3-fold in the presence
+of the Csy4 protein, suggesting that the designed system acts to insulate
+the mRNA from upstream effects; by cleaving at the inserted cleavage
+site, Csy4 produces processed mRNA strands that are more independent
+of their upstream genetic context and thus yield more consistent protein
+levels when translated. A
+study by Lou () used sequences designed
+for ribozyme cleavage as a mechanism for buffering transcripts from
+their upstream context. The mechanisms employed in this and the work
+by Qi () are conceptually
+similar, both based on cleaving away the 5′ UTRs to prevent
+their having an impact on gene expression levels. Lou () constructed a logical NOT gate circuit based on transcriptional
+regulation, and tested several different promoters to drive expression
+of the first gene in the circuit. They observed that the NOT gate’s
+transfer function, in this case, the mapping between this promoter’s
+activity and the downstream expression level of the circuit’s
+output protein, varied substantially as a function of the promoter
+chosen. Screening a library of prospective insulator parts identified
+the cleavage sequence RiboJ as the best insulator, and placing the
+RiboJ sequence between the circuit driving promoter and its gene served
+to effectively eliminate the transfer function discrepancies. Transfer
+functions collapsed quite strikingly onto a single curve independent
+of the promoter being used, illustrating the insulating effect of
+removing inconsistent untranslated regions from the start of the resulting
+mRNA strands. A pervasive issue working
+against consistent
+behavior in biological systems is the noise inherent in biochemical
+reactions operating in regimes where fluctuations are not averaged
+away. The topic of noise in biological systems is beyond the scope
+of this review but has been extensively reviewed elsewhere. Clearly there are many
+challenges to be addressed before tuning
+in synthetic biology achieves the status it enjoys in traditional
+engineering disciplines. Noise effects, while increasingly well understood
+theoretically, can be significant or design-breaking in experimental
+implementations. Coupling multiple systems in a biological context
+often has unexpected effects, despite design efforts to achieve true
+modularity. Biology inherently operates in a more interconnected context
+than mechanical or electronic systems, making perfect functional compartmentalization
+correspondingly more challenging and raising the question of how difficult
+it will be to combine multiple types of tuning to affect a target
+process. Biology also comes with substantial context-dependence, making
+it difficult to craft portable designs that can be implemented across
+organisms or indeed across genomic variants of a single species, without
+significant risk of their operation being disrupted by the local context. For all of these challenges, synthetic biology is on a promising
+path, with the library of parts, methods, and approaches growing rapidly,
+year by year; the already extensive list of tuning options available
+to designers in synthetic biology seems certain to continue to grow.
+A combination of awareness of tuning applications and improved experimental
+methods may lead experimentalists to report full tuning curves more
+consistently and to characterize their systems in terms of rates of
+change in addition to steady-state values. Our hope is that evaluating
+the tuning potential of a new method or system will come to be a standard
+part of the process of characterizing it and that libraries of components
+will be augmented with collections of tuning methods, increasing the
+range and sophistication of solutions available for synthetic biology
+design problems..

@@ -1,0 +1,483 @@
+Large chromosomal rearrangements
+and deletions have been observed in both natural and laboratory bacterial
+evolution studies and shown to have profound impacts on bacterial physiology,
+such as improved bioproduct production, increased strain fitness, or changed
+tolerance to stress. However, such desired
+genotypes can only be produced in the lab by time-consuming and laborious
+directed evolution experiments. This is because bacterial genome rearrangement
+and deletion events only occur when a spontaneous but stochastic DNA
+break emerges between direct-repeat sequences. Efficient methods to target this process for large-scale genome
+manipulations would be beneficial to biotechnology. Current genome
+rearrangement strategies often rely on the insertion of exogenous
+recombinase sites into the bacterial genome to facilitate remodeling. The use of site-specific recombinases provide efficient tools for  DNA manipulation, however, targeting recombination
+in a programmable and controllable fashion would broaden and simplify
+implementations of genome engineering for more applications. Recent advances in using the clustered regularly interspaced short
+palindromic repeats (CRISPR) and CRISPR associated (Cas) systems for
+precise genome editing have paved the way of using it for large scale genome modifications.
+CRISPR functions as a prokaryotic and archaeal immune system protecting
+cells from foreign nucleic acids. CRISPR RNAs (crRNAs)
+direct degradation of target DNAs through simple Watson–Crick
+base pairing to recruit Cas9 nuclease to introduce double stranded
+DNA breaks (DSBs) to foreign nucleic acids. These systems
+have minimal sequence targeting constraints, requiring only a small
+proto-spacer adjacent motif (PAM) sequence, which makes it possible to program CRISPR to target almost any sequence.
+CRISPR induced chromosomal DSBs are highly lethal to many bacteria and lead to rapid target DNA degradation. This has been exploited to select for desired mutations and also enabled genome engineering methods in bacteria that are
+capable of DSB repair. However, current genomic DNA
+manipulations in  largely employ site-specific recombinases, which can facilitate
+recombination between defined recombinase sites. These methods have
+enabled large-scale manipulations of the bacterial genome including
+deletion, inversion, and
+insertion of DNA. Employing CRISPR-Cas systems to
+target recombination between arbitrary sequences would complement
+these approaches to increase the versatility of rationally designed
+genome manipulations. Type II CRISPR systems containing  Cas9 nuclease have been shown to
+enable user designated single-stranded DNA cleavage (nicking). This
+is accomplished through mutation of the RuvCI or HNH nuclease domains. Methods employing nicking versions of Cas9 have
+been utilized in eukaryotic organisms to direct homologous recombination
+(HR) and reduce off-target mutations. As genomic DSBs are highly lethal to many bacterial
+species, we sought to investigate the potential application of nicking
+CRISPR systems to induce recombination on the bacterial chromosome. Here, we demonstrate that nicking versions of Cas9 are nonlethal
+when targeting the wild type bacterial genome. Short guide RNAs (sgRNAs) can be programmed to direct single-stranded
+DNA breaks (SSBs) resulting in host cell recombination. We functionally
+validate this with nicking mutant Cas9 using a fluorescent
+reporter system. We show that dual-targeting sgRNAs to genomic repeat
+sequences leads to recombination across 36 to 97 Kilobases. The easily
+implementable and modular nature of our of CRISPR plasmid system enables
+multiplex targeting. Multitargeted CRISPR-nickase systems can remodel
+the  genome resulting in 133 Kb of deleted
+DNA, leading to changes of multiple phenotypes. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00132/suppl_file/sb5b00132_si_001.pdf To experimentally
+assess the lethality of CRISPR-directed SSBs
+in wild type , we constructed a two-plasmid
+system (): one plasmid
+expresses Cas9 and another expresses an sgRNA against a genome integrated
+green fluorescent protein (GFP) gene (a). Multiple mutant versions of Cas9, including
+Cas9, Cas9, and a Cas9 double mutant, were tested. The D10A
+mutation abrogates function of the RuvCI nuclease domain, generating
+a Cas9 capable of only nicking the DNA strand complementary to the
+sgRNA. On the other hand, the H840A mutation removes function of the
+HNH nuclease domain resulting in a Cas9 that cleaves only the noncomplementary
+strand to the sgRNA (a). Combination of both D10A
+and H840A leaves Cas9 catalytically dead (dCas9). Therefore, dCas9 can only bind to target DNA without any
+cleavage of the chromosome. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00132/suppl_file/sb5b00132_si_001.pdf We transformed GFP targeting sgRNA, sg(C1), into  K12 coexpressing the aforementioned Cas9 variants
+and compared resulting
+colonies to a control nontargeting sgRNA, sg(−). As can be
+seen in b,
+sgRNA targeting GFP showed no viable colony forming units when wildtype
+Cas9 (Cas9) was expressed, while nicking or catalytically
+inactive variants of Cas9 do not affect viability. This suggests that
+CRISPR induced DSBs are lethal to  cells while
+CRISPR induced SSBs have no severe impact on viability. It is also
+demonstrated that such impacts are not cleavage position dependent
+(). Although
+it has been reported that HR could be an inconvenience
+in building synthetic gene circuits with repetitive parts, a precise nick between repeat sequences could hypothetically induce
+rationally designed HR to achieve targeted genome deletion. To explore the potential of using CRISPR generated
+nicking to induce targeted HR, we constructed a genome integrated
+synthetic dual-reporter system (a) to query gene deletion and viability. In this system,
+GFP was designed to be flanked by two 129 base pair direct repeats
+(R). We systematically targeted nicking sites between direct repeats
+to both strands of GFP with Cas9 and Cas9. The fluorescent population distributions of sgRNA(T1) Cas9 indicate that GFP is phenotypically lost in 86% of the
+cells (b, red).
+This target site is ∼110bp away from the left repeat. It is
+interesting to see that the percentage of GFP negative cells quickly
+decreases as the target site is moved further away from the left repeat
+(c, blue triangles).
+However, Cas9 nicks result in less recombination (c). This suggests
+a strong strand and position dependency of single-nick induced local-homologous
+recombination. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00132/suppl_file/sb5b00132_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00132/suppl_file/sb5b00132_si_001.pdf To verify HR as the cause of GFP signal loss, individual
+colonies
+were obtained from transformations for further analysis. Fluorescence
+microscope images show that, when targeted by sgRNA(T1) and Cas9, cells have normal morphology and red fluorescent protein
+(RFP) expression while GFP fluorescence is undetectable (d, bottom), (for
+microscopy controls see ). This ruled out cell death as the cause of diminished GFP signal.
+Gel-electrophoresis results also verified a GFP knockout due to HR
+(e). Sanger
+sequencing of the PCR products further confirmed that recombination
+indeed occurred between the two direct repeats, yielding the same
+GFP deletion product (). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00132/suppl_file/sb5b00132_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00132/suppl_file/sb5b00132_si_001.pdf Finally, without the presence of two direct repeats on each
+end
+of GFP, neither Cas9 nor Cas9 can induce
+targeted GFP fluorescence abolishment (). Furthermore, DSBs targeted between homologous sequences
+do not effectively lead to target deletion (). Taken together, our results show that chromosomally
+targeted Cas9 can induce targeted SSBs and enable recombination
+between homologous sequences. To investigate how CRISPR-directed
+SSBs can be applied to delete
+large sections of genome in , we designed
+sgRNAs to target insertion sequences (IS) in direct repeat orientations
+and tested for genome deletion. Widespread distributions of transposable
+DNAs, such as IS elements, have been implicated to be responsible
+for large genomic changes, and also provide a
+rich source of repetitive sequences to apply our method. We identified
+a region with two 1.2 Kb IS5 elements 35 Kb apart. The DNA flanked
+by IS5 elements contains 33 genes in total, including the Histidine
+(His) biosynthesis operon (a). The His operon provides us a convenient screenable
+marker for deletions. Cells containing the His operon are histidine
+prototrophs. When deleted,  are converted
+to histidine auxotrophs (unable to grow without provision of the amino
+acid). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00132/suppl_file/sb5b00132_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00132/suppl_file/sb5b00132_si_001.pdf To employ single-stranded lesions to direct recombination
+across
+the Histidine biosynthetic region, we systematically targeted a series
+of 10 sgRNAs (sgA-J) in the vicinity of the two IS5 sequences. These
+included targets directly adjacent to the repeats (R) on both strands
+along with multiple target sites within the 36.8 Kb region (a,b). We transformed
+K12  expressing nicking Cas9 with plasmids expressing individual and paired sgRNA combinations
+and cultured in pooled transformations and determined paired nicking
+did not lead to a substantial reduction in viability (). We employed a PCR based
+approach to monitor recombination between repeats. Interestingly,
+the recombined site was undetectable in single targeting versions,
+unlike what’s shown above for GFP deletion. This indicates
+individual single-strand breaks are insufficient to direct HR across
+large regions (c). Interestingly, when employing paired sgRNA, formation of the
+deletion product was detectable for multiple combinations (c). We isolated individual
+colonies from pooled transformations and subjected them to random
+screening for histidine auxotrophy. We determined sgRNAs targeting
+adjacent to each other, sg(A:B), and across the repetitive sequences,
+sg(B:I), had prominently undergone recombination (d). Our results show that sgRNAs
+generating a 5′ overhang across the repeat sequence, sg(B:I),
+and sgRNAs targeting in close proximity to each other, sg(A:B), have
+roughly 17 ± 1.6% and 11 ± 3.2% (± standard devation,
+3 biological replicates) success rate of 36 Kb deletion, respectively
+(b,d). Other
+paired-nicking transformations and sgRNA pair H:G were screened and
+confirm histidine operon deletions were rare (). Finally, we confirmed that
+histidine auxotrophs consistently harbor the expected deletion by
+using multiple primer sets querying the presence of starting and recombined
+junctions (e). These results show that dual-targeted nicking systems can effectively
+induce recombination across 36 Kb with efficiencies approaching 20%
+of a bacterial population. The high efficacy of sg(B:I) provided
+us with design principles
+for further implementation of nicking-directed recombination systems.
+sgRNAs should be targeted adjacent to both ends of a repetitive sequence
+with Cas9 cut sites within close proximity (approximately
+22 nucleotides) of the homology. The left sgRNA targets the + strand
+and the right guide targets the – DNA strand. This results
+in a 5′ overhang cleavage orientation (see b, 5′ OH). Interestingly,
+the requisite for a 5′ cut orientation is consistent with previously
+reported application of double nicking systems in mammalian cells. To further explore the potential of our
+method to direct multiplexed
+large-scale genomic recombination, we identified a 97-kilobase genomic
+region with the tryptophan biosynthesis operon (TRP) and the pyrF
+gene flanked by identical 1.2 Kb IS5 repeats (a). This region enables screening for deletion
+by testing for tryptophan auxotrophy along with selection of deletion
+using 5-fluoroorotic acid (5-FOA). We
+created strain KSB1 with duplicate copies of essential genes found
+within the 97 Kb section of genome integrated into separate loci.
+This alleviated the essentiality of the region and enabled nickase-directed
+remodeling. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00132/suppl_file/sb5b00132_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00132/suppl_file/sb5b00132_si_001.pdf To multiplex target the 97 Kb
+genomic region along with the 36
+Kb region tested, we applied principles of dual sgRNA design from
+above experiments. sgRNAs K and L were designed and coupled to the
+previously employed guides B and I. This generated a four-target CRISPR
+system, sg(B:I:K:L), which should direct multiplex remodeling of the  genome (a). We validated the necessity of cooperative nicking
+to induce homologous recombination and determined that four-targeted
+nicking did not substantially reduce transformation efficiency (). In pooled transformations
+of the multitargeted CRISPR device, we detected recombination at both
+His and Trp regions (b). This indicated that HR at both sites was simultaneously
+occurring within the population of cells. To quantify the 97 Kb deletion
+we combined results for 5-FOA and TRP markers. 1.4 ± 0.8% of
+cells exhibit 5-FOA resistance where 47% of the 5-FOA resistant colonies
+exhibited clear tryptophan auxotrophy (). Combining results for both markers, we estimated
+deletion efficiency to be 7 ± 4 deletions per 1000 cells. After
+initial 5-FOA/TRP screens we further tested for histidine deletion.
+Using stepwise screening (see  for
+details) we reliably obtained 36, 97 Kb single and 133 Kb dual-deletions
+from sg(B:I:K:L) transformations (c), indicating successful deletion of 133
+Kb of  genome using our approach. These results
+verify the dual-targeted sgRNA design for directed recombination.
+Likewise, the results exemplify the potential of multiplex CRISPR-guided
+nicking systems to remove large genomic regions. Here we demonstrate
+the ability for CRISPR targeted nicking systems
+to direct recombination across both small and large genomic regions.
+Furthermore, we systematically characterized various sgRNA target
+locations, choice of nicking Cas9, and overhang orientations to identify
+the optimal combination for efficient large-scale genome deletion.
+Targeting paired nicking across repeat elements in a 5′ overhang
+orientation with nick sites located within 40 bp of the homology sequence
+results in directed recombination. This enables a 3% reduction of
+the  genome with only one plasmid transformation.
+Although the genome reductions reported here utilize repeat sequences
+to define the domain of remodeling, it is feasible to generate deletions
+of arbitrary position or to target genome integration by incorporation
+of plasmid based homologous sequences. Genome
+rearrangements are an important part of bacterial evolution,
+which can facilitate large-scale organismal changes beneficial to
+biotechnology. Using engineered SSBs, we enable recombination in
+bacterial cells resulting in multiplex genome rearrangements reaching
+133 Kb in total, about 3% of the  genome.
+In , genome reductions of such scale have
+been generated through multiple years of evolution and can be engineered through recombineering based methods. Our system can recapitulate this scale of reduction
+through a single plasmid transformation. More importantly, the removal
+of these genome segments is targeted and its execution is controlled.
+It is conceivable that this method could assist in rationally designed
+and multitargeted removal of pathways competing with the production
+of industrially useful chemicals and factors deleterious to growth.
+Collectively, our method provides a new tool for design and engineering
+of bacterial genomes. Our results also provide
+a framework for methods that can change
+the landscape of bacterial genomes. Currently, genome-remodeling strategies
+in many bacteria often utilize site-specific recombinases. These methods can direct high-efficiency recombination between recombinase
+sites. The current efficiency of CRISPR-nickase targeted deletion
+is relatively low, especially compared to efficiencies of site-specific
+recombinases, however these concerns may be addressed with improved
+sgRNA combinations and expression vectors. Nicking CRISPR systems,
+however, can be targeted with high versatility and leverage HR, which
+can utilize arbitrary sequences as substrates. Nicking CRISPR systems
+are also desirable to synthetic biology applications. For instance, systems employing retron mediated reverse transcription
+have enabled genome directed rewriting and memory storage, coupling CRISPR-nickase systems to the output
+of inducible promoters could enable remodeling of the genome in response
+to environmental inputs. In summary, we present a strategy to
+overcome the cytotoxicity
+of genome targeting DSBs to make a platform for accurate large-scale
+bacterial genome manipulations. RNA-programmed SSBs enable recombination
+resulting in bacterial genome deletion. With the growing availability
+of full genome sequencing, it is foreseeable that laboratories could
+identify an organism’s repetitive sequences  to predictably and combinatorialy direct large-scale remodeling
+to test strain characteristics for a myriad of basic science and engineering
+applications. Further extension of this method would enable researchers
+to target genome integration of synthetic gene pathways; likewise, we envision this method working synergistically
+with preexisting genome engineering technologies. CRISPR-directed SSBs are not lethal to K12 . (a) A schematic representation of sgRNA guided
+Cas9s targeting
+a chromosomally integrated GFP reporter. The sgRNA guide sequence
+is visualized adjacent to its target sequence. The protospacer adjacent
+motif (PAM) sequence is highlighted in red. Arrows denote where DNA
+cleavage occurs by two Cas9 mutants, respectively. Cas9 cleaves the target DNA strand of the sgRNA and Cas9 cleaves the nontarget strand. (b) Transformation efficiencies of
+sg(C1) (gray) or untargeted sg(−) (white) in K12  containing Cas9, Cas, Cas9 or dCas9. Error bars represent ± standard deviation
+( = 3). Nick-induced recombination leads to single gene chromosomal
+deletion.
+(a) A diagram of chromosomally integrated dual-fluorescent reporter
+with internal homologous DNA sequences (R), shown as dark and light
+gray boxes. sgRNA-guided Cas9 nicking enzyme generates an SSB, illustrated
+by the scissor. CRISPR induced deletions of GFP results in the joining
+of two repeats, shown as a gray box with both dark and light shades.
+Primers (P1 and P4) flank the dual fluorescence
+reporter. (b) Flow cytometry screening of pooled sgRNA transformations
+for homologous recombination. Histograms show population fluorescence
+distributions for controls sg(−) (green), cells containing
+RFP with no GFP (gray), and sg(T1) coexpressed with Cas9 (red). Vertical dashed line represents threshold for GFP expression.
+86% of sg(T1) cells fall to the left of the line, indicating the loss
+of GFP expression. (c) Percent of flow cytometry estimated GFP deletion
+for various sgRNAs targeting the noncoding strand using Cas9 (blue) and Cas9 (orange). Nicking sites within GFP
+are represented by blue and orange triangles and black squares representing
+sgRNA target sites. Cut positions are defined as bp from the left
+repeat (d) Fluorescence microscopy interrogation of dual-fluorescent
+reporter expression for sg(−) and sg(T1) transformants in  expressing Cas9. GFP expression is
+undetectable in sg(T1) while RFP expression is similar in both sg(−)
+and sg(T1). Phase contrast images show cells have normal morphology
+and RFP expression. (e) Gel-electrophoresis of amplicons using primers
+P1 and P4 from transformants for sg(T1) and
+sg(−). The primers generate a 4.6 kilobase (Kb) amplicon for
+the initial RFP:GFP site, and following HR the primers generate a
+3.6 Kb amplicon. Six out 6 sg(T1) transformants amplify at sizes of
+approximately 3.6 kilobases, while a sg(−) control template
+results in banding at 4.6 Kb. Nickase directed deletion of a 36 kilobase genomic region. (a)
+Top half is a schematic representation of a 36.8 Kb genomic region
+with two IS5 direct-repeats (gray, R) on the K12 MG1655 chromosome.
+Colored boxes serve as visual aids to mark relative positions and
+sizes of various genomic regions. A series of 10 sgRNAs were designed
+to target various locations (black squares, sg(A–J)). The position
+of black squares indicate which strand is targeted by the sgRNA with
+I, A and H targeting the + strand, and J and B-G targeting the -.
+The distances between sgRNA targets are shown in panel C. Primers
+flanking each repeat (P1–P4) are used
+for PCR based genotyping of chromosomal deletions. The His-biosynthetic
+operon (His-Operon) (orange) located between the IS5 elements serves
+as a screenable marker for cells harboring deletions. Bottom half
+represents results of CRISPR induced deletion of genomic region between
+two repeats (shown gray box with mixed shades). (b) A schematic representation
+of multitargeting nicking systems around the left IS5, with 3′
+Overhang (OH) and 5′ OH cut orientations highlighted. Bp apart
+is the base pair distance between cut sites. Blue triangles indicate
+cut sites for respective guides. (c) PCR screening and gel electrophoresis
+of pooled transformations to detect formation of recombined site (red,
+gray yellow icon) using primers P1 and P4
+(d) Histidine auxotrophy screening of individual isolated transformants
+expressing Cas9 with sg(B:I) and sg(A:B). Differential
+growth on M9 minimal medium containing synthetic complete amino acids
+(M9SC) or M9 without histidine (M9-H) suggests deletions of the targeted
+region when no colonies are formed in M9-H. Colony positions on M9SC
+correspond to those on M9-H. Success rates are denoted as the number
+of colonies unable to grow in M9-H over the total number of colonies
+(e) PCR genotyping of 6 sg(B:I) histidine auxtrophs and a control
+sg(−) transformant using 3 different primer combinations confirming
+formation of the recombined site (bottom row). Multiplex targeted genome remodeling achieves 133 Kb deletion.
+(a) A schematic view of two separate genomic regions surrounded by
+direct repeat sequences. Definitions of illustrations are the same
+as in . The
+middle disjoint beige box represents 670 Kb distance between these
+two regions. The left region is 97 kilobases and contains the tryptophan
+biosynthesis operon (TRP) and the pyrF gene (labeled bright blue boxes).
+Recombination between these repeats results in deletion of 97 Kb (Δ97
+Kb) and tryptophan auxotrophy. The remodeled site (purple, gray and
+green) brings primers P1 and P4 in into close
+proximity. sgRNAs K and L target the sequences directly adjacent to
+the left repeat to this region. In parallel, guides B and I target
+a separate region containing His (orange box). The position of black
+squares indicate which strand is targeted by the sgRNA with K and
+I targeting the + strand and L and B targeting the – strand
+(see  also).
+Deletion of this region results in a loss of 36 Kb (Δ36 Kb)
+and histidine auxotrophy. The remodeled sequence (red, gray and yellow)
+results in close proximity of P1 and P4. (b)
+PCR monitoring of HR in Cas9 expressing cells. Primers
+P1 and P4 detect deletion of 97 Kb (purple,
+gray and green icon, resulting in a 1.5 Kb amplicon). P1 and P4 detect recombination across 36 Kb (red, gray
+and yellow icon, resulting in a 1.8 Kb amplicon). Different sgRNA
+targets are indicated beneath the gel photo. sg(−) is a guide
+sequence not matching the bacterial genome. Amplification indicates
+occurrence of recombination. (c) Resulting phenotypes of isolated  containing different remodeling combinations. Cells
+isolated containing different deletions replica plated on M9 synthetic
+complete medium (M9SC), M9 lacking histidine (M9-H), and M9 without
+tryptophan (M9-T). Vertical columns correspond to different deletions.
+sg(−) with no genomic deletion (Δ0) serves as the control.
+sg(B:I:K:L) expressing cells can harbor 36 (Δ36), 97 (Δ97)
+or combined 133 kilobase (Δ133) deletions. Δ36, Δ97
+and Δ133 are auxotrophic histidine, tryptophan and both, respectively. Molecular cloning was conducted using  NEB-10-Beta (New England Biolabs, NEB). Maintenance
+and cloning of vectors containing an R6Kγ origin of replication
+was conducted in a Pir+  strain. Fluorescent
+reporter experiments were conducted in K12 MG1655 (ΔLacI ΔAraC)
+HK022 (J04450 and/or I13522) (Registry of Standard Biological Parts).
+Initial 36 kilobase deletion experiments were conducted in K12 MG1655
+Δ(LacI) Δ(AraC). Experiments involving the 97 kilobase
+deletion were conducted in strain “KSB1”, which is K12
+MG1655 (American Type Culture Collection, ATCC, #700926) HK022(topA,cysB,ribA,fabI),
+186(lapAB). Integrations into HK022  and 186  sites are described in  section. LB Miller Medium (Sigma-Aldrich, Sigma) was supplemented
+with appropriate antibiotics for plasmid maintenance: Ampicillin (100
+μg/mL) and/or Kanamycin (30 μg/mL). Experiments involving
+fluorescent microscopy visualization of genome-integrated reporters
+used M9 minimal Medium containing 0.2% glycerol. Screening for histidine
+and tryptophan auxotrophs was done on M9 minimal Medium 0.4% glucose,
+1.5% agar, 2 mg/mL Uracil with synthetic complete (SC) (., Leucine deficient supplement (Clonetech, #630414) + 200 mg/L Leucine
+(Sigma, #L8000), without histidine (-H) or without tryptophan (-T)
+amino acid supplement (Clonetech, #630415, #630414 respectively).
+5-Fluoroorotic Acid (5-FOA, Gold Biotechnology, #F-230-5) media was
+made by supplementing 5-FOA to a final concentration of 600 mg/L and
+boiling to dissolve in LB agar miller medium. All cell culture was
+conducted at 37 °C in either a stationary incubator for Petri
+dishes, or 250 rpm shaker for liquid media unless noted otherwise. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00132/suppl_file/sb5b00132_si_001.pdf Genome integration of reporters
+and other genes were conducted using methods described previously. Plasmids pOSIP-KH and pOSIP-KO were used to
+integrate into HK022 and 186  sites, respectively.
+Fluorescent reporters (BioBrick #) parts RFP (J04450) and GFP (I13522)
+were cloned into the RI and I sites of pOSIP-KH. The strain used for 97 Kb remodeling experiments
+was derived from ATCC, #700926. Integration vectors containing essential
+genes were created by stepwise cloning of topA:cysB,
+ribA, and fabI into pOSIP-KH using primers 18 through 23 with corresponding
+restriction sites indicated in  and lapAB in pOSIP-KO. The lapAB cassette was ligated and
+integrated in one step. Purified PCR products of primers 24 and 25
+were digest with HI and SpeI and ligated into
+pOSIP-KO. Vectors were integrated by transforming ≤10 ng of
+plasmid into destination strains. Integrations were confirmed at HK022  with primers 7 and 8, and 186  with
+26 and 27. R6Kγ vectors were propagated as plasmids at 30 °C
+and integrated at 37 °C. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00132/suppl_file/sb5b00132_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00132/suppl_file/sb5b00132_si_001.pdf pCas9 was
+obtained from Addgene (plasmid #44520). pCas9 expresses  wild type
+Cas9 from a pLTetO promoter. The plasmid contains a high copy ColE1
+origin of replication (∼100 copies), the TetR repressor protein
+and an ampicillin resistance marker (). Cas9 D10A and H840A mutations were generated by
+PCR amplifying 10 pg of pCas9 using primer pairs 3,4
+and 5,6 respectively (). PCR reactions were purified using GenElute PCR Cleanup Kit (Sigma,
+#NA1020) following the manufacturer’s protocol. DNA was digested
+with SapI and self-ligated with <40 ng of DNA in 20 μL reactions
+containing T4 DNA ligase (NEB). Design, Cloning and Multiplexing
+of sgRNAs http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00132/suppl_file/sb5b00132_si_001.pdf Short guide
+RNAs (sgRNAs) were designed by identifying the “NGG”
+Protospacer Adjacent Motif (PAM) on the noncomplementary strand of
+the DNA target. 20–21 nucleotides were used as the guide region.
+sgRNAs contained an Adenine on the 5′ end, since A nucleotides
+function as effective transcriptional start site. sgRNA guides were
+synthesized as a pair of 25 nmole oligonucleotides (Integrated DNA
+Technologies, IDT) in a format shown in . 5′ phosphates were added to oligonucleotides
+by incubating 1ug of top/bottom oligonucleotides in 50 μL reactions
+containing 1X T4 DNA Ligase Buffer and 10 units of T4 Polynucleotide
+Kinase (NEB, #M0201) at 37 °C overnight. Oligonucleotides were
+duplexed by heating the kinase reactions to 90 °C on an aluminum
+heating block for 5 min followed by slowly returning the reaction
+to room temperature (25 °C) over approximately 1 h. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00132/suppl_file/sb5b00132_si_001.pdf The
+sgRNA plasmid vector (pSG4K5) (), derived from pSB4K5 (Registry of Standard Biological
+Parts) expresses sgRNAs from a constitutive J23119 promoter. To clone
+new sgRNAs, pSG4K5 was digested with SapI and dephosphorylated using
+Antarctic Phosphatase (NEB, #M0289) using the manufacture’s
+protocol. 40 ng of SapI digested and dephosphorylated pSG4K5 was ligated
+to an equimolar amount of sgRNA duplex in 20 μL reactions containing
+T4 DNA ligase (NEB, #M0202). Multiplex sgRNA plasmids were constructed
+by PCR amplifying 10
+pg of template plasmid with primers 1 and 2. PCR products were prepared
+by purifying with GenElute PCR Cleanup Kit, followed by digestion
+of 500 ng with EcorI and SpeI (NEB). Reactions were heat inactivated
+at 80 °C for 20 min followed by slowly returning to room temperature.
+pSG4K5 plasmids containing other guide sequences were digested with
+BsaI and deposphorylated using Antarctic Phosphatase. 40 ng of BsaI
+digested and dephosphorylated pSG4K5 was ligated to an equimolar amount
+of sgRNA expression cassette in 20 μL reactions containing T4
+DNA ligase. All strains
+were made chemically
+competent using the Z-competent  Tranformation
+Kit (Zymo Research, #T3002) following the manufacturer’s instructions.
+For transformation of sgRNA expressing pSG4K5, 10 ng of DNA was incubated
+with 50 μL of competent cell solution for 30 min on ice. Samples
+were heat shocked for 30 s in a 42 °C water bath. Samples were
+then kept on ice for 3 min. 300 μL of prewarmed LB media was
+added and cells were shaken at 37 °C for 1 h. Following outgrowth,
+100 to 300 μL of sample was plated on LB agar containing ampicillin
+and kanamycin. Plates were incubated overnight. In the case
+of pooled transformations, following outgrowth for 1 h, 100 μL
+of the transformation was added to 5 mL of prewarmed LB liquid medium
+containing ampicillin and kanamycin. Samples were cultured for 12–14
+h. For fluorescent reporter recombination experiments, samples were
+analyzed by flow cytometry. For histidine and tryptophan remodeling
+experiments samples were streak plated or serial diluted onto LB agar
+plates and/or 5-FOA medium containing appropriate antibiotics. All flow cytometry was conducted on
+an Accuri C6 Flow Cytometer (BD Biosciences, CA). Samples were gated
+by consistent forward scatter (FSC) and side scatter (SSC) and 10 000
+events within the FSC/SSC gate were collected. A 488 nm laser excitation
+and a 530 ± 15 nm emission filter was used for GFP fluorescence
+determination. Flow cytometry files were analyzed in MatLab (The MathWorks). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00132/suppl_file/sb5b00132_si_001.pdf Colonies picked from sgRNA
+transformations were cultured for roughly 48 h in M9 minimal media
+0.2% glycerol. Cells were spun down at 5000 g for 2 min and washed
+with 1X Phosphate Buffer Solution (PBS). Two μL of concentrated
+cell solution was placed on glass microscope slides and visualized
+on a Nikon Ti-Eclipse inverted microscope with and LED-based Lumencor
+SOLA SE Light Engine with appropriate filter sets. GFP was visualized
+with an excitation at 472 nm and emission at 520/35 nm using a Semrock
+band-pass filter. RFP was visualized with excitation at 562 nm and
+emission at 641/75 nm. For exposure times and experimental controls
+see . Constant exposure
+times, LUT and image gain adjustments were applied to all microscopy
+data. Remodeling of 36 Kilobase Histidine Genomic Region http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00132/suppl_file/sb5b00132_si_001.pdf The 36 kilobase region corresponds to NCBI U00096.3 Positions: 2066159–2102943.
+sgRNA expression plasmids targeting the IS5-histidine operon region
+were transformed as described above into K12  expressing Cas9. Pooled transformations were cultured
+in 5 mL liquid medium containing ampicillin and kanamycin for 12–14
+h. To isolate individual histidine deletions, 5 μL of cells
+were streak plated or serial diluted onto LB agar medium containing
+ampicillin and kanamycin. Plates were cultured overnight. Individual
+colonies were randomly selected and replica plated on M9SC and M9–H
+media. Deletion efficiency is the number of histidine auxotrophs over
+the total number of screened colonies. Genomic DNA was prepared from
+2 mL of pooled transformation and used for PCR genotyping with primers
+P1-P4 ( #10–13). Remodeling of 97 Kilobase Tryptophan Genomic
+Region http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00132/suppl_file/sb5b00132_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00132/suppl_file/sb5b00132_si_001.pdf The 97 kilobase region corresponds to NCBI U00096.3
+Positions: 1299494–1397238.
+sgRNA expression plasmids targeting the IS5-tryptophan operon region
+were transformed as described above into strain KSB1 expressing Cas9. Pooled transformations were grown for 12–14 h
+in liquid medium and plated in serial dilutions on LB agar and LB
+5-FOA media with ampicillin and kanamycin. Individual 5-FOA resistant
+colonies were counted and selected at ≥24 h of growth, as colonies
+tended to grow slowly on 5-FOA plates, furthermore 97 Kb deletions
+exhibited a slow growth phenotype on LB medium. Selected colonies
+were replica plated on M9SC and M9-T plates. Deletion efficiency was
+determined by multiplying the fraction of 5-FOA resistant colonies
+by the fraction of tryptophan operon deletions (). Genomic DNA was prepared from
+2 mL of pooled transformation and used for PCR genotyping with primers
+P1-P4 ( #14–17). To Isolate 133 kilobase, 36 and 97
+Kb dual-deletions, we conducted multiple step screening to isolate
+each deletion. Tryptophan deletions were picked and regrown overnight
+in 5 mL LB medium with antibiotics. Individual colonies were isolated
+through serial dilutions and replica plated on M9SC and M9-H medium.
+We also obtained dual-deletions through histidine deletion screening
+followed by regrowing overnight then 5-FOA and tryptophan screening. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.5b00132/suppl_file/sb5b00132_si_001.pdf PCR was conducted on a Bio-Rad C1000
+thermocycler with Dual 48/48 Fast Reaction Modules (Bio-Radiations,
+BioRad). Genomic DNA of cells was prepared with the GenElute Bacterial
+Genomic DNA Kit (Sigma, #NA2110). Genomic DNA preparations were diluted
+100-fold and 1 μL of genomic template was used in 20 μL
+PCR reactions. PCR reactions contained Phusion DNA Polymerase (NEB,
+#E0553) and corresponding primers (). Annealing temperatures and extension times were
+calculated using the manufacturer’s protocol. PCR products
+were visualized  1% agarose gel-electrophoresis..

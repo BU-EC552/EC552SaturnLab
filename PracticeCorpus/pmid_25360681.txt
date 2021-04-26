@@ -1,0 +1,604 @@
+Realizing
+the potential of
+engineering mammalian cells requires the predictable construction
+of synthetic sensors and circuits. In the clinic, cell-based therapies
+could function to integrate physiological markers, migrate to a disease
+location, and execute a multistep treatment. Cells involved in the manufacturing
+of biologics, such as the workhorse Chinese hamster ovary (CHO) cell
+line, could be engineered to respond to inducers that stage a multistep
+production process. Other applications include the programmable spatial
+organization needed for artificial organs and regenerative medicine,
+responsive living prosthetics (., sensing blood
+glucose and controlling insulin production), and high-throughput drug
+screens based on readouts of cell state. These advanced applications require circuitry that
+encodes signal processing and control algorithms, the implementation
+of which requires more regulatory parts than are currently available. While the number of such parts for prokaryotes has exploded, there is currently a lag in building the analogous
+toolboxes for mammalian circuit design. In prokaryotes, TetR transcriptional repressors constitute
+one
+of the most abundant and plastic family of regulators. These repressors consist of a single protein that contains both
+small molecule sensing and DNA-binding domains. Over 200 000 TetR homologues have
+been sequenced
+that are representative of a wide range of sensing and DNA binding
+specificities. To date, sensing domains have been characterized that
+respond to >60 ligands, including antibiotics, metabolites, hormones,
+cell–cell signaling molecules, and metals. In the absence of its ligand, TetR forms a dimer that strongly
+binds to the TetR operator sequence (). In the
+presence of ligand, the dimer is disrupted, TetR dissociates from
+the DNA, and gene expression is activated. The DNA-binding domains
+of different repressors bind unique 17–30 bp sequences, and
+it has been shown that these are highly orthogonal, with few off-target
+interactions between noncognate operators. Thus, this family provides a rich resource for mining ligand- and
+DNA-binding domains to build synthetic sensors and circuits. The most common method for inducing mammalian gene expression is
+based on the TetR repressor, whose ligand is the antibiotic tetracycline. In mammalian cells, TetR can be used as both a repressor, or converted
+into an activator by fusing it to the transactivation domain from
+virion protein 16 of the  virus (VP16), which recruits RNA polymerase (RNAP). Multiple
+copies of  are placed upstream of the minimal
+CMV promoter (referred to as a etracycline esponse lement or TRE), and
+in this fashion, reporter expression is activated when TetR is bound
+to the TRE, and becomes inactivated upon the addition of doxycycline
+(this system is referred to as “Tet-Off”). A “Tet-On”
+system has also been developed, whereby reporter expression is activated
+upon addition of doxycycline; this behavior is mediated by the reverse
+TetR transcription factor (rtTA). In
+both cases, the VP16 domain recruits RNA polymerase (RNAP) when TetR
+is bound to a synthetic, TRE-containing promoter. These switches typically
+have low basal expression, exhibit a large dynamic range (from 10
+to several thousand-fold induction), and have been shown to function
+in a wide range of tissue culture systems, including embryonic stem
+cells, CHO, HEK, HeLa, and MCF-7 cells, as well as in living animals. Homologues of TetR have been used to build
+synthetic gene switches
+for various applications, and switches responding
+to other antibiotics, including erythromycin (MphR) and pristinamycin (Pip) have
+also been constructed. To expand upon the available inducible systems,
+sensors that respond to other small molecules (cumate, CymR) have been developed, including some that can
+be delivered to cells in gas form (acetaldehyde, AlcR; 6-hydroxy-nicotine, HdnoR). Quorum sensing systems involved in cell–cell communication
+have been ported from  (ScbR and SpbR), (TraR), and  (LuxR). These sensors have largely been developed for research
+purposes or in the context of a bioreactor. For clinical uses in patients,
+switches have been built that respond to nontoxic molecules, including
+amino acids (arginine, ArgR; tryptophan,
+TrpR), food additives and metabolites
+(vanillic acid, VanR; phlorectin, TtgR), and vitamins (biotin, BirA) . Beyond cell cultures, many
+of these switches have been demonstrated to function in living animals,
+including mice. In one compelling application,
+a uric acid (HucR) sensing circuit was constructed as part of a feedback
+mechanism to maintain blood urate homeostasis, the disruption of which
+can lead to gout. Furthermore, a sensor
+that reacts to the inactivation of antituberculosis compounds (EthR), which serves as an application for drug discovery,
+has also been constructed. Of the many synthetic mammalian circuits
+that have been built using
+TetR and its homologues, several of the
+resulting genetic switches and cascades based on these regulators
+exhibit ultrasensitivity and bistability. To build more sophisticated functions,
+logic operations such as inverters and 2-input Boolean gates have
+been layered together to generate feedforward circuits, half adders (and subtractors), 2-input decoders, and a cell
+type classifier. Dynamic circuits have
+also been constructed, including time delays and oscillators. Furthermore, channels for cell–cell communication
+have also been developed where the sender signal (which consists of
+a metabolic pathway) produces the signaling molecule and the receiver
+acts as the signal sensor. To date, as many as 3 TetR homologues have been incorporated into
+a single mammalian circuit (tTA, PIP-KRAB, and E-KRAB), and in one case, up to 3 repressors (TtgR, TetR, and ScbR) were
+combined into a single protein. However,
+the construction of circuits that can perform more sophisticated signal
+processing operations will require a larger set of transcription factors
+that are orthogonal to one another, or in other words, that do not
+cross react with one another’s DNA operators. TetR and
+its homologues are not the only transcriptional regulators
+commonly used to construct genetic circuits, and several classes of
+transcription factors have modular DNA-binding domains that allow
+them to be programmed to target a specific nucleotide sequence. This can be based on a combination of residues
+that bind to specific base pairs, as is the case for zinc finger proteins
+(ZFPs) and transcription-activator-like
+effectors (TALEs). Similarly, the CRISPRi
+technique is based on the targeting of a catalytically inactive Cas9
+protein to a specific DNA sequence through the use of a guide RNA. All of these systems can be moved into mammalian cells and retooled
+to function as activators or repressors by fusing VP16- or KRAB-like
+peptides, respectively, or by relying on steric hindrance of Cas9 alone. However, it remains a challenge to add sensing capability
+to these DNA-binding domains. A generalizable approach (based on two-hybrid
+systems) has been to utilize two proteins whose dimerization is induced
+by a stimulus; such an approach has been used to build ZFPs and TALEs
+that respond to small molecules (., rapamycin,
+hydroxytamoxifen, or RU486), hypoxia, and light. The advantage
+of the TetR family is that a compact single protein has both the capability
+to sense a wide range of stimuli and transduce this to a DNA-binding
+event. Further, TetR and its homologues bind to small operator sequences
+with high specificity, which is desirable for promoter design but
+also comes at the cost of the inability to target them to arbitrary
+sequences. Here, we present a systematic approach to retool
+a group of TetR-family
+repressors to operate as repressors and activators in mammalian cells.
+In previous work, we applied a part mining approach to build a set
+of 20 TetR homologues and characterized their orthogonality in . Borrowing a strategy based off of designs
+used to convert TALEs into potent mammalian transcription factors, we move 8 new TetR homologues (AmtR, BM3R1,
+ButR, IcaR, LmrA, McbR, PhlF, and QacR) into human embryonic kidney
+(HEK293) cells, retooled as 15 new activators and repressors. Remarkably,
+these transcription factors retain both the orthogonality and fold-change
+observed in prokaryotic cells. Ligand
+sensing is also preserved, and we use this to build a new inducible
+system, which we characterize in both HEK293 and CHO cells. We also
+measure their response functions as gates to aide in the construction
+of larger circuits. Collectively, this work demonstrates that prokaryotic
+part mining is an effective strategy for expanding the regulatory
+parts available for mammalian cell engineering. Functional
+Characterization of Retooled TetR Homologues in HEK293
+Cells Supporting Information Figures 1 and 2 In previous work, we used DNA synthesis to build a
+library of 73 TetR homologues, of which
+we built responsive promoters for 20 in .
+The crosstalk within this subset was quantified by measuring the activity
+of 400 combinations of repressors and promoters. From these data,
+we selected a subset of 8 that are highly orthogonal to move into
+mammalian cells. The mammalian regulators were built using the complete
+protein sequence for each TetR homologue, where the corresponding
+gene was codon optimized for expression in mammalian cells and resynthesized
+(). Both activator (Figure a) and repressor (Figure b) versions were generated. Activators (TF) were built
+by adding a destabilization domain, a
+Nuclear Export signal (NES), a VP16 activation domain, and a Nuclear Localization signal (NLS). Due
+to high levels of activation observed in the absence of inducer, destabilization
+domains were added to the activator design. Only an NLS was added
+to build repressors (TF), which therefore rely on steric
+hindrance to achieve repression. The genes encoding TF and TF were placed under the control of the human elongation
+factor 1α promoter (hEF1a) and
+inserted into the pZDonor 1-GTW-2 plasmid (). Supporting Information
+Figure 3 Synthetic promoters were built for each of the mammalian
+transcription
+factors (Figure c). To generate activatable
+promoters, six copies of the cognate operator (Table ) were inserted upstream of a minimal CMV promoter. A more complex promoter architecture is required in order to generate
+the repressible promoters, as the promoter itself must be activated
+in the absence of repressor. This behavior was achieved by designing
+a Gal4-VP16 activatable promoter. Specifically, each repressible promoter
+was designed to contain 5 Gal4 binding sequences upstream of a minimal
+CMV promoter, where Gal4-VP16 is constitutively expressed. The resulting promoter is rendered repressible by the inclusion
+of operators on either side of the CMV promoter. To measure activity,
+the promoters were placed upstream of a yellow fluorescent protein
+(YFP) coding sequence (). The transcription factors
+and reporters were maintained on separate pZDonor 1-GTW-2 plasmids. Supporting Information Figure 4 Supporting Information Figures 5–8 The two-plasmid system containing the constitutively
+expressed
+transcription factor and the reporter were transiently transfected
+into HEK293 cells, as well as a single-plasmid transfection of the
+reporter alone. For the repressible system, a third plasmid was included
+from which Gal4-VP16 was expressed, and in all cases, a plasmid containing
+the constitutively expressed eBFP transfection control plasmid was
+included (). Cells were then trypsinized 48 h post-transfection, and their
+fluorescence quantified using flow cytometry (). The induction of the reporter in the presence and absence of the
+plasmid containing the constitutively expressed activator or repressor
+was then compared (Figure c and d, respectively,
+and ). Seven of the activators are highly functional and demonstrate
+an average of 225-fold activation (ranging from 33- to 416-fold).
+For comparison, an activator based on TetR is able to achieve 75-fold
+activation. In addition, six new repressors were obtained with an
+average of 172-fold repression (ranging from 18- to 551-fold). These
+levels of repression are comparable to the 50-fold repression that
+is achieved by TetR. While most of the TetR homologues
+could be systematically converted into both repressors and activators,
+for some only a single variant was found to be both functional and
+robust (BM3R1, ButR, and IcaR). Supporting Information Figure 9 Supporting
+Information Figure 10 The division of transcription factors and reporters on separate
+plasmids facilitates the rapid measurement of crosstalk between noncognate
+pairs, and all combinations of reporters and transcription factors
+were cotransfected into HEK293 cells. The activators are largely orthogonal,
+with the exception of a few cross-reactions (Figure a and ). Notably, LmrA activates pQacR, and LmrA and QacR both activate pMcbR. The
+repressors are also highly orthogonal, although there is some activity
+of LmrA against pMcbR and pQacR (Figure b and ). Interestingly, the off-target interactions
+observed here are not present in the  system. This may be due to changes in the expression
+level of the transcription factors, having multiple operators in the
+synthetic promoters, and/or the ability of VP16 to recruit the transcriptional
+machinery even when delivered to a promoter at low affinity. Supporting Information Figure 5 Supporting Information Figure 6 Supporting Information Figures
+7 and 8 Design and characterization of synthetic transcription factors.
+(a) Expression of TF is controlled by the constitutive
+hEF1a promoter. Operator sequences are shown as boxes. pTF controls expression of the YFP output, which is activated by its
+cognate transcription factor. (b) The control system for TF is similar to part a except that Gal4-VP16 is constitutively expressed
+from a third plasmid. pTF controls expression of the YFP
+output, which is activated by Gal4-VP16 and repressed by its cognate
+transcription factor. (c) A detailed positional view of the activated
+(pLmrA, top) and repressed (pLmrA, bottom)
+LmrA promoters is illustrated. The pLmrA promoter contains
+a minimal CMV promoter core with six upstream operators. The pLmrA promoter consists of a minimal CMV promoter that is surrounded
+by two LmrA operators and five upstream Gal4 operators. The corresponding
+transcriptional start site (TSS) and TATA box are illustrated. (d)
+The function of the activators are shown and compared to the TetR
+activator (TetR). The fold-activation was calculated by
+comparing the average fluorescence in the presence of a plasmid encoding
+the activator (P-constitutive TF) with that obtained from
+the reporter plasmid (P-pTF reporter) in the absence of
+the P-constitutive TF plasmid. Cells were grown for 48
+h post-transfection and assayed using flow cytometry (). Representative histograms are shown in . Microscopic
+images of cells transfected with the reporter only (−, top
+panel) or the cotransfected reporter and activator (+, bottom panel)
+are shown. BFP transfection controls are shown in . (e) The function of the repressors
+are shown and compared to the TetR repressor (TetR). Fold-repression
+is calculated by comparing the average fluorescence in the presence
+and absence of the plasmid containing the repressor (P-constitutive
+TF). Microscopic images of cells transfected with the
+reporter and Gal4-VP16 (−, top panel) or the reporter, Gal4-VP16,
+and the repressor (+, bottom panel) are shown. Fluorescence histograms
+generated from the FITC-A geometric mean and BFP transfection control
+images are shown in , respectively. In both parts d and e, the error bars
+were calculated based on the standard deviation of three independent
+experiments performed on different days. Cells are visualized using
+a YFP filter at 10× magnification, and images were taken 48 h
+post-transfection. The scale bars correspond to 400 μm. Gray
+boxes indicate that a particular TetR homologue was converted into
+only an activator or repressor and the other version was either not
+built or is nonfunctional. Supporting
+Information Figure 9 Supporting Information Figure 10 Orthogonality
+between synthetic transcription factors. (a) Crosstalk
+is shown between all combinations of activators and promoters. The
+fold-activation is calculated by dividing the average fluorescence
+of cells containing both the reporter and activator plasmids by the
+average fluorescence of cells only transfected with the reporter plasmid.
+Raw data underlying the matrix are shown in , and data correspond to the average FITC-A
+geometric mean values from flow cytometry data collected from three
+independent transfections carried out on separate days. (b) Crosstalk
+is shown between all combinations of repressors and promoters. The
+fold-repression is calculated by dividing the average fluorescence
+of cells containing the reporter and Gal4-VP16 encoded plasmids by
+the fluorescence of cells transfected with plasmids encoding the reporter,
+Gal4-VP16, and cognate repressor. Raw data underlying the matrix are
+shown in , and data correspond to the average FITC-A geometric mean values
+from flow cytometry data collected from three independent transfections
+carried out on separate days. Transcription Factor Operators and
+Inducer Molecules Construction of a DAPG-Inducible System The TetR homologues
+that were selected for this study are associated with different classes
+of ligands, including metabolites, natural products, and plant alkaloids
+(Table ). Similar to the doxycycline (Dox)
+induction of TetR in the Tet-On inducible system (Figure a), the PhlF repressor
+responds to 2,4-diacetylphloroglucinol (DAPG), which is a polyketide
+antibiotic produced by  that
+has activity against plant pathogens (Figure b). DAPG has the potential to be a similarly
+useful inducible system, because it freely diffuses through eukaryotic
+membranes and can be purchased from chemical suppliers (). Supporting Information Figure 11 and Table 1 The inducibility of PhlF was tested by adding
+DAPG
+to transfected cells and measuring the response from the pPhlF reporter (Figure c; ). For cells supplemented
+with DAPG at the time of transfection, a drastic decrease in transfection
+efficiency was observed. To alleviate this decrease in transfection
+efficiency, the inducer was instead added 6 h post transfection, and
+cells were incubated for 42 h (). After
+induction, YFP expression was measured using flow cytometry. In HEK293
+cells, the response yields a robust 54-fold induction with a notably
+ultrasensitive transition ( = 4.7 when fit to a
+Hill function), with a threshold (half-maximum) of 1 μM DAPG.
+This response is similar to what has been observed for the Tet-On
+inducible system, which has a similar dynamic range (70-fold) but
+a less cooperative transition ( = 1.4). However,
+greater leakiness is associated with the DAPG-inducible system (240
+versus 18 au), and because of this, the response curve is shifted
+higher. We also tested the PhlF system in CHO cells, due
+to their importance in the manufacturing of biologics. This yielded
+a strong response, albeit with a lower dynamic range (15-fold) and
+less cooperative behavior ( = 1.0). The threshold
+of the switch is nearly identical among the two cell lines (5 μM
+DAPG in CHO cells), and the leakiness is also greater. These
+discrepancies between the Dox- and DAPG-inducible systems
+can likely be attributed to their variable mechanisms used to control
+expression. For instance, our PhlF system is based on
+dual and opposing activities (activation by Gal4-VP16 and repression
+by PhlF). Such an architecture has been shown to result in ultrasensitivity. In contrast, the Tet-On system relies on a more
+direct mechanism, whereby Dox induces rtTA3 binding to the promoter
+and subsequent activation of gene expression. Because of the large
+dynamic range associated with varying their inducer concentrations,
+both systems can be used to examine input-output relationships. Supporting
+Information Figure 11 Characterization of the DAPG-inducible PhlF system.
+(a) The structure of doxycycline and the Tet-On inducible system,
+comprised of the rtTA3 regulator, are shown. In this system, rtTA3 is constitutively expressed from the phEF1a
+constitutive promoter and activates expression of its cognate promoter
+which contains 6 copies of the TetR operator sequence situated upstream
+of the minimal CMV promoter (referred to as pTRE-tight). The rtTA3
+regulator binds to and activates expression from the pTRE-tight promoter
+in the presence of doxycycline. (b) The structure of DAPG and the
+PhlF inducible system are shown. In this system, PhlF is
+constitutively expressed from the phEF1a promoter. The pPhlF output promoter is activated by Gal4-VP16, which is constitutively
+expressed by the phEF1a promoter. PhlF binds to and represses
+expression from the pPhlF promoter in the absence of DAPG.
+(c) Induction of the Dox- and DAPG- inducible systems are compared
+and were measured in both HEK293 (Dox and DAPG systems) and CHO cells
+(DAPG system only). YFP fluorescence was measured after induction
+at [0, 0.01, 0.1, 1, 10, and 30 μM DAPG] or [0, 0.01, 0.05,
+0.1, 0.5, 1, 2, 5, 10, 20 μM Dox]. The lines were fit to a Hill
+equation (), the parameters for which
+are shown in . The data shown correspond to the average of three experiments from
+different transfections performed on different days, and error bars
+correspond to the standard deviation. Representative cytometry histograms
+for the three inducible systems are shown in . Measurement of 1-Input Response Functions The response
+function of a gate captures how the output changes as a function of
+the input; for transcriptional gates, promoter activity serves as
+both the input and output. Our new repressors (TFs) were
+used to build NOT gates, (which can be further
+converted into NOR gates by placing several upstream promoters in
+series). To deliver an input to the gate, the TRE-tight
+promoter (inducible by Dox) was used to drive expression of each TF (Figure a). The response function
+of this inducible system was measured separately in the same genetic
+context using a fluorescent reporter, where the output of each gate
+corresponds to the fluorescence of the TF-responsive promoter. Supporting Information Figure 12 The response function for five repressors (McbR, PhlF, AmtR, BM3R1, and LmrA) was determined (Figure b and ). The average
+fluorescence was calculated by taking the mean YFP fluorescence from
+three experiments for each data point in the response curve; from
+these values, background fluorescence was subtracted, and the resulting
+output fluorescence values were converted into units of output promoter
+activity (this is done by separately measuring the activity of the
+various input promoters as a function of inducer). These values were
+used to generate a response function for each gate, where data were
+fit to a hill equation:where  is the activity of
+the output promoter,  is the minimum
+output,  is the maximum output,  is the Hill coefficient, and  is the
+threshold level of input where the output is half-maximal (Table ). The output from the ON state (Dox = 1 nM) differs
+between each gate because it depends on the activity of the TF-responsive promoter, which vary based on operator sequence.
+When maximally induced (Dox = 20 μM), all of the response functions
+converge on the same OFF state. The dynamic range is defined as the
+ON state divided by the OFF state, and this varies from 23- to 78-fold.
+All of the switches are noncooperative with a Hill coefficient approaching
+unity ( ≈ 1), which is expected because the
+promoters contain two noninteracting operators. Supporting Information Figure 13 Buffer gates were also built based on the activators,
+which turn
+ON in response to induction from their input promoter. The response
+functions of the activators were measured either using the Dox-inducible
+pTRE-tight promoter, as above, or the DAPG-inducible pPhlF promoter from this study (Figure c). Using
+this approach, the response function of two activators (AmtR and QacR) was determined following the same approach
+used for the NOT gates (Figure d and ). The data for
+each switch were fit using the following hill equation:where the variables correspond to those used
+in equation  (parameters listed in Table ). Supporting Information Figure
+15 When characterizing gates, it is
+useful to report the input and
+output promoters in the same units, which would allow the predictable connection of gates
+to form larger circuits (although this can be complicated by context
+effects). Yet the main challenge in doing so is
+that gates are typically measured using inducible systems and reported
+in terms of the concentration of the chemical inducer. When characterizing
+prokaryotic gates, we have separately measured the response of promoter
+output of the inducible system, and this information is used to build
+a response function that has the same units for the inputs and outputs. Similarly, we could characterize the Dox- and
+DAPG-inducible systems and use this to renormalize the transfer functions
+of the NOT gates () and the switches (inset, Figure d). The hill coefficients for the inverters change after renormalization
+but are consistent with respect to one another. This variation can
+be attributed to the limited resolution in input promoter activity
+in our measurements that increases regression error. The characterized
+switches illustrated above act individually upon a promoter, yet composite
+promoters that respond to multiple transcription factors can also
+be constructed to provide tunable output control. Supporting Information Figure 12 Supporting Information Figure 13 Supporting Information Figures 15
+and 16 Gate and
+circuit response functions. (a) The Dox inducible system
+is used to characterize NOT gates. Symbols are as described in Figure . Expression of TF is controlled by
+the TRE-tight promoter, which is activated by the TetR activator (rtTA3)
+in the presence of Dox. Expression of the rtTA3 gene is controlled
+by the constitutive hEF1a promoter. (b) The response of each NOT gate
+is shown: McbR (blue inverted triangles), PhlF (red squares), AmtR
+(green circles), BM3R1 (purple triangles), and LmrA (light blue diamonds).
+The expression of the fluorescent reporter from the output promoter
+(pTF) with respect to the induction of the input promoter
+(pTRE-tight) via Dox is shown. The average and standard deviation
+are plotted from three replicates from transfections performed on
+different days. Cytometry distributions corresponding to the FITC-A
+geometric mean of the 0, 0.5, and 5 μM induction points are
+shown in  and fit parameters for each curve are listed in Table . (c) Two inducible systems (Dox or DAPG via pPhlF) are used to measure the response function of the buffer gates based
+on transcriptional activators (TF). (d) The response functions
+of the buffer gates are shown. The Dox-inducible system is used to
+characterize the AmtR gate (circles) and the DAPG-inducible
+system is used to characterize the QacR gate (squares).
+The inset shows the response as a function of input promoter activity
+(pTRE-tight or pPhlF), rather than inducer concentration
+(). Cytometry distributions corresponding
+to data for several induction points are shown in  and fit parameters for each
+curve are listed in Table . (e) A schematic
+of the circuit that behaves as an enhancer is shown. The pAmtR-QacR promoter contains three upstream operators
+for each TF. (f) Enhancer fold activation of the output promoter (pAmtR-QacR) is shown as a function of the two inducers,
+where inducer concentrations vary from 0 to 20 μM doxycyline
+and 0–30 μM DAPG. Activation is indicated in blue, and
+data correspond to average fluorescence values from three replicates
+collected on different days. Cytometry distributions and error bars
+are shown in , respectively. NOT Gate Response Function Parameters The threshold at
+which the NOT gate
+is at the half-maximum output, in μM doxycycline. The maximum and minimum levels of
+expression, in arbitrary units of YFP fluorescence. The fold-change is calculated by
+dividing the maximum average fluorescence (20 μM Dox) by the
+fluorescence of cells containing no inducer. Activator Response
+Function Parameters The threshold at which the buffer
+gate is at the half-maximum output, in μM doxycyline (for AmtR) or μM DAPG (for QacR). The maximum and minimum levels of
+expression, in arbitrary units of YFP fluorescence. The fold-change is calculated by
+dividing the maximum average fluorescence (20 μM Dox or 30 μM
+DAPG) by the fluorescence of cells containing no inducer. Signal Integration:
+Construction of an “Enhancer”
+Promoter That Responds to Two Activators To generate a promoter
+capable of responding to combinations of input signals, operators
+for different transcription factors are typically combined into a
+single synthetic promoter. Similar approaches have been applied to
+build several classes of 2-input gates based on modified TetR homologues. These circuits consist of a single activator
+(., ScbR modified with VP16) and up to two repressors
+(., Pip modified with KRAB). For example, a NOT
+IF gate was built by constructing a promoter that contains 8 upstream  operators, followed by 3  operators
+in between and a minimum promoter motif. The resulting promoter is
+ON only in the presence of ScbR and in the absence of Pip. Here, we
+sought to determine whether our promoter architecture could integrate
+multiple positive regulators to converge on a single output. To construct a hybrid promoter that is responsive to multiple transcription
+factors, we modified our initial architecture used to build synthetic
+promoters containing six upstream operators. We postulated that this architecture could be altered to integrate
+signals from multiple TFs whose corresponding operators are present
+in different locations within the promoter. The full output of the
+promoter would not be achievable without induction of all of the TFs;
+thus, they would collectively enhance the activity of the promoter.
+The resulting circuit is not expected to function as an “AND
+gate” because each input increases activity toward the maximum.
+However, it does have features similar to fuzzy logic and analog adder circuitry. Supporting Information Figures 15 and 16 The integrating promoter was constructed by combining the
+operators
+for AmtR (3 downstream) and QacR (3 upstream,
+Figure e). Specifically, AmtR expression
+is controlled by the Dox-inducible Tet-ON system, while QacR expression is controlled by the DAPG-inducible PhlF system
+(which also requires Gal4-VP16). Thus, the resulting circuit requires
+the control of 5 transcription factors carried on 7 distinct plasmids.
+All of the plasmids were cotransfected and the resulting YFP fluorescence
+measured using flow cytometry (). The
+output was measured across varying concentrations of the two inducers
+(Dox and DAPG), and the resulting 25 data points were used to build
+a two-dimensional response function (Figure f and ). As expected, each inducible system is able to turn on the promoter
+independently, and the Dox-inducible system alone is able to induce
+the system 4.5-fold, while the DAPG-inducible system independently
+activates the system 8.5-fold. When both systems are maximally induced,
+the promoter is activated 19-fold. Thus, there is a near-perfect multiplicative
+effect between the induction of the two systems in isolation, compared
+to their collective impact on the promoter. Supporting
+Information Figure 17 To gain insight
+into how transfection efficiency affects circuit
+performance, the fluorescence of the BFP-transfection control plasmid
+(a plasmid that constitutively expresses eBFP under the control of
+the hEF1a promoter) was used as a proxy for “copy number.”
+Since all plasmids are transfected in equal concentrations, it is
+expected that transfected cells contain the same relative amount of
+individual plasmids. Therefore, cells
+with a higher “copy number” will have higher levels
+of eBFP expression, and a larger quantity of each plasmid. To assess
+the effect of “copy number” on circuit performance,
+cells were separated into 360 logarithmically spaced bins based on
+their BFP fluorescence, and the maximally inducing and noninducing
+conditions were compared for each bin (). The “fuzzy” AND gate
+is quite robust, as it exhibits a consistent fold activation over
+a wide range of “copy numbers”. Expanding the Mammalian
+Parts Toolbox and Beyond The
+“fuzzy” AND gate demonstrated here, as well as the increased
+number of both sensors and circuits illustrated throughout, significantly
+expands upon the tools available for use in mammalian cells. We also
+systematically verify that these components exhibit minimal crosstalk
+and robust levels of fold change similar to their bacterial predecessors. Furthermore, we demonstrate their functionality
+across a variety of cell types including HEK293 and CHO cells. Finally,
+we reveal that these components can be combined in a single cell to
+coordinately fine-tune the expression of an individual output. To obtain variable and specific output levels, we utilized a hybrid
+promoter architecture whereby two distinct TFs converge on a single
+promoter, through the inclusion of multiple copies of each TFs operator
+sequence. In mammalian cells, variable output levels are typically
+achieved through adjusting the number of transcriptional enhancer
+elements. Enhancers integrate multiple
+signals , and act in  to
+regulate transcriptional activity. Not
+only the spacing but also the content of -regulatory
+elements have been shown to have a dramatic effect on biological processes
+(such as development) in eukaryotes. While enhancer elements alone can lack discernible activity, in
+concert with other elements they typically evoke robust expression
+patterns upon associated genes. Recent
+efforts have been dedicated to identifying mammalian enhancer elements,
+where naturally occurring sequences were assessed in parallel to identify
+the essential elements of transcriptional networks. Although much work has been done to characterize the behavior
+and
+identity of naturally occurring enhancers, and to develop synthetic
+tools to control mammalian gene expression, issues persist in the
+implementation of such components toward broader applications. For
+example, the development of systems via transient transfection of
+tissue culture cells, and nonsite-specific integration make measurements
+difficult, and systems developed in this manner are not suited for
+clinical applications. Furthermore, it
+is known that enhancers exhibit negligible activity when transiently
+transfected but far more robust activity upon genomic integration. For these and other reasons, a safe harbor for genetic insertions
+should be developed, either through artificial chromosomes or designed
+integration sites. Based on these findings,
+future efforts should focus upon rigorously characterizing the behavior
+of these and other components upon genomic integration. Delineating
+the contribution of integration site and copy number should be at
+the forefront of these efforts, as well as the engineering of epigenetic
+tools to ensure active expression of integrated circuitry. Breakthroughs
+in these areas will aide in the implementation of the tools presented
+here toward real world applications that span from living therapeutics
+to the production of complex pharmaceuticals. Cell Culture,
+Strains, and Media Φ80lacZΔM15ΔlacX74
+recA1 endA1 araΔ139 Δ(ara, leu)7697 galU galK λ-rpsL
+(StrR) nupG Φ80lacZΔM15 ΔlacX74 recA1 araΔ139
+Δ strain DH10B
+[F() ] was used for cloning and to propagate DNA, except
+in the case where the propagated plasmids were used for Gateway cloning.
+In such cases, the ccdB Survival 2 T1R strain (Life Technologies,
+[() () () ])
+was used. The HEK293 (293FT) cell line was purchased from Invitrogen
+(product number R700-07), and CHO cells were obtained from ATCC (strain
+number CCL-61). HEK293 and CHO cells were cultured in high-glucose
+DMEM complete media (Dulbecco’s modified Eagle’s medium
+(DMEM), 4.5 g/L glucose, 0.045 units/mL of penicillin and 0.045 g/mL
+streptomycin and 10% FBS (Sigma)) at 37 °C, 100% humidity, and
+5% CO. Doxycycline was purchased from Clontech (product
+number 631311), and 2,4-diacetylphloroglucinol (DAPG) was purchased
+from Santa Cruz Biotechnology (product number 206518). Supporting
+Information Figures 1–4 contains all of the part sequences used
+in this study. Plasmid maps are provided in . Prokaryotic repressor coding
+sequences were optimized for production in mammalian cells using multiparameter
+gene optimization methods and synthesized by Geneart. The constitutive mammalian promoter (human
+elongation factor 1 alpha promoter, phEF1a) was from pLEIGW, a gift
+from Ihor R. Lemischka. The rtTA3 coding sequence and the pTRE-tight
+promoter (containing the CMV minimal promoter) were amplified from
+pTRIPZ (GE Healthcare, product number RHS4743). Constitutively expressed
+BFP (phEF1a-eBFP2) was used as a transfection control and was purchased
+from Addgene (plasmid 14891). The rb glob PA terminator was amplified
+from Addgene vector AAV-CAGGS-EGFP (plasmid 22212). In all cases,
+the reporter used corresponds to the Yellow Fluorescent Protein (eYFP), and the DD-tag was purchased from Clonetech
+(product number 632172). Plasmids were constructed using a combination
+of GeneArt gene synthesis, Gateway cloning, and/or inverse PCR. Specifically, transcription factor coding sequences
+and their cognate promoters were synthesized into basic cloning vectors
+and were subcloned into expression or reporter vectors, respectively,
+via Gateway cloning. Hybrid promoters were constructed using inverse
+PCR to insert operator sequences upstream of the CMV minimal promoter
+within the reporter vector. In the case where inverse PCR was used
+to construct reporter vectors, whole plasmids were PCR amplified using
+Phusion DNA polymerase (NEB) along with multiple operator containing
+oligonucleotides. The resulting product was run on an agarose gel,
+extracted, and digested with DpnI. The blunted-ended, DpnI-digested
+product was phosphorylated (T4 Polynucleotide Kinase) and ligated
+(T4 DNA ligase) in a single reaction at room temperature, transformed
+into chemically competent DH10B cells, and plated on selective LB
+medium. Transfection, Growth, and Processing of Cells HEK293
+FT and CHO cells were transfected using the Attractene transfection
+reagent (Qiagen) as described in the manual with several modifications.
+Specifically, 100 ng of each plasmid was combined into the appropriate
+combinations in a total volume of 7 μL or less, and 60 μL
+Dulbecco’s Modified Eagle Medium (DMEM) was added. To this
+mixture, 1.5 μL Attractene was added, and each sample was mixed
+by vortexing. The samples were incubated at room temperature for 10
+min and then added to ∼8 × 10 cells in 0.5
+mL DMEM that had been supplemented with penicillin, streptomycin,
+and amino acids (referred to as media complete) in a 24-well culture
+plate (Corning, product number 3473). For cells transfected with plasmids
+containing the pTRE-tight promoter, doxycycline was supplemented at
+the time of transfection. For cells containing plasmids harboring
+the DAPG-inducible system, DAPG was added 6 h post-transfection. Transfections
+were supplemented with 0.5 mL media complete 24 h post-transfection
+and doxycycline where appropriate. Cells were trypsinized 48 h post-transfection
+and subjected to flow cytometry (see below). Specifically, cells were
+trypsinized by aspirating the growth medium and applying 0.5 mL 0.25%
+trypsin-EDTA (Corning, product number 25-053) to adherent cells. Once
+cells were liberated from the plate, 2 mL media complete was added
+to each sample to halt trypsinization. Trypsinized cells were then
+spun down at 950 rpm for 10 min at 25 °C, the supernatant removed,
+and resuspended in 300 μL 1× phosphate buffered saline
+(PBS). From here, the trypsinized, PBS suspended cells were subjected
+to flow cytometry. Cells were analyzed
+by flow cytometry
+using a BD Biosciences LSRII flow cytometer. eBFP2 was measured using
+a 405 nm laser and a 450/50 filter, and eYFP with a 488 nm laser and
+a 530/30 filter. Cells were analyzed using FlowJo (TreeStar Inc.,
+Ashland, OR), and populations were selected by gating out the background
+BFP signal of untransfected cells. Specifically, a gate was applied
+to encompass those cells that did not correspond to background (or
+where no signal was present on a BFP histogram of untransfected cells).
+The resulting gate was applied to all samples, to ensure that only
+cells expressing the eBFP2 transfection control were included in the
+analysis. Gated populations of >25 000 cells were used to
+calculate
+the geometric mean of the FITC-A fluorescence. When used to assay
+a promoter, this is referred to as the “Promoter Activity.” Fold Change and Circuit Copy Number Calculations All
+circuit plasmids were cotransfected with the transfection control
+marker, P-constitutive-eBFP. BFP-positive cells were separated into
+360 logarithmically spaced bins based on raw fluorescence, referred
+to as the “Transfection Marker”. Fold-activation was
+calculated by dividing FITC-A fluorescence values from fully induced
+cells (20 μM DOX and 30 μM DAPG) by uninduced cells within
+each bin. Response curves parameters
+for all activators and repressors were calculated by fitting to their
+respective Hill equations (equations  and ). For each input, average fluorescence values from
+biological triplicates (collected on different days) were fit to the
+appropriate form of the Hill equation. Nonlinear least-squares regression
+was used to determine values for the Hill coefficient () and dissociation constant (), and to minimize
+the error between the fitted and actual values. The fold-change was determined
+by dividing the background subtracted YFP fluorescence values for
+cells containing the reporter plasmid alone (P-pTF-reporter)
+by that of cells containing both the reporter and the transcription
+factor (either P-constitutive TF, P-TRE-tight/TF, or P-PhlF/TF) encoding plasmids, in the
+case of the repressors (where both transfections contained plasmids
+P-constitutive-Gal4-VP16 and P-constitutive-eBFP). For the activators,
+fold-change was calculated by taking the inverse of the equation used
+to calculate the fold-change for the repressors (where both transfections
+contained the P-constitutive-eBFP plasmid). Images were taken using an EVOS
+Digital inverted microscope (containing a 3MP color digital camera
+and LCD display). The excitation and emission wavelengths to obtain
+fluorescent images were as follows: 357 nm excitation 447 nm emission
+for eBFP, and 500 nm excitation 542 nm emission for eYFP. Images were
+taken at a 10× objective..

@@ -1,0 +1,626 @@
+Lipid bilayer
+membranes define
+the boundaries of virtually all living cells. The creation of artificial
+phospholipid vesicles gave insights into the biophysical properties
+of cellular membranes and led to the development of new drug delivery
+systems. Giant unilamellar vesicles (GUVs),
+in particular, have become increasingly popular model systems in bottom-up
+synthetic biology, since they match the dimensions of eukaryotic cells
+and can conveniently be monitored with light microscopy on the single-compartment
+level. They serve as biomimetic compartments for the encapsulation
+and reconstitution of cellular components , shedding light on their function in a well-defined environment
+isolated from the complexity of a living cell. While several
+key milestones toward the assembly of a synthetic cell have been accomplished, there is a key problem to be addressed for the
+full flourishing of the field: Increasingly complex cell-like systems
+require methods for efficient encapsulation of multiple components
+inside compartments at high yield. Despite the widespread use of GUVs,
+for synthetic biology as well as biomedical applications, there are
+still challenges regarding their formation. Initially, the gentle
+hydration approach was proposed for
+GUV formation. A dried lipid film was
+exposed to an aqueous solution for hours and days at temperatures
+above the phase transition temperature of the lipids. A major improvement to this protocol was suggested by Angelova
+and Dimitrov: By applying an external electric ac-field to the lipid
+solution, larger GUVs could be obtained (above 30 μm diameter)
+and the formation process was sped up. This so-called electroformation approach is still the most commonly
+used method for GUV formation. It is well characterized and was developed
+further to increase its versatility, e.g., to improve compatibility
+with charged lipids. Nevertheless, the
+yield is optimal for uncharged lipids and nonphysiological salt concentrations,
+as charges usually interfere with the process. Natural cell membranes,
+however, typically include a significant amount of negatively charged
+lipids (around 30%). Additionally,
+the encapsulation efficiency of biomolecules is low, making it difficult
+to assemble complex synthetic cells. Alternatives have been proposed,
+including solvent evaporation, osmotic
+shock, gel-assisted swelling, and inverted emulsions. A good overview of these techniques and potential artifacts can
+be found elsewhere. Notably, the water-in-oil emulsion
+transfer method greatly improved the
+encapsulation efficiency, which led to the successful reconstitution
+of protein expression systems in GUVs. Recently, different methods for the microfluidic formation of GUVs
+were demonstrated. These methods received increased attention for the bottom-up assembly
+of synthetic cells, as they feature high-yield and homogeneous size,
+and most importantly, encapsulation of biomolecules  the aqueous inlet is straightforward. However, establishing microfluidic technologies may be time-consuming
+and, in the case of PDMS-based microfluidics, requires clean room
+facilities. While glass-capillary microfluidics circumvents the need for a clean room, this method uses
+a relatively expensive capillary preparation technology. Alignment
+of the capillaries and their sealing is a laborious process. Moreover,
+in both cases, when there are interactions between the microfluidic
+channel walls and the species for encapsulation, forming stable GUVs
+can be challenging. Here, we propose a simple and cost-effective
+one-pot method to
+produce GUV-based single- and multicompartment systems for synthetic
+biology and biomedical applications. Like the microfluidic method
+proposed by Weiss , it relies on the charge-mediated fusion of SUVs or proteoliposomes
+inside surfactant-stabilized droplets yet circumvents the need for microfluidic technologies. The developed
+method requires only the most basic equipment and produces GUVs on
+the milliliter scale within minutes, making it suitable for high-throughput
+testing and well-plate formats. It is compatible with a broad range
+of buffer conditions, such as buffers with high ionic strength and
+cell medium, and offers a flexible choice of lipid compositions, including
+high molar fractions of charged lipids. Most notably, the GUV formation
+method features a straightforward reconstitution of membrane proteins
+and formation of multicompartment systems as well as high encapsulation
+efficiency. Shaking Strategy for the Formation of GUV-Based
+Synthetic Cells http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00034/suppl_file/sb9b00034_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00034/suppl_file/sb9b00034_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00034/suppl_file/sb9b00034_si_002.avi illustrates
+the one-pot formation of multicomponent GUV-based synthetic cells
+step by step. To this end, we prepare an aqueous buffer solution containing
+SUVs and/or proteoliposomes as well as all compounds for encapsulation
+in the GUVs. We layer this aqueous solution on top of a mixture of
+fluorinated oil and a PEG-based fluorosurfactant (Step 1, A). Vigorous vortexing
+or manual shaking induces the formation of surfactant-stabilized water-in-oil
+droplets, encapsulating the SUVs and the other components in the aqueous
+phase. Under appropriate conditions as described in the next paragraph,
+it is possible to trigger the charge-mediated fusion of the SUVs at
+the droplet periphery leading to the formation of a spherical supported
+lipid bilayer (Step 2, A). We hence obtain a GUV inside the water-in-oil droplet,
+which we will refer to as “droplet-stabilized GUV” (dsGUV,
+consistent with the terminology used in earlier work where dsGUVs
+were obtained by means of microfluidics). If the outer
+aqueous phase is not required, dsGUVs may already be sufficient for
+further experimentation. To form freestanding GUVs and to release
+the GUVs from the droplet’s surfactant shell and the oil phase,
+we add the desired aqueous buffer and a droplet-destabilizing agent
+(Step 3, A).
+As a droplet-destabilizing agent, we use perfluoro-1-octanol (PFO),
+a surfactant with a shorter chain-length that is displacing the stabilizing
+surfactants at the droplet periphery. This leads to the fusion of
+the droplets at the interface between the oil and the aqueous buffer.
+Once the surfactant shell is opened up, the intact GUVs are released
+into the aqueous buffer. Note that successful release is only possible
+if the droplets encapsulate an appropriate amount of SUVs, providing
+full coverage of the droplet interface with a lipid bilayer. We calculated
+the required lipid concentration for different droplet sizes and plotted
+it in the Supporting Information (). Detailed step-by-step instructions with tips for troubleshooting
+and a video protocol of the entire GUV formation process are also provided
+in the Supporting Information (, ). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00034/suppl_file/sb9b00034_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00034/suppl_file/sb9b00034_si_001.pdf Functional modules for
+synthetic cells have different prerequisites
+in terms of lipid compositions and buffer conditions. To ensure compatibility
+of our method with a diverse range of applications, we set out to
+form GUVs from SUVs composed of different types of charged and uncharged
+lipids under diverse buffer conditions. It is important to consider
+that with out method, the GUV formation process initially requires
+the formation of a supported lipid bilayer (SLB) at the droplet periphery
+(B). SLB formation
+on solid state supports has been studied in detail. It is driven by
+van der Waals and electrostatic interactions between the SUVs and
+the support, in our case the surfactant layer. Therefore, for
+successful GUV formation, one needs to consider the interplay of the
+charges present in the system: 1, charged lipids; 2, ions in the buffer;
+and 3, charged surfactants presented at the droplet interface. In
+the absence of charged surfactants at the droplet interface, e.g.,
+if the droplets are stabilized by inert PEG-based fluorosurfactants,
+no fusion of the SUVs is observed (see the Supporting Information, ). Also when using a sufficient amount
+of negatively charged surfactants, e.g., Krytox, negatively charged SUVs remain homogeneously distributed
+inside the droplet as visible in the confocal image and the illustration
+in B,i. Note
+that the measured diameter of the SUVs lies around 60 nm (determined
+by dynamic light scattering measurements, see the Supporting Information, ) and thus below the optical diffraction
+limit. Therefore, individual SUVs cannot be resolved by conventional
+optical microscopy. Formation of negatively charged dsGUV is successful
+in the presence of Mg+ ions since the Mg ions
+are capable of screening the negative charges, as visually indicated
+by the bright ring in the confocal plane, see B,ii. Alternatively, an increased concentration
+of monovalent ions (100 mM) can be used to achieve dsGUV formation. The formation of dsGUVs from positively charged
+SUVs, on the other hand, is only possible in the absence of Mg ions (B,iii,iv). Most remarkably and importantly, this provides a direct
+route for the formation of multicompartment systems (vesosomes) with
+distinct lipid compositions as demonstrated in B,v: If a mixture of positively and negatively
+charged SUVs is encapsulated during the shaking process in the absence
+of Mg, the positively charged SUVs fuse at the droplet
+periphery to form the large outer GUV compartment. The negatively
+charged SUVs, on the other hand, are not attracted to the droplet
+periphery under these conditions and hence small internal compartments
+remain. Note that we do not observe fusion of the oppositely charged
+SUVs as has been reported before. This
+may be due to the lack of ions in the buffer. We thus demonstrate
+that the shaking method for GUV formation can separate SUVs according
+to their charge. While SUVs have previously been encapsulated in GUVs, to our best knowledge we demonstrate the first
+multicompartment system where internal and external compartments are
+made of different lipids. Multicompartment systems with segregated
+volumes can decouple reactions inside complex synthetic cells or drug
+carriers. They are also relevant as mimics of eukaryotic cell architecture,
+featuring membrane-bound organelles enclosed by a larger compartment. (A) Schematic illustration of the
+3-step “shaking”
+strategy for the formation of GUV-based synthetic cells. Step 1: An
+aqueous solution containing the SUVs and/or proteo-liposomes and the
+species for entrapment is layered on top of fluorinated oil supplemented
+with PEG-based fluorosurfactants. Step 2: Manual shaking or vortexing
+induces the formation of surfactant-stabilized water-in-oil droplets.
+SUVs and proteo-liposomes fuse to form a spherical supported lipid
+bilayer at the droplet interface (termed droplet-stabilized GUVs,
+dsGUVs). Step 3: Upon addition of an aqueous buffer and a droplet
+destabilizing agent, GUVs are released from the surfactant shell and
+the oil phase into the aqueous buffer. (B) Confocal fluorescence images
+and schematics illustrating the conditions for the charge-mediated
+formation of dsGUVs. In the absence of Mg, negatively
+charged SUVs (here, 30% DOPG, green) remain homogeneously distributed
+inside the droplet (i), while dsGUVs are formed in the presence of
+Mg (10 mM, ii). The opposite is true for positively charged
+SUVs (here, 30% DOTAP, red, iii and iv). Multicompartment GUVs can
+be formed from a mixture of positively (red) and negatively (green)
+charged SUVs (v). Note that SUVs are smaller than the diffraction
+limit and that the droplet interface is negatively charged due to
+the presence of Krytox (10.5 mM, light green in illustration). Scale
+bars: 10 μm. Characterization of GUVs Formed by the Shaking Strategy http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00034/suppl_file/sb9b00034_si_001.pdf To validate the proposed strategy for synthetic cell assembly, we
+first used the shaking method to form plain free-standing GUVs in
+an aqueous buffer without membrane proteins or encapsulated species. A shows dsGUVs produced
+by vortexing of an oil and an aqueous phase for 10 s. The aqueous
+phase contained SUVs composed of 30% negatively charged lipids (1.2
+mM lipids, 30% DOPG, 34.75% DOPC, 34.75% POPC, supplemented with
+0.5% Atto488-labeled DOPE for visualization purposes) in a 10 mM MgCl-containing Tris buffer (30 mM Tris, pH 7.4). To trigger the
+charge-mediated fusion of the SUVs and the formation of dsGUVs, the
+oil phase (containing 1.4 wt % of a commercially available PEG-based
+fluorosurfactant in HFE-7500) was supplemented with a negatively charged
+perfluoropolyether (PFPE) carboxylic acid fluorosurfactant (10.5 mM
+Krytox). Under these conditions, the
+dsGUV formation was successful, visually indicated by the bright ring
+in the confocal plane (A). Note that without the negatively charged surfactant or
+without MgCl, the SUVs remain homogeneously distributed
+within the droplet (see B,i and the Supporting Information, ) and the release of GUVs is not possible. B shows the GUVs after their
+successful release from the oil phase and the surfactant shell into
+an aqueous buffer (10 mM MgCl, 30 mM Tris, pH 7.4). As
+expected, GUVs in close proximity adhere to one another because of
+their negative charge and the presence of magnesium ions in the buffer. This can be circumvented by replacing MgCl with an osmolarity-matched sugar solution (e.g., 30 mM glucose
+instead of 10 mM MgCl). The histograms in C,D show the size distribution
+of the GUVs before (C) and
+after release (D) under the described conditions. The mean diameter
+of the GUVs after release lies at around 10 μm. The more narrow
+size distribution after the release can be explained by the fact that
+the more unstable large GUVs tend to burst during the release process
+or to fuse with the coverslide. While the GUV dimensions are not monodisperse
+and fully controllable as with microfluidic methods, there are several
+factors that determine their size: Manual shaking produces larger
+GUVs than vortexing which, in turn, produces larger GUVs than emulsification. Additionally, surface
+tension affects  the GUV diameter, which depends on the specific
+combination of surfactant, buffer conditions, and encapsulated species.
+Note that while the release of GUVs is possible immediately after
+dsGUV formation, higher yield can be achieved if the dsGUVs are left
+to equilibrate overnight at 4 °C. Especially when only monovalent
+ions are used, it can take several hours until the SUVs completely
+fuse at the droplet periphery forming a homogeneous lipid bilayer.
+Depending on the buffer conditions, overnight equilibration therefore
+increases the amount of GUVs by approximately 50–200%. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00034/suppl_file/sb9b00034_si_001.pdf By counting the GUVs in the confocal plane as described in the
+Supporting Information (), we estimate the yield of the GUV production. With just 1 mL of
+the aqueous phase, our method can produce over 10 GUVs.
+Approximately 10% of the droplets were released successfully after
+overnight incubation. Since the shaking method can easily be scaled
+up to the milliliter scale and beyond, a relatively low release rate
+does not set a particular limit to the overall amount of obtained
+GUVs. The scalability of the shaking method is of special interest
+for biomedical applications of GUVs, in particular drug delivery.
+While liposomal drug delivery currently employs small liposomes rather
+than GUVs (<200 nm in diameter), larger
+compartments will become necessary for loading more sophisticated
+large cargos. These include nano/microparticles or supramolecular
+DNA complexes that offer great potential for future therapeutic approaches. We envision that GUV-based drug carriers could
+be administered subcutaneously or transdermaly, e.g., for wound healing,
+used as synthetic cell implants or potentially be injected intravenously,
+if they can deform sufficiently in narrow capillaries. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00034/suppl_file/sb9b00034_si_001.pdf To test
+if highly charged GUVs can also be successfully released
+from the oil phase into an aqueous environment, we performed confocal
+fluorescence imaging experiments and zeta potential measurements. E (left) shows free-standing
+GUVs made of highly negatively charged lipids (50 mol % DOPG, green),
+neutral lipids (DOPC/POPC, yellow), and highly positively charged
+lipids (50 mol % DOTAB, red). GUVs composed of similarly high fractions
+of charged lipids are difficult to obtain with electroformation. In the case of neutral lipids, their polar headgroup
+is sufficient to trigger the charge-mediated fusion at the droplet
+interface. To probe whether certain types of lipids may be leaking
+into the oil phase rather than being incorporated into the GUV, we
+performed zeta-potential measurements for GUVs formed from SUVs containing
+different percentages of charged lipids. As plotted in E (right), the measured charge
+of the released GUVs corresponds to the charge of the SUVs. A comparison
+of the zeta-potentials of SUVs and GUVs is plotted in the Supporting
+Information (). We thereby confirmed
+that the shaking method for GUV formation is suitable to form neutral
+as well as highly charged GUVs. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00034/suppl_file/sb9b00034_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00034/suppl_file/sb9b00034_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00034/suppl_file/sb9b00034_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00034/suppl_file/sb9b00034_si_001.pdf Furthermore, we successfully
+tested diverse lipid compositions
+including lipids like DOPC, POPC, DOPG, DOTAB, EggPC, EggPG, EggPA,
+cholesterol, and even  polar lipid extract
+(for a tabular overview and confocal images see the Supporting Information, ). The shaking method for
+GUV formation is compatible with a diverse range of different buffers,
+including sucrose/glucose, pure water, sorbitol, magnesium chloride,
+sodium chloride, PBS, or even full medium (DMEM with 10% FBS) (see
+tabular overview and confocal images in the Supporting Information, ). All conditions listed
+in  were optimized to give release
+rates of at least 2%. Best release rates were obtained for EggPC/EggPG
+lipids and in the absence of magnesium ions in the release buffer
+(up to 50%, see ). Considering
+that the shaking method can produce GUVs on the milliliter scale,
+a low release rate still provides a remarkable amount of GUVs. When
+testing new conditions that are not described here, to achieve the
+best possible results, we advise to consult the extensive literature
+on the formation of SLBs and to screen the parameter space
+for an optimal combination of lipids, buffer, and Krytox concentration. Formation of free-standing GUVs  the shaking
+method. (A) Confocal fluorescence imaging of droplet-stabilized GUVs
+obtained after encapsulation of SUVs into water-in-oil droplets  the shaking method. Oil phase: 1.4 wt % PEG-based fluorosurfactant,
+10.5 mM Krytox in HFE. Aqueous phase: 1.2 mM lipidmix (SUVs made of
+30% DOPG, 15% cholesterol, 27.25% DOPC, 27.25% POPC, 0.5% Atto488-labeled
+DOPE) in 10 mM MgCl, 30 mM Tris, pH 7.4. (B) Free-standing
+GUVs after release. (C) Histogram showing the size distribution of
+the droplet-stabilized GUVs produced by the shaking method before
+release. (D) Histogram of the size distribution of free-standing GUVs
+after release. The size distribution was analyzed with ImageJ using
+manual thresholding and the particle analysis tool. (E) Confocal fluorescence
+imaging (left, scale bars, 10 μm) and zeta potential measurements
+(right) of free-standing GUVs produced from SUVs with different mol
+% of charged lipids: up to 50% negatively charged lipids (green, DOPG
+in 10 mM MgCl, 30 mM Tris), neutral lipids (yellow, 50%
+DOPC, 50% POPC in 100 mM KCl, 30 mM Tris), and up to 50% positively
+charged lipids (red, DOTAP in 30 mM Tris). 0.5 mol % Atto488-labeled
+DOPE or LissRhod-PE was added to the lipid mixture for visualization
+purposes. Unilamellarity of the
+compartment membrane is a prerequisite for the functional incorporation
+of transmembrane proteins, an important aspect to establish signaling
+between synthetic cells and the surrounding environment. We therefore
+set out to assess the membrane quality and the unilamellarity of the
+GUVs produced  shaking. First, we performed fluorescence
+recovery after photobleaching (FRAP) measurements to determine the
+fluidity of the membrane. A circular bleaching area was selected at
+the top of the vesicle (opposite to the area where the vesicle is
+in contact with the cover slide) and the fluorescence intensity within
+this confocal plane was recorded over time. A shows confocal fluorescence images (inset)
+and a plot of the fluorescence intensity before and directly after
+bleaching, as well as after recovery (12 s time point). We obtained
+a diffusion coefficient of 2.30 ± 0.25 μm/s, determined from an exponential fit of
+the intensities during the recovery period. This value is in very
+good agreement with literature values for GUVs with a similar membrane
+composition. CryoTEM measurements were performed to visualize the membrane
+lamellarity
+of the released vesicles. B shows a cryoTEM micrograph of a vesicle that we produced  the shaking method. The zoom image unambiguously confirms
+its unilamellarity. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00034/suppl_file/sb9b00034_si_003.avi http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00034/suppl_file/sb9b00034_si_001.pdf Moreover, to provide an independent proof
+of unilamellarity, we
+added the protein nanopore α-hemolysin externally to the preformed GUVs and carried out dye influx experiments
+using fluorescein as a fluorescence probe. Since the protein pore
+can only span a single lipid bilayer, no dye influx would be observed
+for multilamellar vesicles. In a unilamellar vesicle, on the other
+hand, the nanopore will create a passage for the polar dye, which
+can then permeate into the vesicle along its concentration gradient.
+In the presence of the nanopores, the fluorescence intensity inside
+the GUVs increased within a few minutes as visible in the representative
+confocal image and the plot in C, confirming the unilamellarity of the lipid membrane.
+In the absence of the nanopores, the GUVs remained dark (D) as expected since
+fluorescein is polar and hence mostly membrane impermeable under the
+conditions we used. It should be noted that the experiments were carried
+out at low α-hemolysin concentrations (10.7 nm heptameric pores)
+to avoid bursting of the GUVs. Under these conditions, inhomogeneities
+in the distribution of the α-hemolysin across the GUVs are expected
+and led to a wide spread of dye transport rates in the experiments.
+For a visual impression of the dye influx, see , and an individual trace showing dye influx in the
+presence of the pores is plotted in the Supporting Information (). When increasing the α-hemolysin
+concentration by 1 order of magnitude, the vast majority of the GUVs
+(≈95%, determined by confocal imaging and counting the GUVs
+before and after addition of α-hemolysin) burst within minutes. The vesicles that remained intact (≈5%)
+are likely to be multilamellar. A similar fraction of multilamellar
+vesicles is obtained with the standard methods for GUV production. The results presented in this section
+indicate that the lipid membrane
+properties of GUVs produced  the shaking method
+do not differ noticeably from those formed by other means. Traces
+of oil, surfactant, and/or destabilizing agent were not detectable
+in the GUVs in bending rigidity measurements and infrared (IR) and MALDI mass spectrometry (MS) measurements. However, we cannot exclude the possibility that
+traces of the substances are present in the lipid membrane. Confirmation of unilamellarity of
+GUVs produced  the shaking method. (A) FRAP measurements
+provide a diffusion coefficient
+of 2.30 ± 0.25 μm/s. Error bars correspond
+to the standard deviation of five independent measurements. (B) CryoTEM
+micrograph of a GUV (20% EggPG, 79% EggPC, 1% LissRhod-PE in PBS,
+10 mM MgCl) showing the unilamellarity of the lipid
+bilayer. (C) Dye (fluorescein) influx measurements performed after
+addition of 10.7 nM heptameric α-hemolysin nanopores (75
+nM monomers). Left: The mean intensity inside GUVs over the intensity
+outside of the GUVs ( = 25) is plotted as a function
+of time. The mean and the standard deviation are shown. Right: Representative
+confocal fluorescence images of a GUV at the beginning and the end
+of the measurement. (D) Dye influx measurements performed without
+addition of α-hemolysin nanopores.  = 28.
+Error bars correspond to the standard deviation. Reconstitution
+and Encapsulation The most critical
+step toward the construction of synthetic cells, however, is the reconstitution
+of proteins and the encapsulation of diverse biocomponents inside
+the GUV. A particular advantage of our shaking method for GUV formation
+is the ease of membrane protein reconstitution by forming GUVs directly
+from SUVs. This is highly advantageous since the reconstitution of
+membrane proteins into SUVs is well established, while direct reconstitution
+in GUVs often remains problematic. To
+illustrate this, we formed GUVs from proteo-SUVs containing the TAMRA-labeled
+transmembrane protein αβ integrin
+as shown in A. Note that the orientation of membrane protein insertion may be
+random, especially for proteins that lack large hydrophilic head groups.
+However, methods to control the directionality of the insertion are
+under active development and would be compatible with the shaking
+method for GUV formation. Similarly, cholesterol-tagged
+DNA could be tethered to the membrane of the GUVs simply by forming
+the GUVs from DNA-functionalized SUVs (see B). While GUVs have been functionalized with
+cholesterol-tagged DNA on the exterior, e.g., to trigger attachment
+of DNA nanopores or membrane-bending DNA nanostructures, this has never been achieved for the internal
+bilayer leaflet. Notably, cholesterol-tagged DNA handles at the GUV’s
+interior could serve as addressable attachment handles to organize
+components inside synthetic cells. Another advantage of the shaking method is the high encapsulation
+efficiency of components inside the GUVs. Water-soluble components
+can simply be added to the aqueous SUV solution before shaking. We
+first demonstrated this by encapsulating a fluorescent dye (pyranine)
+inside the GUVs (see C), but likewise we achieved the encapsulation of biomacromolecules
+like mRNA (see D). The size of the encapsulated species is not particularly limited:
+We achieved the encapsulation of fluorescent polystyrene beads, mitochondria
+isolated from living cells, and even  inside
+the GUVs (see E–G). High encapsulation efficiency is not only desirable
+for synthetic
+cell assembly but also of great importance for biomedical applications
+of GUVs, in particular for drug delivery. H,I shows the possibility to achieve complex
+membrane architectures including encapsulated GUVs and nonspherical
+lipid compartments obtained by osmotic deflation. Such architectures are again relevant for more realistic
+cell mimics. Note that all examples in  are free-standing GUVs which have been released
+from
+the oil phase to mimic the physiological conditions. The shaking method,
+however, offers the additional opportunity to work with the dsGUV
+which are still surrounded by an oil phase and stabilized by surfactants.
+In this state, the compartment is highly stable and can easily be
+manipulated, e.g.,  microfluidic pico-injection. This will be advantageous for applications that
+do not require the external aqueous phase. Release into a physiological
+environment can still be performed at a later stage. All these
+examples illustrate how versatile the shaking method
+for GUV formation is. This allows for the recombination of functional
+modules for synthetic cells, greatly enhancing the scope for complexity in
+the field. Confocal fluorescence
+images showing the diverse possibilities
+for encapsulation and reconstitution into the GUVs produced by the
+shaking method. Free-standing GUVs with (A) reconstituted TAMARA-labeled
+αβ integrin; (B) Cy3-labeled
+membrane-adhering cholesterol-tagged DNA; (C) 100 nM encapsulated
+pyranine; (D) SYBR Green I-stained mRNA; (E) multifluorescent polystyrene
+beads; (F) mitochondria isolated from HeLa cells and stained with
+MitoTracker Green; (G) GFP-labeled ; (H) GUVs;
+and (I) lipid budding and tube formation in osmotically deflated GUVs.
+Scale bars: 10 μm. We have presented a straightforward
+yet scalable shaking approach
+to form GUVs and highlighted its relevance for the assembly of increasingly
+complex synthetic cells as well as potential drug delivery systems.
+The shaking method for GUV formation is most closely related to the
+previously described droplet transfer method and the microfluidic method for dsGUV formation. Having characterized our GUVs and confirmed their unilamellarity  FRAP measurements, cryoTEM, and dye influx assays, we
+demonstrate the versatility of our shaking method by forming highly
+charged GUVs and GUVs with diverse lipid compositions under various
+buffer conditions. We then tested the compatibility of our method
+with versatile functional modules for synthetic cells. Notably, the
+reconstitution of the membrane protein is straightforward, since the
+shaking method allows for the formation of GUVs directly from SUVs,
+circumventing the more problematic direct reconstitution in GUVs. While maintaining the same encapsulation efficiency as for microfluidic
+compartment formation, our method avoids complications related to
+the microfabrication of on-chip functions. We exemplify this point
+by encapsulating dyes, small and large vesicles, nucleic acids, microbeads,
+organelles, and even bacteria. The system offers maximum flexibility,
+as experiments can be performed in the droplet-stabilized state as
+well as on released GUVs, depending on whether compartment stability
+and manipulability is preferred or whether a physiological aqueous
+environment is necessary. The optimal method for GUV formation will
+always depend on the specific application. While the shaking method
+is broadly applicable, it does not come without limitations. As described,
+lipid composition, buffer conditions, and surfactant charge have to
+be matched such that the charge-mediated formation of a supported
+lipid bilayer is possible. This makes it challenging to form, e.g.,
+negatively charged GUVs in the absence of cations, unless a positively
+charged surfactant is used. If components for encapsulation interact
+with the surfactant layer, the formation of a supported lipid bilayer
+may be inhibited. Although traces of oil or surfactant were not detectable
+in our GUVs, we cannot exclude their presence in the lipid membrane
+at low concentrations. Additionally, GUVs obtained  the shaking method are not monodisperse in size. If homogeneous
+size is required, filtering of the GUVs in the droplet-stabilized
+state is an option. Note that dsGUVs can in principle
+be reinjected into a microfluidic device for further manipulation,
+e.g.,  pico-injection, for observation or sorting. This work, greatly scaling up and simplifying
+synthetic cell assembly, will lead to GUV-based multicomponent synthetic
+cells of unprecedented complexity, shifting paradigms for bottom-up
+synthetic biology. At the same time, the previously impossible high
+volume production of GUVs will pave the way for high-throughput screening
+assays, e.g., to test for drug transport in well plate formats and
+to develop novel smart drug delivery systems. Atto488-labeled 1,2-dioleoyl--glycero-3-phosphoethanolamine
+(Atto488-DOPE) was purchased
+from ATTO TEC (Germany) and cholesterol C8667 from Sigma-Aldrich (Germany).
+All other lipids were purchased from Avanti Polar Lipids, Inc. All
+aqueous buffers were purchased from Sigma-Aldrich (Germany). Lipids
+were stored in chloroform at −20 °C and used without further
+purification. SUVs with different lipid compositions were formed by
+mixing the lipids at the desired molar ratio in a glass vial and subsequently
+dried under a stream of nitrogen gas. To remove traces of solvent,
+the vial was kept under vacuum in a desiccator for at least 2 h. A
+solution of 30 mM Tris, pH 7.4 (if not mentioned otherwise) was added
+to resuspend the dried lipid film at a lipid concentration of 2.2
+mM. The solution was vortexed for at least 10 min to trigger liposome
+formation and subsequently extruded to form homogeneous SUVs with
+seven passages through a polycarbonate filter with a pore size of
+50 nm (Avanti Polar Lipids, Inc.). SUVs were stored at 4 °C for
+up to 3 days or used immediately for dsGUV formation. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00034/suppl_file/sb9b00034_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00034/suppl_file/sb9b00034_si_001.pdf We initially prepared an aqueous solution
+containing SUVs (1.1 mM 30% DOPG, 34.75% DOPC, 34.75% POPC, 0.5% Atto488-DOPE)
+in 10 mM MgCl, 30 mM Tris, pH 7.4. The oil–surfactant
+mix contained HFE-7500 fluorinated oil (3M, Germany) with 1.4 wt %
+perfluoropolyether–polyethylene glycol (PFPE–PEG) fluorosurfactants
+(Ran Biotechnologies, Inc.) and 10.5 mM PFPE–carboxylic acid
+(Krytox, MW, 7000–7500/mol, DuPont, Germany). Note that the
+Krytox-concentration can be estimated  a Rhodamine
+6G assay (see the Supporting Information, ). This combination of lipid composition, buffer conditions,
+and Krytox concentration will be referred to as the “standard
+conditions”. These were employed unless otherwise specified.
+A volume of 100 μL of aqueous solution was layered on top of
+300 μL of the oil–surfactant mix. Note that the reaction
+volumes are scalable as long as the oil–surfactant mix is used
+in excess (to form oil-in-water droplets, the volumetric ratio of
+oil to aqueous phase has to be reversed). The probe was vortexed vigorously
+for about 10 s until water-in-oil droplets formed (visible as a milky
+emulsion layer on top of the remaining oil). Note that emulsion droplets
+will form independent of the shaking method, manual shaking, vortexing,
+or with an emulsification processor. The latter, however, will produce
+mainly GUVs with a diameter below 10 μm (see the Supporting
+Information, ). The SUVs fuse
+to form a spherical supported lipid bilayer at the droplet periphery. To release the GUVs from the oil phase, 100
+μL of the aqueous solution (10 mM MgCl, 30 mM Tris,
+pH 7.4, or an osmolarity-matched buffer) is pipetted on top of the
+droplet layer. To destabilize the droplets, 100 μL of perfluoro-1-octanol
+(PFO) destabilizing agent (Sigma-Aldrich, Germany) was added slowly.
+Within seconds to minutes, the milky emulsion breaks up and disappears,
+forming a transparent aqueous layer on top of the oil–surfactant
+mix. From this top layer, the released GUVs were carefully removed
+with a pipet and transferred into a BSA-coated observation chamber
+(bovine serum albumin, SERVA Electrophoresis GmbH, Germany) for immediate
+imaging or stored in a fresh test tube at 4 °C for up to 48 h.
+For imaging purposes, it can be beneficial to sediment the GUVs in
+a glucose/sucrose gradient to prevent them from moving during the
+observation. For FRAP measurements and dye influx experiments, we
+therefore supplemented the buffer containing the SUVs with 200 mM
+sucrose and released the GUVs into an osmolarity-matched buffer containing
+glucose. By omitting MgCl in the release buffer, it is
+possible to prevent adhesion of the GUVs to one another and to prevent
+fusion with the coverslide. Note that while immediate release is possible,
+the release efficiency can be improved by overnight storage of the
+dsGUVs at 4 °C for equilibration purposes before addition of
+the release buffer and the destabilizing agent. Confocal Fluorescence
+Microscopy For the confocal imaging,
+two different confocal laser scanning microscope setups were used:
+a Leica TCS SP5 confocal (Leica Microsystems GmbH, Germany) with a
+40× water immersion objective (HC PL APO 40×/1.10 w, CORR
+CS2, Leica Microsystems GmbH, Germany) and a Zeiss LSM 800 confocal
+(Carl Zeiss AG, Germany) with a 20× air objective (Plan-Apochromat
+20×/0.8 M27, Carl Zeiss AG, Germany) and a 63× oil immersion
+objective (Plan-Apochromat 63×/1.40 Oil DIC, Carl Zeiss AG, Germany).
+In both setups, the pinhole aperture was set to one Airy Unit, and
+experiments were performed at room temperature. The recorded images
+were brightness and contrast adjusted and analyzed with ImageJ (NIH). For FRAP measurements, the same Leica
+SP5 confocal microscope was used as described above, equipped with
+an argon laser (Leica Microsystems GmbH, Germany). The GUVs were sealed
+in an observation chamber, where they quickly settled on the bottom
+of the coverslide aided by a glucose/sucrose gradient. A bleaching
+spot with a radius of 2.5 μm was defined at the confocal plane
+at the top of the GUV. Using the FRAP-WIZZARD, 8 images were recorded
+before bleaching (laser intensity, 20%), 10 images during bleaching
+(laser intensity, 80%), and 30 images after bleaching (laser intensity,
+20%) as indicated in A. The 256 pixel × 256 pixel images were acquired at
+a line rate of 1 kHz. The diffusion coefficient was derived from the
+recorded images using a custom-written MATLAB (MathWorks, Inc.) code
+as described previously. Samples were prepared for cryo-EM by applying
+2.5 μL of GUVs solution (20% EggPG, 79% EggPC, 1% LissRhod-PE
+in PBS, 10 mM MgCl) onto a glow-discharged 200 mesh C-flat
+holey carbon-coated multihole grid (Protochips, Morrisville, NC).
+The grid was blotted for 4 s and plunge-frozen in liquid ethane using
+a Vitrobot Mark IV (FEI NanoPort, Eindhoven, The Netherlands) at 100%
+humidity and stored under liquid nitrogen. Cryo-EM specimen grids
+were imaged on a FEI Tecnai G2 T20 twin transmission electron microscope
+(FEI NanoPort, Eindhoven, The Netherlands) operated at 200 kV. Electron
+micrographs were recorded with a FEI Eagle 4k HS, 200 kV CCD camera
+with a total dose of ≈40 electrons/Å. Images
+were acquired at 50 000× nominal magnification with 1.24
+μm defocus applied. Droplet stabilized
+GUVs were
+produced from an aqueous solution containing SUVs (2 mM 69% EggPC,
+30% EggPG, 1% LissRhod-PE), 10 mM MgCl, 200 mM sucrose,
+10 mM Tris, and 1 mM EDTA and an oil phase containing HFE-7500
+fluorinated oil, 1.4 wt % PEG-based fluorosurfactant, and 10.5 mM
+Krytox. The GUVs were released into an aqueous buffer containing 230
+mM glucose, 10 mM Tris, and 1 mM EDTA. Just before the measurement,
+the aqueous solution containing the GUVs was mixed in a ratio of 9:1
+with an aqueous solution containing 70 μM fluorescein, 230 mM
+glucose, 10 mM Tris, 1 mM EDTA, and 10.7 nM heptameric α-hemolysin
+nanopores (75 nM monomers). For the control experiment, the α-hemolysin
+was omitted. The final solution was pipetted into an observation chamber,
+sealed, and imaged as described with the Zeiss 800 confocal laser
+scanning microscope. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00034/suppl_file/sb9b00034_si_001.pdf The
+zeta potentials of
+GUVs and SUVs were measured with a Malvern ZetaSizer Nano ZS in phosphate
+buffered saline in a folded capillary zeta cell (Malvern). The refractive
+index for the dispersant was set to 1.330, and the viscosity to 0.882
+cP with a dielectric constant of 79. The κ ·  value was set to 1.5. The particle refractive index was set to 1.42
+(matching the refractive index of the GUVs). For each condition, 3
+measurements were performed with a minimum of 10 runs per measurement.
+The maximal voltage was set to 25 V in order to reduce the oxidation/reduction
+effect of the lipid at the capillary electrodes. Raw data was processed
+and fitted with the build in general propose mode. For washing, the
+water phase of the released GUVs was diluted into phosphate buffered
+saline and pelleted at 18 000 for 30 min.
+The supernatant was discarded, and the pellet was resuspended in an
+equivalent amount of magnesium-free PBS. For confocal fluorescence
+images before and after centrifugation, see the Supporting Information . It should be noted, however, that
+larger GUVs do not remain intact when centrifuged at that speed. The
+GUV solutions were diluted 1:10 to a final volume of 1 mL at 25 °C
+with 5 min equilibration time. Reconstitution and Encapsulation Integrin αβ was purified by Christine Mollenhauer from outdated
+human blood platelets (Katharinenhospital Stuttgart) based on a protocol
+described earlier and optimized by Stojan
+Perisic. The purified integrin was used for fluorescence labeling
+by means of a NHS (succiniminidyl) ester-conjugated Alexa Fluor 568
+fluorescent dye (Life Technologies, Germany). The protein was stored
+at −80 °C. The reconstitution of the purified integrin
+into SUVs was carried out according to a previously published protocol. In brief, 435 μM eggPC and 435 μM
+eggPG were dried under a gentle stream of nitrogen and then placed
+in a desiccator under vacuum for 2 h or overnight. Next, the dried
+lipids and Alexa Fluor 568-labeled αβ integrin were dissolved in 1 mL of 20 mM Tris-HCl pH 7.4,
+50 mM NaCl, 1 mM CaCl, and 0.1% Triton X-100 to a final
+ratio of 1:1000 (integrin/lipid). Then the solution was incubated
+on a Thermomixer (Eppendorf, Germany) for 2 h at 37 °C and 600
+rpm shaking (Eppendorf ThermoMixer C, Germany). Afterward, 50 mg/mL
+BT Bio-Beads SM-2 (BIO-RAD, Germany) for detergent removal were added
+into the microtube. The mixture was stirred on a magnetic stirrer
+for 3.5 h. This step was repeated once more in order to remove the
+Triton X-100 completely. The proteoliposome solution was used immediately
+for dsGUV formation or stored up to 3.5 h at 4 °C. In order to
+create integrin proteo-GUV, the integrin proteoliposomes were mixed
+1:10 with SUVs (27.25% DOPC, 27.25% POPC, 30% DOPG, 15% cholesterol,
+and 0.5% Atto488 DOPE) to a final lipid concentration of 1.1 mM in
+20 mM Tris-HCl, pH 7.4, 50 mM NaCl, 1 mM CaCl, and 10
+mM MgCl. This liposome mixture was used as an aqueous
+phase for dsGUV formation. HPLC purified
+3′ cholesterol-tagged
+DNA with a 5′ Cy3 label was purchased from Integrated DNA Technologies,
+Inc. (Belgium, DNA sequence: 5′ GAT GCA TAG AAG GAA 3′).
+It was added to preformed SUVs at a concentration of 1 μM, where
+it self-assembles into the lipid membrane. The DNA-functionalized
+SUVs were used to form GUVs  the shaking method
+under the standard conditions. 8-Hydroxypyrene-1,3,6-trisulfonic
+acid trisodium salt (pyranine) was purchased from Merck (Germany)
+and encapsulated at a concentration of 100 nM under the standard conditions. VEGFD mRNA was generously provided
+by Prof. Daniela Mauceri (Interdisciplinary Center for Neurosciences,
+Heidelberg). The RNA solution was diluted to a final concentration
+of 1 ng/μL in a 3 mM SUV solution (30% DOPC, 69% POPC, 1% LissRhod-PE).
+The obtained lipid mix was used as the aqueous phase to form GUVs  the shaking method under the standard conditions. For
+image acquisition, released RNA containing GUVs were incubated with
+0.5× SYBR Green I (Sigma-Aldrich S9430, Germany) for 30 min and
+imaged as previously described. Polystyrene Beads Encapsulation Polybead Polystyrene
+Microspheres with a diameter of 1 μm were purchased from Polysciences,
+Inc. (North America) and added at a concentration of 10 beads/to the aqueous phase for GUV formation. The excitation wavelength
+used for imaging under the confocal microscope was 405 nm. Total mitochondrial extracts
+were obtained from MitoTracker Green FM (Thermo Fischer Scientific,
+Germany)-labeled HeLa cells using the mitochondrial isolation kit
+from Thermo Fischer Scientific (89874) strictly following the manufacturer’s
+instructions. The mitochondria containing solution was mixed 1:10
+with a 3 mM lipid solution (SUVs composed of 30% DOPC, 69% POPC, 1%
+LissRhod-PE) in PBS and 10 mM MgCl. The obtained lipid
+mix was used as the aqueous phase to form GUVs  the shaking method under the standard conditions. GFP-labeled  were suspended
+in PBS at OD = 10 and mixed at a ratio of 1:1 with
+3 mM SUVs (30% DOPG, 34.75% DOPC, 34.75% POPC, 0.5% Atto488-DOPE).
+The mixture was used as an aqueous phase for the formation of GUVs  the shaking method described before. GUVs with internal GUVs were formed
+using a similar strategy as for the multicompartment systems encapsulating
+SUVs (B,v).
+Positively charged SUVs were encapsulated together with negatively
+charged GUVs in the absence of Mg ions. Under these conditions,
+the positively charged liposomes fuse at the droplet periphery, whereas
+negatively charged liposomes remain inside the droplet lumen. Lipid tubulation was achieved by osmotic
+deflation of the GUVs after release as described previously for GUVs
+made by electroformation. Briefly, a
+small drop of GUV solution was exposed to air, causing evaporation
+and hence a slow increase in salt concentration on the GUV’s
+exterior. The resulting osmotic pressure leads to water eflux from
+the GUVs and hence their deflation..
