@@ -1,4 +1,0 @@
-We recently published the manuscript
-“Detection of a Peptide Biomarker by Engineered Yeast Receptors”
-in ACS Synthetic Biology. An error was found in Supplementary Table
-1, and the corrected Supporting Information is provided..
