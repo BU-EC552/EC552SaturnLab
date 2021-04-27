@@ -26,3 +26,6 @@ Project Setup:
 3. run the command : python SaturnSearchAlpha.py
 
 
+Credits:
+Loading animation provied by loading.io: www.loading.io
+
