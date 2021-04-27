@@ -1,5 +1,7 @@
-#  Desktop Python Application for using our Search Engine
-# Authors: Ryan Schneider and Josh Singh
+#  SaturnSearch - Part/Gene Search Engine 
+# Authors: Ryan Schneider (Front end), Cullen Paulisick (Back end)
+# This application has a GUI Front end implemented in PyQt5
+# This is integrated with a backend that performs the NLP Processing (saturnlab_main)
 
 # Application for retrieving user input and displaying results of genetic sequences
 import saturnlab_main as ex
@@ -234,20 +236,6 @@ class mainWindow(QMainWindow):
         self.sr_stack.setCurrentIndex(0)
 
         self.show()
-
-    #@pyqtSlot()
-    #def on_click(self):
-    #    textboxValue = self.textbox.text()
-    #    QMessageBox.question(self, 'Message yah', "You typed: " + textboxValue, QMessageBox.Ok, QMessageBox.Ok)
-    #    self.textbox.setText("")
-
-    #@pyqtSlot()
-    #def mouseEnterSearch(self, Object):
-    #    self.textbox.setText("Nice")
-
-    #@pyqtSlot()
-    #def mouseLeaveSearch(self, Object):
-    #    self.textbox.setText("")
 
     # start loading animation
     def start_loading(self):
