@@ -2,13 +2,13 @@
 
 Authors: Cullen Paulisick, Josh Singh, Ryan Schneider, Nikhil Gupta
 
-#Motivation:
+# Motivation:
 he identification and implementation of new synthetic parts within a larger synthetic design is tedious and prone to human error. Foundries need access to robust data infrastructure. 
  
 Imagine if researchers always had a ‘TL;DR’ option for automatically scraping synthetic biology parts from existing publications...
 
 
-#Functionality Overview:
+# Functionality Overview:
 1. Query PMC database based on abstract user input
 Ex: “Biosensor design for constitutive production”
 2. Latent Dirichlet Allocation model develops topic distribution
