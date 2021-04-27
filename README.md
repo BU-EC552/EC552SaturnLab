@@ -23,6 +23,6 @@ Make the export of parts data and metadata simple
 Project Setup:
 1. Create a Python Virtual Environment
 2. Use pip to download dependencies from the dependencies.txt : i.e python3 -m pip install -r dependencies.txt
-3. python SaturnSearchAlpha.py
+3. run the command : python SaturnSearchAlpha.py
 
 
