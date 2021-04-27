@@ -27,5 +27,5 @@ Project Setup:
 
 
 Credits:
-Loading animation provied by loading.io: www.loading.io
+Loading animation 'LoadingAnimation.gif' provied by loading.io: www.loading.io
 
