@@ -23,9 +23,9 @@ def saturnlab_extract(input_text):
     authentication is required. Credentials are provided below.
     """
     # api key
-    api_key = 'icmDJw0O-dSqYOoEcKwt-8j3uDsp22ULVfVFN_3fczSr'
+    api_key = 'bhlN2ELC5m0YKHYMAKS4Utj4F6e6PapsLBHKC4M8XC8f'
     # server location
-    server_url = 'https://api.us-east.natural-language-understanding.watson.cloud.ibm.com/instances/b5ab2432-7e17-407e-a70a-2f10076a5ae4'
+    server_url = 'https://api.us-east.natural-language-understanding.watson.cloud.ibm.com/instances/5b16071c-ab42-4c60-83e3-45abe054d094'
 
     authenticator = IAMAuthenticator(api_key)
     natural_language_understanding = NaturalLanguageUnderstandingV1(
