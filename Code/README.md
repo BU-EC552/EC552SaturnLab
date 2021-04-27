@@ -29,6 +29,12 @@ Project Setup:
 Credits:
 Loading animation 'LoadingAnimation.gif' provied by loading.io: www.loading.io
 
+IBM Watson API:
+The API key for the Watson has to be dynamically changed so as to avoid security issues from being raised. The login credentials for this application will be sent to graders via email so as to not compromise them. 
+Examples of our training data and model can also be found using these credentials at https://us-east.knowledge-studio.watson.cloud.ibm.com/knowledge-studio/tools/app/rzhz10/thb30lw84b4tl27s/ui/#/. Deployed model ID will also be provided.
+
+ISSUE RAISED:
+A ticket has currently been opened with IBM due to an issue with with accessing the API. This may be due to our API key being compromised. Updates will be posted.
 
 Dependencies:
 Package            Version
