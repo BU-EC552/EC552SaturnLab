@@ -132,18 +132,18 @@ def saturnlab_extract(input_text):
     for pmid, textfile in filtered_corpus.items():
         response_entity = natural_language_understanding.analyze(
             text=textfile,
-            features=Features(entities=EntitiesOptions(limit=2, model=model_id))
+            features=Features(entities=EntitiesOptions(limit=15, model=model_id))
             ).get_result()
         response_concept = natural_language_understanding.analyze(
             text=textfile,
-            features=Features(concepts=ConceptsOptions(limit=2))
+            features=Features(concepts=ConceptsOptions(limit=10))
             ).get_result() 
         entity_responses[pmid]= response_entity
         concept_responses[pmid] = response_concept
         # print(json.dumps(response_entity, indent=2))
         # print(json.dumps(response_concept, indent=2))
 
-
+    
     return papers_ranking, stub, entity_responses, concept_responses
 
 

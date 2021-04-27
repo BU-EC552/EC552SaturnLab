@@ -14,12 +14,15 @@ import sys
 import traceback
 import time
 import json
+import os
+import os.path
 
 from PyQt5.QtWidgets import * #QApplication, QLabel, QMainWindow, QWidget, QPushButton, QAction, QLineEdit, QMessageBox
 from PyQt5.QtGui import * #QIcon
 from PyQt5.QtCore import * #Qt, pyqtSlot
 
 results_text = 0
+global_gene_list = 0
 
 # Thread communication signals
 class WorkerSignals(QObject):
@@ -80,7 +83,7 @@ class mainWindow(QMainWindow):
     def __init__(self, *args, **kwargs):
         super(mainWindow, self).__init__(*args, **kwargs)
         # Initialization Parameters
-        self.title = "SaturnLab - Search Engine"
+        self.title = "SaturnSearch - Search Engine"
         self.left = 50
         self.top = 50
         self.width = 1600
@@ -259,13 +262,15 @@ class mainWindow(QMainWindow):
     
     @pyqtSlot()
     def result_click(self):
+        global global_gene_list
+        self.genList.clear()
         text_results = self.searchResults.currentItem().text()
         parse = text_results.split("PMID:")
         pmid = parse[1]
         print(pmid)
         # display entity response data
-        global results_text;
-        r = results_text;
+        global results_text
+        r = results_text
         parts_list = []
         gene_list = []
         sequence_list = []
@@ -291,22 +296,94 @@ class mainWindow(QMainWindow):
             self.genList.addItem(new_item)
 
         # update gene list
-        output_seq = "Sequences in Paper: "
+        output_seq = "Parts in Paper: "
         for i in sequence_list:
             output_seq = output_seq + i + " \n"
         self.paperView.setText(output_seq)
 
+        global_gene_list = gene_list
+
 
     # opened window for parts (that are genes)
     def open_dialog(self):
-        self.newWindow = QDialog()
+        dlg = QDialog()
+        dlg.setWindowTitle("Export Window")
+        dlg.layout = QVBoxLayout()
 
-        test = 1
+        dlg.btn1 = QPushButton("Export GenBank")
+        dlg.btn1.clicked.connect(self.genbank_export)
+        dlg.layout.addWidget(dlg.btn1)
+
+        dlg.btn2 = QPushButton("Export JSON File")
+        dlg.btn2.clicked.connect(self.json_export)
+        dlg.layout.addWidget(dlg.btn2)
+        
+        dlg.setLayout(dlg.layout)
+        dlg.exec()
+
+    
+    def genbank_export(self):
+        global results_text
+        global global_gene_list
+        text_results = self.genList.currentItem().text()
+        parse = text_results.split("@")
+        print(parse)
+        if len(parse) > 1:
+            gene = parse[0]
+            Entrez.email = 'clp0216@bu.edu'
+            handle = Entrez.esearch(db='nucleotide',
+            sort='relevance',
+            retmax='810',
+            retmode='text',
+            term=gene+'[gene]',
+            idtype='acc'
+            )
+            ncbi_res = Entrez.read(handle)
+            res_IdList = ncbi_res['IdList']
+            handle_set = []
+            for acc_num in res_IdList[:3]:
+                fetch_handle = Entrez.efetch(db='nucleotide',
+                id=acc_num,
+                rettype="gb",
+                retmode="text")
+                data = fetch_handle.read()
+                handle_set.append(data)
+            
+            new_dir = "genBank_output_" + gene
+            #os.chdir(new_dir)
+            for i, textfile in enumerate(handle_set):
+                with open("gb_" + str(i) + ".txt", 'w') as f:
+                    f.write(textfile)
+                f.close()
+            #os.chdir(os.path.dirname(os.path.realpath(__file__)))
+        else:
+            print("Not a gene!")    
+
+    def json_export(self):
+        global results_text
+        r = results_text
+        text_results = self.searchResults.currentItem().text()
+        parse = text_results.split("PMID:")
+        pmid = parse[1]
+        print(pmid)
+        entities = r[2]
+        dict_output = entities[pmid]
+        json_file = json.dumps(dict_output, indent=2)
+        #new_dir = "json_output_" + pmid
+        #os.mkdir(new_dir)
+        #os.chdir(new_dir)
+        with open("json_" + pmid + ".json", 'w') as f:
+            f.write(json_file)
+        f.close()
+        #os.chdir(os.path.dirname(os.path.realpath(__file__)))
+
+
 
     # Don't need slots for local main functions that are called
     # populate list view
     def display_results(self, r):
         # stop animation and change view 
+        self.searchButton.setEnabled(True)
         self.stop_loading()
         self.sr_stack.setCurrentIndex(1)
         global results_text
@@ -347,6 +424,7 @@ class mainWindow(QMainWindow):
         # connect worker
         self.threadpool.start(worker)
         self.textbox.setText("")
+        self.searchButton.setEnabled(False)
 
     @pyqtSlot()
     def mainSearch_click(self):
@@ -359,6 +437,9 @@ class mainWindow(QMainWindow):
         self.threadpool.start(worker)
         # change index of stacked layout
         self.stack.setCurrentIndex(1)
+
+        # disable search button while searching
+        self.searchButton.setEnabled(False)
 
         # set nested stack to movie stack index
         self.sr_stack.setCurrentIndex(0)
