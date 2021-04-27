@@ -128,7 +128,7 @@ def saturnlab_extract(input_text):
     # set id for deployed model
     entity_responses = {}
     concept_responses = {}
-    model_id = '116b1006-b509-463c-b13e-a57f7a6749f3' 
+    model_id = 'b2b52c68-fb1e-435d-bef1-ec7fae5fcba6' 
     for pmid, textfile in filtered_corpus.items():
         response_entity = natural_language_understanding.analyze(
             text=textfile,
