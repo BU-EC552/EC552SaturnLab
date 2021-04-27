@@ -2,6 +2,7 @@
 # Authors: Ryan Schneider and Josh Singh
 
 # Application for retrieving user input and displaying results of genetic sequences
+import saturnlab_main as ex
 from Bio import Entrez
 from gensim.models import LdaModel
 from nltk.tokenize import RegexpTokenizer
@@ -18,32 +19,7 @@ from PyQt5.QtWidgets import * #QApplication, QLabel, QMainWindow, QWidget, QPush
 from PyQt5.QtGui import * #QIcon
 from PyQt5.QtCore import * #Qt, pyqtSlot
 
-class PicButton(QAbstractButton):
-    def __init__(self, pixmap, pixmap_hover, pixmap_pressed, parent=None):
-        super(PicButton, self).__init__(parent)
-        self.pixmap = pixmap
-        self.pixmap_hover = pixmap_hover
-        self.pixmap_pressed = pixmap_pressed
-
-        self.pressed.connect(self.update)
-        self.released.connect(self.update)
-
-    def paintEvent(self, event):
-        pix = self.pixmap_hover if self.underMouse() else self.pixmap
-        if self.isDown():
-            pix = self.pixmap_pressed
-
-        painter = QPainter(self)
-        painter.drawPixmap(event.rect(), pix)
-
-    def enterEvent(self, event):
-        self.update()
-
-    def leaveEvent(self, event):
-        self.update()
-
-    def sizeHint(self):
-        return QSize(200, 200)
+results_text = 0
 
 # Thread communication signals
 class WorkerSignals(QObject):
@@ -65,7 +41,7 @@ class WorkerSignals(QObject):
 
     # signal recieving any object type from the executed function
     # in our case this will be a JSON object
-    result = pyqtSignal(object,object)
+    result = pyqtSignal(object)
 
 # Search Thread
 class Worker(QRunnable):
@@ -93,10 +69,9 @@ class Worker(QRunnable):
         # integrate results with pubmed (query using user input from search box)
         query = self.args[0]
         #query_result = user_search(query)
-        query_result0 = query + "test0"
-        query_result1 = query + "test1"
+        query_result = ex.saturnlab_extract(query)
         time.sleep(5)
-        self.signals.result.emit(query_result0, query_result1)
+        self.signals.result.emit(query_result)
 
         print("Thread complete")
 
@@ -108,8 +83,8 @@ class mainWindow(QMainWindow):
         self.title = "SaturnLab - Search Engine"
         self.left = 50
         self.top = 50
-        self.width = 1080
-        self.height = 720
+        self.width = 1600
+        self.height = 900
         self.initMainScreenUI()
         self.initCompareUI()
 
@@ -137,12 +112,14 @@ class mainWindow(QMainWindow):
         self.stack.setCurrentIndex(0)
 
         self.SearchBar = QLineEdit(self)
+        self.SearchBar.setStyleSheet("*{border-radius: 25px} *{height: 100 px; font: 25px; border: 1px solid black} :hover{border: 2px solid blue}")
         self.SearchBar.resize(300,300)
 
         self.mainGrid.addWidget(self.SearchBar, 2,1)
 
         # create search button
         self.mainSearchButton = QPushButton("Search")
+        self.mainSearchButton.setStyleSheet("*{border-radius: 5px; height: 75px; width: 200px; font: 25px; border: 1px solid black} :hover{background-color: #34FEFC}")
         self.mainGrid.addWidget(self.mainSearchButton, 2,2)
         self.mainSearchButton.clicked.connect(self.mainSearch_click)
 
@@ -165,8 +142,7 @@ class mainWindow(QMainWindow):
         # install event filter
         #self.textbox.enterEvent = self.mouseEnterSearch
         #self.textbox.leaveEvent = self.mouseLeaveSearch
-        #self.textbox.setStyleSheet("border-radius: 5px")
-        self.textbox.setStyleSheet(":hover {border: 2px solid #006080}")
+        self.textbox.setStyleSheet("*{border-radius: 5px; height: 75px; font: 25px; border: 1px solid black} :hover{border: 2px solid blue}")
   
         self.grid.addWidget(self.textbox, 0,0)
 
@@ -177,7 +153,7 @@ class mainWindow(QMainWindow):
         #self.searchButton.move(tb_x + tb_w + s_dis, tb_y)
         self.searchButton.clicked.connect(self.search_click)
         self.grid.addWidget(self.searchButton, 0,1)
-        self.searchButton.setStyleSheet(":hover {background-color: black}")
+        self.searchButton.setStyleSheet("*{border-radius: 5px; height: 75px; width: 200px; font: 25px; border: 1px solid black} :hover{background-color: #34FEFC}")
 
         # Create a button in the window
         #self.button = QPushButton('Show text', self)
@@ -205,23 +181,52 @@ class mainWindow(QMainWindow):
         sr_w = 100
         sr_h = 100
         self.searchResults = QListWidget(self)
+        self.searchResults.setStyleSheet(":item{font-size: 25px; font-weight: bold; height: 200px; border: 1px solid black; border-radius: 30px} :item:hover{border: 2px solid blue} :item:selected{background-color: #029D9C}")
         #self.searchResults.move(tb_x, tb_y + tb_h + sr_dis)
-        self.searchResults.insertItem(0, "Best Paper Ever")
+        self.searchResults.itemClicked.connect(self.result_click)
         self.twoBox.addWidget(self.searchResults)
         self.searchResults.resize(sr_w,sr_h)
 
         # make a large label to the write of the list view
-        self.paperView = QLabel("Display Paper", self)
-        #self.paperView.resize = (sr_w * 2, sr_h * 2)
-        self.twoBox.addWidget(self.paperView)
+        # make button underneath that lets us see genbank sequences
+        self.paper_widget = QWidget()
+        vert_layout = QVBoxLayout()
+        
+
+        self.paperView = QLabel("", self)
+        self.paperView.setStyleSheet("*{border: 1px solid black;}")
+        self.paperView.resize = (400, sr_h)
+        vert_layout.addWidget(self.paperView)
+        self.twoBox.addWidget(self.paper_widget)
+
+        # qlistwidget of parts
+        self.genList = QListWidget()
+        self.genList.setStyleSheet(":item{font-size: 25px; font-weight: bold; height: 75px; border: 1px solid black; border-radius: 30px} :item:hover{border: 2px solid blue} :item:selected{background-color: #029D9C}")
+        self.genList.resize(50,50)
+        self.genList.itemClicked.connect(self.open_dialog)
+        vert_layout.addWidget(self.genList)
 
         # make a label to display the loading animation
+        # make label to hold layout for centring
+        self.help_animate = QWidget()
+        horizontalGrid = QHBoxLayout()
+        
         self.animateLabel = QLabel(None,self)
+        #self.animateLabel2 = QLabel(None, self)
         # loading animation
         self.movie = QMovie("LoadingAnimation.gif")
+        #self.movie2 = QMovie("LoadingAnimation.gif")
         self.animateLabel.setMovie(self.movie)
+        self.animateLabel.setStyleSheet(*{"height: 300px; width: 400px "})
+        #self.animateLabel2.setMovie(self.movie2)
 
-        self.sr_stack.addWidget(self.animateLabel)
+        horizontalGrid.addStretch()
+        horizontalGrid.addWidget(self.animateLabel)
+        #horizontalGrid.addWidget(self.animateLabel2)
+        horizontalGrid.addStretch()
+        self.help_animate.setLayout(horizontalGrid)
+        self.paper_widget.setLayout(vert_layout)
+        self.sr_stack.addWidget(self.help_animate)
         self.sr_stack.addWidget(self.lowerHalfWidget)
         self.sr_stack.setCurrentIndex(0)
 
@@ -233,33 +238,100 @@ class mainWindow(QMainWindow):
     #    QMessageBox.question(self, 'Message yah', "You typed: " + textboxValue, QMessageBox.Ok, QMessageBox.Ok)
     #    self.textbox.setText("")
 
-    @pyqtSlot()
-    def mouseEnterSearch(self, Object):
-        self.textbox.setText("Nice")
+    #@pyqtSlot()
+    #def mouseEnterSearch(self, Object):
+    #    self.textbox.setText("Nice")
 
-    @pyqtSlot()
-    def mouseLeaveSearch(self, Object):
-        self.textbox.setText("")
+    #@pyqtSlot()
+    #def mouseLeaveSearch(self, Object):
+    #    self.textbox.setText("")
 
     # start loading animation
     def start_loading(self):
         self.movie.start()
+        #self.movie2.start()
 
     # stop loading animation
     def stop_loading(self):
         self.movie.stop()
+        #self.movie2.stop()
+
+    
+    @pyqtSlot()
+    def result_click(self):
+        text_results = self.searchResults.currentItem().text()
+        parse = text_results.split("PMID:")
+        pmid = parse[1]
+        print(pmid)
+        # display entity response data
+        global results_text;
+        r = results_text;
+        parts_list = []
+        gene_list = []
+        sequence_list = []
+        for part in r[2][pmid]['entities']:
+            if part['type'].lower() == 'part':
+                if part['text'] not in parts_list:
+                    parts_list.append(part['text'])
+                    if part['disambiguation']['subtype'][0].lower() != 'none' and part['disambiguation']['subtype'][0].lower() != 'sequence':
+                        gene_list.append(part['text'])
+                    if part['disambiguation']['subtype'][0].lower() == 'sequence':
+                        sequence_list.append(part['text'])
+        
+        # update list
+        print(parts_list)
+        print(gene_list)
+        print(sequence_list)
+        for i in parts_list: 
+            new_item = QListWidgetItem()
+            output_text = i
+            if i in gene_list:
+                output_text = output_text + " @Gene"
+            new_item.setText(output_text)
+            self.genList.addItem(new_item)
+
+        # update gene list
+        output_seq = "Sequences in Paper: "
+        for i in sequence_list:
+            output_seq = output_seq + i + " \n"
+        self.paperView.setText(output_seq)
+
+
+    # opened window for parts (that are genes)
+    def open_dialog(self):
+        self.newWindow = QDialog()
+
+        test = 1
 
     # Don't need slots for local main functions that are called
     # populate list view
-    def display_results(self, r1, r2):
+    def display_results(self, r):
         # stop animation and change view 
         self.stop_loading()
         self.sr_stack.setCurrentIndex(1)
-        print(r1)
-        print(r2)
+        global results_text
+        results_text = r
+
+        # 0 , Paper rankings
+        # 1 , stub (names and authors)
+        # 2 , entity_response  (parts and methods found in papers)
+        # 3 , concept_response (broad concepts in papers)
+        #print(r[0])
         # loop and print json dictionary
-
-
+        count = 0
+        for pmid, val in r[0].items():
+            #print(r[1][pmid])
+            # pmid is paper index in stubs
+            new_item = QListWidgetItem()
+            text = r[1][pmid]
+            parse = text.split('*')
+            new_item.setText(parse[0] + "." + "\n\n Authors: " + parse[1] + "\n\n Relevance Score: " + str(val * 100) + "\n" + "PMID:" + pmid )
+            #new_item.enterEvent = self.result_hover(pmid)
+            #new_item.clicked.connect(self.result_click(self))
+            self.searchResults.addItem(new_item)
+            count = count + 1
+           
+    
 
     @pyqtSlot()
     def search_click(self):
