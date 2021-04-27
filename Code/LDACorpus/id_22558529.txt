@@ -1,0 +1,624 @@
+The central goal in synthetic
+biology is to engineer living systems that exhibit new behaviors and
+functions. The most common approach is to start with a set of standard
+biological parts or modules and to combine them in new ways to give
+rise to desired properties. To design increasingly complex systems,
+larger sets of characterized parts are required. Several groups have
+addressed the challenge of refining and standardizing biological parts
+and devices by assessing the activity of different promoters in cell-based
+transcriptional assays, designing synthetic ribosome binding sites,
+engineering directed transcript cleavage by RNase, creating libraries
+of simple logic gates, and constructing orthogonal bacterial expression
+systems. These studies have generated diverse, well-defined modules, and
+collections of many well-characterized molecular components can be
+found in the Registry of Standardized Parts () and at BioFAB (). Most of the
+parts currently used for biological design are directed toward regulation
+at the level of transcription or translation, and the set of reagents
+available for post-translational control is limited. A small number
+of protein interaction domains, including coiled coils, PDZ, SH3,
+and GBD domains, have been used to localize or oligomerize proteins.
+These have been applied in both scaffolding and signaling applications
+with impressive results, but the limited number and diversity
+of well-characterized domains restricts the complexity that can be
+designed. A larger repertoire of interaction reagents could facilitate
+the implementation of more complex systems. Coiled coils, structures
+in which α helices intertwine to
+form superhelical bundles, are the simplest of all protein interaction
+motifs and have a rich history of use in molecular engineering. Coiled
+coils of only ∼20–50 residues can fold and oligomerize
+into homo- or heteromeric 2-to-4 helix bundles, and many of the sequence features that govern coiled-coil
+interaction specificity are known. Coiled-coil sequences
+have a repeating seven-residue pattern, termed a heptad repeat, that
+is denoted (). Hydrophobic residues occupy many of the  and  positions, forming a well packed interface, and  and  positions on opposing helices tend
+to be electrostatically complementary. Homodimerizing coiled coils
+have been used to stabilize complexes, study self-assembly, and dimerize artificial
+transcription factors. Beyond using protein interactions for self-oligomerization,
+heterodimerizing coiled coils allow the creation of more complex systems
+by bringing different components together. Recent studies have applied
+coiled-coil heterodimers to nanofiber formation three-dimensional
+organization of nanoscale particles, the
+engineering of protein-based hydrogels, and signaling pathway modulation  recruitment
+of kinases/phosphatases. These studies
+indicate there is a promising future in using coiled-coil reagents
+in biomolecular engineering, one limitation being the small number
+of interacting partners to choose from. Reinke  recently reported a set of 23 synthetic
+heteroassociating coiled coils called SYNZIPs. The SYNZIPs were originally designed to interact heterospecifically
+with the leucine-zipper regions of human bZIP transcription factors
+as parallel coiled-coil dimers and in this context were referred to
+as anti-bZIPs. Following assessment of
+the interaction of the anti-bZIPs with their human protein targets, the designed proteins were tested for pairwise
+interactions among themselves using a coiled-coil microarray assay. Twenty-three peptides were selected as potentially
+useful heteroassociating interaction modules on the basis of minimal
+self-interaction and strong heteroassociation with one or more of
+the other designs. These 23 anti-bZIP peptides were renamed SYNZIPs.
+Comprehensive analysis of pairwise SYNZIP interactions revealed many
+interesting network patterns, such as orthogonal interaction pairs
+and hub-spoke motifs. Crystallographic studies of 2 of the interacting
+pairs, SYNZIP1:SYNZIP2 and SYNZIP5:SYNZIP6, demonstrated that these
+form parallel, dimeric coiled coils. Although  array studies have established
+that many SYNZIP pairs form tight, heterospecific complexes, more
+information about their interaction properties is required if they
+are to be employed as standard molecular interaction parts. Furthermore,
+SYNZIP interactions have yet to be validated inside cells. To facilitate
+the use of these modules for diverse purposes, we here present extensive
+biophysical characterization of numerous SYNZIP interactions  and report the ability of many pairs to interact
+with the anticipated specificity in yeast. Maximal utility of the SYNZIPs,
+for applications in molecular engineering,
+demands knowledge of their interaction geometries and affinities.
+Although the SYNZIPs share many sequence features in common with bZIP
+leucine zippers, which form parallel coiled-coil dimers to allow the
+transcription factors to bind DNA, it has also been observed that
+even a single amino-acid change can alter the oligomerization state
+or helix orientation of coiled coils. Crystal structures of
+two SYNZIP complexes revealed that these form parallel heterodimers,
+and Reinke  further argued that many other
+SYNZIP pairs are likely to do so. However,
+establishing this experimentally requires extensive biophysical characterization,
+which we report here. For synthetic biology applications, SYNZIPs
+must form the expected
+interactions in cells when fused to a variety of domains. To test
+whether SYNZIPs expressed as fusion proteins can interact similarly
+to shorter coiled-coil peptides, we carried out  studies using MBP fusions. We chose 14 SYNZIPs for  testing, selecting proteins that had many interaction partners in
+the prior coiled-coil microarray tests or that interacted with a SYNZIP
+that had many interaction partners. We also tested SYNZIP fusions
+for function in cells, assaying 22 SYNZIPs as Gal4 DNA-binding and
+activation-domain constructs in a two-hybrid screen and 14 SYNZIPs
+as Msg5- and Ste5-fusions in a MAPK signaling assay. Oligomerization state
+is a critical parameter for interaction reagents. For example, it
+was recently demonstrated that varying the number of protein interaction
+sites on a synthetic scaffold can tune the output of synthetic metabolic
+pathways. Thus, we developed a moderate-throughput
+strategy to assess the oligomerization state of numerous SYNZIPs and
+SYNZIP complexes. SYNZIPs have a molecular weight of ∼5
+kDa, which is one of their advantages as interaction modules. Their
+small size precludes easy determination of oligomer state using size
+exclusion chromatography (SEC), but using MBP fusion proteins allowed
+us to separate oligomers based on molecular weight changes of ∼50
+kDa, which corresponds to a significant difference in hydrodynamic
+radius. Interacting SYNZIP-MBP fusions are composed of two globular
+domains attached to a rigid coiled-coil linker, and this unusual shape
+could potentially influence their elution profiles. Thus, we used
+the SYNZIP1:SYNZIP2 heterodimer with each peptide fused to MBP as
+a dimer standard and made a homotrimeric
+mutant of the yeast bZIP GCN4, GCN4-pIqI fused to MBP as a trimer standard. SEC results for SYNZIP1:SYNZIP2
+and SYNZIP19:SYNZIP21 are shown
+in Figure a, and results for all other tested
+pairs are summarized in Table  and detailed
+in the . The majority
+of individual SYNZIPs eluted as monomers, as expected in the absence
+of a heterodimerization partner, but there were exceptions. Several
+constructs eluted later than most monomers and/or had asymmetric tailing
+peaks (Figure a, ). It is not unexpected that SYNZIP monomers would have
+some affinity for the column matrix, as leucine-zipper monomers are
+mostly unfolded and expose many hydrophobic residues. The degree of
+residual structure in SYNZIP monomers could also vary with sequence.
+Several zippers that appeared to form homo-oligomers at 10 μM
+injection concentrations were further tested for self-association
+using fluorescence polarization at lower concentrations (see below). In cases where the individual zippers eluted as monomers,
+it was
+very clear when a dimer formed upon mixing because there was a shift
+of almost all protein to a dimer peak. For example, in Figure a, the left panel shows the elution profiles of
+SYNZIPs 1 and 2. SYNZIP1 eluted primarily in a peak at the size expected
+for a monomer. Most of SYNZIP2 eluted slightly later than observed
+for other monomers. The SYNZIP1:SYNZIP2 mixture gave a strong peak
+in the dimer size range. SEC could also be used to detect cases where
+a monomeric species was mixed with a homo-oligomerizing partner, forming
+a preferential heterodimer. For example, SYNZIP21 alone eluted as
+a dimer, and SYNZIP19 eluted later than most monomers. It was nevertheless
+clear that a dimeric complex was formed by the mixture, because monomeric
+species all but disappeared from the elution profile and instead most
+of the protein eluted in the dimer-size peak (Figure a, right panel). When two homodimerizing SYNZIPs were mixed
+and gave a large peak at the expected dimer elution volume, the SEC
+data could not be used to confirm interaction. Nevertheless, such
+experiments supported the formation of dimers rather than higher order
+species, and pairs showing this behavior (, SYNZIP14:SYNZIP21, ) were further characterized
+using orientation and affinity assays (Table ). Biophysical
+properties of SYNZIPs. (a) SEC elution traces. The
+left panel shows SYNZIP1 in green, SYNZIP2 in blue, the SYNZIP1:SYNZIP2
+mixture in red, and the GCN4-pIqI trimer control in black. The right
+panel shows SYNZIP21 in blue, SYNZIP19 in green, the SYNZIP19:SYNZIP21
+mixture in red, and the GCN4-pIqI trimer control in black. (b) The
+cartoon shows a schematic of the FRET assay, and the bar graph shows
+FRET efficiencies for selected pairs. Hatched bars are the N-terminal
+donor/N-terminal acceptor mixes, and gray bars are the C-terminal
+donor/N-terminal acceptor mixes. (c) Representative FP titrations
+plotted as the fraction of the fluorescein labeled protein bound.
+Each plot shows reciprocal measurements, with each interaction partner
+used in turn as the labeled species. Raw data, showing millipolarization,
+is available in .
+(d) Competition between strong and weak SYNZIP pairs. Observed interactions
+are summarized in graphs at the top of each plot, where circles represent
+SYNZIPs, bold lines indicate strong interactions, and dotted lines
+indicate weak interactions observed in this assay. The fluorescence
+polarization of different mixtures is shown in the bar graphs. “F”
+and “R” in the legend of each plot designates the species
+labeled with fluorescein or rhodamine, and the curves show the best
+fit to the data (see ). Error bars
+show ±1 SD over three (b and c) or four (d) replicates. SYNZIP Pair Biophysical Properties Determined from the SEC, FRET, and
+FP data. From best fit, or average of the
+two best-fit  values when each species
+was labeled for the assay. No upper baseline was obtained in
+the assay. Elution trace
+with a leading edge
+slightly larger than dimer. Mixture of two homo-oligomerizing
+species. Although certain sequence
+features suggest a parallel arrangement of SYNZIP helices, we sought to confirm this experimentally because
+knowing the interaction geometry can be critical for molecular engineering.
+For example, knowledge of helix orientation was necessary in the design
+of artificial transcription factors using coiled coils fused to DNA
+binding domains, as demonstrated with zinc fingers and polyamides. To determine
+the interaction orientation of SYNZIP helices, we employed a FRET
+assay in which the first partner was labeled with a fluorescein donor
+on either the N- or C-terminus, and the second partner was N-terminally
+labeled with a rhodamine acceptor (Figure b). In a parallel complex, an N-terminal fluorescein will exhibit
+greater FRET efficiency than a C-terminal fluorescein when transferring
+energy to a rhodamine acceptor conjugated to the N-terminus of an
+interaction partner. An antiparallel interaction would exhibit greater
+FRET efficiency when a C-terminal fluoresceinated peptide was mixed
+with an N-terminal acceptor. Because this is a population assay, it
+reports only the prevailing helix orientation, and thus it is possible
+that mixtures of orientations are present in some cases. The crystal
+structures of the SYNZIP1:SYNZIP2 and SYNZIP5:SYNZIP6 pairs confirm
+a parallel orientation for these complexes, so these were used as
+parallel controls. The coiled-coil Acid-a1/Base-a1 was used as an
+antiparallel control (Figure b). For all but one of the SYNZIP interactions
+measured, we observed
+a greater FRET efficiency for the N-donor/N-acceptor mix than for
+the C-donor/N-acceptor mix, supporting a predominantly parallel helix
+orientation (Table ). This was true regardless
+of which peptide was labeled with fluorescein and which was labeled
+with rhodamine; each complex was tested using both combinations (). When we tested the SYNZIP6:SYNZIP21
+pair that did not interact on the peptide microarrays or by SEC, no
+FRET signal was observed. Figure B shows differences
+in FRET efficiencies for 4 parallel SYNZIP pairs. SYNZIP17:SYNZIP18
+gave the opposite pattern, indicating an antiparallel interaction
+similar to the antiparallel control pair Acid-a1/Base-a1 (denoted
+Facid + Rbase in Figure b). This pair eluted
+as a dimer in SEC, indicating the structure is likely that of an antiparallel
+heterodimer. Manual inspection of the sequences of SYNZIPs 17 and
+18, as they would interact in an antiparallel heterodimer, suggests
+two possible alignments that maximize the helix–helix overlap
+and predict electrostatic complementary at adjacent interfacial  and  positions (). Knowledge of the affinities
+of SYNZIP complexes is necessary for determining the concentration
+range at which they will be effective interaction reagents. It has
+also been demonstrated that changing the affinity of a coiled-coil
+interaction in a MAPK signaling assay can tune the effect of a modulator
+and create complex pathway responses. We
+assayed 27 SYNZIP pairs using a fluorescence polarization (FP) assay
+in which fluoresceinated MBP-fusion SYNZIP was mixed with increasing
+concentrations of an unlabeled MBP-fusion partner. Supplementary Data 1 and Figure 1 The majority
+of SYNZIP interacting pairs tested were very stable, with dissociation
+constants less than 10 nM (Figure ). Quantifying
+affinities tighter than this is beyond the sensitivity of the assay.
+Thus the reported  values for tight
+binders can be considered an upper limit. Overall, the affinity data
+agree well with data from other assays. Strong hetero interactions
+detected in the previous coiled-coil array study and by SEC all had very tight affinities as measured by
+FP. For weakly interacting pairs, , those not
+previously observed to interact and those that interacted only weakly
+on protein microarrays, interactions were observed only at higher
+concentrations, if at all, and we could not detect an upper baseline
+even at concentrations approaching 20 μM (). Finally, most of the self-interactions
+originally detected by SEC exhibited a slow increase in polarization
+with increasing concentration, inconsistent with cooperative two-state
+binding (). Figure c shows titration binding curves for three tight
+SYNZIP interactions and one weak interaction. We also tested
+whether a tight pair could compete effectively with
+a weak pair. For example, the SYNZIP18:SYNZIP21 pair showed no signal
+on the coiled-coil microarrays and showed
+weak interaction in FP studies ( >
+250
+nM). When SYNZIP18 labeled with fluorescein was mixed with a high
+concentration of SYNZIP21, we detected an interaction between the
+two as indicated by an increase in polarization. However, when a high
+concentration of SYNZIP16, which forms a tight complex with SYNZIP21,
+was included in the mixture, the weak interaction no longer occurred
+(Figure d). Similar trends were observed for
+other pairs, as shown in Figure d. SYNZIP Interactions in a Yeast Two-Hybrid Assay The
+yeast two-hybrid (Y2H) assay provides a straightforward and widely
+used way to assess the ability of SYNZIPs to mediate protein association
+in cells. The proteins to be tested are individually fused to the DNA-binding
+(bait) and activation domains (prey) of the Gal4 transcription factor.
+In our version of the assay, a SYNZIP–SYNZIP interaction reconstitutes
+the transcription factor, which then drives expression of  and  reporter genes. A positive
+readout requires that the fusion proteins be expressed, localize to
+the nuclei of living cells, and interact. Thus, Y2H can be used to
+determine whether SYNZIP fusions are toxic to cells, and whether concentrating
+them in the nucleus affects their interaction behavior. We tested
+all pairwise combinations of 22 SYNZIPs both as DNA-binding and activation
+domain fusions for both selection assays. Figure a and c summarizes our observations that many SYNZIP pairs
+did not support growth, as expected, and that rapidly growing colonies
+were often detected reciprocally in both fusion contexts. For all
+of the SYNZIPs in each fusion context, we observed comparable growth
+rates on selection media for plasmid maintenance only, indicating
+that constitutive expression of these SYNZIP fusion constructs had
+no noticeable effect on cell viability. There were 3 autoactivating
+DNA-binding domain fusions (SYNZIPs 4, 11 and 18) that permitted growth
+alone and regardless of partner. We did not observe any autoactivating
+activation-domain fusions, indicating that the SYNZIPs did not directly
+bind the promoters of the reporters in this system. The Y2H assay
+showed good overall agreement with interaction profiles observed in
+previous work using coiled-coil microarrays. On the basis of comparisons of 235 pairs (see ) under -histidine selection, 12 strong interactions observed by
+Y2H were not seen on the arrays and 12 strong array interactions were
+not detected by Y2H, for an overall discrepancy of ∼10% (Figure b). The -uracil selection data allowed us to compare
+237 pairs, and we found that 7 strong interactions observed by Y2H
+were not seen on the arrays, and 23 strong array interactions were
+not detected by Y2H, for an overall discrepancy of ∼13% (Figure d). We observed several interactions involving SYNZIP8
+that were not detected in the original study, including pairs 8:2,
+8:14, and 8:21. We also did not see a previously strong interaction
+between SYNZIPs 13 and 15, although this interaction was detected
+in the MAPK assay described below. These results indicate that many
+of the SYNZIP pairs can function as general interaction reagents in
+a yeast nuclear context. The full data sets are available in . SYNZIP interactions detected
+by Y2H. (a) Histidine selection with
+100 mM 3-AT, 12 days growth, represented in greyscale with white as
+no growth and black as strongest growth. (b) Heat map comparing Y2H
+data with coiled-coil microarray data, with Y2H in the lower left
+and microarray in the upper right. Red ×'s indicate an interaction
+observed in Y2H but not seen on the microarray or . Y2H data is shown as black, strong interaction; gray, undetermined
+interaction; white, no interaction; blue, two autoactivators (see ). Microarray data is the maximum of the
+two reciprocal measurements ranging from no interaction (white,  > 1) to strong interaction (black,  = 0). (c, d) Uracil
+selection, 12 days
+growth and heat map comparison with microarray, as in panel b. Repressing Yeast α-Factor Response Using SYNZIPs as Recruitment
+Domains for a Negative Pathway Modulator Bashor  recently demonstrated how the output of the yeast mating
+pathway can be modulated by recruiting kinases or phosphatases to
+the protein scaffold Ste5 in the yeast cytoplasm. A heterodimeric variant of a native bZIP protein dimerization
+domain was used in the original application. In our version of this assay, one SYNZIP was fused to the Ste5 scaffold
+to provide a binding site for a second SYNZIP that was fused to the
+phosphatase Msg5 (Figure , inset). The effect
+of recruiting Msg5 to Ste5 on the mating response was detected using
+a GFP reporter gene. Following α-factor induction of the MAPK
+signaling cascade, we expected that an interacting SYNZIP pair would
+result in reduced reporter activation compared to a control in which
+Msg5 was not fused to any SYNZIP. We tested 13 pairs expected to interact
+and 29 pairs expected not to interact on the basis of prior studies. Figure  shows the normalized
+mean fluorescence
+intensity of GFP in cells 120 min after α-factor induction (raw
+data available in ).
+Tested pairs are ordered from those that gave the lowest GFP expression,
+at left, to those that gave the highest GFP expression at right. Those
+pairs observed to interact on coiled-coil microarrays are show in
+green, and these gave the most reduced pathway outputs, as expected.
+Two exceptions where expected interactions did not lead to transcriptional
+down-regulation are shown in yellow. For example, the SYNZIP2:SYNZIP13
+interaction was very strong on the coiled-coil arrays and in the Y2H
+-histidine selection, but weak in this scaffolding assay. We also
+observed that in one fusion context the SYNZIP6:SYNZIP20 pair, a strong
+interaction in our other assays, had less effect than some of the
+weak or undetected pairs. Weak SYNZIP pairs and self-interactions,
+shown in blue, had less effect on pathway output than tight pairs,
+as expected. The SYNZIP18:SYNZIP21 pair gave a moderate response in
+the scaffolding assay, although it was not detected using microarrays,
+in Y2H or by SEC, and gave a  of >250
+nM by the FP assay (). The few differences in activity observed between the scaffolding
+assay and Y2H are not unexpected, as the interactions are being tested
+in different cellular environments and at different concentrations.
+Overall, the MAPK signaling data indicate that many SYNZIPs can interact
+in a cytosolic environment, with low to moderate expression levels,
+while maintaining the specificity of the interactions. Cell fluorescence
+as a measure of MAPK pathway modulation by SYNZIP
+pairs. SYNZIP pairs are rank ordered, left-to-right, by the relative
+mean cell fluorescence induced when the pair was used to recruit Msg5
+to Ste5 (inset). The first SYNZIP listed was fused to the Ste5 scaffold
+protein and the second was fused to Msg5 phosphatase. Green bars indicate
+interacting pairs as determined by Y2H and coiled-coil microarray.
+Two instances where SYNZIPs that interacted on the array showed little
+MAPK pathway down-regulation are highlighted in yellow. Average signals
+from 4 replicates are reported relative to the average signal for
+a Ste5-SYNZIPX:Msg5-nozipper control, with X the corresponding SYNZIP
+for the Ste5 fusion. Error bars show 1 SD of 4 measurements. Multifaceted characterization
+of SYNZIP interactions has allowed us to compile detailed biological
+specification sheets for 27 SYNZIP pairs (). Figure  shows a specification
+sheet for the SYNZIP1:SYNZIP2 pair. For this pair, we present the
+sequence alignment of the interaction based on the crystal structure,
+although in most cases we present a probable alignment based on electrostatic
+complementary at –′
+positions and other specificity determinants such Asn-Asn pairing
+at ′ positions (primes indicate a position on the opposite helix). Next, a table
+summarizes all of the interaction data we collected, including experimental
+observations and additional comments. The original protein microarray
+data are presented using  values, as defined
+in ref (), where
+numbers approaching zero indicate strong binding. Yeast two-hybrid
+data are reported qualitatively, and increasing numbers of “+”
+symbols indicate larger yeast colonies for interacting SYNZIP pairs.
+Instances of non-reciprocal interactions with respect to DNA-binding  activation-domain fusions and instances of autoactivation
+are noted. The α-factor MAPK repression is reported as the fractional
+repression of pathway output in each fusion context. The coiled-coil
+oligomerization state, helix orientation, and  based on the SEC, FRET, and FP assays are reported, with
+notes advising of any deviations from ideal behavior in the assays.
+We also present data for the biophysical assays, interactions with
+other SYNZIPs detected in any assays, constructs that are available,
+any associated PDB codes, and other comments. The SYNZIP specification
+sheets are intended to facilitate use of these reagents in a variety
+of molecular engineering applications. SYNZIP interaction specification sheet
+for pair SYNZIP1:SYNZIP2. Several properties of the SYNZIPs suggest
+they will find utility as reagents in synthetic biology, nanotechnology,
+and other fields. First, the SYNZIPs predominately form high-affinity
+dimers, indicating they can be used for the stoichiometic assembly
+of fusion partners. Recent reports describe several orthogonal protein
+interaction domains that can be used for multiple recruitments events;
+however there is a limitation in the number of such pairs available.
+Furthermore, the affinities of the several common reagents in use,
+PDZ, SH3, and GBD domains, are in the upper nanomolar to lower micromolar
+range. SYNZIPs could provide additional orthogonal
+interaction pairs, but with much higher affinity, allowing recruitment
+at lower expression levels. Next, for all but one of the tested pairs,
+our assays indicate that parallel assemblies are forming, providing
+a common structure for modular design. At the same time, the one instance
+of an antiparallel coiled coil (SYNZIP17:18) could also be useful;
+we are exploring the design of additional antiparallel components.
+Finally, tight and weak pairs have large affinity gaps and high heterospecificity.
+Affinity differences could allow competitive displacement strategies,
+where a weakly interacting partner is displaced by a stronger one,
+as shown in several examples in Figure d.
+Although we have only put an upper bound on the 's of most interacting SYNZIP pairs, there are likely
+to be differences among these affinities, and competitive displacement
+may be possible in this regime as well. Alternatively, overexpression
+of one partner with respect to another could lead to partner switching.
+Characterizing the kinetics of exchange in future work will be important
+for developing displacement as a design feature. A unique feature
+of the SYNZIPS, compared to interaction modules such as PDZ, SH3,
+and GBD domains, is that they can form combinatorial pairwise interactions
+and thus provide access to rich sets of network motifs. To facilitate
+visualization and selection of such motifs, we have provided several
+interaction data sets in a format easily readable by Cytoscape, including two sets of yeast two-hybrid data
+(using 2 different reporters) and the protein microarray  from the previously published work (). Here we discuss several sets of the best characterized
+SYNZIPs that can be used to construct interesting and potentially
+useful network motifs. Linear Interactions: SYNZIPs 2:19:21:4 One type of
+interaction network that we see among the SYNZIPs has a linear topology
+(Figure a). In this type of motif, two interacting
+pairs (2:19 and 21:4) share an interaction between them (19:21). Although
+these interactions are very tight, one could imagine their use in
+competition experiments using stoichiometric variations. For example,
+a desired final state of an interaction between 2 and 19 could be
+inhibited by a higher amount of 21 sequestering 19. The interactions
+could then be switched in the presence of an excess of 4, which would
+bind 21, thus freeing 19 and allowing the desired final state. The
+off rates for several leucine zippers are in the range 10 to 10 s, indicating that
+such a competition strategy could be reasonable. Network motifs constructed
+from SYNZIP pair interactions: (a) linear,
+(b) ring, (c) hub, and (d) orthogonal-pair motifs. Proteins are denoted
+as circles, with the SYNZIP number indicated. Strong interactions
+are shown with solid lines, and weak interactions with dashed lines.
+SYNZIPs that are not connected by an edge did not interact in the
+Y2H or previous coiled-coil microarray assays. All interactions and
+some non-interactions were confirmed  in
+this work. The asterisk indicates an antiparallel interaction between
+SYNZIP17 and SYNZIP18. Ring Interactions: SYNZIPs 18:19:21:20 A second type
+of interaction network has a ring topology (Figure b). This motif has strong interactions among 4 SYNZIPs that
+make up the perimeter of a ring, with a much lower affinity interaction
+between 18 and 21 and no interaction observed between 19 and 20.  data indicate that in the presence of other tight-binding
+partners, cross-reactivity of 18 and 21 is minimized (Figure d). This type of interaction could be used in a
+single-SYNZIP recruitment/single-SYNZIP competition arrangement, , SYNZIP19 could be used to recruit both 18 and 21,
+and overexpression of SYNZIP20 would competitively eliminate both
+interactions with 19. Hub Interactions: SYNZIPs 17:18:19:20 A hub interaction
+motif can be formed by removing SYNZIP21 from the previously described
+ring motif and adding SYNZIP17 (Figure c).
+An interesting property of this interaction set is the inclusion of
+an antiparallel partner. One could imagine an application of this
+motif as a way to localize several proteins, using just one recruitment
+domain. For example, the hub partner 18 could be fused to a cellular
+membrane protein that is expressed at high levels. If expressed at
+lower levels, the remaining SYNZIPs could all be localized to the
+membrane. Orthogonal Interactions: SYNZIPs 1:2, 3:4 Finally,
+the lack of interactions among several SYNZIPs provides orthogonal
+pair motifs (Figure d). These interactions
+allow multiple interaction events to be insulated from each other.
+Many applications for this type of motif can be envisioned, , partners from multiple orthogonal pairs could be linked
+together and used as a fully synthetic scaffold, or multiple pathways
+could be modulated by recruitment events with minimal crosstalk. We would like to emphasize that these network motifs are inferred
+from interactions tested in 2-component mixtures. With some exceptions,
+we have not confirmed that the expected dimers are the primary species
+that form in solution when multiple SYNZIPs are mixed. For example,
+it is possible that in some combinations more than two SYNZIPs assemble
+into higher order complexes. Reinke  showed
+that 4-component mixtures (of SYNZIPs 1, 2, 3, and 4 or SYNZIPs 1,
+2, 5, and 6) formed the expected pairs, implementing the orthogonal
+pair-type motif shown in Figure d. Here we
+have demonstrated that in several three-component mixtures, the strong
+interaction forms preferentially over the weak interaction (Figure d). It is likely, given the dimer-like sequence
+characteristics of the SYNZIPs, that other SYNZIPs will form the expected
+heterodimers even in complex mixtures, but for the majority of cases
+this remains to be experimentally verified. In summary, the
+SYNZIPs comprise a large set of well-characterized
+synthetic protein interaction reagents. SYNZIPs have properties that
+make them well suited for use in the design of biological systems.
+They form highly specific, high affinity interactions, allowing them
+to mediate interactions at low concentrations. They are small, between
+30 and 50 residues, and should incur a small metabolic cost for the
+cells in which they are used. Fusion proteins that we have made to
+SYNZIPs are soluble and well behaved , and
+cell toxicity in  and yeast appears to be
+limited. Finally, SYNZIPs participate in diverse interaction motifs,
+providing access to complex connectivities that go beyond simple one-to-one
+interactions. With the extensive biophysical characterization and
+yeast-cell validation presented here, the SYNZIP interaction reagents
+greatly increase the number of available protein–protein interaction
+tools for scientists to use for engineering systems at the post-translational
+level. Cloning, Purification, and Dye Labeling Supplementary
+Figure 4 and Supplementary Table 1 Synthetic genes
+encoding SYNZIPs with stop codons were
+initially PCR-amplified and ligated into pENTR vectors using D-TOPO
+cloning (Invitrogen). Subsequent addition of N- or C-terminal Cys-Gly
+residues and removal of stop codons was done by PCR mutagenesis using
+the initial pENTR-SYNZIP vectors. SYNZIPs were then recombined into
+appropriate destination vectors using LR Clonase II (Invitrogen) in
+5 or 2.5 μL reactions (see  for constructs). Synthetic
+genes used for the MAPK assay were designed with yeast optimized codons
+using Gene Designer, synthesized by PCR
+and then cloned into vectors using standard digestion and ligation
+procedures. For protein expression, SYNZIPs bearing N- or C-terminal
+Cys residues were recombined into a pMAL (NEB) derivative vector including
+a TEV protease cleavage site (not used) between maltose binding protein
+(MBP) and the Gateway linker region, and a C-terminal His6X. These
+destination vectors were transformed into BL21(DE3) cells (Agilent).
+Liquid cultures (500 mL) were induced with 1 mM IPTG at OD 0.6 for 4 h at 37 °C. Cells were pelleted, resuspended, and
+then lysed by sonication, and proteins were purified from the supernatant
+using NiNTA agarose (Qiagen) under native conditions. There was little
+variation in growth rate or peptide yield among different SYNZIPs,
+indicating overexpression of these fusion constructs did not have
+noticeably adverse effects on the cells. NiNTA-purified proteins were
+dialyzed and concentrated into PBS (2 mM KHPO, 10 mM NaHPO, 137 mM NaCl, 2.7 mM KCl) pH
+7.4, 1 mM DTT, 37% glycerol and stored at −20 °C. Control
+proteins GCN4-pIqI, Acid-a1 and Base-a1 (see below) were designed
+with  optimized codons using DNA Works, gene synthesized by PCR, ligated into the pENTR
+vector using D-TOPO cloning, recombined into the pMAL derivative expression
+vector, and purified as above. Cys-containing MBP-SYNZIP-His6X
+proteins were labeled using maleimide chemistry with fluorescein-5-maleimide
+(N-terminal or C-terminal) or Rhodamine Red C2 maleimide (N-terminal
+only) (Invitrogen). A 50 pmol portion of protein from glycerol stocks
+was reduced with 1 mM TCEP-HCl (Pierce) and then buffer exchanged
+into degassed PBS. The fluorophore was added at 10-fold molar excess
+and incubated at room temperature overnight with rotation. After labeling,
+free dye was removed by a desalting spin column (Pierce), followed
+by an additional amylose (NEB) and then NiNTA (Qiagen) column purification.
+Efficiently labeled protein yielded an ∼1:1 ratio of fluorophore
+to protein concentration for a sample, based on measuring the absorbance
+at 495 nm (fluorescein, ε = 68,000 M c, Thermo Scientific instruction bulletin 0359.2) or
+573 nm (rhodamine, ε = 119,000 M c, Molecular Probes Handbook, 11th edition) in PBS for the dye and
+280 nm in 6 M guanidine HCl for the protein. We ensured the applicability
+of this metric by testing several samples using analytical HPLC, indicating
+free dye had been eliminated and a single population of labeled protein
+remained. Size-Exclusion Chromatography (SEC) Assay Unlabeled
+MBP-SYNZIP proteins were prepared either alone at 10 μM or in
+pairs at 10 μM each in PBS pH 7.4, 1 mM DTT. Mixtures were either
+incubated at room temperature for 2 h or, for those mixtures with
+a partner that exhibited homo-oligomerization, incubated overnight
+at 37 °C and then cooled to room temperature for 2 h. Samples
+(50 μL) were run on a Waters HPLC system over a Superdex 75
+10/300 column (GE Healthcare) at a flow rate of 0.5 mL/min in PBS
+pH 7.4, 1 mM DTT while monitoring absorbance at 215 nm. Empower software
+(Waters) was used to analyze the elution profiles. A trimer control
+was based on the homotrimeric GCN4-pIqI protein, with the sequence RMKQIEDKIEEILSKQYHIENEIARIKKLIGER, which
+was cloned into the MBP destination vector described above. Fluorescence Resonance Energy Transfer (FRET) Assay The fluorescence emission of N- and C-terminally fluorescein-labeled
+constructs was measured alone and, when mixed with N-terminally rhodamine-labeled
+partner, in triplicate. Samples (100 μL) were mixed at 100 nM
+concentration of each protein in PBS pH 7.4, 1 mM DTT, allowed to
+incubate 2 h at 37 °C, and then equilibrated 1 h at room temperature.
+Samples were excited at 480 nm, and emission at 525 nm was monitored
+at 25 °C. Protein concentrations were determined by the absorbance
+of the attached fluorophore in PBS pH 7.4, 1 mM DTT using an extinction
+coefficient of 68,000 cm M for fluorescein and 119,000 cm M for rhodamine. Samples were assayed in 384-well black plates (Corning)
+using a SpectraMax M5 plate reader (Molecular Devices). The FRET efficiency
+was calculated from the average of three samples as Equilibration of the peptide mixtures
+was assessed by remeasuring plates after overnight incubation at 4
+°C and re-equilibration at room temperature for 1 h, which gave
+no appreciable change in FRET efficiencies. The antiparallel heterodimerizing
+proteins Acid-a1 (AQLEKELQALEKELAQLEWENQALEKELAQ),
+and Base-a1 (AQLKKKLQANKKKLAQLKWKLQALKKKLAQ) were cloned into the
+MBP destination vector described above and used as controls. Fluorescence Polarization (FP) Assay MBP-SYNZIP fluoresceinated
+proteins at 10 nM were mixed with unlabeled MBP-SYNZIPs at concentrations
+ranging from 60 pM to 20 μM, depending on the affinity range
+of the interaction, in PBS pH 7.4, 1 mM DTT in 384 well black plates
+(Corning), at a total volume of 100 μL. The concentrations of
+all proteins were determined by measuring absorbance at 280 nm in
+6 M guanidine HCl. Samples were incubated at 37 °C for 2 h and
+then allowed to equilibrate at room temperature a minimum of 1 h.
+Polarization was monitored at 480/525 nm excitation/emission using
+a SpectraMax M5 plate reader (Molecular Devices) at 25 °C. Equilibration
+of the interactions was assessed by remeasuring plates after overnight
+incubation at 4 °C and re-equilibration at room temperature for
+1 h, and no appreciable change in polarization signal was observed.
+For the FP competition assay, 20 nM labeled protein was mixed with
+each unlabeled partner at 1 μM, incubated at 37 °C for
+2 h, and then equilibrated at room temperature for 1 h before being
+read as described above. Raw fluorescence of the labeled protein was
+also measured for each well to ensure a constant amount of labeled
+protein, and a small number of outliers were removed. Dissociation
+constants ('s) were determined by curve
+fitting using Excel. The average polarization of replicates was normalized
+to fraction bound () using the equationwhere  is the measured signal,  is the signal of the lower baseline, and  the upper baseline, selected on the basis
+of best fit after multiple curve fitting analyses of the data. Binding
+curves were then fit to the equationwhere  is the
+dissociation constant,  is the initial
+concentration of the unlabeled protein, and  is the initial concentration of labeled protein.  values were fit using non-linear least-squares
+and the Solver plug-in for Excel. In some cases, the initial fit of
+the curves to the data was poor, but fits assuming a lower concentration
+of the labeled species gave dramatic improvements. Because of the
+potential for nonspecific binding of the labeled species to the plastic
+used in the assay, it is realistic that the labeled probe concentration
+might be lower than 10 nM. Thus, in cases where the fit poorly matched
+the data, we fit both the  and the labeled
+species concentration (within the range 1–10 nM), and in all
+cases a lower concentration of labeled species improved the fit to
+the data significantly. The interaction of SYNZIP pairs
+was tested using the ProQuest two-hybrid system (Invitrogen), in which
+an interaction reconstitutes Gal4 activity and drives  and  expression, allowing identification of
+interactions based on growth on selective media. SYNZIPs fused to the Gal4 activation domain
+(ADSZs) were transformed into the yeast strain MaV103; SYNZIPs fused
+to the DNA-binding domain of Gal4 (DBDSZs) were transformed into the
+strain MaV203 (both strains a gift of M. Vidal). Two liquid cultures
+inoculated from single colonies were independently grown overnight
+at 30 °C, aliquoted into 96-well plates, mixed with interaction
+partners in duplicate from the opposite mating type, and pin stamped
+onto YPD plates, resulting in four replicates in total. After overnight
+growth at 30 °C, colonies were replica plated onto synthetic
+complete media lacking leucine and tryptophan, to select for yeast
+carrying both plasmids, and incubated at 30 °C. Liquid cultures
+were then grown overnight, aliquoted into 96-well plates, and pin
+stamped onto synthetic complete media either without uracil (high
+stringency) or without histidine and with increasing concentrations
+of 3-AT (Sigma) from 10 to 100 mM (low to high stringency), as well
+as selection for plasmid maintenance. Autoactivation controls for
+both ADSZs and DBDSZs were performed using the same method without
+the mating step, with plating on appropriate dropout media. Colony
+size was imaged after 12 days for growth without uracil (-ura) and
+without histidine supplemented with 100 mM 3-AT (-his). CellProfiler was used to determine the area of the colonies,
+and analysis of processed image data was performed in Matlab. To compare the two-hybrid data to the published coiled-coil array
+data and to summarize the differences graphically, we symmetrized
+the yeast data by taking the stronger of the two observed interaction
+signals for pairs that were tested reciprocally. We binned the 253
+resulting pairs into those that showed strong growth (59 pairs -his,
+37 -ura), no growth (174 pairs -his, 187 -ura), or medium/indeterminate
+growth (14 pairs -his, 23 -ura). The indeterminate pairs, as well
+as 6 additional pairs that involved interactions between two autoactivators,
+were excluded from further analyses. The array results were processed
+using  reported by Reinke , where low scores indicate strong interactions.
+For the analysis reported in the text we used a cutoff of  < 0.6 to identify high-confidence array interactions.
+A less strict cutoff of  < 0.75 also
+gives good agreement with the yeast data. MAPK pathway testing followed
+the protocol described by Bashor () Msg5-SYNZIP fusions were integrated into the  locus of the yeast strain CB011 using a pRS305-derivative
+vector and expressed with a constitutive moderate strength promoter
+from . These strains were then transformed a
+second time with Ste5-SYNZIPs expressed on a CEN/ARS low copy number
+pRS316-derived plasmid driven by the  promoter.
+Liquid cultures of dual transformants were grown overnight and then
+diluted and grown to an OD of ∼0.6. Cultures
+were treated with 2 μM α-factor, and expression was stopped
+at 120 min with cycloheximide at 5 μg/mL. The GFP reporter was
+allowed to mature at room temperature for 1 h, and then the mean cell
+fluorescence of populations of approximately 10,000 cells was measured
+on an LSR II FACS equipped with a high-throughput sampler using FACSDIVA
+software (BD Biosciences) followed by data analysis using FlowJo software
+(Treestar Inc.). For each interaction tested, measurements were done
+in quadruplicate by picking four initial colonies into separate cultures
+and performing the assay for each culture. Because of variability
+in the overall scale of the fluorescence signals between days and
+strains, signals were corrected for the pre-induction baseline and
+also normalized using results for strains with no SYNZIP fused to
+Msg5. The following formula was appliedwhere  is
+the mean cell fluorescence after 2-h α-factor induction,  is mean cell fluorescence before α-factor
+induction, and  and  are the corresponding post- and pre-induction
+signals for strains harboring the appropriate Ste5-SYNZIP along with
+Msg5 without a SYNZIP fusion..

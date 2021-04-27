@@ -1,0 +1,303 @@
+Advancements in synthetic biology have resulted in the development of biochemical systems of increasing complexity that are capable of using living cells as well as cell-free systems. Synthetic biology holds promise for biotechnology, biomedicine, bio-environmental, bioenergy, and other applications. Many computation and control design examples have been demonstrated either  or . For instance, oscillators , toggle switches , logic gates , band pass filters , and analog circuits  have been designed and implemented in living cells, while digital circuits , neural networks , and switchable memories  have been demonstrated in cell-free systems. These developments show a clear growing trend in design complexity. Indeed, the more sophisticated systems we can build, the better skills we will have to comprehend biology and to build even more sophisticated systems. The increasing system complexity renders the necessity of design automation tools. Constructing biochemical systems bottom-up using pre-characterized parts in synthetic biology is analogous to designing electronic systems using pre-designed standard modules. While electronic design automation (EDA) has largely enabled system design under exponential capacity growth over the past five decades thanks to the driving force of Moore’s law, design automation in synthetic biology may play a similar key role in the construction of complex biochemical systems . Computer-aided modeling, simulation, synthesis, and verification are crucial because a biochemical design is often intended to function in a biological context that is often too complex to be fully characterized. Depending on its target application, a system is often designed for a specific application rather than as a general purpose computing machine. In control applications, linear systems are pervasive due to their simplicity of design and analysis. Any linear control system can be realized with three primitive components: integration, gain, and summation. Realizing linear control with biochemical reactions has been proposed by Oishi and Klavins , who showed that three types of chemical reactions (catalysis, degradation, and annihilation) are sufficient to implement the three primitive components. In principle, any polynomial ordinary differential equation can be approximated by chemical reaction networks (CRNs) . Therefore, any linear control system can be built using CRNs. To realize CRNs, nucleic acids have been exploited as a universal tool for biomolecular computation . By appropriately changing their nucleotide sequences, the interaction between nucleic acids can be precisely controlled and programmed . Specifically, toehold-mediated or enzyme-free DNA strand displacement (DSD) is a promising approach to perform biological computations. Although the DSD mechanism has been studied since the 1970s [–], until recently it was systematically used to build a molecular machine made of DNA and RNA . The DSD method is attractive for several reasons. First, the kinetics of DSD devices can be engineered by controlling toehold binding rates, which may range from 1 to 6 × 10 M s [–]. Second, composability  can be achieved. In typical implementation schemes, single-stranded DNAs play the role of signals and double-stranded DNAs act as gates, and they work together with the mechanism of toehold-mediated DNA displacement . DNA signals of different domain lengths [–] have been proposed. For example, gates can be composed to realize complex systems using a 2-domain signal architecture . Third, the DSD mechanism works autonomously  as long as the DNA or RNA fuels are supplied. With these advantages, many biomolecular devices, e.g., [–], have been designed using this powerful mechanism. The DSD technology allows computation and interfacing with molecular components in living organisms  and shows potential in bio-sensing and control, biomedicine, and other applications. Despite the advancement of biochemical implementation of linear systems, four challenges remain to be solved. First, the construction of Oishi and Klavins’s system requires that the rate constants of the underlying reactions be carefully matched to achieve the intended integration, gain, and summation functions. This requirement imposes substantial practicality restrictions because, in reality, the reaction rates of available reactions can be limited. Thus, not all gain and summation blocks can be realized. Second, once a system is constructed, its function is fixed and cannot be changed without redesign. However, this fixed functionality can be inadequate for a system reacting to its biochemical environment, which is intrinsically stochastic and often full of uncertainty. Thus, designing systems with dynamic adaptation capabilities is crucial, especially in the biochemical context. Third, the CRN implementations of the gain and summation components are approximative. In essence, the transfer functions of the gain and summation components contain extra poles rather than just the ideal scalar and summation. When a complex system is built from these components, these additional poles might cause system behavior that deviates from its specification and can even lead to unwanted instability. Fourth, an automated flow of the synthesis of CRN from the transfer function specification of a linear system is lacking. Although a linear system can be compiled into a CRN with a direct block-by-block conversion from a block diagram, the block diagram may not be available in the first place and the CRN implementation may only approximate the specification. Specifying a linear system using transfer functions can be more natural than using block diagrams. However, converting a transfer function into a block diagram suitable for CRN realization can be a nontrivial optimization task. In this paper, we tackle the above challenges. To address the first two challenges, we devise a mechanism to make linear control systems configurable by adding auxiliary species to CRN as control knobs. The concentrations of the auxiliary species can be adjusted not only to compensate for reaction rate mismatch but also to reconfigure a control system to dynamically adapt to environmental changes. Hence, implementing linear control systems in biochemistry can be made more practical. To resolve the last two challenges, we apply parallel decomposition on a given transfer function and express it as a summation of elementary modules, and propose a CRN solution that achieves the exact implementation of the elementary modules. The CRN implementation of a transfer function can be further mapped and realized using the DSD method. The proposed method lends itself to an automated design flow (as depicted in ) where the linear system to be synthesized is specified by a transfer function, which is decomposed for CRN implementation and further mapped into the DSD reactions. Through simulation using Visual DSD [, ], we show the feasibility and superiority of our proposed design automation flow for synthesizing a specified linear system into DSD reactions. 10.1371/journal.pone.0137442.g001 Automated flow of linear system synthesis. Although synthetic biology shows promising potential in biotechnology applications, it poses grand challenges to complex system design. A typical reactive system may involve sensing, actuation, information processing, and other tasks, while a control unit is one of the fundamental ingredients that constitute a reactive system. In this work, we address the design automation problem of linear control systems that are to be realized by biochemical reactions. Any linear time-invariant (LTI) system can be fully specified by means of a transfer function, which corresponds to the Laplace transform of the impulse response of the system, with all initial conditions set to zero. In essence, once the impulse response of a linear system is known, the output () of the system with any input () can be characterized using the transfer function. However, for a multiple-input multiple-output (MIMO) linear system, the principle of superposition suggest that the total effect on any output due to all the inputs acting simultaneously is obtained by summing up the output effects due to the individual inputs acting alone. Consequently any MIMO system can be specified by a matrix of transfer functions. For simplicity, in this paper we focus on single-input single-output (SISO) systems without loss of generality. Configurable Primitive Components A transfer function can be realized by building a network of primitive components consisting of integration, gain, and summation blocks; therefore, implementing an LTI system in biochemical systems amounts to realizing these three basic components with chemical reactions . However, the CRN realizations of these components proposed by Oishi and Klavins  are deficient in that rate constants have to be carefully matched and the designed control system cannot be reconfigured. These deficiencies impose a practicality issue that restricts system realization and a flexibility issue that prevents dynamic system adaptation. We can overcome these issues by introducing configurable primitive components as discussed below. Following Oishi and Klavins , we represent a real signal  by the difference (
+ − 
+) between the concentrations of two complementary molecular species 
+ and 
+. In this paper, we do not distinguish notationally between a species and its concentration. Moreover, we abbreviate a pair of chemical reactions of complementary species
+
+with rate constants 
+ and 
+, to
+
+where the plus and minus signs in the superscripts ± and ∓ are ordered. shows the chemical reactions and transfer functions of the proposed configurable primitive components, which we will elaborate on in the following sections. 10.1371/journal.pone.0137442.t001 Three primitive components, their chemical reactions, and their transfer functions. An integration block takes a signal () as input, and produces a signal , for some constant  ∈ ℝ, as output. The chemical realization of an integration block for  ≥ 0 consists of a pair of catalytic reactions
+
+and an annihilation reaction
+
+where  are the rate constants. The reactions differ from those of Oishi and Klavins  in that the 
+
+ are newly added to the catalytic reactions. Both the auxiliary species 
+ and the input species 
+ serve as catalysts. With the definition that , the signal  is exactly the integration of signal  as described by the ordinary differential equation
+
+for . Taking the Laplace transform of the above equation, we obtain the transfer function . Because the concentrations of 
+ and 
+ can be controlled externally, in theory it is always possible to design a reaction network to meet any required . For  < 0, the reactions are the same except that the catalytic reactions should be modified by reversing the complementary species of the output signal  as
+
+where 
+ replaces the original 
+. A weighted summation block takes a number of input signals 
+(),  = 1, 2, …,  and produces an output signal  for 
+ ∈ ℝ. A gain block is a special weighted summation block with only one input () that produces output () = 
+
+() for 
+ ∈ ℝ. The gain block with 
+ ≥ 0 can be realized by one pair of catalytic reactions,
+
+one pair of degradation reactions,
+
+and an annihilation reaction
+
+where 
+ and 
+ are auxiliary species. These reactions induce the following kinetic equations
+
+Let  and . The mass action of  becomes
+
+When the steady state is reached, the changing rate of  (i.e., ) equals zero, which implies . Note that the concentrations of the auxiliary species 
+ and 
+ are controlled externally. Therefore, it becomes theoretically possible to meet any required 
+ by tuning the concentrations of these auxiliary species. For 
+ < 0, the plus and minus signs of the superscripts of  in the pair of catalytic reactions should be swapped. For the weighted summation block, the reactions are the same as those for the gain block except that the pair of catalytic reactions becomes
+
+By setting  we obtain the equation
+
+in the steady state. Similarly, if a scaling factor 
+ < 0, we swap the signs in the superscript of  in the reaction corresponding to input 
+. It is worth noting that in contrast to the integration block, the weighted summation block only approximates the intended weighted summation when the steady state is not yet reached; this is often the case in practice. This approximation can be clearly seen from its transfer function , rather than the ideal . Although this approximation may seem to inevitably cause a chemical reaction implementation to deviate from its specification, we will later show methods that can be used to circumvent this imperfection. To assess the benefit of the auxiliary species, we perform a proof-of-concept case study on the mass-spring-damper (MSD) system as shown in . The system can be modeled by the equation
+
+Using  = 1 kg,  = 10 N s/m,  = 20 N/m, and  = 1 N, by Laplace transform we derive the transfer function
+
+The transfer function can be implemented with the block diagram shown in . The proportional-integral (PI) controller to the MSD system is shown in . The block diagrams are constructed with 
+ = 10 for all the summation and gain blocks, with the exception of the summation blocks shown in red and gain blocks  and  with 
+ = 50. The values of 
+’s are set to 
+, where the values of  are equal to the weights specified in the corresponding gain blocks. Additionally, we assume  and  have the same values as 
+, and  and  are mismatched to 
+ by 10%, where 
+ and 
+ are the rate constants of the catalytic and degradation reactions, respectively, formulated in the prior work . show the step, impulse, and sinusoidal responses of the MSD system, and the step responses of the PI-controlled MSD system, respectively. Our method achieves better approximation to the ideal cases than the prior method . One of the advantages of our method is that we can match the weight  by tuning the concentrations of 
+ and 
+. In contrast, no tuning is possible in the prior method  to avoid the inexact gain , where 
+ and 
+ are the rate constants of the catalytic and degradation reactions formulated in the prior work , respectively, due to the mismatch of the rate constants. (Note that the biochemical implementations have their own optimal 
+ and 
+ values, shown in , to approximate the ideal system.) Suppose that the spring and damper of the above MSD system are now replaced with new ones for  = 40 N s/m and  = 60 N/m. Our method can still adapt the PI-controller to the new MSD system without redesigning the PI-controller, whereas the prior method has no such capability. Because we can tune the concentrations of 
+ and 
+ in biochemical implementation, it is possible for us to adapt (
+, 
+) to optimal values (40, 60) for the new PI-controlled MSD system, which is in contrast to the original system (15, 20).  compares the results with and without such reconfigurability. 10.1371/journal.pone.0137442.g002 Mass-spring-damper system and its block diagrams. (A) MSD system. (Let  = 1 N,  = 1 kg,  = 10 N s/m, and  = 20 N/m.) (B) Block diagram of the MSD model, where the triangular blocks denote gain functions with their corresponding weights, the rectangular blocks denote integrators, and the circle blocks denote mixers for summation and/or subtraction. (Let  = 2.764,  = 7.236 and  = 0.2236.) (C) Block diagram of the PI-controlled MSD model, where  is the plant shown in (B). (Assume the values of 
+ and 
+ given in .) 10.1371/journal.pone.0137442.g003 Responses of MSD systems with and without a PI controller. The blue, green, and red curves represent the responses in ideal, configurable biochemical implementation, and nonconfigurable biochemical implementation cases, respectively. (A) Step, impulse, and sinusoidal responses of the MSD. (B) Step responses of PI-controlled MSD. (Assume 10% rate mismatch in the MSD system.) (C) Step responses of PI-controlled MSD, where the MSD undergoes a parameter change with  = 40 N s/m and  = 60 N/m, respectively, to induce a gain change of  = 1.561,  = 38.44 and  = 0.0271. 10.1371/journal.pone.0137442.t002 Values of (
+, 
+) in ideal, configurable and non-configurable implementations of the original and new MSD systems. DSD Realization of Configurable Primitive Components We exploit the DNA strand displacement (DSD) technique [, ] as an experimental chassis for our synthesis flow, and map the synthesized CRNs to DSD reactions. The simulation is conducted using the Visual DSD tool  for validation. To implement each primitive component, we map the reactions listed in  to DSD reactions considering the compatibility among the components. We adopt the two-domain DSD method  to compile CRNs into nucleic acid-based chemistry to achieve flexible composability. In this method, any free (i.e., unbound) single-stranded DNA species consist of two domains: one toehold domain and one recognition domain. A  may initiate the binding between a single-stranded DNA species and a double-stranded DNA species. The two-domain DSD method supports compositionality, which indicates that a block implemented with DSD reactions can be cascaded with other blocks implemented with DSD reactions. Thus, the output species of one block fits the input species required by its downstream blocks. As a notational convention, we indicate a domain  to be a toehold by a hat “” as . We also use superscript * to indicate the Watson-Crick complement of a domain DNA sequence (e.g., domain * is sequence  if domain  is sequence ). For a single-stranded species, we indicate the 5′ end using a vertical bar “∣” and the 3′ end by an angle bracket “〉” or “〈.” We call a single-stranded species of the form | 〉 (5′ end on the left and 3′ end on the right) and 〈 | (5′ end on the right and 3′ end on the left) an  and a , respectively. A double-stranded species with an upper strand |
+〉 (and a lower strand 〈* *|) is denoted as [[
+]]. A double-stranded species with one or more dangling (or exposed) toeholds is called a , and is used to help transduce one or more species into other species. Double-stranded species without any dangling (exposed) toeholds or single-stranded species containing no toeholds are regarded as  because they lack the ability to react with other species. The gates and species separately used to construct catalysis, degradation, and annihilation CRNs are called . To ignore the effects of fuel depletion, we maintain all of the separately used species at constant concentrations. Moreover, we set the binding rates of all toeholds to 0.05 nM s, which is consistent with the prior work . We assume infinite unbinding rates [, ] to ignore the   that result from the situation where a single-stranded species binds to a gate but does not further displace the strand with which it competes for the same recognition domain. Under these settings, we map the catalytic chemical reactions
+
+to the DSD reactions shown in , where the domains highlighted in red and green are toeholds. Reactions  and  can be realized by the same set of DSD reactions except for species renaming (on recognition domains). For brevity, we simply use the same set of species  (),  (), and  () to denote the species 
+, 
+, and 
+, respectively, to implement the former reaction and to denote 
+, 
+, and 
+, respectively, for the latter reaction. The set of DSD reactions outlined in  consists of two stages. Gate  initiates the first stage of the reactions by reacting with . At the end of the first stage, the species  will be produced, and this species will react with gate  to initiate the second stage. During the second stage reactions, the species  and  will be produced to compensate for their consumption in the first stage. We note that if the recognition domains of  and  were exchanged within the seven gates and one waste in the four first stage reactions, the entire set of reactions would still represent an implementation of the intended catalytic chemical reactions. However, the new arrangement of  followed by  would accelerate input  (effectively, 
+ or 
+ in the catalytic chemical reactions) consumption because the input  would directly react with the new  gate. This is in contrast to the original  structure, where  is followed by . Therefore, this consumption acceleration of  would amplify the bias between the production and consumption rates of . Because the concentration of  could not remain constant, the input species  could not be treated as a catalyst as expected. As a result, the new set of DSD reactions will not be as effective as the example presented in . To calibrate the values of the rate constants , we conduct an experiment on the catalytic reaction . Let 
+ be mapped to , 
+ to  and 
+ to  at the concentrations summarized in . Additionally, we set and maintain the concentrations of all fuel to 2000 nM. However, the concentration of auxiliary species  can be obtained by the weight  after  are determined. Based on the relationship , where  are the concentrations of  after an elapsed time  = 1000 seconds, we derive the rate constants . As seen from , the reaction rates  hold almost the same value when the concentrations of  and  are smaller than 100 nM, but slightly decrease when one of the concentrations approaches 100 nM. Because  and  will be low concentrations (approximately 10 to 1 nM) in our later experiments, we set  nM s.  show the concentration of  over time under the concentration (in nM) settings of  at (0.001, 0.001) and (100, 100), respectively. These results suggest that the DSD reactions produce the output 
+ (i.e., |
+
+〉) at a constant rate. The linearity of the DSD reactions indicates their adequacy in realizing our proposed configurable primitive components. Similar to the construction proposed by Yordanov  when mapping chemical reactions  to DSD reactions , we map the degradation chemical reactions
+
+to the DSD reactions shown in . For brevity, the DSD reactions shown only correspond to one of the reactions  and . The species , labeled , is the only gate or fuel used in this network, while the species  represents 
+. The products  and  are waste products. In contrast to the DSD reactions proposed by Yordanov   where the fuel concentrations are not maintained as constants, we maintain the fuel  at a constant concentration. Therefore, the reaction can be effectively regarded as
+
+which is the same form as the above degradation chemical reactions. Thus, the species  corresponds to 
+ or 
+, and the rate constants  equal 0.05 nM s, which is the binding rate constant of a toehold. By solving the differential equation of the kinetics of 
+, we derive that its concentration at time  is () = (0)exp[−(0.05
+)], where (0) are the initial concentrations of ().  plot () for 
+ = 1 nM and 100 nM, respectively. In each case, there are three curves corresponding to different initial concentrations of (0) = 10, 50 and 100 nM. These six curves are shown in  and exactly fit the ideal waveforms. Finally, following the construction scheme of Yordanov  , we map the annihilation chemical reaction
+
+to the DSD reactions provided in , where species  and  represent 
+ and 
+, respectively. These species correspond to the output species of the primitive components. Two fuels with similar structures are used to make the entire DSD reaction symmetric and balance the consumption rates of  and . As shown in , the fuel  first reacts with  and then the product  reacts with . In contrast, the fuel  first reacts with  followed by the reaction between the product  and . Therefore, the consumption rates of  and  are balanced and achieve effective annihilation. The above DSD reactions for catalysis, degradation, and annihilation form a set of basic elements that enable the construction of primitive components and any proper linear system. We built the proposed configurable primitive components of integration and weighted summation with DSD reactions. The simulation results are shown in .  shows the output response of the integration component computing  with respect to fixed inputs 
+ = 2 nM and 
+ = 1 nM. The concentration of 
+ (green curve) remains at approximately 8 nM due to the effect of the annihilation reaction , while the concentration of 
+ (blue curve) grows to 105 nM after 100 seconds. As expected, the output signal  = 
+−
+ grows linearly and reaches 97 nM after 100 seconds.  shows the simulation results of the weighted summation component computing  = 2
+ + 
+. Two sets of inputs  and  in nM are observed. As expected, the component functions correctly with  = 12 − 7 = 5 (for 
+ = 2 × 5 + 2 = 12 and 
+ = 2 × 3 + 1 = 7) nM. The above simulation results confirm the successful realization of the integration and weighted summation components using DSD reactions. Because good compatibility is observed among the blocks constructed using the two-domain DSD method, these primitive DSD reactions can be composed to realize sophisticated linear systems. Later we will show that any proper transfer functions can be realized using the DSD realized primitive components. 10.1371/journal.pone.0137442.g004 DSD realization of catalytic reactions. The species in green are fuels whose concentrations are fixed to 2000 nM to avoid the effect of fuel depletion. The species , , and  represent the input 
+ or 
+, output 
+ or 
+, and catalyst 
+ or 
+, respectively. Species  reacts with the gate  to begin the first stage of the reactions followed by a series of reactions involving species  and . At the end of the first stage, species  is produced and reacts with the gate  to begin the second stage of the reactions. In this stage, species  and  are yielded to compensate for their consumption in the first stage. Finally, the output species  is generated. 10.1371/journal.pone.0137442.g005 Concentration of  over time in DSD realized catalytic reactions. 10.1371/journal.pone.0137442.g006 DSD realization of the degradation reaction. Here,  serves as fuel with its concentration maintained at a fixed value and corresponds to catalysts 
+. In the reaction, the rate constant equals the toehold binding rate 0.05 nM s. 10.1371/journal.pone.0137442.g007 Simulation of DSD realized degradation reactions. (A) Concentration of  over time under  = 
+ = 1 nM. (B) Concentration of  over time under  = 
+ = 100 nM. The three curves in each case correspond to different initial concentrations (0) = 10, 50, and 100 nM. 10.1371/journal.pone.0137442.g008 DSD realization of the annihilation reaction. Here,  and  correspond to the output species 
+ and 
+, respectively. Two fuels ( and ) with similar structures are used to ensure that the consumption rates of 
+ and 
+ are balanced. 10.1371/journal.pone.0137442.g009 Simulation of DSD realized primitive components. (A) Concentrations of 
+, 
+, and  = 
+−
+ of the integration component computing  under constant inputs 
+ = 2 and 
+ = 1 nM. (B) Concentrations of 
+, 
+, and  = 
+−
+ of the weighted summation component computing  = 2
+ + 
+ under constant inputs  and  in nM. 10.1371/journal.pone.0137442.t003 Experimental data used for measuring the rate constant of DSD catalysis. Implementation of Transfer Functions in Biochemistry Transfer Function Decomposition The transfer function () of an LTI system can always be written as
+
+where () and () are the Laplace transforms of the output () and input () signals, respectively. A transfer function is called , as we shall assume, if  <  (i.e., the degree of the numerator polynomial is smaller than the denominator polynomial). Using the fundamental theorem of algebra, () can be rewritten as
+
+where 
+, 
+ and 
+ are real numbers satisfying  for stable LTI systems,  and  are non-negative integers, and 
+ and 
+ are positive integers. By partial fraction expansion,  can be factorized as
+
+where 
+, 
+, and 
+ are real coefficients. Because the terms of  and  can be realized by cascading  times the elementary modules of  and , respectively, we only need to implement the set
+
+of elementary modules, where 
+, 
+ and 
+ are real numbers. We refer to the three elementary modules as the “degree-(1, 0),” “degree-(2, 0),” and “degree-(2, 1)” modules, respectively, according to the degrees of their denominator and numerator polynomials. Below we investigate how to implement these three elementary modules to construct any LTI system with CRNs. First, we provide a naive construction to illustrate inexactness, and then present a refined exact solution. Naive Implementation of Elementary Modules To build a degree-(1, 0) module (
+, 
+) with parameters 
+, 
+ with real values, one might use the negative feedback loop consisting of a forward integration block of  and a negative feedback of gain 
+ (as shown in ). The transfer function of this realization equals , which exactly represents the target form. Recall that the introduction of auxiliary species enables the configurability of primitive components, and thus the values of 
+ and 
+ can be set as desired. To build a degree-(2, 0) module, one has to increase the degree of the denominator polynomial. Therefore, one might try to use a degree-(1, 0) module for a compositional construction (as shown in ). Let the degree-(1, 0) module be (
+, 
+) fed to a forward integration block of , and let the negative feedback have gain 
+. Then, the transfer function of the block diagram equals  as desired. To build a degree-(2, 1) module, one might also try to use a degree-(1, 0) module for compositional construction (as shown in ). Let the degree-(1, 0) module be (
+, 
+) fed forward to the output, and place an integration block of  on the negative feedback path. Then, the transfer function of the block diagram equals  as desired. Although the block diagrams of  yield the desired transfer functions of the elementary modules, they are problematic due to the imperfection of the weighted summation components realized by the chemical reactions (with transfer function  instead of  as discussed earlier in the primitive component construction section). The following example demonstrates that a system constructed in this fashion may deviate drastically from the specification and can even be unstable. Consider the LTI system specified by transfer function
+
+By partial fraction expansion,  can be expressed as
+
+By defining
+
+they correspond to the basic elements in  and can be implemented with the block diagrams of  by setting (
+, 
+) = (2, 2.5), (
+, 
+, 
+) = (1, 3, 3) and (
+, 
+, 
+) = (1, 2, 2). Assume that 
+ =  for some positive real constant  for all weighted summation primitive components; then, assume that 
+,  = 1, …, , of a weighted summation primitive component are determined according to the required weights. The transfer functions after the chemical reaction realization become
+
+Based on (asymptotic) stability analysis, the implemented system is unstable when a pole of the transfer functions (i.e., a root of the denominator polynomials) falls in the right-half of the -plane. To avoid instability, the value of  has to be carefully determined. However, choosing a proper value for  can be tedious and sometimes even impossible. The responses of , , and  to the step input with an amplitude of 10 are shown in . Specifically,  show the responses of , C and D show the responses of , and E and F show the responses of . As seen from the plots of , the responses are unstable under the chosen small  values, while for plots of B, D, and F, the responses are stable under the chosen large  values. However, even the stable responses may deviate from the ideal transfer function responses to some extent. When  in ,  and  increases to 6, the maximal concentrations of the auxiliary species used in each case are 6 × 3/0.0249 ≈ 720, 6 × 2/0.0249 ≈ 480, and 6 × 2.5/0.0249 ≈ 600 nM, respectively, where the factors 3, 2 and 2.5 are the weights of the gain blocks in each system. As seen in , the naive implementations cannot approximate the ideal responses well even under such high concentrations. 10.1371/journal.pone.0137442.g010 Block diagrams of naive implementation of elementary modules. (A) Block diagram of the degree-(1, 0) module with parametric weights 
+ and 
+ to match the transfer function coefficients. (B) Block diagram of the degree-(2, 0) module with parametric weights 
+, 
+, and 
+ to match the transfer function coefficients. (C) Block diagram of the degree-(2, 1) module with parametric weights 
+, 
+, and 
+ to match the transfer function coefficients. 10.1371/journal.pone.0137442.g011 Responses of naive implementations to a step input of amplitude 10 nM under different values of parameter . (A) Responses of  under  = 0.5, 1.0, 1.5. (B) Responses of  under  = 4.0, 5.0, 6.0. (C) Responses of  under  = 0.5, 1.0, 1.5. (D) Responses of  under  = 4.0, 5.0, 6.0. (E) Responses of  under  = 0.5, 1.0, 1.5. (F) Responses of  under  = 4.0, 5.0, 6.0. Exact Implementation of Elementary Modules To prevent the non-ideal effect of the weighted summation components, we present a refined method that exactly implements the three elementary modules with chemical reactions. The degree-(1, 0) module can be realized directly by the CRN transfer function of the primitive gain block. For the other two modules, we take advantage of the non-ideal form of the weighted summation block and devise their corresponding block diagrams, whose CRN transfer functions match the specification. The block diagrams, normal transfer functions, and CRN transfer functions for the three elementary modules are summarized in . The CRN transfer function of the degree-(2, 0) module can be calculated from
+
+Therefore, the CRN transfer function  equals
+
+Note that if the gain and summation blocks are ideal, the normal transfer function should be . Similarly, the CRN transfer function of the degree-(2, 1) module can be derived as
+
+As a result, the responses can be made exact through the control of auxiliary species concentrations. There are two special cases that need attention. First, if the coefficient  vanishes in the denominators of the transfer functions  and  of the degree-(2, 0) and degree-(2, 1) modules, respectively, we have to make 
+ = 0 in the CRN transfer functions. Therefore, we need to remove the degradation reactions  from the summation blocks. Second, for the negative parameter 
+ or 
+ in , as mentioned previously the plus and minus signs of the superscripts of  in the pair of catalytic reactions of the weighted summation CRN should be swapped; for negative 
+, the superscript signs of  in the pair of catalytic reactions of the integration CRN should be swapped. Notice that 
+ can always be non-negative for stable linear systems, whose poles should all be on the left-half of the -plane. Therefore, with these modifications our method is sufficient to implement any stable linear system. 10.1371/journal.pone.0137442.g012 Block diagrams and their transfer functions for the exact implementation of the elementary modules. The first, second, and third rows in the table correspond to the implementations of the degree-(1, 0), degree-(2, 0), and degree-(2, 1) modules, respectively. The first, second, and third columns in the table show the block diagrams, normal transfer functions, and CRN transfer functions, respectively. A normal transfer function is obtained directly from its block diagram, whereas a CRN transfer function is obtained when the gain and summation blocks in the block diagram are realized using the gain and summation CRNs in . DSD Realization of Transfer Functions We map the naive and exact implementations of the transfer function specification of  into DSD reactions for comparison. In the simulation, we assume the rate constants  nM s and  nM s for  = 1, …, . The responses of DSD that realized naive implementation of the transfer function specification are shown in . Specifically,  show the results realizing the transfer function 
+ in , C and D show those realizing 
+, and E and F show those realizing 
+. In the plots of , the realized systems are unstable under the chosen small  values, while in the plots of B, D, and F the realized systems are stable under the chosen large  values. These results are consistent with the CRN responses of  in . The maximum 
+’s in the DSD realizations of , , and  are 6.0 × 3 = 18.0, 6.0 × 2 = 12.0, and 6.0 × 2.5 = 15.0, respectively. Because the rate constants ,  = 1, …,  are set to 0.0249 nM s, the corresponding concentrations of the catalysts 
+ in the gain and summation blocks in  of , , and  are approximately 18.0/0.0249 ≈ 720, 12.0/0.0249 ≈ 480, and 15/0.0249 ≈ 600 nM, respectively. Not only are such high concentrations undesirable, but it is also difficult to find a proper  value to fit the ideal response. To compare the naive and exact implementations of transfer function specifications under DSD realization, the responses of the targeted transfer functions 
+, 
+ and 
+ are plotted in , respectively. The red curves in  correspond to the naive implementations with  = 6; the involved concentrations of catalysts are approximately 720, 480, and 600 nM, respectively. The species with the largest concentrations used in the exact implementations of 
+ and 
+ are both the catalysts 
+ in the integration CRNs. Because the weights of the integration blocks in the exact implementations of 
+ and 
+ are both equal to 2.0, the corresponding concentrations of 
+ in the catalytic reactions are approximately 80 nM. In contrast, in the exact implementation of 
+ the catalysts 
+ in the gain block (where 
+ equals 5.0) have the highest concentration (5.0/0.05 = 100 nM). Compared to the naive implementations involving concentrations as large as 720 nM, the exact implementations require much lower concentrations, and yet fit the ideal responses much better. For the overall transfer function  = 
+ + 
+ + 
+, the responses of the DSD reactions realized via the naive and exact implementations are compared in  against the ideal response. There are two approaches combining the subsystems 
+, 
+, and 
+. One approach is to use a summation block to sum up the outputs 
+, 
+, and 
+ of 
+, 
+, and 
+, respectively; the other approach is to keep 
+, 
+, and 
+ intact without summation by assuming that the output species of 
+, 
+, and 
+ share the same piece of the DNA segment (rather than the entire DNA segment) that corresponds to the intended final product. The result of the former approach is shown in  and the latter approach is shown in , which corresponds to the direct superposition of individual 
+, 
+, and 
+ responses. We observe that summing 
+, 
+, and 
+ with an additional summation block may result in slight distortions in comparison with direct superposition. In either case, the exact implementation fits the ideal response much better than the naive implementation. 10.1371/journal.pone.0137442.g013 Responses of DSD realized naive implementations to a step input of amplitude 10 nM under different values of parameter . (A) Responses of  under  = 0.5, 1.0, 1.5. (B) Responses of  under  = 4.0, 5.0, 6.0. (C) Responses of  under  = 0.5, 1.0, 1.5. (D) Responses of  under  = 4.0, 5.0, 6.0. (E) Responses of  under  = 0.5, 1.0, 1.5. (F) Responses of  under  = 4.0, 5.0, 6.0. 10.1371/journal.pone.0137442.g014 Response comparisons on DSD realized systems under the naive and exact implementations of transfer functions 
+, 
+, and 
+. (A) Responses of 
+ implementations. (B) Responses of 
+ implementations. (C) Responses of 
+ implementations. The curves in red corresponds to naive implementations (under the parameter setting  = 6 in ), while the curves in green correspond to exact implementations. 10.1371/journal.pone.0137442.g015 Response comparisons on DSD realized systems for the naive and exact implementations of transfer function . (A)  implemented by a summation block adding 
+, 
+, and 
+, assuming  = 6 for this summation block in both the naive and exact methods. (B)  implemented by superposing 
+, 
+, and 
+, assuming that the DSD output species of 
+, 
+, and 
+ have a common sub-domain that is recognized as the output of . Rate Matching and Configurability The CRN of the integration block proposed by Oishi and Klavins contains the catalytic reactions . The integration is made possible under the assumption that . Accordingly  (i.e., output  is a weighted integration of input ). However, the CRNs of the gain block contain one pair of additional degradation reactions . The gain function with weight 
+ is realized by assuming . Thus, not only  but also  must be satisfied. To cope with the problem of matching  and  in the integration CRN, Oishi and Klavins provided a solution by maintaining a large rate constant 
+ in the annihilation reaction  so that  and  do not need to be exactly the same, as long as they are close enough to 
+. The reason is that one of the concentrations of 
+ and 
+ would approach zero under fast annihilation, and thus  equals either 
+
+
+ or 
+
+
+. Because  and  are close to 
+, the integration can be reasonably approximated. Similarly, the matching problem in the gain CRN is overcome by asserting not only a large 
+, but also a large 
+ in . Thus, by requiring that  are close enough and the ratios  and  are close to 
+, the gain function can be well approximated. However, the above assumptions of fast annihilations  (and ) may not be easily satisfied, especially when these reactions are achieved by composing multiple reactions (e.g., in the DSD realization). Two undesirable situations might occur in composite reactions even if the rate constant 
+ is high. One is that 
+ and 
+ both degrade, but the species with the lower concentration converges to a non-zero concentration value due to the restoration of the reactants by other reactions. The other is that although the species with the lower concentration vanishes, the remaining species converges to a concentration value less than ∣
+−
+∣ because some fuels can react with the remaining species. The approximations may be unsound when these situations occur. Although the effect of inappropriate assumptions might not be serious for a single primitive component, for a complex system composed of many primitive components the approximation would be crude due to error accumulations. In contrast, because our primitive components are configurable due to the addition of the auxiliary species, we can match not only the reaction rates but also the required weights by tuning the concentrations of auxiliary species. Another advantage provided by the use of auxiliary species is the ability for dynamic system adaptation. As discussed in the case study of the PI-controller, the parameters of a PI-controller may be modified by simply tuning the concentrations of auxiliary species to react to environmental changes. Thus, by using auxiliary species we may fulfill a new system with the same set of reactions by tuning only the concentrations of the auxiliary species. In contrast, without auxiliary species the system would have to be redesigned by finding new catalysts and degradations to match the new weights and rate constants. Transfer Function Decomposition A transfer function can be decomposed in many different ways. Two common choices are through parallel decomposition ( = 
+ + 
+) and serial decomposition ( = 
+ ⋅ 
+). In this paper, we adopt the former for the following reasons. First, given a strictly proper transfer function it is not always possible to decompose it as a product of the strictly proper transfer functions. For instance, the transfer function  cannot be decomposed serially into a system involving the cascade of two strictly proper subsystems. Because only proper systems where the degree of the numerator polynomial does not exceed that of the denominator polynomial are physically realizable, the only hope for implementing the system physically is to have a product of , where the degrees of the numerator and denominator polynomials are the same. For example, it can be decomposed as . However, if we implement the system with CRNs or the primitives introduced previously, the bi-proper subsystem might be an approximation due to , whose realization might involve a gain and a summation block, both of which are approximations. Second, by cascading subsystems using serial decomposition a system may be susceptible to error accumulation due to realization approximation. In contrast, parallel decomposition avoids the issue of error accumulation and amplification. Third, a strictly proper transfer function can always be decomposed as a summation of strictly proper transfer functions, which can be modeled by the three elementary modules described in . Furthermore, we show that the three elementary modules allow  CRN implementation using our configurable primitive components. For these reasons, parallel decomposition may be preferable to serial decomposition. Nevertheless, applying parallel decomposition exclusively may not always be the best choice. The reasons are twofold. First, parallel decomposition requires one final summation block to sum up all elementary modules. This summation block, when it is implemented with a CRN, is approximative. Second, a hybrid decomposition strategy may achieve more effective implementation than applying a parallel decomposition. For instance, consider the system of transfer function . If only parallel decomposition is applied, then  is decomposed into . Nevertheless, if serial decomposition is also exploited, then  can be rewritten as , which can be implemented by cascading two gain blocks with (
+, 
+) = (1, 1) and (2, 1), respectively. Therefore, with this rewriting a final summation block only needs to sum up the outputs of the two subsystems rather than three subsystems. Furthermore, the hybrid parallel and serial decomposition strategy may be more cost effective than using parallel decomposition alone. Future work should exploit a good hybrid decomposition strategy and remove the approximative effect due to the final summation block in parallel decomposition. In this paper, we realize all CRNs with DSD reactions. Typically, the rate constants in DSD reactions are approximately 10 nM s . For example, if one requires the parameter  in the degradation reaction to be 100 s, then the concentrations of 
+ should be of magnitude 10 in nM. However, such a high concentration might be impractical. To alleviate this high concentration requirement, one may try to increase the DSD reaction rates. Zhang  constructed and characterized DNA catalytic circuits driven by entropic gains . Based on the entropy effects, a variant called the tethered entropy driven catalytic circuits was introduced [, ] to shorten the catalytic cycle and improve the reaction kinetics using localized hybridization reactions, which are achieved by tethering the key species in DSD reactions to increase their local concentrations. The influence of tethering is effectively presented in a speed-up factor , whose value can be feasibly reach approximately 10 . Thus, the toehold binding rate constants can be scaled up to  × 5 × 10 nM s, where 5 × 10 nM s is the short toehold binding rate constant in diffusion-based systems . In our DSD simulation, we assume the factor  = 1000 is available to increase the toehold binding rate constants to approximately 0.05 nM s. Effectively, the concentrations of the auxiliary species can be reduced by a factor of 25. Under the toehold binding rate increase, a catalysis has a rate constant approximately 0.025 nM s in our interested range of concentrations under the intended system operation. Thus, the kinetics of the products 
+ will now become . If 
+ could be tuned to 1000 nM, then we can have an integration block with weight as high as 25. Although we have reduced the required concentrations of auxiliary species using the speed-up factor , there are still some limitations. First, if  is set to 500 in the elementary modules  and  shown in , then we have to prepare the catalysts 
+ with large concentrations (approximately 500/0.05 = 10000 nM due to the relation ). In contrast, if , then the concentrations of 
+ would be 500/0.025 = 20000 nM. Thus, although we have reduced the concentrations of the auxiliary species to increase the range of coefficients in the transfer functions, further reduction may be needed. DSD is a relatively mature technology for reliable  construction of biochemical systems, and is more practical than  experiments. However, one of the main obstacles for practical DSD experiment is to provide constant supply of fuels . This paper assumes the fuels are large in quantity and ignore the situations where the fuels become deficient. In reality, the fuels are converted to inert waste and one has to continually provide the fuels to the system. Providing stable fuel supply can be challenging in a cellular context. Therefore, it is easier to implement DSD reactions  instead of ..

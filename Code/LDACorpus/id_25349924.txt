@@ -1,0 +1,607 @@
+Pattern recognition and classification is one of the most important
+statistical disciplines. Its applications
+span across disciplines such as computer vision, natural language processing, search engines, medical diagnosis, classification of DNA sequences, speech recognition, computational
+finance, fraud detection, and many others. In these
+contexts usually a system that solves a pattern recognition problem
+learns from the “training” data presented to it. Using
+the “training” data, such a system forms an internal
+model to classify new previously unseen data. Typically these models
+are built in regular computers, although alternative approaches have
+been proposed. Many pattern recognition
+algorithms are biologically motivated.
+Biological organisms perform decision making based on classification
+of external environmental cues at all levels from intracellular (e.g.,
+ref ()) to organismal and even population-wide. The development of artificial neural network (ANN) classifiers
+was inspired by the brain’s natural ability to perform complex
+computational and classification tasks. The main principles of brain dynamics, its layered organization
+and ability to learn by adapting strengths of interneuron synaptic
+connections (plasticity) is mimicked in ANN by multilayered perceptrons
+and various learning algorithms. A different learning approach is motivated by the adaptive immune
+system of jawed vertebrates, which employs a population of lymphocytes
+(T and B cells) with a diverse genetically encoded library of recognition
+specificities in order to implement learning, memory, and pattern
+recognition capabilities. Lymphocytes with different
+receptor variants undergo essentially a supervised learning procedure
+in central lymphoid organs, being presented self-antigens as examples.
+Positive selection retains T cells capable of interacting with the
+major histocompatibility complex while negative selection eliminates
+self-reactive T and B cells. Subsequent exposure of mature lymphocytes
+to foreign antigens results in positive selection of the reactive
+clones. The adaptive immunity classifier is not a single complex multivariate
+system with parameters adjusted in course of learning. Rather, it
+is a distributed system that consists of a large number of relatively
+simple cellular classifiers and implements learning through deletion
+of outliers. When trained, it solves a consensus classification problem,
+reporting the absence of pathogens if and only if each cellular classifier
+does not respond to presented antigens. The main principles of the
+natural adaptive immune system of jawed vertebrates have inspired
+the branch of computer science known as Artificial Immune Systems
+(AIS). In this work, we propose to use synthetic biology
+to adapt biological
+systems themselves for solving complex classification tasks. While
+the most straightforward solution for this problem would be to design
+a single gene circuit that would produce output signal sufficient
+for classification, in practice, the uncertainty and wide dynamic
+range of possible signals of interest would render this solution suboptimal.
+In such situations, it appears useful to borrow the principles underlying
+the distributed classification abilities of natural adaptive immune
+system and create a heterogeneous population of microorganisms with
+different synthetic gene circuits capable of performing classification
+tasks based on consensus strategy. The desired binary classifier should
+produce a positive response (for example, above-threshold population-averaged
+fluorescence level) to positive inputs and negative response (below-threshold
+fluorescence) to negative ones. The learning algorithm then should
+consist of shaping the population in such a way that the population
+collectively “arrives” at a probably correct decision. The idea of aggregating many simple classifiers to yield a better
+classifier is a widely used strategy in machine learning that capitalizes
+on the idea that using a set of classifiers that produce barely better
+results than random guessing can achieve arbitrarily high accuracy
+when combined appropriately. It also
+can be cast as a function approximation problem in which a complex
+target function is approximated by a weighted sum of multiple simpler
+functions, such as radial basis functions or wavelets. Inspired by these ideas,
+we propose to use genetically engineered cells with limited abilities
+to perform complex classification tasks. Here, we present a
+specific biological implementation of this general
+distributed pattern recognition system concept using a model of synthetic
+gene regulatory circuits in engineered cell populations. The proposed
+implementation requires to build a cell library with genetically encoded
+randomized sensitivities to external chemical signals to be classified.
+Such libraries have been successfully constructed for optimization
+of synthetic biological circuits. One could in principle
+envision a system in which different strains were placed in different
+chambers and probed separately, and then, the classification task
+would be done . However, this approach would
+entail a complex multichamber, multichannel system that would be difficult
+to operate in an open environment. Instead, we propose here to use
+a library to form a  population
+that is pruned to learn how to solve a certain classification task.
+In the properly trained system, classification is based on a single
+population-averaged output, which simplifies the device design and
+operation considerably. The learning is done by examples: cells with
+erroneous outputs are gradually attenuated from the population, while
+the “correct” cells are amplified. As a result of multiple
+iterations of pruning/amplification, a distributed classifier trained
+for a specific task emerges from the master population. We envision
+that an arbitrary external input subject to recognition can be encoded
+by a combination of chemical inputs capable of generating the engineered
+cellular response. In this paper, however, we will consider the most
+straightforward case when the vector of chemical concentrations  the input signal subject to classification. In the following,
+we demonstrate the general principle of this classification procedure
+and describe its implementation using a model of a synthetic genetic
+circuit based on the lambda phage  promoter. In this section, we describe the
+general idea behind the training of a distributed classifier by presenting
+a set of positive and negative examples. In the following, we denote
+the set of input variables to be classified as . A classifier is the
+function  = 2 (() –
+θ) – 1, such that if () > θ, the answer is  = 1, and otherwise,  = −1. Here (·) is the Heaviside
+function, θ is a scalar threshold, and () is the scalar function of the inputs. The heart of the
+pattern classifier is the function () that minimizes the classification errors for a given distribution
+of positive and negative inputs. In our proposed population-based classifier,  will
+be a set of concentrations of chemical signals to which cells are
+subjected, and the cells are assumed to contain gene circuits that
+produce a fluorescent signal () in response to the input signal . The overall signal function, (·), will be
+the normalized linear sum of the individual fluorescence signals from
+all  cells in the trained
+population:The key to the “trainability”
+of the distributed classifier is to prepare a master population of
+cells with broadly varied functions (), so this population can be appropriately
+shaped to perform the needed classification task. This can be achieved
+using synthetic gene regulatory circuits with randomized control elements
+such as promoter regions, ribosome binding sites, or other sequences
+as described in detail below. We assume that the master population
+contains cells that individually
+provide correct answers to subsets of the data to be classified but
+that, in general, no single cell provides correct answers to all data
+(weak classifiers). The goal of training is therefore to shape the
+master population to create a distributed consensus classifier that
+performs better then any cell individually. Such training must amplify
+the cells providing correct answers as frequently as possible and
+conversely suppress the cells with poor overall performance. Thus,
+our proposed learning procedure consists in modifying the composition
+of the cell population based on the examples with known outcomes.
+The details of our training algorithm for the specific implementation
+of a genetic sensing circuit are outlined below. Distributed
+Classification with Randomized Synthetic Gene Sensors Here,
+we outline an implementation of the proposed distributed
+classifier with a diverse population of bacterial cells containing
+synthetic sensory genetic circuits with randomized parameters. For
+simplicity we focus on a scalar input with only one chemical signal
+affecting the gene circuit, however, the same approach can be straightforwardly
+generalized to the multidimensional vector input. In our two-gene
+design (Figure ), the sensing and the reporting
+functionalities are split between the two genetic modules. The sensing
+module is monotonically induced by the external chemical signal  and drives the synthesis of a transcription factor . The second promoter is regulated by  and drives the expression of a reporter protein, for example, green
+fluorescent protein (GFP). The reporter promoter is activated by  at intermediate concentrations and inhibited at higher
+concentrations, thus being active only within a finite range of concentrations
+of . The classic well-characterized example of such
+promoter is the promoter  of phage lambda, which is activated by intermediate concentrations
+and is repressed by high concentrations of the lambda repressor protein
+CI. This two-gene circuit can be modeled by the following
+set of biochemical
+reactionswhere  and  are
+the concentrations of  and , () and () are the
+effective production rates of  and , respectively, and μ and μ are the degradation rates
+of  and . The rates of gene
+expression in this system can be described by standard Hill functions:where α
+describes the basal expression
+from the sensor promoter in the absence of the signaling molecule ,  is the
+dissociation constant of  with the sensor promoter,
+the Hill coefficient  characterizes the cooperativity of activation of the sensor promoter,  characterizes the cooperativity
+of activation and repression of the reporter promoter by the transcription
+factor ,  is the dissociation constant for activation and repression
+of the reporter promoter by  (we assume the activation
+and repression cooperativities and dissociation constants to be the
+same),  and  describe the overall strength
+of production of  and , respectively.
+Noteworthy, such Hill functions based model provides a simple yet
+adequate approximation of more complex response functions required
+to describe real promoters (see  Section 3). In mass-action
+approximation the dynamics of GFP production in
+this system is described by the following system of ordinary differential
+equations:where  is the concentration
+of GFP. The steady state concentration of GFP as a function of the
+concentration of the external chemical signal  can
+be found from the eqs  and  asThe function *() is bell-shaped
+in a broad range of /μ ∈ (,/α) (Figure ). Varying /μ allows to create a library of circuits which act as low-pass
+filters (/μ ≤ ), high-pass filters (/μ ≥ /α), or tunable bandpass
+filters for the intermediate values of /μ. As described
+in the following sections, such a library can be used to train a cell
+population-based distributed classifier. Since common sensor promoters
+can have a regulatory range of over 10 (α = 10), to create a library that contains
+low-pass, bandpass, and high-pass filters, the /μ ratio
+has to be varied at least 1/α = 10 fold within [,/α] range (see Figure ). Such libraries have been widely constructed experimentally:  can be varied over more than
+10 fold range by varying the DNA sequence within and near
+the ribosome binding site of the gene of interest; this range can be further expanded by modulating the sensor promoter
+strength;/μ ratio can also
+be modulated by varying the stability of the  coding
+mRNA as well as the stability of the protein  itself. The modular architecture of the classifier
+circuit proposed here
+allows us to independently select and optimize the sensor and the
+reporter functionalities in order to maximize the classifier performance.
+Well-characterized sensor promoters, which can be induced by a variety
+of chemical signals with the appropriate monotonic response, are common and can be
+readily combined with the reporter promoter such as the well characterized
+lambda phage promoter . For these reasons the proposed two-gene
+sensory circuit appears to be well-suited for experimental implementation
+of a distributed cell population based classifier. Modular genetic circuit proposed for implementing
+a distributed
+genetic classifier. Sensing and response functionalities are split
+into separate modules. In the first module (sensor), an inducible
+promoter drives the expression of the transcription factor  in response to the applied signaling molecule . The response function of the promoter is chosen to be
+monotonic (see inset). In the second module (reporter), another inducible
+promoter drives the expression of a reporter () in response to induction by . The promoter is
+activated by intermediate concentrations of  and
+inhibited by high concentrations of . Thus, the
+resulting response function of the entire two-promoter circuit to
+the concentration of signaling molecule is bell-shaped for the relevant
+values of the circuit parameters as shown on the inset. Steady state GFP concentration
+(*) as a function
+of the concentration of the external chemical signal  for the modular classifier circuit shown for a range of  values representing a range
+of the relative strengths of the sensor promoter (Figure ). Nondimensional circuit parameters are μ = μ =  =  = 1,  = 20,  =  = 2, α = 10. In order to train a classifier
+we need to be able to sort individual cells based on their response
+to a set of known examples. A hard-decision algorithm implies that
+if a given example  belongs to a positive class,  = +1, and the GFP level in -th cell is above
+a threshold () > θ, then that particular cell should
+be
+retained in the population because the cell provides the correct answer.
+Meanwhile, the cells not reaching the threshold expression level after
+presenting a positive example should be removed from the population.
+On the other hand, if a negative example is presented ( = −1), the cells generating
+above-threshold fluorescence should be eliminated and the cells that
+are below threshold should be retained. By this selection mechanism,
+we ensure that only the cells generating correct answers survive. However, this hard-decision training algorithm in most practical
+situations leads to poor performance. As mentioned above, in general,
+each cell is a weak classifier and so it cannot provide the complete
+classification solution. If positive and/or negative categories encompass
+a broad range or several distinct ranges of inputs, a subpopulation
+in which all cells generate above-threshold output for positive examples
+and below-threshold output for negative examples would be empty. Thus,
+an outright elimination of all cells producing “incorrect answer”
+to any of many training examples would eventually lead to elimination
+of all cells. To avoid this undesirable outcome, a “soft-training”
+algorithm has to be employed in which even the “erroneous”
+cells have a chance to remain in the population, and so the resultant
+population-based classifier will produce the correct answer only by
+the population average, not the unanimous decision of all cells. We postulate that the elimination of cells from the population
+is governed by two sigmoidal cell survival probability functions  () = (1 + ξ) + (1 + ξ exp(−/γ)) and  () = 1 + (1 + ξ) – (1 + ξ exp(−/γ)) for positive and negative examples
+correspondingly, where ξ = exp((8γ)) and 0 ≤  ≤ / are chosen to encompass the entire range of possible values of  (eq ) (Figure ). These functions are chosen such
+that the cells that respond perfectly to the presented example ( = / or  = 0 for a positive or a negative example correspondingly)
+are retained in the population ( () = 1). Otherwise the cells are eliminated
+from the population with a probability that depends on the cell fluorescence  and the “rigidity” of training
+γ. For very small γ, cells not responding to the currently
+presented input are eliminated with high probability. This can potentially
+eliminate many cells required to recognize other positive examples  from the pattern being taught
+leading to the poor overall performance. For too large γ (weak
+elimination), the learning rate slows down significantly requiring
+unreasonably large number of training iterations in order to achieve
+high performance. Therefore, an optimal value of the parameter γ
+can be chosen to balance performance with the learning speed. In general,
+this value will be different for each individual problem. Experimentally
+these selection functions can be implemented via fluorescence activated
+cell sorting (FACS) or well established genetically encoded positive/negative
+selection systems. Conveniently, in the
+latter case positive or negative example is indicated by applying
+the corresponding selective compound to the cells and its concentration
+can be used to adjust the rigidity of training (γ). As
+usual in the design of classifiers, the output element of the
+classifier must be a threshold element. In the distributed classifier
+described here, the mean population fluorescence () has to be compared with a suitably chosen threshold
+θ such that the above-threshold fluorescence (() > θ) corresponds to the positive class,
+and below-threshold fluorescence (() < θ) to the negative class. The optimal threshold θ
+can be found by presenting the training set of examples and minimizing
+the percentage of incorrect answers. The training procedure described
+above can be formalized as Algorithm 1 (Figure ). In the following sections we use this algorithm to train a computational
+model of the distributed gene expression classifier and analyze its
+performance using sets of simulated data. We generate these sets using
+the model of the synthetic gene circuit (eq ) presented above. In order to simulate the combined effects of biological
+and instrumental noise on the performance of the classifier we will
+assume that the resultant mean fluorescence of the population contains
+both additive and multiplicative noise:where ε and ζ are independent
+normal random variables with the respective means of 0 and σ/4
+and standard deviations σ and σ/4. As usual in performance
+evaluation, each data set is divided into two parts, one for training
+and another for testing, and the overall performance of the classifier
+is measured as the percentage of correct answers on the test sets.
+The classifier performance is calculated using Algorithm 2 (Figure ). Cell survival
+probabilities during training upon presentation of
+a positive ( (; γ)) or a negative example ( (; γ)). Algorithm 1: Algorithm
+for training the gene expression classifier. GRAPHIC-d2084e1697-autogenerated Algorithm 2: Algorithm for testing the gene expression classifier. GRAPHIC-d2084e1787-autogenerated Before we present our numerical
+results demonstrating the performance of the distributed classifier,
+let us discuss the motivation for using nonseparable data sets as
+representative examples of real world classification problems. If
+the classes were completely separated, then a properly trained classifier
+would be able to identify the boundary (or a manifold in a multidimensional
+input space) between the classes and perform classification with 100%
+accuracy. However, in reality different classes often overlap, and
+therefore 100% accuracy of classification cannot be attained. Real-world
+biological and medical data frequently consists of overlapping (nonseparable)
+classes. To illustrate how nonseparable classes can
+emerge even in a simple biochemical system, we consider an example
+of two toxins that additively contribute to the overall toxic effect
+on the cells. In such case, in a two-dimensional plane of two toxin
+concentrations there exist a straight line where the overall toxicity
+is equal to a certain threshold; thus, the
+positive and negative classes are separable (Figure A). For specificity, we define a positive class as a domain
+of concentrations of Toxin A and Toxin B, which cause less than 50%
+population mortality after a specified test duration; all other combinations
+of concentrations by definition are assigned to the negative class.
+Now, let us assume that the concentrations of both toxins are distributed
+according to some random distribution (e.g., log-normal), but our
+sensor can only measure concentration of only one of the toxins (e.g.,
+Toxin A). In this case, the two-dimensional positive and negative
+classes are projected onto Toxin A axis and become nonseparable (Figure B). The concentration of the unmeasured Toxin B
+becomes a hidden variable that makes positive and negative classes
+nonseparable. More generally, all the unknown or unmeasured environmental
+conditions can render two sets of measured conditions nonseparable.
+In such cases, the classification task consists of learning the optimal
+discrimination boundary along Toxin A axis that maximizes the discriminatory
+power of the classifier at the level below 100% accuracy. In the absence
+of  information about the known and unknown
+toxin distributions and their effect on cell viability, the optimal
+decision boundary will have to be inferred solely from random examples
+presented to the classifier, thus the performance of a real classifier
+will be even lower. In order to clearly demonstrate the salient features of the
+classifier
+and study the limits of its performance, we will continue with two
+“idealized” classification problems. First, we consider
+the case of discriminating data generated by two log-normal distributions
+of input chemical concentration with some overlap between the two
+classes (Figure A). This example is qualitatively
+similar to the two-toxin example discussed above, except that there
+is a nonzero probability of having points far from the decision boundaries
+(it is a harder problem). After that, we test the distributed classifier
+on a more challenging problem of discriminating the data generated
+by complex distributions (one unimodal and another bimodal), when
+the negative class is surrounded by the positive class on both sides
+(Figure B). (A) Definition of positive and negative classes for two
+additively
+interacting toxins. (B) Positive and negative classes separable in
+two dimensions become nonseparable in one dimension, that is, when
+only the concentration of one of the toxins can be measured directly
+and the other becomes a hidden random variable. For illustrative purposes,
+we assumed log-normal distributions of toxin concentrations. A histogram
+of 10 examples is shown. Optimal decision boundary for
+a naive Bayes classifier is shown with a dashed line. Data is generated from two (left) or three (right) log-normal
+distributions
+generating the positive class (green) and the negative class (red)
+examples. The optimal thresholds for discriminating between the classes
+are represented by the dashed vertical lines. The maximum performance
+achievable by a classifier trained on infinite amount of examples
+from the two distributions is 93.3%, from the three distributions
+is 94.8%. The minimum in both cases is 50% which is equivalent to
+a random answer selection. Classification results for the data set
+drawn from two unimodal
+classes, Figure A. (A) Evolution of the classifier
+performance for γ = 0.1 (“hard” learning; blue)
+and γ = 1 (“soft” learning; red), population size  = 10 cells. The
+classifier performance versus cell population size  (B) or GFP fluorescence readout noise
+σ (C); γ = 1 in (B) and (C),  = 10 in (C). The median and interquartile
+range of the distribution of the classifier performance calculated
+from 10 different stochastic realizations are shown in
+parts A–C, readout noise σ = / in A and B. (D–I) Evolution of the parameters of the classifier
+before and after training—an example trajectory. The parameters
+used are γ = 1,  = 10, σ = /. It illustrates
+the shift in the distribution of parameters due to the training process
+of elimination of cells. The distribution of RBS/promoter strengths  before training (D) and after
+200 training iterations (E). (F) Normalized GFP fluorescence of the
+ensemble of cells () (blue) after
+200 training iterations, log-normal distributions generating positive
+(green) and negative (red) class examples. (G) Evolution of the classifier
+performance in this realization. Evolution of  distribution (H) and normalized cumulative
+GFP fluorescence () (I). Discrimination of Two Unimodal
+Classes As the first
+example we used the data drawn from two log-normal distributions centered
+at log() = −0.55 (class +1) and log() = −2.05 (class −1) with standard deviation
+of 0.5 (Figure A). The data has been generated
+on a log-scale since it is the natural scale of the response of the
+genetic circuit used in the classifier (Figure ). Figure A gives an illustration of the
+two generating distributions. The optimal theoretical performance
+is determined by choosing the threshold that separates the positive-class
+distribution from the negative one in a manner that minimizes discrimination
+errors. In this particular case, the optimal threshold value that
+leads to the minimal number of errors and therefore to the maximum
+performance is located exactly in the middle between the peaks of
+the two distributions which is indicated by the blue dashed vertical
+line (log () = −1.3). Due to the nonseparability
+of the two classes, it is impossible to solve this classification
+problem with 100% success rate. The optimal theoretical performance
+for this problem is 93.3%. An ideal classifier could approach this
+value for infinite amount of training and evaluation data. Using
+a “hard” learning strategy (small γ = 0.1), the
+population-based classifier achieves high performance of 91.6% in
+just 12 iterations; however, with further training the performance
+deteriorates achieving 86.1% after 200 iterations (Figure A). These results are obtained using  = 10 cells (all other circuit
+parameters are as described in Figure ). Such
+deterioration of performance is a well-known phenomenon in machine
+learning, where early stopping is often applied in similar situations. In contrast, as discussed above, a “soft” learning
+strategy (γ = 1.0) allows one to achieve the maximum performance
+(92.0%) with high robustness over a wide range of training iterations
+(Figure A). Relatively small number of cells
+is sufficient to achieve such performance (Figure B). The classifier is also robust to readout noise (Figure C). The evolution of the parameters of the
+classifier during “soft”
+training is demonstrated in Figure D–I.
+The training process leads to a robust selection of the cells with
+those values of the genetic diversity parameter  that allow the normalized population-wide
+GFP response () to roughly track
+the positive class data distribution (Figure E–F, H–I). Correspondingly it is possible to reliably
+select such a threshold θ (Algorithm 2, Figure ) that allows the classifier to achieve performance close
+to the theoretical maximum for this problem after roughly 50 training
+iterations (Figure G). We also analyzed
+the performance of the distributed classifier
+on the more realistic unimodal example of dual-toxin cell viability
+classification with one toxin measured and another unobserved which
+was introduced in the beginning of this section (see  Section 2). The classifier achieves
+high performance of about 95% after learning just 15 examples using
+“hard” (γ = 0.1) training strategy (Figure S3
+of the ). Discrimination
+of a Bimodal and a Unimodal Class This
+is a more challenging one-dimensional classification problem where
+a negative class is “sandwiched” by the positive class
+on both sides (Figure B). The negative class
+data is generated by a log-normal distribution centered at log() = −0.8. The positive class data is generated from
+two equivalent log-normal distributions centered at log() = −1.3 and −0.3. The standard deviation of all three
+distributions is 0.14. The distributions are normalized such that
+on average the equal number of examples is drawn from the negative
+and positive classes. The maximum theoretical performance on this
+problem is 94.8%, determined as in the example above. We use the same
+genetic circuit parameters as in the previous example (see Figure ). This classification problem exemplifies
+the differences between the “hard” and “soft”
+learning strategies (Figure A). Similarly
+to the previous example the “hard” learning strategy
+(γ = 0.1) initially leads to rapid improvement of classifier
+performance, reaching the maximum performance of 87.7% in 14 iterations.
+However, unlike the previous example, this increase is not robust
+and is characterized by high stochastic variability (compare Figures A and A). With further training
+the performance quickly degrades due to stochastic extinction of the
+cells fitting one of the two positive class distribution peaks (see
+the details below). These problems can be ameliorated by employing
+“soft” training strategy (γ = 1) (Figure A). In this case, the maximum performance is higher
+(92.9%) and is achieved much more reliably albeit in noticeably higher
+number of training iterations. Similarly to the previous example,
+relatively low number of cells is sufficient to achieve this performance
+(Figure B). The performance is robust with
+respect to the readout noise (Figure C). An
+example of the evolution of the parameters of the classifier during
+“soft” training is shown in Figure D–I. Classification results for the data set drawn from one
+bimodal
+and one unimodal classes, Figure B. (A) Evolution
+of the classifier performance for γ = 0.1 (“hard”
+learning; blue) and γ = 1 (“soft” learning; red),
+population size  =
+10 cells. The classifier performance versus cell population
+size  (B) or GFP fluorescence
+readout noise σ (C); γ = 1 in (B) and (C),  = 10 in (C). The median
+and interquartile range of the distribution of the classifier performance
+calculated from 10 different stochastic realizations are
+shown in parts A–C, readout noise σ = / in A and B. (D–I) Evolution of the parameters of
+the ensemble of cells before and after training–an example
+trajectory. The parameters used are γ = 1,  = 10, σ = /. It illustrates the shift in the distribution of parameters
+due to the training process of elimination of cells. The distribution
+of RBS/promoter strengths  before training (D) and after 200 training iterations (E).
+(F) Normalized GFP fluorescence of the ensemble of cells () (blue) after 200 training iterations, log-normal
+distribution generating positive (green) and negative (red) class
+examples. (G) Evolution of the classifier performance in this realization.
+Evolution of  distribution
+(H) and normalized cumulative GFP fluorescence () (I). Analytical Description
+of Soft-Learning Performance We have developed an analytical
+theory that describes the training
+and the resulting performance of the cell-based classifier in the
+limit of “soft” learning (see  Section 1). This analytical description is exact
+in the case of infinitely “soft” learning and infinite
+number of cells. It is based on the assumption that at each training
+iteration the distribution of cells is changed by infinitely small
+amount, correspondingly requiring an infinite number of training iterations
+to achieve finite changes in cell distribution. Thus, the discrete
+iteration step can be replaced by continuous “time” , and the evolution of the number of cells  with a given value  of genetic diversity parameter , in the course of training
+can be described by a differential equationwhere  is the total number of cells (fixed) and λ is a “shaping factor” which depends
+on the distributions of the positive and negative training examples (), -dependent single cell GFP response
+functions (;) and the corresponding cell survival
+probabilities () (see  Section
+1). The solution of this equation approximates an ensemble average
+solution in the case of finite “softness”, number of
+training steps (), and finite number of cells by
+formally setting  = /. Figure  demonstrates the good
+agreement between the analytical solutions for the ensemble- averaged  distribution, population
+average GFP response, and the ensemble average classifier performance
+and the simulation results for “soft” learning with
+γ = 1. Note that the performance figures calculated analytically
+are consistently higher than the ensemble average performance figures
+calculated from the simulations (Figure C,
+F). This is largely due to the fact that the analytical approximation
+is based on asymptotic analytical solution which ignores the stochastic
+effects due to the finite number of iterations. This analytical theory allows to quickly estimate
+the parameters
+for optimal training of the distributed cell population based classifier
+for a given classification problem. In comparison, the stochastic
+simulations necessary to estimate the same training parameters are
+significantly more computationally expensive. If necessary, the results
+of the analytical approximation can be confirmed by stochastic simulations. Another important result that follows from the analytical approximation
+is that early stopping must be always used in order to maximize the
+classifier performance, even in the case of infinitely “soft”
+learning, since after large number of training iterations ( → ∞) only the cells with the maximum λ survive. In most practical cases, it means
+that the cells with only one particular value of  survive, thus generally leading to
+poor classifier performance. Comparison of the analytical
+theory with the simulation results
+for the case of soft-learning (γ = 1). (A–C) Discrimination
+of two log-normal classes. (D–F) Discrimination of a bimodal
+vs a unimodal class. (A, D) Ensemble average distribution of the genetic
+diversity parameter  calculated after 200 training iterations from 10 independent
+simulations (blue bars) vs the analytical prediction (black dashed
+line). (B, E) Ensemble average population-wide GFP responses calculated
+after 200 training iterations from 10 independent simulations
+(blue line) vs the analytical prediction (black dashed line). (C,
+F) Ensemble average classifier performance calculated from 10 independent simulations vs the analytical prediction; the
+simulation results are shown as mean ± standard deviation. All
+other simulation parameters are the same as in Figures D–I and D–I. In this paper,
+we introduced
+a conceptual design of a distributed classifier in the form of a population
+of microorganisms containing a strategically constructed library of
+sensory gene circuits. We described an algorithm of training such
+a classifier by pruning the master population after iterative presentation
+of known positive and negative input–output examples. We characterized
+both numerically and analytically the performance of the proposed
+classifier based on a particular sensory gene circuit that is induced
+by the external chemical input within a certain range of concentrations
+and repressed outside of it. A library containing a broad distribution
+of such circuits with different sensitivities to the chemical input
+in individual cells within the master population can be constructed
+by randomizing the control sequences within the input genetic element
+of the sensing circuit. We demonstrated that after appropriate training
+the distributed classifier can achieve nearly optimal performance
+in solving the task of discriminating nonseparable input data sets. In this theoretical study we have not addressed in detail several
+important issues that are likely to arise in the experimental implementation
+of the distributed classifier. One such issue is the specific procedure
+to retain the “good” cells and discard the “bad”
+ones. The most straightforward way to do this is to use a fluorescence-activated
+cell sorting (FACS). However, typical commercial FACS software allows
+one only to select cells deterministically with a measured fluorescent
+value (or a combination of multiple values) within a certain range—the
+process known as “gating”—rather than to sort
+cells with a certain probability based on their fluorescence levels.
+We envisage two ways to circumvent this problem. First, any smooth
+probability function can be approximated to a required precision by
+a step function by dividing the entire range of cell fluorescence
+on a sufficiently high number of bins. Cells with the fluorescence
+values falling within each bin can be independently sorted using standard
+FACS systems and later combined in proportions according to the corresponding
+probabilities of the smooth probability function. Alternatively, a
+probabilistic selection algorithm could implement directly by straightforward
+adaption of the FACS control software if the hardware programming
+interface is available. A potentially more interesting approach allowing
+for autonomous and adaptable training could be to engineer an additional
+synthetic gene circuit controlling cell growth based on the output
+signal, using for example one of well-characterized positive/negative
+selection systems. In this study,
+we assumed that the promoter strength parameters
+are initially distributed uniformly over a broad range; however, experimentally
+the distribution would likely be nonuniform. This nonuniformity may
+affect the ability to train the classifier to an arbitrary classification
+task. In order to estimate how sensitive the performance of the proposed
+classification system may be to nonuniformity of the initial distribution
+of parameters, we have calculated the performance of our distributed
+classifier starting with model distributions of varying degrees of
+nonuniformity ( Section
+4). Based on these calculations, we estimate that depending on the
+classification problem a moderate degree of nonuniformity can be tolerated.
+However, the more uniform the initial distribution is, the better
+the final performance of the trained classifier will be, so the design
+of a uniform library is one of the important considerations for the
+future experimental implementation of the classifier. Such a library
+may have to be designed and synthesized, preselected from a random
+library, or both (see the discussion in  Section 4). Finally, we did not take into consideration
+the growth and division of cells that can affect the distribution
+of cells within the trained population if cells with different sensory
+circuit parameters differ in their doubling rates, for example, due
+to respective differences in metabolic burden exerted by these circuits. The particular design of a distributed classifier presented
+here
+is suitable for classification of a scalar input (single chemical
+inducer ) only. Many real-world classification problems
+involve multidimensional inputs. The one-dimensional classifier described
+in this paper can be generalized to solve multidimensional problems.
+In the simplest case of multidimensional classification where each
+dimension can be classified independently, the problem can be trivially
+solved by a cell population classifier consisting of a mixture of
+cells capable of responding individually to just one input using the
+circuit described in Figure . However, such
+approach would fail for more complex classification problems when
+a multidimensional distribution of positive or negative outcomes is
+not the direct product of corresponding one-dimensional distributions.
+These more complex problems can be solved using a classifier built
+with the cells endowed with circuits that are sensitive to multiple
+inputs. An example of such circuit design for a two-dimensional input
+is shown in Figure . In this design, the input
+signals are sensed separately by the corresponding two-stage modules
+similar to described above. The outputs of these two modules are then
+combined by a genetic AND gate. A number of circuits performing logical
+operations including AND have been developed and characterized recently. Similarly to the one-dimensional circuit the output of this circuit
+is a two-dimensional bell-shaped function of the two inputs (Figure A). The parameters of both sensory circuits can
+be randomized as before. These multidimensional classifiers can be
+trained and the performance can be characterized in the same way as
+in the case of the one-dimensional classifier. From synthetic
+biology perspective, our modeling study opens an
+intriguing possibility to engineer genetically diversified microbial
+populations to solve classification tasks which are difficult or impossible
+to solve within a single microbial cell. Such approach is known in
+machine learning theory where it was proven that consensus classifiers
+made of appropriately combined weak classifiers can achieve high performance. We anticipate that beyond conceptual academic interest, autonomous
+cell population-based classifiers can have biotechnological and medical
+applications. The proposed circuit and its training algorithm could
+potentially be used to facilitate biosensor design. An autonomous
+classifier could directly produce a biologically relevant response,
+for example a drug or a signaling molecule can be synthesized  when the measured input concentration falls within
+or outside an optimal range. Such autonomous systems capable of responding
+to a complex input can be used e.g. to control bioreactors or as prosthetic
+control systems for use in living organisms. On a more general level,
+our findings suggest that perhaps the genetic and phenotypic diversity
+found in many natural populations, along with
+other potential survival benefits can
+play an important role in forming a decentralized “social intelligence” capable of solving complex computational tasks in a noisy and unpredictable
+environment. (A) Desired
+bell-shaped response of the multidimensional classification
+circuit. (B) The genetic circuit proposed for use in a distributed
+genetic classifier with multiple inputs per cell. Independent sensing
+and response functionalities are combined using an appropriate biological
+AND gate. The resulting response function of the entire two-promoter
+circuit is bell-shaped with respect to the inputs  and  for the relevant
+choice of parameters..

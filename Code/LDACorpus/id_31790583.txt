@@ -1,0 +1,428 @@
+Clustered regularly interspaced
+short palindromic repeats (CRISPR) together with CRISPR-associated
+(Cas) proteins constitute an immune system in bacteria and archaea
+that cut foreign DNA entering the cell. DNA degradation is achieved by DNA cleavage at specific positions  the Cas-encoded nuclease activity, which is guided to
+the target site by a short CRISPR-RNA (crRNA) complementary to one
+of the strands of the target DNA. The simplicity and programmability
+of the CRISPR/Cas system, established for a broad range of different
+organisms, has enabled its straightforward application to specifically
+target any genomic location. Its applicability for engineering bacteria
+was first demonstrated in the context of recombineering in  where 65% of recombinant cells could be
+recovered by specifically killing of nonmutated cells. Since then, this approach has been successfully used for
+manipulating numerous bacterial species, including ,,, and , and more recently
+also . While Cas9 is currently the best-characterized and most widely
+used endonuclease among available CRISPR editing methods, Cas12a (previously
+named Cpf1) has recently emerged as an alternative for Cas9. This
+can be reasoned by the cytotoxicity of Cas9 for a number of bacteria; possible reasons could be the generation of blunt
+ends by Cas9 and the lack of or reduced activity of nonhomologous
+end-joining (NHEJ) in bacteria. In contrast,
+Cas12a generates staggered cut DNA with 5′-overhangs, which
+can be easier repaired by prokaryotes. Recently, Cas12a found additional
+applications in CRISPR genome editing methods for bacteria, such as ,,,, and . The first developed CRISPR/Cas
+method for bacteria taking advantage
+of Cas12a was developed for , directly
+combined with single-stranded DNA (ssDNA) recombineering to relieve
+allosteric feedback inhibition of the γ-glutamyl kinase by -proline., generally recognized as safe (GRAS), has been used for decades
+in industry for the million ton-scale production of monosodium -glutamate. Despite intensive efforts to
+understand -glutamate synthesis in this organism in detail,
+it was only recently possible to solve the mystery of -glutamate
+export by identifying the responsible mechanosensitive channel MscCG. In addition,  has also been engineered for the production of organic acids, alcohols, polyphenols, and specialty chemicals. Methodical
+milestones for the engineering of  include the availability of DNA transfer methods, a two-step homologous recombination method (the “sacB-system”), and, more recently, the introduction of RecT-mediated
+recombineering. The sacB-system, based
+on the conditionally lethal levansucrase-activity (SacB), is currently
+the method of choice for the site-specific introduction of genomic
+mutations. In principle, RecT-mediated recombineering with oligonucleotides
+(ssDNA) represents a true and less laborious alternative to the sacB-system,
+but applicability of this method requires a selection step since the
+frequency of obtaining recombinants in  is about 10. Here,
+biosensors, enabling direct screening for mutated cells with increased
+metabolite formation  fluorescence-activated cell
+sorting (FACS), were successfully used to isolate recombineered variants. However, depending on the application in question, development of
+a biosensor-based screen is not an option. In such cases, CRISPR/Cas12a
+mediated killing of nonrecombineered  cells is another option for quickly identifying variants with the
+desired genotype by selection, which holds the potential to decrease
+the experimental effort even further. In this manuscript, we
+characterized the CRISPR/Cas12a system with
+regard to the introduction of point mutations into the genome of  and developed a simplified CRISPR/Cas12a
+protocol. Furthermore, we used this system to identify new gain-of-function
+mutations in the mechanosensitive channel MscCG leading to -glutamate efflux. In the used CRISPR/Cas12a system, vector pJYS2_crtYf is applied for crRNA delivery.
+Using this vector as a template, plasmid pJYScr was constructed comprising
+a HI/I cloning site which
+facilitates the insertion of protospacer sequences into the delivery
+vector. Removal of the original crtYf protospacer sequence was performed
+by DNA restriction using HI and I. The respective restriction sites for these enzymes are located
+at position 3196 and 3244. Since the available vector pJYS2_crtYf
+contains three additional I sites, the selected I restriction
+site was not suitable for cloning. However, to make this site available
+for cloning, the restriction site was replaced by a I site using a synthesized 313 bp I-II fragment (Thermo Fisher Scientific, Waltham, MA, USA), comprising
+the parental sequence but replacing two nucleotides in the I site to create a I restriction
+site. For plasmid construction, the delivery vector pJYS2_crtYf was
+cut with I/II. Subsequently,
+the resulting plasmid backbone fragment was purified and combined
+with the synthesized fragment. Since the vector backbone contains
+an additional BI restriction site, site-directed
+mutagenesis was performed to introduce a C1165T mutation thereby eliminating
+this restriction site. The QuikChange II XL Site-Directed Mutagenesis
+Kit (Agilent, Santa Clara, CA, USA) was used for this purpose. However,
+we experienced that even after gel purification of vector DNA treated
+with HI/BI still intact vector
+was obtained after ligation with oligonucleotides. Therefore, the
+49 bp HI/BI fragment was replaced
+by a 931 bp dummy fragment (nt 379847–383111 of BA000036) yielding
+vector pJYScr. This vector makes it easy to separate individual DNA
+fragments after HI/BI restriction
+for further processing. The DNA sequence of pJYScr and the vector
+itself are deposited at Addgene (#132719). As control experiment,
+pJYScr:crtYf bearing the same crRNA as pJYS2_crtYf was constructed
+to evaluate, whether the replacement of restriction sites has an effect
+on the editing efficiency in comparison to pJYS2_crtYf. In these experiments,
+21 ± 7 cfu were obtained with the pJYScr:crtYf delivery vector
+and with the original vector pJYS2_crtYf 34 ± 10 cfu as escaper
+cells could be counted. This indicated that the vector backbone modifications
+did not affect the formation of an active Cas12a/crRNA complex in  cells. For construction of the
+individual crRNA delivery vectors, annealed oligonucleotides encoding
+loop region and spacer were used. For annealing, 10 μL of both
+oligonucleotides (200 nmol/mL HO) were mixed, incubated
+for 10 min at 98 °C, at room temperature for 1 h, and subsequently
+stored on ice. The annealed oligonucleotides were then ligated with
+the 4332 bp HI/BI vector fragment
+of pJYScr prepared  gel purification. Then  DH5α was transformed with the ligation
+mix. Spectinomycin resistant clones indicating a successful transformation
+event were identified on LB plates containing the antibiotic at a
+concentration of 100 mg/L. Oligonucleotides pJYS2_fw2 and pJYS2_rv2
+to amplify a 995 bp PCR fragment and DNA sequencing were used to verify
+the presence the crRNA coding region in the vector. If desired, recombinant
+strains were cured from the pJYScr plasmids by cultivation at 34 °C
+without supplementation of antibiotics as described earlier. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00361/suppl_file/sb9b00361_si_001.pdf ATCC13032 was used throughout this study. Integration of the  gene under control of the synthetic PH36 promoter was
+achieved by isolating a 3190 bp I-fragment from
+the plasmid pMK-RQ_PH36_LacZ synthesized by Invitrogen (Thermo Fisher
+Scientific, Waltham, MA, USA). This fragment was inserted into the
+pK18mobsacB vector carrying the two flanking regions of the chromosomal
+noncoding region at nucleotide 1.404.651 (acc. no. NC_006958) as previously
+described. Using two homologous recombination
+events strain  WT:: was obtained. DNA sequencing confirmed a correct chromosomal integration.  WT:: colonies plated
+onto BHIS-X-gal (5-bromo-4-chloro-3-indolyl-β--galactopyranoside)
+turned blue after 3 days, whereas the  wild type cells remained yellowish. The two constructed  mutants devoid of the carboxyterminal end were constructed
+by homologous recombination using pK19mobsacB-420stopΔ and pK19mobsacB-424stopΔ
+(), each carrying two
+flanking fragments of ∼500 bp. Transformation and Recombination Preparation of electrocompetent  pJYScr cells providing inherent expression
+of RecT and Cas12a was performed as described previously with only
+minor modifications. In short, a single
+colony from a BHI agar plate was used to inoculate a preculture of
+4 mL BHISG-Kan and incubated overnight at 30 °C and 220 rpm.
+Subsequently, 500 μL of the preculture was transferred into
+50 mL of BHISG-Kan supplemented with 1 mL/L Tween 80 and 4 g/L glycine.
+The culture was harvested when the optical density at 600 nm (OD) reached approximately 1. Cells were chilled on ice for
+20 min and centrifuged at 2,600 g and 4 °C for 10 min. Subsequently,
+two washing steps in 50 mL of 10% glycerol were performed. Competent
+cells were resuspended in 500 μL 10% glycerol, and aliquots
+of 90 μL were stored at −80 °C. For transformation,
+an aliquot was thawed on ice, mixed with 0.5 μg of the pJYScr
+derivative and 10 μg of PAGE purified oligonucleotide (Eurofins
+MWG Operon (Ebersberg, Germany), and transferred into 4 °C precooled
+electroporation cuvettes (width 2 mm). The oligonucleotides used were
+59 bp in size and encoded a mutated PAM site, spacer region, and,
+if applicable, the mutation to be introduced. After electroporation,
+cells were immediately transferred to 900 μL of prewarmed BHISG
+medium and heat-shocked for 6 min at 46 °C. The cells were incubated
+to recover for 2 h at 30 °C with shaking at 170 rpm. Cells were
+plated on BHISG containing kanamycin and spectinomycin (BHISG-Kan-Spc-Xgal),
+and incubated for 3–4 days to determine the number of colony
+forming units and their respective color. was grown on LB and  on BHI (Difco
+Laboratories, Detroit, USA). BHIS contained in addition 90 g/L sorbitol,
+BHISG moreover 10 g/L glucose, BHISG-Kan 15 mg/L kanamycin, BHISG-Kan-Spec
+100 mg/L spectinomycin, and BHISG-Kan-Spc-Xgal 50 mg/L. For glutamate
+formation, precultures were grown overnight in 20 mL BHI. Cells were
+harvested by centrifugation, washed with 20 mL 0.9% NaCl and inoculated
+to an OD of 1 in defined CGXII medium (Eggeling and
+Bott 2005) containing 50 μg/L biotin. -Glutamate in
+supernatants was determined as its -phthaldialdehyde
+derivative  HPLC and fluorescence detection as
+previously described. Simple Construction of crRNA Delivery Vectors Using Oligonucleotides According to the protocol currently used, amplification of the
+entire pJYS2_crtYf vector is necessary for inserting the desired crRNA-encoding
+spacers. Despite different PCR conditions
+and the use of megaprimers, this procedure resulted in a low yield
+and often a doubling of the oligonucleotides. With the original protocol
+we were able to construct only 1 of 5 desired vectors, which motivated
+us to develop an improved crRNA delivery vector expediting necessary
+constructions. The starting vector pJYS2_crtYf encodes the loop region
+of the crRNA in combination with the specific crtYf-targeting sequence
+on a 49 bp HI-I-fragment.
+The single HI site is located between the strong
+promoter pJ23119 and the specific spacer, whereas one of the four I sites of the vector is located between the spacer and
+the T1rrnB terminator. Using a synthesized fragment and applying site-directed
+mutagenesis, we replaced the I site by a BI site and removed an existing BI
+site in the vector backbone. The resulting vector in principle allows
+replacing the crtYf-specific crRNA-encoding sequence on the 49 bp HI-BI fragment by any other sequence. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00361/suppl_file/sb9b00361_si_001.pdf However, we substituted the crtYf-fragment by a larger fragment
+of 931 bp resulting in the vector pJYScr of 5.252 kb, which enables
+easy preparation of the 4.321 kb HI-BI vector fragment for the insertion of oligonucleotides encoding
+the desired crRNA (). This new
+vector for genome editing has been made available through Addgene
+(#132719). To validate the functionality of pJYScr in a CRISPR/Cas12a
+selection
+experiment, a crRNA targeting  of  was cloned into the vector. The  gene encodes
+the essential UDP--acetylmuramoylalanyl--glutamate 2,6-diaminopimelate ligase. The corresponding oligonucleotides comprising the PAM site 5′-GTTG-3′
+(nt 255–258) within , were annealed and
+ligated with the 4.321 kb HI-BI fragment of pJYScr, resulting in pJYScr:murE. After transformation
+of  pJYS1-petFU (providing constitutive
+Cas12a-activity) with 1 μg of the pJYScr:murE plasmid, only
+81 ± 26 cfu as escaper cells were obtained demonstrating the
+formation of an active Cas12a/crRNA complex in the cells. A control
+experiment, in which  wild type
+cells without pJYS1-petFU were transformed with the same vector yielded
+3.2 × 10 cfu. Efficiency of CRISPR/Cas12a-Assisted ssDNA-Recombineering in http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00361/suppl_file/sb9b00361_si_001.pdf With the aim to explore the
+capabilities of combining ssDNA-recombineering with CRISPR/Cas12a-mediated
+elimination of nonrecombinant cells, we first constructed a  test strain carrying a chromosomal integration
+of the  gene encoding for the β-galactosidase
+from  ( WT::lacZ). In this particular strain, -expression
+is under control of the synthetic promoter pH36, enabling easy identification of generated  mutants on agar plates supplemented with 5-bromo-4-chloro-3-indolyl-β--galactopyranoside (X-Gal) by blue-white screening. Subsequently,
+this strain was transformed with pJYS1-petFU providing constitutive
+Cas12a- as well as RecT-activity to this strain for the following
+recombineering-CRISPR/Cas12a experiments. When transformed with the empty pJYScr-vector with or without the
+recombineering oligonucleotide o-1574a, high transformation rates
+comparable to that with the standard pEKEx3 vector as a control were
+obtained ().
+A high transformation rate is essential to obtain recombinants in
+the combined recombineering-CRISPR/Cas12a-killing approach. Noteworthy,
+the transformation rates obtained also confirmed the nontoxicity of
+Cas12a opposed to Cas9 as it has been already described for various
+organisms including . As crRNA delivery vector targeting
+the chromosomal  gene, we have built pJYScr-lacZ-1574
+using the intragenic PAM site 5′-(T)TT(C)-3′ with a
+guide sequence of 21 nts. When  WT::lacZ pJYS1-petFU was transformed with this vector, only 51 ±
+21 cells survived underlining the efficiency of Cas12a targeting in  (). To assay for DNA-editing plus targeting of unmutated
+cells,  WT::lacZ pJYS1-petFU was
+transformed with pJYScr-lacZ-1574 in combination with the editing
+oligonucleotide o-1574a (all recombinogenic oligos are listed in ). This oligonucleotide was
+designed to replace the PAM site and the adjacent codon TCG (5′-TTTCG-3′)
+by 5′-TATAG-3′, which results in an inactivated PAM
+site and the introduction of a stop codon within the open reading
+frame of . This experiment yielded 1500 ±
+172 colonies of which more than 97% were white (). Comparable numbers could be obtained when
+targeting a second PAM-site (5′-(T)TT(A)-3′) within  using the oligonucleotide o-1654a and the simultaneous
+introduction of a stop codon by substituting a single nucleotide (). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00361/suppl_file/sb9b00361_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00361/suppl_file/sb9b00361_si_001.pdf These results raised the question at which frequency
+a reliable
+introduction of mutations at different positions relative to the PAM
+site is possible with this system. To answer this, nine different
+oligonucleotides with a length of 59 nt were designed for introducing
+a stop codon over a stretch of 18 nt along with a mutation inactivating
+the PAM site. Oligonucleotides used for recombineering and introduction
+of the desired mutations in the  gene and the
+PAM site are given in . Experiments
+conducted with these oligonucleotides yielded no white colonies when
+oligonucleotide o-1574b was used, which would introduce two nucleotides
+substitutions upstream of the PAM-site (). In this case, sequencing of eight randomly
+picked blue clones revealed indeed that only the PAM site was mutated.
+When performing recombineering-CRISPR/Cas12a with the editing oligonucleotides
+o-1574c, -d, -a, e, and -f, more than 96% of the surviving  variants were white in all cases indicating
+a successful introduction of the stop codon into the  gene. This observation was supported by DNA sequencing of randomly
+selected clones, which confirmed correct incorporation of both mutations
+in all clones analyzed. However, when using the recombinogenic oligonucleotides
+o-1574g, o-1574h, or o-1574i designed for introducing a stop codon
+further downstream of the PAM site, introduction of the desired mutations
+was still possible, but only at a reduced frequency ranging from 75%
+to 90% (blue bar), depending on the number of substitutions necessary
+to generate a stop codon. Interestingly, DNA-sequencing revealed that
+in a few cases only the stop codon was successfully introduced whereas
+the PAM site was still intact (given in  as “stop only”). We obtained
+a similar result of such partially successful editing events in experiments
+targeting a second PAM site in  (). In these cases, possibly only a short
+sequence of the genomic DNA was exchanged for the respective oligonucleotide
+during recombineering. These clones escape Cas12a cleavage when only
+mismatches in the PAM-distal region of the DNA target are present. Collectively, these data suggest that site-directed mutagenesis
+using the combined recombineering/Cas12a selection strategy is possible
+over a stretch of four nucleotides upstream and ten nucleotides downstream
+of the PAM sequence. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00361/suppl_file/sb9b00361_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00361/suppl_file/sb9b00361_si_001.pdf Inspired by these results, the mutagenic oligonucleotide
+o-1574fe-random
+was designed, which carries a continuous stretch of 18 random nucleotides
+spanning the previously targeted PAM sequence plus five nucleotides
+upstream and ten nucleotides downstream of that PAM site (). After performing the recombineering-CRISPR/Cas12a
+selection, only eight white colonies were obtained. DNA sequencing
+of the  gene of all clones revealed a mutated
+and thus nonfunctional PAM sequence in all cases with four clones
+carrying additional mutation(s) downstream of the targeted position
+(nucleotides +11 to +16, ). Apparently, when considering the low number of obtained colonies
+one can assume, that with the given oligonucleotide bearing such a
+long random sequence, recombineering does not work. Hence, this method
+cannot be used to exchange a longer stretch of DNA and is limited
+to the introduction of three consecutive nucleotide substitutions
+into the genome of . http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00361/suppl_file/sb9b00361_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00361/suppl_file/sb9b00361_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00361/suppl_file/sb9b00361_si_001.pdf This
+conclusion is supported by the results of two additionally
+performed experiments using oligonucleotides o-1574e-mix and o-1574g-mix,
+which were both designed for the saturation mutagenesis of a selected
+codon (). Twenty-four
+white colonies obtained by recombineering-CRISPR/Cas12a selection
+using o-1574e-mix were randomly picked and sequenced. All variants
+were characterized by a mutated PAM site and 16 of them carried additional
+mutation(s) in the desired codon leading to 12 amino acid substitutions
+on the protein level without a discernible preference for specific
+substitutions (). Similarly,
+targeted DNA sequencing of 24 white clones resulting from the genome
+editing experiment using oligonucleotide o-1574g-mix yielded 13 variants
+bearing mutations in the desired codon, leading to eight different
+amino acids at this particular position (). Efficiency of genome
+targeting and editing in . The
+transformation assays to transform  WT::lacZ pJYS1-petFU contained 500 ng plasmid and 10 μg oligonucleotide
+where indicated. The transformants were plated on X-Gal plates for
+blue-white screening. The results are averages from at least two independent
+experiments, and error bars depict standard deviations. In control
+experiments,  was either transformed
+with the cloning vector pEKEx3 (column 1), the empty vector pJYScr
+(column 2) inscribed as pcr, or empty vector plus oligo o-1574a targeting
+a PAM site in the chromosomal  gene (column 3).
+When the crRNA was provided by vector pJYScr-lacZ-1574 (pcr-1574,
+column 4) or vector pJYScr_lacZ-1654 (pcr-1654, column 6), only few
+cells survived, whereas addition of the corresponding oligonucleotides
+(o-1574a, column 5 or o-1654a, column 7) for PAM site-inactivation
+and introduction of a stop codon resulted in a drastic increase of
+surviving colonies with >96% of having the desired mutation. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00361/suppl_file/sb9b00361_si_001.pdf Genome editing efficiency relative to the PAM site in  using the combined recombineering-CRISPR/Cas12a
+selection method.
+Shown is a portion of the chromosome-integrated  gene with the PAM sequence highlighted in blue and the protospacer
+highlighted in yellow. The Cas12a-cleavage site yielding staggered
+ends is indicated by red triangles. The relevant DNA sequence of the
+oligonucleotides for site-directed mutagenesis is shown at the bottom
+with all mutations highlighted in red. The fraction of white colonies
+obtained is given as percentage share. From each assay, the  gene of randomly selected white clones was sequenced
+( = 4–16). Either the PAM site was mutated
+and the stop codon was introduced (blue bars), only the PAM site was
+mutated (red bars), or only the stop codon was introduced (green bars).
+The respective numbers for each type of mutation (PAM+stop/stop only/PAM
+only) assessed  DNA sequencing are also given
+as numbers below the colored bars. Detailed DNA sequencing results
+are given in . Site-Directed Mutagenesis Targeting  in An efficient -glutamate
+export is an important prerequisite for achieving high -glutamate
+titers with . In case of this bacterium,
+the mechanosensitive channel MscCG (533 aa) is mainly responsible
+for -glutamate efflux. However, -glutamate efflux only occurs in response to changes in the
+structure of this channel, induced either by growth under biotin limitation
+or addition of penicillin, ethambutol, or fatty acid ester surfactants
+to the medium. In addition, an altered
+lipid composition may cause efflux. According
+to the current model, these cultivation/production conditions mentioned
+increase membrane tension and thus activate the MscCG channel. Interestingly, several gain-of-function (GOF)
+variants of MscCG are known causing constitutive -glutamate
+efflux. These mutational hot spots are located in
+the pore-lining helix of the N-terminal domain (1–286 aa),
+which has been also shown to be responsible for -glutamate
+excretion in response to the above-mentioned treatments. Furthermore,  two additional GOF mutants,
+characterized by mutations in the C-terminal extracytoplasmic domain
+are known. In one case, insertion of an IS-element at position 419
+was described, resulting in the introduction of a stop codon at position
+424. The other GOF mutant bears an P424L-substitution. Finally, a third mutant devoid of the entire
+cytoplasmic domain (amino acids 420–533) has been described. We were interested in studying consequences
+of mutations in this particular region at positions 422 and 423 of
+MscCG and used the recombineering-CRISPR/Cas12a method to assay additional
+amino acid substitutions at these particular positions. Both targeted
+amino acid positions of MscCG are predicted to be located at the transition
+of the fourth transmembrane helix to the periplasmic space. Presumably, this site determines the overall
+structure of MscCG and is crucial for the interaction of the channel
+protein with other components of the cell wall. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00361/suppl_file/sb9b00361_si_001.pdf pJYS1petFU was transformed with pJYScr_mscCG1269c providing the
+crRNA and with 10 μg of the mutagenic oligo o-mscCG1269-V422nnn
+for site saturation mutagenesis (). The assay yielded 43 clones of which 16 were randomly chosen and
+sequenced. In these clones, altogether seven different amino acid
+substitutions at amino acid position V422 of MscCG could be identified.
+Similarly, position E423 was also targeted, eventually yielding 27
+clones surviving CRISPR/Cas12a selection after recombineering. In
+19 clones, DNA sequencing revealed introduction of eight different
+amino acids and one stop codon. In addition, one variant with an undesired
+deletion of two nucleotides in the PAM sequence was found. This frameshift
+mutation inevitably resulted in a stop codon (E423AQstop). Recombinant
+strains were cured from the respective plasmids and subsequently assayed
+for -glutamate accumulation in the culture supernatant. As previous studies have shown, -glutamate formation,
+even in described MscCG mutants, is very much dependent on biotin
+concentration, medium composition and sugar concentration. For instance, the known MscCG
+mutant devoid of the extracytoplasmic domain excretes -glutamate only at low biotin concentrations,
+whereas the mutant carrying the IS-element insertion at position 419
+accumulates -glutamate even in the presence of excess biotin. For assaying the -glutamate accumulation
+capabilities of the newly constructed MscCG-variants obtained by recombineering-CRISPR/Cas12a
+selection, we chose stringent conditions in defined medium with biotin
+excess (50 μg/L) in combination with a low glucose concentration
+(40 g/L). Under these conditions, the  wild type does not excrete -glutamate (a). The MscCG variants V422A,
+V422C, V422T, V422L, and V422S did not accumulate -glutamate.
+In contrast, in the supernatant of the MscCG-variants V422 K and V422D,
+in which the valine residue was substituted by charged amino acids,
+a substantial -glutamate accumulation of up to 13 mM could
+be detected (a). However, variants E423 K and E423D did not show -glutamate
+accumulation, as did mutants E423N, E423T, E423A, and E423H (b). In contrast,
+mutant E423P, E423S as well as the strain with the MscCG variant E423stop
+promoted -glutamate export. Noteworthy, -glutamate
+concentrations decreased with time due to reuptake and utilization
+of this amino acid as known from previous studies. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.9b00361/suppl_file/sb9b00361_si_001.pdf Interestingly, the MscCG variant E423AQstop did
+not cause -glutamate accumulation as expected (data not
+shown). We also used
+the conventional sacB-system to delete two different portions of the
+extracytoplasmic domain of MscCG. In mutant M420stopΔ methionine
+in position 420 was replaced by a stop codon and the carboxyterminal
+end of 113 amino acids deleted. Similarly, the  strain carrying the shortened MscCG variant P424stopΔ missing
+the carboxyterminal 109 amino acids was constructed. With variant
+M420stopΔ, -glutamate concentrations of up to 27 mM
+could be detected, and with mutant P424stopΔ concentrations
+of up to 130 mM could be determined in the supernatant (). These observations are
+in line with previous data also implying that presence of the carboxyterminal
+domain has a negative impact on -glutamate channeling activity. -Glutamate accumulation in the supernatant of  variants with different mutations in
+the mechanosensitive channel MscCG gene at position V422 (top) and
+E423 (bottom). In addition, MscCG variants with stop codons at positions
+M420 (M420stopΔ) and E423 (E423stop), respectively, were also
+characterized with regard to the accumulation of -glutamate. -Glutamate concentrations for each variant were determined
+after 14, 18, 20, and 22 h. CRISPR/Cas selection is a powerful technology
+to perform genome
+editing in living cells. On the basis of this system, methods for
+inhibiting transcription (CRISPRi), activation of gene expression,
+or modification of nucleobases have been developed. In bacteria, for the most part, methods introducing double-strand
+breaks using the crRNA/Cas-complex to eliminate unaltered strain variants
+find an application. The main challenge
+during combined recombineering-selection experiments using RecT-recombineering
+and CRISPR/Cas represents balancing activities of all individual components
+including the recombinase, the crRNA and the endonuclease involved.
+The need to ensure the availability of the respective components in
+appropriate quantities at the right time initially led to the development
+of CRISPR/Cas methods for , which require
+up to three vectors or three independent induction systems. However, these established Cas9-based systems were not suitable
+for applications in , for the most
+part due to the cytotoxicity of the Cas9 endonuclease. However,
+a CRISPR/Cas genome editing system based on the Cas12a
+endonuclease originating from  was introduced for . This genome editing method is more suitable
+for this bacterium as (i) Cas12a is not toxic for ; (ii) induction of gene expression (to establish endonuclease or
+recombinase activity and crRNA formation) is not necessary due to
+a fortunate choice of constitutive promoters; and (iii) the crRNA, 43 nt in length, is about half the size of
+a typical Cas9 crDNA. However, the construction
+of the crRNA delivery vector for a distinct protospacer sequence remained
+laborious and time-consuming, lowering the overall applicability of
+this method. The reconstructed vector pJYScr presented here, overcomes
+this bottleneck as it allows for fast and simple vector assembly to
+enable crRNA delivery. With CRISPathBrick, a similar strategy was
+developed by the Koffas group, which allows for the modular assembly
+of CRISPR-bricks to be used for CRISPR-Cas9 applications in . In this study,
+CRISPR/Cas12a-assisted recombineering with ssDNA oligonucleotides
+using this new vector was assessed by performing experiments to introduce
+point mutations up- and downstream of PAM-sites in a chromosomally
+integrated  gene. Interestingly, the results
+are consistent with previous experiments in , showing that any targeting distal from the PAM
+site results in a drastically decreased recombineering efficiency. Nonetheless, the results obtained in this study
+confirm the potential of CRISPR/Cas12a-assisted recombineering using
+ssDNA oligonucleotides for the efficient and precise introduction
+of nucleotide substitutions into the genome of . This was demonstrated when performing site-directed mutagenesis
+of the gene encoding the MscCG channel of . We focused on positions 422 and 423 of the MscCG protein located
+at the transition of the fourth transmembrane helix to the periplasmic
+space. It is striking that only substitution
+by charged amino acids residues resulted in an open-channel conformation
+at position 422. Given that the hydrophobic head groups of cardiolipin
+and phosphatidylglycerol are present in  in this region, the direct local membrane
+environment may be altered, which in turn creates the necessary conditions
+for the amino-terminal part of MscCG to mediate the -glutamate
+efflux. In contrast, amino acid substitutions
+E423P and E423S, presumably causing drastic structural alterations,
+support -glutamate efflux at position 422. Against the background
+that complete deletion of the periplasmic domain also fosters -glutamate efflux, there are two
+obvious possible explanations. Again, the immediate channel environment
+could be affected, which could result in a deformed channel. Alternatively,
+the extracytoplasmic domain could be forced away from the channel
+opening, thus enabling the efflux of -glutamate. Such models
+where a periplasmic domain functions as an efflux-controlling lid
+and where this lid further interacts with the extracellular matrix
+have been described for eukaryotes. Taken together, the crRNA delivery vector pJYScr introduced here
+simplifies plasmid constructions and expands the number of CRISPR/Cas12a
+applications in . In particular
+in combination with recombineering, CRISPR/Cas12a is a powerful tool
+when performing site-directed mutagenesis in the genome of  by selectively eliminating unedited cells
+as presented in this study..

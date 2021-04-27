@@ -1,0 +1,261 @@
+Over the past century, the observation
+that bacteria accumulate preferentially in tumors has prompted the
+investigation of the use of a number of strains for cancer therapy,
+including , , , , and . Attenuated strains of  have generated particular interest as they can innately home to
+and colonize tumors of a variety of sizes and have exhibited safety
+and tolerance in human clinical trials. were initially shown to mediate antitumor effects through recruitment
+of the host immune system and by competition with cancer cells for
+nutrients. Subsequently, engineered production of therapeutic cargo
+was added through simple genetic modifications. While these studies
+represent important advances in the use of bacteria for tumor therapies,
+the majority of existing efforts have relied on constitutive, “always
+on” cargo production that typically results in the
+delivery of high dosages, off-target effects, and development of host
+resistance. As a next step, synthetic biology seeks to add controlled
+and dynamic
+production of cargo by utilizing computationally designed “circuits”
+that have sophisticated sensing and delivery capabilities. These
+circuits can be designed to act as delivery systems that sense tumor-specific
+stimuli and self-regulate cargo production as necessary. Since plasmids
+are the common framework for synthetic circuits, we begin by characterizing
+the dynamics of plasmid-based gene expression in an  mouse model by utilizing real-time luminescence imaging, quantitative
+biodistribution measurement, and computational modeling. Together,
+these approaches provide a framework for exploiting the inherent instability
+of plasmid-based networks, which will facilitate the generation of
+specific temporal release profiles directly within the tumor environment. We began by transforming two different attenuated strains of  with a constitutively expressed luciferase
+plasmid (luxCDABE genes on a pBR322/colE1 high-copy without partitioning
+machinery) to allow for real-time monitoring of luminescence with
+an  imaging system (IVIS). Strain A (:SL1344 phoPQ-) is attenuated
+for the PhoPQ regulon, which is known to activate a number of genes
+related to virulence, while Strain B (:SL1344
+phoPQ- aroA-) contains an additional aromatic amino acid synthesis
+mutation that effectively allows it to grow only in nutrient-rich
+environments. Importantly, while these strains are derived from the
+same parent (SL1344), their growth rates and therefore plasmid-loss
+dynamics differ significantly. To investigate the  gene expression dynamics of these strains, we generated model xenograft
+tumors in mice by subcutaneous injection of a human ovarian cancer
+cell line (OVCAR-8). After measurable tumors were established, bacterial
+strains were injected intravenously via tail vein (Figure a) with dosages varying from 10 to 5
+× 10 bacteria. Once injected, bacteria specifically
+colonized tumors at a rate proportional to the dosage administered,
+as measured by IVIS signal at 24 h post-injection (Figure b). We then monitored the tumor site for Strain A-derived
+signal over
+the course of 60 h using time-lapse IVIS imaging (Figure c,d). These trajectories followed the specific pattern of
+an initial steep increase followed by a gradual decrease back to baseline
+(Figure d). We hypothesized that the shape
+of this waveform was the result of the initial exponential growth
+of plasmid-containing bacteria followed by increasing rates of plasmid
+loss in the absence of antibiotic selection. Eventually, the rate
+of luciferase production by the remaining plasmid-containing bacteria
+is overtaken by luciferase decay, and the total signal begins to decline. To test this hypothesis, we counted the number of plasmid-containing
+and non-plasmid-containing bacteria in tumors over time by observing
+bacterial growth on selective media (Strain A, 10 bacteria
+injected). Each measurement was compared to counts taken in the spleen,
+a control tissue where there a stable subpopulation is present, as
+the bacteria initially accumulate but do not grow or die in this site.
+At each time point, organs were excised from the mouse and then homogenized
+and plated with or without antibiotic selection (Figure a,  = 3–5 tumors). Colony counting
+on these plates yielded an accurate measure of the plasmid state of
+the bacterial population over time (Figure b). After 2 h, roughly 3 × 10 plasmid-containing
+bacteria reside in the tumor, or about 0.3% of the injected dose.
+After 12 h, plasmid-containing bacteria grow to a level of 10, and the number of non-plasmid-containing bacteria reaches
+a similar level. This accumulation corresponds to a doubling time
+of approximately 75 min. Growth rate declined further over time, presumably
+due to nutrient limitation, ultimately resulting in a 300 min doubling
+time for non-plasmid-containing bacteria (Figure b). While the total population of bacteria grew throughout
+the course
+of the experiment (60 h), the number of plasmid-containing bacteria
+reaches a maximum at 24 h (Figure b). By taking
+the ratio of these populations, we can calculate the percentage of
+plasmid-containing bacteria over time (Figure c). After 12 h, roughly 50% of the population retains the plasmid,
+a fraction that drops to 10% after 24 h (Figure c). The slope of this line remains constant throughout the 60-h experiment
+and represents the rate of plasmid loss in the tumor environment. The tumor-spleen ratio is commonly reported as a characteristic
+measure of specificity and tumor-homing ability for a given strain.
+Bacteria accumulate in the spleen from the initial dosing yet do not
+subsequently grow and divide. Given that we observed essentially no
+increase in the bacterial count in the spleen throughout the duration
+of our experiments, the tumor-spleen ratio increased over time (Figure d). Since this ratio is typically reported as a
+fixed number in the literature, its time-dependence may help to explain
+the wide range of reported values. To explore
+how bacterial growth rate affects the dynamics of plasmid
+instability over time, we injected two groups of mice with Strain
+A and B (at a dosage of 10) and monitored their signal
+over the course of 60 h. The two strains displayed markedly different
+profiles, with Strain A peaking and decaying sharply and the slower
+growing Strain B peaking broadly over a longer period of time before
+decaying (Figure a,b). We plot the average
+trajectories for Strains A and B on an absolute luminescence scale
+in Figure c for comparison. To quantify these
+differences, we measured the width at half-maximum and total area
+under each curve for the average trajectories (Figure d). These measurements illustrate that Strain A produces more
+luminescence quickly while Strain B produces less luminescence over
+a longer period of time (Figure d). Additionally,
+to confirm that signal intensity is a representative measure of the
+population of plasmid-containing bacteria, we compared counts of antibiotic
+resistant bacteria with absolute IVIS values at the 72-h time point
+and found them to be highly correlated ( = 0.832, ). Developing a fully tunable dynamic expression platform
+will require
+a more complete understanding of the underlying processes. Plasmid-loss
+dynamics have been well described in a variety of  and  contexts; however, modeling of population or gene-expression
+dynamics has not yet been studied for  tumor
+environments. Specifically, we hope to learn how expression dynamics
+are dictated by the rates of growth and plasmid-loss for a given strain.
+To accomplish this, we developed an ordinary differential equation
+(ODE) model describing internal plasmid and non-plasmid-containing
+bacteria and their respective expression of luciferase signal (Figure a). Initially, N bacteria are injected.
+These plasmid-containing bacteria replicate and lose their plasmids
+at rate τ, resulting in populations of plasmid (N) and non-plasmid (N) containing bacteria that
+continue to grow at rates μ+ and μ–, respectively
+(Figure a). Both populations grow exponentially
+for 24 h until available nutrients become limiting, a process modeled
+by including a finite quantity of tumor substrate that is consumed
+according to Michaelis–Menten kinetics (). The tumor environment is also spatially restrictive of
+bacterial growth, with bacteria in the center consuming nutrients
+more slowly than bacteria on the rapidly growing periphery. Thus,
+despite a nearly constant population of plasmid-containing bacteria,
+IVIS signal fails to increase after 24 h since most of these bacteria
+reside in the non-growing center of the colony. We accounted for this
+behavior by limiting the amount of bacteria that can consume the tumor
+substrate, which effectively limits plasmid-containing bacterial growth
+and allows luciferase decay to dominate. Our ODE model produced dynamics that were consistent
+with our experimental
+observations, where IVIS signal is taken to be proportional to the
+plasmid-containing population (Figure b).
+We define the full-width at half-maximum, ω, and area under
+the curve as important parameters that characterize the duration and
+magnitude of dosage, respectively (Figure c). To understand how to tune  expression
+profiles according to these parameters, we varied growth rate and
+dosage level and modeled the effects on IVIS signal in each case (Figure d,e). Lower growth rates yield IVIS curves that
+are shifted toward later times with broader widths and lower areas
+(Figure d). In contrast, larger initial dosages
+result in a linear increase of IVIS signal that increases area but
+does not alter the width (Figure e). The latter
+linear increase in area as a function of dosage is reflective of doses
+much lower than the carrying capacity of the system. Finally, decreasing
+the plasmid-loss rate resulted in an increase in area under the curve
+as well as a slight shift in the width and time to peak of the gene
+expression profile (). These effects correlate with experimental observations that
+can
+be explained based on differences in strain growth rate. Since plasmids
+are lost during cell division, the faster a cell replicates, the more
+frequently it loses plasmid. Thus, the faster growing Strain A accumulates
+luciferase quickly but loses a comparatively larger fraction of plasmids
+per day, resulting in higher IVIS values that peak at earlier time
+points than Strain B (Figure a,b). In contrast,
+Strain B grows more slowly, producing less luciferase but maintaining
+its plasmids much longer, yielding a broader expression profile compared
+to Strain A (Figure a,b). In the context
+of drug delivery, a critical parameter is the rate
+at which a device releases drug into the surrounding environment.
+For instance, materials have been investigated that generate “burst”,
+“delayed”, or “sustained” release characteristics. The transient plasmid-based system we have developed
+here can generate a similar variety of expression dynamics. For instance,
+Strain A produces an expression profile analogous to burst release
+due to its fast growth rate and high rate of plasmid loss. In contrast,
+Strain B yields a sustained release profile owing to its slow growth
+rate and moderate rate of plasmid loss. Bacteria are unique in the
+context of drug-delivery vehicles in that they produce their own cargo,
+in contrast to other devices that are preloaded and depleted. This
+difference allows them to deliver a time-varying concentration of
+cargo in a designed profile directly on site. In the future, this
+work will enable a variety of drug-release profiles from engineered
+bacteria for therapeutic applications. Developing both experimental
+and computational techniques in concert
+will be critical to engineering  genetic circuits. Computational modeling can rapidly probe system
+parameters to explore potential outputs but must remain closely tied
+to experimental results to remain relevant. On the other hand,  experiments present the most direct application
+of engineered circuits, but involve long time scales and the results
+are often difficult to interpret. Here, we have utilized plasmid instability
+to generate transient expression profiles in tumor environments. In
+our computational model, we can predict how dosage, strain growth
+rate, and plasmid loss rate combine to yield differing expression
+dynamics. Subsequently, these designs can be implemented experimentally
+by varying plasmid type, copy number, and maintenance system or by modifying the strain growth rate. Building
+on this platform, future applications will include engineered gene
+circuits that further extend the range of expression dynamics, sensing
+tumor-specific stimuli and self-regulating cargo production. Tumor homing bacteria and dosage variation. (a)  are injected via tail vein into nude mice
+and localize to subcutaneous
+tumors where they replicate. (b) Dosages between 10 and
+5 × 10 bacteria (Strain A) were injected into mice,
+and IVIS images were taken after 24 h. Higher initial dosages show
+an increasing signal and a minimum value of 5 × 10 bacteria required to visualize tumor colonization at 24 h. (c) Sequence
+of IVIS images for strain Strain A at 10 dosage over the
+course of 60 h. (d) Total flux of left (light blue) and right (dark
+blue) tumors as a function of time normalized to the maximum value
+across the trajectory. The IVIS signal rises due to rapid bacterial
+growth and then decays due to plasmid loss and luciferase instability. Population dynamics of bacteria inside tumor environments. (a)
+Schematic showing tumor extraction, homogenization, and plating to
+count internal populations of bacteria. Plating on antibiotics reveals
+the number of plasmid-containing bacteria, while plating without antibiotics
+gives the total number of bacteria. (b) Measured number of plasmid-containing
+and non-plasmid-containing bacteria per organ calculated for plasmid-containing
+bacteria (green) and non-plasmid-containing bacteria (blue). Bacteria
+with the plasmid reach a steady state around 24 h, while the non-plasmid
+bacteria continue to grow. (c) Percentage of cells containing the
+plasmid as a function of time showing a constant loss rate over the
+course of 72 h. (d) Ratio for total number of bacteria in the tumor
+versus the spleen. This number is typically reported as a measure
+of specificity of the tumor-targeting strain. Strain A at a dosage
+of 10 cells was used for all panels. Lines indicate a
+piecewise linear fit of the data. Characterization of Strain
+A and Strain B IVIS profiles. (a, b)
+Time-course trajectories for Strain A (a) and Strain B (b) over the
+course of 60 h normalized to their maximum value across the trajectory.
+Colored lines indicate individual trajectories, and the solid black
+line indicates the average trajectories. (c) Time-course trajectories
+for Strain A and Strain B on an absolute scale. Average trajectories
+from (a) and (b) were scaled by the average absolute value of the
+individual trajectories. (d) (left) Full-width at half-maximum and
+the area (right) under the curve for the average trajectory of both
+strains. These parameters characterize the dosage and duration of
+transient gene-expression. Modeling bacterial dynamics
+inside of tumor environments. (a) Schematic
+of mathematical model. Bacteria containing plasmids are injected at
+a dosage . Plasmids are lost from cells
+at a rate τ, and growth of resulting plasmid-containing and
+non-containing cells continues at μ+ and μ–, respectively.
+(b) Modeling results (solid lines) for the number of plasmid-containing
+(blue) and non-plasmid-containing (green) bacterial population data
+from Figure b. Open circles indicate experimental
+points. (c) Typical time course of an IVIS trajectory indicating parameters
+ω and area for characterizing transient gene expression. The
+relative IVIS trajectory is typically measured experimentally due
+to mouse-to-mouse variability, while the absolute IVIS trajectories
+are used to calculate ω and area. (d) The effect of growth rate
+on transient gene expression. Decreasing growth rate shifts the absolute
+IVIS signals to a lower value and longer peak times, therefore increasing ω
+and decreasing the area under the curve. (e) The effect of initial
+dosage on transient gene expression. Increasing the dosage shifts
+the absolute IVIS signals to a higher level, increasing the area under
+the curve, but does not change the relative IVIS trajectory shape
+or ω value. strains Strain
+A (SL1344 PhoPQ-)
+and Strain B (SL1344 PhoPQ- aroA-) were provided by Elizabeth Hohmann
+(MGH). The constitutive plasmid bearing
+luxCDABE genes was received as a gift from the Weiss lab. On the day of injection, bacteria containing
+plasmids were diluted 1/1000 into fresh LB media (Difco, 0.22 μm
+filtered) with antibiotics (Ampicillin 100 μg/mL) and grown
+up to OD = 0.4–0.6. Cells were then prepared
+by washing 4 times with PBS (0.22 μm filtered) and measured
+for OD. Colony counts were performed on the preparation
+as a calibration and cells were prepared at various concentrations
+for 100 μL injections. Subcutaneous human xenograft tumors
+were generated by injecting
+5 × 10 OVCAR-8 cells (NCI DCTD Tumor Repository,
+Frederick, MD) bilaterally into the hind flanks of 4-week-old female
+Ncr/Nu mice. Cells were grown to 80–100% confluency in RPMI
+1640 media supplemented with 10% fetal bovine serum and antibiotics
+(100 μg/mL penicillin and 100 μg/mL streptomycin) before
+injection. Cells were pelleted and resuspended in phenol red-free
+DMEM with 15% reduced growth factor Matrigel (BD Biosciences). Tumors
+were allowed to grow for 10–20 days until tumor masses of 200–500
+mg were reached. Colony counts were measured by dissecting tumors
+and organs from
+mice, homogenizing using a Tissue-Tearor (BioSpec), and plating serial
+dilutions on LB and LB Ampicillin plates. Prior to imaging, mice were
+anesthetized with 2–3% isoflurane. IVIS signals were measured
+using the IVIS Spectrum imaging system (Caliper Life Sciences) with
+1–60 s exposure times, and Living Image software (Caliper Life
+Sciences) was used for analysis. Data where the tumor had ulcerated
+or had low signal (maximum of trajectory did not reach above 10 radiance, or approximately <5× initial background)
+were not included. Error bars drawn are standard error..

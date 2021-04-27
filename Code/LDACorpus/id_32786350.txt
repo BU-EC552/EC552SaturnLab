@@ -1,0 +1,528 @@
+Significant genomic engineering
+of cellular hosts is often required for efficient production of complex
+or novel molecules Genome-scale screens can now rapidly
+identify genes and associated pathways that enhance the production
+of desired chemicals, fuels, or biologics. While modern
+gene editing tools such as CRISPR/Cas9 enable precise genomic editing, deciding where to integrate new genes and pathways
+remains challenging, especially in nonmodel organisms. Currently,
+integration sites for heterologous cassettes are chosen
+semirandomly or by gene replacement, and promising sites are reused
+in future applications or hosts where similar sites exist. Integration
+mediated by retroviruses is performed routinely in mammalian cells. The resultant integration is semirandom, however,
+and creates heterogeneity among transformants, requiring significant
+post-transformational screening. Targeted integration is preferred,
+but identifying “safe harbor” sites that promote stable
+transgene expression without harmful off-target effects remains challenging.
+Current sites employed for targeted integration of recombinant cassettes
+are often uncovered through empiricism, and a limited number of validated
+sites are recycled in subsequent uses for a given organism. In yeast, integration into, and disruption of, native genes
+such
+as auxotrophic markers can achieve stable expression and native gene
+knockout in a single step. Strategies using gene
+replacement were essential prior to the development of whole-genome
+sequencing, which enabled mapping of nontranscribed regions. Knockout
+screens could potentially identify nonessential genes for integration
+sites. This approach, however, is complex:
+essentiality is often specific to the tested condition(s), and harmful
+disruptions to multigene interactions may be initially overlooked.
+In higher order eukaryotes such as humans, finding genomic safe harbors
+has been especially elusive, and requires extensive screening to validate
+a particular site for use. The number of trusted
+integration sites is often insufficient, especially in nonmodel organisms,
+for complex cellular engineering, which may require introduction of
+several heterologous pathways that may comprise several genes each. Methods have been developed to engineer an organism in cases where
+few genomic safe harbors are known. Integration of large constructs
+containing multiple genes reduces the number of integration sites
+needed, but this approach is often limited by the transformation and
+recombination efficiency of the organism. An
+artificial chromosome can obviate the need for genomic safe harbors,
+but often is challenging to synthesize and stably integrate; these
+constructs are also not yet available for many organisms. Screens to identify and validate positional
+effects of various integration sites have thus far required intensive
+upfront screening and have not resulted in an organized framework
+for use by synthetic biologists. A simple, genome-wide assay to inform optimal sites for integration
+of heterologous constructs would facilitate construction of cellular
+factories, even in nonmodel organisms. ATAC-seq measures genome-wide
+chromatin accessibility by using
+a hyperactive Tn5 transposase to add sequencing adaptors to accessible
+regions of the genome. ATAC-seq is simple and highly
+scalable, enabling genome-wide evaluation of several strains, conditions,
+or time points for accessibility and nucleosome positioning in a single
+assay. Identifying sites for gene integration
+using ATAC-seq is especially appealing because it only requires knowledge
+of the genome sequence and annotated coding sequences; detailed functional
+annotations, transcription factor binding sites, or promoter annotations
+are useful but not necessary. Recently, ATAC-seq has been used to
+investigate varied performance of limited integration sites, but the properties of a desirable integration
+site are still poorly understood. To enable construction of complex
+cell factories, a framework is needed that can predict optimal sites
+for integration of heterologous genes in almost any host using a simple,
+scalable, assay such as ATAC-seq. Here, we collected paired
+ATAC-seq and RNA-seq data to characterize
+the properties that might inform the suitability of a particular intergenic
+region (IGR) for integration of heterologous genes. We performed this
+characterization in the nonmodel, biotechnological yeast,  (),
+for which only a few sites for integration are routinely used and
+functional annotations are not well developed. Heterologous constructs
+expressing a single copy of a fluorescent reporter were integrated
+into 38 diverse intergenic regions (IGRs) using CRISPR/Cas9 to test
+the effects of IGR size, expression and orientation of adjacent genes,
+and intensity of ATAC-seq peaks, among other factors. We further evaluated
+these effects for expression of secreted recombinant proteins from
+tandem, multicopy integrations. From this analysis, we present a framework
+for leveraging ATAC-seq to inform integration sites that should facilitate
+genomic engineering of many other eukaryotic cell factories. Analysis of Transcriptomic and Epigenetic
+Features in We first characterized
+genomic,
+epigenetic, and transcriptomic features that might influence the suitability
+of a given locus for heterologous gene integration. We focused our
+methods for characterization on simple, genome-wide assays RNA-seq
+and ATAC-seq, which require only a genome sequence with annotated
+coding sequences (CDSs). To this end, we cultivated wild-type  under relevant conditions for this host:
+biomass accumulation in a glycerol-containing medium followed by simulated
+induction of transgene expression in a methanol-containing medium.
+We collected samples after each stage of the cultivation for RNA-seq
+and ATAC-seq, which enables mapping of epigenetically accessible regions
+and nucleosomes (). We sought to identify integration sites that would permit strong
+expression across both of these typical growth conditions. (The same
+methodology, however, should also allow identification of sites that
+otherwise use epigenetic change across conditions to modulate the
+expression of a gene.) http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00299/suppl_file/sb0c00299_si_001.pdf Starting with an annotated genome, we
+reduced the design space of potential integration sites to intergenic
+regions (IGRs) located away from chromosome ends and centromeres.
+Chromosomal ends are not ideal regions for integration of heterologous
+constructs due to the presence of telomeres, repetitive sequences,
+and susceptibility to accumulation of polymorphisms. For these reasons, we avoided regions of 5–10 kb
+at the distal ends of chromosomes where there were no annotated CDSs
+with high-quality mRNA transcript. We excluded centromeres, which
+we confirmed to be generally inaccessible as expected (). Finally,
+we excluded regions in the extrachromosomal plasmids maintained in
+variants of , since the function and stability of these plasmids are not well
+characterized. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00299/suppl_file/sb0c00299_si_001.pdf As with most nonmodel organisms, functional annotation
+of genes
+in  is incomplete, so we did not consider
+intragenic sites to prevent unwanted deleterious effects. Nearly all
+the genes in  were expressed under
+both conditions, further supporting the choice of IGRs as potential
+integration sites (). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00299/suppl_file/sb0c00299_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00299/suppl_file/sb0c00299_si_001.pdf We
+first investigated the impact of global dynamics of chromatin
+on IGRs by searching for large regions in any chromosome in which
+gene expression or chromatin accessibility was universally high or
+low. We hypothesized accessible, strongly transcribed regions may
+contain the most suitable IGRs, while closed chromatin areas are undesirable.
+We divided each chromosome into equal intervals about 7.5 kb in length,
+and visualized the average gene expression and accessibility for each
+interval across the genome ().
+Both accessibility and gene expression varied considerably from one
+interval to the next, suggesting that gene-specific regulation, and
+not global changes in chromatin, strongly influenced accessibility
+and expression. We similarly compared gene expression and accessibility
+under growth on methanol relative to glycerol. These environmental
+conditions altered expression of many genes (C, ). There were no large hotspots of enhanced expression
+or closed chromatin on the global scale (>20 kb) across these conditions.
+Given these findings, we considered each IGR in the genome independently,
+and next hypothesized which features might affect the suitability
+of a particular IGR for use as an integration locus. Genome-wide analysis of gene expression (RNA-seq) and
+chromatin
+accessibility (ATAC-seq). (A) Workflow for cultivation and sampling
+for RNA-seq and ATAC-seq after 24 h growth on glycerol and an additional
+24 h growth on methanol. (B) Relative frequency of mapped fragment
+sizes recovered in ATAC-seq libraries. (C) Log(fold-change)
+in gene expression and accessibility score relative to genome-wide
+averages for 7.5 kbp intervals across each chromosome. Approximate
+positions of centromeres are depicted for each chromosome. (D) Nucleosome
+positioning around translation start sites in  as determined by NucleoATAC. Nomination
+of Potential Features That Affect Suitability for
+Integration We examined the size of an IGR for its influence
+on integration sites. IGRs should have less disruptive effects on
+cellular functions, but these regions do contain many functional elements
+such as transcription factor binding sites, enhancer-like sequences,
+small RNAs, and transcription terminators that could be unintentionally
+disrupted. To our knowledge, these features have not been annotated
+comprehensively in  as is the case
+in most nonmodel hosts. ATAC-seq can partially inform the location
+of potential sites of transcriptional regulation through the mapping
+of accessibility peaks in putative promoter regions and the nucleosomes
+that typically flank these sites. For
+example, we mapped the relative frequency of nucleosomes around the
+start codon in  and found that two
+nucleosomes were often centered 200 bp upstream of the start codon
+as well as just after the start codon, suggesting the importance of
+the contained region for transcription (D). The genome of  is extremely compact, however, with a median IGR length of only
+300 bp (A).
+Larger IGRs may be desirable, therefore, to provide sufficient distancing
+between the integration sites for heterologous genes and regions of
+the genome that are essential for transcription of neighboring genes
+or other essential functions. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00299/suppl_file/sb0c00299_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00299/suppl_file/sb0c00299_si_001.pdf In addition to size, we considered the combination of the expression
+of genes adjacent to, and intensities of accessibility peaks contained
+within, a given IGR. Previous studies have demonstrated a correlation
+between the intensity of accessibility peaks in a promoter region
+and transcriptional activity of that gene in , particularly when expression is induced in response to a stimulus. We attempted to detect a similar response in  using ATAC-seq by analyzing changes in methanol
+utilization genes between the glycerol and methanol conditions. As
+expected, the change in the expression of these genes across conditions
+was correlated with the change in the overall accessibility scores
+of the respective promoter regions (). We extended this analysis to all methanol- and glycerol-specific
+genes, and observed a similar relationship primarily for methanol-specific
+genes (). To characterize
+the relationship between gene expression and accessibility
+of the promoter region, we divided genes by expression level into
+low (bottom 25%), medium (middle 50%), and high (top 25%) groups,
+and compared the overall score for peak intensity within promoters
+(C,D). Expression
+levels and accessibility peaks were obtained for >92% of genes
+across
+conditions. Under both conditions, the promoter regions of highly
+expressed genes had higher accessibility scores ( < 2.2 × 10) than those of medium expressed
+genes, and the trend continued from medium to lowly expressed genes
+( < 6.4 × 10). These
+results supported our hypothesis that the combination of accessibility
+of an IGR and the expression of adjacent genes were important factors
+for determining the suitability of sites for integration of heterologous
+constructs. The final feature of an IGR that we considered was
+the orientation
+of the adjacent genes (codirectional, convergent, or divergent). Proper
+DNA supercoiling is a requirement for transcription: it influences
+the strength of expression, and it can be affected by the neighboring
+genes. IGRs bordered by convergent genes
+tend to accumulate more positive supercoiling, which can impede transcription. Convergent gene pairs can also form mRNA–mRNA
+interactions that regulate expression post-transcriptionally. Nearly 90% of the 1500 IGRs in  for which there were no recovered accessibility peaks were convergent
+with a median size less than 50 bp and might form such interactions.
+Disruption of these interactions by integration of a heterologous
+construct may disrupt cellular functions since gene pairs that form
+these interactions are often conserved and associated with stress
+response. Codirectional genes may be
+coregulated by a single promoter, while expression of divergent genes
+may be driven by a bidirectional promoter. Additionally, the orientation
+of an IGR is correlated with its size, with convergent IGRs being
+significantly smaller than divergent or codirectional IGRs (B). Characterization of genomic properties of IGRs
+that potentially
+influence suitability for integration of a heterologous gene. (A)
+Distribution of intergenic region (IGR) length for each chromosome.
+(B) Distribution of IGR length for each orientation of adjacent genes.
+(C,D) Overall accessibility score in the promoter region (defined
+as 600 bp upstream of translation start site) for low (bottom 25%),
+medium (middle 50%), and high (top 25%) expression of genes under
+growth on (C) glycerol or (D) methanol. Construction
+and Characterization of an IGR Library http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00299/suppl_file/sb0c00299_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00299/suppl_file/sb0c00299_si_001.pdf To assess the importance
+of these four genomic and transcriptomic
+features, we selected 72 candidate IGRs that spanned different sizes,
+orientations, accessibility peak scores, and expression strengths
+of adjacent genes. For this demonstration, we sought IGRs that would
+permit strong expression both under growth on glycerol and on methanol.
+We, therefore, identified approximately 1300 of the 3500 IGRs with
+detected accessibility peaks as constitutive, defined here as a change
+in expression of adjacent genes by less than 4-fold and in accessibility
+by less than 30%. For these 1300 IGRs, we classified the size of IGRs
+as small (<450 bp) or large (>550 bp), and average expression
+of
+adjacent genes as low, medium, or high using the same criteria as
+previously. Finally, we calculated an overall accessibility score
+by summing the intensity scores of all peaks within each IGR, and
+classified these scores as low (<250), medium (300–850),
+or high (>1000). Categorization of expression-accessibility into
+four
+groups (low-low, low-high, med-med, and high-high) covered the design
+space observed in the genome (). Our selection of 72 IGRs comprised three IGRs for each of the
+24 combinations of sizes, orientations, and expression-accessibility
+categories. Because many of these combinations were at the extremes
+of the design space, three IGRs per combination corresponded to a
+median representation of roughly 20% of possible constitutive IGRs
+meeting each set of criteria (). We reasoned, therefore, that the selected subset of IGRs adequately
+represented the genome-wide design space for size, expression, accessibility,
+and orientation. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00299/suppl_file/sb0c00299_si_001.pdf We constructed a library of clones expressing
+eGFP for heterologous insertion into each of the selected IGRs (). Expression of
+eGFP was controlled by the strong, constitutive TEF1 promoter and
+450 bp of IGR-specific homology arms on either end of the donor DNA
+mediated homologous recombination. To ensure targeted integration,
+a plasmid containing Cas9 and a sgRNA targeting the desired IGR was
+cotransformed with the eGFP linear DNA into a strain previously modified
+to express mCherry. Successful integrants were obtained for 38 of
+the 72 selected IGRs. (The unsuitability of particular IGRs for integration
+by CRISPR/Cas9 may have affected our ability to obtain successful
+integrants. Several confounding factors exist, however, such as the
+efficiency of the sgRNA or the suitability of the local nucleotide
+sequence chosen for each IGR, which prevent us from drawing conclusions
+about these unsuccessful integrants.) The 38 successful integrants
+included representatives for all categories (size, orientation, expression-accessibility),
+and were characterized for gene expression and growth (). Evaluation of the impact of IGR properties
+on transgene expression
+and cell growth. (A) Workflow diagram for creation and analysis of
+an IGR targeting library. (B) Normalized GFP fluorescence  IGR size. (C) Fluorescence  IGR orientation. (D) Fluorescence  category
+of adjacent gene expression and overall IGR accessibility. (E) Normalized
+max growth rate  IGR size. (F) Growth  IGR orientation. (G) Growth  expression-accessibility category. Adjusted -values
+computed using a Wilcoxon signed-rank test with the Benjamini–Hochberg
+correction for multiple hypotheses. Effects of IGR Size and Orientation on Growth and Expression We performed flow cytometry to evaluate relative expression from
+each IGR in the library, and independently monitored the growth rates
+of each strain. We measured the expression of eGFP relative to mCherry
+to correct for intrinsic heterogeneity in expression among single
+cells. Expression was well correlated ( > 0.9) between glycerol and methanol conditions, confirming that
+integration sites permitted constitutive expression as intended. We did not observe significant differences in expression of GFP or
+growth between large and small IGRs (B, E). Given the compact structure of the  genome, it was unsurprising that robust expression was observed
+from a heterologous construct despite a small distance between it
+and neighboring genes. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00299/suppl_file/sb0c00299_si_001.pdf http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00299/suppl_file/sb0c00299_si_001.pdf Similarly, the orientation of genes neighboring
+an IGR did not
+significantly affect expression levels or growth (C, F). Even when considering the pairwise orientations
+of the transgene with each adjacent gene, expression did not differ
+dramatically (). This result might
+suggest that the local sequence context of the heterologous construct
+determined and regulated the proper supercoiling necessary for robust
+expression of the transgene. Interference
+from adjacent genes, therefore, appears insignificant. Previous studies
+have focused primarily on the influence of orientation  synthetic gene clusters. The influence of orientation
+between an integrated heterologous gene and adjacent endogenous genes,
+especially in eukaryotes has been less characterized, however. Between
+endogenous genes, a relatively weaker promoter increases susceptibility
+to transcriptional interference. This relationship
+is consistent with our observations: the strong  promoter was robust to interference from weaker promoters adjacent
+to the integration site. While adjacent genes did not appear to influence
+expression of the transgene, the reverse may not have been the case.
+Interestingly, the maximum growth rate was higher for strains with
+a convergent orientation of the transgene and downstream gene  when this orientation was codirectional (). Integration of a strongly expressed
+transgene might therefore interfere with the promoter of the downstream
+gene. Nearly half of the IGRs in the library are located upstream
+of genes involved in central functions such as metabolism, cell cycle,
+or stress response, which, if disrupted, might inhibit cell growth. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00299/suppl_file/sb0c00299_si_001.pdf While we did not observe local effects from gene orientation, expression
+of eGFP did correlate with the chromosome on which a particular IGR
+was located. The highest expression was observed for IGRs located
+on chromosome 1, then chromosome 2, 3, and 4 in that order (). This ordering follows the decreasing
+length of the chromosomes. The mechanism underlying this observation
+is unclear, and further study on the topology or structure of the
+chromosomes could yield additional insights. Effects of IGR Accessibility and Expression Levels of Adjacent
+Genes Unexpectedly, normalized expression of GFP was significantly
+higher upon integration into IGRs with low to moderate expression
+and accessibility scores (low-low and med-med categories) than those
+with high accessibility scores (low-high and high-high categories, D). Three-fold differences
+in GFP expression were observed between IGRs with similarly low levels
+of expression of adjacent genes but large differences in accessibility
+scores (low-high  high-high categories). This
+result suggests that the intensity of accessibility peaks dominated
+the observed locus effects, rather than the expression levels of adjacent
+genes. Transcriptional interference depends on the relative expression
+level of adjacent genes in concert with the orientation and proximity
+of the respective promoters. It is unsurprising,
+therefore, that the expression levels of adjacent genes did not significantly
+affect expression of the transgene, given that we also observed a
+minimal impact from orientation and proximity (IGR size). http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00299/suppl_file/sb0c00299_si_001.pdf The
+observed trend—that integration into IGRs with high overall
+accessibility scores led to lower transgene expression—may
+seem counterintuitive. An important distinction exists, however, between
+a high overall accessibility score and an open chromatin state. Open
+chromatin is required for robust expression, especially in multicellular
+organisms, where gene expression is more tightly controlled by epigenetics. In , we detected accessibility peaks
+or expression in almost every transcriptional unit under both conditions
+tested (), making it
+likely that nearly all chromosomal IGRs in this organism are always
+in an open state. This result suggests that even IGRs with relatively
+low peak intensities are still accessible to recombination and expression
+machinery, and may explain why integration into all IGRs resulted
+in GFP-positive cells by flow cytometry. In contrast to chromatin
+state, peak intensity (as measured by
+ATAC-seq) corresponds to accessibility to the transposase, which is
+correlated with chromatin activity by chromatin remodeling and transcription
+factors. The differences in overall accessibility
+score among IGRs in our library therefore corresponded to differences
+in the activity of factors that immediately surround the transcriptional
+unit of the transgene, not whether the chromatin is open. Our results
+suggest that a high amount of this activity nearby the transgene is
+correlated with lower expression of that transgene. This correlation
+was most prominent in IGRs with divergent or codirectional orientations,
+which contain promoter regions and transcription factor binding sites
+unlike IGRs with convergent orientations. Extension to Multicopy
+Integrations http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00299/suppl_file/sb0c00299_si_001.pdf After uncovering
+a locus effect related to the intensity of accessibility peaks for
+single-copy integration, we next sought to see if there was a similar
+effect for multicopy integrations. In , expression of the recombinant gene of interest is typically driven
+by several tandem copies of the heterologous cassette, integrated  homologous recombination into a single locus just upstream
+of a promoter. To evaluate potential
+locus effects, we constructed strains to secrete human growth hormone
+(hGH) or granulocyte-colony stimulating factor (G-CSF) under control
+of three different promoters (P, P,
+P) integrated into the genome upstream of various promoters
+(, , , , or ). These IGRs spanned
+a range of overall accessibility and expression levels of adjacent
+genes (). We did not observe the
+integration locus to have a significant effect on expression for any
+of the promoters or genes tested, as measured by RNA-seq (). The copy numbers
+of transgenes spanned a similar range among loci, ruling out the possibility
+of bias in copy number. Expression was positively correlated with
+copy number for each promoter tested (P:  = 0.62, P:  = 0.38, P:  = 0.84). In these multicopy insertions, the
+transgene is separated from the endogenous locus by multiple copies
+of heterologous contextual elements, which can total 30 kb in length
+for high-copy integrations. It is therefore likely that the epigenetic
+state of heterologous elements, and not that of the endogenous locus,
+most influences expression of the transgene. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00299/suppl_file/sb0c00299_si_001.pdf To characterize the epigenetic state of these heterologous
+elements,
+we performed ATAC-seq on three hGH-expressing strains with multicopy
+insertions upstream of the native , , or  promoters (). Sequence elements of these constructs occurring natively
+in the genome (such as the  transcription terminator)
+adopted similar peak position, peak intensity, and nucleosome occupancy
+as the native copy. Interestingly, aligned reads from ATAC-seq formed
+a much stronger, but flat (ill-defined peaks), signal across most
+of the portion of the cassette that contained the bacterial origin
+of replication and the transcriptional unit for the selectable marker—all
+sequence elements originating in other yeast or bacteria. Within this
+portion of the cassette, only the promoter region of the selectable
+marker appeared to have a defined peak, and no nucleosomes were predicted
+with high confidence (>80% occupancy). These results may suggest
+that
+the non-native elements of each construct adopted an especially accessible
+chromatin state, but without strong evidence of much chromatin activity
+such as by chromatin remodeling or transcription factors. This accessible
+and largely inactive context surrounds the transcriptional unit of
+the transgene in the case of multicopy insertions. Our collective
+findings uncovered an effect of the locus on transgene
+expression, but our previous library results suggested a potential
+impact of transgene expression on the downstream native gene. To confirm
+this downstream impact, we compared the expression of  and  among strains integrated upstream of the  promoter, the  promoter, or another
+promoter elsewhere in the genome (). The strong  promoter
+is the most common constitutive promoter used in  and  is adjacent to  in
+the genome. We chose to drive transgene expression in this case by
+one of three other promoters to isolate the effect of the integration
+site on the adjacent genes. Surprisingly, integration upstream of the  promoter
+led to an 8-fold increase in expression of  (adjusted -value = 2.2 × 10) relative
+to integration elsewhere in the genome or even at the
+same IGR but oriented in the direction of . We
+observed no significant effect on expression of the transgene or . We observed the same effect upon integration upstream
+of the  promoter, though to a lesser degree,
+with a near 2-fold increase in expression of  (adjusted -value = 4.4 × 10) relative to the other integration groups. These results confirmed
+the impact of transgene expression on the downstream gene observed
+with single-copy integrants and may suggest that the effect was even
+greater with multicopy integrants, perhaps due to positive feedback
+with each additional copy. Comparison of transgene
+expression among insertion loci across
+three promoters (PAOX1, PDAS2, and POLE1) and two heterologous genes
+( and ). Transgene expression
+was measured by RNA-seq as log(TPM + 1). Each point is
+a unique clone and represents the average of triplicate samples analyzed
+by RNA-seq. The transgene copy number is indicated for each clone. Influence of expression of heterologous genes
+on the downstream
+native gene. (A) Expression of , the transgene
+( or ), and  as a function of integration either upstream of the  promoter or elsewhere in the genome. Each point represents the average
+of triplicate RNA-seq measurements of expression in log(TPM + 1). Adjusted -values were calculated using
+DESeq2. (B) Expression of , the transgene ( or ), and  as a function of integration either upstream of the  promoter or elsewhere in the genome. Reconciling Single-Copy and Multicopy Locus
+Effects Together, our results suggest a significant locus
+effect on transgene
+expression for single-copy integrations that diminished for multicopy,
+tandem integrations. Each subsequent copy of the heterologous construct
+further increases the average distance between the transgene and the
+original genomic context. The introduction of multiple copies is thus
+likely to surround the transgene in a new epigenetic context, which
+contains multiple copies of the promoter driving expression of the
+transgene. In yeast, DNA looping can bring together enhancer-like
+elements with promoters and even join whole clusters of transcription
+units. It is possible, therefore, that tandem copies
+of a heterologous construct encourage close association of repetitive
+sequence elements in three-dimensional space, forming a new microenvironment.
+Such an association of the same binding sites within promoters may
+lead to cooperativity and further encourage the binding of factors
+needed to promote transcription. Selecting
+Integration Sites from ATAC-seq Our data
+and observations here provide guidance on the selection of novel integration
+sites for genome engineering from a simple, one-time, genome-wide
+assay such as ATAC-seq. Our evaluation of the relative impacts of
+tested features may reduce the need for performing similar screens
+of IGRs in many other hosts. We envision that only an annotated genome
+and an ATAC-seq data set collected under the desired conditions may
+be sufficient to enable selection of suitable integration sites in
+many eukaryotic hosts. Our results suggest ideal sites for integration
+are IGRs that are (1) sufficiently far from telomeres or centromeres,
+(2) in an open region of chromatin but with only low to moderate intensities
+of accessibility peaks nearby, and (3) in a convergent orientation
+with the native, downstream gene to prevent unwanted interference.
+In cases where weaker promoters drive expression of the transgene,
+it may be useful to avoid placing these constructs near highly transcribed
+genes to minimize any transcriptional interference. These criteria
+may be especially important for single-copy integration of heterologous
+genes such as by CRISPR/Cas9. For tandem, multicopy integrations to
+drive extremely strong expression, a convergent orientation with the
+downstream gene may be most important. We believe that the framework
+here using a host’s epigenetic
+landscape should guide selection of heterologous insertion sites in
+many other eukaryotes. In developing this framework, we have also
+uncovered surprising biological relationships between transgene expression
+and the locus of integration that warrant further study in yeasts
+and higher eukaryotes. With a greater understanding of the impactful
+features of an integration site, novel engineering solutions can be
+developed to modify these interactions and promote robust expression.
+Such solutions might include the development of improved landing pads
+with enhancer-like elements or the optimization of synthetic gene
+clusters for pathway engineering. Our work underscores the importance
+of genome-wide assays such as ATAC-seq to better understand biological
+mechanisms and inform engineering decisions for the construction of
+improved cell factories. https://portals.broadinstitute.org/gpp/public/analysis-tools/sgrna-design https://portals.broadinstitute.org/gpp/public/analysis-tools/sgrna-design Y-11430 was obtained from the
+USDA and modified for subsequent CRISPR/Cas9-based
+integration by frameshift knockout of KU70. This strain was further modified to express mCherry by cotransformation
+of a donor cassette and a circular plasmid containing Cas9 and guide
+RNA sequences, described previously. IGR
+libraries were similarly created by cotransformation of a donor cassette
+for eGFP expression and a circular plasmid for CRISPR/Cas9-based targeting
+to the desired IGR. Donor cassettes contained the following (5′
+to 3′): a 450 bp 5′ homology arm, the  promoter, the mCherry or eGFP gene, a transcription terminator,
+and a 450 bp 3′ homology arm. The eGFP cassette contained a
+phleomycin D1 (Thermo Fisher Scientific) selection marker to facilitate
+screening for positive transformants. Guide RNA sequences were designed
+using the Broad Institute’s Genetic Perturbation Platform sgRNA
+tool (), constraining GC content to between 20% and
+80% and requiring no homopolymers >4 bp. Successful on-target integration
+was confirmed by PCR amplification of the target locus. Strains
+were generated to express either human growth (hGH) or granulocyte-colony
+stimulating factor (G-CSF) under control of multiple native promoters
+(, , ) by modifying the commercial vector pPICZ A (Thermo Fisher Scientific).
+A single homology sequence was inserted upstream of the promoter to
+direct integration into a locus other than that of the promoter (, , , , ). Plasmids were linearized in
+the middle of the homology sequence or native promoter for multicopy
+insertion into that particular locus. For collection of samples
+for ATAC-seq and RNA-seq, Y-11430 wild-type
+cells or multicopy hGH and GCSF cells were grown in 24-well deep well
+plates (25 °C, 600 rpm) using glycerol-containing media (BMGY-Buffered
+Glycerol Complex Medium, Teknova) supplemented to 4% (v/v) glycerol.
+After 24 h of biomass accumulation, cells were pelleted and resuspended
+in BMMY (Buffered Methanol Complex Medium, Teknova) containing 3%
+(v/v) methanol. Samples were collected for ATAC-seq and RNA-seq from
+triplicate cultures after 24 h initial growth in BMGY and after an
+additional 24 h growth in BMMY for wild-type cells and only the BMMY
+phase for protein-expressing cells. Two million cells per sample were
+prepared for transposition as described previously. Spheroplasts were washed once with transposition buffer prior to transposition and PCR amplification
+for sequencing, which are described elsewhere. Amplified libraries were size selected using 0.4×
+followed by 0.8× Ampure XP beads according to manufacturer instructions
+(Beckman Coulter). Size-selected libraries were sequenced on an Illumina
+NextSeq to generate 40-nt paired-end reads. Alignments were
+performed using Burrows-Wheeler Aligner (BWA-MEM) v0.7.5a, sorted, duplicates were marked, and .bam files
+were indexed using Picard v1.94 and samtools v0.1.19. Accessibility
+peaks were called and scored using MACS2, while nucleosome position
+and occupancy were called using NucleoATAC, both as described previously. The −log(-value) score from the narrowPeak output of MACS2 was defined to
+be the accessibility score of a peak. Overall scores for promoter
+regions or IGRs were calculated as the sum of scores of peaks contained
+within these regions. RNA was extracted
+and purified according
+to the Qiagen RNeasy kit and RNA quality was analyzed to ensure RNA
+Quality Number >7. RNA libraries were prepared using the 3′
+DGE method and sequenced on an Illumina
+HiSeq2500 to generate paired reads of 17 bp (read 1) + 46 bp (read
+2). Sequenced mRNA transcripts were quantified with Salmon v0.9.1, using a transcript database consisting of a
+single  transcript per gene, each
+with a 100-nt extension on the 3′ end, as well as rhGH and
+rhG-CSF transgenes. Expression was visualized using log(Transcripts per Million +1) values. Cell Growth and Fluorescence
+Characterization Strains
+with confirmed integration of the eGFP cassette into the proper IGR
+were grown to saturation in YPD in a 96-well plate at ambient temperature
+and 1000 rpm shaking for 2–3 days. From these cultures, complex
+media containing either 4% (v/v) glycerol or 3% (v/v) methanol was
+inoculated to an initial OD of 0.1 in a 96-well plate.
+Cultures were subsequently grown in a microplate reader (Tecan), with
+OD measurements every hour for 24 h. Growth measurements
+were performed on biological triplicates of each library member for
+each carbon source. Growth data for each well was fit to a Baranyi
+model to obtain a maximum growth rate. Maximum growth rates were scaled
+within each plate to account for heterogeneity between plates. In
+parallel, cultures were similarly started at an initial OD of 0.1, grown for 4 h, and then analyzed by flow cytometry for GFP
+and mCherry fluorescence, gating for horizontal and vertical singlets.
+Cells were further gated for positive mCherry fluorescence to eliminate
+nonviable or transiently nonexpressing cells. Flow cytometry was performed
+on four biological replicates of each library member for each carbon
+source. Analytical Assays for Strain Characterization For hGH-
+and G-CSF-secreting strains, copy number analysis by qPCR and determination
+of protein concentration by sandwich ELISA were both performed as
+described previously. Raw and processed ATAC-seq data used
+in this study can be obtained from the NCBI Gene Expression Omnibus
+(accession number: GSE154330)..

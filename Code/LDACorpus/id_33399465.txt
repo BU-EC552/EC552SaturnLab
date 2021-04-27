@@ -1,0 +1,389 @@
+Pseudoalteromonas luteoviolacea Violacein and deoxyviolacein
+belong to bisindol pigments with deep
+purple color, which are derived from the tryptophan biosynthetic pathway
+and naturally produced by a number of marine bacteria, such as ,, and . Clinical trials and biomedical studies
+indicate both compounds possess strong antibacterial, anticancer, antiviral, trypanocidal, and antiprotozoal properties. These characteristics make violacein
+a superior chemical scaffold and drug candidate for the development
+of clinically active antimicrobial, antiviral, and chemotherapeutic
+agents. The violacein biosynthetic pathway was first discovered
+by Pemberton
+et al. in 1991 and was fully characterized
+by Balibar et al. and Sanchez et al. in 2006. Branched from the -tryptophan
+pathway, the violacein biosynthetic pathway involves five steps, encoded
+by A, B, C, D, and E, which were organized in an operon form containing all five
+genes. Two molecules of -tryptophan are oxidatively condensed
+by A and B to form indole-3-pyruvic
+acid (IPA). Then, IPA is decarboxylated to form protodeoxyviolaceinic
+acid via E. Subsequently, protodeoxyviolaceinate
+is oxidized to violacein by D and C (). Without
+involving the first reduction step of D, deoxyviolacein
+is formed as the major byproduct. At present, most of the reported violacein-producing
+hosts are
+Gram-negative bacteria with human pathogenicity. For example, both (−) and (,) have
+been related with serious skin infection in immune-compromised people,
+and both strains have been classified as biosafety level II bacteria.
+Although the native hosts demonstrate some advantage to produce violacein,
+their pathogenicity significantly limited their industrial application.  has been considered to be nonpathogenic
+and has been classified as ‘generally regarded as safe’
+(GRAS) by the US Food and Drug Administration (FDA). Both  and  were isolated from the marine environment with high GC content (up
+to 65% in the coding sequence). We argue that  might be engineered as a novel platform for violacein production
+due to its GRAS status. Different from ,  lacks Crabtree effects and does
+not produce ethanol when carbohydrates are oversupplied in the media. has been reported
+to grow on a wide range of inexpensive raw materials, including glucose, glycerol, xylose, volatile fatty acids, alcohols, and wax alkanes. Over the past few years, multiple DNA
+modular assembly platforms
+have been developed. Among them, Golden Gate assembly,
+which adopts the type IIs restriction enzymes that cut outside of
+their recognition sequence and generate 4-bp sticky ends, has been
+considered as one of the most promising methods. It avoids some tedious procedures of traditional cloning
+such as primer design, PCR amplification, and gel purification. Different
+from the Gibson assembly method, it does not need overlapping sequences,
+and only needs type IIs restriction enzyme sites and the four base
+pair linkages. Designing these 4-bp sticky end
+bases allows for directional and seamless assembly of multiple fragments
+at one time, and is critical to the successful and efficient assembly
+of large biosynthetic gene clusters. Golden
+Gate cloning also allows for combinatorial assembly of multiple functional
+bioparts, including promoters, ribosomal binding sites, protein coding
+sequences and terminators, and so on. One can easily shuffle the order
+of the operon structure and permutate the coding sequence to explore
+a wide range of gene expression space if multiple regulatory elements
+are used. Recently, Golden Gate based cloning has been used to express
+glycerol kinase for conversion of glycerol to erythritol and citric
+acid in ; a set of modular Golden Gate cloning vectors were also built for
+rapid construction of the carotenoids pathway and a 3-step xylose utilization pathway in . However, none of the mentioned work
+has demonstrated the construction of multiple-gene pathway libraries
+as well as tuning gene expression with varying promoter strengths
+in . In this work, three different
+endogenous promoters of , with high, medium, and low transcriptional activity,
+were used to control the transcriptional strength of the five genes
+encoding the violacein pathway, aiming to fine-tune the gene expression
+and improve the pathway efficiency. To enable rapid and efficient
+assembly, the Golden Gate assembly method was used for library construction.
+We have optimized the 4-bp overhangs linkers to improve the assembly
+efficiency. Upon characterizing the strains from a representative
+collection of library, we found that the optimal violacein production
+in  requires strong expression for all
+the five genes. Thus, we reconstructed the violacein pathway by placing
+the strongest TEF promoter upstream of all the five genes in the violacein
+pathway, generating strain  OV1 that
+yielded 38.68 mg/L violacein and 4.02 mg/L deoxyviolacein in shake
+flasks. Furthermore, we optimized the yeast cultivation conditions,
+including carbon to nitrogen ratio (C/N) and pH conditions. The maximum
+violacein and deoxyviolacein production reached 70.04 mg/L and 5.28
+mg/L in shake flasks, respectively, with a C/N molar ratio at 60 and
+the addition of 10 g/L CaCO to control the medium pH.
+Taken together, the development of the Golden Gate-based library construction
+method and the optimization of culture conditions set a baseline for
+engineering violacein production in . The reported work provides a basis for us to engineer efficient
+and scalable violacein production from the novel host oleaginous yeast
+species. Biosynthetic pathway
+of violacein: VioA, -tryptophan
+oxidase; VioB, -[2-(carboxylatoamino)-1,2-bis(1-indol-3-yl)ethyl]carbamate synthase; VioC, violacein synthase;
+VioD, protoviolaceinate synthase; VioE, protodeoxyviolaceinate synthase. Preparing Modular Parts for Golden Gate Assembly Balancing
+gene expression within a predefined biosynthetic gene cluster is a
+common practice to maximize the catalytic efficiency, minimize the
+metabolic burden, and improve the production and yield. However, when the number of genes and regulatory
+elements such as promoters or RBSs are large, this method usually
+represents tedious and time-consuming steps to build the library and
+screen the best performing strains. In terms of rapid library construction,
+Golden Gate assembly, first discovered in 1996, is considered as one
+of the most promising methods because digestion and ligation can be
+done in a one-pot 30 min reaction. To build a
+violacein-producing library with  as
+host, the expression of the five genes, including A, B, C, D, and E (from ), were placed under the control of three promoters with varying
+transcriptional strength. We have selected three endogenous promoters
+from , namely, the TEF promoter, the
+ICL1 promoter, and the ZWF1 promoter, with high, medium, and low transcriptional
+activity, according to our previous studies. Site-Directed Mutation and Plasmid Construction To successfully assemble the five genes and three promoters
+through the Golden Gate assembly method, we first modified our YaliBrick
+vectors by removing the internal BI restriction
+enzyme site on the vector backbone, yielding our Golden Gate vector
+pYaliGG. Next, the internal BsmBI site within the gene D underwent silence mutation to generate a new vector pYaliA1-Dmut following protocols as described in the section
+“”. Subsequently, the five genes from the violacein pathway
+were individually assembled into vector backbones containing promoters
+TEF, ICL1, and ZWF1 YaliBrick cloning protocol, generating plasmids pYaliA1-A, pYaliA1-B, pYaliA1-C, pYaliA1-Dmut, pYaliA1-E, pYaliH1-A, pYaliH1-B, pYaliH1-C,
+pYaliH1-Dmut, pYaliH1-E, pYaliK1-A, pYaliK1-B, pYaliK1-C, pYaliK1-Dmut, and pYaliK1-E, respectively (A). Then 15 open reading frames (ORFs) consisting of three
+promoters, five protein coding sequences, and the XPR2 terminators
+were PCR amplified (linker used will be discussed later). The resulting
+fragments (pTEF-A#, pTEF-B#,
+pTEF-C#, pTEF-Dmut#, pTEF-E#, pICL1-A#, pICL1-B#, pICL1-C#, pICL1-Dmut#,
+pICL1-E#, pZWF1-A#, pZWF1-B#, pZWF1-C#, pZWF1-Dmut#, and pZWF1-E#) will be used as modular
+parts in the subsequent Golden Gate assembly (B). Illustration of engineering strategies with
+Golden Gate assembly:
+(A) 15 plasmids that used as modular parts in Golden Gate assembly;
+(B) overall workflow of Golden Gate assembly used in this work. Exonuclease-based
+homology recombination
+methods, such as Gibson assembly, require a 20–40 bp overlapping
+sequence at the terminus of the DNA fragments to specify the assembly
+order. One limitation is that DNA fragments
+with sequence homology at the ends cannot be assembled using this
+method. This limitation can be easily resolved through ePathBrick or Golden Gate assembly. Unlike BioBrick-based
+cloning, Golden Gate assembly, relying on the type IIs restriction
+enzymes, has a number of advantages over the traditional restriction
+endonuclease cloning and BioBrick methods. These type IIs enzymes cut outside of their recognition sequence,
+forming 4-bp sticky overhangs that can be easily customized to guide
+the assembly order of any synthetic DNA fragments. If designed properly, these type IIs recognition sites will not
+be retained in the final construct, which allows for efficient and
+combinatorial cloning without the presence of digestion scars. Therefore,
+the selection of the 4-bp linkers or adapters in the Golden Gate method
+is critical to the accuracy and efficiency of the assembly. Since all the five modular parts in the violacein pathway are complete
+ORFs, the linkers that are placed upstream of the promoters or downstream
+of the terminators will have minimal effect on the ORF transcription
+and translation. Therefore, the only constraints to design and select
+the linkers are unique and nonpalindromic to ensure effective cloning.
+Theoretically, the 4-bp linker may have 4 (256) different
+combinations, here we only need to choose six unique linkers that
+direct the assembly of the five gene fragments and the vector backbone. In this work, we chose two sets of end linkers, the first group
+is TATC, GTTA, AATG, TGAG, CTAG, ATGT and the second group is TGGC,
+TCAG, GTGC, TCGG, GCTG, TGCT that are recommended from HamediRad’s
+list (). Five fragments (pTEF-vioA#, pTEF-vioB#,
+pTEF-vioC#, pTEF-vioDmut#, and pTEF-vioE#) and the vector pYaliGG
+were used to test the efficiency of these linkers. These two reactions
+were performed in parallel under the same reaction conditions. For
+example, we kept the Golden Gate assembly steps and the concentration
+of each Golden Gate modular parts exactly the same. After ligation,
+1 μL of the assembly reaction from each tube was used for electroporation
+into  NEB5α, respectively, and 1 μL
+of outgrowth was spread onto selective LB agar plates containing ampicillin.
+As shown in B, the number of colonies on plate 2 (using group 2 linker) was significantly
+higher than the number of colonies on plate 1 (using group 1 linker).
+As such, the group 2 linker was selected for subsequent library construction. Two groups
+of linkers used in Golden Gate assembly (A). Transformation
+efficiency as an indicator of pathway assembly efficiency (B). Library Construction and Screening http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00469/suppl_file/sb0c00469_si_001.pdf For a five-gene
+biosynthetic pathway with three varying promoter strengths, we could
+construct a violacein pathway library containing 243 (3) variants with the 15 Golden Gate modular parts that were prepared
+by using our optimal linkers. The plasmid pYaliGG, which was derived
+from pYaliXP free of the BsmBI digestion site (), was used as the vector backbone to direct all
+the modular parts to assemble in the right order. After Golden Gate
+assembly, the reaction was transformed into  DH5α. Then the  recombinant strains
+were cultivated, and the mixture of plasmids containing all the assembled
+pathways was prepared and transformed into  Po1g (Leu−). The recombinant yeast colonies were screened
+on the agar plates with CSM-Leu minimal media. Since the violacein
+pathway may generate a number of distinct pigments, after 3 days incubation at 30 °C, the single colonies
+on the plate may contain three colorful pigments: violacein (purple),
+deoxyviolacein (pink), and proviolacein (green). Through the spectrophotometric
+reading of the extracted solution in the liquid culture, we were able
+to roughly quantify the production of violacein and deoxyviolacein
+from each colony (). The quantification of proviolacien (green product) is not
+possible in this study, due to the lack of the proviolacein standards. The initial screening of 20 colonies (8.2% of the library
+coverage)
+revealed a significant difference in violacein titer, which demonstrated
+the importance of accurately regulating the transcriptional strength
+of each gene in the violacein pathway (). The highest violacein yield obtained from
+our library reaches 34.77 mg/L, which is 51 times higher than the
+yield of the lowest-yielding producer (0.68 mg/L). All the plasmids
+in the pathway library were then sequenced to determine the sequence
+of the promoter used for each gene in the pathway. After analyzing
+the sequencing data, we concluded that the highest violacein titers
+were obtained when all the five genes were controlled by the strongest
+TEF promoter (). On the other hand, the highest deoxyviolacien titer was obtained
+when the B, D, and E genes were controlled by the weakest ZWF1 promoter
+(). It is likely
+that the expression of D gene controls the production
+of the byproduct deoxyvioalcein. Violacein production was generally
+decreased as the transcriptional strength of the promoters were shifted
+from strong to weak activity (). Because of the bifunctional enzyme C, deoxyviolacein
+is produced as the major byproduct of the violacein pathway in the
+wild strains. Deoxyviolacein is structurally identical to that of
+violacein, except for the missing oxygen atom at the six position
+of the indole ring (). Violacein produced by the wild strains was usually mixed
+with up to 10% deoxyviolacein, but when the expression
+of D was regulated by the weakest promoter ZWF1,
+the production ratio of violacein and deoxyviolacein was significantly
+reversed. For example, the proportion of deoxyviolacein in the total
+products reaches up to 91.34% (the promoter sequence for the five
+genes ABCDE is TEF-ZWF1-TEF-ZWF1-ZWF1) (). This result is
+consistent with that of previous work, that the expression strength
+of D will significantly affect the production
+of deoxyviolacein. When the D gene is completely
+missing or knocked out, even pure deoxyviolacein can be obtained. We believe that the relative promoter
+strength of VioA and VioE
+determines the amount of deoxyviolacein produced in this system. When
+VioE was under the control of the medium strength ICL promoter (strain
+#2 in ), the
+strain produces more byproduct, deoxyviolacein, than the case when
+VioE was under the control of the weak promoter ZWF1 (strain #1 in ). On the other hand,
+strain #1 (VioA on weak promoter) produced more violacein than strain
+#2 (VioA on strong promoter), indicating that the relative promoter
+strength of VioA did not play a significant role in determining the
+final violacein titer. If we checked across the violacein and deoxyviolacein
+titer in our strain library (), we can conclude that strong expression of VioC benefits
+both violacein and deoxyviolacein production, and strong expression
+of VioB and VioD also benefits violacein production. However, high
+deoxyviolacein production was only associated with the weak expression
+of VioD ().
+These data reveal the complicated metabolic activity of the branched
+metabolic pathway when the same biosynthetic gene (VioC) was shared
+between the byproduct pathway and the target pathway. Violacein
+pathway library transformed into  yields
+three colorful compounds: green (proviolacein), purple (violacein),
+and deoxyviolacein (pink). The intensity of the pinkness indicates
+the percentage of the deoxyviolacein in the culture. Screening of violacein production (mg/L) from randomized
+promoter
+library. Mutants tested in this study cover about 8.5% of the total
+library size (20/243). Sequence analysis of the library is shown below
+the horizontal axis. The three endogenous promoters of  were assigned numbers and colors from strong to
+weak promoter strength as interpreted as TEF promoter, 1, orange;
+ICL1 promoter, 2, green; ZWF1 promoter, 3, blue. Pathway and
+Fermentation Conditions Optimization for Increased
+Violacein Production Since genes regulated by strong TEF
+promoters are advantageous to violacein production, to further increase
+the yield, we constructed the strain so that all five genes were regulated
+by a TEF promoter, generating the strain  OV1. This strain produced 38.68 mg/L violacein, and the proportion
+of deoxyviolacein is also within a reasonable range (9.41% of the
+total violacein, ), demonstrating that strong gene expression for all five genes is
+indeed critical to improve the violacein production in . The carbon to nitrogen ratio plays a major
+role in regulating the metabolic activity of lipogenic pathways in . To understand
+whether the C/N ratio affects vaiolacein production, we tested the
+violacein production of the top producing strain  OV1 cultivated in CSM-Leu with a C/N ratio of 60, 80, 100, and 120,
+respectively. Since the maximum absorption wavelength of violacein
+(570 nm) is close to the detection wavelength of the OD, to avoid optical interference, dry cell weight instead of OD was used to quantify cell growth. As shown in , the dry cell weight
+increased substantially as we increased the C/N ratio. However, violacein
+production remained nearly constant from 38 mg/L to 41 mg/L, and the
+same trend was observed in the production of deoxyviolacein, regardless
+of the C/N variations (). Since the yield is slightly increased under the condition
+of a C/N ratio of 60, the subsequent experiment will be carried out
+under the condition of a C/N ratio of 60. pH has played a critical role
+in regulating cell physiology and
+metabolic activity. Low pH has been routinely observed in  culture due to the accumulation of organic
+acids. To evaluate the effects of pH
+on cell growth and violacein production, the cultivation pH was adjusted
+by adding 10 g/L CaCO, or by buffering with NaHPO and NaHPO to pH 6.0, 6.5,
+7.0, and 7.5, with initial unbuffered media as control (pH 4.5). As
+shown in ,
+media pH strongly influences cell growth (data of samples adding 10
+g/L CaCO was not shown, due to insoluble CaCO crystals interfering with dry cell weight). Surprisingly, the yeast
+grew better under mild acidic or alkaline conditions. For example,
+when the initial pH is 7.5 or 4.5, the cell growth rate is the fastest,
+and the dry cell weight reaches 11.13 g/L and 9.54 g/L at 120 h, respectively.
+However, when the media pH was maintained at 6.0, 6.5, and 7.0, the
+cell growth noticeably slowed down, and the dry cell weight was only
+7.73, 4.07, and 4.50 g/L, respectively. Despite the fact that cell growth was rapid under pH 7.5, violacein
+production did not increase accordingly (). As the media pH was buffered from 6.0
+to 7.0, violacein production decreased gradually (), possibly due to the acidophilic
+nature of the violacein pathway. Most strikingly, CaCO was found to be a superior supplement to buffer media pH. The carbonate
+group (CO) will effectively neutralize
+the organic acids accumulated during the fermentation. At the end
+of the fermentation, 70.04 mg/L violacein and 5.28 mg/L deoxyviolacein
+were produced from the yeast culture supplemented with CaCO. Because of the inexpensive nature of CaCO, this result
+also indicated that CaCO was the preferred buffer to adjust
+media pH for yeast fermentation. Cell growth (A) and violacein
+and deoxyviolacein yield (B) in shake
+flask fermentation by strain  OV1 with
+different C/N ratios, cultivated in CSM-leu medium at 30 °C.
+Violacein and deoxyviolacein were quantified by HPLC, with triplicate
+samples. Cell growth (A) and violacein
+and deoxyviolacein yield (B) in shake
+flask fermentation by strain  OV1 with
+pH 6.0, 6.5, 7.0, 7.5, CaCO and the control (pH 4.5),
+cultivated in CSM-leu medium at 30 °C. Violacein and deoxyviolacein
+were quantified by HPLC, with triplicate samples. In
+this work, the optimization of 4-bp linkers of the Golden Gate
+assembly allows us to quickly build violacein biosynthetic pathway
+libraries with varying promoter strengths in  and access three colorful compounds (green, purple, and pink). After
+optimizing the cultivation conditions, violacein production was increased
+by 84.2%, reaching to 70.04 mg/L when the C/N ratio was controlled
+at 60 and the media was buffered with CaCO. This work
+provided a hands-on protocol for us to build pathway libraries with
+varying promoter strengths that maximize the output of a predefined
+biosynthetic pathway. Strains, Plasmids, Primers,
+and Culture Conditions http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00469/suppl_file/sb0c00469_si_001.pdf The bacterial strains, plasmids, and
+primers used in this study are
+listed in the Supporting Information, .  NEB5α high efficiency competent
+cells were obtained from NEB (New England Biolabs Ipswich, MA). The
+auxotrophic  Po1g (Leu−) was
+purchased from Yeastern Biotech Company (Taipei, Taiwan).  XP1 harboring the plasmid pYaliA1-vioDCBAE
+was stored in our lab. YPD medium contains
+20 g/L glucose (Sigma-Aldrich), 10 g/L yeast extract (Sigma-Aldrich),
+and 20 g/L peptone (Sigma-Aldrich). YNB medium (C/N = 60, 80, 100,
+120) contains 1.7 g/L yeast nitrogen base (without amino acids and
+ammonium sulfate) (Difco), 1.1 g/L ammonium sulfate (Sigma-Aldrich),
+0.69 g/L CSM-Leu (Sunrise Science Products, Inc.), and 30, 40, 50,
+60 g/L glucose, respectively. YNB medium (pH 6.0, 6.5, 7.0, 7.5) contains
+1.7 g/L yeast nitrogen base (without amino acids and ammonium sulfate)
+(Difco), 1.1 g/L ammonium sulfate (Sigma-Aldrich), 0.69 g/L CSM-Leu
+(Sunrise Science Products, Inc.), 30 g/L glucose, and was adjusted
+to pH 6.0, 6.5, 7.0, 7.5, respectively, through NaHPO and NaHPO. YNB medium with CaCO was made with YNB media supplemented with 10 g/L CaCO. Selective YNB plates were made with YNB media supplemented
+with 20 g/L Bacto agar (Difco). Site-Directed Mutation
+and Plasmid Construction http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00469/suppl_file/sb0c00469_si_001.pdf All
+the primers and plasmids used in this study are listed in . Plasmid extraction, agarose gel electrophoresis,
+and other DNA manipulations were carried out by using standard protocols. All the plasmids constructed were verified by
+sequencing. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00469/suppl_file/sb0c00469_si_001.pdf The pYaliGG vector was constructed on the basis
+of plasmid pYaliXP. Primers GGmut-S1 and GGmut-A1 were used to amplify
+fragment GGmut1#, primers GGmut-S2 and GGmut-A2 were used to amplify
+fragment GGmut2#. Plasmid pYaliXP was enzyme digested via the I and II site, generating fragment
+pYaliXP#. Then these three fragments were mixed and assembled following
+the Gibson assembly protocol, generating plasmid pYaliGG. The D site-directed mutation plasmid pYaliA1-Dmut was constructed on the basis of plasmid pYaliA1-D. Primers D1-mut-s1 and D1-mut-a1 were used to amplify fragment
+D1mut1#; primers D1-mut-s2 and D1-mut-a2 were used to amplify fragment
+D1mut2#. Plasmid pYaliA1-vioD were enzyme digested via the I and 2I site, generating fragment
+pYaliA1#. Then these three fragments were mixed and assembled following
+the Gibson assembly protocol, generating plasmid pYaliA1-vioDmut (). The coding sequences of A, B, C, Dmut, and E were assembled into pYaliH1
+and pYaliK1 vector backbones, respectively,
+from plasmid pYaliA1-A, pYaliA1-B, pYaliA1-C, pYaliA1-Dmut,
+and pYaliA1-E by restriction enzyme digestion
+via the I and I site, resulting
+plasmids pYaliH1-A, pYaliH1-B, pYaliH1-C, pYaliH1-Dmut,
+pYaliH1-E, pYaliK1-A, pYaliK1-B, pYaliK1-C, pYaliK1-Dmut, and pYaliK1-E, respectively. The  competent cell preparation and
+transformation procedures were carried out by using previously reported
+procedures. In brief, a single colony
+from plates was inoculated into 10 mL of YPD medium in a 50 mL shake
+flask. The cells were allowed to grow overnight (16–24 h) with
+shaking; 500 μL of cells was harvested from the above culture
+and washed twice with 1 mL of ddHO. After that, cells
+were resuspended in 100 μL of transformation buffer (including
+90 μL of 50% PEG4000, 5 μL of 2 M lithium acetate, and
+5 μL of boiled single strand DNA (salmon sperm, denatured) with
+5 μL of DNA products (200–500 ng plasmids or DNA fragments).
+The transformation mixtures were incubated at 30 °C for 30–45
+min and then vortexed for 10 s every 10 min. They then underwent and
+additional 10 min heat shock at 39 °C to increase transformation
+efficiency and were spread on selected plates with auxotroph. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00469/suppl_file/sb0c00469_si_001.pdf Fragments used in Golden Gate assembly
+were PCR amplified. All the primers and plasmids used in this assembly
+are listed in . Golden Gate plasmids
+were assembled in the presence of 30 U BsmBI (New England Biolabs
+Ipswich, MA), 1000 U T4 DNA ligase (New England Biolabs Ipswich, MA),
+2 μL of NEBuffer 3.1 (New England Biolabs Ipswich, MA), and
+1 mM ATP (New England Biolabs Ipswich, MA). All the fragments to be
+assembled were purified and used in equimolar ratios at a final concentration
+of 20 pmol, then the volume was increased to 25 μL with ddHO. The assembly was transferred to a thermocycler which was
+programed as follows: (5 min at 37 °C, 5 min at 16 °C) ×
+30 cycles followed by 5 min at 60 °C, then transformed into  NEB5α or  Po1g
+(Leu−). Seed Culture and Fermentation Procedure For preparing
+seed inocula, strains were cultivated into 50 mL of CSM-Leu medium
+containing 20 g/L glucose, 5 g/L ammonium sulfate (Sigma-Aldrich),
+0.69 g/L CSM-Leu (Sunrise Science Products, Inc.), and 1.7 g/L yeast
+nitrogen base (without amino acids and ammonium sulfate) (Difco) in
+250 mL shake flasks for 24 h with agitation at 250 rpm at 30 °C.
+For the C/N ratio and pH optimization in a shake flask, 5% (v/v) of
+the seed culture was inoculated to the corresponding medium, with
+different C/N ratios, pH values, and CaCO concentrations.
+All the strains were cultured at 250 rpm, 30 °C up to 120 h for
+violacein production. http://pubs.acs.org/doi/suppl/10.1021/acssynbio.0c00469/suppl_file/sb0c00469_si_001.pdf A violacein standard
+was purchased
+from Sigma-Aldrich and was dissolved in methanol. The maximum absorption
+wavelength of violacein was determined through full wavelength scanning
+from 230 to 750 nm by a microplate reader (Synergy H1 Hybrid Multi-Mode
+Microplate Reader, BioTek, Winooski, VT) (). A standard curve for violacein was prepared by diluting
+the standard (Sigma-Aldrich) with methanol into concentrations of
+10, 20, 30, 40, 50, 60, 70, 80, 90, and 100 mg/L. The analysis of
+violacein was performed by high-performance liquid chromatography
+(HPLC) (Agilent Technologies 1220 Infinity II LC, USA) using Agilent
+Eclipse Plus C18 column (4.6 mm × 100 mm, 3.5 μm, USA),
+equipped with UV detector at 570 nm. Mobile phase A was HO with 0.1% acetate acid, and mobile phase B was methanol with 0.1%
+acetate acid. A stepwise gradient elution at a flow rate of 0.4 mL/min
+was used, following the gradient profiles as follows: ramping from
+100% to 20% A in 0∼5 min, maintaining 20% A (80% B) in 5∼8
+min, ramping from 20% to 100% A in 8∼12 min, and maintaining100%
+A in 12∼15 min. The deoxyviolacein standard was diluted with
+methanol into concentrations at 0.6, 1, 1.8, 2.5, 3, 3.5, and 4 mg/L,
+and was analyzed by HPLC with the same method of violacein. A spectrophotometer-based
+standard curve was also developed through a microplate reader at 570
+nm. The violacein standard was diluted with ethanol at the concentrations
+of 2, 4, 6, 8, 10 mg/L. The biomass was measured as dry cell
+weight. A 500 μL sampling
+of yeast cells was harvested and centrifuged in a microcentrifuge
+tube at 13 000 rpm for 5 min. The upper broth was discarded,
+and the cell pellet was washed twice with ddHO, and then
+dried in an oven at 60 °C until the weight did not change. The
+difference in the weight of microcentrifuge tube with and without
+cells was then calculated..

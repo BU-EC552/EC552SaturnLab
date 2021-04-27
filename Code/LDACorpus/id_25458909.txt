@@ -1,0 +1,315 @@
+Actinobacteria
+of the genus  are among the most prolific
+and well-studied
+producers of diverse secondary metabolites. Over
+the past several decades,  strains have
+been found to produce a number of important bioactive natural products,
+such as the anticancer compound daunorubicin from , the herbicide phosphinothricin
+from () and , and the antibacterial daptomycin from . While
+these decades of study might suggest that the supply of  natural products is nearing exhaustion, in fact, genome sequencing
+efforts have revealed that the well is far from dry, even in the most
+comprehensively studied strains. Access to this “silent” majority of uncharacterized
+natural product gene clusters would benefit greatly from the development
+of new genetic manipulation tools that leverage genomic information
+to aid natural product discovery, characterization, engineering, and
+production. In the context of a  strain
+of interest, for example, facile genome manipulation would aid both
+discovery and validation of new natural products from uncharacterized
+gene clusters, as well as ensuing biochemical and mechanistic studies.
+In heterologous production strains, such techniques would further
+enable genomic remodeling to direct metabolic flux toward a pathway
+of interest and eliminate competing pathways, as well as pathway engineering
+for product diversification. Nevertheless, the current  genetic toolkit, though well-developed and widely employed, often
+mandates a significant investment of time and effort. Typically,
+for gene disruption in , single crossover
+integration of a suicide plasmid can be employed,
+resulting in disruption of the gene of interest with a selectable
+marker. However, the limited number of
+selectable markers limits the reusability of this approach. Further,
+disruption via single-crossover can revert in the absence of selective
+pressure, resulting in undesired restoration of the wild type allele.
+Inclusion of flanking recombinase target sites and expression of the
+corresponding recombinase can enable recycling of markers and improve
+mutation stability, but this mandates additional steps and leaves
+a scar sequence at the target site. Alternatively, clean genomic
+deletions can be made via double-crossover
+integration. However, this multistep process
+is often labor and time intensive. First, integration of the disruption
+vector at the target locus (the first single-crossover event) is identified
+with a selectable marker. Next, loss of the disruption vector and
+its selectable marker (the second single-crossover event) is identified
+via nonselective culture. Finally, colonies exhibiting loss of the
+selectable marker (upon replica plating) must be further screened
+to separate those that have lost the vector via the desired second
+crossover event from those that have reverted the first crossover
+event to restore the original genotype. Counterselectable markers
+such as  and  can facilitate
+identification of the second crossover event but are limited to use
+only in particular mutant hosts. To facilitate
+identification of double-crossover integrants in one step, a double-strand
+break (DSB) can be introduced at the genomic locus of interest, as
+has been demonstrated using a homing endonuclease. However, this method is dependent upon prior integration
+of the homing endonuclease recognition site at the target locus, as
+homing endonucleases are minimally amenable to specificity alteration. Recently, DSB-mediated genome editing
+has been achieved via the
+type II Clustered Regularly Interspaced Short Palindromic Repeats
+(CRISPR)/CRISPR associated proteins (Cas) system of . Functioning similarly
+to a bacterial immune system, CRISPR/Cas requires three components
+to realize targeted cleavage of foreign DNA: Cas9, the nuclease and
+scaffold for the recognition elements; CRISPR RNA (crRNA), short RNAs
+conferring target site specificity, encoded as spacers in a CRISPR
+array; and trans-activating crRNA (tracrRNA), a short RNA that facilitates
+crRNA processing and recruitment to Cas9. The Cas9/crRNA/tracrRNA complex can target any DNA sequence, known
+as a protospacer, provided that the requisite protospacer-adjacent
+motif (PAM) is present at the 3′ end (NGG in the case of , where N represents any nucleotide). To repurpose this system for genome engineering,
+spacer sequences
+matching genomic loci of interest can be directly programmed into
+a heterologously expressed CRISPR array. To further simplify the system,
+fusion of the crRNA and tracrRNA into a single synthetic guide RNA
+(sgRNA) transcript has been demonstrated, obviating the need for processing
+of the transcribed CRISPR array (pre-crRNA) into individual crRNA
+components. The  CRISPR/Cas system has been successfully reconstituted in a variety
+of hosts across all domains of life, including (but not limited to) ,, and human cell lines. Compared with other tools for site-specific
+genome engineering, such as zinc-finger nucleases and transcription
+activator-like effector (TALE) nucleases, the engineered CRISPR/Cas
+system offers unprecedented modularity. Targeting any site of interest
+requires only the insertion of a short spacer into a CRISPR array/sgRNA
+construct, which can be achieved rapidly and with high throughput
+using modern DNA assembly techniques. A suitable target site needs
+only to have an adjacent NGG sequence, which are notably abundant
+in GC-rich  genomes. To harness
+the CRISPR/Cas system for genome editing in  species, the pCRISPomyces expression system
+was designed (Figure ). Two versions of the
+pCRISPomyces plasmid were constructed: pCRISPomyces-1, which includes
+both tracrRNA and CRISPR array expression cassettes along with , and pCRISPomyces-2, which includes a sgRNA expression
+cassette and . In both cases, previously characterized
+strong promoters were selected to drive
+expression of the CRISPR/Cas elements, along with widely used terminators
+from phages fd, λ, and T7. Analysis of the  gene revealed the presence of several rare
+codons. Among them were many  codons, translation-level
+regulators of secondary metabolism in  species. As a result, a refactored  gene codon-optimized for  expression was designed. To facilitate seamless, one-step Golden Gate assembly of
+custom-designed
+spacers into the CRISPR array of pCRISPomyces-1, a  cassette flanked by unique I restriction sites
+was incorporated between two direct repeat sequences in the empty
+CRISPR array. A I-flanked  cassette was included in the sgRNA cassette of pCRISPomyces-2 for
+the same purpose. In both plasmids, a unique I
+restriction site allows linearization of the backbone for insertion
+of additional elements, such as editing template sequences for recombination-driven
+repair, via Gibson assembly or traditional ligation. Inclusion of  allows selection in both  and  hosts, the colE1 origin enables
+replication in , and the RP4 origin of transfer  enables conjugative transfer of pCRISPomyces plasmids
+from  to  hosts. Finally, the temperature-sensitive  region from pSG5 allows rapid clearance
+of the pCRISPomyces plasmid following the desired genome editing. To assess the functionality of the pCRISPomyces system, initial
+experiments were carried out in the well-studied strain  66. Two genomic protospacer
+sequences were selected: one in , from the undecylprodigiosin
+gene cluster, and one in , from the actinorhodin gene cluster. In both cases, a 20 bp sequence with the requisite NGG PAM sequence
+was chosen, with preference given to sites on the noncoding strand
+and those with multiple purine bases at the 3′ end. To minimize off-target effects, sites were chosen
+in which the last 12 bp of the protospacer plus the PAM (15 bp in
+total) were unique, as confirmed by BLAST
+analysis against the published genome sequence. To enable defined
+editing via homologous recombination, a 2 kb editing template was
+supplied on the pCRISPomyces plasmid. The editing template consisted
+of two 1 kb arms homologous to the corresponding sequences upstream
+and downstream of the protospacer, designed to introduce a short deletion
+(20–34 bp) to partially or fully eliminate the protospacer
+sequence and create a frame shift. The pCRISPomyces plasmids
+were transferred to  via conjugation.
+Exconjugants displaying apramycin resistance were
+confirmed by restreaking on selective ISP2 plates. To screen for the
+desired editing event, genotyping of multiple exconjugants was carried
+out by first isolating the genomic DNA and then PCR amplifying the
+target locus. To ensure that the PCR product was amplified from the
+chromosome rather than the pCRISPomyces plasmid, primers were designed
+to anneal slightly upstream and downstream of the editing template
+sequence. Each PCR product was sequenced with internal primers to
+determine if the intended deletion had been introduced. Of note, conjugation
+efficiency was found to be reduced by 5- to 10-fold for any plasmid
+bearing the  gene, suggesting an inherent toxicity
+associated with overexpression of the heterologous endonuclease. Using the pCRISPomyces-1 system with separate tracrRNA and CRISPR
+array elements, only modest editing efficiency was observed (Table ). For the  target, three out
+of 14 exconjugants possessed the desired deletion, while the remaining
+11 strains were unedited at the  locus. As a
+negative control, a pCRISPomyces-1 derivative plasmid bearing all
+CRISPR elements (tracrRNA,  spacer, and  editing template) except for the  gene was constructed and conjugated into . In this case, 12 exconjugants were screened, and each possessed
+the unedited genotype. For the  target,
+a similar efficiency was observed as the  target,
+with two out of eight exconjugants displaying the edited genotype. Supporting Information Figure S1 To demonstrate clearance of the pCRISPomyces-1 plasmid, one of
+the identified  strains carrying the desired  deletion was cultured nonselectively at high temperature
+(37–39 °C). After growth to stationary phase, a fraction
+of the culture was plated to isolate individual colonies. Multiple
+colonies were obtained that had regained apramycin sensitivity and
+did not produce the red undecylprodigiosin pigment (), indicating successful clearance
+of the temperature-sensitive plasmid. This sequence allows the apramycin
+selection marker to be reused in this strain for future applications,
+such as further genome editing or introduction of heterologous genes. Supporting Information
+Figure S2 Since the three-component CRISPR/Cas9 system of the pCRISPomyces-1
+plasmid did not exhibit high editing efficiency, it was speculated
+that employing the simpler two-component system could yield improvement.
+To test this hypothesis, the same protospacers in the  and  target genes were evaluated with
+the sgRNA-expressing pCRISPomyces-2 plasmid. Editing efficiency was
+again evaluated by genotyping multiple isolated exconjugants. With
+the pCRISPomyces-2 -targeting construct, significantly
+higher editing efficiency was observed, as six out of six randomly
+selected exconjugants were revealed to possess the edited phenotype
+(Table ; ). Similar results were observed for the  target, where eight out of eight randomly selected exconjugants
+were found to be correctly edited. Taken together, these results show
+that sgRNA targeting affords higher efficiency than tracr/crRNA targeting.
+A possible explanation could be that pre-crRNA processing by native
+RNase enzymes is inefficient when applying CRISPR/Cas in , in contrast to results in other hosts where native RNase enzymes
+appear sufficient. One of the key
+advantages of the CRISPR/Cas system compared with
+other targeted nucleases is the relative ease with which multiple
+sequences can be simultaneously targeted using the same Cas9 endonuclease.
+Given the observed superiority of sgRNA over the tracrRNA/CRISPR array
+configuration for single-target genome editing, additional constructs
+were designed with two sgRNA cassettes to evaluate the potential for
+multiplex targeting. In these constructs, tandem sgRNA cassettes were
+driven by two copies of the same strong promoter. Insertion of both
+cassettes into the same pCRISPomyces-2 backbone was carried out in
+one step by Golden Gate assembly with a synthetic DNA fragment containing
+the first sgRNA sequence, a terminator, a promoter, and the second
+sgRNA sequence, all flanked by I sites. The first dual-targeting construct was designed to introduce simultaneous
+short deletions in both the  and  loci, utilizing the same protospacer sequences and 2 kb editing
+templates previously evaluated. Following conjugation and isolation
+of genomic DNA from multiple exconjugants, both loci of interest were
+sequenced. In four out of four strains evaluated, the desired deletion
+was observed at both loci, demonstrating the potential for multiplex
+genome editing. The ability to cut two loci in the genome simultaneously
+opens up the possibility for excision of larger chromosomal segments
+by introducing a DSB at both ends and bridging the gap with a plasmid-borne
+editing template (Figure a). To test this
+method, a second dual-targeting construct was designed to delete the
+entire 31 kb  cluster. Protospacer sequences were
+selected within the genes at the start and end of the cluster ( and , respectively), and a 2 kb
+editing template was constructed from the 1 kb sequences immediately
+flanking the cluster. In total, four exconjugants were picked and
+evaluated by PCR from genomic DNA with primers that anneal outside
+of the 1 kb homology arms. In all four cases, the 2.1 kb band indicative
+of cluster deletion was observed, while no band was observed when
+wild type genomic DNA was used as template (Figure b). Similarly, PCR amplification with a primer annealing within
+the deleted region only produced a 1.1 kb band from the wild type
+genomic DNA, but not from the strains in which the  cluster had been deleted. Phenotypic screening confirmed the loss
+of red pigmentation in all four edited strains (Figure c). Supporting Information Figure S3 Outside of , it would be desirable
+to utilize the pCRISPomyces plasmids in other  strains to realize targeted editing of genes of interest, such as
+natural product gene clusters, in the native producers. To evaluate
+the possibility for broader applicability, two additional  species were selected:  DSM 40736 and  J1074. In , two genes within the phosphinothricin
+tripeptide (PTT) gene cluster, and , were chosen as individual
+targets. For both genes, the corresponding single-targeting pCRISPomyces-2
+plasmid was constructed with an appropriate spacer and 2 kb editing
+template to introduce a short frame-shift deletion early in the coding
+sequence. Following an analogous conjugation and genotyping protocol
+as described for , seven out of seven
+exconjugants isolated with the -targeting plasmid
+were confirmed to possess the intended deletion. For , a total of six exconjugants were screened, and four were found
+to exhibit the desired mutant genotype (Table ; ). The
+other two exconjugants possessed the unedited wild type sequence. In , the PKS-NRPS hybrid gene  from a cryptic polycylic tetramic acid macrolactam
+gene cluster was chosen to evaluate single
+locus targeting, again to introduce a short frame-shift deletion using
+a 2 kb editing template. Six out of six exconjugants evaluated by
+PCR amplification from genomic DNA and sequencing were confirmed to
+harbor the intended 67 bp deletion (Table ), confirming Cas9 functionality in this strain. As a second trial,
+a dual-targeting plasmid was constructed to delete a full 13 kb lanthipeptide
+cluster encoded by genes  to . After conjugation with the dual-targeting plasmid containing a
+2 kb editing template, three  exconjugants
+were isolated and evaluated by PCR. All three were found to yield
+the correct PCR product indicative of full-cluster deletion (amplified
+with primers 1 and 3 in Figure a), and the
+identity of the PCR product was confirmed by sequencing. However,
+one of the three also yielded the PCR product with a primer annealing
+within the deleted region (primers 2 and 3 in Figure a), indicating a mix of edited and wild type cells in this
+population. Nevertheless, the observed efficient genome editing of  and  without
+strain-specific modification of the pCRISPomyces backbone suggests
+broader applicability of this system in various  species. In summary, we have demonstrated that the type II
+CRISPR/Cas system
+of  can be reconstituted successfully
+in multiple  species to realize targeted,
+multiplex genome editing. To implement this system, we have developed
+pCRISPomyces plasmids amenable to insertion of custom spacers and
+editing templates via modern DNA assembly techniques. These tools
+reduce the time and labor needed to perform precise chromosomal manipulations
+compared to previous techniques. As a result, application of the pCRISPomyces
+system should facilitate a wide variety of future studies in  species, such as analysis of biochemical pathways,
+activation of silent natural product gene clusters, pathway/metabolic
+engineering, and host design. pCRISPomyces plasmids for targeted genome editing
+in  species. Notable features include
+a codon-optimized  from , a I-flanked lacZ cassette for
+Golden Gate assembly of spacer sequences,
+an I site for addition of editing templates, and
+a temperature-sensitive pSG5 origin. (a) Strategy for deletion of the 31kb  cluster.
+Two sgRNA transcripts guide Cas9 to introduce DSBs at both ends of
+the cluster, while a codelivered editing template bridges the gap
+via homologous recombination. (b) PCR evaluation of  cluster deletion from four exconjugants (DF1–DF4) with wild
+type control (wt). (c) Phenotypic evaluation of strains DF1–DF4
+with wild type control. Summary of Genome Editing Results
+in  Species Number
+of correctly edited exconjugants/total
+number of exconjugants screened. strain NEB5-alpha (New England Biolabs,
+Ipswich, MA) was used for
+plasmid cloning and maintenance. Yeast  plasmid
+assembly was performed in  HZ848. 66 was obtained
+from the Agricultural Resource Service Culture Collection (Peoria,
+IL),  J1074 was a gift from Prof. Wenjun
+Zhang (University of California, Berkeley), and  DSM40736 and the  conjugation strain WM6026 were gifts from Prof. William Metcalf (University
+of Illinois at Urbana–Champaign).  strains
+were grown in LB medium supplemented with apramycin (50 μg/mL)
+and, for strain WM6026, diaminopimelic acid (19 μg/mL).  strains were grown on modified MYG medium (10
+g/L malt extract broth, 4 g/L yeast extract, 4 g/L glucose) with 50
+μg/mL apramycin as needed for plasmid selection. Medium R2 (without
+sucrose) was used for conjugation. All
+media components and supplements were purchased from Sigma-Aldrich
+(St. Louis, MO) with the exception of yeast extract (BD Biosciences,
+San Jose, CA) and LB broth (Fisher Scientific, Pittsburgh, PA). PCR
+primers were synthesized by Integrated DNA Technologies (Coralville,
+IA), and PCR reactions were performed in FailSafe PCR PreMix G (Epicentre
+Biotechnologies, Madison, WI) with Q5 DNA polymerase (New England
+Biolabs, Ipswich, MA). All PCR products were purified using the DNA
+Clean & Concentrator or Zymoclean Gel DNA Recovery Kit (Zymo Research,
+Irvine, CA). Plasmids were recovered using the QIAprep Spin Miniprep
+Kit (Qiagen, Valencia, CA). Restriction enzymes and T4 ligase were
+purchased from New England Biolabs (Ipswich, MA). Plasmid pCRISPomyces-1 was constructed
+via yeast homologous recombination from
+the following fragments: promoter rpsLp(XC), synthesized as a gBlock (Integrated DNA Technologies, Coralville,
+IA) to remove I recognition sites; codon-optimized , along with the wild-type fd terminator, synthesized
+by GenScript (Piscataway, NJ); promoter rpsLp(CF), PCR amplified from
+a previous construct; tracrRNA, oop terminator,
+promoter gapdhp(EL), a  expression cassette flanked by I recognition
+sites and direct repeat sequences, and a T7 terminator, synthesized
+as a gBlock (IDT); yeast helper fragment containing  and CEN6/ARS4 flanked by I recognition sites,
+PCR amplified from pRS416 (Stratagene, La Jolla, CA); and an / helper fragment containing
+origin colE1, selection marker (3)IV, pSG5  origin, and origin of transfer , PCR amplified in two pieces from plasmid pJVD52.1 to remove a I recognition site in pSG5 . The resulting intermediate plasmid was then digested
+with I to liberate the yeast helper fragment,
+and the backbone was religated to yield pCRISPomyces-1. Plasmid pCRISPomyces-2
+was constructed via isothermal assembly of the RI/I-digested pCRISPomyces-1 backbone with two
+synthetic gBlocks (IDT) comprising a guide RNA expression cassette
+(with a I-flanked  cassette
+in place of the spacer sequence). All targeting constructs were assembled
+by a combination of Golden Gate assembly (for insertion of spacers) and traditional digestion/ligation or
+isothermal assembly (for insertion of
+editing templates). Single spacer inserts were generated by annealing
+two 24 nt oligonucleotides (offset by 4 nt to generate sticky ends),
+while double spacer inserts were synthesized as gBlocks (IDT). The
+1 kb left and right arms of each editing template were amplified from
+purified genomic DNA, spliced by overlap-extension PCR, and ligated into the I site
+of the desired plasmid. Correct plasmid assembly was confirmed by
+diagnostic digestion and sequencing (GeneWiz, South Plainfield, NJ).
+Plasmid maps were generated with Vector NTI (Invitrogen, Carlsbad,
+CA). NEB5-α
+was transformed by heat shock following the manufacturer’s
+suggested protocol. Yeast transformation was performed as described
+elsewhere. WM6026
+was transformed by electroporation. Conjugation of plasmids into  spores was performed using the modified protocol
+described elsewhere. Following conjugation, individual
+exconjugants were randomly picked
+and restreaked on MYG agar plates supplemented with 50 μg/mL
+apramycin and grown at 30 °C for 2–3 days. Single colonies
+were then picked to liquid MYG medium for genomic DNA isolation using
+the Wizard Genomic DNA Purification Kit (Promega, Madison, WI). The
+locus of interest was PCR amplified and sequenced using primers annealing
+∼300 bp upstream and downstream of the deletion site (GeneWiz,
+South Plainfield, NJ). Clearance of the plasmid was accomplished with
+high-temperature cultivation (37–39 °C) for 2–3
+days, followed by replica plating on selective and nonselective plates
+to confirm restoration of apramycin sensitivity. For phenotypic screening
+of undecylprodigiosin-producing strains, saturated liquid cultures
+were streaked on nonselective R2 plates without sucrose and grown
+at 30 °C for 2–3 days..

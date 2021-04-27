@@ -1,0 +1,527 @@
+One
+of the main goals of synthetic biology is to use well-characterized
+functional modules for engineering biological systems with novel functionalities.
+These functional modules are usually protein-coding or regulatory
+DNA parts, which are cloned from various organisms or synthesized,
+and assembled together into genetic circuits. Since the development
+of the first engineered gene networks, a toggle switch and an oscillator, in the beginning
+of the century, the field has accelerated with the fabrication of
+even more sophisticated gene circuits such as clocks, counters, logic
+processors, pattern detectors, and intracellular communication modules. Today, synthetic biology is still an emerging field and is
+rapidly
+expanding. This raises the question of what the unique contributions
+of synthetic biology are that could not be addressed otherwise. What
+distinguishes a synthetic biology approach from simply a biological
+approach is that it seeks to solve problems through the construction
+of new models rather than through analysis and observation alone.
+This approach allows a new perspective, where biology, chemistry,
+and engineering are combined to revisit old biological questions.
+Being able to construct and emulate a biological system helps in better
+understanding of relevant biological phenomena as well as allows the
+development of a more precise, predictable means of biological manipulation
+in agriculture, bioenergy production, and therapeutics. One
+of the scopes of synthetic biology is to contribute solutions
+to biomedical challenges. These challenges include, among others,
+growing antibiotic resistance in bacteria, accelerated emergence of new infectious diseases, and evolving cancer drug resistance. To address these challenges, synthetic biology envisions the development
+of custom-designed, easily regulated, and safe devices that would
+complement human immune defenses and address metabolic abnormalities. This review focuses on recent advances in synthetic biology that
+are holding promise for the future development of human therapeutics.
+First, we will discuss some synthetic biology approaches that were
+recently used in disease mechanism investigation and disease modeling.
+Next, we will briefly cover current examples of the field’s
+contributions in drug discovery and production (Figure ). Finally, we will review recent progress of synthetic biology
+strategies in vaccine development, treatment of infections diseases,
+cancer, and metabolic disorders. Outlined scheme of the typical pipeline
+of drug development consisting
+of drug discovery, production, animal and clinical trials, and therapeutic
+administration. Natural resources are often used for novel therapeutic
+discovery. Once identified, the therapeutic compounds are optimized
+for bioproduction via refactoring of metabolic pathways, usually in
+a heterologous host. Next, animal and consequently clinical trials
+are performed for the assessment of therapeutic efficacy and safety.
+Finally, novel therapeutics are administered in the clinic to treat
+human diseases. Disease
+Mechanism Investigation Synthetic
+biology has been helpful in providing mechanistic insights into certain
+human disorders. In particular, it provided a framework for generating
+disease models and discovering new drug targets. For example, the
+contribution of genetic defects that result in abnormal B cell development
+in agammaglobulinemia, a primary immunodeficiency, was investigated
+by reconstituting functional parts of key natural complexes in an
+orthogonal environment. This approach
+is often implemented to provide an isolated, well-characterized environment.
+Patients were screened for genes that were expressed in the early
+stages of B cell differentiation. Once a defect in the immunoglobulin-β
+(Igβ) encoding gene was identified, the mutant Igβ and
+other constituents of the human B cell antigen receptor (BCR) were
+reconstituted on the surface of cultured  cells. Mutant Igβ abolished the assembly of the BCR on the
+cell surface, and failure to assemble the BCR complex, in turn, caused
+a complete block of B cell development. The described process was
+proposed as a likely mechanism of agammaglobulinemia in some patients. In another example, synthetic presentation
+of an entire human peptidome on the surface of T7 phage allowed to
+discover new self-antigens (autoantigens) that could lead to autoimmune
+diseases. Enrichment of autoantigens
+was carried out using antibodies from patients with neurological syndromes.
+The enriched antigens were subjected to high-throughput sequencing,
+which revealed new antigens that could be used in accurate diagnostic
+tests and designing new therapeutics. Genome
+Editing Tools for Cancer Study Disease modeling is another
+explored avenue that is made possible
+by utilization of synthetic biology. For example, genome editing tools
+such as zinc finger nucleases (ZFN), transcription activator-like
+nucleases (TALEN), and clustered regularly interspaced short palindromic
+repeats (CRISPR) in combination with the Cas9 nuclease (CRISPR/Cas9
+system), are being increasingly used in gene therapy and disease modeling
+(reviewed in refs (−)). These genome
+editing tools usually function by introducing a sequence-specific
+double strand break, which is consequently repaired by either error-prone
+nonhomologous end joining (NHEJ) or homologous recombination (HR)
+pathways. While the former allows for knocking out the gene of interest,
+the latter pathway allows gene segment replacement or site-specific
+gene knock-in. Because of their exceptional precision and relative
+simplicity in designing, TALENs and CRISPR/Cas9 tools have been important
+in modeling and drug target discovery, especially for a complex group
+of diseases such as cancer. Certain diseases have been linked
+to chromosomal rearrangements and provide a great challenge for disease
+modeling. While knocking-in or coexpression of rearranged genes is
+possible, these models are often unconvincing in pinpointing the exact
+contribution of the rearrangements. As an example of an alternative
+approach, TALENs were used to introduce androgen receptor () gene rearrangement to model a castration-resistant prostate
+cancer (CRPC) phenotype in a human cell line. Two pairs of TALENs were cotransfected to introduce a deletion and
+an inversion of exons 5–7 of the  gene.
+The resulting splice variant of the  gene was discovered
+to drive its independence from androgen in the genome engineered cell
+line, which is proposed to be the mechanism of CRPC. ZFN and TALEN
+technologies have also been implemented in modeling cancer-relevant
+chromosomal translocations, such as those found in Ewing sarcoma and
+anaplastic large cell lymphoma. Nuclease-assisted genome engineering can also be a powerful tool
+for generation of genome-scale knockout screening, as was shown using
+the CRISPR/Cas9 system. Using lentiviral vectors,
+libraries of tens of thousands of unique guide RNA sequences, which
+guide CRISPR/Cas9 specificity, were delivered into human cells. Such
+screening allowed identification of genes essential for cell viability
+in cancer and pluripotent stem cells, as well as genes whose loss
+conferred resistance to chemotherapeutic agent vemurafenib. In another work, screening was performed for
+the identification of members of the DNA mismatch repair pathway and
+for genes whose loss conferred resistance to a chemotherapeutic agent
+etoposide. With
+the rise of multiresistant
+pathogens, novel antimicrobial compounds are increasingly needed.
+Since the discovery line of novel drugs has diminished in the recent
+years, novel approaches, such as those proposed by synthetic biology,
+are in demand. For example, a synthetic mammalian gene circuit was
+utilized for the discovery of novel antituberculosis compounds. Ethionamide is an antibiotic often used for
+treatment of tuberculosis; however, ethionamide-based therapies are
+sometimes unsuccessful due to the development of resistance by . The resistance develops when  protein EthR represses the transcription
+of , which converts ethionamide into a toxic
+metabolite. A rationally designed chemical library was screened for
+a compound that would inhibit EthR binding to  promoter. The interaction between the latter was assayed in human
+cells through a reporter gene expression. The screening revealed 2-phenylethyl-butyrate as a potent inhibitor
+of EthR, which dramatically increased the sensitivity of  to ethionamide. This work was a demonstration of a generic screening platform for
+the discovery of novel antituberculosis drugs. Synthetic biology
+also paved a new road for discovering novel anticancer agents. Cytotoxic
+anticancer drugs are believed to discriminate between cancerous and
+normal tissues by preferentially killing actively dividing cells through
+targeting DNA replication, which makes cytotoxic drugs more generic
+compared to “targeted” anticancer drugs. For the discovery
+of novel cytotoxic drugs, a high throughput-compatible mammalian cell
+based assay was devised. CHO-K1 cell
+line was engineered for tetracycline-responsive overexpression of
+human cyclin-dependent kinase inhibitor p27, which
+is a negative regulator of G1-S transition. The engineered cells proliferate
+normally in the presence of tetracycline. However, upon withdrawal
+from the antibiotic, they diverge into a heterogeneous population
+of growth-arrested and proliferation-competent cells due to a spontaneous
+loss of p27 in roughly half of the cells. These proliferating cells were assumed to imitate
+the neoplastic cell characteristics. The assay was validated by scoring
+the viability of arrested and proliferating cells upon exposure to
+clinically licensed cytotoxic drugs. It is expected that the assay
+will be useful for high throughput screening of novel anticancer drugs. Natural products
+have been valuable in therapeutic areas such as infectious diseases
+and oncology. These drugs, however, are
+produced in small amounts in native hosts, and therefore, extraction
+of these drugs from native hosts is usually uneconomical or can have
+a negative impact on the environment. A powerful solution is drug
+production in metabolically engineered microorganisms or plant cells,
+which can be made capable of large-scale production (reviewed in refs (−)). A prominent recent example is pathway optimization
+for overproduction of taxadiene, a precursor to an anticancer drug
+taxol. In this study,  was used as
+an expression host, where the overall pathway was partitioned into
+two modules. Unlike in previous studies,
+where these two modules were engineered separately, here, the modules’
+expression was varied simultaneously by using various promoters and
+gene copy numbers. This approach allowed identification of an optimally
+balanced pathway using a small combinatorial space. The titer of taxadiene
+was improved 15,000-fold, yielding approximately 1 g/L of taxadiene
+in fed-batch bioreactor fermentations. Another impactful example was
+conducted in  for the production
+of artemisinic acid, a precursor to antimalarial drug. For the first
+time, artemisinic acid was produced by the expression of a complete
+biosynthetic pathway, which included a newly discovered plant dehydrogenase
+and a second cytochrome. This development
+resulted in 10-fold increase in artemisinic acid titers, yielding
+up to 25 g/L. Besides microorganisms, plants have also been
+used for the production of therapeutically valuable plant metabolites.
+In this approach, natural products are usually produced in plant cell
+cultures that are induced from either established callus cultures
+or multipotent cambial meristematic cells. However, in the past two decades, production of natural products
+in plant hairy roots has received a lot of attention. Hairy roots are a result of genetic transformation of plant
+cells due to an infection with . Hairy roots are another attractive system for drug production since
+in contrast to cell cultures they are phenotypically and genetically
+stable and can be exploited for a long time. For example, three genes
+involved in the biosynthesis pathway for tanshinone, a cardiovascular
+disease agent, were introduced in  hairy root cultures, resulting in significantly improved production
+of tanshinone (4.74-fold) and increased antioxidant activity. In vaccination, the introduced vaccine stimulates the adaptive
+immunity response to a specific pathogen. Conventional vaccinations
+are usually delivered by injection; however, the procedure is not
+without risks or discomfort. One example
+of addressing this issue is engineering of oral plant tissue-based
+vaccinations, which considerably reduce the risk of contamination
+with mammalian pathogens and do not require costly purification and
+downstream processing. Moreover, rigid plant cell walls protect antigen
+degradation in the acidic environment of the stomach. For example, unicellular green alga  chloroplasts were used for vaccine formulation
+against  infection. Chloroplasts were engineered for stable expression
+of the D2 fibronectin-binding domain of  fused with a mucosal adjuvant cholera toxin B subunit, which improves
+antigen-specific immune responses. Mice treated with transgenic algae
+had significantly reduced pathogen load in the spleen and the intestine,
+and 80% of the pretreated mice survived lethal doses of , which makes  an attractive
+platform for oral vaccine development. can also be manipulated to
+express
+foreign antigens that would stimulate an immunologic response. Recombinant yeast vaccines engineered to express
+viral or tumor antigens have been demonstrated to activate dendritic
+cells (DCs) and confer protective cell-mediated immunity against tumor
+cells. One example is  vector engineered
+to express a transgene encoding human carcinoembryonic antigen (CEA),
+which is associated with tumor growth. Human DCs were activated by
+CEA and subsequently activated cytotoxic T-cells specific for CEA+
+human tumor cells. Reengineering
+of viruses for vaccine design is another interesting
+strategy in vaccine development. Thus, poliovirus was synthetically
+attenuated by recoding the poliovirus capsid protein with underrepresented
+codons and synthesizing the recoded DNA . Recoding of poliovirus decreased rates of protein
+translation and resulted in attenuation of the virus in mice. The
+attenuated virus generated effective immune response in mice, indicating
+that virus attenuation via codon deoptimization could provide an alternative
+method of vaccine generation. Treatment of Infectious Diseases Treatment of Bacterial Infections by Designer
+Bacteriophages With the bacterial antibiotic resistance becoming
+an increasing concern, synthetic biology is turning back to an almost
+100-year-old idea of using bacteriophages to fight bacterial pathogens. One source of bacterial resistance to antibiotics
+and host defenses is the development of biofilms, which are surface-associated
+communities in a hydrated matrix of extracellular polymers. An example
+of constructing a bacteriophage with an increased bactericidal ability
+was engineering of T7, an specific phage,
+to express dispersin B (DspB) enzyme for biofilm degradation. Intracellular expression and release of DspB
+to the environment upon cell lysis allowed biofilm dispersal and a
+two orders-of-magnitude improvement in decreasing biofilm cell counts
+compared to a nonenzymatic phage. In a following study, M13
+phage was engineered to enhance the efficacy of antibiotics in a phage–drug
+combination therapy. The phage was modified
+to overexpress LexA3, a repressor of SOS response in . It was reasoned that LexA3, which has also been previously shown
+to inhibit emergence of antibiotic resistance, would enhance bacterial
+killing by bactericidal antibiotics via disabling of the SOS response.
+The study showed that the engineered phage improved the bactericidal
+effect of a quinolone drug by several orders-of-magnitude  and significantly increased survival of infected
+mice . In a different investigation,
+M13 phage was engineered to inhibit
+infection of , a common cause
+of sexually transmitted diseases. The
+phage was engineered for enhanced internalization into bacteria-containing
+parasitophorous vacuoles, also known as inclusions, in the mammalian
+host cells. The phage capsid proteins were fused with two functional
+peptides: integrin binding peptide RGD, known to induce integrin mediated
+endocytosis, and a segment of the polymorphic membrane protein (PmpD),
+an autotransporter protein from  (Figure a). The study showed increased uptake of the phage
+into the lumen of the inclusions and significant amelioration of bacterial
+infection in HeLa and primary endocervical cells. Biosynthetic devices
+for the treatment of infectious diseases.
+(a) Engineering bacteriophages against pathogenic bacteria. M13 phage
+was engineered for enhanced mammalian host cell internalization by
+fusing two functional peptides, RGD and PmpD, to the coat proteins
+of the phage. (b) Engineering commensal
+bacteria against pathogenic bacteria.  strain
+Nissle 1917 expressing autoinducer 2 (AI-2) was engineered to express
+cholera autoinducer 1 (CAI-1), both of which are molecules synergistically
+coordinating quorum sensing in . Through
+a signal transduction cascade, CAI-1 and AI-2 inhibit the expression
+of virulence genes in . (c) Type I-E CRISPR/Cas endonuclease system was engineered
+for cytotoxicity against target bacteria via site-specific introduction
+of a double strand break in the genome. CRISPR RNA was designed for
+homology to a target gene in a region that is unique to the strain,
+allowing strain-specific removal of . Treatment of Bacterial Infections by Commensal
+Bacteria Diminishing virulence of pathogenic bacteria by
+prophylactic consumption of engineered commensal bacteria is another
+promising approach in synthetic biology. One study exploited the quorum
+sensing mechanism of  in regulating
+its infection cycle. High concentrations
+of cholera autoinducer 1 (CAI-1) and autoinducer 2 (AI-2) are known
+to inhibit virulence gene expression in . To interrupt the virulence of , an  strain Nissle 1997, which expresses AI-2 natively,
+was engineered to express CAI-1 (Figure b).
+When cocultured with the engineered  strain,
+cholera toxin and toxin-coregulated pilus expression was inhibited
+in . Furthermore,
+pretreatment of an infant mouse model with engineered commensal bacteria
+significantly disrupted  colonization. Thus, engineering commensal bacteria is a promising
+strategy in the treatment of bacterial infections. Sequence-Specific Endonucleases for Disruption
+of Bacterial and Viral Infections Another novel approach
+of developing antibacterial and antiviral agents is exploitation of
+sequence-specific endonucleases, such as ZFNs, TALENs, or the CRISPR/Cas
+system. While the NHEJ pathway in most eukaryotes can quickly repair
+extensive site-specific double strand DNA breaks, poor efficiency
+or absence of this pathway in many prokaryotes can render the aforesaid
+endonucleases lethal. Thus, cytotoxicity of the CRISPR/Cas system
+was exploited for programmable removal of bacterial strains (Figure c). It was shown
+that the CRISPR/Cas system targeting endogenous genes at species-specific
+sites can be employed for the development of species and even strain
+specific bactericidal agents. This was shown in an experiment with
+a mixed population of  strains K-12 and BL21,
+with the extent of removal of >99.999% of the targeted bacterial
+strain. Genome editing tools can also be used to establish viral
+resistance
+in humans or develop potent virus disrupting agents. For example,
+HIV-1 resistance in human CD4 T cells was established
+using a ZFN targeting human endogenous HIV coreceptor . When targeting directly viral genomes,
+TALENs and CRISPR/Cas9 were shown to be successful in disrupting hepatitis
+B virus and latent HIV-1 provirus, respectively. Chemotherapy
+and radiotherapy are used extensively in the clinic but often target
+noncancerous tissues and have limited toxicity to cancer cells. More
+sophisticated technologies capable of discriminating between cancerous
+and healthy tissues are therefore needed. One of the developing fields
+that can potentially provide a solution is oncolytic virotherapy,
+which focuses on engineering viruses capable of infecting and killing
+cancers. Some viruses are naturally oncotropic, and many also have
+tissue tropism, which has been a starting point
+for engineering tumor-specific oncolytic viruses. Greater viral
+specificity for tumor cells has been the preferred direction of recent
+studies. The specificity for tumors can be engineered at the stage
+of virus entry via receptor targeting, which requires the modification
+of receptor binding proteins. This usually is achieved via fusion
+of single chain antibodies to the attachment proteins displayed on
+the viral surface (reviewed in ref ()). However, tumor cells can develop resistance
+by inhibition or mutation of the target antigen. To counteract this process, an oncolytic virus was engineered
+for bispecific targeting of tumor antigens. This was made possible
+by using designed ankyrin repeat proteins (DARPins), engineered antibody
+mimetic proteins that are smaller in size and less prone to aggregation
+compared with larger single-chain antibodies (Figure a). DARPins specific for two different tumor markers were
+fused with the measles virus attachment protein. As a result, a virus
+with conserved oncolytic potency and attenuated potency in nontarget
+tissue was generated. The multiplex targeting
+approach might be helpful in counteracting resistance development
+in carcinoma cells. When it comes to therapeutic efficacy,
+cytotoxicity of oncolytic
+viruses can be enhanced through a so-called “arming”
+strategy, where the virus is engineered to express a protein that
+sensitizes both infected tumor cells and surrounding uninfected tumor
+cells. Recent clinical studies demonstrated the increased efficacy
+of oncolytic viruses when replicative viral oncolysis was combined
+with stimulation of inflammation and adaptive immunity against tumor
+antigens. The first report in humans was an oncolytic adenovirus armed
+with granulocyte macrophage colony-stimulating factor (GMCSF). GMCSF-armed virus was reported to mediate antitumor
+immunologic response by recruiting natural killer cells and inducting
+of tumor-specific cytotoxic T cells. Biosynthetic devices
+for cancer therapy. (a) Oncolytic virotherapy.
+To counteract the development of resistance in cancer cells, the measles
+virus was engineered for multiplex targeting of cancer antigens. To
+this end, DARPins EC4 and G3 targeting two different tumor markers,
+EpCAM and HER2, were fused to the virus attachment protein. (b) Designer anticancer bacteria.  was engineered to specifically infect CD20 tumor cells via surface-expression of anti-CD20 antibody.
+The cytotoxicity was achieved through expression of herpes simplex
+virus thymidine kinase (TK) prodrug-converting enzyme. (c) Structure of chimeric antigen receptors
+(CARs) for adoptive T cell therapy. First, second, and third generations
+of CARs differ by the number of intracellular signaling domains. scFv,
+single fragment length antibody. TM, transmembrane domain. CD28, 4-1BB,
+and CD3ζ, intracellular signaling domains. Engineering
+bacteria to invade and kill cancer cells is another promising strategy
+for cancer treatment. ,  and other genera have been shown to have tumor-tropism and the ability
+to kill cancer cells, which was exploited for engineering of even
+more potent anticancer bacterial strains. In a recent study, tumor specificity, which is an important attribute
+of anticancer bacterial therapy, was addressed. To inhibit nonspecific
+invasiveness of , single-domain antibody
+against human tumor-associated antigen CD20 was expressed on the bacterial
+cell surface (Figure b). The engineered  was found to
+preferentially invade and destroy CD20 lymphoma xenografts
+in mice while significantly minimizing nonspecific cell invasion. Adoptive
+T cell therapy has been shown to be effective in initiating lasting
+antitumor responses. In some cases, though,
+the effectiveness of the technique is limited since the function of
+redirected T cells relies on the presentation of tumor antigens by
+the major histocompatibility complexes (MHC), which are often inhibited
+in cancerous cells. Engineering of T cells to express chimeric antigen
+receptors (CARs) allows MHC-independent T cell activation and proliferation
+(reviewed in refs (−)). CARs are
+modular fusion proteins consisting of an extracellular antigen recognition
+element, usually single chain variable fragment (scFv) antibody, a
+transmembrane domain, and an intracellular signaling domain, usually
+from T cell coreceptor CD3ζ or Fc receptor γ. To date,
+the most encouraging clinical observations were achieved with CARs
+specific for CD19 antigen, which is expressed in B cell malignancies
+such as B cell leukemia/lymphoma, but not by normal essential tissues. To increase signaling strength and persistence, CARs of second
+and third generations have been developed with two or three different
+costimulatory signaling domains fused in a single polypeptide chain (Figure c). Engineered T cells with second
+generation CARs, containing costimulatory domains from both CD3ζ
+and CD28, have been shown to demonstrate improved expansion and persistence
+compared to those of the first generation CARs. Moreover, the third generation CARs, also containing a
+third costimulatory domain from the costimulatory molecule 4-1BB,
+was shown to increase cytotoxicity of engineered T cells compared
+to the second generation CARs. These advancements improved effectiveness of the CAR technology,
+but the challenge of specificity remains to be addressed. In most
+of the studies up to date, engineered T cells recognize a single antigen, which can also be presented by noncancerous tissues, raising the
+concern of off-tumor cytotoxicity. In a recent approach, a CAR-based
+AND logic gate was used to create T cells capable of recognizing two
+antigens, but neither of the antigens alone. Thus, it was shown that cotransduced T cells administered in mice
+destroy prostate tumors expressing both tumor antigens PSMA and PSCA,
+but not tumors expressing either antigen alone. Engineering dual-specific CAR-T cells to recognize both
+mesothelin and a-folate antigens resulted in potent activity against
+a mouse xenograft model of ovarian cancer. These studies showed the efficacy of engineering dual-specific CAR-T
+cells for minimizing parallel reactivity against normal tissues bearing
+a single antigen. Treatment of Metabolic Disorders Disorders of human
+metabolism encompass a diverse group of complex diseases that usually
+result from genetic enzyme deficiency or epigenetic alterations. For many metabolic disorders, treatment is currently
+unavailable, while others are controlled by dietary restriction or
+supplementation. With the aim of tackling these disorders, the first
+synthetic biology proof-of-principle studies have been conducted by
+engineering bacterial circuits capable of restoring normal metabolism.
+Thus, for treatment of diabetes, bacteria were engineered to stimulate
+intestinal epithelial cells to secrete insulin in response to glucose. strain Nissle 1917
+was engineered to express and secrete glucagon-like peptide 1 (GLP-1)
+as well as pancreatic and duodenal homeobox gene 1 (PDX-1), proteins
+that are known to stimulate intestinal epithelial cells to synthesize
+insulin. Cultured epithelial cells grown in cell-free media pretreated
+with engineered bacteria were stimulated to secrete insulin up to
+1 ng/mL. However, implementation of the
+strategy in commensal bacteria cocultured with epithelial cells  or  implementation is yet
+to be shown. Mammalian Pharmaceutically
+Controlled Open-Loop
+Circuits To be more therapeutically relevant, the synthetic
+biology field is currently developing further by expanding its mammalian
+gene circuit repertoire. In particular, for
+the treatment of metabolic disorders, it is imperative to develop
+interactive gene networks that would stimulate the expression of therapeutics
+in a controlled, regulated manner. This can be achieved either by
+open-loop circuits, where an input signal triggers the output in a
+linear fashion, or a closed-loop circuit, where the output feeds back
+on the input signal, the latter giving a more stable output control. In a recent study, an open-loop circuit for
+the treatment of the metabolic syndrome was developed. Metabolic syndrome is a co-occurrence of functionally
+linked health problems, such as hypertension, hyperglycemia, obesity,
+and dyslipidemia, which are usually treated independently. In this
+study, a synthetic circuit was devised where a pharmaceutical targeting
+one of the health conditions, antihypertensive drug guanabenz, is
+also an input for the signal transduction to express GLP-1 fused to
+leptin. Both of the latter are therapeutic peptide hormones, GLP-1
+stimulating the secretion of insulin and leptin regulating energy
+intake and expenditure (Figure a). Administration
+of this circuit in mice with the metabolic syndrome phenotype resulted
+in simultaneous attenuation of hypertension, hyperglycemia, obesity,
+and dyslipidemia. Thus, this study demonstrated the feasibility of
+treating a complex metabolic health condition by obtaining a triple
+output upon the administration of a single input, a pharmacological
+drug. Synthetic circuits for treatment of metabolic diseases. (a) Ligand-controlled
+open-loop circuits. For the simultaneous treatment of interdependent
+pathologies comprising the metabolic syndrome, antihypertensive drug
+guanabenz was used to activate a synthetic signal cascade to stimulate
+the secretion of metabolically active peptides GLP-1 and leptin, fused
+to a single polypeptide chain. (b) Closed-loop
+circuits. For the treatment of diet-induced obesity, appetite-suppressive
+peptide hormone pramlintide was placed under the control of a chimeric
+transcription regulator TtgR-PPARα. Depending on the presence
+or absence of fatty acids, human PPARα recruits either endogenous
+transcription co-activators or endogenous transcription co-repressors,
+respectively. Thus, a synthetic circuit that constantly senses and
+regulates the blood fatty acid levels was created. (c) Optogenetic open-loop circuits. Electromagnetic waves
+with radio frequencies were used to activate the production of bioengineered
+insulin. To this end, antibody-coated iron oxide nanoparticles, which
+heat up upon exposure to radio waves, were engineered to bind to temperature-sensitive
+channel protein TRPV1. Upon increase in temperature, TRPV1 activates
+a signal transduction cascade that in turn activates pro-insulin.
+The expression of the latter resulted in improved glucose homeostasis. Small-molecule
+drug-based intervention to treat physiological abnormalities in metabolic
+disorder patients may provide a controlled way of therapeutic delivery,
+yet prolonged daily administration of a drug can lead to unwanted
+side effects. To this end, the development of closed-loop circuits
+would be advantageous since it would remove the reliance on repeated
+administration of a therapeutic. Implementation of this approach was
+described using a prosthetic gene network that could sense and restore
+normal physiological uric acid levels through controlled expression
+of urate oxidase. Urate oxidase was put
+under direct control of bacterial uric acid sensor HucR, which binds
+its target DNA motif in the absence of uric acid. The synthetic circuit
+stabilized the blood urate concentration in urate oxidase-deficient
+mice with acute hyperuricemia. In another example, a gene circuit
+for the treatment of diet-induced obesity in mice was designed. To this end, a binary synthetic transcription
+factor was constructed by fusing peroxisome proliferator-activated
+receptor-α (PPARα) to bacterial DNA-binding repressor
+TtgR (Figure b). PPARα is a lipid receptor
+and transcription factor that recruits endogenous co-activators in
+the presence of fatty acids, but associates with endogenous co-repressors
+in the absence of fatty acids. TtgR-regulated promoter was used to
+express an appetite-suppressing peptide hormone pramlintide. Engineered
+cells were encapsulated and implanted in mice with diet-induced obesity,
+which consequently showed significant reduction in food consumption
+and blood lipid levels. Mammalian Open-Loop Optogenetic
+Devices Switching from drug-dependent gene regulation to
+molecule-free
+electromagnetic gene regulation  for therapeutic
+applications is becoming another appealing approach. Thus, the field
+of optogenetics is becoming increasingly popular due to anatomical
+specificity and precise temporal control of gene expression. Recently,
+the first optogenetic device for the controlled production of a therapeutic
+protein in an animal disease model was reported. Here, shGLP-1 hormone was put under transcriptional control
+of melanopsin, a blue light sensor protein. Melanopsin belongs to
+a family of ion channel proteins, such as channelrhodopsin, that transform
+the light-based energy to ion-based membrane potential and trigger
+an intracellular signaling cascade. The calcium-dependent signaling
+cascade eventually activates a transcription factor that controls
+the expression of the hormone. Encapsulated cultured human cells were
+implanted in a mouse model of human type II diabetes. Upon illumination
+with blue light, type II diabetic mice showed improved glucose homeostasis. However, a major limitation of implementing melanopsin and similar
+ion channels is that animal tissue is an impenetrable obstacle for
+light waves, and implanted devices are required for the delivery of
+the signal. A different solution was proposed, where instead of visible
+light, radio frequencies, which can penetrate deep tissues with minimal
+energy loss, were used. Unlike tissue,
+metal nanoparticles strongly absorb radio wave energy and heat up
+as a result. The antibody-coated nanoparticles were designed to bind
+TRPV1, a modified temperature sensitive channel in the membrane of
+the target cells (Figure c). Upon exposure
+to low-frequency electromagnetic energy, the local heating activated
+TRPV1, which in turn activated the downstream calcium-dependent signaling
+cascade and expression of modified human insulin gene. Mice with tumor
+xenografts expressing the bioengineered insulin gene that were exposed
+to radio waves were shown to have insulin expression activated and
+blood glucose lowered. Despite being a relatively new discipline, synthetic biology holds
+a great promise for the development of next generation therapeutics.
+Although traditional genome engineering strategies can potentially
+correct some of the genetic disorders, many human disorders are not
+strictly genetic. Thus, complex ailments such as infectious diseases,
+cancer, metabolic disorders, and many other known diseases are far
+more complex to be tackled by a simple genetic correction. For example,
+infectious diseases, as well as cancer, being agents capable of evolving
+and adapting, are the most difficult in tackling due to the development
+of resistance to human interventions. Therapeutic agents with exceptional
+specificity and efficacy, in combination with agents that inhibit
+adaptability of infections and malignancies, would be required for
+tackling these disorders. Many metabolic, immunological, neurological,
+and other disorders often develop in response to a combination of
+complex genetic background and variable environmental conditions.
+These pathologies would require state-of the art devices capable of
+sensing and self-regulating in response to fluctuating internal and
+external factors. Thus, sophisticated devices, such as those proposed
+by synthetic biology, are necessary for development of more potent
+therapeutic solutions than those currently available in the clinic. In this review, we have discussed some of the current developments
+of synthetic biology in addressing human disorders. Synthetic bacterial
+and viral devices were developed from well studied, model microorganisms
+with an established genome manipulation and functional toolkit and
+showed potential for the development of even more complex devices.
+The
+first mammalian synthetic circuits for therapeutic applications have
+also been developed in the past decade; however, their development
+lagged behind bacterial and viral devices due to the limited number
+of functional parts, more complex metazoan gene circuitry, and the
+absence of precise and robust genome engineering strategies. However,
+with the development of cheaper gene synthesis methods, new state of the art genome engineering tools, and ongoing development of functional parts, this field is continually and increasingly growing. Despite the current progress, synthetic biology has still a long
+road for clinical application. Yet, with the current tools and the
+rate of development, it is easy to envision synthetic biology contributing
+greatly to faster drug discovery and drug development as well as production
+of new and more affordable medicines. Among other applications, clinical
+application of commensal bacteria and bacteriophages against pathogenic
+bacteria, immune cells that kill metastatic solid tumor cells, and
+therapeutic sensor-effector devices for personalized medicine can
+one day become a reality..

@@ -1,0 +1,472 @@
+Boolean logic
+devices that digitize
+and process multiple input signals are central to digital electronics.
+These devices function in a binary domain, are activated with higher
+specificity than single-input devices, and thus better tolerate environmental
+noise. Hence, devising biomolecular-based Boolean logic
+gates can prove promising in performing robust detection or therapeutic
+functions in the inherently noisy cellular environment. This class
+of devices also allows for interrogation of biology both on a molecular-
+and systems-level. While assembling biomolecular parts in a biological
+circuit enables reexamination of our knowledge of an individual component’s
+function, deploying these devices in living cells facilitates real-time
+manipulation and assessment of cellular events. Transcription-based
+Boolean logic gates have been developed and
+studied extensively. These devices are
+versatile and can be wired to each other to generate complex functions. However, they often take hours to days to become active as the transcription
+machinery dictates the speed of transcriptional-based logic operators. Furthermore, one class of Boolean devices (, NOT, NAND, NOR, ) executes negation
+using an inhibitory module, such as a repressor that requires an added
+layer of regulation, leading to design complexity and increased chance
+of crosstalk with the endogenous molecules. Moreover, the readouts
+of such devices are primarily fluorescence intensity, an output that
+is not physiologically relevant. To achieve faster computation that
+is not rate-limited by transcription, logic devices utilizing the
+post-translational repertoire of biomolecules have been engineered. For example, the primary Boolean logic functions have been developed
+using enzymes. Although these enzyme-based devices process the output
+on an hour-time scale, they are operational
+only . We previously established
+a system to introduce the AND and OR logic operators in living cells
+to generate protein-based logic devices that are functional within
+1 min. However, implementation of more
+complex Boolean logic operations incorporating the NOT inverting functionality
+(such as NAND and NOR) remained an open challenge. Aiming toward the eventual construction of two-input negating logic
+functions in living cells, we first developed a NOT inverter (Figure a), an elementary component of the NOR, NAND, and
+N-IMPLY logic devices. For fast operation, we coded functionality
+in localization of a protein of interest. T-cell lymphoma invasion
+and metastasis-inducing protein 1 (Tiam1) is a well characterized
+exchange factor for Rac small GTPase and
+thus chosen as a proof of principle in this study because it could
+later be used as the input to downstream signaling pathways. To rapidly
+control localization of Tiam1, we designated three intracellular compartments
+as its transient hosts: the plasma membrane (PM), cytoplasm, and mitochondria.
+Tiam1 presence at the PM registered a  output,
+whereas Tiam1 localization at the cytoplasm or mitochondria drove
+the output to a . To alter the localization state
+of the system in a spatiotemporally controlled manner, we relocated
+Tiam1 between these compartments using a chemically inducible dimerization
+(CID) technique, whereby two protein modules dimerize upon addition
+of a chemical dimerizer. The CID system we chose
+consisted of FKBP (FK506 binding protein) and FRB (FKBP12 rapamycin
+binding protein) proteins which readily pair in the presence of rapamycin. For the NOT logic device, we designed
+two distinct fusion proteins:
+one with yellow fluorescent protein (YFP), actuator (Tiam1), dimerization
+(FKBP), and localization (C2 domain from lactadherin or C2(LACT))
+protein constituents (termed YFP-Tiam1-FKBP-C2(LACT)) and the other
+with cyan fluorescent protein (CFP), dimerization (FRB), and localization
+(Tom20) elements (termed Tom20-CFP-FRB). From a design standpoint,
+choosing protein localization tags with appropriate affinities for
+their respective intracellular compartment was key in implementing
+negation. While the C2(LACT) transiently associates with the PM by
+binding to phosphatidylserine, Tom20
+permanently anchors at the outer leaflet of the mitochondrial membrane (Figure b). To monitor
+the PM boundary, we expressed the two fusion proteins together with
+the mCherry-CAAX protein, a PM marker, in COS-7 fibroblast-like cells ( Figure 1a). The localization of YFP-Tiam1-FKBP-C2(LACT) was biased
+toward the PM, leading to an initial  output
+state. This protein construct remained PM-bound upon addition of the
+null input of dimethyl sulfoxide (DMSO). However, adding 100 nM rapamycin
+triggered its translocation away from the PM toward the mitochondria
+where Tom20-CFP-FRB was expressed (Figure c). As a result the  fluorescence output remained
+unperturbed for the null input, yet for the rapamycin input, translocation
+occurred indicating successful implementation of the NOT device (Figure d). The average normalized Tiam1 fluorescence intensity
+at the PM was at 100% immediately before rapamycin addition and dropped
+to 72% 5 min post-rapamycin addition ( Figure 1b). This change in fluorescence intensity
+was statistically significant ( = 1.7 × 10) at the first minute post-input addition, and thus,
+the NOT device was considered active at this time point ( Figure 1c). Using
+the NOT inverting device as a basis, we next set out to develop
+cascade-free, binary-input negating logic devices, starting with the
+NOR function. To retain the fast activation time, we continued to
+use the CID platform. As the NOR truth table suggests (Figure a), this gate requires a second input that functions
+similar to rapamycin but does not interfere with the FKBP-FRB dimerization
+process. To this end, we used a second CID system that is functionally
+orthogonal to its rapamycin-based counterpart: GID (gibberellin insensitive
+dwarf 1) and GAIs (gibberellin insensitive shortened) dimerization
+as mediated by a synthetic gibberellin analog, GA-AM. To grant both CID systems equivalent functionality
+in attenuation of the Tiam1 fluorescence signal at the PM, we fused
+a single protein module of each CID system to the PM-localized Tiam1
+protein ( Figure
+2a). This amounted to the design of the GAIs-YFP-Tiam1-FKBP-C2(LACT)
+construct which we coexpressed with the corresponding CID binding
+protein pairs placed in the Tom20-mCherry-GID and Tom20-CFP-FRB mitochondrial
+proteins in COS-7 cells (Figure b). We first
+confirmed the expected localization of each construct ( Figure 2b). Addition of
+100 nM rapamycin, 10 μM GA-AM, or a combination
+of both inputs successfully initiated the movement of the Tiam1-containing
+construct away from the PM toward the mitochondria, a function not
+rendered with the null DMSO input (Figure c and  Figure 2b).
+Thus, the Tiam1 PM fluorescence reported by the GAIs-YFP-Tiam1-FKBP-C2(LACT)
+remained  only for the null DMSO input as expected
+for the NOR logic ( Figure 2c). The attenuation of the PM localized fluorescence signal
+determined for the rapamycin input case was statistically significant
+( = 1.9 × 10) 1 min post-input
+addition, indicating minute time scale execution of NOR logic ( Figure 2d). We then devised the NAND logic
+by continuing to employ the two
+orthogonal CID systems. For the NAND operation, Tiam1 had to be initially
+restricted to the PM, and only upon the presence of both rapamycin
+and GA-AM inputs could the Tiam1 be mobilized away from
+the PM (Figure d). This constraint suggested
+a two-step process: rapamycin attaching an actuation module to PM-localize
+Tiam1, and GA-AM using this module to deliver Tiam1 to
+the mitochondria ( Figure 3a). To implement this configuration, we expressed YFP-Tiam1-FKBP-C2(LACT),
+FRB-mCherry-GAIs, and Tom20-CFP-GID protein constructs in COS-7 cells
+(Figure e), each of which localized to the
+expected intracellular compartments ( Figure 3b). FRB-mCherry-GAIs moved toward mitochondria
+in response to the input conditions containing GA-AM ( Figures 3b and c), thus
+keeping the PM-bound Tiam1 unperturbed. Rapamycin, on the other hand,
+translocated the FRB-mCherry-GAIs to the PM, leaving the Tiam1 localization
+intact. Yet, GA-AM and rapamycin together, facilitated
+the translocation of YFP-Tiam1-FKBP-C2(LACT) away from the PM to the
+mitochondria. Consequently, the Tiam1 fluorescence signal at the PM
+was turned off exclusively in the presence of both inputs (Figure f), indicating successful implementation of the
+NAND logic expression ( Figure 3d). Furthermore, similar to the NOT and NOR gates the device
+activation onset was determined to be within 1 min post-input addition
+( Figure 3e). We next aimed to extend our technique to accommodate a negating
+Boolean logic operator which required the  rather
+than the  output to be initially present: the
+N-IMPLY function. Contrary to the NAND and NOR gates, the Tiam1 molecules
+had to be initially absent from the PM. Therefore, we placed Tiam1
+in the cytoplasmic compartment. As the truth table suggests (Figure g), rapamycin had to take Tiam1 to the PM, whereas
+GA-AM had to direct it toward the mitochondria. For the
+double-input case, GA-AM had to offset the effect of rapamycin.
+This constraint suggested a competitive functionality of the two CID
+systems where the direction of Tiam1 motion was favored toward the
+GA-AM-mediated relocalization pathway ( Figure 4a). Consequently, we used the
+GAIs-YFP-FKBP-C2(LACT), CFP-FRB-Tiam1, and Tom20-mCh-GID for expression
+in COS-7 cells (Figure h and  Figure 4b). To bias the system toward
+the gibberellin-mediated translocation pathway, we used a higher concentration
+of GA-AM (100 μM) as compared to the NAND and NOR
+devices, while keeping the rapamycin concentration the same (100 nM).
+The CFP-FRB-Tiam1 translocation from the cytoplasm toward the PM occurred
+optimally only when rapamycin was present (Figure i and  Figure
+4b and c). The cytoplasmic CFP-FRB-Tiam1 signal was also depressed
+for the dual input case as GA-AM mediated the entrapment
+of Tiam1 at the mitochondria. Thus, the  PM Tiam1
+fluorescence signal was observed exclusively for the rapamycin-only
+input case, indicating execution of N-IMPLY logic ( Figure 4d). Tiam1 started moving away
+from the cytosolic region within 1 min after rapamycin was added ( Figure 4c); however, the
+change in fluorescence intensity of Tiam1 at the PM was statistically
+significant ( = 8.6 × 10) 10 min post-rapamycin addition ( Figure 4e), indicating a slower device activation
+time relative to the NOT, NOR, and NAND gates devised. However, this
+apparent lag was caused by the different quantification applied here;
+the fluorescence change was quantified at the PM instead of the cytosol. After successful implementation of the NOT, NAND, NOR, and N-IMPLY
+logic expressions we looked into a physiological output likely generated
+through networking of the Tiam1 synthetic logic devices to an endogenous
+Rac signaling circuit (Figure ). Tiam1 localization
+at the PM should activate Rac and its downstream signaling circuits
+that lead to formation of ruffling and lamellipodia. These membrane structures play a crucial role in cell motility
+and phagocytosis. The CAAX PM marker
+is an apt choice for tracking and quantifying the ruffling extent since in case of ruffling more membrane accumulates
+at the cell boundary and consequently the CAAX fluorescent signal
+increases. Thus, using this CAAX membrane marker transfected in cells,
+we visualized the membrane ruffles in the cell populations that contained
+our negating logic devices. For the NOT gate upon addition of the
+null DMSO input we observed no change in the extent of membrane ruffles,
+whereas the ruffling activity subsided with the rapamycin input (Figure a). This implied that the endogenous Rac circuitry
+in the cells executed a YES function, yielding the  ruffling output only when Tiam1 was present at the PM. We furthermore
+quantified the ruffling extent by analyzing the cells that met the
+criteria for expression level of each protein module (). The average values of PM ruffles 4 min after addition
+of DMSO or rapamycin were observed to be 24.4 ± 2.3% and 9.5
+± 1.4% of the total PM length, respectively (Figure b). The magnitude of these values with respect to
+the calculated activation threshold (12.6 ± 1.8%) indicated the
+robustness of the synthetic NOT logic gate and its efficacy in activating
+the endogenous Rac (Figure c). At basal level,
+on average, 30% of cells’ circumference ruffled. The synthetic
+NOT function drove down this ruffling activity to 5% by the end of
+the experiment only for the  input case (Figure c and  Movie 1). We assessed the change in ruffling activity to be statistically
+significant ( = 6.7 × 10) (Figure d) at 1 min post-input addition,
+and thus, we deemed the device active at this time point. Following the same methodology, we evaluated the
+ruffling activity
+of the binary input gates. Cells containing the synthetic NOR gates
+ruffled only for the null input case as expected for NOR expression
+(Figure a and  Movie 2). The average ruffling extent for each
+combination of inputs relative to the activation cutoff value set
+for the NOR device (17.1 ± 2.1% cell circumference) was indicative
+of the robust operation of this logic device (Figure b). For all the input conditions except the null DMSO input,
+the PM ruffling extent diminished from an initial average value of
+28% PM length to 5% by the end time point (Figure c). The output ruffling activity shows a sharp response with
+respect to small changes in Tiam1 concentration. For the (0,G) and
+(R,G) inputs, Tiam1 translocation away from the PM was not as efficient
+as the (0,R) case (Figure c), however it was
+sufficient to drive the ruffling output to saturation at a comparably
+low value, within a similar time scale (Figure c). The NOR device responded to the binary input within 1 min (Figure d). The synthetic NAND device also induced formation
+of ruffles following a NAND pattern (Figure e and  Movie 3).
+The average ruffling activity per input condition with respect to
+the 14.7 ± 1.9% device activation cutoff indicated the successful
+operation of the NAND logic device cascaded to Rac as a YES operator
+(Figure f). The PM ruffling activity fell
+below the activation threshold, to a final value of 3%, only in the
+presence of both inputs (Figure g). The NAND
+device activation time also remained within 1 min post-input addition
+(Figure h). Finally the synthetic N-IMPLY
+logic networked to the Rac pathway executed the N-IMPLY pattern of
+ruffle formation (Figure i and  Movie 4). The average
+length of circumference ruffling was only above the activation threshold
+(8.5 ± 1.4%) for the rapamycin input case (18.3 ± 1.4%),
+indicating execution of N-IMPLY logic (Figure j). We assessed the onset of ruffling suppression to be within a
+minute (Figures k and l). In the cellular context presented, this N-IMPLY functionality
+allows for controlling signaling in a reversible manner given the
+two dimerizers are added sequentially instead of simultaneously. In our study, the Rac signaling
+pathway as a whole served as a
+YES gate and enabled us to engage a synthetic device with an endogenous
+signaling circuit in order to execute a biologically relevant output.
+This prompted us to consider examining signal transduction pathways
+as biological circuits’ analogues and screen for logic patterns
+in endogenous pathways. Specifically, we counted the number of OR,
+AND, NOR, NAND, IMPLY, and N-IMPLY logic topologies that do not emerge
+as a result of networking ( Methods). Such minimal logic configurations were expected to assume
+the topology of a three-nodal motif where the two nodes representing
+the inputs either both promote the output node (OR/AND) ( Figure 5a and b), both
+inhibit the output (NOR/NAND) ( Figure 5c and d), or one promotes and the other inhibits the output
+(IMPLY/N-IMPLY) ( Figure 5e and f). We surveyed the prevalence of these logic patterns
+in 108 well-annotated signaling pathways ( Data File 1). We found 775 OR/AND, 26 NOR/NAND,
+and 198 IMPLY/N-IMPLY logic patterns. Given the total inhibition and
+forward reactions available to cells, the calculated expected value
+for each of these logic topologies were 765, 16, and 219, respectively
+( Data Files 2 and
+3). NOR and NAND logic gate patterns are the most efficacious
+in the
+electronics context as either of these gates alone can be used to
+implement any other logic operations, a property known as . This overutilization of a single logic element
+in electronics does not seem to be a feature used in cell signaling.
+We further screened for the number of NOR/NAND patterns cascaded to
+each other ( Figure
+6). Despite the 26 NOR/NAND hits likely being an overestimation of
+the number of actual NOR/NAND gates, we did not find any instance
+of  gates cascading (0 out of 405 logic
+gate cascades) ( Data
+File 2). This further suggests that native cell signaling pathways
+do not resort to universal logic functions to navigate their finite
+resources. Endogenous inhibitory molecules appear in a hub, and disseminate
+their signals downstream through suppression of several activator
+molecules rather than directly networking. Perhaps repeated use of
+inhibitory signal is more costly than a single use of signal activation.
+Arguably, not all the conventions in Boolean algebra, in their strict
+sense, apply in nature. Further analysis and experiments are
+needed to verify that the
+three-nodal patterns identified indeed constitute the corresponding
+logic function. However, for cases like the regulation of microtubule
+associated protein 1B (MAP1B) by two protein phosphatases (PP1 and
+PP2A), the current literature confirms the existence of the NOR logic
+function. Because of the limited number
+of CID systems at hand our synthetic device can only generate a single
+output for probing signaling pathways like Rac. Expanding our system
+to a binary output device would allow manipulating these signaling
+pathways with two inputs to further investigate the true logic identity
+of such endogenous networks. In summary, we created logic devices
+with physiological outputs
+that functioned within a minute in live cells. These devices could
+also control the concentration of a gene product within various subcellular
+spaces. We accomplished this design by feeding the output of our synthetic
+NOT, NOR, NAND, and N-IMPLY logic devices into the Rac signaling pathway.
+These synthetic devices themselves executed negation by orchestrating
+Tiam1 movement within cells, without utilizing molecular suppressors
+usually used to implement the NOT function. Our design consisted of
+a three-state movement landscape, where each state represented a subcellular
+space, and imposed a distinct degree of freedom in movement on its
+resident molecules (Figure ). By using CID
+systems we induced the movement of the activator molecule in between
+the spaces, in the direction of increasing constraint, and thus created
+negation. The engineered synthetic devices were used to probe signaling
+networks in order to create physiological outputs and understand the
+dynamics of cell signaling. In the future studying synthetic negating
+logic devices with identical inputs/outputs and varied pathway lengths
+will be of interest. Because of their fast speed, the networked pathways
+composed of cascaded post-translational  logic gates will also prove useful in biomolecular computation.
+Moreover, generating an oscillatory output signal, or implementing
+the exclusive negating family of gates (XNOR) are avenues of research
+to be explored in the future. Given the higher specificity inherent
+in two-input logic gates to environmental variables, emulating the
+same negating functions wired to alternative input and output terminals
+is valuable for detection of biological molecules, and potentially
+medical diagnosis. Such diagnostic devices can take pathogenic substances
+or disease biomarkers as inputs, and yield a fast detect-to-protect
+response that is crucial for applications in biowarfare or early disease
+detection. |NOT gate. (a) NOT truth table. (b) Schematic of the protein
+constructs
+used for NOT logic implementation. For clarity, fluorescent protein
+components are omitted from this and subsequent diagrams. YFP-Tiam1-FKBP-C2(LACT)
+is at the PM and Tom20-CFP-FRB is mitochondria-bound. (0) and (R)
+represent the DMSO and rapamycin (100 nM) inputs, respectively. DMSO
+does not change the localization conditions (left panel) Rapamycin
+recruits YFP-Tiam1-FKBP-C2(LACT) to the mitochondria and PM ruffles
+disappear (right panel). (c) Representative cells showing YFP-Tiam1-FKBP-C2(LACT)
+localization at the initial and end time points for the (0) and (R)
+input conditions. The scale bars are 10 μm. The image contrasts
+have been adjusted to better show relocalization. (d) Translocation
+dynamics of YFP-Tiam1-FKBP-C2(LACT) construct in PM upon rapamycin
+or DMSO addition. Fluorescence intensity is measured at the PM. Time
+zero intercept marks the input addition time point. The gray region
+highlights the time interval during which the inputs are present.
+Error bars depict standard error of the mean (SEM) for  = 12. |(a) NOR logic
+truth table. (b) Schematic of the localization of
+the NOR device protein constituents: GAIs-YFP-Tiam1-FKBP-C2(LACT)
+is PM-bound, Tom20-CFP-FRB, and Tom20-mCherry-GID are at mitochondria.
+PM fluorescence only exists for the DMSO condition (top left panel).
+Addition of rapamycin (100 nM), GA3-AM (10 μM), or both, relocalizes
+GAIs-YFP-Tiam1-FKBP-C2(LACT) toward the mitochondria. (c) Translocation
+dynamics of GAIs-YFP-Tiam1-FKBP-C2(LACT) at PM upon addition of various
+combination of inputs. (d) NAND logic truth table. (e) Schematic of
+the localization of the NAND device protein constituents: YFP-Tiam1-FKBP-C2(LACT)
+is at the PM, Tom20-mCherry-GID is anchored at the mitochondria, FRB-mCherry-GAIs
+is cytosolic. DMSO, Rapamycin (100 nM) and GA3-AM (10 μM) alone
+fail to sequester YFP-Tiam1-FKBP-C2(LACT) from the PM, and the PM
+fluorescence remains high. Rapamycin and GA3-AM together, result in
+the recruitment of YFP-Tiam1-FKBP-C2(LACT)/mCherry-FRB-GAIs complex
+to the mitochondria, and the output is driven to a low state. (f)
+Translocation dynamics of YFP-Tiam1-FKBP-C2(LACT) construct at the
+PM upon addition of the inputs. (g) N-IMPLY logic truth table. (h)
+Diagram depicting the location of each protein construct. GAIs-YFP-FKBP-C2(LACT)
+expresses at the PM, CFP-FRB-Tiam1 is cytoplasmic, and Tom20-mCherry-GID
+is mitochondrial bound. Tiam1 translocation to the PM only takes place
+once rapamycin (100 nM) alone is present. Presence of GA3-AM (100
+μM) obstructs permanent translocation of the Tiam1 to the PM.
+(i) Translocation dynamics of CFP-FRB-Tiam1 at the PM. The binary
+inputs are denoted as follows: (0,0) for DMSO, (R,0) for rapamycin,
+(0,G) for GA3-AM, (R,G) for rapamycin and GA3-AM, both. Time zero
+intercept marks the input addition time point. All error bars depict
+SEM for  ≥ 12. The scale bars are 10 μm. For the synthetic logic device, chemical dimerizers
+serve as the binary inputs, and the Tiam1 localization at the plasma
+membrane dictates the output. Cascading the device to the endogenous
+Rac generates the second output of plasma membrane ruffles. |NOT gate. (a) Kymograph illustrating the ruffling
+extent of ∼15%
+of a representative cell’s circumference. The white scale bar
+is 10 μm. The time interval in between each two consecutive
+frames is 3 min. The white PM curvatures correspond to the PM ruffling
+activity visualized by mCherry-CAAX PM marker. (b) The average PM
+ruffling activity reported at the fourth minute post-input addition.
+The dashed vertical line marks 12.6% device activation cutoff. (c)
+PM ruffling activity over the course of 40 min. Average values of
+ruffling activity are denoted as the percentage of the circumference
+ruffling. Zero on the horizontal axis marks the input addition time
+point. The gray shaded region illustrates the time interval when input
+was present. The dashed vertical line crosses the time axis at the
+device activation onset. The dashed horizontal line is at 12.6% marking
+the cutoff defining the device  or  output. The shaded green region defines the device  output. (0) and (R) stand for DMSO and rapamycin, respectively.
+(d) Student  test determining the device activation
+time. Assessment of significance of ruffling activity change 1 min
+pre- and post-input addition (marked with brackets on panel c). NS
+is  = 0.04, and *** denotes  =
+6.7 × 10. This analysis was done for the
+rapamycin input case. All average values are reported using  = 12 cells from three independent experiments. All the
+error bars represent the standard error of the mean (SEM). |NOR device. (a) Kymograph illustrating the evolution
+of the ruffling
+activity of ∼15% circumference of a representative cell over
+the course of 40 min. Three minutes lapse between two consecutive
+frames. (b) Average value of ruffling extent at the fourth minute
+post-input addition. The device activation onset evaluated as 17.1%.,
+marked by the dashed line. (c) Dynamics of ruffling activity over
+the course of 40 min. The dashed horizontal line depicts the cutoff
+(17.1%) evaluated based on the ruffling extent of (R,G) case, 1 min
+post-input addition. (d) Determination of the NOR device activation
+onset considering the (R,G) condition. (NS is  =
+0.011 and  is  = 3.4 ×
+10). NAND device. (e) Same as panel a. (f) Average
+value of ruffling extent at the fourth minute post-input addition.
+The device activation threshold at 14.7%. (g) Dynamics of ruffling
+activity over the course of 40 min. The 14.7% activation cutoff was
+determined based on the extent of ruffling activity of (R,G) case,
+1 min post-input addition. (h) Determination of the NAND device activation
+onset considering the (R,G) condition (NS is  =
+0.3 and  is  = 1.3 × 10). N-IMPLY device. (i) Kymograph illustrating the
+evolution of the ruffling activity of ∼15% circumference of
+a representative cell over the course of 30 min. Time elapsed between
+two consecutive frames is 2 min. (j) Average value of ruffling extent
+at 5 min post-input addition. The dashed vertical line represents
+the device activation threshold evaluated as 8.8%. (k) Dynamics of
+ruffling activity over the course of 30 min. The 8.8% activation threshold
+determined based on the extent of ruffling activity of (R,0) case,
+1 min post-input addition. (l) Determination of N-MPLY device activation
+onset at 1 min post-input addition considering the (R,0) condition.
+(NS is  = 0.09 and * is  = 0.7
+× 10). Binary inputs are denoted as follows:
+(0,0) for DMSO, (R,0) for rapamycin, (0,G) for GA-AM,
+(R,G) for rapamycin and GA-AM. The white scale bar represents
+10 μm. Average values presented are calculated considering more
+than 12 cells from three independent experiments. All the error bars
+represent SEM. Due to the decaying nature of the ruffling activity
+over time,  < 0.01 was considered statistically
+significant. The gray shaded region illustrates the time interval
+within which input was present. The dashed vertical line represents
+the device activation onset. The dashed horizontal line depicts the
+cutoff for the device  versus  output. |Schematic of the discrete landscape representing the three levels
+of freedom in movement of protein modules which govern the output
+of each negating logic device. All the devices are depicted at the
+initial time-point, representing the (0,0) input case. Rapamycin facilitates
+binding of FKBP- and FRB-fusion proteins whereas GA-AM
+mediates pairing of GAI- and GID-containing protein constructs. The
+direction of these translocation movements are toward the compartment
+with the lower degree of freedom. Tiam1 presence on the plasma membrane
+contributes to the  output readout. The spheres
+placed adjacent to each other represent a fusion construct that translocates
+as a whole. Mitochondria is the location of maximum stability which
+hosts the molecules that are no longer free to move. Molecular cloning of mCherry-CAAX, Tom20-mCh-FRB,
+Tom20-CFP-FRB, Tom20-CFP-GID, Tom20-mCh-GID, and CFP-FRB-Tiam1 have
+been reported elsewhere. For construction of GAIs-YFP-FKBP-C2(LACT), the PCR product encoding
+C2(LACT) using PCR primers (forward, GAGAATTCATGCGCCAATCCCCTGGGC;
+reverse, GCTGGATCCGTACAAGAAAGCTGGGTTCTAACAG)
+was inserted into GAIs-YFP-FKBP using
+the RI and HI sites. For the
+construction of GAI(s)-YFP-Tiam1-FKBP-C2(LACT), Tiam1 was digested
+out from GID-Tiam1-YFP-CAAX and inserted in GAI(s)-YFP-FKBP-C2(LACT)
+using the  sites. For construction of YFP-Tiam1-FKBP-C2(LACT),
+the Tiam1 insert obtained from digestion of GAI(s)-YFP-Tiam1-FKBP-C2(LACT)
+was ligated into YFP-FKBP-C2(LACT) using
+the  sites. For construction of FRB-mCherry-GAIs,
+GAIs was digested out from CFP-GAIs and inserted into FRB-mCherry
+using the RI and HI sites. COS-7 cells were cultured
+in DMEM (GIBCO) medium supplemented with 10% FBS and 1% Penicillin
+Streptomycin (Life Technologies) placed in a 5% CO incubator.
+Cells were split every 2 days. For transfection, coverglass thinly
+coated with 1 mg/mL of poly--lysine (Sigma) placed in 6-well
+plates were used to plate COS-7 cells mixed with 5 μL Turbofect
+(Fermentas) and the transfection mixture. The transfection mixture
+contained 1 μL of 1 μg/μL of each DNA construct
+defined for each logic gate, mixed with 37.5 μL of Opti-MEM
+(Life Technologies). The transfected
+cells were incubated
+(5% CO, 37 °C) for 24 h prior to imaging. Cells were
+imaged in DMEM containing 25 mM HEPES (GIBCO). Live cell imaging was
+performed using an inverted epi-fluorescence microscope (Axiovert135TV,
+ZEISS) using a 40× oil objective. Fluorescence images were collected
+by a QIClick charge-coupled device camera (QImaging). Exposure time
+per fluorescence channel was 200 ms, and the images were obtained
+at a frequency of 1 frame per minute for 30 to 40 min experiment duration,
+depending on the logic device. Rapamycin was obtained from LClab and
+GA-AM was prepared as described previously. Rapamycin and GA-AM both were dissolved
+in DMSO. The zero input case consisted of DMSO alone. All of these
+inputs were resuspended in DMEM containing HEPES media before they
+were added to the sample chamber. Image Analysis, Fluorescence
+Intensity Measurement, and Ruffling
+Quantification The localization of each protein construct
+was verified. The intensity of the fluorescent protein signal in the
+localization region of interest relative to the background was measured
+using Metamorph software (Molecular Devices). To account for photobleaching
+the decay in fluorescence signal 10 min prior to input addition was
+measured and the data were corrected considering a linear photo bleaching
+trend. The fluorescence signal at each time point was normalized by
+the average value of fluorescence signal 10 min before the inputs
+were added. For the ruffling analysis, the range of ratios within
+which each device executed the logic robustly was measured (the performance
+was assessed by quantification of the ruffling activity as described
+below). On the basis of this, the rubric for acceptable fluorescence
+intensity ranges was determined. For all the experiments only cells
+which expressed protein within this ratiometric intensity were analyzed.
+To quantify the PM ruffles the Trace Region feature in the toolbar
+of Metamorph software was used to measure the circumference of each
+cell at the initial time point (denoted as ). The
+length of PM ruffles for every other time point was measured (denoted
+as  where  indicates the time point). The / ratio was used to report the circumference
+of cell ruffling for any given time point. Paired, single-tailed, Student’s -test
+(Microsoft Excel) determining the statistical significance
+of ruffling activity change 1 min prior to input addition and 1 min
+post-input addition was performed. For the NOT gate, this was done
+for the rapamycin input condition. For the NOR gate, this analysis
+was done for the (rapamycin, GA-AM) input condition as
+the drop in ruffling activity post-input treatment was the least drastic
+for this case, marking the worst-case scenario. For the NAND gate,
+this analysis was done on the (rapamycin, GA-AM) condition
+since only for this case we expected and observed a change in ruffling
+activity. For the N-IMPLY device, this analysis was done for the (rapamycin,
+0) condition as only for this case a change is ruffling activity was
+expected and observed. Because of the high exposure time, background
+decay in ruffling activity was observed over the course of the experiment.
+We mainly defined  < 0.01 as statistically significant..
