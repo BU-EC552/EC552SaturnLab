@@ -1,5 +1,8 @@
 # this is a python script that holds functions for parsing and managing text in NLP uses
 # https://towardsdatascience.com/topic-modeling-and-latent-dirichlet-allocation-in-python-9bf156893c24
+# https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html
+# https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html
+
 from Bio import Entrez
 from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
