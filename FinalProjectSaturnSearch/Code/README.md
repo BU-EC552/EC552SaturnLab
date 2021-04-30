@@ -3,7 +3,7 @@
 Authors: Cullen Paulisick, Josh Singh, Ryan Schneider, Nikhil Gupta
 
 # Motivation:
-he identification and implementation of new synthetic parts within a larger synthetic design is tedious and prone to human error. Foundries need access to robust data infrastructure. 
+The identification and implementation of new synthetic parts within a larger synthetic design is tedious and prone to human error. Foundries need access to robust data infrastructure. 
  
 Imagine if researchers always had a ‘TL;DR’ option for automatically scraping synthetic biology parts from existing publications...
 
@@ -31,10 +31,8 @@ Loading animation 'LoadingAnimation.gif' provied by loading.io: www.loading.io
 
 IBM Watson API:
 The API key for the Watson has to be dynamically changed so as to avoid security issues from being raised. The login credentials for this application will be sent to graders via email so as to not compromise them. 
-Examples of our training data and model can also be found using these credentials at https://us-east.knowledge-studio.watson.cloud.ibm.com/knowledge-studio/tools/app/rzhz10/thb30lw84b4tl27s/ui/#/. Deployed model ID will also be provided.
-
-ISSUE RAISED:
-A ticket has currently been opened with IBM due to an issue with with accessing the API. This may be due to our API key being compromised. Updates will be posted.
+The current version of our model can be found at: https://us-south.knowledge-studio.watson.cloud.ibm.com/knowledge-studio/tools/app/rzhz11/tnfm29s18m3g3md1/ui/#/project/2347f980-a858-11eb-ad4d-71f182128617/ml/versions/.
+Examples of our training data and model can also be found using these credentials at Deployed model ID will also be provided.
 
 Dependencies:
 Package            Version
