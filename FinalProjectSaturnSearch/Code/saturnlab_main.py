@@ -25,9 +25,9 @@ def saturnlab_extract(input_text):
     authentication is required. Credentials are provided below.
     """
     # api key
-    api_key = 'bhlN2ELC5m0YKHYMAKS4Utj4F6e6PapsLBHKC4M8XC8f'
+    api_key = input("Enter secure IBM API key: ")
     # server location
-    server_url = 'https://api.us-east.natural-language-understanding.watson.cloud.ibm.com/instances/5b16071c-ab42-4c60-83e3-45abe054d094'
+    server_url = input("Enter secure server URL: ")
 
     authenticator = IAMAuthenticator(api_key)
     natural_language_understanding = NaturalLanguageUnderstandingV1(
@@ -129,24 +129,18 @@ def saturnlab_extract(input_text):
     filtered_corpus = dict(zip(list(original_corpus.keys()), filtered_text))
     # set id for deployed model
     entity_responses = {}
-    concept_responses = {}
-    model_id = 'b2b52c68-fb1e-435d-bef1-ec7fae5fcba6' 
+    model_id = input("Enter cloud model ID: ") 
     for pmid, textfile in filtered_corpus.items():
         response_entity = natural_language_understanding.analyze(
             text=textfile,
             features=Features(entities=EntitiesOptions(limit=15, model=model_id))
             ).get_result()
-        response_concept = natural_language_understanding.analyze(
-            text=textfile,
-            features=Features(concepts=ConceptsOptions(limit=10))
-            ).get_result() 
         entity_responses[pmid]= response_entity
-        concept_responses[pmid] = response_concept
         # print(json.dumps(response_entity, indent=2))
         # print(json.dumps(response_concept, indent=2))
 
     
-    return papers_ranking, stub, entity_responses, concept_responses
+    return papers_ranking, stub, entity_responses
 
 
 

@@ -18,6 +18,7 @@ import time
 import json
 import os
 import os.path
+import numpy as np
 
 from PyQt5.QtWidgets import * #QApplication, QLabel, QMainWindow, QWidget, QPushButton, QAction, QLineEdit, QMessageBox
 from PyQt5.QtGui import * #QIcon
@@ -260,38 +261,25 @@ class mainWindow(QMainWindow):
         global results_text
         r = results_text
         parts_list = []
-        gene_list = []
-        sequence_list = []
         try:
             for part in r[2][pmid]['entities']:
-                if part['type'].lower() == 'part':
-                    if part['text'] not in parts_list:
-                        parts_list.append(part['text'])
-                        if part['disambiguation']['subtype'][0].lower() != 'none' and part['disambiguation']['subtype'][0].lower() != 'sequence':
-                            gene_list.append(part['text'])
-                        if part['disambiguation']['subtype'][0].lower() == 'sequence':
-                            sequence_list.append(part['text'])
+                if part['type'].lower() == 'gene':
+                    parts_list.append(part['text'])
         except:
             print("Paper had high relevance score, but is not in filtered corpus items")
         # update list
+        parts_list = np.unique(parts_list)
         print(parts_list)
-        print(gene_list)
-        print(sequence_list)
         for i in parts_list: 
             new_item = QListWidgetItem()
             output_text = i
-            if i in gene_list:
-                output_text = output_text + " @Gene"
             new_item.setText(output_text)
             self.genList.addItem(new_item)
 
         # update gene list
         output_seq = "Parts in Paper: "
-        for i in sequence_list:
-            output_seq = output_seq + i + " \n"
-        self.paperView.setText(output_seq)
 
-        global_gene_list = gene_list
+        global_gene_list = parts_list
 
 
     # opened window for parts (that are genes)
@@ -316,7 +304,7 @@ class mainWindow(QMainWindow):
         global results_text
         global global_gene_list
         text_results = self.genList.currentItem().text()
-        parse = text_results.split("@")
+        parse = text_results
         print(parse)
         if len(parse) > 1:
             gene = parse[0]
@@ -366,7 +354,7 @@ class mainWindow(QMainWindow):
         #os.mkdir(new_dir)
         #os.chdir(new_dir)
         try:
-            with open("json_" + pmid + ".json", 'w') as f:
+            with open(pmid + ".json", 'w') as f:
                 f.write(json_file)
             f.close()
         except:
