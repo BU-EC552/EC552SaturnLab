@@ -24,6 +24,7 @@ Project Setup:
 1. Create a Python Virtual Environment
 2. Use pip to download dependencies from the dependencies.txt : i.e python3 -m pip install -r dependencies.txt
 3. run the command : python SaturnSearchAlpha.py
+4. Enter the required fields such as API key, server URL, and model ID on the command line when prompted during runtime.
 
 
 Credits:
