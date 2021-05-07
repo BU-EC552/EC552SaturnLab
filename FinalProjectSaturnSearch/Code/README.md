@@ -38,35 +38,35 @@ Examples of our training data and model can also be found using these credential
 Dependencies:
 Package            Version
 ------------------ ---------
-biopython          1.78
-certifi            2020.12.5
-chardet            4.0.0
-click              7.1.2
-Cython             0.29.21
-gensim             4.0.1
-ibm-cloud-sdk-core 3.9.0
-ibm-watson         5.1.0
-idna               2.10
-joblib             1.0.1
-json-flatten       0.1
-nltk               3.6.2
-numpy              1.20.2
-pip                21.0.1
-PyJWT              2.0.1
-PyQt5              5.15.4
-PyQt5-Qt5          5.15.2
-PyQt5-sip          12.8.1
-python-dateutil    2.8.1
-python-Levenshtein 0.12.2
-regex              2021.4.4
-requests           2.25.1
-scipy              1.6.2
-setuptools         56.0.0
-six                1.15.0
-smart-open         5.0.0
-tqdm               4.60.0
-urllib3            1.26.4
-websocket-client   0.48.0
-wheel              0.36.2
-xmltodict          0.12.0
+biopython          1.78  <br />
+certifi            2020.12.5 <br />
+chardet            4.0.0 <br />
+click              7.1.2 <br />
+Cython             0.29.21 <br />
+gensim             4.0.1 <br />
+ibm-cloud-sdk-core 3.9.0 <br />
+ibm-watson         5.1.0 <br />
+idna               2.10 <br />
+joblib             1.0.1 <br />
+json-flatten       0.1 <br />
+nltk               3.6.2 <br />
+numpy              1.20.2 <br />
+pip                21.0.1 <br />
+PyJWT              2.0.1 <br />
+PyQt5              5.15.4 <br />
+PyQt5-Qt5          5.15.2 <br />
+PyQt5-sip          12.8.1 <br />
+python-dateutil    2.8.1 <br />
+python-Levenshtein 0.12.2 <br />
+regex              2021.4.4 <br />
+requests           2.25.1 <br />
+scipy              1.6.2 <br />
+setuptools         56.0.0 <br />
+six                1.15.0 <br />
+smart-open         5.0.0 <br />
+tqdm               4.60.0 <br />
+urllib3            1.26.4 <br />
+websocket-client   0.48.0 <br />
+wheel              0.36.2 <br />
+xmltodict          0.12.0 <br />
 
